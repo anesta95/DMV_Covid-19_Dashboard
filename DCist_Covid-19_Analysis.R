@@ -74,8 +74,15 @@ Sys.sleep(10)
 
 # Get the WV by county breakout data
 remDr$navigate("https://dhhr.wv.gov/COVID-19/Pages/default.aspx")
+Sys.sleep(15)
+WV_powerbi <- remDr$findElement(using = 'xpath', value = '/html/body/form/div[7]/div/div[1]/div/div[2]/div/iframe')
+Sys.sleep(10)
+WV_powerbiurl <- WV_powerbi$getElementAttribute("src") # Doing this because the powerbi site is scrapable but the WV health one is not.
+WV_powerbiurl <- unlist(WV_powerbiurl)
+Sys.sleep(10)
+remDr$navigate(WV_powerbiurl)
 Sys.sleep(30)
-WV_Counties <- remDr$findElement(using = 'xpath', value = '/html/body/form/div[6]/div/div/div[1]/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr/td/div/div[6]/p[1]')
+WV_Counties <- remDr$findElement(using = 'xpath', value = '/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[10]/transform/div/div[3]/visual-modern/div/div/div/p/span[2]')
 WV_Counties <- WV_Counties$getElementText() 
 
 
@@ -176,9 +183,9 @@ Sys.sleep(10)
 # West Virginia analysis
 # Data cleaning and wrangling into dataframe format
 WV_Counties <- WV_Counties %>% 
-  str_split(": ")
+  unlist()
 
-WV_Counties <- WV_Counties[[1]][2]
+# WV_Counties <- WV_Counties[[1]][1]
 
 WV_CountiesDF <- WV_Counties %>% 
   str_replace_all("\\(", "") %>% 
@@ -209,11 +216,17 @@ write_csv(WV_Counties, "WV_Counties.csv")
 # Data cleaning and adding in state abbreviation and FIPS code column
 casesByCounty <- casesByCounty[[1]]
 colnames(casesByCounty) <- c("County", "Cases")
+
+casesByCounty <- casesByCounty %>% 
+  separate(col = Cases, into = c("Cases", "Deaths"), sep = ",\\s+") %>% 
+  mutate(Deaths = str_remove_all(Deaths, "[\\(\\)]"))
+
+
 MD_By_County_Today <- casesByCounty %>% 
-  mutate(Date = Sys.Date(), State = "Maryland", County = str_remove_all(County, "['\\.]")) %>% 
+  mutate(Date = Sys.Date(), State = "Maryland", County = str_remove_all(County, "['\\.]"), Cases = as.integer(Cases), Deaths = as.integer(Deaths)) %>% 
   left_join(stateConversions, by = c("State" = "Full_Name")) %>% 
   left_join(countyStateFIPS, by = c("Abbr" = "State", "County" = "Name")) %>% 
-  dplyr::select(County, Cases, Date, State, Abbr, FIPS)
+  dplyr::select(County, Cases, Deaths, Date, State, Abbr, FIPS)
 
 # MD_By_County_Today <- casesByCounty %>% 
 #   str_split("\n") %>% 
@@ -283,11 +296,11 @@ MD_By_Sex_Today <- tibble(Sex = c(MD_By_Sex_Today[[1]][1], MD_By_Sex_Today[[1]][
 # colnames(MD_By_Sex_Today) <- str_trim(unlist(colnames(MD_By_Sex_Today)))
 # MD_By_Sex_Today <- MD_By_Sex_Today[2,]
 
-MD_By_Sex_Today <- MD_By_Sex_Today %>% 
-  mutate(Female = as.integer(Female), Male = as.integer(Male), Date = Sys.Date(), State = "Maryland") %>% 
-  pivot_longer(cols = c("Female", "Male")) %>% 
-  mutate(Sex = name, Cases = value) %>%
-  select(Sex, Cases, Date, State)
+# MD_By_Sex_Today <- MD_By_Sex_Today %>% 
+#   mutate(Female = as.integer(Female), Male = as.integer(Male), Date = Sys.Date(), State = "Maryland") %>% 
+#   pivot_longer(cols = c("Female", "Male")) %>% 
+#   mutate(Sex = name, Cases = value) %>%
+#   select(Sex, Cases, Date, State)
 
 # mdAgeSexBreakdown <- casesByAgeAndSex %>% 
 #   str_split("\n") %>%
@@ -767,8 +780,18 @@ dcCovid19ByAgeSexToday <- dcCovid19ByAgeSexToday[[1]]
 colnames(dcCovid19ByAgeSexToday) <- unname(dcCovid19ByAgeSexToday[2,])
 dcCovid19ByAgeSexToday <- dcCovid19ByAgeSexToday[3:nrow(dcCovid19ByAgeSexToday),]
 dcCovid19ByAgeSexTodayXTab <- dcCovid19ByAgeSexToday %>% 
-  mutate(Date = Sys.Date() - 1, State = "District of Columbia", Cases = as.integer(`Total Positives`), Age_Range = `Patient Age (yrs)`, Male = as.integer(Male), Female = as.integer(Female), Unknown = NA) %>% 
+  mutate(Date = Sys.Date() - 1, State = "District of Columbia", Cases = as.integer(`Total Positives`), Age_Range = `Patient Age (yrs)`, Male = as.integer(Male), Female = as.integer(Female))
+
+if ("Unknown" %in% names(dcCovid19ByAgeSexToday)) {
+  dcCovid19ByAgeSexToday$Unknown = as.integer(dcCovid19ByAgeSexToday$Unknown)
+} else {
+  dcCovid19ByAgeSexToday$Unknown = rep(NA, nrow(dcCovid19ByAgeSexToday))
+}
+
+dcCovid19ByAgeSexTodayXTab <- dcCovid19ByAgeSexTodayXTab %>% 
   select(Age_Range, Cases, Unknown, Female, Male, Date, State)
+
+
 # Add today's crosstab into main file
 dcCovid19ByAgeSexXTab <- read_csv("dcCovid19ByAgeSexXTab.csv")
 dcCovid19ByAgeSexXTab <- bind_rows(dcCovid19ByAgeSexTodayXTab, dcCovid19ByAgeSexXTab)
@@ -780,12 +803,20 @@ dcCovid19ByAgeToday <- dcCovid19ByAgeSexToday[2:nrow(dcCovid19ByAgeSexToday),] %
   select(Age_Range, Cases, Date, State)
 # Add today's breakout to the main file
 dcCovid19ByAge <- read_csv("dcCovid19ByAge.csv")
-dcCovid19ByAgeSexXTab <- bind_rows(dcCovid19ByAgeToday, dcCovid19ByAge)
+dcCovid19ByAge <- bind_rows(dcCovid19ByAgeToday, dcCovid19ByAge)
 write_csv(dcCovid19ByAge, "dcCovid19ByAge.csv")
 
 # Get dataframe of just today's DC Sex breakout data
 dcCovid19BySexToday <- dcCovid19ByAgeSexToday[1,] %>%
-  mutate(Cases = as.integer(`Total Positives`), Date = Sys.Date() - 1, State = "District of Columbia", Unknown = NA) %>% 
+  mutate(Cases = as.integer(`Total Positives`), Date = Sys.Date() - 1, State = "District of Columbia")
+
+if ("Unknown" %in% names(dcCovid19BySexToday)) {
+  dcCovid19BySexToday$Unknown = as.integer(dcCovid19BySexToday$Unknown)
+} else {
+  dcCovid19BySexToday$Unknown = rep(NA, nrow(dcCovid19BySexToday))
+}
+
+dcCovid19BySexToday <- dcCovid19BySexToday %>% 
   select(Unknown, Male, Female, Date, State) %>% 
   gather(-c(Date, State), key = "Sex", value = "Cases") %>% 
   mutate(Cases = as.integer(Cases)) %>% 
@@ -878,6 +909,7 @@ Virginia_By_County_Today <- read_csv("Virginia_By_County_Today.csv") %>%
   rename(County = Locality, Date = `Report Date`, Cases = `Total Cases`) %>% 
   mutate(State = "Virginia") %>% 
   mutate(Date = mdy(Date)) %>% 
+  filter(Date == max(Date)) %>% 
   left_join(stateConversions, by = c("State" = "Full_Name")) %>% 
   dplyr::select(County, Cases, Date, State, Abbr, FIPS)
 Virginia_By_County <- read_csv("Virginia_By_County.csv")
@@ -970,7 +1002,7 @@ DMV_Counties <- c("District of Columbia",
                   "Calvert", "Charles", "Frederick", "Montgomery", "Prince Georges", 
                   "Alexandria", "Arlington", "Clarke", "Culpeper", "Fairfax", "Farquier", "Fredericksburg", "Loudoun", "Manassas", "Prince William", "Rappahannock", "Spotsylvania", "Stafford", "Warren",
                   "Jefferson")
-DMV_FIPS <- c("11001", "24009", "24017", "24021", "24031", "24033", "51510", "51013", "51043", "51047", "51059", "51061", "51630", "51107", "51683", "51153", "51157", "51177", "51179", "51187", "54037", "51600", "51610", "516815")
+DMV_FIPS <- c("11001", "24009", "24017", "24021", "24031", "24033", "51510", "51013", "51043", "51047", "51059", "51061", "51630", "51107", "51683", "51153", "51157", "51177", "51179", "51187", "54037", "51600", "51610", "51685")
 DMV_Closer_FIPS <- c("24031", "24033", "24021", "24009", "51510", "51013", "51059", "51600", "51107", "51153", "51047", "11001")
 # combined1 <- sort(union(levels(Full_States$FIPS), levels(DMV_FIPS)))
 Sys.sleep(30)
@@ -1074,7 +1106,7 @@ DMVTestsLine <- dailySummary %>%
   ggplot(aes(x = Date, y = Tests)) +
   geom_line(aes(color = State), na.rm = T, size = 3) +
   geom_point(aes(shape = State, color = State), size = 6) +
-  scale_y_continuous(breaks = seq(0, (max(dailySummary$Tests, na.rm = T) + 1000), by = 1000)) +
+  scale_y_continuous(breaks = seq(0, (max(dailySummary$Tests, na.rm = T) + 2000), by = 2000)) +
   scale_color_manual(values = c("#E91436", "#ebab00ff", "#00257C")) + 
   covid19Theme() +
   labs(title = "DMV Covid-19 tests", subtitle = "Over time", caption = ggplotCaption) + xlab("") + ylab("")

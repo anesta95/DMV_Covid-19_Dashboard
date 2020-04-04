@@ -1,4 +1,13 @@
 Age_Range,Cases,Unknown,Female,Male,Date,State
+All,902,2,433,467,2020-04-03,District of Columbia
+0-18,20,0,7,13,2020-04-03,District of Columbia
+19-30,181,1,91,89,2020-04-03,District of Columbia
+31-40,228,0,100,128,2020-04-03,District of Columbia
+41-50,146,1,71,74,2020-04-03,District of Columbia
+51-60,130,0,61,69,2020-04-03,District of Columbia
+61-70,122,0,59,63,2020-04-03,District of Columbia
+71-80,55,0,33,22,2020-04-03,District of Columbia
+81+,20,0,11,9,2020-04-03,District of Columbia
 All,757,NA,351,406,2020-04-02,District of Columbia
 0-18,18,NA,6,12,2020-04-02,District of Columbia
 19-30,158,NA,77,81,2020-04-02,District of Columbia
