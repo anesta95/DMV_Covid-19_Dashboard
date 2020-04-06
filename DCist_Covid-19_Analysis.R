@@ -82,7 +82,7 @@ WV_powerbiurl <- unlist(WV_powerbiurl)
 Sys.sleep(10)
 remDr$navigate(WV_powerbiurl)
 Sys.sleep(30)
-WV_Counties <- remDr$findElement(using = 'xpath', value = '/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[10]/transform/div/div[3]/visual-modern/div/div/div/p/span[2]')
+WV_Counties <- remDr$findElement(using = 'xpath', value = '/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[11]/transform/div/div[3]/visual-modern/div/div/div/p/span[2]')
 WV_Counties <- WV_Counties$getElementText() 
 
 
@@ -782,10 +782,10 @@ dcCovid19ByAgeSexToday <- dcCovid19ByAgeSexToday[3:nrow(dcCovid19ByAgeSexToday),
 dcCovid19ByAgeSexTodayXTab <- dcCovid19ByAgeSexToday %>% 
   mutate(Date = Sys.Date() - 1, State = "District of Columbia", Cases = as.integer(`Total Positives`), Age_Range = `Patient Age (yrs)`, Male = as.integer(Male), Female = as.integer(Female))
 
-if ("Unknown" %in% names(dcCovid19ByAgeSexToday)) {
-  dcCovid19ByAgeSexToday$Unknown = as.integer(dcCovid19ByAgeSexToday$Unknown)
+if ("Unknown" %in% names(dcCovid19ByAgeSexTodayXTab)) {
+  dcCovid19ByAgeSexTodayXTab$Unknown = as.integer(dcCovid19ByAgeSexTodayXTab$Unknown)
 } else {
-  dcCovid19ByAgeSexToday$Unknown = rep(NA, nrow(dcCovid19ByAgeSexToday))
+  dcCovid19ByAgeSexTodayXTab$Unknown = rep(NA, nrow(dcCovid19ByAgeSexTodayXTab))
 }
 
 dcCovid19ByAgeSexTodayXTab <- dcCovid19ByAgeSexTodayXTab %>% 
@@ -863,6 +863,7 @@ colnames(dcCovid19DataSummaryToday) <- make.names(colnames(dcCovid19DataSummaryT
 
 dcCovid19TestingCases <- dcCovid19DataSummaryToday %>% 
   select(Date, People.Tested.Overall, Total.Positives, Number.of.Deaths, People.Recovered)
+
 # Re-saving the updated Cases/Testing dataframe
 write_csv(dcCovid19TestingCases, "dcCovid19TestingCases.csv")
 
@@ -1228,9 +1229,14 @@ st_crs(DMV_Cases) <- "+proj=longlat +datum=WGS84"
 
 # Create cases and per cap case rate bins and palettes
 myBinsReg <- round(seq(from = 0, to = (max(DMV_Cases$Cases) + 1), by = (max(DMV_Cases$Cases) / 6)), 0)
-myBinsPerCap <- round(seq(from = 0, 
-                          to = (max(DMV_Cases$Cases / DMV_Cases$TOTAL_POP_100K) + 1), 
-                          by = max(DMV_Cases$Cases / DMV_Cases$TOTAL_POP_100K) / 6), 0) 
+upperPerCapBoundary <- round(max(DMV_Cases$Cases / DMV_Cases$TOTAL_POP_100K) + 1, 0)
+
+while(upperPerCapBoundary %% 6 != 0) {
+  upperPerCapBoundary = upperPerCapBoundary + 1
+}
+myBinsPerCap <- seq(from = 0, 
+                          to = upperPerCapBoundary, 
+                          by = upperPerCapBoundary / 6)
 dmvPaletteReg <- colorBin(palette = "YlOrRd", domain = DMV_Cases$Cases, na.color = "transparent", bins = myBinsReg)
 dmvPalettePerCap <- colorBin(palette = "YlOrRd", domain = DMV_Cases$Cases, na.color = "transparent", bins = myBinsPerCap)
 Sys.sleep(15)
@@ -1242,13 +1248,68 @@ legendText <- paste0(
   "Cases: ", DMV_Cases$Cases, "<br/>"
 ) %>% 
   lapply(htmltools::HTML)
-# Create Leaflet and data attribution
+
+# Make the per capita leaflet chloropleth
+legendTextPerCap <- paste0(
+  "County: ", DMV_Cases$NAME, "<br/>",
+  "State: ", DMV_Cases$State, "<br/>",
+  "Rate per 100K: ", round((DMV_Cases$Cases / DMV_Cases$TOTAL_POP_100K), 1), "<br/>"
+) %>% 
+  lapply(htmltools::HTML)
 attribution <- htmltools::HTML("Map data &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap</a> contributors, <a href='https://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a><br/>Data from: <a href = 'https://dhhr.wv.gov/COVID-19/Pages/default.aspx'>WV DHHR</a>, <a href='https://coronavirus.dc.gov/page/coronavirus-data'>DC Mayor's Office</a>, <a href='https://coronavirus.maryland.gov/'>MD Dept of Health</a>, <a href='http://www.vdh.virginia.gov/coronavirus/'>VA Dept of Health</a>")
 Sys.sleep(5)
+# Create Leaflet and data attribution
+# This was before I figured out the radio buttons and grouping to make one map with both the cases count and case rate
+
 # Create DMV chloropleth of just cases
+# dmvChloropleth <- leaflet(DMV_Cases) %>% 
+#   addTiles(attribution = attribution) %>% 
+#   setView(lat = "38.8858", lng = "-77.1054", zoom = 8) %>% 
+#   addPolygons(stroke=T, 
+#               opacity = 1,
+#               fillOpacity = 0.9, 
+#               smoothFactor = 0.5, 
+#               color = "black", 
+#               fillColor = ~dmvPaletteReg(Cases),
+#               weight = 0.5,
+#               label = legendText,
+#               labelOptions = labelOptions( 
+#                 style = list("font-weight" = "normal", padding = "3px 8px"), 
+#                 textsize = "13px", 
+#                 direction = "auto"
+#               )) %>% 
+#   addLegend( pal=dmvPaletteReg, values=~Cases, opacity=0.9, title = paste("DMV Covid-19 Cases on", Sys.Date() - 1), position = "topright" )
+# # Make sure to add them to directory hooked up to website
+# setwd("/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
+# Sys.sleep(15)
+# mapshot(dmvChloropleth, url = "dmvChloropleth.html")
+# Sys.sleep(5)
+# 
+# 
+# dmvChloroplethPerCap <- leaflet(DMV_Cases) %>% 
+#   addTiles(attribution = attribution) %>% 
+#   setView(lat = "38.8858", lng = "-77.1054", zoom = 8) %>% 
+#   addPolygons(stroke=T, 
+#               opacity = 1,
+#               fillOpacity = 0.9, 
+#               smoothFactor = 0.5, 
+#               color = "black", 
+#               fillColor = ~dmvPalettePerCap((Cases / TOTAL_POP_100K)),
+#               weight = 0.5,
+#               label = legendTextPerCap,
+#               labelOptions = labelOptions( 
+#                 style = list("font-weight" = "normal", padding = "3px 8px"), 
+#                 textsize = "13px", 
+#                 direction = "auto"
+#               )) %>% 
+#   addLegend( pal=dmvPalettePerCap, values=~(Cases / TOTAL_POP_100K), opacity=0.9, title = htmltools::HTML(paste("DMV Covid-19 Case Rate <br> per 100k on", Sys.Date() - 1)), position = "topright" )
+# Sys.sleep(15)
+# mapshot(dmvChloroplethPerCap, url = "dmvChloroplethPerCap.html")
+
+
 dmvChloropleth <- leaflet(DMV_Cases) %>% 
   addTiles(attribution = attribution) %>% 
-  setView(lat = "38.8858", lng = "-77.1054", zoom = 8) %>% 
+  setView(lat = "38.87086", lng = "-77.13826", zoom = 8) %>% 
   addPolygons(stroke=T, 
               opacity = 1,
               fillOpacity = 0.9, 
@@ -1261,24 +1322,8 @@ dmvChloropleth <- leaflet(DMV_Cases) %>%
                 style = list("font-weight" = "normal", padding = "3px 8px"), 
                 textsize = "13px", 
                 direction = "auto"
-              )) %>% 
-  addLegend( pal=dmvPaletteReg, values=~Cases, opacity=0.9, title = paste("DMV Covid-19 Cases on", Sys.Date() - 1), position = "topright" )
-# Make sure to add them to directory hooked up to website
-setwd("/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
-Sys.sleep(15)
-mapshot(dmvChloropleth, url = "dmvChloropleth.html")
-Sys.sleep(5)
-# Make the per capita leaflet chloropleth
-legendTextPerCap <- paste0(
-  "County: ", DMV_Cases$NAME, "<br/>",
-  "State: ", DMV_Cases$State, "<br/>",
-  "Cases: ", round((DMV_Cases$Cases / DMV_Cases$TOTAL_POP_100K), 1), "<br/>"
-) %>% 
-  lapply(htmltools::HTML)
-
-dmvChloroplethPerCap <- leaflet(DMV_Cases) %>% 
-  addTiles(attribution = attribution) %>% 
-  setView(lat = "38.8858", lng = "-77.1054", zoom = 8) %>% 
+              ),
+              group = paste("Case count", Sys.Date() - 1, sep = " ")) %>% 
   addPolygons(stroke=T, 
               opacity = 1,
               fillOpacity = 0.9, 
@@ -1291,10 +1336,43 @@ dmvChloroplethPerCap <- leaflet(DMV_Cases) %>%
                 style = list("font-weight" = "normal", padding = "3px 8px"), 
                 textsize = "13px", 
                 direction = "auto"
-              )) %>% 
-  addLegend( pal=dmvPalettePerCap, values=~(Cases / TOTAL_POP_100K), opacity=0.9, title = htmltools::HTML(paste("DMV Covid-19 Case Rate <br> per 100k on", Sys.Date() - 1)), position = "topright" )
+              ),
+              group = paste("Case rate per 100K", Sys.Date() - 1, sep = " ")) %>% 
+  addLegend( pal=dmvPaletteReg, 
+             values=~Cases, 
+             opacity=0.9, 
+             title = paste("Case count", Sys.Date() - 1, sep = " "), 
+             position = "topright", 
+             group = paste("Case count", Sys.Date() - 1, sep = " ")) %>%
+  addLegend( pal=dmvPalettePerCap, 
+             values=~(Cases / TOTAL_POP_100K), 
+             opacity=0.9, 
+             title = paste("Case rate per 100K", Sys.Date() - 1, sep = " "), 
+             position = "topright", 
+             group = paste("Case rate per 100K", Sys.Date() - 1, sep = " ")) %>% 
+  addLayersControl(baseGroups = c(paste("Case count", Sys.Date() - 1, sep = " "), paste("Case rate per 100K", Sys.Date() - 1, sep = " ")),
+                   position = "topright",
+                   options = layersControlOptions(collapsed = F)) %>% 
+  htmlwidgets::onRender(
+    "function(el, x) {
+      var updateLegend = function () {
+          var selectedGroup = document.querySelectorAll('input:checked')[0].nextSibling.innerText.substr(1);
+
+          document.querySelectorAll('.legend').forEach(a => a.hidden=true);
+          document.querySelectorAll('.legend').forEach(l => {
+            if (l.children[0].children[0].innerText == selectedGroup) l.hidden=false;
+          });
+      };
+      updateLegend();
+      this.on('baselayerchange', e => updateLegend());
+    }"
+  )
+
+Sys.sleep(5)
+setwd("/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
 Sys.sleep(15)
-mapshot(dmvChloroplethPerCap, url = "dmvChloroplethPerCap.html")
+mapshot(dmvChloropleth, url = "dmvChloropleth.html")
+Sys.sleep(15)
 
 
 ### Look into plotly plots with Rplotly below

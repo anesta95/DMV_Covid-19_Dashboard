@@ -1,4 +1,193 @@
 County,Cases,Date,State,Abbr,FIPS,Deaths
+Albemarle,27,2020-04-04,Virginia,VA,51003,NA
+Amherst,6,2020-04-04,Virginia,VA,51009,NA
+Appomattox,0,2020-04-04,Virginia,VA,51011,NA
+Arlington,150,2020-04-04,Virginia,VA,51013,NA
+Augusta,7,2020-04-04,Virginia,VA,51015,NA
+Bedford,4,2020-04-04,Virginia,VA,51019,NA
+Bland,0,2020-04-04,Virginia,VA,51021,NA
+Brunswick,1,2020-04-04,Virginia,VA,51025,NA
+Buchanan,0,2020-04-04,Virginia,VA,51027,NA
+Buckingham,4,2020-04-04,Virginia,VA,51029,NA
+Campbell,2,2020-04-04,Virginia,VA,51031,NA
+Caroline,1,2020-04-04,Virginia,VA,51033,NA
+Carroll,1,2020-04-04,Virginia,VA,51035,NA
+Charles City,4,2020-04-04,Virginia,VA,51036,NA
+Charlotte,1,2020-04-04,Virginia,VA,51037,NA
+Clarke,2,2020-04-04,Virginia,VA,51043,NA
+Culpeper,8,2020-04-04,Virginia,VA,51047,NA
+Cumberland,2,2020-04-04,Virginia,VA,51049,NA
+Dinwiddie,0,2020-04-04,Virginia,VA,51053,NA
+Essex,0,2020-04-04,Virginia,VA,51057,NA
+Grayson,0,2020-04-04,Virginia,VA,51077,NA
+Greene,2,2020-04-04,Virginia,VA,51079,NA
+Greensville,4,2020-04-04,Virginia,VA,51081,NA
+Halifax,1,2020-04-04,Virginia,VA,51083,NA
+Hanover,12,2020-04-04,Virginia,VA,51085,NA
+Henrico,174,2020-04-04,Virginia,VA,51087,NA
+Highland,0,2020-04-04,Virginia,VA,51091,NA
+Isle of Wight,18,2020-04-04,Virginia,VA,51093,NA
+King and Queen,1,2020-04-04,Virginia,VA,51097,NA
+Lee,2,2020-04-04,Virginia,VA,51105,NA
+Louisa,13,2020-04-04,Virginia,VA,51109,NA
+Lunenburg,0,2020-04-04,Virginia,VA,51111,NA
+Madison,2,2020-04-04,Virginia,VA,51113,NA
+Mathews,2,2020-04-04,Virginia,VA,51115,NA
+Middlesex,0,2020-04-04,Virginia,VA,51119,NA
+New Kent,8,2020-04-04,Virginia,VA,51127,NA
+Northampton,2,2020-04-04,Virginia,VA,51131,NA
+Northumberland,3,2020-04-04,Virginia,VA,51133,NA
+Patrick,0,2020-04-04,Virginia,VA,51141,NA
+Pittsylvania,2,2020-04-04,Virginia,VA,51143,NA
+Powhatan,4,2020-04-04,Virginia,VA,51145,NA
+Prince George,16,2020-04-04,Virginia,VA,51149,NA
+Prince William,159,2020-04-04,Virginia,VA,51153,NA
+Pulaski,1,2020-04-04,Virginia,VA,51155,NA
+Rockbridge,3,2020-04-04,Virginia,VA,51163,NA
+Rockingham,15,2020-04-04,Virginia,VA,51165,NA
+Russell,0,2020-04-04,Virginia,VA,51167,NA
+Tazewell,2,2020-04-04,Virginia,VA,51185,NA
+Warren,4,2020-04-04,Virginia,VA,51187,NA
+Westmoreland,2,2020-04-04,Virginia,VA,51193,NA
+Wythe,2,2020-04-04,Virginia,VA,51197,NA
+York,19,2020-04-04,Virginia,VA,51199,NA
+Alexandria City,68,2020-04-04,Virginia,VA,51510,NA
+Bristol,1,2020-04-04,Virginia,VA,51520,NA
+Chesapeake City,65,2020-04-04,Virginia,VA,51550,NA
+Danville,12,2020-04-04,Virginia,VA,51590,NA
+Fairfax City,0,2020-04-04,Virginia,VA,51600,NA
+Franklin City,4,2020-04-04,Virginia,VA,51620,NA
+Harrisonburg City,22,2020-04-04,Virginia,VA,51660,NA
+Lynchburg,10,2020-04-04,Virginia,VA,51680,NA
+Manassas Park,2,2020-04-04,Virginia,VA,51685,NA
+Martinsville,0,2020-04-04,Virginia,VA,51690,NA
+Newport News City,48,2020-04-04,Virginia,VA,51700,NA
+Norfolk City,55,2020-04-04,Virginia,VA,51710,NA
+Salem,1,2020-04-04,Virginia,VA,51775,NA
+Waynesboro,2,2020-04-04,Virginia,VA,51820,NA
+Williamsburg City,10,2020-04-04,Virginia,VA,51830,NA
+Winchester,10,2020-04-04,Virginia,VA,51840,NA
+Accomack,8,2020-04-04,Virginia,VA,51001,NA
+Alleghany,2,2020-04-04,Virginia,VA,51005,NA
+Amelia,6,2020-04-04,Virginia,VA,51007,NA
+Bath,0,2020-04-04,Virginia,VA,51017,NA
+Botetourt,14,2020-04-04,Virginia,VA,51023,NA
+Chesterfield,106,2020-04-04,Virginia,VA,51041,NA
+Craig,0,2020-04-04,Virginia,VA,51045,NA
+Dickenson,0,2020-04-04,Virginia,VA,51051,NA
+Fairfax,387,2020-04-04,Virginia,VA,51059,NA
+Fauquier,10,2020-04-04,Virginia,VA,51061,NA
+Floyd,0,2020-04-04,Virginia,VA,51063,NA
+Fluvanna,5,2020-04-04,Virginia,VA,51065,NA
+Franklin,10,2020-04-04,Virginia,VA,51067,NA
+Frederick,24,2020-04-04,Virginia,VA,51069,NA
+Giles,0,2020-04-04,Virginia,VA,51071,NA
+Gloucester,9,2020-04-04,Virginia,VA,51073,NA
+Goochland,10,2020-04-04,Virginia,VA,51075,NA
+Henry,3,2020-04-04,Virginia,VA,51089,NA
+James City,111,2020-04-04,Virginia,VA,51095,NA
+King George,8,2020-04-04,Virginia,VA,51099,NA
+King William,1,2020-04-04,Virginia,VA,51101,NA
+Lancaster,1,2020-04-04,Virginia,VA,51103,NA
+Loudoun,150,2020-04-04,Virginia,VA,51107,NA
+Mecklenburg,8,2020-04-04,Virginia,VA,51117,NA
+Montgomery,6,2020-04-04,Virginia,VA,51121,NA
+Nelson,2,2020-04-04,Virginia,VA,51125,NA
+Nottoway,1,2020-04-04,Virginia,VA,51135,NA
+Orange,5,2020-04-04,Virginia,VA,51137,NA
+Page,2,2020-04-04,Virginia,VA,51139,NA
+Prince Edward,3,2020-04-04,Virginia,VA,51147,NA
+Rappahannock,0,2020-04-04,Virginia,VA,51157,NA
+Richmond County,0,2020-04-04,Virginia,VA,51159,NA
+Roanoke County,5,2020-04-04,Virginia,VA,51161,NA
+Scott,0,2020-04-04,Virginia,VA,51169,NA
+Shenandoah,10,2020-04-04,Virginia,VA,51171,NA
+Smyth,2,2020-04-04,Virginia,VA,51173,NA
+Southampton,5,2020-04-04,Virginia,VA,51175,NA
+Spotsylvania,18,2020-04-04,Virginia,VA,51177,NA
+Stafford,38,2020-04-04,Virginia,VA,51179,NA
+Surry,3,2020-04-04,Virginia,VA,51181,NA
+Sussex,3,2020-04-04,Virginia,VA,51183,NA
+Washington,3,2020-04-04,Virginia,VA,51191,NA
+Wise,0,2020-04-04,Virginia,VA,51195,NA
+Buena Vista City,1,2020-04-04,Virginia,VA,51530,NA
+Charlottesville City,21,2020-04-04,Virginia,VA,51540,NA
+Colonial Heights,0,2020-04-04,Virginia,VA,51570,NA
+Covington,1,2020-04-04,Virginia,VA,51580,NA
+Emporia,2,2020-04-04,Virginia,VA,51595,NA
+Falls Church,0,2020-04-04,Virginia,VA,51610,NA
+Fredericksburg,7,2020-04-04,Virginia,VA,51630,NA
+Galax,1,2020-04-04,Virginia,VA,51640,NA
+Hampton,39,2020-04-04,Virginia,VA,51650,NA
+Hopewell,9,2020-04-04,Virginia,VA,51670,NA
+Lexington,3,2020-04-04,Virginia,VA,51678,NA
+Manassas City,14,2020-04-04,Virginia,VA,51683,NA
+Norton,0,2020-04-04,Virginia,VA,51720,NA
+Petersburg,10,2020-04-04,Virginia,VA,51730,NA
+Poquoson,3,2020-04-04,Virginia,VA,51735,NA
+Portsmouth City,26,2020-04-04,Virginia,VA,51740,NA
+Radford,1,2020-04-04,Virginia,VA,51750,NA
+Richmond City,96,2020-04-04,Virginia,VA,51760,NA
+Roanoke City,10,2020-04-04,Virginia,VA,51770,NA
+Staunton,1,2020-04-04,Virginia,VA,51790,NA
+Suffolk City,20,2020-04-04,Virginia,VA,51800,NA
+Virginia Beach City,160,2020-04-04,Virginia,VA,51810,NA
+Allegany,3,2020-04-04,Maryland,MD,24001,NA
+Anne Arundel,289,2020-04-04,Maryland,MD,24003,6
+Baltimore City,343,2020-04-04,Maryland,MD,24510,6
+Baltimore,491,2020-04-04,Maryland,MD,NA,4
+Calvert,33,2020-04-04,Maryland,MD,24009,1
+Caroline,4,2020-04-04,Maryland,MD,24011,NA
+Carroll,134,2020-04-04,Maryland,MD,24013,6
+Cecil,33,2020-04-04,Maryland,MD,24015,1
+Charles,95,2020-04-04,Maryland,MD,24017,1
+Dorchester,1,2020-04-04,Maryland,MD,24019,NA
+Frederick,73,2020-04-04,Maryland,MD,24021,2
+Garrett,3,2020-04-04,Maryland,MD,24023,NA
+Harford,44,2020-04-04,Maryland,MD,24025,NA
+Howard,180,2020-04-04,Maryland,MD,24027,3
+Kent,5,2020-04-04,Maryland,MD,24029,NA
+Montgomery,640,2020-04-04,Maryland,MD,24031,9
+Prince Georges,653,2020-04-04,Maryland,MD,24033,13
+Queen Annes,13,2020-04-04,Maryland,MD,24035,NA
+St Marys,34,2020-04-04,Maryland,MD,24037,NA
+Somerset,4,2020-04-04,Maryland,MD,24039,NA
+Talbot,6,2020-04-04,Maryland,MD,24041,NA
+Washington,29,2020-04-04,Maryland,MD,24043,NA
+Wicomico,8,2020-04-04,Maryland,MD,24045,1
+Worcester,7,2020-04-04,Maryland,MD,24047,NA
+Barbour,2,2020-04-04,West Virginia,WV,54001,NA
+Berkeley49,NA,2020-04-04,West Virginia,WV,NA,NA
+Cabell,5,2020-04-04,West Virginia,WV,54011,NA
+Greenbrier,3,2020-04-04,West Virginia,WV,54025,NA
+Hancock,6,2020-04-04,West Virginia,WV,54029,NA
+Hardy,2,2020-04-04,West Virginia,WV,54031,NA
+Harrison,19,2020-04-04,West Virginia,WV,54033,NA
+Jackson,13,2020-04-04,West Virginia,WV,54035,NA
+Jefferson,17,2020-04-04,West Virginia,WV,54037,NA
+Kanawha,48,2020-04-04,West Virginia,WV,54039,NA
+Logan,5,2020-04-04,West Virginia,WV,54045,NA
+Marion,13,2020-04-04,West Virginia,WV,54049,NA
+Marshall,4,2020-04-04,West Virginia,WV,54051,NA
+Mason,4,2020-04-04,West Virginia,WV,54053,NA
+Mercer,3,2020-04-04,West Virginia,WV,54055,NA
+Mineral,2,2020-04-04,West Virginia,WV,54057,NA
+Monongalia,40,2020-04-04,West Virginia,WV,54061,NA
+Morgan,1,2020-04-04,West Virginia,WV,54065,NA
+Ohio,11,2020-04-04,West Virginia,WV,54069,NA
+NA,NA,2020-04-04,West Virginia,WV,NA,NA
+Pleasants,1,2020-04-04,West Virginia,WV,54073,NA
+Preston,5,2020-04-04,West Virginia,WV,54077,NA
+Putnam,5,2020-04-04,West Virginia,WV,54079,NA
+Raleigh,4,2020-04-04,West Virginia,WV,54081,NA
+Randolph,3,2020-04-04,West Virginia,WV,54083,NA
+Roane,2,2020-04-04,West Virginia,WV,54087,NA
+Tucker,3,2020-04-04,West Virginia,WV,54093,NA
+Upshur,1,2020-04-04,West Virginia,WV,54097,NA
+Wetzel,2,2020-04-04,West Virginia,WV,54103,NA
+Wirt,1,2020-04-04,West Virginia,WV,54105,NA
+Wood,7,2020-04-04,West Virginia,WV,54107,NA
+District of Columbia,998,2020-04-04,District of Columbia,DC,11001,NA
 Albemarle,26,2020-04-03,Virginia,VA,51003,NA
 Amherst,6,2020-04-03,Virginia,VA,51009,NA
 Appomattox,0,2020-04-03,Virginia,VA,51011,NA
