@@ -82,9 +82,20 @@ WV_powerbiurl <- unlist(WV_powerbiurl)
 Sys.sleep(10)
 remDr$navigate(WV_powerbiurl)
 Sys.sleep(30)
-WV_Counties <- remDr$findElement(using = 'xpath', value = '/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[11]/transform/div/div[3]/visual-modern/div/div/div/p/span[2]')
-WV_Counties <- WV_Counties$getElementText() 
 
+
+
+
+WV_CountiesDiv <- remDr$findElements(using = "class", value = "textbox")
+WV_CountiesText <- WV_CountiesDiv[[3]]
+WV_Counties <- WV_CountiesText$getElementText()
+
+# # Could also do this as a backup
+# WV_Counties <- remDr$findElement(using = "css selector", value = "visual-container-modern.visual-container-component:nth-child(11) > transform:nth-child(1) > div:nth-child(1) > div:nth-child(3) > visual-modern:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(1) > span:nth-child(2)")
+# 
+# # or this as a backup
+# WV_Counties <- remDr$findElement(using = 'xpath', value = '/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[11]/transform/div/div[3]/visual-modern/div/div/div/p/span[2]')
+# WV_Counties <- WV_Counties$getElementText() 
 
 Sys.sleep(10)
 # Get the Maryland topline Deaths, Tests, and Hospitalizations data
@@ -188,6 +199,7 @@ WV_Counties <- WV_Counties %>%
 # WV_Counties <- WV_Counties[[1]][1]
 
 WV_CountiesDF <- WV_Counties %>% 
+  str_remove_all("CONFIRMED CASES PER COUNTY: ") %>% 
   str_replace_all("\\(", "") %>% 
   str_replace_all("\\)", "") %>% 
   str_split(", ") %>% 
@@ -1305,7 +1317,6 @@ Sys.sleep(5)
 #   addLegend( pal=dmvPalettePerCap, values=~(Cases / TOTAL_POP_100K), opacity=0.9, title = htmltools::HTML(paste("DMV Covid-19 Case Rate <br> per 100k on", Sys.Date() - 1)), position = "topright" )
 # Sys.sleep(15)
 # mapshot(dmvChloroplethPerCap, url = "dmvChloroplethPerCap.html")
-
 
 dmvChloropleth <- leaflet(DMV_Cases) %>% 
   addTiles(attribution = attribution) %>% 
