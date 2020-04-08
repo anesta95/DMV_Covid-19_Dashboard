@@ -48,11 +48,11 @@ system('docker pull selenium/standalone-firefox')
 Sys.sleep(10)
 system('docker run -t -d -p 4445:4444 --memory 1024mb --shm-size 2g selenium/standalone-firefox')
 Sys.sleep(10)
+fprof <- makeFirefoxProfile(list(browser.download.dir = getwd(), browser.download.manager.showWhenStarting = F, browser.helperApps.neverAsk.saveToDisk = "text/csv/xls/xlsx"))
 remDr <- remoteDriver(remoteServerAddr = "localhost", port = 4445L, browserName = "firefox")
 Sys.sleep(10)
 remDr$open()
 Sys.sleep(10)
-
 
 # This was before they made the website dynamic :-/
 # WV_URL <- "https://dhhr.wv.gov/COVID-19/Pages/default.aspx"
@@ -142,7 +142,7 @@ casesByAgeAndSex <- MD_AgeSex_Path$getElementAttribute("outerHTML")[[1]] %>% rea
 Sys.sleep(10)
 remDr$navigate("http://www.vdh.virginia.gov/coronavirus/")
 Sys.sleep(30)
-virginiaDownloadLinkCasesByCounty <- remDr$findElement(using = "xpath", value = "/html/body/div[3]/div[2]/div/main/article/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/p[1]/a")
+virginiaDownloadLinkCasesByCounty <- remDr$findElement(using = "xpath", value = "/html/body/div[3]/div[2]/div/main/article/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/p[2]/a")
 Sys.sleep(10)
 virginiaDownloadLinkCasesByCountyURL <- virginiaDownloadLinkCasesByCounty$getElementAttribute("href")
 Sys.sleep(10)
@@ -152,7 +152,7 @@ virginiaDownloadLinkCasesByCountyURL <- unlist(virginiaDownloadLinkCasesByCounty
 download.file(virginiaDownloadLinkCasesByCountyURL, destfile = "Virginia_By_County_Today.csv")
 Sys.sleep(10)
 
-virginiaDownloadLinkCasesByAge <- remDr$findElement(using = "xpath", value = "/html/body/div[3]/div[2]/div/main/article/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/p[2]/a")
+virginiaDownloadLinkCasesByAge <- remDr$findElement(using = "xpath", value = "/html/body/div[3]/div[2]/div/main/article/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/p[3]/a")
 Sys.sleep(10)
 virginiaDownloadLinkCasesByAgeURL <- virginiaDownloadLinkCasesByAge$getElementAttribute("href")
 Sys.sleep(10)
@@ -161,7 +161,7 @@ virginiaDownloadLinkCasesByAgeURL <- unlist(virginiaDownloadLinkCasesByAgeURL)
 download.file(virginiaDownloadLinkCasesByAgeURL, destfile = "Virginia_By_Age_Today.csv")
 Sys.sleep(10)
 
-virginiaDownloadLinkCasesBySex <- remDr$findElement(using = "xpath", value = "/html/body/div[3]/div[2]/div/main/article/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/p[3]/a[2]")
+virginiaDownloadLinkCasesBySex <- remDr$findElement(using = "xpath", value = "/html/body/div[3]/div[2]/div/main/article/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/p[4]/a")
 Sys.sleep(10)
 virginiaDownloadLinkCasesBySexURL <- virginiaDownloadLinkCasesBySex$getElementAttribute("href")
 Sys.sleep(10)
@@ -170,7 +170,7 @@ virginiaDownloadLinkCasesBySexURL <- unlist(virginiaDownloadLinkCasesBySexURL)
 download.file(virginiaDownloadLinkCasesBySexURL, destfile = "Virginia_By_Sex_Today.csv")
 Sys.sleep(10)
 
-virginiaDownloadLinkCasesByRace <- remDr$findElement(using = "xpath", value = "/html/body/div[3]/div[2]/div/main/article/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/p[4]/a[2]")
+virginiaDownloadLinkCasesByRace <- remDr$findElement(using = "xpath", value = "/html/body/div[3]/div[2]/div/main/article/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/p[5]/a")
 Sys.sleep(10)
 virginiaDownloadLinkCasesByRaceURL <- virginiaDownloadLinkCasesByRace$getElementAttribute("href")
 Sys.sleep(10)
@@ -199,7 +199,7 @@ Sys.sleep(5)
 # stop_splash(splash_svr)
 # 
 # Get updated total data excel download
-Sys.sleep(5)
+
 remDr$navigate("https://coronavirus.dc.gov/page/coronavirus-data")
 Sys.sleep(15)
 dcDataA <- remDr$findElement(using = "xpath", value = "/html/body/div[4]/section/div[2]/div/div/div/div[2]/div/div/article/div[1]/div[1]/div/div/ul[1]/li[5]/a")
@@ -210,17 +210,28 @@ dcDataDownloadLink <- unlist(dcDataDownloadLink)
 Sys.sleep(5)
 download.file(dcDataDownloadLink, destfile = "dcCovid-19DataSummaryToday.xlsx")
 
+# This doesn't quite work, I think I have to change my Firefox preferences
+# dcDownloadDiv <- remDr$findElement(using = "xpath", value = "/html/body/div[4]/section/div[2]/div/div/div/div[2]/div/div/article/div[1]/div/div/div/div[1]/a[2]")
+# dcDownloadLinkFull <- dcDownloadDiv$getElementAttribute("href")
+# dcDownloadLinkFull <- unlist(dcDownloadLinkFull)
+# remDr$navigate(dcDownloadLinkFull)
+# 
+# dcDownloadButton <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/div[5]/span/div/main/div/div/div[1]/header/div/div/button")
+# dcDownloadButton$clickElement()
+
 Sys.sleep(5)
 # Get demographic breakout covid-19 case data
-dcCovid19ByAgeSexTodayHTML <- remDr$findElement(using = "xpath", value = "/html/body/div[4]/section/div[2]/div/div/div/div[2]/div/div/article/div[1]/div[1]/div/div/table[1]")
-Sys.sleep(5)
-dcCovid19ByAgeSexToday <- dcCovid19ByAgeSexTodayHTML$getElementAttribute("outerHTML")[[1]] %>% read_html(useInternalNodes = T) %>% html_table(fill = T)
-# Get covid-19 case data by DC ward
-Sys.sleep(5)
-dcCovid19ByWardTodayHTML <- remDr$findElement(using = "xpath", value = "/html/body/div[4]/section/div[2]/div/div/div/div[2]/div/div/article/div[1]/div[1]/div/div/table[2]")
-Sys.sleep(5)
-dcCovid19ByWardToday <- dcCovid19ByWardTodayHTML$getElementAttribute("outerHTML")[[1]] %>% read_html(useInternalNodes = T) %>% html_table(fill = T)
-
+# This is no longer posted on the site directly :-(
+# dcCovid19ByAgeSexTodayHTML <- remDr$findElement(using = "xpath", value = "/html/body/div[4]/section/div[2]/div/div/div/div[2]/div/div/article/div[1]/div[1]/div/div/table[1]")
+# Sys.sleep(5)
+# dcCovid19ByAgeSexToday <- dcCovid19ByAgeSexTodayHTML$getElementAttribute("outerHTML")[[1]] %>% read_html(useInternalNodes = T) %>% html_table(fill = T)
+# # Get covid-19 case data by DC ward
+# Sys.sleep(5)
+# dcCovid19ByWardTodayHTML <- remDr$findElement(using = "xpath", value = "/html/body/div[4]/section/div[2]/div/div/div/div[2]/div/div/article/div[1]/div[1]/div/div/table[2]")
+# Sys.sleep(5)
+# dcCovid19ByWardToday <- dcCovid19ByWardTodayHTML$getElementAttribute("outerHTML")[[1]] %>% read_html(useInternalNodes = T) %>% html_table(fill = T)
+dcCovid19ByWardToday <- read_excel(paste0("COVID19_DCHealthStatisticsDataV3 (NewFileStructure)", Sys.Date() - 1,  ".xlsx"), sheet = "Total Cases by Ward")
+dcCovid19ByAgeSexToday <- read_excel(paste0("COVID19_DCHealthStatisticsDataV3 (NewFileStructure)", Sys.Date() - 1,  ".xlsx"), sheet = "PatientAge-Gender")
 ## Stop the web-scraper
 Sys.sleep(5)
 remDr$close()
@@ -392,7 +403,8 @@ write_csv(MD_By_Sex, "MD_By_Sex.csv")
 MD_By_Age_Today <- casesByAgeAndSex[1:9,]
 colnames(MD_By_Age_Today) <- c("Age_Range", "Cases")
 
-MD_By_Age_Today <- MD_By_Age_Today %>% 
+MD_By_Age_Today <- MD_By_Age_Today %>%
+  mutate(Cases = str_remove_all(Cases, ",")) %>% 
   mutate(Date = Sys.Date() - 1, State = "Maryland", Cases = as.integer(Cases))
 
 
@@ -730,9 +742,12 @@ Sys.sleep(5)
 
 # DC Data analysis
 # Clean up crosstable and add in date and state column
-dcCovid19ByAgeSexToday <- dcCovid19ByAgeSexToday[[1]]
-colnames(dcCovid19ByAgeSexToday) <- unname(dcCovid19ByAgeSexToday[2,])
-dcCovid19ByAgeSexToday <- dcCovid19ByAgeSexToday[3:nrow(dcCovid19ByAgeSexToday),]
+
+# Unlist and column naming is not necessary anymore
+# dcCovid19ByAgeSexToday <- dcCovid19ByAgeSexToday[[1]]
+# colnames(dcCovid19ByAgeSexToday) <- unname(dcCovid19ByAgeSexToday[2,])
+# dcCovid19ByAgeSexToday <- dcCovid19ByAgeSexToday[3:nrow(dcCovid19ByAgeSexToday),]
+
 dcCovid19ByAgeSexTodayXTab <- dcCovid19ByAgeSexToday %>% 
   mutate(Date = Sys.Date() - 1, State = "District of Columbia", Cases = as.integer(`Total Positives`), Age_Range = `Patient Age (yrs)`, Male = as.integer(Male), Female = as.integer(Female))
 
@@ -752,7 +767,7 @@ dcCovid19ByAgeSexXTab <- bind_rows(dcCovid19ByAgeSexTodayXTab, dcCovid19ByAgeSex
 write_csv(dcCovid19ByAgeSexXTab, "dcCovid19ByAgeSexXTab.csv")
 
 # Get dataframe of just today's breakout by age and add date and state column
-dcCovid19ByAgeToday <- dcCovid19ByAgeSexToday[2:nrow(dcCovid19ByAgeSexToday),] %>% 
+dcCovid19ByAgeToday <- dcCovid19ByAgeSexToday[2:nrow(dcCovid19ByAgeSexToday),] %>% #dcCovid19ByAgeSexToday[2:nrow(dcCovid19ByAgeSexToday),] %>% 
   mutate(Age_Range = `Patient Age (yrs)`, Cases = as.integer(`Total Positives`), Date = Sys.Date() - 1, State = "District of Columbia", Male = as.integer(Male), Female = as.integer(Female)) %>% 
   select(Age_Range, Cases, Date, State)
 # Add today's breakout to the main file
@@ -783,12 +798,14 @@ write_csv(dcCovid19BySex, "dcCovid19BySex.csv")
 
 
 # Cleaning the DC by Ward breakout
-dcCovid19ByWardToday <- dcCovid19ByWardToday[[1]]
-colnames(dcCovid19ByWardToday) <- unname(dcCovid19ByWardToday[1,])
-dcCovid19ByWardToday <- dcCovid19ByWardToday[2:nrow(dcCovid19ByWardToday),]
+# Not needed anymore: dcCovid19ByWardToday <- dcCovid19ByWardToday[[1]]
+colnames(dcCovid19ByWardToday) <- c("Ward", as.character(seq.Date(from = as.Date("2020/03/31"), to = (Sys.Date() - 1), by = "day")))
+# Not needed anymore dcCovid19ByWardToday <- dcCovid19ByWardToday[2:nrow(dcCovid19ByWardToday),]
 # Adding in a date column
-dcCovid19ByWardToday <- dcCovid19ByWardToday %>% 
-  mutate(Date = Sys.Date() - 1, Cases = as.integer(`Total Positive Cases`), Ward = as.integer(Ward)) %>% 
+dcCovid19ByWardToday <- dcCovid19ByWardToday %>%
+  select(Ward, (as.character(Sys.Date() - 1))) %>%
+  rename(Cases = (as.character(Sys.Date() - 1))) %>% 
+  mutate(Date = Sys.Date() - 1, Cases = as.integer(Cases), Ward = as.integer(Ward)) %>% 
   select(Ward, Cases, Date)
 # Adding today's by ward breakout to main file
 dcCovid19ByWard <- read_csv("dcCovid19ByWard.csv")
@@ -865,7 +882,7 @@ Sys.sleep(5)
 # Making the Virginia statewide totals for the day
 Virginia <- Virginia_Totals_Today[c(1, 2, 4)]
 
-Virginia$Cases <- sum(Virginia_By_County$Cases)
+Virginia$Cases <- sum(Virginia_By_County_Today$Cases)
 Virginia$State <- "Virginia"
 
 Virginia <- Virginia %>% 
@@ -874,7 +891,7 @@ Virginia <- Virginia %>%
 
 # Making the Virginia statewide totals for the day
 Maryland <- tibble(State = "Maryland", 
-                   Cases = sum(MD_By_County$Cases), 
+                   Cases = sum(MD_By_County_Today$Cases), 
                    Deaths = MD_Summary_Today$Deaths, 
                    Tests = MD_Summary_Today$Tests, # This is fixed now: sum(MD_Summary_Today$Tests, sum(MD_By_County_Today$Cases)), # Fix this earlier by swaping the MD_Cases_By_County before the MD_Summary and replace the old test number with the test number plus the total cases for all counties.
                    Date = Sys.Date() - 1)
@@ -1106,7 +1123,7 @@ dcmdvaDeathsLine <- dailySummary %>%
   geom_line(aes(color = State), na.rm = T, size = 3) +
   geom_point(aes(color = State, shape = State), na.rm = T, size = 6) +
   scale_color_manual(values = c("#E91436", "#EBAB00", "#00257C")) +
-  scale_y_continuous(breaks = seq(min(dailySummary$Deaths, na.rm = T), max(dailySummary$Deaths, na.rm = T), by = 2)) +
+  scale_y_continuous(breaks = seq(min(dailySummary$Deaths, na.rm = T), max(dailySummary$Deaths, na.rm = T), by = 6)) +
   covid19Theme() +
   labs(title = "DMV Covid-19 deaths", subtitle = "Over time", caption = ggplotCaption) + xlab("") + ylab("")
 
@@ -1315,58 +1332,106 @@ Sys.sleep(15)
 # plotlyExample <- ggplotly(dmvCasesByCountyLine)
 # htmlwidgets::saveWidget(plotlyExample, file = "plotlyExample.html", selfcontained = F, libdir = getwd())
 
-dmvCasesByCountyLine <- DMV_Counties_Covid_Cases %>%
+
+dmvCasesByCountyLinePlotly <- DMV_Counties_Covid_Cases %>%
+  left_join(stateCountyPops, by = "FIPS") %>% 
   filter(Date >= as.Date("2020-03-23")) %>%
-  filter(FIPS %in% DMV_Closer_FIPS) %>%
-  ggplot(aes(x = Date, y = Cases)) +
-  geom_line(aes(color = County), size = 3) +
-  geom_point(aes(shape = State, color = County), size = 6) +
-  scale_y_continuous(trans = 'log2', breaks = trans_breaks("log2", function(x) 2^x)) + 
-  covid19Theme() +
-  scale_color_brewer(palette = "Paired") +
-  labs(title = "DMV Covid-19 cases by county", subtitle = "Over time", caption = ggplotCaption) + xlab("") + ylab("")
-
-legendText <- paste0(
-  "County: ", DMV_Cases$NAME, "<br/>",
-  "State: ", DMV_Cases$State, "<br/>",
-  "Cases: ", DMV_Cases$Cases, "<br/>"
-) %>% 
-  lapply(htmltools::HTML)
-
-test <- DMV_Counties_Covid_Cases %>%
-  filter(Date >= as.Date("2020-03-23")) %>%
-  filter(FIPS %in% DMV_Closer_FIPS)
+  filter(FIPS %in% DMV_Closer_FIPS) %>% 
+  mutate(Case_Rate_100K = (Cases / TOTAL_POP_100K))
 
 
-  plot_ly(data = test, 
-          x = ~Date, 
-          y = ~Cases,
-          linetype = ~factor(State),
-          color = ~factor(County),
-          text = ~State) %>% 
-  add_trace(colors = "Set3", 
+## This pretty much works! I need to get it to display only one option on rendering
+# https://stackoverflow.com/questions/42081811/plotly-drop-down-menu-not-restyling-y-correctly
+
+
+### This works!!!
+
+plot_ly(data = dmvCasesByCountyLinePlotly, x = ~Date) %>% 
+  add_trace(y = ~Cases,
+            linetype = ~factor(State),
+            color = ~factor(County),
+            colors = "Set3", 
             mode = "lines+markers", 
             type = "scatter", 
             symbol = ~State,
-            hoverinfo = "text",
-            hovertext = paste(
-              "State: ", test$State,
-              "<br>County: ", test$County,
-              "<br>Cases: ", test$Cases,
-              "<br>Date: ", test$Date
-            )) %>% 
-  layout(yaxis = list(type = "log"))
-
-
-DMV_Counties_Covid_Cases %>%
-  filter(Date >= as.Date("2020-03-23")) %>%
-  filter(FIPS %in% DMV_Closer_FIPS) %>%
-  plot_ly(x = ~Date, 
-          y = ~Cases,
-          linetype = ~factor(State),
-          color = ~factor(County)) %>% 
-  add_trace(colors = "Set3", 
+            hovertemplate = paste(
+              "State: ", dmvCasesByCountyLinePlotly$State,
+              "<br>County: ", dmvCasesByCountyLinePlotly$County,
+              "<br>Cases: ", "%{y}",
+              "<br>Date: ", "%{x}",
+              "<extra></extra>"
+            ), 
+            visible = T) %>%
+  add_trace(y = ~Case_Rate_100K,
+            linetype = ~factor(State),
+            color = ~factor(County),
+            colors = "Set3", 
             mode = "lines+markers", 
             type = "scatter", 
-            symbol = ~State) %>% 
-  layout(yaxis = list(type = "log"))
+            symbol = ~State,
+            hovertemplate = paste(
+              "State: ", dmvCasesByCountyLinePlotly$State,
+              "<br>County: ", dmvCasesByCountyLinePlotly$County,
+              "<br>Cases: ", "%{y}",
+              "<br>Date: ", "%{x}",
+              "<extra></extra>"
+            ), 
+            visible = F) %>%
+  layout(yaxis = list(type = "log"),
+         title = "DMV Covid-19 Cases & Case Rate by County",
+         updatemenus = list(
+           list(active = 0,
+                buttons = list(
+                  list(method = "restyle",
+                       args = list("visible", append(rep(list(TRUE), 12), rep(list(FALSE), 12))),
+                       label = "Cases"),
+                  list(method = "restyle",
+                       args = list("visible", append(rep(list(FALSE), 12), rep(list(TRUE), 12))),
+                       label = "Cases per 100K")))
+         ))
+
+dmvCasesByCountyBarPerCapPlotly <- DMV_Counties_Covid_Cases %>%
+  left_join(stateCountyPops, by = "FIPS") %>% 
+  filter(Date == max(Date)) %>%
+  filter(FIPS %in% DMV_Closer_FIPS) %>% 
+  mutate(Case_Rate_100K = (Cases / TOTAL_POP_100K))
+  
+
+plot_ly(dmvCasesByCountyBarPerCapPlotly, x = ~factor(State), type = "bar") %>% 
+  add_trace(y = ~Cases,
+            color = ~factor(County),
+            colors = "Set3", 
+            hovertemplate = paste(
+              "State: ", dmvCasesByCountyBarPerCapPlotly$State,
+              "<br>County: ", dmvCasesByCountyBarPerCapPlotly$County,
+              "<br>Cases: ", "%{y}",
+              "<br>Date: ", "%{x}",
+              "<extra></extra>"
+            ), 
+            visible = T) %>%
+  add_trace(y = ~Case_Rate_100K,
+            color = ~factor(County),
+            colors = "Set3", 
+            hovertemplate = paste(
+              "State: ", dmvCasesByCountyBarPerCapPlotly$State,
+              "<br>County: ", dmvCasesByCountyBarPerCapPlotly$County,
+              "<br>Cases: ", "%{y}",
+              "<br>Date: ", "%{x}",
+              "<extra></extra>"
+            ), 
+            visible = F) %>% 
+  layout(title = paste("DMV Covid-19 Cases & Case Rate by County on", Sys.Date() - 1, sep = " "),
+         updatemenus = list(
+           list(active = 0,
+                buttons = list(
+                  list(method = "restyle",
+                       args = list("visible", append(rep(list(TRUE), 12), rep(list(FALSE), 12))),
+                       label = "Cases"),
+                  list(method = "restyle",
+                       args = list("visible", append(rep(list(FALSE), 12), rep(list(TRUE), 12))),
+                       label = "Cases per 100K")))
+         ))
+
+
+
+

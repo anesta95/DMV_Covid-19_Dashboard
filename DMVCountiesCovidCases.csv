@@ -1,344 +1,391 @@
 County,Cases,Date,State,Abbr,FIPS,Deaths
-Arlington,203,2020-04-06,Virginia,VA,51013,NA
+Arlington,254,2020-04-07,Virginia,VA,51013,NA
+Clarke,3,2020-04-07,Virginia,VA,51043,NA
+Culpeper,10,2020-04-07,Virginia,VA,51047,NA
+Prince William,263,2020-04-07,Virginia,VA,51153,NA
+Warren,8,2020-04-07,Virginia,VA,51187,NA
+Alexandria City,143,2020-04-07,Virginia,VA,51510,NA
+Fairfax City,0,2020-04-07,Virginia,VA,51600,NA
+Manassas Park,5,2020-04-07,Virginia,VA,51685,NA
+Fairfax,570,2020-04-07,Virginia,VA,51059,NA
+Fauquier,17,2020-04-07,Virginia,VA,51061,NA
+Loudoun,238,2020-04-07,Virginia,VA,51107,NA
+Rappahannock,1,2020-04-07,Virginia,VA,51157,NA
+Spotsylvania,31,2020-04-07,Virginia,VA,51177,NA
+Stafford,48,2020-04-07,Virginia,VA,51179,NA
+Falls Church,0,2020-04-07,Virginia,VA,51610,NA
+Fredericksburg,8,2020-04-07,Virginia,VA,51630,NA
+Manassas City,20,2020-04-07,Virginia,VA,51683,NA
+Calvert,56,2020-04-07,Maryland,MD,24009,2
+Charles,164,2020-04-07,Maryland,MD,24017,2
+Frederick,199,2020-04-07,Maryland,MD,24021,4
+Montgomery,1088,2020-04-07,Maryland,MD,24031,26
+Prince Georges,1310,2020-04-07,Maryland,MD,24033,32
+Jefferson,38,2020-04-07,West Virginia,WV,54037,NA
+District of Columbia,1440,2020-04-07,District of Columbia,DC,11001,NA
+District of Columbia,1211,2020-04-06,District of Columbia,DC,11001,NA
+Arlington,237,2020-04-06,Virginia,VA,51013,NA
 Clarke,2,2020-04-06,Virginia,VA,51043,NA
-Culpeper,8,2020-04-06,Virginia,VA,51047,NA
-Prince William,193,2020-04-06,Virginia,VA,51153,NA
-Warren,5,2020-04-06,Virginia,VA,51187,NA
-Alexandria City,93,2020-04-06,Virginia,VA,51510,NA
+Culpeper,9,2020-04-06,Virginia,VA,51047,NA
+Prince William,236,2020-04-06,Virginia,VA,51153,NA
+Warren,6,2020-04-06,Virginia,VA,51187,NA
+Alexandria City,126,2020-04-06,Virginia,VA,51510,NA
 Fairfax City,0,2020-04-06,Virginia,VA,51600,NA
 Manassas Park,4,2020-04-06,Virginia,VA,51685,NA
-Fairfax,488,2020-04-06,Virginia,VA,51059,NA
-Fauquier,11,2020-04-06,Virginia,VA,51061,NA
-Loudoun,188,2020-04-06,Virginia,VA,51107,NA
-Rappahannock,0,2020-04-06,Virginia,VA,51157,NA
-Spotsylvania,26,2020-04-06,Virginia,VA,51177,NA
-Stafford,43,2020-04-06,Virginia,VA,51179,NA
+Fairfax,532,2020-04-06,Virginia,VA,51059,NA
+Fauquier,18,2020-04-06,Virginia,VA,51061,NA
+Loudoun,209,2020-04-06,Virginia,VA,51107,NA
+Rappahannock,1,2020-04-06,Virginia,VA,51157,NA
+Spotsylvania,29,2020-04-06,Virginia,VA,51177,NA
+Stafford,49,2020-04-06,Virginia,VA,51179,NA
 Falls Church,0,2020-04-06,Virginia,VA,51610,NA
-Fredericksburg,7,2020-04-06,Virginia,VA,51630,NA
-Manassas City,17,2020-04-06,Virginia,VA,51683,NA
-Calvert,40,2020-04-06,Maryland,MD,24009,1
-Charles,129,2020-04-06,Maryland,MD,24017,2
-Frederick,138,2020-04-06,Maryland,MD,24021,4
-Montgomery,793,2020-04-06,Maryland,MD,24031,19
-Prince Georges,916,2020-04-06,Maryland,MD,24033,23
-Jefferson,22,2020-04-06,West Virginia,WV,54037,NA
-District of Columbia,1211,2020-04-06,District of Columbia,DC,11001,NA
-Arlington,181,2020-04-05,Virginia,VA,51013,NA
+Fredericksburg,8,2020-04-06,Virginia,VA,51630,NA
+Manassas City,20,2020-04-06,Virginia,VA,51683,NA
+Calvert,41,2020-04-06,Maryland,MD,24009,1
+Charles,136,2020-04-06,Maryland,MD,24017,2
+Frederick,151,2020-04-06,Maryland,MD,24021,4
+Montgomery,871,2020-04-06,Maryland,MD,24031,21
+Prince Georges,1020,2020-04-06,Maryland,MD,24033,26
+Jefferson,31,2020-04-06,West Virginia,WV,54037,NA
+Arlington,203,2020-04-05,Virginia,VA,51013,NA
 Clarke,2,2020-04-05,Virginia,VA,51043,NA
 Culpeper,8,2020-04-05,Virginia,VA,51047,NA
-Prince William,175,2020-04-05,Virginia,VA,51153,NA
-Warren,4,2020-04-05,Virginia,VA,51187,NA
-Alexandria City,74,2020-04-05,Virginia,VA,51510,NA
+Prince William,193,2020-04-05,Virginia,VA,51153,NA
+Warren,5,2020-04-05,Virginia,VA,51187,NA
+Alexandria City,93,2020-04-05,Virginia,VA,51510,NA
 Fairfax City,0,2020-04-05,Virginia,VA,51600,NA
-Manassas Park,2,2020-04-05,Virginia,VA,51685,NA
-Fairfax,426,2020-04-05,Virginia,VA,51059,NA
-Fauquier,10,2020-04-05,Virginia,VA,51061,NA
-Loudoun,167,2020-04-05,Virginia,VA,51107,NA
+Manassas Park,4,2020-04-05,Virginia,VA,51685,NA
+Fairfax,488,2020-04-05,Virginia,VA,51059,NA
+Fauquier,11,2020-04-05,Virginia,VA,51061,NA
+Loudoun,188,2020-04-05,Virginia,VA,51107,NA
 Rappahannock,0,2020-04-05,Virginia,VA,51157,NA
-Spotsylvania,24,2020-04-05,Virginia,VA,51177,NA
-Stafford,41,2020-04-05,Virginia,VA,51179,NA
+Spotsylvania,26,2020-04-05,Virginia,VA,51177,NA
+Stafford,43,2020-04-05,Virginia,VA,51179,NA
 Falls Church,0,2020-04-05,Virginia,VA,51610,NA
 Fredericksburg,7,2020-04-05,Virginia,VA,51630,NA
-Manassas City,14,2020-04-05,Virginia,VA,51683,NA
-Calvert,39,2020-04-05,Maryland,MD,24009,1
-Charles,111,2020-04-05,Maryland,MD,24017,2
-Frederick,112,2020-04-05,Maryland,MD,24021,3
-Montgomery,693,2020-04-05,Maryland,MD,24031,13
-Prince Georges,785,2020-04-05,Maryland,MD,24033,16
-Jefferson,21,2020-04-05,West Virginia,WV,54037,NA
+Manassas City,17,2020-04-05,Virginia,VA,51683,NA
+Calvert,40,2020-04-05,Maryland,MD,24009,1
+Charles,129,2020-04-05,Maryland,MD,24017,2
+Frederick,138,2020-04-05,Maryland,MD,24021,4
+Montgomery,793,2020-04-05,Maryland,MD,24031,19
+Prince Georges,916,2020-04-05,Maryland,MD,24033,23
+Jefferson,22,2020-04-05,West Virginia,WV,54037,NA
 District of Columbia,1097,2020-04-05,District of Columbia,DC,11001,NA
-Arlington,150,2020-04-04,Virginia,VA,51013,NA
+Arlington,181,2020-04-04,Virginia,VA,51013,NA
 Clarke,2,2020-04-04,Virginia,VA,51043,NA
 Culpeper,8,2020-04-04,Virginia,VA,51047,NA
-Prince William,159,2020-04-04,Virginia,VA,51153,NA
+Prince William,175,2020-04-04,Virginia,VA,51153,NA
 Warren,4,2020-04-04,Virginia,VA,51187,NA
-Alexandria City,68,2020-04-04,Virginia,VA,51510,NA
+Alexandria City,74,2020-04-04,Virginia,VA,51510,NA
 Fairfax City,0,2020-04-04,Virginia,VA,51600,NA
 Manassas Park,2,2020-04-04,Virginia,VA,51685,NA
-Fairfax,387,2020-04-04,Virginia,VA,51059,NA
+Fairfax,426,2020-04-04,Virginia,VA,51059,NA
 Fauquier,10,2020-04-04,Virginia,VA,51061,NA
-Loudoun,150,2020-04-04,Virginia,VA,51107,NA
+Loudoun,167,2020-04-04,Virginia,VA,51107,NA
 Rappahannock,0,2020-04-04,Virginia,VA,51157,NA
-Spotsylvania,18,2020-04-04,Virginia,VA,51177,NA
-Stafford,38,2020-04-04,Virginia,VA,51179,NA
+Spotsylvania,24,2020-04-04,Virginia,VA,51177,NA
+Stafford,41,2020-04-04,Virginia,VA,51179,NA
 Falls Church,0,2020-04-04,Virginia,VA,51610,NA
 Fredericksburg,7,2020-04-04,Virginia,VA,51630,NA
 Manassas City,14,2020-04-04,Virginia,VA,51683,NA
-Calvert,33,2020-04-04,Maryland,MD,24009,1
-Charles,95,2020-04-04,Maryland,MD,24017,1
-Frederick,73,2020-04-04,Maryland,MD,24021,2
-Montgomery,640,2020-04-04,Maryland,MD,24031,9
-Prince Georges,653,2020-04-04,Maryland,MD,24033,13
-Jefferson,17,2020-04-04,West Virginia,WV,54037,NA
+Calvert,39,2020-04-04,Maryland,MD,24009,1
+Charles,111,2020-04-04,Maryland,MD,24017,2
+Frederick,112,2020-04-04,Maryland,MD,24021,3
+Montgomery,693,2020-04-04,Maryland,MD,24031,13
+Prince Georges,785,2020-04-04,Maryland,MD,24033,16
+Jefferson,21,2020-04-04,West Virginia,WV,54037,NA
 District of Columbia,998,2020-04-04,District of Columbia,DC,11001,NA
-Arlington,135,2020-04-03,Virginia,VA,51013,NA
+Arlington,150,2020-04-03,Virginia,VA,51013,NA
 Clarke,2,2020-04-03,Virginia,VA,51043,NA
-Culpeper,7,2020-04-03,Virginia,VA,51047,NA
-Prince William,131,2020-04-03,Virginia,VA,51153,NA
+Culpeper,8,2020-04-03,Virginia,VA,51047,NA
+Prince William,159,2020-04-03,Virginia,VA,51153,NA
 Warren,4,2020-04-03,Virginia,VA,51187,NA
-Alexandria City,56,2020-04-03,Virginia,VA,51510,NA
+Alexandria City,68,2020-04-03,Virginia,VA,51510,NA
 Fairfax City,0,2020-04-03,Virginia,VA,51600,NA
 Manassas Park,2,2020-04-03,Virginia,VA,51685,NA
-Fairfax,372,2020-04-03,Virginia,VA,51059,NA
-Fauquier,9,2020-04-03,Virginia,VA,51061,NA
-Loudoun,130,2020-04-03,Virginia,VA,51107,NA
+Fairfax,387,2020-04-03,Virginia,VA,51059,NA
+Fauquier,10,2020-04-03,Virginia,VA,51061,NA
+Loudoun,150,2020-04-03,Virginia,VA,51107,NA
 Rappahannock,0,2020-04-03,Virginia,VA,51157,NA
-Spotsylvania,11,2020-04-03,Virginia,VA,51177,NA
-Stafford,29,2020-04-03,Virginia,VA,51179,NA
+Spotsylvania,18,2020-04-03,Virginia,VA,51177,NA
+Stafford,38,2020-04-03,Virginia,VA,51179,NA
 Falls Church,0,2020-04-03,Virginia,VA,51610,NA
-Fredericksburg,4,2020-04-03,Virginia,VA,51630,NA
-Manassas City,13,2020-04-03,Virginia,VA,51683,NA
-Calvert,30,2020-04-03,Maryland,MD,24009,1
-Charles,90,2020-04-03,Maryland,MD,24017,1
-Frederick,54,2020-04-03,Maryland,MD,24021,2
-Montgomery,566,2020-04-03,Maryland,MD,24031,9
-Prince Georges,563,2020-04-03,Maryland,MD,24033,9
-Jefferson,12,2020-04-03,West Virginia,WV,54037,NA
+Fredericksburg,7,2020-04-03,Virginia,VA,51630,NA
+Manassas City,14,2020-04-03,Virginia,VA,51683,NA
+Calvert,33,2020-04-03,Maryland,MD,24009,1
+Charles,95,2020-04-03,Maryland,MD,24017,1
+Frederick,73,2020-04-03,Maryland,MD,24021,2
+Montgomery,640,2020-04-03,Maryland,MD,24031,9
+Prince Georges,653,2020-04-03,Maryland,MD,24033,13
+Jefferson,17,2020-04-03,West Virginia,WV,54037,NA
 District of Columbia,902,2020-04-03,District of Columbia,DC,11001,NA
-Arlington,128,2020-04-02,Virginia,VA,51013,NA
-Clarke,1,2020-04-02,Virginia,VA,51043,NA
-Culpeper,6,2020-04-02,Virginia,VA,51047,NA
-Prince William,117,2020-04-02,Virginia,VA,51153,NA
-Warren,3,2020-04-02,Virginia,VA,51187,NA
-Alexandria City,33,2020-04-02,Virginia,VA,51510,NA
+Arlington,135,2020-04-02,Virginia,VA,51013,NA
+Clarke,2,2020-04-02,Virginia,VA,51043,NA
+Culpeper,7,2020-04-02,Virginia,VA,51047,NA
+Prince William,131,2020-04-02,Virginia,VA,51153,NA
+Warren,4,2020-04-02,Virginia,VA,51187,NA
+Alexandria City,56,2020-04-02,Virginia,VA,51510,NA
 Fairfax City,0,2020-04-02,Virginia,VA,51600,NA
-Manassas Park,1,2020-04-02,Virginia,VA,51685,NA
-Fairfax,328,2020-04-02,Virginia,VA,51059,NA
-Fauquier,8,2020-04-02,Virginia,VA,51061,NA
-Loudoun,121,2020-04-02,Virginia,VA,51107,NA
+Manassas Park,2,2020-04-02,Virginia,VA,51685,NA
+Fairfax,372,2020-04-02,Virginia,VA,51059,NA
+Fauquier,9,2020-04-02,Virginia,VA,51061,NA
+Loudoun,130,2020-04-02,Virginia,VA,51107,NA
 Rappahannock,0,2020-04-02,Virginia,VA,51157,NA
-Spotsylvania,9,2020-04-02,Virginia,VA,51177,NA
-Stafford,27,2020-04-02,Virginia,VA,51179,NA
+Spotsylvania,11,2020-04-02,Virginia,VA,51177,NA
+Stafford,29,2020-04-02,Virginia,VA,51179,NA
 Falls Church,0,2020-04-02,Virginia,VA,51610,NA
-Fredericksburg,2,2020-04-02,Virginia,VA,51630,NA
-Manassas City,12,2020-04-02,Virginia,VA,51683,NA
-Calvert,22,2020-04-02,Maryland,MD,24009,NA
-Charles,69,2020-04-02,Maryland,MD,24017,NA
-Frederick,45,2020-04-02,Maryland,MD,24021,NA
-Montgomery,498,2020-04-02,Maryland,MD,24031,NA
-Prince Georges,473,2020-04-02,Maryland,MD,24033,NA
+Fredericksburg,4,2020-04-02,Virginia,VA,51630,NA
+Manassas City,13,2020-04-02,Virginia,VA,51683,NA
+Calvert,30,2020-04-02,Maryland,MD,24009,1
+Charles,90,2020-04-02,Maryland,MD,24017,1
+Frederick,54,2020-04-02,Maryland,MD,24021,2
+Montgomery,566,2020-04-02,Maryland,MD,24031,9
+Prince Georges,563,2020-04-02,Maryland,MD,24033,9
 Jefferson,12,2020-04-02,West Virginia,WV,54037,NA
 District of Columbia,757,2020-04-02,District of Columbia,DC,11001,NA
-Arlington,119,2020-04-01,Virginia,VA,51013,NA
+Arlington,128,2020-04-01,Virginia,VA,51013,NA
 Clarke,1,2020-04-01,Virginia,VA,51043,NA
-Culpeper,5,2020-04-01,Virginia,VA,51047,NA
-Prince William,106,2020-04-01,Virginia,VA,51153,NA
+Culpeper,6,2020-04-01,Virginia,VA,51047,NA
+Prince William,117,2020-04-01,Virginia,VA,51153,NA
 Warren,3,2020-04-01,Virginia,VA,51187,NA
-Alexandria City,32,2020-04-01,Virginia,VA,51510,NA
+Alexandria City,33,2020-04-01,Virginia,VA,51510,NA
 Fairfax City,0,2020-04-01,Virginia,VA,51600,NA
 Manassas Park,1,2020-04-01,Virginia,VA,51685,NA
-Fairfax,288,2020-04-01,Virginia,VA,51059,NA
-Fauquier,7,2020-04-01,Virginia,VA,51061,NA
-Loudoun,105,2020-04-01,Virginia,VA,51107,NA
+Fairfax,328,2020-04-01,Virginia,VA,51059,NA
+Fauquier,8,2020-04-01,Virginia,VA,51061,NA
+Loudoun,121,2020-04-01,Virginia,VA,51107,NA
 Rappahannock,0,2020-04-01,Virginia,VA,51157,NA
-Spotsylvania,8,2020-04-01,Virginia,VA,51177,NA
-Stafford,28,2020-04-01,Virginia,VA,51179,NA
+Spotsylvania,9,2020-04-01,Virginia,VA,51177,NA
+Stafford,27,2020-04-01,Virginia,VA,51179,NA
 Falls Church,0,2020-04-01,Virginia,VA,51610,NA
-Fredericksburg,1,2020-04-01,Virginia,VA,51630,NA
-Manassas City,9,2020-04-01,Virginia,VA,51683,NA
-Calvert,18,2020-04-01,Maryland,MD,24009,NA
-Charles,56,2020-04-01,Maryland,MD,24017,NA
-Frederick,35,2020-04-01,Maryland,MD,24021,NA
-Montgomery,447,2020-04-01,Maryland,MD,24031,NA
-Prince Georges,403,2020-04-01,Maryland,MD,24033,NA
-Jefferson,9,2020-04-01,West Virginia,WV,54037,NA
+Fredericksburg,2,2020-04-01,Virginia,VA,51630,NA
+Manassas City,12,2020-04-01,Virginia,VA,51683,NA
+Calvert,22,2020-04-01,Maryland,MD,24009,NA
+Charles,69,2020-04-01,Maryland,MD,24017,NA
+Frederick,45,2020-04-01,Maryland,MD,24021,NA
+Montgomery,498,2020-04-01,Maryland,MD,24031,NA
+Prince Georges,473,2020-04-01,Maryland,MD,24033,NA
+Jefferson,12,2020-04-01,West Virginia,WV,54037,NA
 District of Columbia,653,2020-04-01,District of Columbia,DC,11001,NA
-Arlington,104,2020-03-31,Virginia,VA,51013,NA
+Arlington,119,2020-03-31,Virginia,VA,51013,NA
 Clarke,1,2020-03-31,Virginia,VA,51043,NA
-Culpeper,3,2020-03-31,Virginia,VA,51047,NA
-Prince William,94,2020-03-31,Virginia,VA,51153,NA
+Culpeper,5,2020-03-31,Virginia,VA,51047,NA
+Prince William,106,2020-03-31,Virginia,VA,51153,NA
 Warren,3,2020-03-31,Virginia,VA,51187,NA
-Alexandria City,30,2020-03-31,Virginia,VA,51510,NA
-Fairfax City,1,2020-03-31,Virginia,VA,51600,NA
+Alexandria City,32,2020-03-31,Virginia,VA,51510,NA
+Fairfax City,0,2020-03-31,Virginia,VA,51600,NA
 Manassas Park,1,2020-03-31,Virginia,VA,51685,NA
-Fairfax,244,2020-03-31,Virginia,VA,51059,NA
+Fairfax,288,2020-03-31,Virginia,VA,51059,NA
 Fauquier,7,2020-03-31,Virginia,VA,51061,NA
-Loudoun,87,2020-03-31,Virginia,VA,51107,NA
+Loudoun,105,2020-03-31,Virginia,VA,51107,NA
 Rappahannock,0,2020-03-31,Virginia,VA,51157,NA
-Spotsylvania,7,2020-03-31,Virginia,VA,51177,NA
-Stafford,24,2020-03-31,Virginia,VA,51179,NA
+Spotsylvania,8,2020-03-31,Virginia,VA,51177,NA
+Stafford,28,2020-03-31,Virginia,VA,51179,NA
 Falls Church,0,2020-03-31,Virginia,VA,51610,NA
 Fredericksburg,1,2020-03-31,Virginia,VA,51630,NA
-Manassas City,8,2020-03-31,Virginia,VA,51683,NA
-Calvert,15,2020-03-31,Maryland,MD,24009,NA
-Charles,40,2020-03-31,Maryland,MD,24017,NA
-Frederick,33,2020-03-31,Maryland,MD,24021,NA
-Montgomery,388,2020-03-31,Maryland,MD,24031,NA
-Prince Georges,341,2020-03-31,Maryland,MD,24033,NA
-Jefferson,8,2020-03-31,West Virginia,WV,54037,NA
+Manassas City,9,2020-03-31,Virginia,VA,51683,NA
+Calvert,18,2020-03-31,Maryland,MD,24009,NA
+Charles,56,2020-03-31,Maryland,MD,24017,NA
+Frederick,35,2020-03-31,Maryland,MD,24021,NA
+Montgomery,447,2020-03-31,Maryland,MD,24031,NA
+Prince Georges,403,2020-03-31,Maryland,MD,24033,NA
+Jefferson,9,2020-03-31,West Virginia,WV,54037,NA
 District of Columbia,586,2020-03-31,District of Columbia,DC,11001,NA
-Arlington,86,2020-03-30,Virginia,VA,51013,NA
-Clarke,0,2020-03-30,Virginia,VA,51043,NA
+Arlington,104,2020-03-30,Virginia,VA,51013,NA
+Clarke,1,2020-03-30,Virginia,VA,51043,NA
 Culpeper,3,2020-03-30,Virginia,VA,51047,NA
-Prince William,79,2020-03-30,Virginia,VA,51153,NA
-Warren,2,2020-03-30,Virginia,VA,51187,NA
-Alexandria City,26,2020-03-30,Virginia,VA,51510,NA
+Prince William,94,2020-03-30,Virginia,VA,51153,NA
+Warren,3,2020-03-30,Virginia,VA,51187,NA
+Alexandria City,30,2020-03-30,Virginia,VA,51510,NA
 Fairfax City,1,2020-03-30,Virginia,VA,51600,NA
 Manassas Park,1,2020-03-30,Virginia,VA,51685,NA
-Fairfax,224,2020-03-30,Virginia,VA,51059,NA
-Fauquier,6,2020-03-30,Virginia,VA,51061,NA
-Loudoun,61,2020-03-30,Virginia,VA,51107,NA
+Fairfax,244,2020-03-30,Virginia,VA,51059,NA
+Fauquier,7,2020-03-30,Virginia,VA,51061,NA
+Loudoun,87,2020-03-30,Virginia,VA,51107,NA
 Rappahannock,0,2020-03-30,Virginia,VA,51157,NA
-Spotsylvania,6,2020-03-30,Virginia,VA,51177,NA
-Stafford,20,2020-03-30,Virginia,VA,51179,NA
+Spotsylvania,7,2020-03-30,Virginia,VA,51177,NA
+Stafford,24,2020-03-30,Virginia,VA,51179,NA
 Falls Church,0,2020-03-30,Virginia,VA,51610,NA
 Fredericksburg,1,2020-03-30,Virginia,VA,51630,NA
-Manassas City,7,2020-03-30,Virginia,VA,51683,NA
-Calvert,12,2020-03-30,Maryland,MD,24009,NA
-Charles,33,2020-03-30,Maryland,MD,24017,NA
-Frederick,26,2020-03-30,Maryland,MD,24021,NA
-Montgomery,341,2020-03-30,Maryland,MD,24031,NA
-Prince Georges,294,2020-03-30,Maryland,MD,24033,NA
-Jefferson,6,2020-03-30,West Virginia,WV,54037,NA
+Manassas City,8,2020-03-30,Virginia,VA,51683,NA
+Calvert,15,2020-03-30,Maryland,MD,24009,NA
+Charles,40,2020-03-30,Maryland,MD,24017,NA
+Frederick,33,2020-03-30,Maryland,MD,24021,NA
+Montgomery,388,2020-03-30,Maryland,MD,24031,NA
+Prince Georges,341,2020-03-30,Maryland,MD,24033,NA
+Jefferson,8,2020-03-30,West Virginia,WV,54037,NA
 District of Columbia,495,2020-03-30,District of Columbia,DC,11001,NA
-Fairfax,187,2020-03-29,Virginia,VA,51059,NA
+Arlington,86,2020-03-29,Virginia,VA,51013,NA
+Clarke,0,2020-03-29,Virginia,VA,51043,NA
+Culpeper,3,2020-03-29,Virginia,VA,51047,NA
+Prince William,79,2020-03-29,Virginia,VA,51153,NA
+Warren,2,2020-03-29,Virginia,VA,51187,NA
+Alexandria City,26,2020-03-29,Virginia,VA,51510,NA
+Fairfax City,1,2020-03-29,Virginia,VA,51600,NA
+Manassas Park,1,2020-03-29,Virginia,VA,51685,NA
+Fairfax,224,2020-03-29,Virginia,VA,51059,NA
 Fauquier,6,2020-03-29,Virginia,VA,51061,NA
 Loudoun,61,2020-03-29,Virginia,VA,51107,NA
 Rappahannock,0,2020-03-29,Virginia,VA,51157,NA
-Spotsylvania,5,2020-03-29,Virginia,VA,51177,NA
-Stafford,13,2020-03-29,Virginia,VA,51179,NA
+Spotsylvania,6,2020-03-29,Virginia,VA,51177,NA
+Stafford,20,2020-03-29,Virginia,VA,51179,NA
 Falls Church,0,2020-03-29,Virginia,VA,51610,NA
 Fredericksburg,1,2020-03-29,Virginia,VA,51630,NA
-Manassas City,5,2020-03-29,Virginia,VA,51683,NA
-Arlington,84,2020-03-29,Virginia,VA,51013,NA
-Clarke,0,2020-03-29,Virginia,VA,51043,NA
-Culpeper,2,2020-03-29,Virginia,VA,51047,NA
-Prince William,72,2020-03-29,Virginia,VA,51153,NA
-Warren,2,2020-03-29,Virginia,VA,51187,NA
-Alexandria City,25,2020-03-29,Virginia,VA,51510,NA
-Fairfax City,1,2020-03-29,Virginia,VA,51600,NA
-Manassas Park,1,2020-03-29,Virginia,VA,51685,NA
-Calvert,10,2020-03-29,Maryland,MD,24009,NA
-Charles,28,2020-03-29,Maryland,MD,24017,NA
-Frederick,24,2020-03-29,Maryland,MD,24021,NA
-Montgomery,301,2020-03-29,Maryland,MD,24031,NA
-Prince Georges,247,2020-03-29,Maryland,MD,24033,NA
-Jefferson,5,2020-03-29,West Virginia,WV,54037,NA
+Manassas City,7,2020-03-29,Virginia,VA,51683,NA
+Calvert,12,2020-03-29,Maryland,MD,24009,NA
+Charles,33,2020-03-29,Maryland,MD,24017,NA
+Frederick,26,2020-03-29,Maryland,MD,24021,NA
+Montgomery,341,2020-03-29,Maryland,MD,24031,NA
+Prince Georges,294,2020-03-29,Maryland,MD,24033,NA
+Jefferson,6,2020-03-29,West Virginia,WV,54037,NA
 District of Columbia,401,2020-03-29,District of Columbia,DC,11001,NA
-Arlington,75,2020-03-28,Virginia,VA,51013,NA
-Clarke,0,2020-03-28,Virginia,VA,51043,NA
-Culpeper,2,2020-03-28,Virginia,VA,51047,NA
-Prince William,56,2020-03-28,Virginia,VA,51153,NA
-Warren,2,2020-03-28,Virginia,VA,51187,NA
-Alexandria City,20,2020-03-28,Virginia,VA,51510,NA
-Fairfax City,0,2020-03-28,Virginia,VA,51600,NA
-Manassas Park,0,2020-03-28,Virginia,VA,51685,NA
-Fairfax,156,2020-03-28,Virginia,VA,51059,NA
+Fairfax,187,2020-03-28,Virginia,VA,51059,NA
 Fauquier,6,2020-03-28,Virginia,VA,51061,NA
-Loudoun,54,2020-03-28,Virginia,VA,51107,NA
+Loudoun,61,2020-03-28,Virginia,VA,51107,NA
 Rappahannock,0,2020-03-28,Virginia,VA,51157,NA
-Spotsylvania,3,2020-03-28,Virginia,VA,51177,NA
-Stafford,11,2020-03-28,Virginia,VA,51179,NA
+Spotsylvania,5,2020-03-28,Virginia,VA,51177,NA
+Stafford,13,2020-03-28,Virginia,VA,51179,NA
 Falls Church,0,2020-03-28,Virginia,VA,51610,NA
 Fredericksburg,1,2020-03-28,Virginia,VA,51630,NA
-Manassas City,4,2020-03-28,Virginia,VA,51683,NA
-Calvert,8,2020-03-28,Maryland,MD,24009,NA
-Charles,21,2020-03-28,Maryland,MD,24017,NA
-Frederick,22,2020-03-28,Maryland,MD,24021,NA
-Montgomery,255,2020-03-28,Maryland,MD,24031,NA
-Prince Georges,196,2020-03-28,Maryland,MD,24033,NA
-Jefferson,4,2020-03-28,West Virginia,WV,54037,NA
+Manassas City,5,2020-03-28,Virginia,VA,51683,NA
+Arlington,84,2020-03-28,Virginia,VA,51013,NA
+Clarke,0,2020-03-28,Virginia,VA,51043,NA
+Culpeper,2,2020-03-28,Virginia,VA,51047,NA
+Prince William,72,2020-03-28,Virginia,VA,51153,NA
+Warren,2,2020-03-28,Virginia,VA,51187,NA
+Alexandria City,25,2020-03-28,Virginia,VA,51510,NA
+Fairfax City,1,2020-03-28,Virginia,VA,51600,NA
+Manassas Park,1,2020-03-28,Virginia,VA,51685,NA
+Calvert,10,2020-03-28,Maryland,MD,24009,NA
+Charles,28,2020-03-28,Maryland,MD,24017,NA
+Frederick,24,2020-03-28,Maryland,MD,24021,NA
+Montgomery,301,2020-03-28,Maryland,MD,24031,NA
+Prince Georges,247,2020-03-28,Maryland,MD,24033,NA
+Jefferson,5,2020-03-28,West Virginia,WV,54037,NA
 District of Columbia,342,2020-03-28,District of Columbia,DC,11001,NA
-Arlington,63,2020-03-27,Virginia,VA,51013,NA
+Arlington,75,2020-03-27,Virginia,VA,51013,NA
 Clarke,0,2020-03-27,Virginia,VA,51043,NA
 Culpeper,2,2020-03-27,Virginia,VA,51047,NA
-Prince William,44,2020-03-27,Virginia,VA,51153,NA
+Prince William,56,2020-03-27,Virginia,VA,51153,NA
 Warren,2,2020-03-27,Virginia,VA,51187,NA
-Alexandria City,18,2020-03-27,Virginia,VA,51510,NA
+Alexandria City,20,2020-03-27,Virginia,VA,51510,NA
 Fairfax City,0,2020-03-27,Virginia,VA,51600,NA
 Manassas Park,0,2020-03-27,Virginia,VA,51685,NA
-Fairfax,124,2020-03-27,Virginia,VA,51059,NA
-Fauquier,4,2020-03-27,Virginia,VA,51061,NA
-Loudoun,43,2020-03-27,Virginia,VA,51107,NA
+Fairfax,156,2020-03-27,Virginia,VA,51059,NA
+Fauquier,6,2020-03-27,Virginia,VA,51061,NA
+Loudoun,54,2020-03-27,Virginia,VA,51107,NA
 Rappahannock,0,2020-03-27,Virginia,VA,51157,NA
-Spotsylvania,2,2020-03-27,Virginia,VA,51177,NA
+Spotsylvania,3,2020-03-27,Virginia,VA,51177,NA
 Stafford,11,2020-03-27,Virginia,VA,51179,NA
 Falls Church,0,2020-03-27,Virginia,VA,51610,NA
 Fredericksburg,1,2020-03-27,Virginia,VA,51630,NA
-Manassas City,3,2020-03-27,Virginia,VA,51683,NA
-Calvert,9,2020-03-27,Maryland,MD,24009,NA
-Charles,17,2020-03-27,Maryland,MD,24017,NA
-Frederick,15,2020-03-27,Maryland,MD,24021,NA
-Montgomery,208,2020-03-27,Maryland,MD,24031,NA
-Prince Georges,148,2020-03-27,Maryland,MD,24033,NA
+Manassas City,4,2020-03-27,Virginia,VA,51683,NA
+Calvert,8,2020-03-27,Maryland,MD,24009,NA
+Charles,21,2020-03-27,Maryland,MD,24017,NA
+Frederick,22,2020-03-27,Maryland,MD,24021,NA
+Montgomery,255,2020-03-27,Maryland,MD,24031,NA
+Prince Georges,196,2020-03-27,Maryland,MD,24033,NA
 Jefferson,4,2020-03-27,West Virginia,WV,54037,NA
 District of Columbia,314,2020-03-27,District of Columbia,DC,11001,NA
-Arlington,54,2020-03-26,Virginia,VA,51013,NA
+Arlington,63,2020-03-26,Virginia,VA,51013,NA
 Clarke,0,2020-03-26,Virginia,VA,51043,NA
 Culpeper,2,2020-03-26,Virginia,VA,51047,NA
-Prince William,36,2020-03-26,Virginia,VA,51153,NA
-Warren,1,2020-03-26,Virginia,VA,51187,NA
-Alexandria City,14,2020-03-26,Virginia,VA,51510,NA
-Fairfax City,1,2020-03-26,Virginia,VA,51600,NA
+Prince William,44,2020-03-26,Virginia,VA,51153,NA
+Warren,2,2020-03-26,Virginia,VA,51187,NA
+Alexandria City,18,2020-03-26,Virginia,VA,51510,NA
+Fairfax City,0,2020-03-26,Virginia,VA,51600,NA
 Manassas Park,0,2020-03-26,Virginia,VA,51685,NA
-Fairfax,79,2020-03-26,Virginia,VA,51059,NA
-Fauquier,1,2020-03-26,Virginia,VA,51061,NA
-Loudoun,28,2020-03-26,Virginia,VA,51107,NA
+Fairfax,124,2020-03-26,Virginia,VA,51059,NA
+Fauquier,4,2020-03-26,Virginia,VA,51061,NA
+Loudoun,43,2020-03-26,Virginia,VA,51107,NA
 Rappahannock,0,2020-03-26,Virginia,VA,51157,NA
 Spotsylvania,2,2020-03-26,Virginia,VA,51177,NA
-Stafford,7,2020-03-26,Virginia,VA,51179,NA
+Stafford,11,2020-03-26,Virginia,VA,51179,NA
 Falls Church,0,2020-03-26,Virginia,VA,51610,NA
 Fredericksburg,1,2020-03-26,Virginia,VA,51630,NA
 Manassas City,3,2020-03-26,Virginia,VA,51683,NA
-Calvert,7,2020-03-26,Maryland,MD,24009,NA
-Charles,10,2020-03-26,Maryland,MD,24017,NA
-Frederick,14,2020-03-26,Maryland,MD,24021,NA
-Montgomery,164,2020-03-26,Maryland,MD,24031,NA
-Prince Georges,101,2020-03-26,Maryland,MD,24033,NA
+Calvert,9,2020-03-26,Maryland,MD,24009,NA
+Charles,17,2020-03-26,Maryland,MD,24017,NA
+Frederick,15,2020-03-26,Maryland,MD,24021,NA
+Montgomery,208,2020-03-26,Maryland,MD,24031,NA
+Prince Georges,148,2020-03-26,Maryland,MD,24033,NA
 Jefferson,4,2020-03-26,West Virginia,WV,54037,NA
 District of Columbia,267,2020-03-26,District of Columbia,DC,11001,NA
-Calvert,3,2020-03-25,Maryland,MD,24009,NA
-Charles,8,2020-03-25,Maryland,MD,24017,NA
-Frederick,7,2020-03-25,Maryland,MD,24021,NA
-Montgomery,127,2020-03-25,Maryland,MD,24031,NA
-Prince Georges,76,2020-03-25,Maryland,MD,24033,NA
-Jefferson,3,2020-03-25,West Virginia,WV,54037,NA
-District of Columbia,231,2020-03-25,District of Columbia,DC,11001,NA
-Arlington,46,2020-03-25,Virginia,VA,51013,NA
+Arlington,54,2020-03-25,Virginia,VA,51013,NA
 Clarke,0,2020-03-25,Virginia,VA,51043,NA
 Culpeper,2,2020-03-25,Virginia,VA,51047,NA
-Prince William,32,2020-03-25,Virginia,VA,51153,NA
-Warren,0,2020-03-25,Virginia,VA,51187,NA
-Alexandria City,9,2020-03-25,Virginia,VA,51510,NA
+Prince William,36,2020-03-25,Virginia,VA,51153,NA
+Warren,1,2020-03-25,Virginia,VA,51187,NA
+Alexandria City,14,2020-03-25,Virginia,VA,51510,NA
 Fairfax City,1,2020-03-25,Virginia,VA,51600,NA
-Fairfax,76,2020-03-25,Virginia,VA,51059,NA
-Fauquier,0,2020-03-25,Virginia,VA,51061,NA
-Loudoun,20,2020-03-25,Virginia,VA,51107,NA
-Rappahannock,0,2020-03-25,Virginia,VA,51157,NA
-Spotsylvania,3,2020-03-25,Virginia,VA,51177,NA
-Stafford,6,2020-03-25,Virginia,VA,51179,NA
-Manassas City,2,2020-03-25,Virginia,VA,51683,NA
 Manassas Park,0,2020-03-25,Virginia,VA,51685,NA
+Fairfax,79,2020-03-25,Virginia,VA,51059,NA
+Fauquier,1,2020-03-25,Virginia,VA,51061,NA
+Loudoun,28,2020-03-25,Virginia,VA,51107,NA
+Rappahannock,0,2020-03-25,Virginia,VA,51157,NA
+Spotsylvania,2,2020-03-25,Virginia,VA,51177,NA
+Stafford,7,2020-03-25,Virginia,VA,51179,NA
 Falls Church,0,2020-03-25,Virginia,VA,51610,NA
 Fredericksburg,1,2020-03-25,Virginia,VA,51630,NA
-Alexandria City,8,2020-03-24,Virginia,VA,51510,NA
-Arlington,36,2020-03-24,Virginia,VA,51013,NA
-Fairfax,46,2020-03-24,Virginia,VA,51059,NA
-Loudoun,18,2020-03-24,Virginia,VA,51107,NA
-Prince William,23,2020-03-24,Virginia,VA,51153,NA
-Spotsylvania,2,2020-03-24,Virginia,VA,51177,NA
-Culpeper,2,2020-03-24,Virginia,VA,51047,NA
+Manassas City,3,2020-03-25,Virginia,VA,51683,NA
+Calvert,7,2020-03-25,Maryland,MD,24009,NA
+Charles,10,2020-03-25,Maryland,MD,24017,NA
+Frederick,14,2020-03-25,Maryland,MD,24021,NA
+Montgomery,164,2020-03-25,Maryland,MD,24031,NA
+Prince Georges,101,2020-03-25,Maryland,MD,24033,NA
+Jefferson,4,2020-03-25,West Virginia,WV,54037,NA
+District of Columbia,231,2020-03-25,District of Columbia,DC,11001,NA
 Calvert,3,2020-03-24,Maryland,MD,24009,NA
-Charles,5,2020-03-24,Maryland,MD,24017,NA
-Frederick,4,2020-03-24,Maryland,MD,24021,NA
-Montgomery,107,2020-03-24,Maryland,MD,24031,NA
-Prince Georges,63,2020-03-24,Maryland,MD,24033,NA
+Charles,8,2020-03-24,Maryland,MD,24017,NA
+Frederick,7,2020-03-24,Maryland,MD,24021,NA
+Montgomery,127,2020-03-24,Maryland,MD,24031,NA
+Prince Georges,76,2020-03-24,Maryland,MD,24033,NA
 Jefferson,3,2020-03-24,West Virginia,WV,54037,NA
+Arlington,46,2020-03-24,Virginia,VA,51013,NA
+Clarke,0,2020-03-24,Virginia,VA,51043,NA
+Culpeper,2,2020-03-24,Virginia,VA,51047,NA
+Prince William,32,2020-03-24,Virginia,VA,51153,NA
+Warren,0,2020-03-24,Virginia,VA,51187,NA
+Alexandria City,9,2020-03-24,Virginia,VA,51510,NA
+Fairfax City,1,2020-03-24,Virginia,VA,51600,NA
+Fairfax,76,2020-03-24,Virginia,VA,51059,NA
+Fauquier,0,2020-03-24,Virginia,VA,51061,NA
+Loudoun,20,2020-03-24,Virginia,VA,51107,NA
+Rappahannock,0,2020-03-24,Virginia,VA,51157,NA
+Spotsylvania,3,2020-03-24,Virginia,VA,51177,NA
+Stafford,6,2020-03-24,Virginia,VA,51179,NA
+Manassas City,2,2020-03-24,Virginia,VA,51683,NA
+Manassas Park,0,2020-03-24,Virginia,VA,51685,NA
+Falls Church,0,2020-03-24,Virginia,VA,51610,NA
+Fredericksburg,1,2020-03-24,Virginia,VA,51630,NA
 District of Columbia,183,2020-03-24,District of Columbia,DC,11001,NA
-Alexandria City,6,2020-03-23,Virginia,VA,51510,NA
-Arlington,34,2020-03-23,Virginia,VA,51013,NA
-Fairfax,43,2020-03-23,Virginia,VA,51059,NA
-Loudoun,15,2020-03-23,Virginia,VA,51107,NA
-Prince William,18,2020-03-23,Virginia,VA,51153,NA
+Alexandria City,8,2020-03-23,Virginia,VA,51510,NA
+Arlington,36,2020-03-23,Virginia,VA,51013,NA
+Fairfax,46,2020-03-23,Virginia,VA,51059,NA
+Loudoun,18,2020-03-23,Virginia,VA,51107,NA
+Prince William,23,2020-03-23,Virginia,VA,51153,NA
 Spotsylvania,2,2020-03-23,Virginia,VA,51177,NA
 Culpeper,2,2020-03-23,Virginia,VA,51047,NA
-Calvert,2,2020-03-23,Maryland,MD,24009,NA
+Calvert,3,2020-03-23,Maryland,MD,24009,NA
 Charles,5,2020-03-23,Maryland,MD,24017,NA
-Frederick,2,2020-03-23,Maryland,MD,24021,NA
-Montgomery,93,2020-03-23,Maryland,MD,24031,NA
-Prince Georges,47,2020-03-23,Maryland,MD,24033,NA
+Frederick,4,2020-03-23,Maryland,MD,24021,NA
+Montgomery,107,2020-03-23,Maryland,MD,24031,NA
+Prince Georges,63,2020-03-23,Maryland,MD,24033,NA
 Jefferson,3,2020-03-23,West Virginia,WV,54037,NA
 District of Columbia,137,2020-03-23,District of Columbia,DC,11001,NA
+Alexandria City,6,2020-03-22,Virginia,VA,51510,NA
+Arlington,34,2020-03-22,Virginia,VA,51013,NA
+Fairfax,43,2020-03-22,Virginia,VA,51059,NA
+Loudoun,15,2020-03-22,Virginia,VA,51107,NA
+Prince William,18,2020-03-22,Virginia,VA,51153,NA
+Spotsylvania,2,2020-03-22,Virginia,VA,51177,NA
+Culpeper,2,2020-03-22,Virginia,VA,51047,NA
+Calvert,2,2020-03-22,Maryland,MD,24009,NA
+Charles,5,2020-03-22,Maryland,MD,24017,NA
+Frederick,2,2020-03-22,Maryland,MD,24021,NA
+Montgomery,93,2020-03-22,Maryland,MD,24031,NA
+Prince Georges,47,2020-03-22,Maryland,MD,24033,NA
+Jefferson,3,2020-03-22,West Virginia,WV,54037,NA
 District of Columbia,116,2020-03-22,District of Columbia,DC,11001,NA
 District of Columbia,98,2020-03-21,District of Columbia,DC,11001,NA
 District of Columbia,77,2020-03-20,District of Columbia,DC,11001,NA
