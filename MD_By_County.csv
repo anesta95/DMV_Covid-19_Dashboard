@@ -1,337 +1,318 @@
 County,Cases,Deaths,Date,State,Abbr,FIPS
-Allegany,6,NA,2020-04-06,Maryland,MD,24001
-Anne Arundel,343,8,2020-04-06,Maryland,MD,24003
-Baltimore City,435,8,2020-04-06,Maryland,MD,24510
-Baltimore County,648,11,2020-04-06,Maryland,MD,NA
-Calvert,40,1,2020-04-06,Maryland,MD,24009
-Caroline,6,NA,2020-04-06,Maryland,MD,24011
-Carroll,150,10,2020-04-06,Maryland,MD,24013
-Cecil,37,1,2020-04-06,Maryland,MD,24015
-Charles,129,2,2020-04-06,Maryland,MD,24017
-Dorchester,1,NA,2020-04-06,Maryland,MD,24019
-Frederick,138,4,2020-04-06,Maryland,MD,24021
+Allegany,7,NA,2020-04-06,Maryland,MD,24001
+Anne Arundel,370,8,2020-04-06,Maryland,MD,24003
+Baltimore City,459,9,2020-04-06,Maryland,MD,24510
+Baltimore County,652,11,2020-04-06,Maryland,MD,NA
+Calvert,41,1,2020-04-06,Maryland,MD,24009
+Caroline,11,NA,2020-04-06,Maryland,MD,24011
+Carroll,159,16,2020-04-06,Maryland,MD,24013
+Cecil,41,1,2020-04-06,Maryland,MD,24015
+Charles,136,2,2020-04-06,Maryland,MD,24017
+Dorchester,3,NA,2020-04-06,Maryland,MD,24019
+Frederick,151,4,2020-04-06,Maryland,MD,24021
 Garrett,3,NA,2020-04-06,Maryland,MD,24023
-Harford,55,NA,2020-04-06,Maryland,MD,24025
-Howard,214,3,2020-04-06,Maryland,MD,24027
-Kent,5,NA,2020-04-06,Maryland,MD,24029
-Montgomery,793,19,2020-04-06,Maryland,MD,24031
-Prince Georges,916,23,2020-04-06,Maryland,MD,24033
+Harford,59,NA,2020-04-06,Maryland,MD,24025
+Howard,236,3,2020-04-06,Maryland,MD,24027
+Kent,8,NA,2020-04-06,Maryland,MD,24029
+Montgomery,871,21,2020-04-06,Maryland,MD,24031
+Prince Georges,1020,26,2020-04-06,Maryland,MD,24033
 Queen Annes,15,NA,2020-04-06,Maryland,MD,24035
-St Marys,41,NA,2020-04-06,Maryland,MD,24037
+St Marys,46,NA,2020-04-06,Maryland,MD,24037
 Somerset,4,NA,2020-04-06,Maryland,MD,24039
 Talbot,8,NA,2020-04-06,Maryland,MD,24041
-Washington,37,NA,2020-04-06,Maryland,MD,24043
-Wicomico,11,1,2020-04-06,Maryland,MD,24045
+Washington,44,NA,2020-04-06,Maryland,MD,24043
+Wicomico,17,1,2020-04-06,Maryland,MD,24045
 Worcester,10,NA,2020-04-06,Maryland,MD,24047
 Allegany,6,NA,2020-04-05,Maryland,MD,24001
-Anne Arundel,319,6,2020-04-05,Maryland,MD,24003
-Baltimore City,394,7,2020-04-05,Maryland,MD,24510
-Baltimore County,590,6,2020-04-05,Maryland,MD,NA
-Calvert,39,1,2020-04-05,Maryland,MD,24009
-Caroline,4,NA,2020-04-05,Maryland,MD,24011
-Carroll,142,8,2020-04-05,Maryland,MD,24013
-Cecil,36,1,2020-04-05,Maryland,MD,24015
-Charles,111,2,2020-04-05,Maryland,MD,24017
+Anne Arundel,343,8,2020-04-05,Maryland,MD,24003
+Baltimore City,435,8,2020-04-05,Maryland,MD,24510
+Baltimore County,648,11,2020-04-05,Maryland,MD,NA
+Calvert,40,1,2020-04-05,Maryland,MD,24009
+Caroline,6,NA,2020-04-05,Maryland,MD,24011
+Carroll,150,10,2020-04-05,Maryland,MD,24013
+Cecil,37,1,2020-04-05,Maryland,MD,24015
+Charles,129,2,2020-04-05,Maryland,MD,24017
 Dorchester,1,NA,2020-04-05,Maryland,MD,24019
-Frederick,112,3,2020-04-05,Maryland,MD,24021
+Frederick,138,4,2020-04-05,Maryland,MD,24021
 Garrett,3,NA,2020-04-05,Maryland,MD,24023
-Harford,52,NA,2020-04-05,Maryland,MD,24025
-Howard,199,3,2020-04-05,Maryland,MD,24027
+Harford,55,NA,2020-04-05,Maryland,MD,24025
+Howard,214,3,2020-04-05,Maryland,MD,24027
 Kent,5,NA,2020-04-05,Maryland,MD,24029
-Montgomery,693,13,2020-04-05,Maryland,MD,24031
-Prince Georges,785,16,2020-04-05,Maryland,MD,24033
-Queen Annes,13,NA,2020-04-05,Maryland,MD,24035
-St Marys,40,NA,2020-04-05,Maryland,MD,24037
+Montgomery,793,19,2020-04-05,Maryland,MD,24031
+Prince Georges,916,23,2020-04-05,Maryland,MD,24033
+Queen Annes,15,NA,2020-04-05,Maryland,MD,24035
+St Marys,41,NA,2020-04-05,Maryland,MD,24037
 Somerset,4,NA,2020-04-05,Maryland,MD,24039
-Talbot,7,NA,2020-04-05,Maryland,MD,24041
-Washington,34,NA,2020-04-05,Maryland,MD,24043
+Talbot,8,NA,2020-04-05,Maryland,MD,24041
+Washington,37,NA,2020-04-05,Maryland,MD,24043
 Wicomico,11,1,2020-04-05,Maryland,MD,24045
-Worcester,9,NA,2020-04-05,Maryland,MD,24047
-Allegany,3,NA,2020-04-04,Maryland,MD,24001
-Anne Arundel,289,6,2020-04-04,Maryland,MD,24003
-Baltimore City,343,6,2020-04-04,Maryland,MD,24510
-Baltimore County,491,4,2020-04-04,Maryland,MD,NA
-Calvert,33,1,2020-04-04,Maryland,MD,24009
+Worcester,10,NA,2020-04-05,Maryland,MD,24047
+Allegany,6,NA,2020-04-04,Maryland,MD,24001
+Anne Arundel,319,6,2020-04-04,Maryland,MD,24003
+Baltimore City,394,7,2020-04-04,Maryland,MD,24510
+Baltimore County,590,6,2020-04-04,Maryland,MD,NA
+Calvert,39,1,2020-04-04,Maryland,MD,24009
 Caroline,4,NA,2020-04-04,Maryland,MD,24011
-Carroll,134,6,2020-04-04,Maryland,MD,24013
-Cecil,33,1,2020-04-04,Maryland,MD,24015
-Charles,95,1,2020-04-04,Maryland,MD,24017
+Carroll,142,8,2020-04-04,Maryland,MD,24013
+Cecil,36,1,2020-04-04,Maryland,MD,24015
+Charles,111,2,2020-04-04,Maryland,MD,24017
 Dorchester,1,NA,2020-04-04,Maryland,MD,24019
-Frederick,73,2,2020-04-04,Maryland,MD,24021
+Frederick,112,3,2020-04-04,Maryland,MD,24021
 Garrett,3,NA,2020-04-04,Maryland,MD,24023
-Harford,44,NA,2020-04-04,Maryland,MD,24025
-Howard,180,3,2020-04-04,Maryland,MD,24027
+Harford,52,NA,2020-04-04,Maryland,MD,24025
+Howard,199,3,2020-04-04,Maryland,MD,24027
 Kent,5,NA,2020-04-04,Maryland,MD,24029
-Montgomery,640,9,2020-04-04,Maryland,MD,24031
-Prince Georges,653,13,2020-04-04,Maryland,MD,24033
+Montgomery,693,13,2020-04-04,Maryland,MD,24031
+Prince Georges,785,16,2020-04-04,Maryland,MD,24033
 Queen Annes,13,NA,2020-04-04,Maryland,MD,24035
-St Marys,34,NA,2020-04-04,Maryland,MD,24037
+St Marys,40,NA,2020-04-04,Maryland,MD,24037
 Somerset,4,NA,2020-04-04,Maryland,MD,24039
-Talbot,6,NA,2020-04-04,Maryland,MD,24041
-Washington,29,NA,2020-04-04,Maryland,MD,24043
-Wicomico,8,1,2020-04-04,Maryland,MD,24045
-Worcester,7,NA,2020-04-04,Maryland,MD,24047
-Allegany,2,NA,2020-04-03,Maryland,MD,24001
-Anne Arundel,249,4,2020-04-03,Maryland,MD,24003
-Baltimore City,313,4,2020-04-03,Maryland,MD,24510
-Baltimore County,427,3,2020-04-03,Maryland,MD,NA
-Calvert,30,1,2020-04-03,Maryland,MD,24009
+Talbot,7,NA,2020-04-04,Maryland,MD,24041
+Washington,34,NA,2020-04-04,Maryland,MD,24043
+Wicomico,11,1,2020-04-04,Maryland,MD,24045
+Worcester,9,NA,2020-04-04,Maryland,MD,24047
+Allegany,3,NA,2020-04-03,Maryland,MD,24001
+Anne Arundel,289,6,2020-04-03,Maryland,MD,24003
+Baltimore City,343,6,2020-04-03,Maryland,MD,24510
+Baltimore County,491,4,2020-04-03,Maryland,MD,NA
+Calvert,33,1,2020-04-03,Maryland,MD,24009
 Caroline,4,NA,2020-04-03,Maryland,MD,24011
-Carroll,129,5,2020-04-03,Maryland,MD,24013
-Cecil,25,1,2020-04-03,Maryland,MD,24015
-Charles,90,1,2020-04-03,Maryland,MD,24017
+Carroll,134,6,2020-04-03,Maryland,MD,24013
+Cecil,33,1,2020-04-03,Maryland,MD,24015
+Charles,95,1,2020-04-03,Maryland,MD,24017
 Dorchester,1,NA,2020-04-03,Maryland,MD,24019
-Frederick,54,2,2020-04-03,Maryland,MD,24021
+Frederick,73,2,2020-04-03,Maryland,MD,24021
 Garrett,3,NA,2020-04-03,Maryland,MD,24023
-Harford,41,NA,2020-04-03,Maryland,MD,24025
-Howard,166,2,2020-04-03,Maryland,MD,24027
+Harford,44,NA,2020-04-03,Maryland,MD,24025
+Howard,180,3,2020-04-03,Maryland,MD,24027
 Kent,5,NA,2020-04-03,Maryland,MD,24029
-Montgomery,566,9,2020-04-03,Maryland,MD,24031
-Prince Georges,563,9,2020-04-03,Maryland,MD,24033
-Queen Annes,12,NA,2020-04-03,Maryland,MD,24035
-St Marys,30,NA,2020-04-03,Maryland,MD,24037
+Montgomery,640,9,2020-04-03,Maryland,MD,24031
+Prince Georges,653,13,2020-04-03,Maryland,MD,24033
+Queen Annes,13,NA,2020-04-03,Maryland,MD,24035
+St Marys,34,NA,2020-04-03,Maryland,MD,24037
 Somerset,4,NA,2020-04-03,Maryland,MD,24039
-Talbot,5,NA,2020-04-03,Maryland,MD,24041
-Washington,27,NA,2020-04-03,Maryland,MD,24043
-Wicomico,7,1,2020-04-03,Maryland,MD,24045
-Worcester,5,NA,2020-04-03,Maryland,MD,24047
-Allegany,1,NA,2020-04-02,Maryland,MD,24001
-Anne Arundel,206,NA,2020-04-02,Maryland,MD,24003
-Baltimore City,265,NA,2020-04-02,Maryland,MD,24510
-Baltimore County,353,NA,2020-04-02,Maryland,MD,NA
-Calvert,22,NA,2020-04-02,Maryland,MD,24009
+Talbot,6,NA,2020-04-03,Maryland,MD,24041
+Washington,29,NA,2020-04-03,Maryland,MD,24043
+Wicomico,8,1,2020-04-03,Maryland,MD,24045
+Worcester,7,NA,2020-04-03,Maryland,MD,24047
+Allegany,2,NA,2020-04-02,Maryland,MD,24001
+Anne Arundel,249,4,2020-04-02,Maryland,MD,24003
+Baltimore City,313,4,2020-04-02,Maryland,MD,24510
+Baltimore County,427,3,2020-04-02,Maryland,MD,NA
+Calvert,30,1,2020-04-02,Maryland,MD,24009
 Caroline,4,NA,2020-04-02,Maryland,MD,24011
-Carroll,105,NA,2020-04-02,Maryland,MD,24013
-Cecil,20,NA,2020-04-02,Maryland,MD,24015
-Charles,69,NA,2020-04-02,Maryland,MD,24017
+Carroll,129,5,2020-04-02,Maryland,MD,24013
+Cecil,25,1,2020-04-02,Maryland,MD,24015
+Charles,90,1,2020-04-02,Maryland,MD,24017
 Dorchester,1,NA,2020-04-02,Maryland,MD,24019
-Frederick,45,NA,2020-04-02,Maryland,MD,24021
+Frederick,54,2,2020-04-02,Maryland,MD,24021
 Garrett,3,NA,2020-04-02,Maryland,MD,24023
-Harford,37,NA,2020-04-02,Maryland,MD,24025
-Howard,152,NA,2020-04-02,Maryland,MD,24027
+Harford,41,NA,2020-04-02,Maryland,MD,24025
+Howard,166,2,2020-04-02,Maryland,MD,24027
 Kent,5,NA,2020-04-02,Maryland,MD,24029
-Montgomery,498,NA,2020-04-02,Maryland,MD,24031
-Prince Georges,473,NA,2020-04-02,Maryland,MD,24033
-Queen Annes,8,NA,2020-04-02,Maryland,MD,24035
-St Marys,27,NA,2020-04-02,Maryland,MD,24037
+Montgomery,566,9,2020-04-02,Maryland,MD,24031
+Prince Georges,563,9,2020-04-02,Maryland,MD,24033
+Queen Annes,12,NA,2020-04-02,Maryland,MD,24035
+St Marys,30,NA,2020-04-02,Maryland,MD,24037
 Somerset,4,NA,2020-04-02,Maryland,MD,24039
-Talbot,4,NA,2020-04-02,Maryland,MD,24041
-Washington,17,NA,2020-04-02,Maryland,MD,24043
-Wicomico,7,NA,2020-04-02,Maryland,MD,24045
+Talbot,5,NA,2020-04-02,Maryland,MD,24041
+Washington,27,NA,2020-04-02,Maryland,MD,24043
+Wicomico,7,1,2020-04-02,Maryland,MD,24045
 Worcester,5,NA,2020-04-02,Maryland,MD,24047
-Anne Arundel,158,NA,2020-04-01,Maryland,MD,24003
-Baltimore City,221,NA,2020-04-01,Maryland,MD,24510
-Baltimore County,289,NA,2020-04-01,Maryland,MD,NA
-Calvert,18,NA,2020-04-01,Maryland,MD,24009
+Allegany,1,NA,2020-04-01,Maryland,MD,24001
+Anne Arundel,206,NA,2020-04-01,Maryland,MD,24003
+Baltimore City,265,NA,2020-04-01,Maryland,MD,24510
+Baltimore County,353,NA,2020-04-01,Maryland,MD,NA
+Calvert,22,NA,2020-04-01,Maryland,MD,24009
 Caroline,4,NA,2020-04-01,Maryland,MD,24011
-Carroll,96,NA,2020-04-01,Maryland,MD,24013
-Cecil,16,NA,2020-04-01,Maryland,MD,24015
-Charles,56,NA,2020-04-01,Maryland,MD,24017
+Carroll,105,NA,2020-04-01,Maryland,MD,24013
+Cecil,20,NA,2020-04-01,Maryland,MD,24015
+Charles,69,NA,2020-04-01,Maryland,MD,24017
 Dorchester,1,NA,2020-04-01,Maryland,MD,24019
-Frederick,35,NA,2020-04-01,Maryland,MD,24021
+Frederick,45,NA,2020-04-01,Maryland,MD,24021
 Garrett,3,NA,2020-04-01,Maryland,MD,24023
-Harford,34,NA,2020-04-01,Maryland,MD,24025
-Howard,142,NA,2020-04-01,Maryland,MD,24027
-Kent,3,NA,2020-04-01,Maryland,MD,24029
-Montgomery,447,NA,2020-04-01,Maryland,MD,24031
-Prince Georges,403,NA,2020-04-01,Maryland,MD,24033
-Queen Annes,7,NA,2020-04-01,Maryland,MD,24035
-St. Marys,19,NA,2020-04-01,Maryland,MD,NA
+Harford,37,NA,2020-04-01,Maryland,MD,24025
+Howard,152,NA,2020-04-01,Maryland,MD,24027
+Kent,5,NA,2020-04-01,Maryland,MD,24029
+Montgomery,498,NA,2020-04-01,Maryland,MD,24031
+Prince Georges,473,NA,2020-04-01,Maryland,MD,24033
+Queen Annes,8,NA,2020-04-01,Maryland,MD,24035
+St Marys,27,NA,2020-04-01,Maryland,MD,24037
 Somerset,4,NA,2020-04-01,Maryland,MD,24039
-Talbot,3,NA,2020-04-01,Maryland,MD,24041
-Washington,15,NA,2020-04-01,Maryland,MD,24043
+Talbot,4,NA,2020-04-01,Maryland,MD,24041
+Washington,17,NA,2020-04-01,Maryland,MD,24043
 Wicomico,7,NA,2020-04-01,Maryland,MD,24045
-Worcester,4,NA,2020-04-01,Maryland,MD,24047
-Anne Arundel,127,NA,2020-03-31,Maryland,MD,24003
-Baltimore City,187,NA,2020-03-31,Maryland,MD,24510
-Baltimore County,227,NA,2020-03-31,Maryland,MD,NA
-Calvert,15,NA,2020-03-31,Maryland,MD,24009
+Worcester,5,NA,2020-04-01,Maryland,MD,24047
+Anne Arundel,158,NA,2020-03-31,Maryland,MD,24003
+Baltimore City,221,NA,2020-03-31,Maryland,MD,24510
+Baltimore County,289,NA,2020-03-31,Maryland,MD,NA
+Calvert,18,NA,2020-03-31,Maryland,MD,24009
 Caroline,4,NA,2020-03-31,Maryland,MD,24011
-Carroll,92,NA,2020-03-31,Maryland,MD,24013
-Cecil,14,NA,2020-03-31,Maryland,MD,24015
-Charles,40,NA,2020-03-31,Maryland,MD,24017
-Frederick,33,NA,2020-03-31,Maryland,MD,24021
+Carroll,96,NA,2020-03-31,Maryland,MD,24013
+Cecil,16,NA,2020-03-31,Maryland,MD,24015
+Charles,56,NA,2020-03-31,Maryland,MD,24017
+Dorchester,1,NA,2020-03-31,Maryland,MD,24019
+Frederick,35,NA,2020-03-31,Maryland,MD,24021
 Garrett,3,NA,2020-03-31,Maryland,MD,24023
-Harford,25,NA,2020-03-31,Maryland,MD,24025
-Howard,117,NA,2020-03-31,Maryland,MD,24027
+Harford,34,NA,2020-03-31,Maryland,MD,24025
+Howard,142,NA,2020-03-31,Maryland,MD,24027
 Kent,3,NA,2020-03-31,Maryland,MD,24029
-Montgomery,388,NA,2020-03-31,Maryland,MD,24031
-Prince Georges,341,NA,2020-03-31,Maryland,MD,24033
-Queen Annes,4,NA,2020-03-31,Maryland,MD,24035
-St. Marys,15,NA,2020-03-31,Maryland,MD,NA
-Somerset,1,NA,2020-03-31,Maryland,MD,24039
+Montgomery,447,NA,2020-03-31,Maryland,MD,24031
+Prince Georges,403,NA,2020-03-31,Maryland,MD,24033
+Queen Annes,7,NA,2020-03-31,Maryland,MD,24035
+St. Marys,19,NA,2020-03-31,Maryland,MD,NA
+Somerset,4,NA,2020-03-31,Maryland,MD,24039
 Talbot,3,NA,2020-03-31,Maryland,MD,24041
-Washington,11,NA,2020-03-31,Maryland,MD,24043
+Washington,15,NA,2020-03-31,Maryland,MD,24043
 Wicomico,7,NA,2020-03-31,Maryland,MD,24045
-Worcester,3,NA,2020-03-31,Maryland,MD,24047
-Anne Arundel,110,NA,2020-03-30,Maryland,MD,24003
-Baltimore City,152,NA,2020-03-30,Maryland,MD,24510
-Baltimore County,186,NA,2020-03-30,Maryland,MD,NA
-Calvert,12,NA,2020-03-30,Maryland,MD,24009
+Worcester,4,NA,2020-03-31,Maryland,MD,24047
+Anne Arundel,127,NA,2020-03-30,Maryland,MD,24003
+Baltimore City,187,NA,2020-03-30,Maryland,MD,24510
+Baltimore County,227,NA,2020-03-30,Maryland,MD,NA
+Calvert,15,NA,2020-03-30,Maryland,MD,24009
 Caroline,4,NA,2020-03-30,Maryland,MD,24011
-Carroll,82,NA,2020-03-30,Maryland,MD,24013
-Cecil,13,NA,2020-03-30,Maryland,MD,24015
-Charles,33,NA,2020-03-30,Maryland,MD,24017
-Frederick,26,NA,2020-03-30,Maryland,MD,24021
+Carroll,92,NA,2020-03-30,Maryland,MD,24013
+Cecil,14,NA,2020-03-30,Maryland,MD,24015
+Charles,40,NA,2020-03-30,Maryland,MD,24017
+Frederick,33,NA,2020-03-30,Maryland,MD,24021
 Garrett,3,NA,2020-03-30,Maryland,MD,24023
-Harford,24,NA,2020-03-30,Maryland,MD,24025
-Howard,96,NA,2020-03-30,Maryland,MD,24027
+Harford,25,NA,2020-03-30,Maryland,MD,24025
+Howard,117,NA,2020-03-30,Maryland,MD,24027
 Kent,3,NA,2020-03-30,Maryland,MD,24029
-Montgomery,341,NA,2020-03-30,Maryland,MD,24031
-Prince Georges,294,NA,2020-03-30,Maryland,MD,24033
+Montgomery,388,NA,2020-03-30,Maryland,MD,24031
+Prince Georges,341,NA,2020-03-30,Maryland,MD,24033
 Queen Annes,4,NA,2020-03-30,Maryland,MD,24035
-St. Marys,9,NA,2020-03-30,Maryland,MD,NA
+St. Marys,15,NA,2020-03-30,Maryland,MD,NA
 Somerset,1,NA,2020-03-30,Maryland,MD,24039
-Talbot,4,NA,2020-03-30,Maryland,MD,24041
-Washington,7,NA,2020-03-30,Maryland,MD,24043
-Wicomico,6,NA,2020-03-30,Maryland,MD,24045
+Talbot,3,NA,2020-03-30,Maryland,MD,24041
+Washington,11,NA,2020-03-30,Maryland,MD,24043
+Wicomico,7,NA,2020-03-30,Maryland,MD,24045
 Worcester,3,NA,2020-03-30,Maryland,MD,24047
-Anne Arundel,99,NA,2020-03-29,Maryland,MD,24003
-Baltimore City,129,NA,2020-03-29,Maryland,MD,24510
-Baltimore County,162,NA,2020-03-29,Maryland,MD,NA
-Calvert,10,NA,2020-03-29,Maryland,MD,24009
-Caroline,3,NA,2020-03-29,Maryland,MD,24011
+Anne Arundel,110,NA,2020-03-29,Maryland,MD,24003
+Baltimore City,152,NA,2020-03-29,Maryland,MD,24510
+Baltimore County,186,NA,2020-03-29,Maryland,MD,NA
+Calvert,12,NA,2020-03-29,Maryland,MD,24009
+Caroline,4,NA,2020-03-29,Maryland,MD,24011
 Carroll,82,NA,2020-03-29,Maryland,MD,24013
 Cecil,13,NA,2020-03-29,Maryland,MD,24015
-Charles,28,NA,2020-03-29,Maryland,MD,24017
-Frederick,24,NA,2020-03-29,Maryland,MD,24021
+Charles,33,NA,2020-03-29,Maryland,MD,24017
+Frederick,26,NA,2020-03-29,Maryland,MD,24021
 Garrett,3,NA,2020-03-29,Maryland,MD,24023
-Harford,23,NA,2020-03-29,Maryland,MD,24025
-Howard,81,NA,2020-03-29,Maryland,MD,24027
+Harford,24,NA,2020-03-29,Maryland,MD,24025
+Howard,96,NA,2020-03-29,Maryland,MD,24027
 Kent,3,NA,2020-03-29,Maryland,MD,24029
-Montgomery,301,NA,2020-03-29,Maryland,MD,24031
-Prince Georges,247,NA,2020-03-29,Maryland,MD,24033
+Montgomery,341,NA,2020-03-29,Maryland,MD,24031
+Prince Georges,294,NA,2020-03-29,Maryland,MD,24033
 Queen Annes,4,NA,2020-03-29,Maryland,MD,24035
 St. Marys,9,NA,2020-03-29,Maryland,MD,NA
 Somerset,1,NA,2020-03-29,Maryland,MD,24039
-Talbot,3,NA,2020-03-29,Maryland,MD,24041
-Washington,6,NA,2020-03-29,Maryland,MD,24043
+Talbot,4,NA,2020-03-29,Maryland,MD,24041
+Washington,7,NA,2020-03-29,Maryland,MD,24043
 Wicomico,6,NA,2020-03-29,Maryland,MD,24045
-Worcester,2,NA,2020-03-29,Maryland,MD,24047
-Anne Arundel,88,NA,2020-03-28,Maryland,MD,24003
-Baltimore City,112,NA,2020-03-28,Maryland,MD,24510
-Baltimore County,141,NA,2020-03-28,Maryland,MD,NA
-Calvert,8,NA,2020-03-28,Maryland,MD,24009
-Caroline,1,NA,2020-03-28,Maryland,MD,24011
-Carroll,10,NA,2020-03-28,Maryland,MD,24013
+Worcester,3,NA,2020-03-29,Maryland,MD,24047
+Anne Arundel,99,NA,2020-03-28,Maryland,MD,24003
+Baltimore City,129,NA,2020-03-28,Maryland,MD,24510
+Baltimore County,162,NA,2020-03-28,Maryland,MD,NA
+Calvert,10,NA,2020-03-28,Maryland,MD,24009
+Caroline,3,NA,2020-03-28,Maryland,MD,24011
+Carroll,82,NA,2020-03-28,Maryland,MD,24013
 Cecil,13,NA,2020-03-28,Maryland,MD,24015
-Charles,21,NA,2020-03-28,Maryland,MD,24017
-Frederick,22,NA,2020-03-28,Maryland,MD,24021
+Charles,28,NA,2020-03-28,Maryland,MD,24017
+Frederick,24,NA,2020-03-28,Maryland,MD,24021
 Garrett,3,NA,2020-03-28,Maryland,MD,24023
-Harford,21,NA,2020-03-28,Maryland,MD,24025
-Howard,73,NA,2020-03-28,Maryland,MD,24027
-Kent,2,NA,2020-03-28,Maryland,MD,24029
-Montgomery,255,NA,2020-03-28,Maryland,MD,24031
-Prince Georges,196,NA,2020-03-28,Maryland,MD,24033
-Queen Annes,1,NA,2020-03-28,Maryland,MD,24035
-St. Marys,8,NA,2020-03-28,Maryland,MD,NA
+Harford,23,NA,2020-03-28,Maryland,MD,24025
+Howard,81,NA,2020-03-28,Maryland,MD,24027
+Kent,3,NA,2020-03-28,Maryland,MD,24029
+Montgomery,301,NA,2020-03-28,Maryland,MD,24031
+Prince Georges,247,NA,2020-03-28,Maryland,MD,24033
+Queen Annes,4,NA,2020-03-28,Maryland,MD,24035
+St. Marys,9,NA,2020-03-28,Maryland,MD,NA
 Somerset,1,NA,2020-03-28,Maryland,MD,24039
-Talbot,2,NA,2020-03-28,Maryland,MD,24041
+Talbot,3,NA,2020-03-28,Maryland,MD,24041
 Washington,6,NA,2020-03-28,Maryland,MD,24043
 Wicomico,6,NA,2020-03-28,Maryland,MD,24045
 Worcester,2,NA,2020-03-28,Maryland,MD,24047
-Anne Arundel,63,NA,2020-03-27,Maryland,MD,24003
-Baltimore City,88,NA,2020-03-27,Maryland,MD,24510
-Baltimore County,103,NA,2020-03-27,Maryland,MD,NA
-Calvert,9,NA,2020-03-27,Maryland,MD,24009
+Anne Arundel,88,NA,2020-03-27,Maryland,MD,24003
+Baltimore City,112,NA,2020-03-27,Maryland,MD,24510
+Baltimore County,141,NA,2020-03-27,Maryland,MD,NA
+Calvert,8,NA,2020-03-27,Maryland,MD,24009
 Caroline,1,NA,2020-03-27,Maryland,MD,24011
-Carroll,9,NA,2020-03-27,Maryland,MD,24013
-Cecil,9,NA,2020-03-27,Maryland,MD,24015
-Charles,17,NA,2020-03-27,Maryland,MD,24017
-Frederick,15,NA,2020-03-27,Maryland,MD,24021
+Carroll,10,NA,2020-03-27,Maryland,MD,24013
+Cecil,13,NA,2020-03-27,Maryland,MD,24015
+Charles,21,NA,2020-03-27,Maryland,MD,24017
+Frederick,22,NA,2020-03-27,Maryland,MD,24021
 Garrett,3,NA,2020-03-27,Maryland,MD,24023
-Harford,18,NA,2020-03-27,Maryland,MD,24025
-Howard,62,NA,2020-03-27,Maryland,MD,24027
+Harford,21,NA,2020-03-27,Maryland,MD,24025
+Howard,73,NA,2020-03-27,Maryland,MD,24027
 Kent,2,NA,2020-03-27,Maryland,MD,24029
-Montgomery,208,NA,2020-03-27,Maryland,MD,24031
-Prince Georges,148,NA,2020-03-27,Maryland,MD,24033
+Montgomery,255,NA,2020-03-27,Maryland,MD,24031
+Prince Georges,196,NA,2020-03-27,Maryland,MD,24033
 Queen Annes,1,NA,2020-03-27,Maryland,MD,24035
-St. Marys,4,NA,2020-03-27,Maryland,MD,NA
+St. Marys,8,NA,2020-03-27,Maryland,MD,NA
 Somerset,1,NA,2020-03-27,Maryland,MD,24039
-Talbot,1,NA,2020-03-27,Maryland,MD,24041
-Washington,5,NA,2020-03-27,Maryland,MD,24043
-Wicomico,5,NA,2020-03-27,Maryland,MD,24045
+Talbot,2,NA,2020-03-27,Maryland,MD,24041
+Washington,6,NA,2020-03-27,Maryland,MD,24043
+Wicomico,6,NA,2020-03-27,Maryland,MD,24045
 Worcester,2,NA,2020-03-27,Maryland,MD,24047
-Anne Arundel,41,NA,2020-03-26,Maryland,MD,24003
-Baltimore City,72,NA,2020-03-26,Maryland,MD,24510
-Baltimore County,81,NA,2020-03-26,Maryland,MD,NA
-Calvert,7,NA,2020-03-26,Maryland,MD,24009
+Anne Arundel,63,NA,2020-03-26,Maryland,MD,24003
+Baltimore City,88,NA,2020-03-26,Maryland,MD,24510
+Baltimore County,103,NA,2020-03-26,Maryland,MD,NA
+Calvert,9,NA,2020-03-26,Maryland,MD,24009
 Caroline,1,NA,2020-03-26,Maryland,MD,24011
-Carroll,7,NA,2020-03-26,Maryland,MD,24013
-Cecil,4,NA,2020-03-26,Maryland,MD,24015
-Charles,10,NA,2020-03-26,Maryland,MD,24017
-Frederick,14,NA,2020-03-26,Maryland,MD,24021
+Carroll,9,NA,2020-03-26,Maryland,MD,24013
+Cecil,9,NA,2020-03-26,Maryland,MD,24015
+Charles,17,NA,2020-03-26,Maryland,MD,24017
+Frederick,15,NA,2020-03-26,Maryland,MD,24021
 Garrett,3,NA,2020-03-26,Maryland,MD,24023
-Harford,9,NA,2020-03-26,Maryland,MD,24025
-Howard,49,NA,2020-03-26,Maryland,MD,24027
-Kent,1,NA,2020-03-26,Maryland,MD,24029
-Montgomery,164,NA,2020-03-26,Maryland,MD,24031
-Prince Georges,101,NA,2020-03-26,Maryland,MD,24033
-Queen Anne's,1,NA,2020-03-26,Maryland,MD,NA
-St. Mary's,4,NA,2020-03-26,Maryland,MD,NA
+Harford,18,NA,2020-03-26,Maryland,MD,24025
+Howard,62,NA,2020-03-26,Maryland,MD,24027
+Kent,2,NA,2020-03-26,Maryland,MD,24029
+Montgomery,208,NA,2020-03-26,Maryland,MD,24031
+Prince Georges,148,NA,2020-03-26,Maryland,MD,24033
+Queen Annes,1,NA,2020-03-26,Maryland,MD,24035
+St. Marys,4,NA,2020-03-26,Maryland,MD,NA
 Somerset,1,NA,2020-03-26,Maryland,MD,24039
 Talbot,1,NA,2020-03-26,Maryland,MD,24041
-Washington,2,NA,2020-03-26,Maryland,MD,24043
+Washington,5,NA,2020-03-26,Maryland,MD,24043
 Wicomico,5,NA,2020-03-26,Maryland,MD,24045
 Worcester,2,NA,2020-03-26,Maryland,MD,24047
-Anne Arundel,31,NA,2020-03-25,Maryland,MD,24003
-Baltimore City,53,NA,2020-03-25,Maryland,MD,24510
-Baltimore,51,NA,2020-03-25,Maryland,MD,24005
-Calvert,3,NA,2020-03-25,Maryland,MD,24009
+Anne Arundel,41,NA,2020-03-25,Maryland,MD,24003
+Baltimore City,72,NA,2020-03-25,Maryland,MD,24510
+Baltimore County,81,NA,2020-03-25,Maryland,MD,NA
+Calvert,7,NA,2020-03-25,Maryland,MD,24009
 Caroline,1,NA,2020-03-25,Maryland,MD,24011
-Carroll,5,NA,2020-03-25,Maryland,MD,24013
+Carroll,7,NA,2020-03-25,Maryland,MD,24013
 Cecil,4,NA,2020-03-25,Maryland,MD,24015
-Charles,8,NA,2020-03-25,Maryland,MD,24017
-Frederick,7,NA,2020-03-25,Maryland,MD,24021
+Charles,10,NA,2020-03-25,Maryland,MD,24017
+Frederick,14,NA,2020-03-25,Maryland,MD,24021
 Garrett,3,NA,2020-03-25,Maryland,MD,24023
-Harford,5,NA,2020-03-25,Maryland,MD,24025
-Howard,35,NA,2020-03-25,Maryland,MD,24027
+Harford,9,NA,2020-03-25,Maryland,MD,24025
+Howard,49,NA,2020-03-25,Maryland,MD,24027
 Kent,1,NA,2020-03-25,Maryland,MD,24029
-Montgomery,127,NA,2020-03-25,Maryland,MD,24031
-Prince Georges,76,NA,2020-03-25,Maryland,MD,24033
-Queen Annes,1,NA,2020-03-25,Maryland,MD,24035
-St Marys,2,NA,2020-03-25,Maryland,MD,24037
+Montgomery,164,NA,2020-03-25,Maryland,MD,24031
+Prince Georges,101,NA,2020-03-25,Maryland,MD,24033
+Queen Anne's,1,NA,2020-03-25,Maryland,MD,NA
+St. Mary's,4,NA,2020-03-25,Maryland,MD,NA
 Somerset,1,NA,2020-03-25,Maryland,MD,24039
 Talbot,1,NA,2020-03-25,Maryland,MD,24041
 Washington,2,NA,2020-03-25,Maryland,MD,24043
-Wicomico,4,NA,2020-03-25,Maryland,MD,24045
+Wicomico,5,NA,2020-03-25,Maryland,MD,24045
 Worcester,2,NA,2020-03-25,Maryland,MD,24047
-Anne Arundel,31,NA,2020-03-25,Maryland,MD,24003
-Baltimore City,53,NA,2020-03-25,Maryland,MD,24510
-Baltimore,51,NA,2020-03-25,Maryland,MD,24005
-Calvert,3,NA,2020-03-25,Maryland,MD,24009
-Caroline,1,NA,2020-03-25,Maryland,MD,24011
-Carroll,5,NA,2020-03-25,Maryland,MD,24013
-Cecil,4,NA,2020-03-25,Maryland,MD,24015
-Charles,8,NA,2020-03-25,Maryland,MD,24017
-Frederick,7,NA,2020-03-25,Maryland,MD,24021
-Garrett,3,NA,2020-03-25,Maryland,MD,24023
-Harford,5,NA,2020-03-25,Maryland,MD,24025
-Howard,35,NA,2020-03-25,Maryland,MD,24027
-Kent,1,NA,2020-03-25,Maryland,MD,24029
-Montgomery,127,NA,2020-03-25,Maryland,MD,24031
-Prince Georges,76,NA,2020-03-25,Maryland,MD,24033
-Queen Annes,1,NA,2020-03-25,Maryland,MD,24035
-St Marys,2,NA,2020-03-25,Maryland,MD,24037
-Somerset,1,NA,2020-03-25,Maryland,MD,24039
-Talbot,1,NA,2020-03-25,Maryland,MD,24041
-Washington,2,NA,2020-03-25,Maryland,MD,24043
-Wicomico,4,NA,2020-03-25,Maryland,MD,24045
-Worcester,2,NA,2020-03-25,Maryland,MD,24047
-Anne Arundel,24,NA,2020-03-24,Maryland,MD,24003
-Baltimore City,41,NA,2020-03-24,Maryland,MD,24510
-Baltimore,42,NA,2020-03-24,Maryland,MD,24005
+Anne Arundel,31,NA,2020-03-24,Maryland,MD,24003
+Baltimore City,53,NA,2020-03-24,Maryland,MD,24510
+Baltimore,51,NA,2020-03-24,Maryland,MD,24005
 Calvert,3,NA,2020-03-24,Maryland,MD,24009
 Caroline,1,NA,2020-03-24,Maryland,MD,24011
 Carroll,5,NA,2020-03-24,Maryland,MD,24013
-Cecil,3,NA,2020-03-24,Maryland,MD,24015
-Charles,5,NA,2020-03-24,Maryland,MD,24017
-Frederick,4,NA,2020-03-24,Maryland,MD,24021
+Cecil,4,NA,2020-03-24,Maryland,MD,24015
+Charles,8,NA,2020-03-24,Maryland,MD,24017
+Frederick,7,NA,2020-03-24,Maryland,MD,24021
 Garrett,3,NA,2020-03-24,Maryland,MD,24023
 Harford,5,NA,2020-03-24,Maryland,MD,24025
-Howard,30,NA,2020-03-24,Maryland,MD,24027
-Montgomery,107,NA,2020-03-24,Maryland,MD,24031
-Prince Georges,63,NA,2020-03-24,Maryland,MD,24033
+Howard,35,NA,2020-03-24,Maryland,MD,24027
+Kent,1,NA,2020-03-24,Maryland,MD,24029
+Montgomery,127,NA,2020-03-24,Maryland,MD,24031
+Prince Georges,76,NA,2020-03-24,Maryland,MD,24033
 Queen Annes,1,NA,2020-03-24,Maryland,MD,24035
 St Marys,2,NA,2020-03-24,Maryland,MD,24037
 Somerset,1,NA,2020-03-24,Maryland,MD,24039
@@ -339,24 +320,67 @@ Talbot,1,NA,2020-03-24,Maryland,MD,24041
 Washington,2,NA,2020-03-24,Maryland,MD,24043
 Wicomico,4,NA,2020-03-24,Maryland,MD,24045
 Worcester,2,NA,2020-03-24,Maryland,MD,24047
-Anne Arundel,20,NA,2020-03-23,Maryland,MD,24003
-Baltimore City,31,NA,2020-03-23,Maryland,MD,24510
-Baltimore,35,NA,2020-03-23,Maryland,MD,24005
-Calvert,2,NA,2020-03-23,Maryland,MD,24009
+Anne Arundel,31,NA,2020-03-24,Maryland,MD,24003
+Baltimore City,53,NA,2020-03-24,Maryland,MD,24510
+Baltimore,51,NA,2020-03-24,Maryland,MD,24005
+Calvert,3,NA,2020-03-24,Maryland,MD,24009
+Caroline,1,NA,2020-03-24,Maryland,MD,24011
+Carroll,5,NA,2020-03-24,Maryland,MD,24013
+Cecil,4,NA,2020-03-24,Maryland,MD,24015
+Charles,8,NA,2020-03-24,Maryland,MD,24017
+Frederick,7,NA,2020-03-24,Maryland,MD,24021
+Garrett,3,NA,2020-03-24,Maryland,MD,24023
+Harford,5,NA,2020-03-24,Maryland,MD,24025
+Howard,35,NA,2020-03-24,Maryland,MD,24027
+Kent,1,NA,2020-03-24,Maryland,MD,24029
+Montgomery,127,NA,2020-03-24,Maryland,MD,24031
+Prince Georges,76,NA,2020-03-24,Maryland,MD,24033
+Queen Annes,1,NA,2020-03-24,Maryland,MD,24035
+St Marys,2,NA,2020-03-24,Maryland,MD,24037
+Somerset,1,NA,2020-03-24,Maryland,MD,24039
+Talbot,1,NA,2020-03-24,Maryland,MD,24041
+Washington,2,NA,2020-03-24,Maryland,MD,24043
+Wicomico,4,NA,2020-03-24,Maryland,MD,24045
+Worcester,2,NA,2020-03-24,Maryland,MD,24047
+Anne Arundel,24,NA,2020-03-23,Maryland,MD,24003
+Baltimore City,41,NA,2020-03-23,Maryland,MD,24510
+Baltimore,42,NA,2020-03-23,Maryland,MD,24005
+Calvert,3,NA,2020-03-23,Maryland,MD,24009
 Caroline,1,NA,2020-03-23,Maryland,MD,24011
 Carroll,5,NA,2020-03-23,Maryland,MD,24013
-Cecil,1,NA,2020-03-23,Maryland,MD,24015
+Cecil,3,NA,2020-03-23,Maryland,MD,24015
 Charles,5,NA,2020-03-23,Maryland,MD,24017
-Frederick,2,NA,2020-03-23,Maryland,MD,24021
+Frederick,4,NA,2020-03-23,Maryland,MD,24021
 Garrett,3,NA,2020-03-23,Maryland,MD,24023
 Harford,5,NA,2020-03-23,Maryland,MD,24025
-Howard,26,NA,2020-03-23,Maryland,MD,24027
-Montgomery,93,NA,2020-03-23,Maryland,MD,24031
-Prince Georges,47,NA,2020-03-23,Maryland,MD,24033
+Howard,30,NA,2020-03-23,Maryland,MD,24027
+Montgomery,107,NA,2020-03-23,Maryland,MD,24031
+Prince Georges,63,NA,2020-03-23,Maryland,MD,24033
 Queen Annes,1,NA,2020-03-23,Maryland,MD,24035
-St Marys,1,NA,2020-03-23,Maryland,MD,24037
+St Marys,2,NA,2020-03-23,Maryland,MD,24037
 Somerset,1,NA,2020-03-23,Maryland,MD,24039
 Talbot,1,NA,2020-03-23,Maryland,MD,24041
 Washington,2,NA,2020-03-23,Maryland,MD,24043
 Wicomico,4,NA,2020-03-23,Maryland,MD,24045
 Worcester,2,NA,2020-03-23,Maryland,MD,24047
+Anne Arundel,20,NA,2020-03-22,Maryland,MD,24003
+Baltimore City,31,NA,2020-03-22,Maryland,MD,24510
+Baltimore,35,NA,2020-03-22,Maryland,MD,24005
+Calvert,2,NA,2020-03-22,Maryland,MD,24009
+Caroline,1,NA,2020-03-22,Maryland,MD,24011
+Carroll,5,NA,2020-03-22,Maryland,MD,24013
+Cecil,1,NA,2020-03-22,Maryland,MD,24015
+Charles,5,NA,2020-03-22,Maryland,MD,24017
+Frederick,2,NA,2020-03-22,Maryland,MD,24021
+Garrett,3,NA,2020-03-22,Maryland,MD,24023
+Harford,5,NA,2020-03-22,Maryland,MD,24025
+Howard,26,NA,2020-03-22,Maryland,MD,24027
+Montgomery,93,NA,2020-03-22,Maryland,MD,24031
+Prince Georges,47,NA,2020-03-22,Maryland,MD,24033
+Queen Annes,1,NA,2020-03-22,Maryland,MD,24035
+St Marys,1,NA,2020-03-22,Maryland,MD,24037
+Somerset,1,NA,2020-03-22,Maryland,MD,24039
+Talbot,1,NA,2020-03-22,Maryland,MD,24041
+Washington,2,NA,2020-03-22,Maryland,MD,24043
+Wicomico,4,NA,2020-03-22,Maryland,MD,24045
+Worcester,2,NA,2020-03-22,Maryland,MD,24047

@@ -37,8 +37,8 @@ stateCountyPops <- stateCountyPops %>%
   mutate(FIPS = str_c(STATE, COUNTY), TOTAL_POP = POPESTIMATE2019, TOTAL_POP_100K = POPESTIMATE2019 / 100000)
 
 
-#### This is the data webscraping done for VA, MD, and WV that should be done THE DAY OF DATA DESIRED because those states update their their daily numbers
-## the day of instead of DC updating numbers the day before.
+#### This is the data webscraping done for DC, VA, MD, and WV that should be done THE DAY AFTER DATA DESIRED
+#### All dashboards/datasites seem to update at around 10am so start just after then.
 
 ###### First the webscraping #####
 ### West Virginia Scraping
@@ -81,7 +81,7 @@ WV_powerbiurl <- WV_powerbi$getElementAttribute("src") # Doing this because the 
 WV_powerbiurl <- unlist(WV_powerbiurl)
 Sys.sleep(10)
 remDr$navigate(WV_powerbiurl)
-Sys.sleep(30)
+Sys.sleep(15)
 
 
 
@@ -180,6 +180,49 @@ virginiaDownloadLinkCasesByRaceURL <- unlist(virginiaDownloadLinkCasesByRaceURL)
 download.file(virginiaDownloadLinkCasesByRaceURL, destfile = "Virginia_By_Race_Today.csv")
 
 Sys.sleep(5)
+
+## DC scraping
+# This is the old way before the download link
+# install_splash()
+# Sys.sleep(10)
+# splash_svr <- start_splash()
+# Sys.sleep(10)
+# 
+# splash("localhost") %>% splash_active()
+# Sys.sleep(10)
+# splash("localhost") %>% 
+#   render_html("https://coronavirus.dc.gov/page/coronavirus-data", wait = 5) -> DC_pg
+# 
+# DC_pg_html <- DC_pg %>% 
+#   html_nodes(".even") %>% 
+#   html_text()
+# stop_splash(splash_svr)
+# 
+# Get updated total data excel download
+Sys.sleep(5)
+remDr$navigate("https://coronavirus.dc.gov/page/coronavirus-data")
+Sys.sleep(15)
+dcDataA <- remDr$findElement(using = "xpath", value = "/html/body/div[4]/section/div[2]/div/div/div/div[2]/div/div/article/div[1]/div[1]/div/div/ul[1]/li[5]/a")
+Sys.sleep(5)
+dcDataDownloadLink <- dcDataA$getElementAttribute("href")
+Sys.sleep(5)
+dcDataDownloadLink <- unlist(dcDataDownloadLink)
+Sys.sleep(5)
+download.file(dcDataDownloadLink, destfile = "dcCovid-19DataSummaryToday.xlsx")
+
+Sys.sleep(5)
+# Get demographic breakout covid-19 case data
+dcCovid19ByAgeSexTodayHTML <- remDr$findElement(using = "xpath", value = "/html/body/div[4]/section/div[2]/div/div/div/div[2]/div/div/article/div[1]/div[1]/div/div/table[1]")
+Sys.sleep(5)
+dcCovid19ByAgeSexToday <- dcCovid19ByAgeSexTodayHTML$getElementAttribute("outerHTML")[[1]] %>% read_html(useInternalNodes = T) %>% html_table(fill = T)
+# Get covid-19 case data by DC ward
+Sys.sleep(5)
+dcCovid19ByWardTodayHTML <- remDr$findElement(using = "xpath", value = "/html/body/div[4]/section/div[2]/div/div/div/div[2]/div/div/article/div[1]/div[1]/div/div/table[2]")
+Sys.sleep(5)
+dcCovid19ByWardToday <- dcCovid19ByWardTodayHTML$getElementAttribute("outerHTML")[[1]] %>% read_html(useInternalNodes = T) %>% html_table(fill = T)
+
+## Stop the web-scraper
+Sys.sleep(5)
 remDr$close()
 Sys.sleep(10)
 system("docker stop $(docker ps -a -q)")
@@ -188,7 +231,7 @@ system("docker container prune -f")
 system("docker image prune -f")
 Sys.sleep(10)
 
-########### VA, MD, and WV data analysis ###########
+########### DC, VA, MD, and WV data analysis ###########
 # The Selenium server is closed and docker container/image is wiped off.
 
 # West Virginia analysis
@@ -211,7 +254,7 @@ WV_CountiesDFCleaned <- WV_CountiesDF %>%
   separate(Combined, into = c("County", "Cases"), sep = " ") %>% 
   mutate(Cases = as.integer(Cases))
 # Adding Date and State Name columns
-WV_CountiesDFCleaned$Date <- Sys.Date()
+WV_CountiesDFCleaned$Date <- Sys.Date() - 1
 WV_CountiesDFCleaned$State <- "West Virginia"
 # Joining in state abbreviation and FIPS code columns
 WV_CountiesDFCleaned <- WV_CountiesDFCleaned %>% 
@@ -221,21 +264,24 @@ WV_CountiesDFCleaned <- WV_CountiesDFCleaned %>%
 # Adding into main file
 WV_Counties <- read_csv("WV_Counties.csv")
 WV_Counties <- bind_rows(WV_CountiesDFCleaned, WV_Counties)
+
 write_csv(WV_Counties, "WV_Counties.csv")
 
 
 ### Maryland analysis ###
 # Data cleaning and adding in state abbreviation and FIPS code column
 casesByCounty <- casesByCounty[[1]]
-colnames(casesByCounty) <- c("County", "Cases")
+colnames(casesByCounty) <- c("County", "Cases", "Deaths")
 
 casesByCounty <- casesByCounty %>% 
-  separate(col = Cases, into = c("Cases", "Deaths"), sep = ",\\s+") %>% 
-  mutate(Deaths = str_remove_all(Deaths, "[\\(\\)]"))
+  #separate(col = Cases, into = c("Cases", "Deaths"), sep = ",\\s+") %>% 
+  mutate(Deaths = str_remove_all(Deaths, "[\\(\\)]")) %>% 
+  mutate(Cases = str_remove_all(Cases, ",")) %>% 
+  mutate(Deaths = replace(Deaths, Deaths == "", NA))
 
 
 MD_By_County_Today <- casesByCounty %>% 
-  mutate(Date = Sys.Date(), State = "Maryland", County = str_remove_all(County, "['\\.]"), Cases = as.integer(Cases), Deaths = as.integer(Deaths)) %>% 
+  mutate(Date = Sys.Date() - 1, State = "Maryland", County = str_remove_all(County, "['\\.]"), Cases = as.integer(Cases), Deaths = as.integer(Deaths)) %>% 
   left_join(stateConversions, by = c("State" = "Full_Name")) %>% 
   left_join(countyStateFIPS, by = c("Abbr" = "State", "County" = "Name")) %>% 
   dplyr::select(County, Cases, Deaths, Date, State, Abbr, FIPS)
@@ -271,7 +317,7 @@ MD_Summary_Today <- confirmedCasesDeathsHospitalizationsTests %>%
   as_tibble(.name_repair = "universal") %>% 
   separate(...1, into = c("Measure", "Amount"), sep = ": ") %>% 
   mutate(Amount = as.integer(Amount)) %>% 
-  mutate(Date = Sys.Date()) %>% 
+  mutate(Date = Sys.Date() - 1) %>% 
   pivot_wider(names_from = Measure, values_from = Amount) %>% 
   mutate(Cases = `Confirmed Cases`, Tests = `negative test results`, State = "Maryland") %>% 
   mutate(Tests = sum(Tests, sum(MD_By_County_Today$Cases))) %>% 
@@ -294,7 +340,7 @@ MD_By_Sex_Today <- MD_By_Sex_Today %>%
 
 MD_By_Sex_Today <- tibble(Sex = c(MD_By_Sex_Today[[1]][1], MD_By_Sex_Today[[1]][3]), 
        Cases = as.integer(c(MD_By_Sex_Today[[1]][2], MD_By_Sex_Today[[1]][4])),
-       Date = as.Date(rep(Sys.Date(), 2)),
+       Date = as.Date(rep(Sys.Date() - 1, 2)),
        State = rep("Maryland", 2))
 
 # MD_By_Sex_Today <- MD_By_Sex_Today %>%
@@ -347,7 +393,7 @@ MD_By_Age_Today <- casesByAgeAndSex[1:9,]
 colnames(MD_By_Age_Today) <- c("Age_Range", "Cases")
 
 MD_By_Age_Today <- MD_By_Age_Today %>% 
-  mutate(Date = Sys.Date(), State = "Maryland", Cases = as.integer(Cases))
+  mutate(Date = Sys.Date() - 1, State = "Maryland", Cases = as.integer(Cases))
 
 
 # mdAgeBreakdownToday <- mdAgeSexBreakdown[1:9]
@@ -368,16 +414,16 @@ MD_By_Age <- read_csv("MD_By_Age.csv")
 MD_By_Age <- bind_rows(MD_By_Age_Today, MD_By_Age)
 write_csv(MD_By_Age, "MD_By_Age.csv")
 
+Sys.sleep(5)
 
-# Virginia Analysis
-
+#### Virginia Analysis 
 # Read in and clean by county file. Include state abbreviation and FIPS code column
 Virginia_By_County_Today <- read_csv("Virginia_By_County_Today.csv", locale = locale(encoding = "UTF-8"))
 
 Virginia_By_County_Today <- Virginia_By_County_Today %>% 
   rename(County = Locality, Date = `Report Date`, Cases = `Total Cases`) %>% 
   mutate(State = "Virginia") %>% 
-  mutate(Date = mdy(Date)) %>% 
+  mutate(Date = mdy(Date) - 1) %>% 
   left_join(stateConversions, by = c("State" = "Full_Name")) %>% 
   dplyr::select(County, Cases, Date, State, Abbr, FIPS)
 
@@ -391,7 +437,7 @@ Virginia_By_Age_Today <- read_csv("Virginia_By_Age_Today.csv")
 # Clean up today's Virginia Age data and add in state column
 Virginia_By_Age_Today <- Virginia_By_Age_Today %>% 
   mutate(Date = `Report Date`, Age_Range = `Age Group`, Cases = `Number of Cases`, State = "Virginia") %>% 
-  mutate(Date = mdy(Date)) %>% 
+  mutate(Date = mdy(Date) - 1) %>% 
   select(Age_Range, Cases, Date, State)
 # Add today's data into main file.
 Virginia_By_Age <- read_csv("Virginia_By_Age.csv")
@@ -403,7 +449,7 @@ Virginia_By_Sex_Today <- read_csv("Virginia_By_Sex_Today.csv")
 
 Virginia_By_Sex_Today <- Virginia_By_Sex_Today %>% 
   mutate(Date = `Report Date`, Cases = `Number of Cases`, State = "Virginia") %>% 
-  mutate(Date = mdy(Date)) %>% 
+  mutate(Date = mdy(Date) - 1) %>% 
   select(Sex, Cases, Date, State)
 # Add today's data into the main file
 Virginia_By_Sex <- read_csv("Virginia_By_Sex.csv")
@@ -415,7 +461,7 @@ Virginia_By_Race_Today <- read_csv("Virginia_By_Race_Today.csv")
 
 Virginia_By_Race_Today <- Virginia_By_Race_Today %>% 
   mutate(Date = `Report Date`, Cases = `Number of Cases`, State = "Virginia") %>% 
-  mutate(Date = mdy(Date)) %>% 
+  mutate(Date = mdy(Date) - 1) %>% 
   select(Race, Cases, Date, State)
 # Add today's data into the main file
 Virginia_By_Race <- read_csv("Virginia_By_Race.csv")
@@ -558,7 +604,7 @@ Virginia_Totals <- as.data.frame(rbind(Virginia_Totals_Headers, Virginia_Totals_
 Virginia_Totals <- Virginia_Totals[2,]
 colnames(Virginia_Totals) <- Virginia_Totals_Headers
 
-Virginia_Totals$Date <- Sys.Date()
+Virginia_Totals$Date <- Sys.Date() - 1
 Virginia_Totals$Tests <- as.integer(Virginia_Totals$Tests)
 Virginia_Totals$Hospitalizations <- as.integer(Virginia_Totals$Hospitalizations)
 Virginia_Totals$Deaths <- as.integer(Virginia_Totals$Deaths)
@@ -570,113 +616,9 @@ Virginia_Totals <- read_csv("VirginiaTotals.csv")
 Virginia_Totals <- bind_rows(Virginia_Totals_Today, Virginia_Totals)
 write_csv(Virginia_Totals, "VirginiaTotals.csv")
 
-#### STOP FOR DAY ######
-########################################################################################################
-#### This has to be done the day AFTER the day you are updating for #######
-
-## Re-loading the packages and reference dataframes
-library(rvest)
-library(htmltools)
-library(htmlwidgets)
-library(RColorBrewer)
-library(xml2)
-library(curl)
-library(httr)
-library(splashr)
-library(stevedore)
-library(rlist)
-library(lubridate)
-library(RSelenium)
-library(wdman)
-library(devtools)
-library(pdftools)
-library(sf)
-library(raster)
-library(sp)
-library(rgdal)
-library(leaflet)
-library(plotly)
-library(mapview)
-library(readxl)
-library(scales)
-library(tidyverse)
-setwd("/home/adrian/Documents/DCist_Covid-19_Analysis")
-# Import conversion tables first
-stateConversions <- tibble(Full_Name = state.name, Abbr = state.abb)
-stateConversions <- bind_rows(stateConversions, tibble(Full_Name = "District of Columbia", Abbr = "DC")) %>% 
-  arrange(Full_Name)
-
-countyStateFIPS <- read_csv("countyFIPSCodes2019.csv")
-countyStateFIPS <- bind_rows(countyStateFIPS, tibble(FIPS = 11001, Name = "District of Columbia", State = "DC"))
-
-stateCountyPops <- read_csv("/home/adrian/Documents/US_County_Shapfile_Population/co-est2019-alldata.csv", col_types = cols_only(SUMLEV = "c", STATE = "c", COUNTY = "c", STNAME = "c", CTYNAME = "c", POPESTIMATE2019 = "n"))
-stateCountyPops <- stateCountyPops %>% 
-  mutate(FIPS = str_c(STATE, COUNTY), TOTAL_POP = POPESTIMATE2019, TOTAL_POP_100K = POPESTIMATE2019 / 100000)
-
-# DC Scraping AND Analysis
-# DC is both last and done separately becuase they update their data the next morning so not all
-# data can be collected/analyzed on the same day
-
-# Reinitialize the Selenium scraper
-Sys.sleep(10)
-system('docker pull selenium/standalone-firefox')
-Sys.sleep(10)
-system('docker run -t -d -p 4445:4444 --memory 1024mb --shm-size 2g selenium/standalone-firefox')
-Sys.sleep(10)
-remDr <- remoteDriver(remoteServerAddr = "localhost", port = 4445L, browserName = "firefox")
-Sys.sleep(10)
-remDr$open()
-Sys.sleep(10)
-
-## DC scraping
-# # DC is last because they update last (the following day at 10am)
-# This is the old way before the download link
-# install_splash()
-# Sys.sleep(10)
-# splash_svr <- start_splash()
-# Sys.sleep(10)
-# 
-# splash("localhost") %>% splash_active()
-# Sys.sleep(10)
-# splash("localhost") %>% 
-#   render_html("https://coronavirus.dc.gov/page/coronavirus-data", wait = 5) -> DC_pg
-# 
-# DC_pg_html <- DC_pg %>% 
-#   html_nodes(".even") %>% 
-#   html_text()
-# stop_splash(splash_svr)
-# 
-# Get updated total data excel download
 Sys.sleep(5)
-remDr$navigate("https://coronavirus.dc.gov/page/coronavirus-data")
-Sys.sleep(15)
-dcDataA <- remDr$findElement(using = "xpath", value = "/html/body/div[4]/section/div[2]/div/div/div/div[2]/div/div/article/div[1]/div[1]/div/div/ul[1]/li[5]/a")
-Sys.sleep(5)
-dcDataDownloadLink <- dcDataA$getElementAttribute("href")
-Sys.sleep(5)
-dcDataDownloadLink <- unlist(dcDataDownloadLink)
-Sys.sleep(5)
-download.file(dcDataDownloadLink, destfile = "dcCovid-19DataSummaryToday.xlsx")
 
-Sys.sleep(5)
-# Get demographic breakout covid-19 case data
-dcCovid19ByAgeSexTodayHTML <- remDr$findElement(using = "xpath", value = "/html/body/div[4]/section/div[2]/div/div/div/div[2]/div/div/article/div[1]/div[1]/div/div/table[1]")
-Sys.sleep(5)
-dcCovid19ByAgeSexToday <- dcCovid19ByAgeSexTodayHTML$getElementAttribute("outerHTML")[[1]] %>% read_html(useInternalNodes = T) %>% html_table(fill = T)
-# Get covid-19 case data by DC ward
-Sys.sleep(5)
-dcCovid19ByWardTodayHTML <- remDr$findElement(using = "xpath", value = "/html/body/div[4]/section/div[2]/div/div/div/div[2]/div/div/article/div[1]/div[1]/div/div/table[2]")
-Sys.sleep(5)
-dcCovid19ByWardToday <- dcCovid19ByWardTodayHTML$getElementAttribute("outerHTML")[[1]] %>% read_html(useInternalNodes = T) %>% html_table(fill = T)
-# Stop selenium webscraper
-remDr$close()
-Sys.sleep(10)
-system("docker stop $(docker ps -a -q)")
-system("docker rm $(docker ps -a -q)")
-system("docker container prune -f")
-system("docker image prune -f")
-Sys.sleep(10)
-
+#### DC Analysis
 # Old stuff # This is before they posted download link!
 # DC_data_raw <- DC_pg_html[2]
 # 
@@ -858,8 +800,8 @@ Sys.sleep(5)
 
 
 # Reading in the full excel file sheet and spliting the Cases/Hospital data from the by Organization data
-dcCovid19DataSummaryDCOrgsToday <- read_xlsx("dcCovid-19DataSummaryToday.xlsx", sheet = "Sheet1", skip = 12)
-dcCovid19DataSummaryToday <- read_xlsx("dcCovid-19DataSummaryToday.xlsx", sheet = "Sheet1", n_max = 11)
+dcCovid19DataSummaryDCOrgsToday <- read_xlsx("dcCovid-19DataSummaryToday.xlsx", sheet = "Overal Stats", skip = 12)
+dcCovid19DataSummaryToday <- read_xlsx("dcCovid-19DataSummaryToday.xlsx", sheet = "Overal Stats", n_max = 11)
 
 # Cleaning the Cases/Hospital data
 colnames(dcCovid19DataSummaryToday) <- c("Organization", "Metric", as.character(seq.Date(from = as.Date("2020/03/07"), to = (Sys.Date() - 1), by = "day")))
@@ -895,7 +837,7 @@ DC_By_County <- dcCovid19TestingCases %>%
   left_join(stateConversions, by = c("State" = "Full_Name")) %>%
   left_join(countyStateFIPS, by = c("Abbr" = "State", "County" = "Name")) %>%
   dplyr::select(County, Cases, Date, State, Abbr, FIPS)
-  
+
 # Cleaning and saving most updated hosptials dataframe
 dcCovid19Hospitals <- dcCovid19DataSummaryToday %>% 
   select(Date, ICU.Beds.Available, Total.Ventilators, Ventilators.in.Use, Ventilators.Available)
@@ -916,22 +858,7 @@ dcCovid19DataSummaryDCOrgsToday <- dcCovid19DataSummaryDCOrgsToday %>%
 
 write_csv(dcCovid19DataSummaryDCOrgsToday, "dcCovid19DataSummaryDCOrgs.csv")
 
-## We now have to re-import yesterday's VA, MD, and WV numbers from yesterday to run the daily totals
-Virginia_Totals_Today <- read_csv("VirginiaTotals.csv") %>% filter(Date == max(Date))
-Virginia_By_County_Today <- read_csv("Virginia_By_County_Today.csv") %>% 
-  rename(County = Locality, Date = `Report Date`, Cases = `Total Cases`) %>% 
-  mutate(State = "Virginia") %>% 
-  mutate(Date = mdy(Date)) %>% 
-  filter(Date == max(Date)) %>% 
-  left_join(stateConversions, by = c("State" = "Full_Name")) %>% 
-  dplyr::select(County, Cases, Date, State, Abbr, FIPS)
-Virginia_By_County <- read_csv("Virginia_By_County.csv")
-
-MD_By_County <- read_csv("MD_By_County.csv")
-MD_Summary_Today <- read_csv("MD_Summary.csv") %>% filter(Date == max(Date))
-MD_By_County_Today <- MD_By_County %>% filter(Date == max(Date))
-
-WV_CountiesDFCleaned <- read_csv("WV_Counties.csv") %>% filter(Date == max(Date))
+Sys.sleep(5)
 
 ### This is for the top-line dataframe as requested by the DCist ####
 
@@ -975,7 +902,6 @@ dailySummaryToday <- bind_rows(dcSummary, Maryland, marylandCounties, Virginia, 
 # Adding the daily summary to the main file
 dailySummary <- read_csv("covidSummaryDCist.csv")
 dailySummary <- bind_rows(dailySummaryToday, dailySummary)
-
 write_csv(dailySummary, "covidSummaryDCist.csv")
 
 
@@ -986,7 +912,6 @@ Full_States <- read_csv("FullStates.csv")
 # Adding in today's by county data fro DC, VA, MD, and WV
 Full_States <- bind_rows(Full_States, Virginia_By_County, MD_By_County, WV_CountiesDFCleaned, DC_By_County) %>% 
   arrange(desc(Date))
-
 
 # Clean up county names so they can be joined on later
 Full_States <- Full_States %>%
@@ -1390,4 +1315,58 @@ Sys.sleep(15)
 # plotlyExample <- ggplotly(dmvCasesByCountyLine)
 # htmlwidgets::saveWidget(plotlyExample, file = "plotlyExample.html", selfcontained = F, libdir = getwd())
 
+dmvCasesByCountyLine <- DMV_Counties_Covid_Cases %>%
+  filter(Date >= as.Date("2020-03-23")) %>%
+  filter(FIPS %in% DMV_Closer_FIPS) %>%
+  ggplot(aes(x = Date, y = Cases)) +
+  geom_line(aes(color = County), size = 3) +
+  geom_point(aes(shape = State, color = County), size = 6) +
+  scale_y_continuous(trans = 'log2', breaks = trans_breaks("log2", function(x) 2^x)) + 
+  covid19Theme() +
+  scale_color_brewer(palette = "Paired") +
+  labs(title = "DMV Covid-19 cases by county", subtitle = "Over time", caption = ggplotCaption) + xlab("") + ylab("")
 
+legendText <- paste0(
+  "County: ", DMV_Cases$NAME, "<br/>",
+  "State: ", DMV_Cases$State, "<br/>",
+  "Cases: ", DMV_Cases$Cases, "<br/>"
+) %>% 
+  lapply(htmltools::HTML)
+
+test <- DMV_Counties_Covid_Cases %>%
+  filter(Date >= as.Date("2020-03-23")) %>%
+  filter(FIPS %in% DMV_Closer_FIPS)
+
+
+  plot_ly(data = test, 
+          x = ~Date, 
+          y = ~Cases,
+          linetype = ~factor(State),
+          color = ~factor(County),
+          text = ~State) %>% 
+  add_trace(colors = "Set3", 
+            mode = "lines+markers", 
+            type = "scatter", 
+            symbol = ~State,
+            hoverinfo = "text",
+            hovertext = paste(
+              "State: ", test$State,
+              "<br>County: ", test$County,
+              "<br>Cases: ", test$Cases,
+              "<br>Date: ", test$Date
+            )) %>% 
+  layout(yaxis = list(type = "log"))
+
+
+DMV_Counties_Covid_Cases %>%
+  filter(Date >= as.Date("2020-03-23")) %>%
+  filter(FIPS %in% DMV_Closer_FIPS) %>%
+  plot_ly(x = ~Date, 
+          y = ~Cases,
+          linetype = ~factor(State),
+          color = ~factor(County)) %>% 
+  add_trace(colors = "Set3", 
+            mode = "lines+markers", 
+            type = "scatter", 
+            symbol = ~State) %>% 
+  layout(yaxis = list(type = "log"))
