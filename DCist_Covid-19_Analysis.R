@@ -504,14 +504,14 @@ write_csv(Virginia_By_Race, "Virginia_By_Race.csv")
 # and save it in your working directory as the file path in the pdf_text call below
 
 # Create the headers (Tests, Hospitalizations, Deaths) and values 
-Virginia_Totals_Numbers <- pdf_text(paste0(paste("Virginia", "COVID-19", "Dashboard", Sys.Date(), sep = " "), ".pdf")) %>% 
+Virginia_Totals_Numbers <- pdf_text(paste0(paste("Virginia", "COVID-19", "Dashboard", Sys.Date() - 1, sep = " "), ".pdf")) %>% 
   str_remove_all("\n") %>%
   str_remove_all(",") %>% 
   str_remove_all("(\\s{1,})") %>% 
   str_extract_all("\\d+") %>% 
   unlist()
 
-Virginia_Totals_Headers <- pdf_text(paste0(paste("Virginia", "COVID-19", "Dashboard", Sys.Date(), sep = " "), ".pdf")) %>% 
+Virginia_Totals_Headers <- pdf_text(paste0(paste("Virginia", "COVID-19", "Dashboard", Sys.Date() - 1, sep = " "), ".pdf")) %>% 
   str_remove_all("\n") %>%
   str_remove_all(",") %>% 
   str_remove_all("(\\s{1,})") %>% 
