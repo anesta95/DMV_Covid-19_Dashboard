@@ -31,6 +31,7 @@ Human-Services---DHS,2020-04-04,NA,83,NA,NA,NA,97,NA,NA,NA,15,NA,NA,NA,NA,NA
 Human-Services---DHS,2020-04-05,NA,77,NA,NA,NA,101,NA,NA,NA,17,NA,NA,NA,NA,NA
 Human-Services---DHS,2020-04-06,NA,93,NA,NA,NA,107,NA,NA,NA,19,NA,NA,NA,NA,NA
 Human-Services---DHS,2020-04-07,NA,140,NA,NA,NA,152,NA,NA,NA,19,NA,NA,NA,NA,NA
+Human-Services---DHS,2020-04-08,NA,145,NA,NA,NA,155,NA,NA,NA,22,NA,NA,NA,NA,NA
 Public-Safety---DOC---Personnel,2020-03-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Public-Safety---DOC---Personnel,2020-03-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Public-Safety---DOC---Personnel,2020-03-09,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -63,6 +64,7 @@ Public-Safety---DOC---Personnel,2020-04-04,1,NA,NA,NA,NA,NA,137,141,4,NA,NA,NA,N
 Public-Safety---DOC---Personnel,2020-04-05,1,NA,NA,NA,NA,NA,137,141,4,NA,NA,NA,NA,NA,NA
 Public-Safety---DOC---Personnel,2020-04-06,2,NA,NA,NA,NA,NA,196,201,5,NA,NA,NA,NA,NA,NA
 Public-Safety---DOC---Personnel,2020-04-07,8,NA,NA,NA,NA,NA,212,NA,7,NA,NA,NA,NA,NA,NA
+Public-Safety---DOC---Personnel,2020-04-08,8,NA,NA,NA,NA,NA,201,208,11,NA,NA,NA,NA,NA,NA
 Public-Safety---DOC--Residents,2020-03-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Public-Safety---DOC--Residents,2020-03-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Public-Safety---DOC--Residents,2020-03-09,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -95,6 +97,7 @@ Public-Safety---DOC--Residents,2020-04-04,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,126,14,2
 Public-Safety---DOC--Residents,2020-04-05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,153,18,2,NA,171
 Public-Safety---DOC--Residents,2020-04-06,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,232,20,2,NA,252
 Public-Safety---DOC--Residents,2020-04-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,230,28,8,NA,258
+Public-Safety---DOC--Residents,2020-04-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,230,37,8,NA,267
 Public-Safety---DYRS---Personnel,2020-03-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Public-Safety---DYRS---Personnel,2020-03-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Public-Safety---DYRS---Personnel,2020-03-09,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -127,6 +130,7 @@ Public-Safety---DYRS---Personnel,2020-04-04,8,NA,NA,NA,NA,NA,53,55,2,NA,NA,NA,NA
 Public-Safety---DYRS---Personnel,2020-04-05,8,NA,NA,NA,NA,NA,66,69,3,NA,NA,NA,NA,NA,NA
 Public-Safety---DYRS---Personnel,2020-04-06,8,NA,NA,NA,NA,NA,66,70,4,NA,NA,NA,NA,NA,NA
 Public-Safety---DYRS---Personnel,2020-04-07,8,NA,NA,NA,NA,NA,73,77,4,NA,NA,NA,NA,NA,NA
+Public-Safety---DYRS---Personnel,2020-04-08,8,NA,NA,NA,NA,NA,87,91,4,NA,NA,NA,NA,NA,NA
 Public-Safety---DYRS--Residents,2020-03-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Public-Safety---DYRS--Residents,2020-03-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Public-Safety---DYRS--Residents,2020-03-09,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -159,6 +163,7 @@ Public-Safety---DYRS--Residents,2020-04-04,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,6,3,7,9
 Public-Safety---DYRS--Residents,2020-04-05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,6,3,7,9,NA
 Public-Safety---DYRS--Residents,2020-04-06,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,6,3,0,9,NA
 Public-Safety---DYRS--Residents,2020-04-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,6,3,0,9,NA
+Public-Safety---DYRS--Residents,2020-04-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,6,3,0,9,NA
 Public-Safety---FEMS,2020-03-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Public-Safety---FEMS,2020-03-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Public-Safety---FEMS,2020-03-09,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -191,6 +196,7 @@ Public-Safety---FEMS,2020-04-04,176,NA,NA,NA,NA,NA,156,188,32,NA,NA,NA,NA,NA,NA
 Public-Safety---FEMS,2020-04-05,179,NA,NA,NA,NA,NA,196,196,33,NA,NA,NA,NA,NA,NA
 Public-Safety---FEMS,2020-04-06,179,NA,NA,NA,NA,NA,216,250,34,NA,NA,NA,NA,NA,NA
 Public-Safety---FEMS,2020-04-07,244,NA,NA,NA,NA,NA,197,237,40,NA,NA,NA,NA,NA,NA
+Public-Safety---FEMS,2020-04-08,270,NA,NA,NA,NA,NA,207,248,49,NA,NA,NA,NA,NA,NA
 Public-Safety---MPD,2020-03-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Public-Safety---MPD,2020-03-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Public-Safety---MPD,2020-03-09,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -223,6 +229,7 @@ Public-Safety---MPD,2020-04-04,203,NA,NA,NA,NA,NA,203,224,21,NA,NA,NA,NA,NA,NA
 Public-Safety---MPD,2020-04-05,204,NA,NA,NA,NA,NA,212,235,23,NA,NA,NA,NA,NA,NA
 Public-Safety---MPD,2020-04-06,203,NA,NA,NA,NA,NA,264,290,26,NA,NA,NA,NA,NA,NA
 Public-Safety---MPD,2020-04-07,223,NA,NA,NA,NA,NA,284,315,31,NA,NA,NA,NA,NA,NA
+Public-Safety---MPD,2020-04-08,247,NA,NA,NA,NA,NA,289,325,36,NA,NA,NA,NA,NA,NA
 Saint-Elizabeths-Hospital-(SEH-Individuals-in-Care-[IIC]),2020-03-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Saint-Elizabeths-Hospital-(SEH-Individuals-in-Care-[IIC]),2020-03-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Saint-Elizabeths-Hospital-(SEH-Individuals-in-Care-[IIC]),2020-03-09,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -255,6 +262,7 @@ Saint-Elizabeths-Hospital-(SEH-Individuals-in-Care-[IIC]),2020-04-04,NA,NA,95,6,
 Saint-Elizabeths-Hospital-(SEH-Individuals-in-Care-[IIC]),2020-04-05,NA,NA,95,7,95,NA,NA,NA,NA,NA,NA,NA,1,NA,NA
 Saint-Elizabeths-Hospital-(SEH-Individuals-in-Care-[IIC]),2020-04-06,NA,NA,119,9,119,NA,NA,NA,NA,NA,NA,NA,1,NA,NA
 Saint-Elizabeths-Hospital-(SEH-Individuals-in-Care-[IIC]),2020-04-07,NA,NA,142,11,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA
+Saint-Elizabeths-Hospital-(SEH-Individuals-in-Care-[IIC]),2020-04-08,NA,NA,142,14,NA,NA,NA,NA,NA,NA,NA,NA,1,NA,NA
 Saint-Elizabeths-Hospital-(SEH-Personnel),2020-03-07,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Saint-Elizabeths-Hospital-(SEH-Personnel),2020-03-08,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 Saint-Elizabeths-Hospital-(SEH-Personnel),2020-03-09,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -287,3 +295,4 @@ Saint-Elizabeths-Hospital-(SEH-Personnel),2020-04-04,"NA",NA,NA,NA,NA,NA,53,53,1
 Saint-Elizabeths-Hospital-(SEH-Personnel),2020-04-05,"NA",NA,NA,NA,NA,NA,53,53,14,NA,NA,NA,NA,NA,NA
 Saint-Elizabeths-Hospital-(SEH-Personnel),2020-04-06,"NA",NA,NA,NA,NA,NA,61,61,19,NA,NA,NA,NA,NA,NA
 Saint-Elizabeths-Hospital-(SEH-Personnel),2020-04-07,1,NA,NA,NA,NA,NA,69,69,22,NA,NA,NA,NA,NA,NA
+Saint-Elizabeths-Hospital-(SEH-Personnel),2020-04-08,1,NA,NA,NA,NA,NA,73,73,29,NA,NA,NA,NA,NA,NA
