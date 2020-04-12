@@ -1,4 +1,28 @@
 County,Cases,Date,State,Abbr,FIPS,Deaths
+Arlington,366,2020-04-11,Virginia,VA,51013,NA
+Clarke,3,2020-04-11,Virginia,VA,51043,NA
+Culpeper,19,2020-04-11,Virginia,VA,51047,NA
+Prince William,389,2020-04-11,Virginia,VA,51153,NA
+Warren,15,2020-04-11,Virginia,VA,51187,NA
+Alexandria City,198,2020-04-11,Virginia,VA,51510,NA
+Fairfax City,1,2020-04-11,Virginia,VA,51600,NA
+Manassas Park,10,2020-04-11,Virginia,VA,51685,NA
+Fairfax,1008,2020-04-11,Virginia,VA,51059,NA
+Fauquier,25,2020-04-11,Virginia,VA,51061,NA
+Loudoun,309,2020-04-11,Virginia,VA,51107,NA
+Rappahannock,1,2020-04-11,Virginia,VA,51157,NA
+Spotsylvania,50,2020-04-11,Virginia,VA,51177,NA
+Stafford,72,2020-04-11,Virginia,VA,51179,NA
+Falls Church,2,2020-04-11,Virginia,VA,51610,NA
+Fredericksburg,12,2020-04-11,Virginia,VA,51630,NA
+Manassas City,34,2020-04-11,Virginia,VA,51683,NA
+Calvert,90,2020-04-11,Maryland,MD,24009,1
+Charles,253,2020-04-11,Maryland,MD,24017,9
+Frederick,368,2020-04-11,Maryland,MD,24021,12
+Montgomery,1631,2020-04-11,Maryland,MD,24031,42
+Prince Georges,2035,2020-04-11,Maryland,MD,24033,55
+Jefferson,49,2020-04-11,West Virginia,WV,54037,NA
+District of Columbia,1875,2020-04-11,District of Columbia,DC,11001,50
 Fairfax,946,2020-04-10,Virginia,VA,51059,NA
 Fauquier,25,2020-04-10,Virginia,VA,51061,NA
 Loudoun,296,2020-04-10,Virginia,VA,51107,NA

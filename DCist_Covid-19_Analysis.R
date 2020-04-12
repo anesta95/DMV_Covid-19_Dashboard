@@ -974,16 +974,20 @@ Sys.sleep(5)
 colnames(dcCovid19DataSummaryDCOrgsToday) <- c("Organization", "Metric", as.character(seq.Date(from = as.Date("2020/03/07"), to = (Sys.Date() - 1), by = "day")))
 
 # Cleaning and resaving the most updated organization data
-dcCovid19DataSummaryDCOrgsToday <- dcCovid19DataSummaryDCOrgsToday %>% 
-  filter_all(any_vars(!is.na(.))) %>% 
-  filter(!is.na(Organization)) %>% 
-  gather(-c("Organization", "Metric"), key = "Date", value = "Amount") %>%
-  filter(Metric != "FEMS") %>% 
-  spread(key = Metric, value = Amount) %>% 
-  mutate(Organization = str_replace_all(Organization, " ", "-")) %>% 
-  rename_all(funs(str_replace_all(., " ", ".")))
 
-write_csv(dcCovid19DataSummaryDCOrgsToday, "dcCovid19DataSummaryDCOrgs.csv")
+# This needs to be re-done
+# dcCovid19DataSummaryDCOrgsToday <- dcCovid19DataSummaryDCOrgsToday %>% 
+#   filter_all(any_vars(!is.na(.))) %>% 
+#   filter(!is.na(Organization)) %>% 
+#   gather(-c("Organization", "Metric"), key = "Date", value = "Amount") %>%
+#   filter(Metric != "FEMS") %>% 
+#   distinct() %>% 
+#   filter(!is.na(Amount)) %>% 
+#   spread(key = Metric, value = Amount) %>% 
+#   mutate(Organization = str_replace_all(Organization, " ", "-")) %>% 
+#   rename_all(funs(str_replace_all(., " ", ".")))
+# 
+# write_csv(dcCovid19DataSummaryDCOrgsToday, "dcCovid19DataSummaryDCOrgs.csv")
 
 Sys.sleep(5)
 
