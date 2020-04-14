@@ -3,8 +3,6 @@
 
 # Ask NewsNerds question about how to best embed interactive data vis into webpage.
 
-# Offer to do WV data viz/analysis in freelance News Nerds chat
-
 # Call AU music library about returning CDs
 
 # After ~3 or so days add in to leaflet map and new bar/line chart of regional deaths
@@ -1024,7 +1022,7 @@ dcCovid19Hospitals <- dcCovid19DataSummaryToday %>%
 
 write_csv(dcCovid19Hospitals, "dcCovid19Hospitals.csv")
 Sys.sleep(5)
-colnames(dcCovid19DataSummaryDCOrgsToday) <- c("Organization", "Metric", as.character(seq.Date(from = as.Date("2020/03/07"), to = (Sys.Date() - 1), by = "day")))
+#colnames(dcCovid19DataSummaryDCOrgsToday) <- c("Organization", "Metric", as.character(seq.Date(from = as.Date("2020/03/07"), to = (Sys.Date() - 1), by = "day")))
 
 # Cleaning and resaving the most updated organization data
 
@@ -1097,7 +1095,7 @@ All_DMV_Deaths_Today <- All_DMV_Deaths_Today %>%
   filter(FIPS %in% c("11001", "24033", "24031", "24009", "24021", "51107", "51153", "51059", "51013", "51510", "51600", "51610", "51683", "51685"))
 
 
-All_DMV_Deaths <- read_csv("All_DMV_Deaths.csv")
+All_DMV_Deaths <- read_csv("All_DMV_Deaths.csv", col_types = "cnDccccccccnnn")
 All_DMV_Deaths <- bind_rows(All_DMV_Deaths_Today, All_DMV_Deaths)
 write_csv(All_DMV_Deaths, "All_DMV_Deaths.csv")
 
