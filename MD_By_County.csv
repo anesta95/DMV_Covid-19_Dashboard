@@ -1,4 +1,28 @@
 County,Cases,Deaths,Date,State,Abbr,FIPS
+Allegany,15,NA,2020-04-12,Maryland,MD,24001
+Anne Arundel,724,29,2020-04-12,Maryland,MD,24003
+Baltimore City,873,26,2020-04-12,Maryland,MD,24510
+Baltimore County,1361,31,2020-04-12,Maryland,MD,NA
+Calvert,94,1,2020-04-12,Maryland,MD,24009
+Caroline,21,NA,2020-04-12,Maryland,MD,24011
+Carroll,250,28,2020-04-12,Maryland,MD,24013
+Cecil,83,1,2020-04-12,Maryland,MD,24015
+Charles,274,10,2020-04-12,Maryland,MD,24017
+Dorchester,12,1,2020-04-12,Maryland,MD,24019
+Frederick,417,12,2020-04-12,Maryland,MD,24021
+Garrett,4,NA,2020-04-12,Maryland,MD,24023
+Harford,142,NA,2020-04-12,Maryland,MD,24025
+Howard,386,8,2020-04-12,Maryland,MD,24027
+Kent,11,NA,2020-04-12,Maryland,MD,24029
+Montgomery,1756,48,2020-04-12,Maryland,MD,24031
+Prince Georges,2205,63,2020-04-12,Maryland,MD,24033
+Queen Annes,19,NA,2020-04-12,Maryland,MD,24035
+St Marys,95,1,2020-04-12,Maryland,MD,24037
+Somerset,6,NA,2020-04-12,Maryland,MD,24039
+Talbot,16,1,2020-04-12,Maryland,MD,24041
+Washington,93,1,2020-04-12,Maryland,MD,24043
+Wicomico,58,1,2020-04-12,Maryland,MD,24045
+Worcester,21,NA,2020-04-12,Maryland,MD,24047
 Allegany,13,NA,2020-04-11,Maryland,MD,24001
 Anne Arundel,659,27,2020-04-11,Maryland,MD,24003
 Baltimore City,812,24,2020-04-11,Maryland,MD,24510

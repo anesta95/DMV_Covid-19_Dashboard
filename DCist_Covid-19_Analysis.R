@@ -1,4 +1,13 @@
 ### To do:
+# Ask Stack Overflow question about Rselenium download button w firefox profile
+
+# Ask NewsNerds question about how to best embed interactive data vis into webpage.
+
+# Offer to do WV data viz/analysis in freelance News Nerds chat
+
+# Call AU music library about returning CDs
+
+# After ~3 or so days add in to leaflet map and new bar/line chart of regional deaths
 
 # Add in a "percent growth" and a "percent growth per capita" option in the plotly dropdowns
 
@@ -62,8 +71,8 @@ Sys.sleep(5)
 # fprof <- makeFirefoxProfile(list(browser.download.folderList = 2L,  
 #                                  browser.download.manager.showWhenStarting = FALSE,
 #                                  browser.download.dir = getwd(),
-#                                  browser.helperApps.neverAsk.openFile = "multipart/x-zip,application/zip,application/x-zip-compressed,application/x-compressed,application/msword,application/csv,text/csv,image/png ,image/jpeg, application/pdf, text/html,text/plain,  application/excel, application/vnd.ms-excel, application/x-excel, application/x-msexcel, application/octet-stream",
-#                                  browser.helperApps.neverAsk.saveToDisk = "multipart/x-zip,application/zip,application/x-zip-compressed,application/x-compressed,application/msword,application/csv,text/csv,image/png ,image/jpeg, application/pdf, text/html,text/plain,  application/excel, application/vnd.ms-excel, application/x-excel, application/x-msexcel, application/octet-stream",
+#                                  browser.helperApps.neverAsk.openFile = "multipart/x-zip,application/zip,application/x-zip-compressed,application/x-compressed,application/msword,application/csv,text/csv,image/png ,image/jpeg, application/pdf, text/html,text/plain,  application/excel, application/vnd.ms-excel, application/x-excel, application/x-msexcel, application/octet-stream, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+#                                  browser.helperApps.neverAsk.saveToDisk = "multipart/x-zip,application/zip,application/x-zip-compressed,application/x-compressed,application/msword,application/csv,text/csv,image/png ,image/jpeg, application/pdf, text/html,text/plain,  application/excel, application/vnd.ms-excel, application/x-excel, application/x-msexcel, application/octet-stream, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
 #                                  browser.helperApps.alwaysAsk.force = FALSE,
 #                                  browser.download.manager.showAlertOnComplete = FALSE,
 #                                  browser.download.manager.closeWhenDone = TRUE,
@@ -99,9 +108,11 @@ Sys.sleep(5)
 # Get the WV by county breakout data
 remDr$navigate("https://dhhr.wv.gov/COVID-19/Pages/default.aspx")
 Sys.sleep(15)
-WV_powerbi <- remDr$findElement(using = 'xpath', value = '/html/body/form/div[7]/div/div[1]/div/div[2]/div/iframe')
+# WV_powerbi <- remDr$findElement(using = 'xpath', value = '/html/body/form/div[7]/div/div[1]/div/div[2]/div/iframe')
+WV_powerbi <- remDr$findElements(using = 'tag name', value = 'iframe')
+WV_powerbi_first <- WV_powerbi[[1]]
 Sys.sleep(5)
-WV_powerbiurl <- WV_powerbi$getElementAttribute("src") # Doing this because the powerbi site is scrapable but the WV health one is not.
+WV_powerbiurl <- WV_powerbi_first$getElementAttribute("src") # Doing this because the powerbi site is scrapable but the WV health one is not.
 WV_powerbiurl <- unlist(WV_powerbiurl)
 Sys.sleep(5)
 remDr$navigate(WV_powerbiurl)
@@ -186,45 +197,70 @@ casesByRace <- MD_Data_Div[[3]]$getElementAttribute("outerHTML")[[1]] %>%
 Sys.sleep(5)
 remDr$navigate("http://www.vdh.virginia.gov/coronavirus/")
 Sys.sleep(15)
-virginiaDownloadLinkCasesByCounty <- remDr$findElement(using = "xpath", value = "/html/body/div[3]/div[2]/div/main/article/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/p[2]/a")
-Sys.sleep(5)
-virginiaDownloadLinkCasesByCountyURL <- virginiaDownloadLinkCasesByCounty$getElementAttribute("href")
-Sys.sleep(5)
-virginiaDownloadLinkCasesByCountyURL <- unlist(virginiaDownloadLinkCasesByCountyURL)
 
+# Made this more concise/elegant below
+# virginiaDownloadLinkCasesByCounty <- remDr$findElement(using = "xpath", value = "/html/body/div[3]/div[2]/div/main/article/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/p[2]/a")
+# Sys.sleep(5)
+# virginiaDownloadLinkCasesByCountyURL <- virginiaDownloadLinkCasesByCounty$getElementAttribute("href")
+# Sys.sleep(5)
+# virginiaDownloadLinkCasesByCountyURL <- unlist(virginiaDownloadLinkCasesByCountyURL)
+# 
+# 
+# download.file(virginiaDownloadLinkCasesByCountyURL, destfile = "Virginia_By_County_Today.csv")
+# Sys.sleep(5)
+# 
+# virginiaDownloadLinkCasesByAge <- remDr$findElement(using = "xpath", value = "/html/body/div[3]/div[2]/div/main/article/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/p[3]/a")
+# Sys.sleep(5)
+# virginiaDownloadLinkCasesByAgeURL <- virginiaDownloadLinkCasesByAge$getElementAttribute("href")
+# Sys.sleep(5)
+# virginiaDownloadLinkCasesByAgeURL <- unlist(virginiaDownloadLinkCasesByAgeURL)
+# 
+# download.file(virginiaDownloadLinkCasesByAgeURL, destfile = "Virginia_By_Age_Today.csv")
+# Sys.sleep(5)
+# 
+# virginiaDownloadLinkCasesBySex <- remDr$findElement(using = "xpath", value = "/html/body/div[3]/div[2]/div/main/article/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/p[4]/a")
+# Sys.sleep(5)
+# virginiaDownloadLinkCasesBySexURL <- virginiaDownloadLinkCasesBySex$getElementAttribute("href")
+# Sys.sleep(5)
+# virginiaDownloadLinkCasesBySexURL <- unlist(virginiaDownloadLinkCasesBySexURL)
+# 
+# download.file(virginiaDownloadLinkCasesBySexURL, destfile = "Virginia_By_Sex_Today.csv")
+# Sys.sleep(5)
+# 
+# virginiaDownloadLinkCasesByRace <- remDr$findElement(using = "xpath", value = "/html/body/div[3]/div[2]/div/main/article/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/p[5]/a")
+# Sys.sleep(5)
+# virginiaDownloadLinkCasesByRaceURL <- virginiaDownloadLinkCasesByRace$getElementAttribute("href")
+# Sys.sleep(5)
+# 
+# virginiaDownloadLinkCasesByRaceURL <- unlist(virginiaDownloadLinkCasesByRaceURL)
+# 
+# download.file(virginiaDownloadLinkCasesByRaceURL, destfile = "Virginia_By_Race_Today.csv")
+# Sys.sleep(5)
+# 
+# virginiaDownloadLinkDeathsByCounty <- remDr$findElement(using = "xpath", value = "/html/body/div[3]/div[2]/div/main/article/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/p[6]/a")
+# Sys.sleep(5)
+# virginiaDownloadLinkDeathsByCountyURL <- virginiaDownloadLinkDeathsByCounty$getElementAttribute("href")
+# Sys.sleep(5)
+# virginiaDownloadLinkDeathsByCountyURL <- unlist(virginiaDownloadLinkDeathsByCountyURL)
+# 
+# download.file(virginiaDownloadLinkDeathsByCountyURL, destfile = "Virginia_Deaths_By_County_Today.csv")
+# Sys.sleep(5)
 
-download.file(virginiaDownloadLinkCasesByCountyURL, destfile = "Virginia_By_County_Today.csv")
+# Much easier and more reliable to use class of containing div
+virginiaDataDownloadDiv <- remDr$findElements(using = "class", value = "sow-accordion-panel-border")
 Sys.sleep(5)
-
-virginiaDownloadLinkCasesByAge <- remDr$findElement(using = "xpath", value = "/html/body/div[3]/div[2]/div/main/article/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/p[3]/a")
+virginiaDataDownloadATags <- virginiaDataDownloadDiv[[1]]$findChildElements(using = "tag name", value = "a")
 Sys.sleep(5)
-virginiaDownloadLinkCasesByAgeURL <- virginiaDownloadLinkCasesByAge$getElementAttribute("href")
+download.file(unlist(virginiaDataDownloadATags[[1]]$getElementAttribute("href")), destfile = "Virginia_By_County_Today.csv")
 Sys.sleep(5)
-virginiaDownloadLinkCasesByAgeURL <- unlist(virginiaDownloadLinkCasesByAgeURL)
-
-download.file(virginiaDownloadLinkCasesByAgeURL, destfile = "Virginia_By_Age_Today.csv")
+download.file(unlist(virginiaDataDownloadATags[[2]]$getElementAttribute("href")), destfile = "Virginia_By_Age_Today.csv")
 Sys.sleep(5)
-
-virginiaDownloadLinkCasesBySex <- remDr$findElement(using = "xpath", value = "/html/body/div[3]/div[2]/div/main/article/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/p[4]/a")
+download.file(unlist(virginiaDataDownloadATags[[3]]$getElementAttribute("href")), destfile = "Virginia_By_Sex_Today.csv")
 Sys.sleep(5)
-virginiaDownloadLinkCasesBySexURL <- virginiaDownloadLinkCasesBySex$getElementAttribute("href")
+download.file(unlist(virginiaDataDownloadATags[[4]]$getElementAttribute("href")), destfile = "Virginia_By_Race_Today.csv")
 Sys.sleep(5)
-virginiaDownloadLinkCasesBySexURL <- unlist(virginiaDownloadLinkCasesBySexURL)
-
-download.file(virginiaDownloadLinkCasesBySexURL, destfile = "Virginia_By_Sex_Today.csv")
+download.file(unlist(virginiaDataDownloadATags[[5]]$getElementAttribute("href")), destfile = "Virginia_DeathsHospitalizations_By_County_Today.csv")
 Sys.sleep(5)
-
-virginiaDownloadLinkCasesByRace <- remDr$findElement(using = "xpath", value = "/html/body/div[3]/div[2]/div/main/article/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/p[5]/a")
-Sys.sleep(5)
-virginiaDownloadLinkCasesByRaceURL <- virginiaDownloadLinkCasesByRace$getElementAttribute("href")
-Sys.sleep(5)
-
-virginiaDownloadLinkCasesByRaceURL <- unlist(virginiaDownloadLinkCasesByRaceURL)
-
-download.file(virginiaDownloadLinkCasesByRaceURL, destfile = "Virginia_By_Race_Today.csv")
-
-Sys.sleep(5)
-
 ## DC scraping
 # This is the old way before the download link
 # install_splash()
@@ -364,7 +400,7 @@ MD_By_County_Today <- casesByCounty %>%
 # This is Maryland counties in the DMV deaths total solo
 All_MD_DMV_Deaths_Today <- MD_By_County_Today %>% 
   filter(County %in% c("Prince Georges", "Montgomery", "Frederick", "Calvert")) %>% 
-  summarize(Deaths = sum(Deaths), State = unique(State), Date = unique(Date))
+  select(-Cases)
 
 # Adding to main file
 MD_By_County <- read_csv("MD_By_County.csv")
@@ -504,13 +540,23 @@ write_csv(MD_By_Race, "MD_By_Race.csv")
 Sys.sleep(5)
 
 #### Virginia Analysis 
-# Read in and clean by county file. Include state abbreviation and FIPS code column
+# Read in and clean cases and deaths by county file. Include state abbreviation and FIPS code column
 Virginia_By_County_Today <- read_csv("Virginia_By_County_Today.csv", locale = locale(encoding = "UTF-8"))
+Virginia_DeathsHospitalizations_Today <- read_csv("Virginia_DeathsHospitalizations_By_County_Today.csv")
+
+Virginia_DeathsHospitalizations_Today <- Virginia_DeathsHospitalizations_Today %>% 
+  rename(Date = `Report Date`, County = `Health District`, Cases = `Number of Cases`, Hospitalizations = `Number of Hospitalizations`, Deaths = `Number of Deaths`) %>% 
+  mutate(Date = Sys.Date() - 1, State = "Virginia")
+
+Virginia_DeathsHospitalizations <- read_csv("Virginia_DeathsHospitalizations.csv")
+Virginia_DeathsHospitalizations <- bind_rows(Virginia_DeathsHospitalizations_Today, Virginia_DeathsHospitalizations)
+write_csv(Virginia_DeathsHospitalizations, "Virginia_DeathsHospitalizations.csv")
 
 Virginia_By_County_Today <- Virginia_By_County_Today %>% 
   rename(County = Locality, Date = `Report Date`, Cases = `Total Cases`) %>% 
-  mutate(State = "Virginia", Date = mdy(Date) - 1, Deaths = NA) %>% 
-  left_join(stateConversions, by = c("State" = "Full_Name")) %>% 
+  mutate(State = "Virginia", Date = mdy(Date) - 1) %>% 
+  left_join(stateConversions, by = c("State" = "Full_Name")) %>%
+  left_join(select(Virginia_DeathsHospitalizations_Today, County, Hospitalizations, Deaths), by = c("County")) %>% 
   dplyr::select(County, Cases, Deaths, Date, State, Abbr, FIPS)
 
 # Add today's data into main file.
@@ -606,26 +652,34 @@ Virginia_Totals_Headers <- pdf_text(paste0(paste("Virginia", "COVID-19", "Dashbo
   unlist()
 
 # This is Virginia's deaths in the Northern Health District solo
-Virginia_Regional_Deaths_District_Numbers <- pdf_text(paste0(paste("Deaths", "-", "Region", Sys.Date() - 1, sep = " "), ".pdf")) %>% 
-  str_remove_all("\n") %>%
-  str_remove_all("(\\s{1,})") %>%
-  str_remove_all("DeathsbyHealthPlanningRegion") %>%
-  str_extract_all("\\d+") %>% 
-  unlist()
+# No longer doing this, they posted the download link!!
+# Virginia_Regional_Deaths_District_Numbers <- pdf_text(paste0(paste("Deaths", "-", "Region", Sys.Date() - 1, sep = " "), ".pdf")) %>% 
+#   str_remove_all("\n") %>%
+#   str_remove_all("(\\s{1,})") %>%
+#   str_remove_all("DeathsbyHealthPlanningRegion") %>%
+#   str_extract_all("\\d+") %>% 
+#   unlist()
+# 
+# Virginia_Regional_Deaths_District <- pdf_text(paste0(paste("Deaths", "-", "Region", Sys.Date() - 1, sep = " "), ".pdf")) %>% 
+#   str_remove_all("\n") %>%
+#   str_remove_all("(\\s{1,})") %>%
+#   str_remove_all("DeathsbyHealthPlanningRegion") %>%
+#   str_extract_all("[[:alpha:]]+") %>%
+#   unlist()
 
-Virginia_Regional_Deaths_District <- pdf_text(paste0(paste("Deaths", "-", "Region", Sys.Date() - 1, sep = " "), ".pdf")) %>% 
-  str_remove_all("\n") %>%
-  str_remove_all("(\\s{1,})") %>%
-  str_remove_all("DeathsbyHealthPlanningRegion") %>%
-  str_extract_all("[[:alpha:]]+") %>%
-  unlist()
+# No longer putting this dataframe together like this
+# All_VA_DMV_Deaths_Today <- tibble("Health_District" = Virginia_Regional_Deaths_District, "Deaths" = Virginia_Regional_Deaths_District_Numbers)  
+#   
+# All_VA_DMV_Deaths_Today <- All_VA_DMV_Deaths_Today %>% 
+#   mutate(Deaths = as.integer(Deaths), State = "Virginia", Date = Sys.Date() - 1) %>% 
+#   filter(Health_District == "Northern") %>% 
+#   select(Deaths, State, Date)
+All_VA_DMV_Deaths_Today <- Virginia_DeathsHospitalizations_Today %>% 
+  mutate(County = str_replace_all(County, "Alexandria", "Alexandria City")) %>% 
+  left_join(stateConversions, by = c("State" = "Full_Name")) %>% 
+  left_join(countyStateFIPS, by = c("Abbr" = "State", "County" = "Name")) %>% 
+  select(County, Deaths, Date, State, Abbr, FIPS)
 
-All_VA_DMV_Deaths_Today <- tibble("Health_District" = Virginia_Regional_Deaths_District, "Deaths" = Virginia_Regional_Deaths_District_Numbers)  
-  
-All_VA_DMV_Deaths_Today <- All_VA_DMV_Deaths_Today %>% 
-  mutate(Deaths = as.integer(Deaths), State = "Virginia", Date = Sys.Date() - 1) %>% 
-  filter(Health_District == "Northern") %>% 
-  select(Deaths, State, Date)
 
 # This will be done another later when I have time. I will continue to download the pdfs of it. 
 # They posted download links, sweet!!
@@ -708,18 +762,17 @@ All_VA_DMV_Deaths_Today <- All_VA_DMV_Deaths_Today %>%
 ## Clean up top-line tests, hospitalizations, and deaths dataframe by adding in date and state column
 Virginia_Totals_Headers[1] <- "Tests"
 
-Virginia_Totals <- as.data.frame(rbind(Virginia_Totals_Headers, Virginia_Totals_Numbers), row.names = F, stringsAsFactors = F)
-Virginia_Totals <- Virginia_Totals[2,]
-colnames(Virginia_Totals) <- Virginia_Totals_Headers
+Virginia_Totals_Today <- as.data.frame(rbind(Virginia_Totals_Headers, Virginia_Totals_Numbers), row.names = F, stringsAsFactors = F)
+Virginia_Totals_Today <- Virginia_Totals_Today[2,]
+colnames(Virginia_Totals_Today) <- Virginia_Totals_Headers
 
-Virginia_Totals$Date <- Sys.Date() - 1
-Virginia_Totals$Tests <- as.integer(Virginia_Totals$Tests)
-Virginia_Totals$Hospitalizations <- as.integer(Virginia_Totals$Hospitalizations)
-Virginia_Totals$Deaths <- as.integer(Virginia_Totals$Deaths)
-Virginia_Totals$State <- "Virginia"
+Virginia_Totals_Today$Date <- Sys.Date() - 1
+Virginia_Totals_Today$Tests <- as.integer(Virginia_Totals_Today$Tests)
+Virginia_Totals_Today$Hospitalizations <- as.integer(Virginia_Totals_Today$Hospitalizations)
+Virginia_Totals_Today$Deaths <- as.integer(Virginia_Totals_Today$Deaths)
+Virginia_Totals_Today$State <- "Virginia"
 
 # Add topline totals into main file
-Virginia_Totals_Today <- Virginia_Totals
 Virginia_Totals <- read_csv("VirginiaTotals.csv")
 Virginia_Totals <- bind_rows(Virginia_Totals_Today, Virginia_Totals)
 write_csv(Virginia_Totals, "VirginiaTotals.csv")
@@ -961,8 +1014,8 @@ All_DC_DMV_Deaths_Today <- dcCovid19TestingCases %>%
   mutate(Date = as.Date(Date)) %>%
   filter(Date == max(Date)) %>% 
   rename(Deaths = Number.of.Deaths) %>% 
-  mutate(State = "District of Columbia") %>% 
-  select(Deaths, State, Date)
+  mutate(State = "District of Columbia", County = "District of Columbia", Abbr = "DC", FIPS = 11001) %>% 
+  select(County, Deaths, Date, State, Abbr, FIPS)
 
 
 # Cleaning and saving most updated hosptials dataframe
@@ -976,15 +1029,15 @@ colnames(dcCovid19DataSummaryDCOrgsToday) <- c("Organization", "Metric", as.char
 # Cleaning and resaving the most updated organization data
 
 # This needs to be re-done
-# dcCovid19DataSummaryDCOrgsToday <- dcCovid19DataSummaryDCOrgsToday %>% 
-#   filter_all(any_vars(!is.na(.))) %>% 
-#   filter(!is.na(Organization)) %>% 
+# dcCovid19DataSummaryDCOrgsToday <- dcCovid19DataSummaryDCOrgsToday %>%
+#   filter_all(any_vars(!is.na(.))) %>%
+#   filter(!is.na(Organization)) %>%
 #   gather(-c("Organization", "Metric"), key = "Date", value = "Amount") %>%
-#   filter(Metric != "FEMS") %>% 
-#   distinct() %>% 
-#   filter(!is.na(Amount)) %>% 
-#   spread(key = Metric, value = Amount) %>% 
-#   mutate(Organization = str_replace_all(Organization, " ", "-")) %>% 
+#   filter(Metric != "FEMS") %>%
+#   distinct() %>%
+#   filter(!is.na(Amount)) %>%
+#   spread(key = Metric, value = Amount) %>%
+#   mutate(Organization = str_replace_all(Organization, " ", "-")) %>%
 #   rename_all(funs(str_replace_all(., " ", ".")))
 # 
 # write_csv(dcCovid19DataSummaryDCOrgsToday, "dcCovid19DataSummaryDCOrgs.csv")
@@ -1014,14 +1067,14 @@ Maryland <- tibble(State = "Maryland",
 # Making the Virginia cases by county
 virginiaCounties <- Virginia_By_County_Today %>% 
   filter(County %in% c("Alexandria", "Arlington", "Fairfax", "Loudoun", "Prince William", "Culpeper")) %>% 
-  mutate(Deaths = NA) %>% 
+  #mutate(Deaths = NA) %>% There is now county level VA deaths data
   mutate(Tests = NA) %>% 
   select(County, Cases, Deaths, Tests, Date)
 
 # Making the Maryland cases by county
 marylandCounties <- MD_By_County_Today %>% 
   filter(County %in% c("Montgomery", "Prince Georges", "Frederick", "Calvert")) %>% 
-  mutate(Deaths = NA) %>% 
+  #mutate(Deaths = NA) %>% There is now county level MD death data
   mutate(Tests = NA) %>% 
   select(County, Cases, Deaths, Tests, Date)
 
@@ -1038,16 +1091,15 @@ write_csv(dailySummary, "covidSummaryDCist.csv")
 # Making daily DMV deaths dataframe
 All_DMV_Deaths_Today <- bind_rows(All_DC_DMV_Deaths_Today, All_MD_DMV_Deaths_Today, All_VA_DMV_Deaths_Today)
 
-All_DMV_Deaths_Today <- stateCountyPops %>% 
-  filter(FIPS %in% c(11001, 24033, 24031, 24009, 24021, 51107, 51153, 51059, 51013, 51510, 51600, 51610, 51683, 51685)) %>% 
-  group_by(STNAME) %>% 
-  summarize(TOTAL_POP = sum(TOTAL_POP), TOTAL_POP_100K = sum(TOTAL_POP_100K)) %>% 
-  ungroup() %>% 
-  left_join(All_DMV_Deaths_Today, by = c("STNAME" = "State"))
+All_DMV_Deaths_Today <- All_DMV_Deaths_Today %>% 
+  mutate(FIPS = as.character(FIPS)) %>% 
+  left_join(stateCountyPops, by = "FIPS") %>% 
+  filter(FIPS %in% c("11001", "24033", "24031", "24009", "24021", "51107", "51153", "51059", "51013", "51510", "51600", "51610", "51683", "51685"))
+
 
 All_DMV_Deaths <- read_csv("All_DMV_Deaths.csv")
 All_DMV_Deaths <- bind_rows(All_DMV_Deaths_Today, All_DMV_Deaths)
-write_csv(All_DMV_Deaths, "All_DMV_Death.csv")
+write_csv(All_DMV_Deaths, "All_DMV_Deaths.csv")
 
 
 ### This is more expanded data for whole Washington Metro Area combined
