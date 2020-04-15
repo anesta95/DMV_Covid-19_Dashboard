@@ -66,7 +66,7 @@ system('docker run -t -d -p 4445:4444 --memory 1024mb --shm-size 2g selenium/sta
 Sys.sleep(5)
 # This works...but the download file is still not happening. Let's try again later?
 # This link seemed helpful: https://stackoverflow.com/questions/42293193/rselenium-on-docker-where-are-files-downloaded
-# fprof <- makeFirefoxProfile(list(browser.download.folderList = 2L,  
+# fprof <- makeFirefoxProfile(list(browser.download.folderList = 2L,
 #                                  browser.download.manager.showWhenStarting = FALSE,
 #                                  browser.download.dir = getwd(),
 #                                  browser.helperApps.neverAsk.openFile = "multipart/x-zip,application/zip,application/x-zip-compressed,application/x-compressed,application/msword,application/csv,text/csv,image/png ,image/jpeg, application/pdf, text/html,text/plain,  application/excel, application/vnd.ms-excel, application/x-excel, application/x-msexcel, application/octet-stream, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
@@ -74,7 +74,7 @@ Sys.sleep(5)
 #                                  browser.helperApps.alwaysAsk.force = FALSE,
 #                                  browser.download.manager.showAlertOnComplete = FALSE,
 #                                  browser.download.manager.closeWhenDone = TRUE,
-#                                  browser.download.manager.showWhenStarting = F 
+#                                  browser.download.manager.showWhenStarting = F
 #                                  #browser.helperApps.neverAsk.saveToDisk = "text/csv/xls/xlsx"
 #                                  ))
 # fprof <- makeFirefoxProfile("~/.mozilla/firefox/roy2pb8o.default")
@@ -363,19 +363,26 @@ write_csv(WV_Counties, "WV_Counties.csv")
 ### Maryland analysis ###
 # Data cleaning and adding in state abbreviation and FIPS code column
 casesByCounty <- casesByCounty[[1]]
-colnames(casesByCounty) <- c("County", "Cases", "Deaths")
+colnames(casesByCounty) <- c("County", "Cases", "Deaths", "Suspected_Deaths", "Extra")
+# Check to see if random extra column keeps showing up?
 
-casesByCounty <- casesByCounty %>% 
+casesByCounty <- casesByCounty[2:nrow(casesByCounty),] %>% 
   #separate(col = Cases, into = c("Cases", "Deaths"), sep = ",\\s+") %>% 
-  mutate(Deaths = str_remove_all(Deaths, "[\\(\\)]")) %>% 
+  mutate(Deaths = str_remove_all(Deaths, "[\\(\\)]")) %>%
+  mutate(Suspected_Deaths = str_remove_all(Suspected_Deaths, "\\*")) %>%
   mutate(Cases = str_remove_all(Cases, ",")) %>% 
-  mutate(Deaths = replace(Deaths, Deaths == "", NA))
+  mutate(Cases = as.integer(Cases), Deaths = as.integer(Deaths), Suspected_Deaths = as.integer(Suspected_Deaths)) %>% 
+  mutate(Deaths = replace(Deaths, is.na(Deaths), 0)) %>% 
+  mutate(Suspected_Deaths = replace(Suspected_Deaths, is.na(Suspected_Deaths), 0)) %>% 
+  mutate(Cases = replace(Cases, is.na(Cases), 0))
+  
 
 
 MD_By_County_Today <- casesByCounty %>% 
-  mutate(Date = Sys.Date() - 1, State = "Maryland", County = str_remove_all(County, "['\\.]"), Cases = as.integer(Cases), Deaths = as.integer(Deaths)) %>% 
+  mutate(Date = Sys.Date() - 1, State = "Maryland", County = str_remove_all(County, "['\\.]")) %>% 
   left_join(stateConversions, by = c("State" = "Full_Name")) %>% 
-  left_join(countyStateFIPS, by = c("Abbr" = "State", "County" = "Name")) %>% 
+  left_join(countyStateFIPS, by = c("Abbr" = "State", "County" = "Name")) %>%
+  mutate(Deaths = Deaths + Suspected_Deaths) %>% 
   dplyr::select(County, Cases, Deaths, Date, State, Abbr, FIPS)
 
 # MD_By_County_Today <- casesByCounty %>% 
@@ -416,8 +423,9 @@ MD_Summary_Today <- confirmedCasesDeathsHospitalizationsTests %>%
   mutate(Amount = as.integer(Amount)) %>% 
   mutate(Date = Sys.Date() - 1) %>% 
   pivot_wider(names_from = Measure, values_from = Amount) %>% 
-  mutate(Cases = `Confirmed Cases`, Tests = `negative test results`, State = "Maryland") %>% 
+  mutate(Cases = `confirmed cases`, Tests = `negative test results`, State = "Maryland") %>% 
   mutate(Tests = sum(Tests, sum(MD_By_County_Today$Cases))) %>% 
+  rename(Deaths = deaths) %>% 
   select(Tests, Deaths, Hospitalizations, Date, State)
 
 # Adding to main file
@@ -429,18 +437,20 @@ write_csv(MD_Summary, "MD_Summary.csv")
 # Data cleaning and wrangling. This needed to create a tibble from scratch and then pivot it.
 casesByAgeAndSex <- casesByAgeAndSex[[1]]
 
-MD_By_Sex_Today <- casesByAgeAndSex[10:11,]
+MD_By_Sex_Today <- casesByAgeAndSex[12:13,]
 
 MD_By_Sex_Today <- MD_By_Sex_Today %>%
-  sapply(str_remove_all, "[,:\\(\\)]") %>% 
+  sapply(str_remove_all, "[,:\\(\\)\\*]") %>% 
   as_tibble()
   # str_remove_all("[,:\\(\\)]") %>% 
   # str_split("\\s+")
 
-colnames(MD_By_Sex_Today) <- c("Sex", "Cases", "Deaths")
+colnames(MD_By_Sex_Today) <- c("Sex", "Cases", "Deaths", "Suspected_Deaths")
 
 MD_By_Sex_Today <- MD_By_Sex_Today %>% 
-  mutate(Cases = as.integer(Cases), Deaths = as.integer(Deaths), Date = Sys.Date() - 1, State = "Maryland")
+  mutate(Cases = as.integer(Cases), Deaths = as.integer(Deaths), Date = Sys.Date() - 1, State = "Maryland", Suspected_Deaths = as.integer(Suspected_Deaths)) %>% 
+  mutate(Deaths = Deaths + Suspected_Deaths) %>% 
+  select(Sex, Cases, Deaths, Date, State)
 
 # MD_By_Sex_Today <- tibble(Sex = c(MD_By_Sex_Today[[1]][1], MD_By_Sex_Today[[1]][3]), 
 #        Cases = as.integer(c(MD_By_Sex_Today[[1]][2], MD_By_Sex_Today[[1]][4])),
@@ -493,12 +503,15 @@ write_csv(MD_By_Sex, "MD_By_Sex.csv")
 
 
 # Data cleaning and adding State and Date columns
-MD_By_Age_Today <- casesByAgeAndSex[1:9,]
-colnames(MD_By_Age_Today) <- c("Age_Range", "Cases", "Deaths")
+MD_By_Age_Today <- casesByAgeAndSex[2:11,]
+colnames(MD_By_Age_Today) <- c("Age_Range", "Cases", "Deaths", "Suspected_Deaths")
 
 MD_By_Age_Today <- MD_By_Age_Today %>%
-  mutate(Cases = str_remove_all(Cases, ","), Deaths = str_remove_all(Deaths, "[\\(\\)]")) %>% 
-  mutate(Date = Sys.Date() - 1, State = "Maryland", Cases = as.integer(Cases), Deaths = as.integer(Deaths))
+  mutate(Cases = str_remove_all(Cases, ","), Deaths = str_remove_all(Deaths, "[\\(\\)]"), Suspected_Deaths = str_remove_all(Suspected_Deaths, "\\*")) %>% 
+  mutate(Date = Sys.Date() - 1, State = "Maryland", Cases = as.integer(Cases), Deaths = as.integer(Deaths), Suspected_Deaths = as.integer(Suspected_Deaths)) %>% 
+  mutate(Deaths = replace(Deaths, is.na(Deaths), 0)) %>% 
+  mutate(Suspected_Deaths = replace(Suspected_Deaths, is.na(Suspected_Deaths), 0)) %>% 
+  mutate(Cases = replace(Cases, is.na(Cases), 0))
 
 
 # mdAgeBreakdownToday <- mdAgeSexBreakdown[1:9]
@@ -523,11 +536,19 @@ write_csv(MD_By_Age, "MD_By_Age.csv")
 ## Doing Maryland by Race
 MD_By_Race_Today <- casesByRace[[1]]
 
-colnames(MD_By_Race_Today) <- c("Race", "Cases", "Deaths")
+colnames(MD_By_Race_Today) <- c("Race", "Cases", "Deaths", "Suspected_Deaths")
 
-MD_By_Race_Today <- MD_By_Race_Today %>% 
-  mutate(Cases = str_remove_all(Cases, ","), Deaths = str_remove_all(Deaths, "[\\(\\)]")) %>% 
-  mutate(Date = Sys.Date() - 1, State = "Maryland", Cases = as.integer(Cases), Deaths = as.integer(Deaths))
+MD_By_Race_Today <- MD_By_Race_Today[2:nrow(MD_By_Race_Today),] %>% 
+  mutate(Cases = str_remove_all(Cases, ","), 
+         Deaths = str_remove_all(Deaths, "[\\(\\)]"), 
+         Race = str_remove_all(Race, "\\(NH\\)"), 
+         Suspected_Deaths = str_remove_all(Suspected_Deaths, "\\*")) %>% 
+  mutate(Date = Sys.Date() - 1, State = "Maryland", 
+         Cases = as.integer(Cases), 
+         Deaths = as.integer(Deaths),
+         Suspected_Deaths = as.integer(Suspected_Deaths)) %>% 
+  mutate(Deaths = Deaths + Suspected_Deaths) %>% 
+  select(Race, Cases, Deaths, Date, State)
 
 
 MD_By_Race <- read_csv("MD_By_Race.csv")
@@ -1825,5 +1846,14 @@ saveWidget(dmvCasesByCountyLinePlotlyGraph, "dmvCasesByCountyLinePlotlyGraph.htm
 
 
 
+widget_file_size <- function(p) {
+  d <- tempdir()
+  withr::with_dir(d, htmlwidgets::saveWidget(p, "index.html"))
+  f <- file.path(d, "index.html")
+  mb <- round(file.info(f)$size / 1e6, 3)
+  message("File is: ", mb," MB")
+}
 
+widget_file_size(dmvCasesByCountyLinePlotlyGraph)
+widget_file_size(partial_bundle(dmvCasesByCountyLinePlotlyGraph))
 
