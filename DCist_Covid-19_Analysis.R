@@ -158,7 +158,8 @@ Sys.sleep(5)
 # casesByCounty <- CNTY_C()
 
 # Using CSS class because website changes at times
-MD_Data_Div <- remDr$findElements(using = 'class', value = 'topBlackBoxText')
+MD_Data_Div <- remDr$findElements(using = 'class', value = 'topBlackBoxTable')
+Sys.sleep(5)
 casesByCounty <- MD_Data_Div[[1]]$getElementAttribute("outerHTML")[[1]] %>% 
   read_html(useInternalNodes = T) %>% 
   html_table(fill = T)
@@ -423,9 +424,9 @@ MD_Summary_Today <- confirmedCasesDeathsHospitalizationsTests %>%
   mutate(Amount = as.integer(Amount)) %>% 
   mutate(Date = Sys.Date() - 1) %>% 
   pivot_wider(names_from = Measure, values_from = Amount) %>% 
-  mutate(Cases = `confirmed cases`, Tests = `negative test results`, State = "Maryland") %>% 
+  mutate(Cases = `Confirmed Cases`, Tests = `negative test results`, State = "Maryland") %>% 
   mutate(Tests = sum(Tests, sum(MD_By_County_Today$Cases))) %>% 
-  rename(Deaths = deaths) %>% 
+  #rename(Deaths = deaths) %>% 
   select(Tests, Deaths, Hospitalizations, Date, State)
 
 # Adding to main file
@@ -449,6 +450,8 @@ colnames(MD_By_Sex_Today) <- c("Sex", "Cases", "Deaths", "Suspected_Deaths")
 
 MD_By_Sex_Today <- MD_By_Sex_Today %>% 
   mutate(Cases = as.integer(Cases), Deaths = as.integer(Deaths), Date = Sys.Date() - 1, State = "Maryland", Suspected_Deaths = as.integer(Suspected_Deaths)) %>% 
+  mutate(Deaths = replace(Deaths, is.na(Deaths), 0)) %>% 
+  mutate(Suspected_Deaths = replace(Suspected_Deaths, is.na(Suspected_Deaths), 0)) %>%
   mutate(Deaths = Deaths + Suspected_Deaths) %>% 
   select(Sex, Cases, Deaths, Date, State)
 
@@ -511,7 +514,9 @@ MD_By_Age_Today <- MD_By_Age_Today %>%
   mutate(Date = Sys.Date() - 1, State = "Maryland", Cases = as.integer(Cases), Deaths = as.integer(Deaths), Suspected_Deaths = as.integer(Suspected_Deaths)) %>% 
   mutate(Deaths = replace(Deaths, is.na(Deaths), 0)) %>% 
   mutate(Suspected_Deaths = replace(Suspected_Deaths, is.na(Suspected_Deaths), 0)) %>% 
-  mutate(Cases = replace(Cases, is.na(Cases), 0))
+  mutate(Cases = replace(Cases, is.na(Cases), 0)) %>% 
+  mutate(Deaths = Deaths + Suspected_Deaths) %>% 
+  select(Age_Range, Cases, Deaths, Date, State)
 
 
 # mdAgeBreakdownToday <- mdAgeSexBreakdown[1:9]
@@ -547,6 +552,8 @@ MD_By_Race_Today <- MD_By_Race_Today[2:nrow(MD_By_Race_Today),] %>%
          Cases = as.integer(Cases), 
          Deaths = as.integer(Deaths),
          Suspected_Deaths = as.integer(Suspected_Deaths)) %>% 
+  mutate(Deaths = replace(Deaths, is.na(Deaths), 0)) %>% 
+  mutate(Suspected_Deaths = replace(Suspected_Deaths, is.na(Suspected_Deaths), 0)) %>%
   mutate(Deaths = Deaths + Suspected_Deaths) %>% 
   select(Race, Cases, Deaths, Date, State)
 
