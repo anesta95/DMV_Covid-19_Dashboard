@@ -116,12 +116,21 @@ Sys.sleep(5)
 remDr$navigate(WV_powerbiurl)
 Sys.sleep(15)
 
+All_WV_Buttons <- remDr$findElements(using = "tag name", value = "button")
+Sys.sleep(5)
+WV_ByCounty_Button <- All_WV_Buttons[[3]]
+Sys.sleep(5)
+WV_ByCounty_Button$getElementText()
+Sys.sleep(5)
+WV_ByCounty_Button$clickElement()
+Sys.sleep(5)
+WV_CountiesDiv <- remDr$findElements(using = "class", value = "tableEx")
+Sys.sleep(5)
+WV_Counties <- WV_CountiesDiv[[1]]$getElementText()
 
-
-
-WV_CountiesDiv <- remDr$findElements(using = "class", value = "textbox")
-WV_CountiesText <- WV_CountiesDiv[[3]]
-WV_Counties <- WV_CountiesText$getElementText()
+# WV_CountiesDiv <- remDr$findElements(using = "class", value = "textbox")
+# WV_CountiesText <- WV_CountiesDiv[[3]]
+# WV_Counties <- WV_CountiesText$getElementText()
 
 # # Could also do this as a backup
 # WV_Counties <- remDr$findElement(using = "css selector", value = "visual-container-modern.visual-container-component:nth-child(11) > transform:nth-child(1) > div:nth-child(1) > div:nth-child(3) > visual-modern:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > p:nth-child(1) > span:nth-child(2)")
@@ -329,29 +338,57 @@ Sys.sleep(5)
 
 # West Virginia analysis
 # Data cleaning and wrangling into dataframe format
+# This had to be redone after the powerBI format was changed.
 WV_Counties <- WV_Counties %>% 
   unlist()
 
 # WV_Counties <- WV_Counties[[1]][1]
+WV_Counties_Unsplit <- WV_Counties %>% str_split("\\n") %>% unlist()
+WV_Headers <- make.names(str_trim(WV_Counties_Unsplit[1:2]))
+WV_Counties_Values <- WV_Counties_Unsplit[3:length(WV_Counties_Unsplit)]
 
-WV_CountiesDF <- WV_Counties %>% 
-  str_remove_all("CONFIRMED CASES PER COUNTY: ") %>% 
-  str_replace_all("\\(", "") %>% 
-  str_replace_all("\\)", "") %>% 
-  str_split(", ") %>% 
-  as_tibble("Combined")
+WV_Values_Test <- WV_Counties_Values %>% 
+  map_dbl(possibly(function(x) {
+   as.double(x) 
+  }, otherwise = NA_real_
+  )
+  )
 
-names(WV_CountiesDF) <- "Combined"
+WV_Values <- WV_Values_Test[!is.na(WV_Values_Test)]
 
-WV_CountiesDFCleaned <- WV_CountiesDF %>% 
-  separate(Combined, into = c("County", "Cases"), sep = " ") %>% 
-  mutate(Cases = as.integer(Cases))
+
+WV_County_Names_Test <- WV_Counties_Values %>% 
+  map_lgl(possibly(function(x) {
+    str_detect(x, "[[:alpha:]]+")#str_extract_all(x, "[[:alpha:]]+")
+  }, otherwise = NA))
+
+WV_County_Names <- WV_Counties_Values[WV_County_Names_Test]
+
+WV_CountiesDFCleaned <- tibble(WV_County_Names, WV_Values)
+
+colnames(WV_CountiesDFCleaned) <- WV_Headers
+
+
+# This is not needed anymore after county breakout total was moved to a different format and location
+# on WV health department website.
+# WV_CountiesDF <- WV_Counties %>% 
+#   str_remove_all("CONFIRMED CASES PER COUNTY: ") %>% 
+#   str_replace_all("\\(", "") %>% 
+#   str_replace_all("\\)", "") %>% 
+#   str_split(", ") %>% 
+#   as_tibble("Combined")
+# 
+# names(WV_CountiesDF) <- "Combined"
+# 
+# WV_CountiesDFCleaned <- WV_CountiesDF %>% 
+#   separate(Combined, into = c("County", "Cases"), sep = " ") %>% 
+#   mutate(Cases = as.integer(Cases))
 # Adding Date and State Name columns
 WV_CountiesDFCleaned$Date <- Sys.Date() - 1
 WV_CountiesDFCleaned$State <- "West Virginia"
 # Joining in state abbreviation and FIPS code columns
 WV_CountiesDFCleaned <- WV_CountiesDFCleaned %>% 
-  mutate(Deaths = NA) %>% 
+  mutate(Deaths = NA, County = County.of.Residence, Cases = Cumulative.Number) %>% 
   left_join(stateConversions, by = c("State" = "Full_Name")) %>% 
   left_join(countyStateFIPS, by = c("Abbr" = "State", "County" = "Name")) %>% 
   dplyr::select(County, Cases, Deaths, Date, State, Abbr, FIPS)
