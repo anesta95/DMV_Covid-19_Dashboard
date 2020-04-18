@@ -1,4 +1,28 @@
 County,Cases,Date,State,Abbr,FIPS,Deaths
+Arlington,520,2020-04-17,Virginia,VA,51013,17
+Clarke,6,2020-04-17,Virginia,VA,51043,NA
+Culpeper,39,2020-04-17,Virginia,VA,51047,NA
+Prince William,700,2020-04-17,Virginia,VA,51153,15
+Warren,24,2020-04-17,Virginia,VA,51187,NA
+Alexandria City,354,2020-04-17,Virginia,VA,51510,7
+Fairfax City,3,2020-04-17,Virginia,VA,51600,NA
+Manassas Park,21,2020-04-17,Virginia,VA,51685,NA
+Fairfax,1633,2020-04-17,Virginia,VA,51059,43
+Fauquier,36,2020-04-17,Virginia,VA,51061,NA
+Loudoun,413,2020-04-17,Virginia,VA,51107,7
+Rappahannock,1,2020-04-17,Virginia,VA,51157,5
+Spotsylvania,72,2020-04-17,Virginia,VA,51177,NA
+Stafford,143,2020-04-17,Virginia,VA,51179,NA
+Falls Church,0,2020-04-17,Virginia,VA,51610,NA
+Fredericksburg,15,2020-04-17,Virginia,VA,51630,NA
+Manassas City,82,2020-04-17,Virginia,VA,51683,NA
+Calvert,109,2020-04-17,Maryland,MD,24009,2
+Charles,347,2020-04-17,Maryland,MD,24017,16
+Frederick,557,2020-04-17,Maryland,MD,24021,31
+Montgomery,2404,2020-04-17,Maryland,MD,24031,86
+Prince Georges,3160,2020-04-17,Maryland,MD,24033,95
+Jefferson,60,2020-04-17,West Virginia,WV,54037,NA
+District of Columbia,2666,2020-04-17,District of Columbia,DC,11001,91
 Arlington,485,2020-04-16,Virginia,VA,51013,15
 Clarke,6,2020-04-16,Virginia,VA,51043,NA
 Culpeper,32,2020-04-16,Virginia,VA,51047,NA

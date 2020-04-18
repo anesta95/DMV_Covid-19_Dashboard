@@ -362,6 +362,7 @@ WV_County_Names_Test <- WV_Counties_Values %>%
     str_detect(x, "[[:alpha:]]+")#str_extract_all(x, "[[:alpha:]]+")
   }, otherwise = NA))
 
+
 WV_County_Names <- WV_Counties_Values[WV_County_Names_Test]
 
 WV_CountiesDFCleaned <- tibble(WV_County_Names, WV_Values)
@@ -475,7 +476,7 @@ write_csv(MD_Summary, "MD_Summary.csv")
 # Data cleaning and wrangling. This needed to create a tibble from scratch and then pivot it.
 casesByAgeAndSex <- casesByAgeAndSex[[1]]
 
-MD_By_Sex_Today <- casesByAgeAndSex[12:13,]
+MD_By_Sex_Today <- casesByAgeAndSex[12:nrow(casesByAgeAndSex),]
 
 MD_By_Sex_Today <- MD_By_Sex_Today %>%
   sapply(str_remove_all, "[,:\\(\\)\\*]") %>% 
@@ -1048,7 +1049,8 @@ dcCovid19DataSummaryToday <- dcCovid19DataSummaryToday %>%
 colnames(dcCovid19DataSummaryToday) <- make.names(colnames(dcCovid19DataSummaryToday), unique = T)
 
 dcCovid19TestingCases <- dcCovid19DataSummaryToday %>% 
-  select(Date, People.Tested.Overall, Total.Positives, Number.of.Deaths, People.Recovered)
+  select(Date, People.Tested.Overall, Total.Positives, Number.of.Deaths, People.Recovered) %>% 
+  arrange(desc(Date))
 
 # Re-saving the updated Cases/Testing dataframe
 write_csv(dcCovid19TestingCases, "dcCovid19TestingCases.csv")
@@ -1083,7 +1085,8 @@ All_DC_DMV_Deaths_Today <- dcCovid19TestingCases %>%
 
 # Cleaning and saving most updated hosptials dataframe
 dcCovid19Hospitals <- dcCovid19DataSummaryToday %>% 
-  select(Date, ICU.Beds.Available, Total.Ventilators, Ventilators.in.Use, Ventilators.Available)
+  select(Date, ICU.Beds.Available, Total.Ventilators, Ventilators.in.Use, Ventilators.Available) %>% 
+  arrange(desc(Date))
 
 write_csv(dcCovid19Hospitals, "dcCovid19Hospitals.csv")
 Sys.sleep(5)
