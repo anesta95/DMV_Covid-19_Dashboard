@@ -347,23 +347,27 @@ WV_Counties_Unsplit <- WV_Counties %>% str_split("\\n") %>% unlist()
 WV_Headers <- make.names(str_trim(WV_Counties_Unsplit[1:2]))
 WV_Counties_Values <- WV_Counties_Unsplit[3:length(WV_Counties_Unsplit)]
 
-WV_Values_Test <- WV_Counties_Values %>% 
-  map_dbl(possibly(function(x) {
-   as.double(x) 
-  }, otherwise = NA_real_
-  )
-  )
+# Much more elegant
+WV_Values <- WV_Counties_Values %>% keep(str_detect, "\\d+")
+WV_County_Names <- WV_Counties_Values %>% keep(str_detect, "[[:alpha:]]+")
 
-WV_Values <- WV_Values_Test[!is.na(WV_Values_Test)]
-
-
-WV_County_Names_Test <- WV_Counties_Values %>% 
-  map_lgl(possibly(function(x) {
-    str_detect(x, "[[:alpha:]]+")#str_extract_all(x, "[[:alpha:]]+")
-  }, otherwise = NA))
-
-
-WV_County_Names <- WV_Counties_Values[WV_County_Names_Test]
+# WV_Values_Test <- WV_Counties_Values %>% 
+#   map_dbl(possibly(function(x) {
+#    as.double(x) 
+#   }, otherwise = NA_real_
+#   )
+#   )
+# 
+# WV_Values <- WV_Values_Test[!is.na(WV_Values_Test)]
+# 
+# 
+# WV_County_Names_Test <- WV_Counties_Values %>% 
+#   map_lgl(possibly(function(x) {
+#     str_detect(x, "[[:alpha:]]+")#str_extract_all(x, "[[:alpha:]]+")
+#   }, otherwise = NA))
+# 
+# 
+# WV_County_Names <- WV_Counties_Values[WV_County_Names_Test]
 
 WV_CountiesDFCleaned <- tibble(WV_County_Names, WV_Values)
 
@@ -389,7 +393,7 @@ WV_CountiesDFCleaned$Date <- Sys.Date() - 1
 WV_CountiesDFCleaned$State <- "West Virginia"
 # Joining in state abbreviation and FIPS code columns
 WV_CountiesDFCleaned <- WV_CountiesDFCleaned %>% 
-  mutate(Deaths = NA, County = County.of.Residence, Cases = Cumulative.Number) %>% 
+  mutate(Deaths = NA, County = County.of.Residence, Cases = as.integer(Cumulative.Number)) %>% 
   left_join(stateConversions, by = c("State" = "Full_Name")) %>% 
   left_join(countyStateFIPS, by = c("Abbr" = "State", "County" = "Name")) %>% 
   dplyr::select(County, Cases, Deaths, Date, State, Abbr, FIPS)
@@ -462,9 +466,9 @@ MD_Summary_Today <- confirmedCasesDeathsHospitalizationsTests %>%
   mutate(Amount = as.integer(Amount)) %>% 
   mutate(Date = Sys.Date() - 1) %>% 
   pivot_wider(names_from = Measure, values_from = Amount) %>% 
-  mutate(Cases = `Confirmed Cases`, Tests = `negative test results`, State = "Maryland") %>% 
+  mutate(Cases = `confirmed cases`, Tests = `negative test results`, State = "Maryland") %>% 
   mutate(Tests = sum(Tests, sum(MD_By_County_Today$Cases))) %>% 
-  #rename(Deaths = deaths) %>% 
+  rename(Deaths = deaths) %>%
   select(Tests, Deaths, Hospitalizations, Date, State)
 
 # Adding to main file
@@ -962,7 +966,7 @@ Sys.sleep(5)
 # dcCovid19ByAgeSexToday <- dcCovid19ByAgeSexToday[3:nrow(dcCovid19ByAgeSexToday),]
 
 dcCovid19ByWardToday <- read_excel(paste0("COVID19_DCHealthStatisticsDataV3 (NewFileStructure)", Sys.Date() - 1,  ".xlsx"), sheet = "Total Cases by Ward")
-dcCovid19ByAgeSexToday <- read_excel(paste0("COVID19_DCHealthStatisticsDataV3 (NewFileStructure)", Sys.Date() - 1,  ".xlsx"), sheet = "PatientAge-Gender")
+dcCovid19ByAgeSexToday <- read_excel(paste0("COVID19_DCHealthStatisticsDataV3 (NewFileStructure)", Sys.Date() - 1,  ".xlsx"), sheet = "Total Cases by Age and Gender")
 
 dcCovid19ByAgeSexTodayXTab <- dcCovid19ByAgeSexToday %>% 
   mutate(Date = Sys.Date() - 1, State = "District of Columbia", Cases = as.integer(`Total Positives`), Age_Range = `Patient Age (yrs)`, Male = as.integer(Male), Female = as.integer(Female))
