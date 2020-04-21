@@ -1,73 +1,76 @@
-Sex,Cases,Date,State
-Female,4662,2020-04-19,Virginia
-Male,4248,2020-04-19,Virginia
-Not Reported,80,2020-04-19,Virginia
-Female,4417,2020-04-18,Virginia
-Male,4040,2020-04-18,Virginia
-Not Reported,80,2020-04-18,Virginia
-Female,4167,2020-04-17,Virginia
-Male,3807,2020-04-17,Virginia
-Not Reported,79,2020-04-17,Virginia
-Female,3877,2020-04-16,Virginia
-Male,3535,2020-04-16,Virginia
-Not Reported,79,2020-04-16,Virginia
-Female,3542,2020-04-15,Virginia
-Male,3279,2020-04-15,Virginia
-Not Reported,68,2020-04-15,Virginia
-Female,3335,2020-04-14,Virginia
-Male,3097,2020-04-14,Virginia
-Not Reported,68,2020-04-14,Virginia
-Female,3153,2020-04-13,Virginia
-Male,2951,2020-04-13,Virginia
-Not Reported,67,2020-04-13,Virginia
-Female,2908,2020-04-12,Virginia
-Male,2774,2020-04-12,Virginia
-Not Reported,65,2020-04-12,Virginia
-Female,2671,2020-04-11,Virginia
-Male,2543,2020-04-11,Virginia
-Not Reported,60,2020-04-11,Virginia
-Female,2569,2020-04-10,Virginia
-Male,2452,2020-04-10,Virginia
-Not Reported,56,2020-04-10,Virginia
-Female,2289,2020-04-09,Virginia
-Male,2163,2020-04-09,Virginia
-Not Reported,57,2020-04-09,Virginia
-Female,2053,2020-04-08,Virginia
-Male,1930,2020-04-08,Virginia
-Not Reported,59,2020-04-08,Virginia
-Female,1880,2020-04-07,Virginia
-Male,1717,2020-04-07,Virginia
-Not Reported,48,2020-04-07,Virginia
-Female,1718,2020-04-06,Virginia
-Male,1563,2020-04-06,Virginia
-Not Reported,52,2020-04-06,Virginia
-Female,1467,2020-04-05,Virginia
-Male,1360,2020-04-05,Virginia
-Not Reported,51,2020-04-05,Virginia
-Female,1330,2020-04-04,Virginia
-Male,1257,2020-04-04,Virginia
-Not Reported,50,2020-04-04,Virginia
-Female,1199,2020-04-03,Virginia
-Male,1162,2020-04-03,Virginia
-Not Reported,46,2020-04-03,Virginia
-Female,988,2020-04-02,Virginia
-Male,991,2020-04-02,Virginia
-Not Reported,33,2020-04-02,Virginia
-Female,844,2020-04-01,Virginia
-Male,844,2020-04-01,Virginia
-Not Reported,18,2020-04-01,Virginia
-Female,725,2020-03-31,Virginia
-Male,743,2020-03-31,Virginia
-Not Reported,16,2020-03-31,Virginia
-Male,607,2020-03-30,Virginia
-Female,628,2020-03-30,Virginia
-Not Reported,15,2020-03-30,Virginia
-Male,529,2020-03-29,Virginia
-Female,481,2020-03-29,Virginia
-Not Reported,10,2020-03-29,Virginia
-Male,417,2020-03-28,Virginia
-Female,464,2020-03-28,Virginia
-Not Reported,9,2020-03-28,Virginia
-Male,349,2020-03-27,Virginia
-Female,382,2020-03-27,Virginia
-Not Reported,8,2020-03-27,Virginia
+Sex,Cases,Hospitalized,Deaths,Date,State
+Female,4984,677,136,2020-04-20,Virginia
+Male,4565,898,181,2020-04-20,Virginia
+Not Reported,81,6,7,2020-04-20,Virginia
+Female,4662,NA,NA,2020-04-19,Virginia
+Male,4248,NA,NA,2020-04-19,Virginia
+Not Reported,80,NA,NA,2020-04-19,Virginia
+Female,4417,NA,NA,2020-04-18,Virginia
+Male,4040,NA,NA,2020-04-18,Virginia
+Not Reported,80,NA,NA,2020-04-18,Virginia
+Female,4167,NA,NA,2020-04-17,Virginia
+Male,3807,NA,NA,2020-04-17,Virginia
+Not Reported,79,NA,NA,2020-04-17,Virginia
+Female,3877,NA,NA,2020-04-16,Virginia
+Male,3535,NA,NA,2020-04-16,Virginia
+Not Reported,79,NA,NA,2020-04-16,Virginia
+Female,3542,NA,NA,2020-04-15,Virginia
+Male,3279,NA,NA,2020-04-15,Virginia
+Not Reported,68,NA,NA,2020-04-15,Virginia
+Female,3335,NA,NA,2020-04-14,Virginia
+Male,3097,NA,NA,2020-04-14,Virginia
+Not Reported,68,NA,NA,2020-04-14,Virginia
+Female,3153,NA,NA,2020-04-13,Virginia
+Male,2951,NA,NA,2020-04-13,Virginia
+Not Reported,67,NA,NA,2020-04-13,Virginia
+Female,2908,NA,NA,2020-04-12,Virginia
+Male,2774,NA,NA,2020-04-12,Virginia
+Not Reported,65,NA,NA,2020-04-12,Virginia
+Female,2671,NA,NA,2020-04-11,Virginia
+Male,2543,NA,NA,2020-04-11,Virginia
+Not Reported,60,NA,NA,2020-04-11,Virginia
+Female,2569,NA,NA,2020-04-10,Virginia
+Male,2452,NA,NA,2020-04-10,Virginia
+Not Reported,56,NA,NA,2020-04-10,Virginia
+Female,2289,NA,NA,2020-04-09,Virginia
+Male,2163,NA,NA,2020-04-09,Virginia
+Not Reported,57,NA,NA,2020-04-09,Virginia
+Female,2053,NA,NA,2020-04-08,Virginia
+Male,1930,NA,NA,2020-04-08,Virginia
+Not Reported,59,NA,NA,2020-04-08,Virginia
+Female,1880,NA,NA,2020-04-07,Virginia
+Male,1717,NA,NA,2020-04-07,Virginia
+Not Reported,48,NA,NA,2020-04-07,Virginia
+Female,1718,NA,NA,2020-04-06,Virginia
+Male,1563,NA,NA,2020-04-06,Virginia
+Not Reported,52,NA,NA,2020-04-06,Virginia
+Female,1467,NA,NA,2020-04-05,Virginia
+Male,1360,NA,NA,2020-04-05,Virginia
+Not Reported,51,NA,NA,2020-04-05,Virginia
+Female,1330,NA,NA,2020-04-04,Virginia
+Male,1257,NA,NA,2020-04-04,Virginia
+Not Reported,50,NA,NA,2020-04-04,Virginia
+Female,1199,NA,NA,2020-04-03,Virginia
+Male,1162,NA,NA,2020-04-03,Virginia
+Not Reported,46,NA,NA,2020-04-03,Virginia
+Female,988,NA,NA,2020-04-02,Virginia
+Male,991,NA,NA,2020-04-02,Virginia
+Not Reported,33,NA,NA,2020-04-02,Virginia
+Female,844,NA,NA,2020-04-01,Virginia
+Male,844,NA,NA,2020-04-01,Virginia
+Not Reported,18,NA,NA,2020-04-01,Virginia
+Female,725,NA,NA,2020-03-31,Virginia
+Male,743,NA,NA,2020-03-31,Virginia
+Not Reported,16,NA,NA,2020-03-31,Virginia
+Male,607,NA,NA,2020-03-30,Virginia
+Female,628,NA,NA,2020-03-30,Virginia
+Not Reported,15,NA,NA,2020-03-30,Virginia
+Male,529,NA,NA,2020-03-29,Virginia
+Female,481,NA,NA,2020-03-29,Virginia
+Not Reported,10,NA,NA,2020-03-29,Virginia
+Male,417,NA,NA,2020-03-28,Virginia
+Female,464,NA,NA,2020-03-28,Virginia
+Not Reported,9,NA,NA,2020-03-28,Virginia
+Male,349,NA,NA,2020-03-27,Virginia
+Female,382,NA,NA,2020-03-27,Virginia
+Not Reported,8,NA,NA,2020-03-27,Virginia

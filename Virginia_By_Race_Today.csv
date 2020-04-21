@@ -1,5 +1,134 @@
-﻿Report Date,Race,Number of Cases,Number of Hospitalizations,Number of Deaths
-4/20/2020,Not Reported,3130,243,31
-4/20/2020,Black or African American,1659,417,91
-4/20/2020,Other,1183,266,25
-4/20/2020,White,3018,574,153
+﻿Report Date,Race,Number of Cases,Number of Hospitalizations,Number of Deaths,Health District Name
+4/21/2020,Not Reported,65,3,1,Central Virginia
+4/21/2020,Black or African American,27,1,0,Central Shenandoah
+4/21/2020,White,221,36,7,Loudoun
+4/21/2020,Black or African American,147,30,10,Richmond
+4/21/2020,Other,1,0,0,Roanoke
+4/21/2020,White,65,15,1,Chesapeake
+4/21/2020,Not Reported,162,25,1,Rappahannock
+4/21/2020,Black or African American,36,3,0,Three Rivers
+4/21/2020,Other,19,1,0,Thomas Jefferson
+4/21/2020,Black or African American,32,4,0,Loudoun
+4/21/2020,White,21,3,0,Portsmouth
+4/21/2020,Not Reported,178,11,3,Alexandria
+4/21/2020,Not Reported,8,1,0,Lord Fairfax
+4/21/2020,Other,1,0,0,Lenowisco
+4/21/2020,Black or African American,31,12,7,Arlington
+4/21/2020,Black or African American,58,21,3,Chesapeake
+4/21/2020,Not Reported,3,1,0,Mount Rogers
+4/21/2020,Black or African American,75,25,3,Alexandria
+4/21/2020,Other,6,3,0,Rappahannock Rapidan
+4/21/2020,Black or African American,108,16,4,Chesterfield
+4/21/2020,White,24,3,0,Three Rivers
+4/21/2020,Black or African American,7,0,0,Lord Fairfax
+4/21/2020,Not Reported,139,5,0,Loudoun
+4/21/2020,White,52,13,4,Mount Rogers
+4/21/2020,Other,32,12,2,Virginia Beach
+4/21/2020,White,74,13,4,Chesterfield
+4/21/2020,White,168,17,0,Lord Fairfax
+4/21/2020,White,152,20,3,Alexandria
+4/21/2020,Black or African American,56,11,1,Virginia Beach
+4/21/2020,Other,57,4,0,Alexandria
+4/21/2020,Not Reported,44,7,0,Southside
+4/21/2020,Other,78,5,0,Central Shenandoah
+4/21/2020,Other,1,0,0,Central Virginia
+4/21/2020,Not Reported,726,72,15,Fairfax
+4/21/2020,Black or African American,73,30,3,Thomas Jefferson
+4/21/2020,Black or African American,147,40,2,Fairfax
+4/21/2020,White,47,11,3,Alleghany
+4/21/2020,Black or African American,54,20,1,Hampton
+4/21/2020,White,70,12,2,Western Tidewater
+4/21/2020,Not Reported,16,0,0,Thomas Jefferson
+4/21/2020,Black or African American,128,28,8,Prince William
+4/21/2020,White,18,7,1,Southside
+4/21/2020,Not Reported,92,7,0,Rappahannock Rapidan
+4/21/2020,Not Reported,5,0,0,Roanoke
+4/21/2020,Other,11,5,1,Peninsula
+4/21/2020,Not Reported,1,0,0,West Piedmont
+4/21/2020,Other,4,2,0,Portsmouth
+4/21/2020,Not Reported,94,8,2,Chickahominy
+4/21/2020,White,18,10,2,Pittsylvania-Danville
+4/21/2020,Other,157,32,3,Prince William
+4/21/2020,Not Reported,38,3,0,Virginia Beach
+4/21/2020,Not Reported,55,7,1,Peninsula
+4/21/2020,Other,2,1,0,Mount Rogers
+4/21/2020,Not Reported,72,3,0,Henrico
+4/21/2020,Black or African American,66,25,3,Peninsula
+4/21/2020,Not Reported,9,1,1,Lenowisco
+4/21/2020,Other,4,1,0,Hampton
+4/21/2020,Black or African American,3,0,0,Central Virginia
+4/21/2020,Black or African American,3,1,0,New River
+4/21/2020,White,47,8,2,Rappahannock Rapidan
+4/21/2020,Other,18,3,0,Lord Fairfax
+4/21/2020,White,23,3,0,West Piedmont
+4/21/2020,White,224,15,1,Central Shenandoah
+4/21/2020,White,19,4,0,Hampton
+4/21/2020,Not Reported,7,0,0,Norfolk
+4/21/2020,Other,76,14,1,Loudoun
+4/21/2020,Other,14,2,0,Richmond
+4/21/2020,Other,4,0,0,Chickahominy
+4/21/2020,White,77,25,2,Rappahannock
+4/21/2020,Not Reported,116,2,0,Central Shenandoah
+4/21/2020,Not Reported,1,0,0,Eastern Shore
+4/21/2020,Black or African American,37,13,1,Eastern Shore
+4/21/2020,Other,58,29,6,Arlington
+4/21/2020,Other,7,1,0,Western Tidewater
+4/21/2020,White,21,7,4,Crater
+4/21/2020,Other,7,1,0,Norfolk
+4/21/2020,Not Reported,461,55,5,Arlington
+4/21/2020,White,116,15,7,Thomas Jefferson
+4/21/2020,Black or African American,8,0,0,Cumberland Plateau
+4/21/2020,Other,27,2,2,Henrico
+4/21/2020,Other,3,1,0,Three Rivers
+4/21/2020,Not Reported,494,10,0,Prince William
+4/21/2020,White,65,16,6,Chickahominy
+4/21/2020,Black or African American,3,0,0,Alleghany
+4/21/2020,Black or African American,92,21,2,Western Tidewater
+4/21/2020,White,34,6,0,New River
+4/21/2020,Black or African American,1,0,0,West Piedmont
+4/21/2020,Other,12,0,0,Chesterfield
+4/21/2020,Black or African American,9,4,0,Pittsylvania-Danville
+4/21/2020,Other,2,1,1,West Piedmont
+4/21/2020,Not Reported,15,1,0,Hampton
+4/21/2020,White,162,34,5,Virginia Beach
+4/21/2020,White,10,1,0,Cumberland Plateau
+4/21/2020,Not Reported,25,1,0,New River
+4/21/2020,Not Reported,39,3,1,Three Rivers
+4/21/2020,White,35,11,2,Norfolk
+4/21/2020,Other,1,0,0,Piedmont
+4/21/2020,Black or African American,16,6,0,Southside
+4/21/2020,Not Reported,60,1,0,Western Tidewater
+4/21/2020,Not Reported,9,3,0,Pittsylvania-Danville
+4/21/2020,Other,1,0,0,Eastern Shore
+4/21/2020,Black or African American,47,21,3,Portsmouth
+4/21/2020,Black or African American,43,13,1,Piedmont
+4/21/2020,Not Reported,13,2,0,Alleghany
+4/21/2020,Black or African American,61,14,3,Crater
+4/21/2020,White,20,4,1,Central Virginia
+4/21/2020,White,75,18,5,Arlington
+4/21/2020,White,20,1,2,Piedmont
+4/21/2020,White,22,9,1,Lenowisco
+4/21/2020,Not Reported,39,1,0,Chesapeake
+4/21/2020,White,612,124,39,Fairfax
+4/21/2020,Other,14,0,0,Southside
+4/21/2020,White,179,59,15,Peninsula
+4/21/2020,Other,638,147,10,Fairfax
+4/21/2020,Not Reported,10,2,1,Portsmouth
+4/21/2020,Black or African American,277,48,35,Henrico
+4/21/2020,White,55,5,0,Richmond
+4/21/2020,Other,1,0,0,Alleghany
+4/21/2020,Black or African American,69,16,1,Norfolk
+4/21/2020,Not Reported,26,2,0,Piedmont
+4/21/2020,Black or African American,41,13,3,Rappahannock
+4/21/2020,White,20,3,0,Eastern Shore
+4/21/2020,White,15,2,0,Roanoke
+4/21/2020,Not Reported,56,4,2,Crater
+4/21/2020,Black or African American,3,0,0,Rappahannock Rapidan
+4/21/2020,Other,14,2,1,Chesapeake
+4/21/2020,Not Reported,30,2,0,Richmond
+4/21/2020,Other,16,9,0,Rappahannock
+4/21/2020,Black or African American,4,3,0,Roanoke
+4/21/2020,White,245,37,40,Henrico
+4/21/2020,Not Reported,196,0,1,Chesterfield
+4/21/2020,White,229,43,6,Prince William
+4/21/2020,Black or African American,23,11,4,Chickahominy

@@ -52,6 +52,13 @@ stateCountyPops <- read_csv("/home/adrian/Documents/US_County_Shapfile_Populatio
 stateCountyPops <- stateCountyPops %>% 
   mutate(FIPS = str_c(STATE, COUNTY), TOTAL_POP = POPESTIMATE2019, TOTAL_POP_100K = POPESTIMATE2019 / 100000)
 
+# Make the character vectors of the county names and FIPS codes
+DMV_Counties <- c("District of Columbia", 
+                  "Calvert", "Charles", "Frederick", "Montgomery", "Prince Georges", 
+                  "Alexandria", "Arlington", "Clarke", "Culpeper", "Fairfax", "Farquier", "Fredericksburg", "Loudoun", "Manassas", "Prince William", "Rappahannock", "Spotsylvania", "Stafford", "Warren",
+                  "Jefferson")
+DMV_FIPS <- c("11001", "24009", "24017", "24021", "24031", "24033", "51510", "51013", "51043", "51047", "51059", "51061", "51630", "51107", "51683", "51153", "51157", "51177", "51179", "51187", "54037", "51600", "51610", "51685")
+DMV_Closer_FIPS <- c("24031", "24033", "24021", "24009", "51510", "51013", "51059", "51600", "51107", "51153", "51047", "11001")
 
 #### This is the data webscraping done for DC, VA, MD, and WV that should be done THE DAY AFTER DATA DESIRED
 #### All dashboards/datasites seem to update at around 10am so start just after then.
@@ -255,19 +262,22 @@ Sys.sleep(15)
 # Sys.sleep(5)
 
 # Much easier and more reliable to use class of containing div
-virginiaDataDownloadDiv <- remDr$findElements(using = "class", value = "sow-accordion-panel-border")
+virginiaDataDownloadDiv <- remDr$findElements(using = "class", value = "update-bullets")
 Sys.sleep(5)
-virginiaDataDownloadATags <- virginiaDataDownloadDiv[[1]]$findChildElements(using = "tag name", value = "a")
+virginiaDataDownloadATags <- virginiaDataDownloadDiv[[2]]$findChildElements(using = "tag name", value = "a")
+# virginiaDataDownloadATags <- virginiaDataDownloadDiv[[1]]$findChildElements(using = "tag name", value = "a")
 Sys.sleep(5)
 download.file(unlist(virginiaDataDownloadATags[[1]]$getElementAttribute("href")), destfile = "Virginia_By_County_Today.csv")
 Sys.sleep(5)
-download.file(unlist(virginiaDataDownloadATags[[2]]$getElementAttribute("href")), destfile = "Virginia_By_Age_Today.csv")
+download.file(unlist(virginiaDataDownloadATags[[2]]$getElementAttribute("href")), destfile = "Virginia_Summary_Today.csv")
 Sys.sleep(5)
-download.file(unlist(virginiaDataDownloadATags[[3]]$getElementAttribute("href")), destfile = "Virginia_By_Sex_Today.csv")
+download.file(unlist(virginiaDataDownloadATags[[3]]$getElementAttribute("href")), destfile = "Virginia_DeathsHospitalizations_By_County_Today.csv")
 Sys.sleep(5)
-download.file(unlist(virginiaDataDownloadATags[[4]]$getElementAttribute("href")), destfile = "Virginia_By_Race_Today.csv")
+download.file(unlist(virginiaDataDownloadATags[[4]]$getElementAttribute("href")), destfile = "Virginia_By_Sex_Today.csv")
 Sys.sleep(5)
-download.file(unlist(virginiaDataDownloadATags[[5]]$getElementAttribute("href")), destfile = "Virginia_DeathsHospitalizations_By_County_Today.csv")
+download.file(unlist(virginiaDataDownloadATags[[5]]$getElementAttribute("href")), destfile = "Virginia_By_Race_Today.csv")
+Sys.sleep(5)
+download.file(unlist(virginiaDataDownloadATags[[6]]$getElementAttribute("href")), destfile = "Virginia_By_Age_Today.csv")
 Sys.sleep(5)
 ## DC scraping
 # This is the old way before the download link
@@ -466,9 +476,13 @@ MD_Summary_Today <- confirmedCasesDeathsHospitalizationsTests %>%
   mutate(Amount = as.integer(Amount)) %>% 
   mutate(Date = Sys.Date() - 1) %>% 
   pivot_wider(names_from = Measure, values_from = Amount) %>% 
-  mutate(Cases = `confirmed cases`, Tests = `negative test results`, State = "Maryland") %>% 
-  mutate(Tests = sum(Tests, sum(MD_By_County_Today$Cases))) %>% 
-  rename(Deaths = deaths) %>%
+  mutate(Cases = `confirmed cases`, 
+         Tests = `negative test results`, 
+         State = "Maryland", 
+         Confirmed_Deaths = `confirmed deaths`,
+         Probable_Deaths = `probable deaths`,
+         Hospitalizations = `Ever hospitalized`) %>% 
+  mutate(Tests = sum(Tests, sum(MD_By_County_Today$Cases)), Deaths = sum(Confirmed_Deaths, Probable_Deaths)) %>% 
   select(Tests, Deaths, Hospitalizations, Date, State)
 
 # Adding to main file
@@ -624,8 +638,8 @@ Virginia_By_County_Today <- Virginia_By_County_Today %>%
   rename(County = Locality, Date = `Report Date`, Cases = `Total Cases`) %>% 
   mutate(State = "Virginia", Date = mdy(Date) - 1) %>% 
   left_join(stateConversions, by = c("State" = "Full_Name")) %>%
-  left_join(select(Virginia_DeathsHospitalizations_Today, County, Hospitalizations, Deaths), by = c("County")) %>% 
-  dplyr::select(County, Cases, Deaths, Date, State, Abbr, FIPS)
+  #left_join(select(Virginia_DeathsHospitalizations_Today, County, Hospitalizations, Deaths), by = c("County")) %>% 
+  dplyr::select(County, Cases, Hospitalized, Deaths, Date, State, Abbr, FIPS)
 
 # Add today's data into main file.
 Virginia_By_County <- read_csv("Virginia_By_County.csv")
@@ -633,36 +647,95 @@ Virginia_By_County <- bind_rows(Virginia_By_County_Today, Virginia_By_County)
 write_csv(Virginia_By_County, "Virginia_By_County.csv")
 
 # Read in by age data for today
-Virginia_By_Age_Today <- read_csv("Virginia_By_Age_Today.csv")
+Virginia_By_Age_Health_District_Today <- read_csv("Virginia_By_Age_Today.csv")
+
+Virginia_By_Age_Health_District_Today <- Virginia_By_Age_Health_District_Today %>% 
+  rename(Date = `Report Date`, 
+         Age_Group = `Age Group`, 
+         Cases = `Number of Cases`, 
+         Hospitalized = `Number of Hospitalizations`, 
+         Deaths = `Number of Deaths`,
+         Health_District = `Health District Name`) %>% 
+  mutate(Date = Sys.Date() - 1, State = "Virginia")
+
+Virginia_By_Age_Health_District <- read_csv("Virginia_By_Age_Health_District.csv")
+Virginia_By_Age_Health_District <- bind_rows(Virginia_By_Age_Health_District_Today, Virginia_By_Age_Health_District)
+write_csv(Virginia_By_Age_Health_District, "Virginia_By_Age_Health_District.csv")
+Sys.sleep(5)
+
 # Clean up today's Virginia Age data and add in state column
-Virginia_By_Age_Today <- Virginia_By_Age_Today %>% 
-  mutate(Date = `Report Date`, Age_Range = `Age Group`, Cases = `Number of Cases`, State = "Virginia") %>% 
-  mutate(Date = mdy(Date) - 1) %>% 
-  select(Age_Range, Cases, Date, State)
+Virginia_By_Age_Today <- Virginia_By_Age_Health_District_Today %>% 
+  group_by(Age_Group) %>% 
+  summarize(Cases = sum(Cases), Hospitalized = sum(Hospitalized), Deaths = sum(Deaths)) %>% 
+  ungroup() %>% 
+  mutate(State = "Virginia", Date = Sys.Date() - 1) %>% 
+  rename(Age_Range = Age_Group)
+
+
+# Virginia_By_Age_Today <- Virginia_By_Age_Today %>% 
+#   mutate(Date = `Report Date`, Age_Range = `Age Group`, Cases = `Number of Cases`, State = "Virginia") %>% 
+#   mutate(Date = mdy(Date) - 1) %>% 
+#   select(Age_Range, Cases, Date, State)
+
+
 # Add today's data into main file.
 Virginia_By_Age <- read_csv("Virginia_By_Age.csv")
 Virginia_By_Age <- bind_rows(Virginia_By_Age_Today, Virginia_By_Age)
 write_csv(Virginia_By_Age, "Virginia_By_Age.csv")
 
 # Read/clean in Virginia's Sex data for today and add in state column
-Virginia_By_Sex_Today <- read_csv("Virginia_By_Sex_Today.csv")
+Virginia_By_Sex_Health_District_Today <- read_csv("Virginia_By_Sex_Today.csv")
 
-Virginia_By_Sex_Today <- Virginia_By_Sex_Today %>% 
-  mutate(Date = `Report Date`, Cases = `Number of Cases`, State = "Virginia") %>% 
-  mutate(Date = mdy(Date) - 1) %>% 
-  select(Sex, Cases, Date, State)
+Virginia_By_Sex_Health_District_Today <- Virginia_By_Sex_Health_District_Today %>% 
+  rename(Date = `Report Date`, 
+         Cases = `Number of Cases`,
+         Hospitalized = `Number of Hospitalizations`,
+         Deaths = `Number of Deaths`,
+         Health_District = `Health District Name`) %>% 
+  mutate(Date = Sys.Date() - 1, State = "Virginia")
+
+Virginia_By_Sex_Health_District <- read_csv("Virginia_By_Sex_Health_District.csv")
+Virginia_By_Sex_Health_District <- bind_rows(Virginia_By_Sex_Health_District, Virginia_By_Sex_Health_District_Today)
+write_csv(Virginia_By_Sex_Health_District, "Virginia_By_Sex_Health_District.csv")
+
+Virginia_By_Sex_Today <- Virginia_By_Sex_Health_District_Today %>% 
+  group_by(Sex) %>% 
+  summarize(Cases = sum(Cases), Hospitalized = sum(Hospitalized), Deaths = sum(Deaths)) %>% 
+  ungroup() %>% 
+  mutate(Date = Sys.Date() - 1, State = "Virginia")
+
+
+# Virginia_By_Sex_Today <- Virginia_By_Sex_Today %>% 
+#   mutate(Date = `Report Date`, Cases = `Number of Cases`, State = "Virginia") %>% 
+#   mutate(Date = mdy(Date) - 1) %>% 
+#   select(Sex, Cases, Date, State)
 # Add today's data into the main file
 Virginia_By_Sex <- read_csv("Virginia_By_Sex.csv")
 Virginia_By_Sex <- bind_rows(Virginia_By_Sex_Today, Virginia_By_Sex)
 write_csv(Virginia_By_Sex, "Virginia_By_Sex.csv")
 
 # Read/clean Virginia's by race data for today and add state column
-Virginia_By_Race_Today <- read_csv("Virginia_By_Race_Today.csv")
+Virginia_By_Race_Health_District_Today <- read_csv("Virginia_By_Race_Today.csv")
 
-Virginia_By_Race_Today <- Virginia_By_Race_Today %>% 
-  mutate(Date = `Report Date`, Cases = `Number of Cases`, State = "Virginia") %>% 
-  mutate(Date = mdy(Date) - 1) %>% 
-  select(Race, Cases, Date, State)
+Virginia_By_Race_Health_District_Today <- Virginia_By_Race_Health_District_Today %>% 
+  rename(Date = `Report Date`, Cases = `Number of Cases`, Hospitalized = `Number of Hospitalizations`, Deaths = `Number of Deaths`, Health_District = `Health District Name`) %>% 
+  mutate(Date = Sys.Date() - 1, State = "Virginia")
+
+Virginia_By_Race_Health_District <- read_csv("Virginia_By_Race_Health_District.csv")
+Virginia_By_Race_Health_District <- bind_rows(Virginia_By_Race_Health_District, Virginia_By_Race_Health_District_Today)
+write_csv(Virginia_By_Race_Health_District, "Virginia_By_Race_Health_District.csv")
+
+Virginia_By_Race_Today <- Virginia_By_Race_Health_District_Today %>% 
+  group_by(Race) %>% 
+  summarize(Cases = sum(Cases), Hospitalized = sum(Hospitalized), Deaths = sum(Deaths)) %>% 
+  ungroup() %>% 
+  mutate(Date = Sys.Date() - 1, State = "Virginia")
+
+# Virginia_By_Race_Today <- Virginia_By_Race_Today %>% 
+#   mutate(Date = `Report Date`, Cases = `Number of Cases`, State = "Virginia") %>% 
+#   mutate(Date = mdy(Date) - 1) %>% 
+#   select(Race, Cases, Date, State)
+
 # Add today's data into the main file
 Virginia_By_Race <- read_csv("Virginia_By_Race.csv")
 Virginia_By_Race <- bind_rows(Virginia_By_Race_Today, Virginia_By_Race)
@@ -742,11 +815,15 @@ Virginia_Totals_Headers <- pdf_text(paste0(paste("Virginia", "COVID-19", "Dashbo
 #   mutate(Deaths = as.integer(Deaths), State = "Virginia", Date = Sys.Date() - 1) %>% 
 #   filter(Health_District == "Northern") %>% 
 #   select(Deaths, State, Date)
-All_VA_DMV_Deaths_Today <- Virginia_DeathsHospitalizations_Today %>% 
-  mutate(County = str_replace_all(County, "Alexandria", "Alexandria City")) %>% 
-  left_join(stateConversions, by = c("State" = "Full_Name")) %>% 
-  left_join(countyStateFIPS, by = c("Abbr" = "State", "County" = "Name")) %>% 
+All_VA_DMV_Deaths_Today <- Virginia_By_County_Today %>% 
+  filter(as.character(FIPS) %in% DMV_FIPS) %>% 
   select(County, Deaths, Date, State, Abbr, FIPS)
+
+  # Virginia_DeathsHospitalizations_Today %>% 
+  # mutate(County = str_replace_all(County, "Alexandria", "Alexandria City")) %>% 
+  # left_join(stateConversions, by = c("State" = "Full_Name")) %>% 
+  # left_join(countyStateFIPS, by = c("Abbr" = "State", "County" = "Name")) %>% 
+  # select(County, Deaths, Date, State, Abbr, FIPS)
 
 
 # This will be done another later when I have time. I will continue to download the pdfs of it. 
@@ -1203,13 +1280,7 @@ Full_States %>%
 # And save
 Full_States <- Full_States %>% distinct()
 
-# Make the character vectors of the county names and FIPS codes
-DMV_Counties <- c("District of Columbia", 
-                  "Calvert", "Charles", "Frederick", "Montgomery", "Prince Georges", 
-                  "Alexandria", "Arlington", "Clarke", "Culpeper", "Fairfax", "Farquier", "Fredericksburg", "Loudoun", "Manassas", "Prince William", "Rappahannock", "Spotsylvania", "Stafford", "Warren",
-                  "Jefferson")
-DMV_FIPS <- c("11001", "24009", "24017", "24021", "24031", "24033", "51510", "51013", "51043", "51047", "51059", "51061", "51630", "51107", "51683", "51153", "51157", "51177", "51179", "51187", "54037", "51600", "51610", "51685")
-DMV_Closer_FIPS <- c("24031", "24033", "24021", "24009", "51510", "51013", "51059", "51600", "51107", "51153", "51047", "11001")
+
 # combined1 <- sort(union(levels(Full_States$FIPS), levels(DMV_FIPS)))
 Sys.sleep(15)
 

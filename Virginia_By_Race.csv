@@ -1,97 +1,101 @@
-Race,Cases,Date,State
-Not Reported,3130,2020-04-19,Virginia
-Black or African American,1659,2020-04-19,Virginia
-Other,1183,2020-04-19,Virginia
-White,3018,2020-04-19,Virginia
-Not Reported,3070,2020-04-18,Virginia
-Black or African American,1578,2020-04-18,Virginia
-Other,1059,2020-04-18,Virginia
-White,2830,2020-04-18,Virginia
-Not Reported,2921,2020-04-17,Virginia
-Black or African American,1489,2020-04-17,Virginia
-Other,968,2020-04-17,Virginia
-White,2675,2020-04-17,Virginia
-Not Reported,2781,2020-04-16,Virginia
-Black or African American,1401,2020-04-16,Virginia
-Other,849,2020-04-16,Virginia
-White,2460,2020-04-16,Virginia
-Not Reported,2609,2020-04-15,Virginia
-Black or African American,1278,2020-04-15,Virginia
-Other,788,2020-04-15,Virginia
-White,2214,2020-04-15,Virginia
-Not Reported,2596,2020-04-14,Virginia
-Black or African American,1158,2020-04-14,Virginia
-Other,717,2020-04-14,Virginia
-White,2029,2020-04-14,Virginia
-Not Reported,2633,2020-04-13,Virginia
-Black or African American,1060,2020-04-13,Virginia
-Other,633,2020-04-13,Virginia
-White,1845,2020-04-13,Virginia
-Not Reported,2626,2020-04-12,Virginia
-Black or African American,921,2020-04-12,Virginia
-Other,571,2020-04-12,Virginia
-White,1629,2020-04-12,Virginia
-Not Reported,2402,2020-04-11,Virginia
-Black or African American,841,2020-04-11,Virginia
-Other,503,2020-04-11,Virginia
-White,1528,2020-04-11,Virginia
-Not Reported,2303,2020-04-10,Virginia
-Black or African American,808,2020-04-10,Virginia
-Other,486,2020-04-10,Virginia
-White,1480,2020-04-10,Virginia
-Not Reported,2186,2020-04-09,Virginia
-Black or African American,692,2020-04-09,Virginia
-Other,389,2020-04-09,Virginia
-White,1242,2020-04-09,Virginia
-Not Reported,2075,2020-04-08,Virginia
-Black or African American,614,2020-04-08,Virginia
-Other,310,2020-04-08,Virginia
-White,1043,2020-04-08,Virginia
-Not Reported,1978,2020-04-07,Virginia
-Black or African American,506,2020-04-07,Virginia
-Other,244,2020-04-07,Virginia
-White,917,2020-04-07,Virginia
-Not Reported,1833,2020-04-06,Virginia
-Black or African American,448,2020-04-06,Virginia
-Other,216,2020-04-06,Virginia
-White,836,2020-04-06,Virginia
-Not Reported,1538,2020-04-05,Virginia
-Black or African American,389,2020-04-05,Virginia
-Other,193,2020-04-05,Virginia
-White,758,2020-04-05,Virginia
-Not Reported,1488,2020-04-04,Virginia
-Black or African American,345,2020-04-04,Virginia
-Other,143,2020-04-04,Virginia
-White,661,2020-04-04,Virginia
-Not Reported,1390,2020-04-03,Virginia
-Black or African American,310,2020-04-03,Virginia
-Other,118,2020-04-03,Virginia
-White,589,2020-04-03,Virginia
-Not Reported,1177,2020-04-02,Virginia
-Black or African American,229,2020-04-02,Virginia
-Other,103,2020-04-02,Virginia
-White,503,2020-04-02,Virginia
-Not Reported,1047,2020-04-01,Virginia
-Black or African American,175,2020-04-01,Virginia
-Other,85,2020-04-01,Virginia
-White,399,2020-04-01,Virginia
-Black or African American,136,2020-03-31,Virginia
-White,341,2020-03-31,Virginia
-Other,73,2020-03-31,Virginia
-Not Reported,934,2020-03-31,Virginia
-Black or African American,111,2020-03-30,Virginia
-White,282,2020-03-30,Virginia
-Other,57,2020-03-30,Virginia
-Not Reported,800,2020-03-30,Virginia
-Black or African American,77,2020-03-29,Virginia
-White,238,2020-03-29,Virginia
-Other,49,2020-03-29,Virginia
-Not Reported,656,2020-03-29,Virginia
-Black or African American,61,2020-03-28,Virginia
-White,223,2020-03-28,Virginia
-Other,44,2020-03-28,Virginia
-Not Reported,562,2020-03-28,Virginia
-Black or African American,51,2020-03-27,Virginia
-White,179,2020-03-27,Virginia
-Other,34,2020-03-27,Virginia
-Not Reported,475,2020-03-27,Virginia
+Race,Cases,Hospitalized,Deaths,Date,State
+Black or African American,1785,450,98,2020-04-20,Virginia
+Not Reported,3304,243,34,2020-04-20,Virginia
+Other,1286,278,27,2020-04-20,Virginia
+White,3255,610,165,2020-04-20,Virginia
+Not Reported,3130,NA,NA,2020-04-19,Virginia
+Black or African American,1659,NA,NA,2020-04-19,Virginia
+Other,1183,NA,NA,2020-04-19,Virginia
+White,3018,NA,NA,2020-04-19,Virginia
+Not Reported,3070,NA,NA,2020-04-18,Virginia
+Black or African American,1578,NA,NA,2020-04-18,Virginia
+Other,1059,NA,NA,2020-04-18,Virginia
+White,2830,NA,NA,2020-04-18,Virginia
+Not Reported,2921,NA,NA,2020-04-17,Virginia
+Black or African American,1489,NA,NA,2020-04-17,Virginia
+Other,968,NA,NA,2020-04-17,Virginia
+White,2675,NA,NA,2020-04-17,Virginia
+Not Reported,2781,NA,NA,2020-04-16,Virginia
+Black or African American,1401,NA,NA,2020-04-16,Virginia
+Other,849,NA,NA,2020-04-16,Virginia
+White,2460,NA,NA,2020-04-16,Virginia
+Not Reported,2609,NA,NA,2020-04-15,Virginia
+Black or African American,1278,NA,NA,2020-04-15,Virginia
+Other,788,NA,NA,2020-04-15,Virginia
+White,2214,NA,NA,2020-04-15,Virginia
+Not Reported,2596,NA,NA,2020-04-14,Virginia
+Black or African American,1158,NA,NA,2020-04-14,Virginia
+Other,717,NA,NA,2020-04-14,Virginia
+White,2029,NA,NA,2020-04-14,Virginia
+Not Reported,2633,NA,NA,2020-04-13,Virginia
+Black or African American,1060,NA,NA,2020-04-13,Virginia
+Other,633,NA,NA,2020-04-13,Virginia
+White,1845,NA,NA,2020-04-13,Virginia
+Not Reported,2626,NA,NA,2020-04-12,Virginia
+Black or African American,921,NA,NA,2020-04-12,Virginia
+Other,571,NA,NA,2020-04-12,Virginia
+White,1629,NA,NA,2020-04-12,Virginia
+Not Reported,2402,NA,NA,2020-04-11,Virginia
+Black or African American,841,NA,NA,2020-04-11,Virginia
+Other,503,NA,NA,2020-04-11,Virginia
+White,1528,NA,NA,2020-04-11,Virginia
+Not Reported,2303,NA,NA,2020-04-10,Virginia
+Black or African American,808,NA,NA,2020-04-10,Virginia
+Other,486,NA,NA,2020-04-10,Virginia
+White,1480,NA,NA,2020-04-10,Virginia
+Not Reported,2186,NA,NA,2020-04-09,Virginia
+Black or African American,692,NA,NA,2020-04-09,Virginia
+Other,389,NA,NA,2020-04-09,Virginia
+White,1242,NA,NA,2020-04-09,Virginia
+Not Reported,2075,NA,NA,2020-04-08,Virginia
+Black or African American,614,NA,NA,2020-04-08,Virginia
+Other,310,NA,NA,2020-04-08,Virginia
+White,1043,NA,NA,2020-04-08,Virginia
+Not Reported,1978,NA,NA,2020-04-07,Virginia
+Black or African American,506,NA,NA,2020-04-07,Virginia
+Other,244,NA,NA,2020-04-07,Virginia
+White,917,NA,NA,2020-04-07,Virginia
+Not Reported,1833,NA,NA,2020-04-06,Virginia
+Black or African American,448,NA,NA,2020-04-06,Virginia
+Other,216,NA,NA,2020-04-06,Virginia
+White,836,NA,NA,2020-04-06,Virginia
+Not Reported,1538,NA,NA,2020-04-05,Virginia
+Black or African American,389,NA,NA,2020-04-05,Virginia
+Other,193,NA,NA,2020-04-05,Virginia
+White,758,NA,NA,2020-04-05,Virginia
+Not Reported,1488,NA,NA,2020-04-04,Virginia
+Black or African American,345,NA,NA,2020-04-04,Virginia
+Other,143,NA,NA,2020-04-04,Virginia
+White,661,NA,NA,2020-04-04,Virginia
+Not Reported,1390,NA,NA,2020-04-03,Virginia
+Black or African American,310,NA,NA,2020-04-03,Virginia
+Other,118,NA,NA,2020-04-03,Virginia
+White,589,NA,NA,2020-04-03,Virginia
+Not Reported,1177,NA,NA,2020-04-02,Virginia
+Black or African American,229,NA,NA,2020-04-02,Virginia
+Other,103,NA,NA,2020-04-02,Virginia
+White,503,NA,NA,2020-04-02,Virginia
+Not Reported,1047,NA,NA,2020-04-01,Virginia
+Black or African American,175,NA,NA,2020-04-01,Virginia
+Other,85,NA,NA,2020-04-01,Virginia
+White,399,NA,NA,2020-04-01,Virginia
+Black or African American,136,NA,NA,2020-03-31,Virginia
+White,341,NA,NA,2020-03-31,Virginia
+Other,73,NA,NA,2020-03-31,Virginia
+Not Reported,934,NA,NA,2020-03-31,Virginia
+Black or African American,111,NA,NA,2020-03-30,Virginia
+White,282,NA,NA,2020-03-30,Virginia
+Other,57,NA,NA,2020-03-30,Virginia
+Not Reported,800,NA,NA,2020-03-30,Virginia
+Black or African American,77,NA,NA,2020-03-29,Virginia
+White,238,NA,NA,2020-03-29,Virginia
+Other,49,NA,NA,2020-03-29,Virginia
+Not Reported,656,NA,NA,2020-03-29,Virginia
+Black or African American,61,NA,NA,2020-03-28,Virginia
+White,223,NA,NA,2020-03-28,Virginia
+Other,44,NA,NA,2020-03-28,Virginia
+Not Reported,562,NA,NA,2020-03-28,Virginia
+Black or African American,51,NA,NA,2020-03-27,Virginia
+White,179,NA,NA,2020-03-27,Virginia
+Other,34,NA,NA,2020-03-27,Virginia
+Not Reported,475,NA,NA,2020-03-27,Virginia
