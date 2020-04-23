@@ -264,7 +264,7 @@ Sys.sleep(15)
 # Much easier and more reliable to use class of containing div
 virginiaDataDownloadDiv <- remDr$findElements(using = "class", value = "update-bullets")
 Sys.sleep(5)
-virginiaDataDownloadATags <- virginiaDataDownloadDiv[[2]]$findChildElements(using = "tag name", value = "a")
+virginiaDataDownloadATags <- virginiaDataDownloadDiv[[1]]$findChildElements(using = "tag name", value = "a")
 # virginiaDataDownloadATags <- virginiaDataDownloadDiv[[1]]$findChildElements(using = "tag name", value = "a")
 Sys.sleep(5)
 download.file(unlist(virginiaDataDownloadATags[[1]]$getElementAttribute("href")), destfile = "Virginia_By_County_Today.csv")
@@ -636,7 +636,7 @@ write_csv(Virginia_DeathsHospitalizations, "Virginia_DeathsHospitalizations.csv"
 
 Virginia_By_County_Today <- Virginia_By_County_Today %>% 
   rename(County = Locality, Date = `Report Date`, Cases = `Total Cases`) %>% 
-  mutate(State = "Virginia", Date = mdy(Date) - 1) %>% 
+  mutate(State = "Virginia", Date = Sys.Date() - 1) %>% 
   left_join(stateConversions, by = c("State" = "Full_Name")) %>%
   #left_join(select(Virginia_DeathsHospitalizations_Today, County, Hospitalizations, Deaths), by = c("County")) %>% 
   dplyr::select(County, Cases, Hospitalized, Deaths, Date, State, Abbr, FIPS)
@@ -695,7 +695,7 @@ Virginia_By_Sex_Health_District_Today <- Virginia_By_Sex_Health_District_Today %
   mutate(Date = Sys.Date() - 1, State = "Virginia")
 
 Virginia_By_Sex_Health_District <- read_csv("Virginia_By_Sex_Health_District.csv")
-Virginia_By_Sex_Health_District <- bind_rows(Virginia_By_Sex_Health_District, Virginia_By_Sex_Health_District_Today)
+Virginia_By_Sex_Health_District <- bind_rows(Virginia_By_Sex_Health_District_Today, Virginia_By_Sex_Health_District)
 write_csv(Virginia_By_Sex_Health_District, "Virginia_By_Sex_Health_District.csv")
 
 Virginia_By_Sex_Today <- Virginia_By_Sex_Health_District_Today %>% 
@@ -722,7 +722,7 @@ Virginia_By_Race_Health_District_Today <- Virginia_By_Race_Health_District_Today
   mutate(Date = Sys.Date() - 1, State = "Virginia")
 
 Virginia_By_Race_Health_District <- read_csv("Virginia_By_Race_Health_District.csv")
-Virginia_By_Race_Health_District <- bind_rows(Virginia_By_Race_Health_District, Virginia_By_Race_Health_District_Today)
+Virginia_By_Race_Health_District <- bind_rows(Virginia_By_Race_Health_District_Today, Virginia_By_Race_Health_District)
 write_csv(Virginia_By_Race_Health_District, "Virginia_By_Race_Health_District.csv")
 
 Virginia_By_Race_Today <- Virginia_By_Race_Health_District_Today %>% 
@@ -1042,8 +1042,8 @@ Sys.sleep(5)
 # colnames(dcCovid19ByAgeSexToday) <- unname(dcCovid19ByAgeSexToday[2,])
 # dcCovid19ByAgeSexToday <- dcCovid19ByAgeSexToday[3:nrow(dcCovid19ByAgeSexToday),]
 
-dcCovid19ByWardToday <- read_excel(paste0("COVID19_DCHealthStatisticsDataV3 (NewFileStructure)", Sys.Date() - 1,  ".xlsx"), sheet = "Total Cases by Ward")
-dcCovid19ByAgeSexToday <- read_excel(paste0("COVID19_DCHealthStatisticsDataV3 (NewFileStructure)", Sys.Date() - 1,  ".xlsx"), sheet = "Total Cases by Age and Gender")
+dcCovid19ByWardToday <- read_excel("COVID19_DCHealthStatisticsDataV3 (NewFileStructure).xlsx", sheet = "Total Cases by Ward")
+dcCovid19ByAgeSexToday <- read_excel("COVID19_DCHealthStatisticsDataV3 (NewFileStructure).xlsx", sheet = "Total Cases by Age and Gender")
 
 dcCovid19ByAgeSexTodayXTab <- dcCovid19ByAgeSexToday %>% 
   mutate(Date = Sys.Date() - 1, State = "District of Columbia", Cases = as.integer(`Total Positives`), Age_Range = `Patient Age (yrs)`, Male = as.integer(Male), Female = as.integer(Female))
@@ -1213,7 +1213,7 @@ Maryland <- tibble(State = "Maryland",
 
 # Making the Virginia cases by county
 virginiaCounties <- Virginia_By_County_Today %>% 
-  filter(County %in% c("Alexandria", "Arlington", "Fairfax", "Loudoun", "Prince William", "Culpeper")) %>% 
+  filter(County %in% c("Alexandria City", "Arlington County", "Fairfax County", "Loudoun County", "Prince William County", "Culpeper County")) %>% 
   #mutate(Deaths = NA) %>% There is now county level VA deaths data
   mutate(Tests = NA) %>% 
   select(County, Cases, Deaths, Tests, Date)

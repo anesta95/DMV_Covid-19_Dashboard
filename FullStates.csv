@@ -1,4 +1,178 @@
 County,Cases,Date,State,Abbr,FIPS,Deaths,Hospitalized
+Waynesboro City,8,2020-04-21,Virginia,VA,51820,0,1
+Richmond City,250,2020-04-21,Virginia,VA,51760,10,41
+Essex County,2,2020-04-21,Virginia,VA,51057,0,0
+Mathews County,3,2020-04-21,Virginia,VA,51115,0,1
+Rockbridge County,5,2020-04-21,Virginia,VA,51163,0,0
+Fairfax City,25,2020-04-21,Virginia,VA,51600,1,2
+Franklin,17,2020-04-21,Virginia,VA,51067,0,2
+Norton City,2,2020-04-21,Virginia,VA,51720,0,1
+Amelia County,15,2020-04-21,Virginia,VA,51007,1,6
+York County,43,2020-04-21,Virginia,VA,51199,1,6
+Frederick County,86,2020-04-21,Virginia,VA,51069,0,9
+Buena Vista City,5,2020-04-21,Virginia,VA,51530,0,0
+Page County,16,2020-04-21,Virginia,VA,51139,0,0
+Emporia City,12,2020-04-21,Virginia,VA,51595,1,3
+Falls Church City,25,2020-04-21,Virginia,VA,51610,1,2
+Hopewell City,16,2020-04-21,Virginia,VA,51670,0,5
+Campbell County,10,2020-04-21,Virginia,VA,51031,0,0
+Hanover County,97,2020-04-21,Virginia,VA,51085,6,20
+Smyth County,13,2020-04-21,Virginia,VA,51173,0,4
+King and Queen County,2,2020-04-21,Virginia,VA,51097,0,0
+Orange County,22,2020-04-21,Virginia,VA,51137,0,3
+Isle of Wight County,90,2020-04-21,Virginia,VA,51093,2,8
+Stafford,170,2020-04-21,Virginia,VA,51179,2,38
+Manassas Park City,34,2020-04-21,Virginia,VA,51685,1,6
+Gloucester County,21,2020-04-21,Virginia,VA,51073,1,4
+Craig County,2,2020-04-21,Virginia,VA,51045,0,0
+Lynchburg City,43,2020-04-21,Virginia,VA,51680,1,4
+Charles City County,11,2020-04-21,Virginia,VA,51036,1,4
+Alexandria City,474,2020-04-21,Virginia,VA,51510,12,65
+Loudoun County,475,2020-04-21,Virginia,VA,51107,9,61
+Buchanan County,12,2020-04-21,Virginia,VA,51027,0,0
+Galax City,1,2020-04-21,Virginia,VA,51640,0,1
+Northampton County,8,2020-04-21,Virginia,VA,51131,0,1
+Harrisonburg City,318,2020-04-21,Virginia,VA,51660,8,22
+Salem City,8,2020-04-21,Virginia,VA,51775,0,0
+Surry County,4,2020-04-21,Virginia,VA,51181,1,1
+Spotsylvania County,83,2020-04-21,Virginia,VA,51177,3,20
+Covington City,1,2020-04-21,Virginia,VA,51580,0,0
+Nelson County,7,2020-04-21,Virginia,VA,51125,0,0
+Chesapeake City,180,2020-04-21,Virginia,VA,51550,5,39
+King George County,20,2020-04-21,Virginia,VA,51099,4,11
+Warren County,27,2020-04-21,Virginia,VA,51187,0,3
+Westmoreland County,12,2020-04-21,Virginia,VA,51193,0,0
+Appomattox County,10,2020-04-21,Virginia,VA,51011,0,0
+Goochland County,63,2020-04-21,Virginia,VA,51075,3,7
+Roanoke County,31,2020-04-21,Virginia,VA,51161,0,0
+Halifax County,12,2020-04-21,Virginia,VA,51083,0,1
+Russell County,2,2020-04-21,Virginia,VA,51167,0,1
+Montgomery County,50,2020-04-21,Virginia,VA,51121,0,6
+Colonial Heights City,37,2020-04-21,Virginia,VA,51570,2,0
+Culpeper County,73,2020-04-21,Virginia,VA,51047,1,9
+James City County,147,2020-04-21,Virginia,VA,51095,12,51
+Scott County,5,2020-04-21,Virginia,VA,51169,1,1
+Augusta County,30,2020-04-21,Virginia,VA,51015,0,2
+Arlington County,663,2020-04-21,Virginia,VA,51013,24,116
+Pittsylvania County,9,2020-04-21,Virginia,VA,51143,1,4
+Wythe County,11,2020-04-21,Virginia,VA,51197,1,1
+Powhatan County,9,2020-04-21,Virginia,VA,51145,0,0
+Washington County,29,2020-04-21,Virginia,VA,51191,3,8
+Wise County,18,2020-04-21,Virginia,VA,51195,1,7
+Poquoson City,6,2020-04-21,Virginia,VA,51735,0,2
+Portsmouth City,93,2020-04-21,Virginia,VA,51740,4,30
+Chesterfield,356,2020-04-21,Virginia,VA,51041,7,30
+Madison County,12,2020-04-21,Virginia,VA,51113,0,1
+Fluvanna County,69,2020-04-21,Virginia,VA,51065,4,12
+Accomack County,59,2020-04-21,Virginia,VA,51001,1,15
+Botetourt County,26,2020-04-21,Virginia,VA,51023,3,9
+Suffolk City,126,2020-04-21,Virginia,VA,51800,3,28
+Nottoway County,8,2020-04-21,Virginia,VA,51135,0,0
+Henry County,10,2020-04-21,Virginia,VA,51089,1,2
+New Kent County,20,2020-04-21,Virginia,VA,51127,1,4
+Fauquier County,56,2020-04-21,Virginia,VA,51061,1,5
+Louisa County,37,2020-04-21,Virginia,VA,51109,0,8
+Greene County,9,2020-04-21,Virginia,VA,51079,1,2
+Shenandoah County,53,2020-04-21,Virginia,VA,51171,0,8
+Rappahannock County,1,2020-04-21,Virginia,VA,51157,0,0
+Henrico County,684,2020-04-21,Virginia,VA,51087,82,96
+Highland County,1,2020-04-21,Virginia,VA,51091,0,0
+Prince William County,924,2020-04-21,Virginia,VA,51153,17,101
+Franklin City,14,2020-04-21,Virginia,VA,51620,0,0
+Carroll County,3,2020-04-21,Virginia,VA,51035,0,1
+Virginia Beach City,313,2020-04-21,Virginia,VA,51810,8,60
+Staunton City,10,2020-04-21,Virginia,VA,51790,0,0
+Prince George County,28,2020-04-21,Virginia,VA,51149,0,2
+Newport News City,101,2020-04-21,Virginia,VA,51700,6,32
+Richmond County,53,2020-04-21,Virginia,VA,51159,0,4
+Fairfax County,2256,2020-04-21,Virginia,VA,51059,66,405
+Tazewell County,4,2020-04-21,Virginia,VA,51185,0,0
+Fredericksburg City,17,2020-04-21,Virginia,VA,51630,0,3
+Prince Edward County,19,2020-04-21,Virginia,VA,51147,2,3
+Alleghany County,5,2020-04-21,Virginia,VA,51005,0,4
+Charlotte County,8,2020-04-21,Virginia,VA,51037,0,0
+Bedford County,20,2020-04-21,Virginia,VA,51019,0,1
+Buckingham County,27,2020-04-21,Virginia,VA,51029,0,6
+Hampton City,97,2020-04-21,Virginia,VA,51650,1,26
+Bristol City,1,2020-04-21,Virginia,VA,51520,0,0
+Radford City,2,2020-04-21,Virginia,VA,51750,0,0
+Danville City,29,2020-04-21,Virginia,VA,51590,1,13
+Floyd County,1,2020-04-21,Virginia,VA,51063,0,0
+Charlottesville City,44,2020-04-21,Virginia,VA,51540,2,11
+Dinwiddie County,8,2020-04-21,Virginia,VA,51053,0,1
+Giles County,4,2020-04-21,Virginia,VA,51071,0,0
+Clarke County,6,2020-04-21,Virginia,VA,51043,0,1
+Mecklenburg County,69,2020-04-21,Virginia,VA,51117,1,17
+Roanoke City,27,2020-04-21,Virginia,VA,51770,0,5
+Lunenburg County,3,2020-04-21,Virginia,VA,51111,0,0
+Pulaski County,9,2020-04-21,Virginia,VA,51155,0,2
+Brunswick County,13,2020-04-21,Virginia,VA,51025,0,3
+Patrick County,1,2020-04-21,Virginia,VA,51141,0,0
+King William County,2,2020-04-21,Virginia,VA,51101,0,0
+Middlesex County,3,2020-04-21,Virginia,VA,51119,0,0
+Lexington City,3,2020-04-21,Virginia,VA,51678,0,0
+Rockingham County,145,2020-04-21,Virginia,VA,51165,1,11
+Greensville County,24,2020-04-21,Virginia,VA,51081,4,4
+Williamsburg City,14,2020-04-21,Virginia,VA,51830,1,5
+Southampton County,19,2020-04-21,Virginia,VA,51175,1,3
+Amherst County,10,2020-04-21,Virginia,VA,51009,1,2
+Manassas City,117,2020-04-21,Virginia,VA,51683,0,15
+Albemarle County,68,2020-04-21,Virginia,VA,51003,3,13
+Lee County,7,2020-04-21,Virginia,VA,51105,0,1
+Sussex County,23,2020-04-21,Virginia,VA,51183,1,2
+Norfolk City,126,2020-04-21,Virginia,VA,51710,3,29
+Petersburg City,24,2020-04-21,Virginia,VA,51730,2,8
+Caroline County,20,2020-04-21,Virginia,VA,51033,0,3
+Northumberland County,5,2020-04-21,Virginia,VA,51133,0,0
+Cumberland County,10,2020-04-21,Virginia,VA,51049,0,1
+Lancaster County,1,2020-04-21,Virginia,VA,51103,0,1
+Winchester City,29,2020-04-21,Virginia,VA,51840,0,0
+Allegany,58,2020-04-21,Maryland,MD,24001,3,NA
+Anne Arundel,1190,2020-04-21,Maryland,MD,24003,56,NA
+Baltimore City,1602,2020-04-21,Maryland,MD,24510,64,NA
+Baltimore,2012,2020-04-21,Maryland,MD,NA,67,NA
+Calvert,118,2020-04-21,Maryland,MD,24009,5,NA
+Caroline,41,2020-04-21,Maryland,MD,24011,0,NA
+Carroll,344,2020-04-21,Maryland,MD,24013,32,NA
+Cecil,134,2020-04-21,Maryland,MD,24015,5,NA
+Charles,427,2020-04-21,Maryland,MD,24017,30,NA
+Dorchester,28,2020-04-21,Maryland,MD,24019,1,NA
+Frederick,658,2020-04-21,Maryland,MD,24021,35,NA
+Garrett,4,2020-04-21,Maryland,MD,24023,0,NA
+Harford,267,2020-04-21,Maryland,MD,24025,8,NA
+Howard,592,2020-04-21,Maryland,MD,24027,14,NA
+Kent,36,2020-04-21,Maryland,MD,24029,1,NA
+Montgomery,2868,2020-04-21,Maryland,MD,24031,126,NA
+Prince Georges,3875,2020-04-21,Maryland,MD,24033,132,NA
+Queen Annes,31,2020-04-21,Maryland,MD,24035,2,NA
+St Marys,112,2020-04-21,Maryland,MD,24037,3,NA
+Somerset,11,2020-04-21,Maryland,MD,24039,0,NA
+Talbot,23,2020-04-21,Maryland,MD,24041,1,NA
+Washington,127,2020-04-21,Maryland,MD,24043,3,NA
+Wicomico,183,2020-04-21,Maryland,MD,24045,2,NA
+Worcester,34,2020-04-21,Maryland,MD,24047,0,NA
+Data Not Available,0,2020-04-21,Maryland,MD,NA,108,NA
+Barbour,4,2020-04-21,West Virginia,WV,54001,NA,NA
+Berkeley,121,2020-04-21,West Virginia,WV,54003,NA,NA
+Boone,2,2020-04-21,West Virginia,WV,54005,NA,NA
+Braxton,1,2020-04-21,West Virginia,WV,54007,NA,NA
+Brooke,3,2020-04-21,West Virginia,WV,54009,NA,NA
+Cabell,35,2020-04-21,West Virginia,WV,54011,NA,NA
+Fayette,5,2020-04-21,West Virginia,WV,54019,NA,NA
+Grant,1,2020-04-21,West Virginia,WV,54023,NA,NA
+Greenbrier,3,2020-04-21,West Virginia,WV,54025,NA,NA
+Hampshire,7,2020-04-21,West Virginia,WV,54027,NA,NA
+Hancock,7,2020-04-21,West Virginia,WV,54029,NA,NA
+Hardy,3,2020-04-21,West Virginia,WV,54031,NA,NA
+Harrison,30,2020-04-21,West Virginia,WV,54033,NA,NA
+Jackson,103,2020-04-21,West Virginia,WV,54035,NA,NA
+Jefferson,65,2020-04-21,West Virginia,WV,54037,NA,NA
+Kanawha,138,2020-04-21,West Virginia,WV,54039,NA,NA
+Lewis,2,2020-04-21,West Virginia,WV,54041,NA,NA
+Lincoln,1,2020-04-21,West Virginia,WV,54043,NA,NA
+Logan,9,2020-04-21,West Virginia,WV,54045,NA,NA
+Marion,43,2020-04-21,West Virginia,WV,54049,NA,NA
+District of Columbia,3206,2020-04-21,District of Columbia,DC,11001,127,NA
 Accomack,52,2020-04-20,Virginia,VA,51001,1,15
 Alleghany,5,2020-04-20,Virginia,VA,51005,0,4
 Amelia,15,2020-04-20,Virginia,VA,51007,1,6
