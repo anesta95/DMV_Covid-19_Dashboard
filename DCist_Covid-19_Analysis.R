@@ -125,7 +125,7 @@ Sys.sleep(15)
 
 All_WV_Buttons <- remDr$findElements(using = "tag name", value = "button")
 Sys.sleep(5)
-WV_ByCounty_Button <- All_WV_Buttons[[3]]
+WV_ByCounty_Button <- All_WV_Buttons[[4]]
 Sys.sleep(5)
 WV_ByCounty_Button$getElementText()
 Sys.sleep(5)
@@ -353,13 +353,35 @@ WV_Counties <- WV_Counties %>%
   unlist()
 
 # WV_Counties <- WV_Counties[[1]][1]
+# WV_Counties %>% str_replace_all("\\s{2,}", "0")
 WV_Counties_Unsplit <- WV_Counties %>% str_split("\\n") %>% unlist()
-WV_Headers <- make.names(str_trim(WV_Counties_Unsplit[1:2]))
-WV_Counties_Values <- WV_Counties_Unsplit[3:length(WV_Counties_Unsplit)]
+WV_Headers <- make.names(str_trim(WV_Counties_Unsplit[1:3]))
+WV_Counties_Values <- WV_Counties_Unsplit[4:length(WV_Counties_Unsplit)]
 
-# Much more elegant
-WV_Values <- WV_Counties_Values %>% keep(str_detect, "\\d+")
+# Not elegant but gets the job done
+WV_Values <- WV_Counties_Values %>% str_replace_all("\\s", "0")
+
+WV_Values <- WV_Values %>% keep(str_detect, "\\d+")
 WV_County_Names <- WV_Counties_Values %>% keep(str_detect, "[[:alpha:]]+")
+
+for (i in 1:(length(WV_County_Names) * 2)) {
+  if (substring(WV_Values[i], 1, 1) == "0" & str_length(WV_Values[i]) > 1) {
+    WV_Values <- append(WV_Values, unlist(strsplit(WV_Values[i], "")), after = i)
+  }
+}
+
+
+for (i in seq_along(WV_Values)) {
+  if (substring(WV_Values[i], 1, 1) == "0" & str_length(WV_Values[i]) > 1) {
+    WV_Values[i] <- NA
+  }
+}
+
+WV_Cases_Deaths <- WV_Values[!is.na(WV_Values)]
+
+WV_Cases <- WV_Cases_Deaths[1:length(WV_County_Names)]
+WV_Deaths <- WV_Cases_Deaths[(length(WV_County_Names) + 1):length(WV_Cases_Deaths)]
+
 
 # WV_Values_Test <- WV_Counties_Values %>% 
 #   map_dbl(possibly(function(x) {
@@ -379,7 +401,7 @@ WV_County_Names <- WV_Counties_Values %>% keep(str_detect, "[[:alpha:]]+")
 # 
 # WV_County_Names <- WV_Counties_Values[WV_County_Names_Test]
 
-WV_CountiesDFCleaned <- tibble(WV_County_Names, WV_Values)
+WV_CountiesDFCleaned <- tibble(WV_County_Names, WV_Cases, WV_Deaths)
 
 colnames(WV_CountiesDFCleaned) <- WV_Headers
 
@@ -403,7 +425,7 @@ WV_CountiesDFCleaned$Date <- Sys.Date() - 1
 WV_CountiesDFCleaned$State <- "West Virginia"
 # Joining in state abbreviation and FIPS code columns
 WV_CountiesDFCleaned <- WV_CountiesDFCleaned %>% 
-  mutate(Deaths = NA, County = County.of.Residence, Cases = as.integer(Cumulative.Number)) %>% 
+  mutate(Cases = as.integer(Cumulative.Cases), Deaths = as.integer(Deaths)) %>% 
   left_join(stateConversions, by = c("State" = "Full_Name")) %>% 
   left_join(countyStateFIPS, by = c("Abbr" = "State", "County" = "Name")) %>% 
   dplyr::select(County, Cases, Deaths, Date, State, Abbr, FIPS)
@@ -634,17 +656,26 @@ Virginia_DeathsHospitalizations <- read_csv("Virginia_DeathsHospitalizations.csv
 Virginia_DeathsHospitalizations <- bind_rows(Virginia_DeathsHospitalizations_Today, Virginia_DeathsHospitalizations)
 write_csv(Virginia_DeathsHospitalizations, "Virginia_DeathsHospitalizations.csv")
 
-Virginia_By_County_Today <- Virginia_By_County_Today %>% 
-  rename(County = Locality, Date = `Report Date`, Cases = `Total Cases`) %>% 
-  mutate(State = "Virginia", Date = Sys.Date() - 1) %>% 
+Virginia_By_County <- Virginia_By_County_Today %>% 
+  rename(County = Locality, Date = `Report Date`) %>% 
+  mutate(State = "Virginia", Date = mdy(Date) - 1) %>% 
   left_join(stateConversions, by = c("State" = "Full_Name")) %>%
   #left_join(select(Virginia_DeathsHospitalizations_Today, County, Hospitalizations, Deaths), by = c("County")) %>% 
-  dplyr::select(County, Cases, Hospitalized, Deaths, Date, State, Abbr, FIPS)
+  dplyr::select(County, Cases, Hospitalizations, Deaths, Date, State, Abbr, FIPS) %>% 
+  arrange(desc(Date))
+
+Virginia_By_County_Today <- Virginia_By_County %>% 
+  filter(Date == max(Date))
+
+# Now I just have to write out the new CSV since the released the backdata and will continue releasing it
+# (hopefully).
+write_csv(Virginia_By_County, "Virginia_By_County.csv")
 
 # Add today's data into main file.
-Virginia_By_County <- read_csv("Virginia_By_County.csv")
-Virginia_By_County <- bind_rows(Virginia_By_County_Today, Virginia_By_County)
-write_csv(Virginia_By_County, "Virginia_By_County.csv")
+# Not needed anymore
+# Virginia_By_County <- read_csv("Virginia_By_County.csv")
+# Virginia_By_County <- bind_rows(Virginia_By_County_Today, Virginia_By_County)
+# write_csv(Virginia_By_County, "Virginia_By_County.csv")
 
 # Read in by age data for today
 Virginia_By_Age_Health_District_Today <- read_csv("Virginia_By_Age_Today.csv")
@@ -655,7 +686,7 @@ Virginia_By_Age_Health_District_Today <- Virginia_By_Age_Health_District_Today %
          Cases = `Number of Cases`, 
          Hospitalized = `Number of Hospitalizations`, 
          Deaths = `Number of Deaths`,
-         Health_District = `Health District Name`) %>% 
+         Health_District = `Health District`) %>% 
   mutate(Date = Sys.Date() - 1, State = "Virginia")
 
 Virginia_By_Age_Health_District <- read_csv("Virginia_By_Age_Health_District.csv")
@@ -691,7 +722,7 @@ Virginia_By_Sex_Health_District_Today <- Virginia_By_Sex_Health_District_Today %
          Cases = `Number of Cases`,
          Hospitalized = `Number of Hospitalizations`,
          Deaths = `Number of Deaths`,
-         Health_District = `Health District Name`) %>% 
+         Health_District = `Health District`) %>% 
   mutate(Date = Sys.Date() - 1, State = "Virginia")
 
 Virginia_By_Sex_Health_District <- read_csv("Virginia_By_Sex_Health_District.csv")
@@ -718,7 +749,7 @@ write_csv(Virginia_By_Sex, "Virginia_By_Sex.csv")
 Virginia_By_Race_Health_District_Today <- read_csv("Virginia_By_Race_Today.csv")
 
 Virginia_By_Race_Health_District_Today <- Virginia_By_Race_Health_District_Today %>% 
-  rename(Date = `Report Date`, Cases = `Number of Cases`, Hospitalized = `Number of Hospitalizations`, Deaths = `Number of Deaths`, Health_District = `Health District Name`) %>% 
+  rename(Date = `Report Date`, Cases = `Number of Cases`, Hospitalized = `Number of Hospitalizations`, Deaths = `Number of Deaths`, Health_District = `Health District`) %>% 
   mutate(Date = Sys.Date() - 1, State = "Virginia")
 
 Virginia_By_Race_Health_District <- read_csv("Virginia_By_Race_Health_District.csv")
@@ -1213,10 +1244,12 @@ Maryland <- tibble(State = "Maryland",
 
 # Making the Virginia cases by county
 virginiaCounties <- Virginia_By_County_Today %>% 
-  filter(County %in% c("Alexandria City", "Arlington County", "Fairfax County", "Loudoun County", "Prince William County", "Culpeper County")) %>% 
+  filter(FIPS %in% c(51515, 51013, 51059, 51107, 51153, 51047)) %>% 
   #mutate(Deaths = NA) %>% There is now county level VA deaths data
+  mutate(County = case_when(County == "Rappahannock Rapidan" ~ "Culpeper", T ~ County)) %>% 
   mutate(Tests = NA) %>% 
   select(County, Cases, Deaths, Tests, Date)
+
 
 # Making the Maryland cases by county
 marylandCounties <- MD_By_County_Today %>% 
@@ -1258,6 +1291,9 @@ Full_States <- read_csv("FullStates.csv")
 Full_States <- bind_rows(Full_States, Virginia_By_County, MD_By_County, WV_CountiesDFCleaned, DC_By_County) %>% 
   arrange(desc(Date))
 
+
+
+
 # Clean up county names so they can be joined on later
 Full_States <- Full_States %>%
   mutate(County = unlist(lapply(County, str_remove_all, "'"))) %>%
@@ -1268,9 +1304,24 @@ Full_States <- Full_States %>%
                              str_detect(County, 'Sta..ord') ~ "Stafford",
                              str_detect(County, 'Su..olk') ~ "Suffolk City",
                              str_detect(County, ".*Marys") ~ "St Marys",
-                             T ~ County)) #%>%
-  # left_join(stateConversions, by = c("State" = "Full_Name")) %>% 
-  # left_join(countyStateFIPS, by = c("Abbr" = "State", "County" = "Name"))
+                             T ~ County)) %>% 
+  mutate(County = case_when(FIPS == 51153 ~ "Prince William",
+                            FIPS == 51600 ~ "Fairfax City",
+                            FIPS == 51059 ~ "Fairfax",
+                            FIPS == 51177 ~ "Spotsylvania",
+                            FIPS == 51610 ~ "Falls Church",
+                            FIPS == 51061 ~ "Fauquier",
+                            FIPS == 51683 ~ "Manassas",
+                            FIPS == 51179 ~ "Stafford",
+                            FIPS == 51187 ~ "Warren",
+                            FIPS == 51685 ~ "Manassas Park",
+                            FIPS == 51630 ~ "Fredericksburg",
+                            FIPS == 51043 ~ "Clarke",
+                            FIPS == 51157 ~ "Rappahannock",
+                            FIPS == 51047 ~ "Culpeper",
+                            FIPS == 51013 ~ "Arlington",
+                            FIPS == 51107 ~ "Loudoun",
+                            T ~ County))
 
 # Dedup
 Full_States %>% 
