@@ -125,7 +125,7 @@ Sys.sleep(15)
 
 All_WV_Buttons <- remDr$findElements(using = "tag name", value = "button")
 Sys.sleep(5)
-WV_ByCounty_Button <- All_WV_Buttons[[4]]
+WV_ByCounty_Button <- All_WV_Buttons[[2]]
 Sys.sleep(5)
 WV_ByCounty_Button$getElementText()
 Sys.sleep(5)
@@ -657,7 +657,7 @@ Virginia_DeathsHospitalizations <- bind_rows(Virginia_DeathsHospitalizations_Tod
 write_csv(Virginia_DeathsHospitalizations, "Virginia_DeathsHospitalizations.csv")
 
 Virginia_By_County <- Virginia_By_County_Today %>% 
-  rename(County = Locality, Date = `Report Date`) %>% 
+  rename(County = Locality, Date = `Report Date`, Cases = `Total Cases`) %>% 
   mutate(State = "Virginia", Date = mdy(Date) - 1) %>% 
   left_join(stateConversions, by = c("State" = "Full_Name")) %>%
   #left_join(select(Virginia_DeathsHospitalizations_Today, County, Hospitalizations, Deaths), by = c("County")) %>% 

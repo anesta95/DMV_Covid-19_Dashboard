@@ -1,278 +1,431 @@
 County,Cases,Hospitalizations,Deaths,Date,State,Abbr,FIPS
-Lenowisco,2,1,0,2020-04-22,Virginia,VA,51720
-Central Virginia,47,5,1,2020-04-22,Virginia,VA,51680
-Peninsula,6,2,0,2020-04-22,Virginia,VA,51735
-Mount Rogers,0,0,0,2020-04-22,Virginia,VA,51021
-Lord Fairfax,58,9,0,2020-04-22,Virginia,VA,51171
-Loudoun,498,64,10,2020-04-22,Virginia,VA,51107
-Crater,30,5,4,2020-04-22,Virginia,VA,51081
-Lenowisco,5,1,1,2020-04-22,Virginia,VA,51169
-Western Tidewater,15,0,0,2020-04-22,Virginia,VA,51620
-Southside,13,3,0,2020-04-22,Virginia,VA,51025
-Piedmont,31,6,0,2020-04-22,Virginia,VA,51029
-Rappahannock Rapidan,22,3,0,2020-04-22,Virginia,VA,51137
-Three Rivers,3,0,0,2020-04-22,Virginia,VA,51101
-Prince William,1027,108,18,2020-04-22,Virginia,VA,51153
-Rappahannock,21,3,0,2020-04-22,Virginia,VA,51033
-Cumberland Plateau,4,0,0,2020-04-22,Virginia,VA,51185
-Chickahominy,99,23,7,2020-04-22,Virginia,VA,51085
-Fairfax,26,3,2,2020-04-22,Virginia,VA,51600
-Western Tidewater,71,3,1,2020-04-22,Virginia,VA,51175
-Chesterfield,9,0,0,2020-04-22,Virginia,VA,51145
-Cumberland Plateau,12,0,0,2020-04-22,Virginia,VA,51027
-Three Rivers,66,4,0,2020-04-22,Virginia,VA,51159
-Fairfax,2362,431,76,2020-04-22,Virginia,VA,51059
-Thomas Jefferson,44,13,2,2020-04-22,Virginia,VA,51540
-Piedmont,8,0,0,2020-04-22,Virginia,VA,51135
-Central Virginia,10,0,0,2020-04-22,Virginia,VA,51031
-Thomas Jefferson,10,2,1,2020-04-22,Virginia,VA,51079
-Rappahannock Rapidan,14,1,0,2020-04-22,Virginia,VA,51113
-Mount Rogers,0,0,0,2020-04-22,Virginia,VA,51077
-Three Rivers,21,4,1,2020-04-22,Virginia,VA,51073
-Rappahannock,94,20,3,2020-04-22,Virginia,VA,51177
-Thomas Jefferson,38,8,0,2020-04-22,Virginia,VA,51109
-Richmond,259,45,13,2020-04-22,Virginia,VA,51760
-Eastern Shore,76,17,2,2020-04-22,Virginia,VA,51001
-Central Shenandoah,5,0,0,2020-04-22,Virginia,VA,51530
-Southside,71,18,1,2020-04-22,Virginia,VA,51117
-Three Rivers,14,0,0,2020-04-22,Virginia,VA,51193
-Western Tidewater,136,29,3,2020-04-22,Virginia,VA,51800
-Three Rivers,1,1,0,2020-04-22,Virginia,VA,51103
-Alleghany,34,0,0,2020-04-22,Virginia,VA,51161
-Western Tidewater,91,8,2,2020-04-22,Virginia,VA,51093
-Pittsylvania-Danville,31,13,1,2020-04-22,Virginia,VA,51590
-Cumberland Plateau,2,1,0,2020-04-22,Virginia,VA,51167
-Central Shenandoah,9,1,0,2020-04-22,Virginia,VA,51820
-Central Shenandoah,3,0,0,2020-04-22,Virginia,VA,51678
-Lord Fairfax,22,6,0,2020-04-22,Virginia,VA,51139
-Fairfax,25,2,2,2020-04-22,Virginia,VA,51610
-Lord Fairfax,30,0,0,2020-04-22,Virginia,VA,51840
-Central Virginia,9,1,0,2020-04-22,Virginia,VA,51009
-Chesterfield,41,0,2,2020-04-22,Virginia,VA,51570
-Three Rivers,6,0,0,2020-04-22,Virginia,VA,51133
-Three Rivers,3,1,0,2020-04-22,Virginia,VA,51057
-Southside,13,1,0,2020-04-22,Virginia,VA,51083
-Henrico,718,99,83,2020-04-22,Virginia,VA,51087
-Alexandria,512,74,14,2020-04-22,Virginia,VA,51510
-Rappahannock Rapidan,64,6,1,2020-04-22,Virginia,VA,51061
-Crater,19,5,0,2020-04-22,Virginia,VA,51670
-Chesterfield,402,34,7,2020-04-22,Virginia,VA,51041
-Rappahannock,21,11,4,2020-04-22,Virginia,VA,51099
-Alleghany,26,9,3,2020-04-22,Virginia,VA,51023
-Piedmont,10,1,0,2020-04-22,Virginia,VA,51049
-Norfolk,136,31,3,2020-04-22,Virginia,VA,51710
-Crater,25,2,1,2020-04-22,Virginia,VA,51183
-Mount Rogers,1,1,0,2020-04-22,Virginia,VA,51640
-Peninsula,14,5,1,2020-04-22,Virginia,VA,51830
-Thomas Jefferson,72,12,4,2020-04-22,Virginia,VA,51065
-Prince William,127,18,1,2020-04-22,Virginia,VA,51683
-Crater,12,4,0,2020-04-22,Virginia,VA,51053
-Central Shenandoah,163,11,1,2020-04-22,Virginia,VA,51165
-Alleghany,8,0,0,2020-04-22,Virginia,VA,51775
-Thomas Jefferson,7,0,0,2020-04-22,Virginia,VA,51125
-Lenowisco,20,9,1,2020-04-22,Virginia,VA,51195
-Mount Rogers,3,1,0,2020-04-22,Virginia,VA,51035
-Central Shenandoah,346,23,8,2020-04-22,Virginia,VA,51660
-Piedmont,8,1,0,2020-04-22,Virginia,VA,51037
-Peninsula,149,51,12,2020-04-22,Virginia,VA,51095
-Rappahannock,180,38,2,2020-04-22,Virginia,VA,51179
-Arlington,686,118,24,2020-04-22,Virginia,VA,51013
-Portsmouth,98,30,4,2020-04-22,Virginia,VA,51740
-Central Shenandoah,33,2,1,2020-04-22,Virginia,VA,51015
-Mount Rogers,13,4,0,2020-04-22,Virginia,VA,51173
-Central Shenandoah,10,0,0,2020-04-22,Virginia,VA,51790
-West Piedmont,0,0,0,2020-04-22,Virginia,VA,51690
-West Piedmont,1,0,0,2020-04-22,Virginia,VA,51141
-Hampton,99,26,1,2020-04-22,Virginia,VA,51650
-Three Rivers,2,0,0,2020-04-22,Virginia,VA,51097
-Lord Fairfax,30,3,0,2020-04-22,Virginia,VA,51187
-West Piedmont,10,2,1,2020-04-22,Virginia,VA,51089
-Alleghany,2,0,0,2020-04-22,Virginia,VA,51045
-Crater,18,4,1,2020-04-22,Virginia,VA,51595
-Central Virginia,12,0,0,2020-04-22,Virginia,VA,51011
-West Piedmont,17,2,0,2020-04-22,Virginia,VA,51067
-Peninsula,105,32,6,2020-04-22,Virginia,VA,51700
-Central Shenandoah,1,0,0,2020-04-22,Virginia,VA,51091
-Lord Fairfax,87,9,0,2020-04-22,Virginia,VA,51069
-Mount Rogers,30,8,3,2020-04-22,Virginia,VA,51191
-Chickahominy,12,4,1,2020-04-22,Virginia,VA,51036
-Central Shenandoah,0,0,0,2020-04-22,Virginia,VA,51017
-New River,4,0,0,2020-04-22,Virginia,VA,51071
-Crater,4,1,1,2020-04-22,Virginia,VA,51181
-Chickahominy,20,4,1,2020-04-22,Virginia,VA,51127
-New River,2,0,0,2020-04-22,Virginia,VA,51750
-Three Rivers,3,1,0,2020-04-22,Virginia,VA,51115
-Central Shenandoah,5,0,0,2020-04-22,Virginia,VA,51163
-Pittsylvania-Danville,11,4,1,2020-04-22,Virginia,VA,51143
-New River,50,6,0,2020-04-22,Virginia,VA,51121
-Prince William,38,6,1,2020-04-22,Virginia,VA,51685
-Crater,29,2,0,2020-04-22,Virginia,VA,51149
-Thomas Jefferson,71,13,3,2020-04-22,Virginia,VA,51003
-Chesapeake,186,40,5,2020-04-22,Virginia,VA,51550
-Virginia Beach,328,61,8,2020-04-22,Virginia,VA,51810
-Chickahominy,63,7,3,2020-04-22,Virginia,VA,51075
-Cumberland Plateau,0,0,0,2020-04-22,Virginia,VA,51051
-Peninsula,43,6,1,2020-04-22,Virginia,VA,51199
-Rappahannock,20,3,0,2020-04-22,Virginia,VA,51630
-Three Rivers,3,0,0,2020-04-22,Virginia,VA,51119
+Accomack,100,17,3,2020-04-23,Virginia,VA,51001
+Albemarle,72,13,3,2020-04-23,Virginia,VA,51003
+Alleghany,5,4,0,2020-04-23,Virginia,VA,51005
+Amelia,15,6,1,2020-04-23,Virginia,VA,51007
+Amherst,9,1,0,2020-04-23,Virginia,VA,51009
+Appomattox,12,0,0,2020-04-23,Virginia,VA,51011
+Arlington,722,120,24,2020-04-23,Virginia,VA,51013
+Augusta,34,2,1,2020-04-23,Virginia,VA,51015
+Bath,0,0,0,2020-04-23,Virginia,VA,51017
+Bedford,23,1,0,2020-04-23,Virginia,VA,51019
+Bland,0,0,0,2020-04-23,Virginia,VA,51021
+Botetourt,27,9,3,2020-04-23,Virginia,VA,51023
+Brunswick,14,3,0,2020-04-23,Virginia,VA,51025
+Buchanan,12,0,0,2020-04-23,Virginia,VA,51027
+Buckingham,31,6,0,2020-04-23,Virginia,VA,51029
+Campbell,10,0,0,2020-04-23,Virginia,VA,51031
+Caroline,21,3,0,2020-04-23,Virginia,VA,51033
+Carroll,3,1,0,2020-04-23,Virginia,VA,51035
+Charles City,12,5,1,2020-04-23,Virginia,VA,51036
+Charlotte,8,1,0,2020-04-23,Virginia,VA,51037
+Chesterfield,423,38,17,2020-04-23,Virginia,VA,51041
+Clarke,7,1,0,2020-04-23,Virginia,VA,51043
+Craig,2,0,0,2020-04-23,Virginia,VA,51045
+Culpeper,90,10,1,2020-04-23,Virginia,VA,51047
+Cumberland,10,1,0,2020-04-23,Virginia,VA,51049
+Dickenson,0,0,0,2020-04-23,Virginia,VA,51051
+Dinwiddie,12,5,0,2020-04-23,Virginia,VA,51053
+Essex,3,1,0,2020-04-23,Virginia,VA,51057
+Fairfax,2534,455,85,2020-04-23,Virginia,VA,51059
+Fauquier,73,7,2,2020-04-23,Virginia,VA,51061
+Floyd,1,0,0,2020-04-23,Virginia,VA,51063
+Fluvanna,72,12,5,2020-04-23,Virginia,VA,51065
+Franklin County,19,3,0,2020-04-23,Virginia,VA,51067
+Frederick,87,9,0,2020-04-23,Virginia,VA,51069
+Giles,4,0,0,2020-04-23,Virginia,VA,51071
+Gloucester,21,4,1,2020-04-23,Virginia,VA,51073
+Goochland,69,7,3,2020-04-23,Virginia,VA,51075
+Grayson,0,0,0,2020-04-23,Virginia,VA,51077
+Greene,10,2,1,2020-04-23,Virginia,VA,51079
+Greensville,30,6,4,2020-04-23,Virginia,VA,51081
+Halifax,16,1,0,2020-04-23,Virginia,VA,51083
+Hanover,100,24,7,2020-04-23,Virginia,VA,51085
+Henrico,729,107,86,2020-04-23,Virginia,VA,51087
+Henry,12,2,1,2020-04-23,Virginia,VA,51089
+Highland,1,0,0,2020-04-23,Virginia,VA,51091
+Isle of Wight,91,8,2,2020-04-23,Virginia,VA,51093
+James City,150,51,12,2020-04-23,Virginia,VA,51095
+King and Queen,2,0,0,2020-04-23,Virginia,VA,51097
+King George,23,11,4,2020-04-23,Virginia,VA,51099
+King William,3,0,0,2020-04-23,Virginia,VA,51101
+Lancaster,1,1,0,2020-04-23,Virginia,VA,51103
+Lee,8,1,0,2020-04-23,Virginia,VA,51105
+Loudoun,529,67,10,2020-04-23,Virginia,VA,51107
+Louisa,38,9,0,2020-04-23,Virginia,VA,51109
+Lunenburg,3,0,0,2020-04-23,Virginia,VA,51111
+Madison,14,1,0,2020-04-23,Virginia,VA,51113
+Mathews,3,1,0,2020-04-23,Virginia,VA,51115
+Mecklenburg,74,19,7,2020-04-23,Virginia,VA,51117
+Middlesex,3,0,0,2020-04-23,Virginia,VA,51119
+Montgomery,50,6,0,2020-04-23,Virginia,VA,51121
+Nelson,7,0,0,2020-04-23,Virginia,VA,51125
+New Kent,20,4,1,2020-04-23,Virginia,VA,51127
+Northampton,15,1,0,2020-04-23,Virginia,VA,51131
+Northumberland,6,0,0,2020-04-23,Virginia,VA,51133
+Nottoway,10,0,0,2020-04-23,Virginia,VA,51135
+Orange,22,3,0,2020-04-23,Virginia,VA,51137
+Page,30,8,0,2020-04-23,Virginia,VA,51139
+Patrick,2,0,0,2020-04-23,Virginia,VA,51141
+Pittsylvania,11,4,1,2020-04-23,Virginia,VA,51143
+Powhatan,9,0,0,2020-04-23,Virginia,VA,51145
+Prince Edward,34,3,2,2020-04-23,Virginia,VA,51147
+Prince George,29,2,0,2020-04-23,Virginia,VA,51149
+Prince William,1110,112,18,2020-04-23,Virginia,VA,51153
+Pulaski,10,2,0,2020-04-23,Virginia,VA,51155
+Rappahannock,1,0,0,2020-04-23,Virginia,VA,51157
+Richmond County,66,4,0,2020-04-23,Virginia,VA,51159
+Roanoke County,39,1,0,2020-04-23,Virginia,VA,51161
+Rockbridge,5,0,0,2020-04-23,Virginia,VA,51163
+Rockingham,176,13,1,2020-04-23,Virginia,VA,51165
+Russell,2,1,0,2020-04-23,Virginia,VA,51167
+Scott,5,1,1,2020-04-23,Virginia,VA,51169
+Shenandoah,65,10,0,2020-04-23,Virginia,VA,51171
+Smyth,13,4,0,2020-04-23,Virginia,VA,51173
+Southampton,75,3,1,2020-04-23,Virginia,VA,51175
+Spotsylvania,97,20,3,2020-04-23,Virginia,VA,51177
+Stafford,193,38,2,2020-04-23,Virginia,VA,51179
+Surry,4,1,1,2020-04-23,Virginia,VA,51181
+Sussex,28,2,1,2020-04-23,Virginia,VA,51183
+Tazewell,4,0,0,2020-04-23,Virginia,VA,51185
+Warren,36,3,0,2020-04-23,Virginia,VA,51187
+Washington,30,8,3,2020-04-23,Virginia,VA,51191
+Westmoreland,14,0,0,2020-04-23,Virginia,VA,51193
+Wise,20,9,1,2020-04-23,Virginia,VA,51195
+Wythe,11,1,1,2020-04-23,Virginia,VA,51197
+York,43,6,1,2020-04-23,Virginia,VA,51199
+Alexandria,547,81,15,2020-04-23,Virginia,VA,51510
+Bristol,1,0,0,2020-04-23,Virginia,VA,51520
+Buena Vista City,5,0,0,2020-04-23,Virginia,VA,51530
+Charlottesville,45,13,2,2020-04-23,Virginia,VA,51540
+Chesapeake,197,43,5,2020-04-23,Virginia,VA,51550
+Colonial Heights,41,0,3,2020-04-23,Virginia,VA,51570
+Covington,1,0,0,2020-04-23,Virginia,VA,51580
+Danville,31,13,1,2020-04-23,Virginia,VA,51590
+Emporia,18,4,1,2020-04-23,Virginia,VA,51595
+Fairfax City,26,3,2,2020-04-23,Virginia,VA,51600
+Falls Church,24,2,2,2020-04-23,Virginia,VA,51610
+Franklin City,15,0,0,2020-04-23,Virginia,VA,51620
+Fredericksburg,21,3,0,2020-04-23,Virginia,VA,51630
+Galax,1,1,0,2020-04-23,Virginia,VA,51640
+Hampton,99,26,1,2020-04-23,Virginia,VA,51650
+Harrisonburg,355,23,9,2020-04-23,Virginia,VA,51660
+Hopewell,19,5,0,2020-04-23,Virginia,VA,51670
+Lexington,3,0,0,2020-04-23,Virginia,VA,51678
+Lynchburg,48,5,1,2020-04-23,Virginia,VA,51680
+Manassas City,137,20,1,2020-04-23,Virginia,VA,51683
+Manassas Park,44,6,1,2020-04-23,Virginia,VA,51685
+Martinsville,0,0,0,2020-04-23,Virginia,VA,51690
+Newport News,107,32,6,2020-04-23,Virginia,VA,51700
+Norfolk,141,31,3,2020-04-23,Virginia,VA,51710
+Norton,2,1,0,2020-04-23,Virginia,VA,51720
+Petersburg,27,10,2,2020-04-23,Virginia,VA,51730
+Poquoson,6,2,0,2020-04-23,Virginia,VA,51735
+Portsmouth,100,30,4,2020-04-23,Virginia,VA,51740
+Radford,2,0,0,2020-04-23,Virginia,VA,51750
+Richmond City,267,51,14,2020-04-23,Virginia,VA,51760
+Roanoke City,33,5,0,2020-04-23,Virginia,VA,51770
+Salem,8,0,0,2020-04-23,Virginia,VA,51775
+Staunton,10,0,0,2020-04-23,Virginia,VA,51790
+Suffolk,138,30,4,2020-04-23,Virginia,VA,51800
+Virginia Beach,331,65,10,2020-04-23,Virginia,VA,51810
+Waynesboro,10,1,0,2020-04-23,Virginia,VA,51820
+Williamsburg,14,5,1,2020-04-23,Virginia,VA,51830
+Winchester,31,0,0,2020-04-23,Virginia,VA,51840
+Accomack,76,17,2,2020-04-22,Virginia,VA,51001
+Albemarle,71,13,3,2020-04-22,Virginia,VA,51003
 Alleghany,5,4,0,2020-04-22,Virginia,VA,51005
-Central Virginia,21,1,0,2020-04-22,Virginia,VA,51019
-Lord Fairfax,7,1,0,2020-04-22,Virginia,VA,51043
-Rappahannock Rapidan,1,0,0,2020-04-22,Virginia,VA,51157
-Mount Rogers,11,1,1,2020-04-22,Virginia,VA,51197
-Piedmont,15,6,1,2020-04-22,Virginia,VA,51007
-Alleghany,1,0,0,2020-04-22,Virginia,VA,51580
-Lenowisco,7,1,0,2020-04-22,Virginia,VA,51105
-Piedmont,3,0,0,2020-04-22,Virginia,VA,51111
-Mount Rogers,1,0,0,2020-04-22,Virginia,VA,51520
-New River,1,0,0,2020-04-22,Virginia,VA,51063
-Piedmont,29,3,2,2020-04-22,Virginia,VA,51147
-Crater,27,9,2,2020-04-22,Virginia,VA,51730
-Eastern Shore,12,1,0,2020-04-22,Virginia,VA,51131
-New River,9,2,0,2020-04-22,Virginia,VA,51155
-Roanoke,28,5,0,2020-04-22,Virginia,VA,51770
-Rappahannock Rapidan,84,9,1,2020-04-22,Virginia,VA,51047
-Lenowisco,2,1,0,2020-04-21,Virginia,VA,51720
-Central Virginia,43,4,1,2020-04-21,Virginia,VA,51680
-Peninsula,6,2,0,2020-04-21,Virginia,VA,51735
-Mount Rogers,0,0,0,2020-04-21,Virginia,VA,51021
-Lord Fairfax,53,8,0,2020-04-21,Virginia,VA,51171
-Loudoun,475,61,9,2020-04-21,Virginia,VA,51107
-Crater,24,4,4,2020-04-21,Virginia,VA,51081
-Lenowisco,5,1,1,2020-04-21,Virginia,VA,51169
-Western Tidewater,14,0,0,2020-04-21,Virginia,VA,51620
-Southside,13,3,0,2020-04-21,Virginia,VA,51025
-Piedmont,27,6,0,2020-04-21,Virginia,VA,51029
-Rappahannock Rapidan,22,3,0,2020-04-21,Virginia,VA,51137
-Three Rivers,2,0,0,2020-04-21,Virginia,VA,51101
-Prince William,924,101,17,2020-04-21,Virginia,VA,51153
-Rappahannock,20,3,0,2020-04-21,Virginia,VA,51033
-Cumberland Plateau,4,0,0,2020-04-21,Virginia,VA,51185
-Chickahominy,97,20,6,2020-04-21,Virginia,VA,51085
-Fairfax,25,2,1,2020-04-21,Virginia,VA,51600
-Western Tidewater,19,3,1,2020-04-21,Virginia,VA,51175
-Chesterfield,9,0,0,2020-04-21,Virginia,VA,51145
-Cumberland Plateau,12,0,0,2020-04-21,Virginia,VA,51027
-Three Rivers,53,4,0,2020-04-21,Virginia,VA,51159
-Fairfax,2256,405,66,2020-04-21,Virginia,VA,51059
-Thomas Jefferson,44,11,2,2020-04-21,Virginia,VA,51540
-Piedmont,8,0,0,2020-04-21,Virginia,VA,51135
-Central Virginia,10,0,0,2020-04-21,Virginia,VA,51031
-Thomas Jefferson,9,2,1,2020-04-21,Virginia,VA,51079
-Rappahannock Rapidan,12,1,0,2020-04-21,Virginia,VA,51113
-Mount Rogers,0,0,0,2020-04-21,Virginia,VA,51077
-Three Rivers,21,4,1,2020-04-21,Virginia,VA,51073
-Rappahannock,83,20,3,2020-04-21,Virginia,VA,51177
-Thomas Jefferson,37,8,0,2020-04-21,Virginia,VA,51109
-Richmond,250,41,10,2020-04-21,Virginia,VA,51760
-Eastern Shore,59,15,1,2020-04-21,Virginia,VA,51001
-Central Shenandoah,5,0,0,2020-04-21,Virginia,VA,51530
-Southside,69,17,1,2020-04-21,Virginia,VA,51117
-Three Rivers,12,0,0,2020-04-21,Virginia,VA,51193
-Western Tidewater,126,28,3,2020-04-21,Virginia,VA,51800
-Three Rivers,1,1,0,2020-04-21,Virginia,VA,51103
-Alleghany,31,0,0,2020-04-21,Virginia,VA,51161
-Western Tidewater,90,8,2,2020-04-21,Virginia,VA,51093
-Pittsylvania-Danville,29,13,1,2020-04-21,Virginia,VA,51590
-Cumberland Plateau,2,1,0,2020-04-21,Virginia,VA,51167
-Central Shenandoah,8,1,0,2020-04-21,Virginia,VA,51820
-Central Shenandoah,3,0,0,2020-04-21,Virginia,VA,51678
-Lord Fairfax,16,0,0,2020-04-21,Virginia,VA,51139
-Fairfax,25,2,1,2020-04-21,Virginia,VA,51610
-Lord Fairfax,29,0,0,2020-04-21,Virginia,VA,51840
-Central Virginia,10,2,1,2020-04-21,Virginia,VA,51009
-Chesterfield,37,0,2,2020-04-21,Virginia,VA,51570
-Three Rivers,5,0,0,2020-04-21,Virginia,VA,51133
-Three Rivers,2,0,0,2020-04-21,Virginia,VA,51057
-Southside,12,1,0,2020-04-21,Virginia,VA,51083
-Henrico,684,96,82,2020-04-21,Virginia,VA,51087
-Alexandria,474,65,12,2020-04-21,Virginia,VA,51510
-Rappahannock Rapidan,56,5,1,2020-04-21,Virginia,VA,51061
-Crater,16,5,0,2020-04-21,Virginia,VA,51670
-Chesterfield,356,30,7,2020-04-21,Virginia,VA,51041
-Rappahannock,20,11,4,2020-04-21,Virginia,VA,51099
-Alleghany,26,9,3,2020-04-21,Virginia,VA,51023
-Piedmont,10,1,0,2020-04-21,Virginia,VA,51049
-Norfolk,126,29,3,2020-04-21,Virginia,VA,51710
-Crater,23,2,1,2020-04-21,Virginia,VA,51183
-Mount Rogers,1,1,0,2020-04-21,Virginia,VA,51640
-Peninsula,14,5,1,2020-04-21,Virginia,VA,51830
-Thomas Jefferson,69,12,4,2020-04-21,Virginia,VA,51065
-Prince William,117,15,0,2020-04-21,Virginia,VA,51683
-Crater,8,1,0,2020-04-21,Virginia,VA,51053
-Central Shenandoah,145,11,1,2020-04-21,Virginia,VA,51165
-Alleghany,8,0,0,2020-04-21,Virginia,VA,51775
-Thomas Jefferson,7,0,0,2020-04-21,Virginia,VA,51125
-Lenowisco,18,7,1,2020-04-21,Virginia,VA,51195
-Mount Rogers,3,1,0,2020-04-21,Virginia,VA,51035
-Central Shenandoah,318,22,8,2020-04-21,Virginia,VA,51660
-Piedmont,8,0,0,2020-04-21,Virginia,VA,51037
-Peninsula,147,51,12,2020-04-21,Virginia,VA,51095
-Rappahannock,170,38,2,2020-04-21,Virginia,VA,51179
-Arlington,663,116,24,2020-04-21,Virginia,VA,51013
-Portsmouth,93,30,4,2020-04-21,Virginia,VA,51740
-Central Shenandoah,30,2,0,2020-04-21,Virginia,VA,51015
-Mount Rogers,13,4,0,2020-04-21,Virginia,VA,51173
-Central Shenandoah,10,0,0,2020-04-21,Virginia,VA,51790
-West Piedmont,0,0,0,2020-04-21,Virginia,VA,51690
-West Piedmont,1,0,0,2020-04-21,Virginia,VA,51141
-Hampton,97,26,1,2020-04-21,Virginia,VA,51650
-Three Rivers,2,0,0,2020-04-21,Virginia,VA,51097
-Lord Fairfax,27,3,0,2020-04-21,Virginia,VA,51187
-West Piedmont,10,2,1,2020-04-21,Virginia,VA,51089
-Alleghany,2,0,0,2020-04-21,Virginia,VA,51045
-Crater,12,3,1,2020-04-21,Virginia,VA,51595
-Central Virginia,10,0,0,2020-04-21,Virginia,VA,51011
-West Piedmont,17,2,0,2020-04-21,Virginia,VA,51067
-Peninsula,101,32,6,2020-04-21,Virginia,VA,51700
-Central Shenandoah,1,0,0,2020-04-21,Virginia,VA,51091
-Lord Fairfax,86,9,0,2020-04-21,Virginia,VA,51069
-Mount Rogers,29,8,3,2020-04-21,Virginia,VA,51191
-Chickahominy,11,4,1,2020-04-21,Virginia,VA,51036
-Central Shenandoah,0,0,0,2020-04-21,Virginia,VA,51017
-New River,4,0,0,2020-04-21,Virginia,VA,51071
-Crater,4,1,1,2020-04-21,Virginia,VA,51181
-Chickahominy,20,4,1,2020-04-21,Virginia,VA,51127
-New River,2,0,0,2020-04-21,Virginia,VA,51750
-Three Rivers,3,1,0,2020-04-21,Virginia,VA,51115
-Central Shenandoah,5,0,0,2020-04-21,Virginia,VA,51163
-Pittsylvania-Danville,9,4,1,2020-04-21,Virginia,VA,51143
-New River,50,6,0,2020-04-21,Virginia,VA,51121
-Prince William,34,6,1,2020-04-21,Virginia,VA,51685
-Crater,28,2,0,2020-04-21,Virginia,VA,51149
-Thomas Jefferson,68,13,3,2020-04-21,Virginia,VA,51003
-Chesapeake,180,39,5,2020-04-21,Virginia,VA,51550
-Virginia Beach,313,60,8,2020-04-21,Virginia,VA,51810
-Chickahominy,63,7,3,2020-04-21,Virginia,VA,51075
-Cumberland Plateau,0,0,0,2020-04-21,Virginia,VA,51051
-Peninsula,43,6,1,2020-04-21,Virginia,VA,51199
-Rappahannock,17,3,0,2020-04-21,Virginia,VA,51630
-Three Rivers,3,0,0,2020-04-21,Virginia,VA,51119
+Amelia,15,6,1,2020-04-22,Virginia,VA,51007
+Amherst,9,1,0,2020-04-22,Virginia,VA,51009
+Appomattox,12,0,0,2020-04-22,Virginia,VA,51011
+Arlington,686,118,24,2020-04-22,Virginia,VA,51013
+Augusta,33,2,1,2020-04-22,Virginia,VA,51015
+Bath,0,0,0,2020-04-22,Virginia,VA,51017
+Bedford,21,1,0,2020-04-22,Virginia,VA,51019
+Bland,0,0,0,2020-04-22,Virginia,VA,51021
+Botetourt,26,9,3,2020-04-22,Virginia,VA,51023
+Brunswick,13,3,0,2020-04-22,Virginia,VA,51025
+Buchanan,12,0,0,2020-04-22,Virginia,VA,51027
+Buckingham,31,6,0,2020-04-22,Virginia,VA,51029
+Campbell,10,0,0,2020-04-22,Virginia,VA,51031
+Caroline,21,3,0,2020-04-22,Virginia,VA,51033
+Carroll,3,1,0,2020-04-22,Virginia,VA,51035
+Charles City,12,4,1,2020-04-22,Virginia,VA,51036
+Charlotte,8,1,0,2020-04-22,Virginia,VA,51037
+Chesterfield,402,34,7,2020-04-22,Virginia,VA,51041
+Clarke,7,1,0,2020-04-22,Virginia,VA,51043
+Craig,2,0,0,2020-04-22,Virginia,VA,51045
+Culpeper,84,9,1,2020-04-22,Virginia,VA,51047
+Cumberland,10,1,0,2020-04-22,Virginia,VA,51049
+Dickenson,0,0,0,2020-04-22,Virginia,VA,51051
+Dinwiddie,12,4,0,2020-04-22,Virginia,VA,51053
+Essex,3,1,0,2020-04-22,Virginia,VA,51057
+Fairfax,2362,431,76,2020-04-22,Virginia,VA,51059
+Fauquier,64,6,1,2020-04-22,Virginia,VA,51061
+Floyd,1,0,0,2020-04-22,Virginia,VA,51063
+Fluvanna,72,12,4,2020-04-22,Virginia,VA,51065
+Franklin County,17,2,0,2020-04-22,Virginia,VA,51067
+Frederick,87,9,0,2020-04-22,Virginia,VA,51069
+Giles,4,0,0,2020-04-22,Virginia,VA,51071
+Gloucester,21,4,1,2020-04-22,Virginia,VA,51073
+Goochland,63,7,3,2020-04-22,Virginia,VA,51075
+Grayson,0,0,0,2020-04-22,Virginia,VA,51077
+Greene,10,2,1,2020-04-22,Virginia,VA,51079
+Greensville,30,5,4,2020-04-22,Virginia,VA,51081
+Halifax,13,1,0,2020-04-22,Virginia,VA,51083
+Hanover,99,23,7,2020-04-22,Virginia,VA,51085
+Henrico,718,99,83,2020-04-22,Virginia,VA,51087
+Henry,10,2,1,2020-04-22,Virginia,VA,51089
+Highland,1,0,0,2020-04-22,Virginia,VA,51091
+Isle of Wight,91,8,2,2020-04-22,Virginia,VA,51093
+James City,149,51,12,2020-04-22,Virginia,VA,51095
+King and Queen,2,0,0,2020-04-22,Virginia,VA,51097
+King George,21,11,4,2020-04-22,Virginia,VA,51099
+King William,3,0,0,2020-04-22,Virginia,VA,51101
+Lancaster,1,1,0,2020-04-22,Virginia,VA,51103
+Lee,7,1,0,2020-04-22,Virginia,VA,51105
+Loudoun,498,64,10,2020-04-22,Virginia,VA,51107
+Louisa,38,8,0,2020-04-22,Virginia,VA,51109
+Lunenburg,3,0,0,2020-04-22,Virginia,VA,51111
+Madison,14,1,0,2020-04-22,Virginia,VA,51113
+Mathews,3,1,0,2020-04-22,Virginia,VA,51115
+Mecklenburg,71,18,1,2020-04-22,Virginia,VA,51117
+Middlesex,3,0,0,2020-04-22,Virginia,VA,51119
+Montgomery,50,6,0,2020-04-22,Virginia,VA,51121
+Nelson,7,0,0,2020-04-22,Virginia,VA,51125
+New Kent,20,4,1,2020-04-22,Virginia,VA,51127
+Northampton,12,1,0,2020-04-22,Virginia,VA,51131
+Northumberland,6,0,0,2020-04-22,Virginia,VA,51133
+Nottoway,8,0,0,2020-04-22,Virginia,VA,51135
+Orange,22,3,0,2020-04-22,Virginia,VA,51137
+Page,22,6,0,2020-04-22,Virginia,VA,51139
+Patrick,1,0,0,2020-04-22,Virginia,VA,51141
+Pittsylvania,11,4,1,2020-04-22,Virginia,VA,51143
+Powhatan,9,0,0,2020-04-22,Virginia,VA,51145
+Prince Edward,29,3,2,2020-04-22,Virginia,VA,51147
+Prince George,29,2,0,2020-04-22,Virginia,VA,51149
+Prince William,1027,108,18,2020-04-22,Virginia,VA,51153
+Pulaski,9,2,0,2020-04-22,Virginia,VA,51155
+Rappahannock,1,0,0,2020-04-22,Virginia,VA,51157
+Richmond County,66,4,0,2020-04-22,Virginia,VA,51159
+Roanoke County,34,0,0,2020-04-22,Virginia,VA,51161
+Rockbridge,5,0,0,2020-04-22,Virginia,VA,51163
+Rockingham,163,11,1,2020-04-22,Virginia,VA,51165
+Russell,2,1,0,2020-04-22,Virginia,VA,51167
+Scott,5,1,1,2020-04-22,Virginia,VA,51169
+Shenandoah,58,9,0,2020-04-22,Virginia,VA,51171
+Smyth,13,4,0,2020-04-22,Virginia,VA,51173
+Southampton,71,3,1,2020-04-22,Virginia,VA,51175
+Spotsylvania,94,20,3,2020-04-22,Virginia,VA,51177
+Stafford,180,38,2,2020-04-22,Virginia,VA,51179
+Surry,4,1,1,2020-04-22,Virginia,VA,51181
+Sussex,25,2,1,2020-04-22,Virginia,VA,51183
+Tazewell,4,0,0,2020-04-22,Virginia,VA,51185
+Warren,30,3,0,2020-04-22,Virginia,VA,51187
+Washington,30,8,3,2020-04-22,Virginia,VA,51191
+Westmoreland,14,0,0,2020-04-22,Virginia,VA,51193
+Wise,20,9,1,2020-04-22,Virginia,VA,51195
+Wythe,11,1,1,2020-04-22,Virginia,VA,51197
+York,43,6,1,2020-04-22,Virginia,VA,51199
+Alexandria,512,74,14,2020-04-22,Virginia,VA,51510
+Bristol,1,0,0,2020-04-22,Virginia,VA,51520
+Buena Vista City,5,0,0,2020-04-22,Virginia,VA,51530
+Charlottesville,44,13,2,2020-04-22,Virginia,VA,51540
+Chesapeake,186,40,5,2020-04-22,Virginia,VA,51550
+Colonial Heights,41,0,2,2020-04-22,Virginia,VA,51570
+Covington,1,0,0,2020-04-22,Virginia,VA,51580
+Danville,31,13,1,2020-04-22,Virginia,VA,51590
+Emporia,18,4,1,2020-04-22,Virginia,VA,51595
+Fairfax City,26,3,2,2020-04-22,Virginia,VA,51600
+Falls Church,25,2,2,2020-04-22,Virginia,VA,51610
+Franklin City,15,0,0,2020-04-22,Virginia,VA,51620
+Fredericksburg,20,3,0,2020-04-22,Virginia,VA,51630
+Galax,1,1,0,2020-04-22,Virginia,VA,51640
+Hampton,99,26,1,2020-04-22,Virginia,VA,51650
+Harrisonburg,346,23,8,2020-04-22,Virginia,VA,51660
+Hopewell,19,5,0,2020-04-22,Virginia,VA,51670
+Lexington,3,0,0,2020-04-22,Virginia,VA,51678
+Lynchburg,47,5,1,2020-04-22,Virginia,VA,51680
+Manassas City,127,18,1,2020-04-22,Virginia,VA,51683
+Manassas Park,38,6,1,2020-04-22,Virginia,VA,51685
+Martinsville,0,0,0,2020-04-22,Virginia,VA,51690
+Newport News,105,32,6,2020-04-22,Virginia,VA,51700
+Norfolk,136,31,3,2020-04-22,Virginia,VA,51710
+Norton,2,1,0,2020-04-22,Virginia,VA,51720
+Petersburg,27,9,2,2020-04-22,Virginia,VA,51730
+Poquoson,6,2,0,2020-04-22,Virginia,VA,51735
+Portsmouth,98,30,4,2020-04-22,Virginia,VA,51740
+Radford,2,0,0,2020-04-22,Virginia,VA,51750
+Richmond City,259,45,13,2020-04-22,Virginia,VA,51760
+Roanoke City,28,5,0,2020-04-22,Virginia,VA,51770
+Salem,8,0,0,2020-04-22,Virginia,VA,51775
+Staunton,10,0,0,2020-04-22,Virginia,VA,51790
+Suffolk,136,29,3,2020-04-22,Virginia,VA,51800
+Virginia Beach,328,61,8,2020-04-22,Virginia,VA,51810
+Waynesboro,9,1,0,2020-04-22,Virginia,VA,51820
+Williamsburg,14,5,1,2020-04-22,Virginia,VA,51830
+Winchester,30,0,0,2020-04-22,Virginia,VA,51840
+Accomack,59,15,1,2020-04-21,Virginia,VA,51001
+Albemarle,68,13,3,2020-04-21,Virginia,VA,51003
 Alleghany,5,4,0,2020-04-21,Virginia,VA,51005
-Central Virginia,20,1,0,2020-04-21,Virginia,VA,51019
-Lord Fairfax,6,1,0,2020-04-21,Virginia,VA,51043
-Rappahannock Rapidan,1,0,0,2020-04-21,Virginia,VA,51157
-Mount Rogers,11,1,1,2020-04-21,Virginia,VA,51197
-Piedmont,15,6,1,2020-04-21,Virginia,VA,51007
-Alleghany,1,0,0,2020-04-21,Virginia,VA,51580
-Lenowisco,7,1,0,2020-04-21,Virginia,VA,51105
-Piedmont,3,0,0,2020-04-21,Virginia,VA,51111
-Mount Rogers,1,0,0,2020-04-21,Virginia,VA,51520
-New River,1,0,0,2020-04-21,Virginia,VA,51063
-Piedmont,19,3,2,2020-04-21,Virginia,VA,51147
-Crater,24,8,2,2020-04-21,Virginia,VA,51730
-Eastern Shore,8,1,0,2020-04-21,Virginia,VA,51131
-New River,9,2,0,2020-04-21,Virginia,VA,51155
-Roanoke,27,5,0,2020-04-21,Virginia,VA,51770
-Rappahannock Rapidan,73,9,1,2020-04-21,Virginia,VA,51047
+Amelia,15,6,1,2020-04-21,Virginia,VA,51007
+Amherst,10,2,1,2020-04-21,Virginia,VA,51009
+Appomattox,10,0,0,2020-04-21,Virginia,VA,51011
+Arlington,663,116,24,2020-04-21,Virginia,VA,51013
+Augusta,30,2,0,2020-04-21,Virginia,VA,51015
+Bath,0,0,0,2020-04-21,Virginia,VA,51017
+Bedford,20,1,0,2020-04-21,Virginia,VA,51019
+Bland,0,0,0,2020-04-21,Virginia,VA,51021
+Botetourt,26,9,3,2020-04-21,Virginia,VA,51023
+Brunswick,13,3,0,2020-04-21,Virginia,VA,51025
+Buchanan,12,0,0,2020-04-21,Virginia,VA,51027
+Buckingham,27,6,0,2020-04-21,Virginia,VA,51029
+Campbell,10,0,0,2020-04-21,Virginia,VA,51031
+Caroline,20,3,0,2020-04-21,Virginia,VA,51033
+Carroll,3,1,0,2020-04-21,Virginia,VA,51035
+Charles City,11,4,1,2020-04-21,Virginia,VA,51036
+Charlotte,8,0,0,2020-04-21,Virginia,VA,51037
+Chesterfield,356,30,7,2020-04-21,Virginia,VA,51041
+Clarke,6,1,0,2020-04-21,Virginia,VA,51043
+Craig,2,0,0,2020-04-21,Virginia,VA,51045
+Culpeper,73,9,1,2020-04-21,Virginia,VA,51047
+Cumberland,10,1,0,2020-04-21,Virginia,VA,51049
+Dickenson,0,0,0,2020-04-21,Virginia,VA,51051
+Dinwiddie,8,1,0,2020-04-21,Virginia,VA,51053
+Essex,2,0,0,2020-04-21,Virginia,VA,51057
+Fairfax,2256,405,66,2020-04-21,Virginia,VA,51059
+Fauquier,56,5,1,2020-04-21,Virginia,VA,51061
+Floyd,1,0,0,2020-04-21,Virginia,VA,51063
+Fluvanna,69,12,4,2020-04-21,Virginia,VA,51065
+Franklin County,17,2,0,2020-04-21,Virginia,VA,51067
+Frederick,86,9,0,2020-04-21,Virginia,VA,51069
+Giles,4,0,0,2020-04-21,Virginia,VA,51071
+Gloucester,21,4,1,2020-04-21,Virginia,VA,51073
+Goochland,63,7,3,2020-04-21,Virginia,VA,51075
+Grayson,0,0,0,2020-04-21,Virginia,VA,51077
+Greene,9,2,1,2020-04-21,Virginia,VA,51079
+Greensville,24,4,4,2020-04-21,Virginia,VA,51081
+Halifax,12,1,0,2020-04-21,Virginia,VA,51083
+Hanover,97,20,6,2020-04-21,Virginia,VA,51085
+Henrico,684,96,82,2020-04-21,Virginia,VA,51087
+Henry,10,2,1,2020-04-21,Virginia,VA,51089
+Highland,1,0,0,2020-04-21,Virginia,VA,51091
+Isle of Wight,90,8,2,2020-04-21,Virginia,VA,51093
+James City,147,51,12,2020-04-21,Virginia,VA,51095
+King and Queen,2,0,0,2020-04-21,Virginia,VA,51097
+King George,20,11,4,2020-04-21,Virginia,VA,51099
+King William,2,0,0,2020-04-21,Virginia,VA,51101
+Lancaster,1,1,0,2020-04-21,Virginia,VA,51103
+Lee,7,1,0,2020-04-21,Virginia,VA,51105
+Loudoun,475,61,9,2020-04-21,Virginia,VA,51107
+Louisa,37,8,0,2020-04-21,Virginia,VA,51109
+Lunenburg,3,0,0,2020-04-21,Virginia,VA,51111
+Madison,12,1,0,2020-04-21,Virginia,VA,51113
+Mathews,3,1,0,2020-04-21,Virginia,VA,51115
+Mecklenburg,69,17,1,2020-04-21,Virginia,VA,51117
+Middlesex,3,0,0,2020-04-21,Virginia,VA,51119
+Montgomery,50,6,0,2020-04-21,Virginia,VA,51121
+Nelson,7,0,0,2020-04-21,Virginia,VA,51125
+New Kent,20,4,1,2020-04-21,Virginia,VA,51127
+Northampton,8,1,0,2020-04-21,Virginia,VA,51131
+Northumberland,5,0,0,2020-04-21,Virginia,VA,51133
+Nottoway,8,0,0,2020-04-21,Virginia,VA,51135
+Orange,22,3,0,2020-04-21,Virginia,VA,51137
+Page,16,0,0,2020-04-21,Virginia,VA,51139
+Patrick,1,0,0,2020-04-21,Virginia,VA,51141
+Pittsylvania,9,4,1,2020-04-21,Virginia,VA,51143
+Powhatan,9,0,0,2020-04-21,Virginia,VA,51145
+Prince Edward,19,3,2,2020-04-21,Virginia,VA,51147
+Prince George,28,2,0,2020-04-21,Virginia,VA,51149
+Prince William,924,101,17,2020-04-21,Virginia,VA,51153
+Pulaski,9,2,0,2020-04-21,Virginia,VA,51155
+Rappahannock,1,0,0,2020-04-21,Virginia,VA,51157
+Richmond County,53,4,0,2020-04-21,Virginia,VA,51159
+Roanoke County,31,0,0,2020-04-21,Virginia,VA,51161
+Rockbridge,5,0,0,2020-04-21,Virginia,VA,51163
+Rockingham,145,11,1,2020-04-21,Virginia,VA,51165
+Russell,2,1,0,2020-04-21,Virginia,VA,51167
+Scott,5,1,1,2020-04-21,Virginia,VA,51169
+Shenandoah,53,8,0,2020-04-21,Virginia,VA,51171
+Smyth,13,4,0,2020-04-21,Virginia,VA,51173
+Southampton,19,3,1,2020-04-21,Virginia,VA,51175
+Spotsylvania,83,20,3,2020-04-21,Virginia,VA,51177
+Stafford,170,38,2,2020-04-21,Virginia,VA,51179
+Surry,4,1,1,2020-04-21,Virginia,VA,51181
+Sussex,23,2,1,2020-04-21,Virginia,VA,51183
+Tazewell,4,0,0,2020-04-21,Virginia,VA,51185
+Warren,27,3,0,2020-04-21,Virginia,VA,51187
+Washington,29,8,3,2020-04-21,Virginia,VA,51191
+Westmoreland,12,0,0,2020-04-21,Virginia,VA,51193
+Wise,18,7,1,2020-04-21,Virginia,VA,51195
+Wythe,11,1,1,2020-04-21,Virginia,VA,51197
+York,43,6,1,2020-04-21,Virginia,VA,51199
+Alexandria,474,65,12,2020-04-21,Virginia,VA,51510
+Bristol,1,0,0,2020-04-21,Virginia,VA,51520
+Buena Vista City,5,0,0,2020-04-21,Virginia,VA,51530
+Charlottesville,44,11,2,2020-04-21,Virginia,VA,51540
+Chesapeake,180,39,5,2020-04-21,Virginia,VA,51550
+Colonial Heights,37,0,2,2020-04-21,Virginia,VA,51570
+Covington,1,0,0,2020-04-21,Virginia,VA,51580
+Danville,29,13,1,2020-04-21,Virginia,VA,51590
+Emporia,12,3,1,2020-04-21,Virginia,VA,51595
+Fairfax City,25,2,1,2020-04-21,Virginia,VA,51600
+Falls Church,25,2,1,2020-04-21,Virginia,VA,51610
+Franklin City,14,0,0,2020-04-21,Virginia,VA,51620
+Fredericksburg,17,3,0,2020-04-21,Virginia,VA,51630
+Galax,1,1,0,2020-04-21,Virginia,VA,51640
+Hampton,97,26,1,2020-04-21,Virginia,VA,51650
+Harrisonburg,318,22,8,2020-04-21,Virginia,VA,51660
+Hopewell,16,5,0,2020-04-21,Virginia,VA,51670
+Lexington,3,0,0,2020-04-21,Virginia,VA,51678
+Lynchburg,43,4,1,2020-04-21,Virginia,VA,51680
+Manassas City,117,15,0,2020-04-21,Virginia,VA,51683
+Manassas Park,34,6,1,2020-04-21,Virginia,VA,51685
+Martinsville,0,0,0,2020-04-21,Virginia,VA,51690
+Newport News,101,32,6,2020-04-21,Virginia,VA,51700
+Norfolk,126,29,3,2020-04-21,Virginia,VA,51710
+Norton,2,1,0,2020-04-21,Virginia,VA,51720
+Petersburg,24,8,2,2020-04-21,Virginia,VA,51730
+Poquoson,6,2,0,2020-04-21,Virginia,VA,51735
+Portsmouth,93,30,4,2020-04-21,Virginia,VA,51740
+Radford,2,0,0,2020-04-21,Virginia,VA,51750
+Richmond City,250,41,10,2020-04-21,Virginia,VA,51760
+Roanoke City,27,5,0,2020-04-21,Virginia,VA,51770
+Salem,8,0,0,2020-04-21,Virginia,VA,51775
+Staunton,10,0,0,2020-04-21,Virginia,VA,51790
+Suffolk,126,28,3,2020-04-21,Virginia,VA,51800
+Virginia Beach,313,60,8,2020-04-21,Virginia,VA,51810
+Waynesboro,8,1,0,2020-04-21,Virginia,VA,51820
+Williamsburg,14,5,1,2020-04-21,Virginia,VA,51830
+Winchester,29,0,0,2020-04-21,Virginia,VA,51840
 Accomack,52,15,1,2020-04-20,Virginia,VA,51001
+Albemarle,66,13,3,2020-04-20,Virginia,VA,51003
 Alleghany,5,4,0,2020-04-20,Virginia,VA,51005
 Amelia,15,6,1,2020-04-20,Virginia,VA,51007
+Amherst,10,2,1,2020-04-20,Virginia,VA,51009
+Appomattox,7,0,0,2020-04-20,Virginia,VA,51011
+Arlington,625,114,23,2020-04-20,Virginia,VA,51013
+Augusta,28,1,0,2020-04-20,Virginia,VA,51015
 Bath,0,0,0,2020-04-20,Virginia,VA,51017
+Bedford,19,1,0,2020-04-20,Virginia,VA,51019
+Bland,0,0,0,2020-04-20,Virginia,VA,51021
 Botetourt,25,9,3,2020-04-20,Virginia,VA,51023
+Brunswick,12,3,0,2020-04-20,Virginia,VA,51025
+Buchanan,12,0,0,2020-04-20,Virginia,VA,51027
+Buckingham,27,6,0,2020-04-20,Virginia,VA,51029
+Campbell,10,0,0,2020-04-20,Virginia,VA,51031
+Caroline,17,3,0,2020-04-20,Virginia,VA,51033
+Carroll,3,1,0,2020-04-20,Virginia,VA,51035
+Charles City,11,4,1,2020-04-20,Virginia,VA,51036
+Charlotte,8,0,0,2020-04-20,Virginia,VA,51037
 Chesterfield,346,29,7,2020-04-20,Virginia,VA,51041
+Clarke,6,1,0,2020-04-20,Virginia,VA,51043
 Craig,2,0,0,2020-04-20,Virginia,VA,51045
+Culpeper,65,9,1,2020-04-20,Virginia,VA,51047
+Cumberland,10,1,0,2020-04-20,Virginia,VA,51049
 Dickenson,0,0,0,2020-04-20,Virginia,VA,51051
+Dinwiddie,8,1,0,2020-04-20,Virginia,VA,51053
+Essex,2,0,0,2020-04-20,Virginia,VA,51057
 Fairfax,2077,379,64,2020-04-20,Virginia,VA,51059
 Fauquier,49,5,1,2020-04-20,Virginia,VA,51061
 Floyd,1,0,0,2020-04-20,Virginia,VA,51063
@@ -282,22 +435,49 @@ Frederick,83,9,0,2020-04-20,Virginia,VA,51069
 Giles,4,0,0,2020-04-20,Virginia,VA,51071
 Gloucester,21,4,1,2020-04-20,Virginia,VA,51073
 Goochland,62,7,3,2020-04-20,Virginia,VA,51075
+Grayson,0,0,0,2020-04-20,Virginia,VA,51077
+Greene,8,2,1,2020-04-20,Virginia,VA,51079
+Greensville,23,3,4,2020-04-20,Virginia,VA,51081
+Halifax,12,1,0,2020-04-20,Virginia,VA,51083
+Hanover,93,19,6,2020-04-20,Virginia,VA,51085
+Henrico,621,90,77,2020-04-20,Virginia,VA,51087
 Henry,10,2,1,2020-04-20,Virginia,VA,51089
+Highland,0,0,0,2020-04-20,Virginia,VA,51091
+Isle of Wight,88,8,1,2020-04-20,Virginia,VA,51093
 James City,146,51,12,2020-04-20,Virginia,VA,51095
+King and Queen,2,0,0,2020-04-20,Virginia,VA,51097
 King George,19,11,2,2020-04-20,Virginia,VA,51099
 King William,2,0,0,2020-04-20,Virginia,VA,51101
 Lancaster,1,1,0,2020-04-20,Virginia,VA,51103
+Lee,7,1,0,2020-04-20,Virginia,VA,51105
 Loudoun,468,59,8,2020-04-20,Virginia,VA,51107
+Louisa,35,8,0,2020-04-20,Virginia,VA,51109
+Lunenburg,3,0,0,2020-04-20,Virginia,VA,51111
+Madison,12,1,0,2020-04-20,Virginia,VA,51113
+Mathews,3,1,0,2020-04-20,Virginia,VA,51115
 Mecklenburg,68,16,1,2020-04-20,Virginia,VA,51117
+Middlesex,3,0,0,2020-04-20,Virginia,VA,51119
 Montgomery,48,6,0,2020-04-20,Virginia,VA,51121
 Nelson,6,0,0,2020-04-20,Virginia,VA,51125
+New Kent,20,5,2,2020-04-20,Virginia,VA,51127
+Northampton,7,1,0,2020-04-20,Virginia,VA,51131
+Northumberland,5,0,0,2020-04-20,Virginia,VA,51133
 Nottoway,8,0,0,2020-04-20,Virginia,VA,51135
 Orange,21,3,0,2020-04-20,Virginia,VA,51137
 Page,14,0,0,2020-04-20,Virginia,VA,51139
+Patrick,1,0,0,2020-04-20,Virginia,VA,51141
+Pittsylvania,7,4,1,2020-04-20,Virginia,VA,51143
+Powhatan,8,0,0,2020-04-20,Virginia,VA,51145
 Prince Edward,19,3,2,2020-04-20,Virginia,VA,51147
+Prince George,28,2,0,2020-04-20,Virginia,VA,51149
+Prince William,867,94,16,2020-04-20,Virginia,VA,51153
+Pulaski,8,2,0,2020-04-20,Virginia,VA,51155
 Rappahannock,1,0,0,2020-04-20,Virginia,VA,51157
 Richmond County,53,4,0,2020-04-20,Virginia,VA,51159
 Roanoke County,25,0,0,2020-04-20,Virginia,VA,51161
+Rockbridge,5,0,0,2020-04-20,Virginia,VA,51163
+Rockingham,122,9,1,2020-04-20,Virginia,VA,51165
+Russell,2,1,0,2020-04-20,Virginia,VA,51167
 Scott,5,1,1,2020-04-20,Virginia,VA,51169
 Shenandoah,45,8,0,2020-04-20,Virginia,VA,51171
 Smyth,13,4,0,2020-04-20,Virginia,VA,51173
@@ -306,20 +486,37 @@ Spotsylvania,79,18,2,2020-04-20,Virginia,VA,51177
 Stafford,164,37,2,2020-04-20,Virginia,VA,51179
 Surry,4,1,1,2020-04-20,Virginia,VA,51181
 Sussex,23,2,1,2020-04-20,Virginia,VA,51183
+Tazewell,4,0,0,2020-04-20,Virginia,VA,51185
+Warren,26,3,0,2020-04-20,Virginia,VA,51187
 Washington,29,8,3,2020-04-20,Virginia,VA,51191
+Westmoreland,10,0,0,2020-04-20,Virginia,VA,51193
 Wise,18,7,1,2020-04-20,Virginia,VA,51195
+Wythe,10,1,1,2020-04-20,Virginia,VA,51197
+York,43,6,1,2020-04-20,Virginia,VA,51199
+Alexandria,462,60,9,2020-04-20,Virginia,VA,51510
+Bristol,1,0,0,2020-04-20,Virginia,VA,51520
 Buena Vista City,5,0,0,2020-04-20,Virginia,VA,51530
 Charlottesville,41,11,2,2020-04-20,Virginia,VA,51540
+Chesapeake,176,39,5,2020-04-20,Virginia,VA,51550
 Colonial Heights,36,0,2,2020-04-20,Virginia,VA,51570
 Covington,1,0,0,2020-04-20,Virginia,VA,51580
+Danville,29,13,1,2020-04-20,Virginia,VA,51590
 Emporia,12,3,1,2020-04-20,Virginia,VA,51595
+Fairfax City,22,2,1,2020-04-20,Virginia,VA,51600
 Falls Church,24,2,1,2020-04-20,Virginia,VA,51610
+Franklin City,12,0,0,2020-04-20,Virginia,VA,51620
 Fredericksburg,17,3,0,2020-04-20,Virginia,VA,51630
 Galax,1,1,0,2020-04-20,Virginia,VA,51640
 Hampton,92,26,1,2020-04-20,Virginia,VA,51650
+Harrisonburg,264,12,0,2020-04-20,Virginia,VA,51660
 Hopewell,16,5,0,2020-04-20,Virginia,VA,51670
 Lexington,3,0,0,2020-04-20,Virginia,VA,51678
+Lynchburg,43,4,1,2020-04-20,Virginia,VA,51680
 Manassas City,110,14,0,2020-04-20,Virginia,VA,51683
+Manassas Park,31,5,1,2020-04-20,Virginia,VA,51685
+Martinsville,0,0,0,2020-04-20,Virginia,VA,51690
+Newport News,101,32,6,2020-04-20,Virginia,VA,51700
+Norfolk,118,28,3,2020-04-20,Virginia,VA,51710
 Norton,2,1,0,2020-04-20,Virginia,VA,51720
 Petersburg,24,8,2,2020-04-20,Virginia,VA,51730
 Poquoson,6,2,0,2020-04-20,Virginia,VA,51735
@@ -327,74 +524,10 @@ Portsmouth,82,28,4,2020-04-20,Virginia,VA,51740
 Radford,1,0,0,2020-04-20,Virginia,VA,51750
 Richmond City,246,39,10,2020-04-20,Virginia,VA,51760
 Roanoke City,25,5,0,2020-04-20,Virginia,VA,51770
+Salem,6,0,0,2020-04-20,Virginia,VA,51775
 Staunton,10,0,0,2020-04-20,Virginia,VA,51790
 Suffolk,111,24,2,2020-04-20,Virginia,VA,51800
 Virginia Beach,288,60,8,2020-04-20,Virginia,VA,51810
-Albemarle,66,13,3,2020-04-20,Virginia,VA,51003
-Amherst,10,2,1,2020-04-20,Virginia,VA,51009
-Appomattox,7,0,0,2020-04-20,Virginia,VA,51011
-Arlington,625,114,23,2020-04-20,Virginia,VA,51013
-Augusta,28,1,0,2020-04-20,Virginia,VA,51015
-Bedford,19,1,0,2020-04-20,Virginia,VA,51019
-Bland,0,0,0,2020-04-20,Virginia,VA,51021
-Brunswick,12,3,0,2020-04-20,Virginia,VA,51025
-Buchanan,12,0,0,2020-04-20,Virginia,VA,51027
-Buckingham,27,6,0,2020-04-20,Virginia,VA,51029
-Campbell,10,0,0,2020-04-20,Virginia,VA,51031
-Caroline,17,3,0,2020-04-20,Virginia,VA,51033
-Carroll,3,1,0,2020-04-20,Virginia,VA,51035
-Charles City,11,4,1,2020-04-20,Virginia,VA,51036
-Charlotte,8,0,0,2020-04-20,Virginia,VA,51037
-Clarke,6,1,0,2020-04-20,Virginia,VA,51043
-Culpeper,65,9,1,2020-04-20,Virginia,VA,51047
-Cumberland,10,1,0,2020-04-20,Virginia,VA,51049
-Dinwiddie,8,1,0,2020-04-20,Virginia,VA,51053
-Essex,2,0,0,2020-04-20,Virginia,VA,51057
-Grayson,0,0,0,2020-04-20,Virginia,VA,51077
-Greene,8,2,1,2020-04-20,Virginia,VA,51079
-Greensville,23,3,4,2020-04-20,Virginia,VA,51081
-Halifax,12,1,0,2020-04-20,Virginia,VA,51083
-Hanover,93,19,6,2020-04-20,Virginia,VA,51085
-Henrico,621,90,77,2020-04-20,Virginia,VA,51087
-Highland,0,0,0,2020-04-20,Virginia,VA,51091
-Isle of Wight,88,8,1,2020-04-20,Virginia,VA,51093
-King and Queen,2,0,0,2020-04-20,Virginia,VA,51097
-Lee,7,1,0,2020-04-20,Virginia,VA,51105
-Louisa,35,8,0,2020-04-20,Virginia,VA,51109
-Lunenburg,3,0,0,2020-04-20,Virginia,VA,51111
-Madison,12,1,0,2020-04-20,Virginia,VA,51113
-Mathews,3,1,0,2020-04-20,Virginia,VA,51115
-Middlesex,3,0,0,2020-04-20,Virginia,VA,51119
-New Kent,20,5,2,2020-04-20,Virginia,VA,51127
-Northampton,7,1,0,2020-04-20,Virginia,VA,51131
-Northumberland,5,0,0,2020-04-20,Virginia,VA,51133
-Patrick,1,0,0,2020-04-20,Virginia,VA,51141
-Pittsylvania,7,4,1,2020-04-20,Virginia,VA,51143
-Powhatan,8,0,0,2020-04-20,Virginia,VA,51145
-Prince George,28,2,0,2020-04-20,Virginia,VA,51149
-Prince William,867,94,16,2020-04-20,Virginia,VA,51153
-Pulaski,8,2,0,2020-04-20,Virginia,VA,51155
-Rockbridge,5,0,0,2020-04-20,Virginia,VA,51163
-Rockingham,122,9,1,2020-04-20,Virginia,VA,51165
-Russell,2,1,0,2020-04-20,Virginia,VA,51167
-Tazewell,4,0,0,2020-04-20,Virginia,VA,51185
-Warren,26,3,0,2020-04-20,Virginia,VA,51187
-Westmoreland,10,0,0,2020-04-20,Virginia,VA,51193
-Wythe,10,1,1,2020-04-20,Virginia,VA,51197
-York,43,6,1,2020-04-20,Virginia,VA,51199
-Alexandria,462,60,9,2020-04-20,Virginia,VA,51510
-Bristol,1,0,0,2020-04-20,Virginia,VA,51520
-Chesapeake,176,39,5,2020-04-20,Virginia,VA,51550
-Danville,29,13,1,2020-04-20,Virginia,VA,51590
-Fairfax City,22,2,1,2020-04-20,Virginia,VA,51600
-Franklin City,12,0,0,2020-04-20,Virginia,VA,51620
-Harrisonburg,264,12,0,2020-04-20,Virginia,VA,51660
-Lynchburg,43,4,1,2020-04-20,Virginia,VA,51680
-Manassas Park,31,5,1,2020-04-20,Virginia,VA,51685
-Martinsville,0,0,0,2020-04-20,Virginia,VA,51690
-Newport News,101,32,6,2020-04-20,Virginia,VA,51700
-Norfolk,118,28,3,2020-04-20,Virginia,VA,51710
-Salem,6,0,0,2020-04-20,Virginia,VA,51775
 Waynesboro,8,1,0,2020-04-20,Virginia,VA,51820
 Williamsburg,15,5,1,2020-04-20,Virginia,VA,51830
 Winchester,27,0,0,2020-04-20,Virginia,VA,51840
