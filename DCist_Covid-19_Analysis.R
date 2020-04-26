@@ -364,11 +364,12 @@ WV_Values <- WV_Counties_Values %>% str_replace_all("\\s", "0")
 WV_Values <- WV_Values %>% keep(str_detect, "\\d+")
 WV_County_Names <- WV_Counties_Values %>% keep(str_detect, "[[:alpha:]]+")
 
-for (i in 1:(length(WV_County_Names) * 2)) {
+for (i in 1:(length(WV_County_Names) * 2 + (length(WV_Values[substring(WV_Values, 1, 1) == "0" & str_length(WV_Values) > 1])))) {
   if (substring(WV_Values[i], 1, 1) == "0" & str_length(WV_Values[i]) > 1) {
     WV_Values <- append(WV_Values, unlist(strsplit(WV_Values[i], "")), after = i)
   }
 }
+
 
 
 for (i in seq_along(WV_Values)) {
