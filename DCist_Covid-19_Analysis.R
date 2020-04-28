@@ -210,7 +210,7 @@ casesByRace <- MD_Data_Div[[3]]$getElementAttribute("outerHTML")[[1]] %>%
 
 # Get each download file link from Virginia site and download county, age, race, and sex breakout CSVs
 Sys.sleep(5)
-remDr$navigate("http://www.vdh.virginia.gov/coronavirus/")
+remDr$navigate("https://www.vdh.virginia.gov/coronavirus/")
 Sys.sleep(15)
 
 # Made this more concise/elegant below
@@ -646,7 +646,7 @@ Sys.sleep(5)
 
 #### Virginia Analysis 
 # Read in and clean cases and deaths by county file. Include state abbreviation and FIPS code column
-Virginia_By_County_Today <- read_csv("Virginia_By_County_Today.csv", locale = locale(encoding = "UTF-8"))
+Virginia_By_County_Today <- read_csv("Virginia_By_County_Today.csv")
 Virginia_DeathsHospitalizations_Today <- read_csv("Virginia_DeathsHospitalizations_By_County_Today.csv")
 
 Virginia_DeathsHospitalizations_Today <- Virginia_DeathsHospitalizations_Today %>% 
@@ -1198,7 +1198,7 @@ All_DC_DMV_Deaths_Today <- dcCovid19TestingCases %>%
 
 # Cleaning and saving most updated hosptials dataframe
 dcCovid19Hospitals <- dcCovid19DataSummaryToday %>% 
-  select(Date, ICU.Beds.Available, Total.Ventilators, Ventilators.in.Use, Ventilators.Available) %>% 
+  select(Date, ICU.Beds.Available, Total.Reported.Ventilators.in.Hospitals, In.Use.Ventilators.in.Hospitals, Available.Ventilators.in.Hospitals) %>% 
   arrange(desc(Date))
 
 write_csv(dcCovid19Hospitals, "dcCovid19Hospitals.csv")

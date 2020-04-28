@@ -1,4 +1,28 @@
 County,Cases,Deaths,Hospitalizations,Date,State,Abbr,FIPS
+Arlington,865,32,157,2020-04-27,Virginia,VA,51013
+Clarke,7,0,1,2020-04-27,Virginia,VA,51043
+Culpeper,126,2,10,2020-04-27,Virginia,VA,51047
+Fairfax,3278,114,555,2020-04-27,Virginia,VA,51059
+Fauquier,105,2,10,2020-04-27,Virginia,VA,51061
+Loudoun,688,12,84,2020-04-27,Virginia,VA,51107
+Prince William,1449,20,147,2020-04-27,Virginia,VA,51153
+Rappahannock,3,0,0,2020-04-27,Virginia,VA,51157
+Spotsylvania,126,3,23,2020-04-27,Virginia,VA,51177
+Stafford,221,2,43,2020-04-27,Virginia,VA,51179
+Warren,47,0,3,2020-04-27,Virginia,VA,51187
+Alexandria City,653,20,82,2020-04-27,Virginia,VA,51510
+Fairfax City,27,2,4,2020-04-27,Virginia,VA,51600
+Falls Church,26,2,3,2020-04-27,Virginia,VA,51610
+Fredericksburg,27,0,6,2020-04-27,Virginia,VA,51630
+Manassas,175,2,28,2020-04-27,Virginia,VA,51683
+Manassas Park,53,1,8,2020-04-27,Virginia,VA,51685
+Calvert,139,8,NA,2020-04-27,Maryland,MD,24009
+Charles,539,39,NA,2020-04-27,Maryland,MD,24017
+Frederick,870,48,NA,2020-04-27,Maryland,MD,24021
+Montgomery,4003,221,NA,2020-04-27,Maryland,MD,24031
+Prince Georges,5496,206,NA,2020-04-27,Maryland,MD,24033
+Jefferson,75,0,NA,2020-04-27,West Virginia,WV,54037
+District of Columbia,3994,190,NA,2020-04-27,District of Columbia,DC,11001
 Arlington,836,32,144,2020-04-26,Virginia,VA,51013
 Clarke,7,0,1,2020-04-26,Virginia,VA,51043
 Culpeper,113,2,10,2020-04-26,Virginia,VA,51047
