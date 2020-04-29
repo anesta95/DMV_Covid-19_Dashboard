@@ -1,4 +1,95 @@
 Date,Health_District,Sex,Cases,Hospitalized,Deaths,State
+2020-04-28,Chesterfield,Female,311,15,9,Virginia
+2020-04-28,Mount Rogers,Female,36,6,0,Virginia
+2020-04-28,Virginia Beach,Male,166,43,7,Virginia
+2020-04-28,Crater,Female,111,31,9,Virginia
+2020-04-28,New River,Female,38,3,0,Virginia
+2020-04-28,Central Virginia,Male,68,4,1,Virginia
+2020-04-28,Lenowisco,Male,21,8,1,Virginia
+2020-04-28,Richmond,Female,161,25,1,Virginia
+2020-04-28,Chesapeake,Female,132,31,3,Virginia
+2020-04-28,Fairfax,Female,1703,247,66,Virginia
+2020-04-28,Peninsula,Female,178,44,13,Virginia
+2020-04-28,Loudoun,Female,389,32,7,Virginia
+2020-04-28,Norfolk,Male,91,18,3,Virginia
+2020-04-28,Loudoun,Not Reported,2,0,0,Virginia
+2020-04-28,Rappahannock,Not Reported,3,0,0,Virginia
+2020-04-28,Virginia Beach,Female,199,33,5,Virginia
+2020-04-28,Roanoke,Female,36,2,0,Virginia
+2020-04-28,West Piedmont,Male,18,4,1,Virginia
+2020-04-28,Thomas Jefferson,Not Reported,1,0,0,Virginia
+2020-04-28,New River,Not Reported,1,0,0,Virginia
+2020-04-28,Alexandria,Not Reported,3,0,0,Virginia
+2020-04-28,Chesterfield,Male,244,27,14,Virginia
+2020-04-28,Rappahannock,Female,226,37,2,Virginia
+2020-04-28,Chickahominy,Female,141,26,7,Virginia
+2020-04-28,Arlington,Male,454,89,20,Virginia
+2020-04-28,Chesterfield,Not Reported,7,0,0,Virginia
+2020-04-28,Richmond,Male,159,36,11,Virginia
+2020-04-28,Prince William,Female,877,95,12,Virginia
+2020-04-28,Loudoun,Male,336,55,7,Virginia
+2020-04-28,Portsmouth,Male,81,17,3,Virginia
+2020-04-28,Henrico,Female,510,56,51,Virginia
+2020-04-28,Thomas Jefferson,Female,144,32,4,Virginia
+2020-04-28,Pittsylvania-Danville,Female,27,10,1,Virginia
+2020-04-28,Mount Rogers,Not Reported,1,0,0,Virginia
+2020-04-28,Chickahominy,Male,78,22,8,Virginia
+2020-04-28,Prince William,Male,893,100,14,Virginia
+2020-04-28,Thomas Jefferson,Male,119,27,8,Virginia
+2020-04-28,Cumberland Plateau,Male,12,0,0,Virginia
+2020-04-28,Lord Fairfax,Not Reported,1,0,0,Virginia
+2020-04-28,Portsmouth,Not Reported,1,0,0,Virginia
+2020-04-28,Eastern Shore,Female,127,11,3,Virginia
+2020-04-28,Three Rivers,Male,160,9,1,Virginia
+2020-04-28,Alexandria,Male,331,52,12,Virginia
+2020-04-28,Piedmont,Female,79,6,1,Virginia
+2020-04-28,New River,Male,34,5,1,Virginia
+2020-04-28,Rappahannock,Male,210,54,7,Virginia
+2020-04-28,Rappahannock Rapidan,Male,137,15,4,Virginia
+2020-04-28,Lord Fairfax,Male,166,20,2,Virginia
+2020-04-28,Chesapeake,Male,100,25,3,Virginia
+2020-04-28,Norfolk,Female,101,21,0,Virginia
+2020-04-28,Alleghany,Female,57,6,2,Virginia
+2020-04-28,Crater,Male,82,19,3,Virginia
+2020-04-28,Central Shenandoah,Male,314,22,8,Virginia
+2020-04-28,Rappahannock Rapidan,Not Reported,7,0,0,Virginia
+2020-04-28,Hampton,Male,46,17,1,Virginia
+2020-04-28,Southside,Male,44,15,5,Virginia
+2020-04-28,Hampton,Female,62,11,0,Virginia
+2020-04-28,Fairfax,Male,1771,342,61,Virginia
+2020-04-28,Henrico,Not Reported,6,0,1,Virginia
+2020-04-28,Alexandria,Female,366,40,9,Virginia
+2020-04-28,Arlington,Not Reported,8,0,0,Virginia
+2020-04-28,Three Rivers,Female,58,7,1,Virginia
+2020-04-28,Hampton,Not Reported,1,0,0,Virginia
+2020-04-28,Peninsula,Male,160,54,8,Virginia
+2020-04-28,Southside,Female,87,9,5,Virginia
+2020-04-28,Prince William,Not Reported,13,0,0,Virginia
+2020-04-28,Pittsylvania-Danville,Male,19,9,1,Virginia
+2020-04-28,Central Virginia,Female,52,3,0,Virginia
+2020-04-28,Lord Fairfax,Female,215,17,2,Virginia
+2020-04-28,Western Tidewater,Male,206,29,6,Virginia
+2020-04-28,Central Shenandoah,Not Reported,8,0,0,Virginia
+2020-04-28,Richmond,Not Reported,3,1,2,Virginia
+2020-04-28,Eastern Shore,Male,134,10,1,Virginia
+2020-04-28,Rappahannock Rapidan,Female,138,10,1,Virginia
+2020-04-28,Roanoke,Male,21,3,0,Virginia
+2020-04-28,West Piedmont,Female,23,1,0,Virginia
+2020-04-28,Mount Rogers,Male,38,10,4,Virginia
+2020-04-28,Cumberland Plateau,Female,13,1,0,Virginia
+2020-04-28,Chickahominy,Not Reported,4,1,0,Virginia
+2020-04-28,Arlington,Female,450,74,12,Virginia
+2020-04-28,Central Shenandoah,Female,388,21,5,Virginia
+2020-04-28,Lenowisco,Female,19,6,1,Virginia
+2020-04-28,Piedmont,Male,71,13,2,Virginia
+2020-04-28,Crater,Not Reported,4,3,0,Virginia
+2020-04-28,Fairfax,Not Reported,27,3,1,Virginia
+2020-04-28,Portsmouth,Female,68,16,2,Virginia
+2020-04-28,Eastern Shore,Not Reported,4,0,0,Virginia
+2020-04-28,Western Tidewater,Female,176,17,9,Virginia
+2020-04-28,Alleghany,Male,42,10,1,Virginia
+2020-04-28,Western Tidewater,Not Reported,2,0,0,Virginia
+2020-04-28,Henrico,Male,330,66,46,Virginia
 2020-04-27,Chesterfield,Female,306,15,9,Virginia
 2020-04-27,Mount Rogers,Female,31,5,0,Virginia
 2020-04-27,Virginia Beach,Male,164,43,7,Virginia

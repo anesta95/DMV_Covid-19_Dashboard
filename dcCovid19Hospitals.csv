@@ -1,53 +1,141 @@
-Date,ICU.Beds.Available,Total.Reported.Ventilators.in.Hospitals,In.Use.Ventilators.in.Hospitals,Available.Ventilators.in.Hospitals
-2020-04-27,136,440,206,234
-2020-04-26,113,440,201,239
-2020-04-25,113,440,201,239
-2020-04-24,113,513,248,265
-2020-04-23,113,513,248,265
-2020-04-22,85,444,200,244
-2020-04-21,91,444,200,244
-2020-04-20,84,444,198,246
-2020-04-19,77,444,198,246
-2020-04-18,80,443,203,240
-2020-04-17,87,443,205,238
-2020-04-16,98,443,204,239
-2020-04-15,101,443,203,240
-2020-04-14,89,441,212,229
-2020-04-13,94,442,212,230
-2020-04-12,105,444,218,226
-2020-04-11,121,442,215,227
-2020-04-10,95,441,210,231
-2020-04-09,110,440,208,232
-2020-04-08,105,440,206,234
-2020-04-07,107,438,200,238
-2020-04-06,104,432,177,255
-2020-04-05,69,432,177,255
-2020-04-04,87,432,178,254
-2020-04-03,88,432,198,234
-2020-04-02,116,433,223,210
-2020-04-01,92,422,182,240
-2020-03-31,95,422,185,237
-2020-03-30,111,426,200,226
-2020-03-29,87,426,193,233
-2020-03-28,91,426,187,239
-2020-03-27,106,426,186,240
-2020-03-26,55,405,93,312
-2020-03-25,70,405,147,258
-2020-03-24,NA,NA,NA,NA
-2020-03-23,NA,NA,NA,NA
-2020-03-22,NA,NA,NA,NA
-2020-03-21,NA,NA,NA,NA
-2020-03-20,NA,NA,NA,NA
-2020-03-19,NA,NA,NA,NA
-2020-03-18,NA,NA,NA,NA
-2020-03-17,NA,NA,NA,NA
-2020-03-16,NA,NA,NA,NA
-2020-03-15,NA,NA,NA,NA
-2020-03-14,NA,NA,NA,NA
-2020-03-13,NA,NA,NA,NA
-2020-03-12,NA,NA,NA,NA
-2020-03-11,NA,NA,NA,NA
-2020-03-10,NA,NA,NA,NA
-2020-03-09,NA,NA,NA,NA
-2020-03-08,NA,NA,NA,NA
-2020-03-07,NA,NA,NA,NA
+Date,Resource,Units
+2020-04-28,ICU beds available,136
+2020-04-28,Total ventilators available,440
+2020-04-28,Ventilators in use,206
+2020-04-28,Ventilators free,234
+2020-04-27,ICU beds available,136
+2020-04-27,Total ventilators available,440
+2020-04-27,Ventilators in use,206
+2020-04-27,Ventilators free,234
+2020-04-26,ICU beds available,113
+2020-04-26,Total ventilators available,440
+2020-04-26,Ventilators in use,201
+2020-04-26,Ventilators free,239
+2020-04-25,ICU beds available,113
+2020-04-25,Total ventilators available,440
+2020-04-25,Ventilators in use,201
+2020-04-25,Ventilators free,239
+2020-04-24,ICU beds available,113
+2020-04-24,Total ventilators available,513
+2020-04-24,Ventilators in use,248
+2020-04-24,Ventilators free,265
+2020-04-23,ICU beds available,113
+2020-04-23,Total ventilators available,513
+2020-04-23,Ventilators in use,248
+2020-04-23,Ventilators free,265
+2020-04-22,ICU beds available,85
+2020-04-22,Total ventilators available,444
+2020-04-22,Ventilators in use,200
+2020-04-22,Ventilators free,244
+2020-04-21,ICU beds available,91
+2020-04-21,Total ventilators available,444
+2020-04-21,Ventilators in use,200
+2020-04-21,Ventilators free,244
+2020-04-20,ICU beds available,84
+2020-04-20,Total ventilators available,444
+2020-04-20,Ventilators in use,198
+2020-04-20,Ventilators free,246
+2020-04-19,ICU beds available,77
+2020-04-19,Total ventilators available,444
+2020-04-19,Ventilators in use,198
+2020-04-19,Ventilators free,246
+2020-04-18,ICU beds available,80
+2020-04-18,Total ventilators available,443
+2020-04-18,Ventilators in use,203
+2020-04-18,Ventilators free,240
+2020-04-17,ICU beds available,87
+2020-04-17,Total ventilators available,443
+2020-04-17,Ventilators in use,205
+2020-04-17,Ventilators free,238
+2020-04-16,ICU beds available,98
+2020-04-16,Total ventilators available,443
+2020-04-16,Ventilators in use,204
+2020-04-16,Ventilators free,239
+2020-04-15,ICU beds available,101
+2020-04-15,Total ventilators available,443
+2020-04-15,Ventilators in use,203
+2020-04-15,Ventilators free,240
+2020-04-14,ICU beds available,89
+2020-04-14,Total ventilators available,441
+2020-04-14,Ventilators in use,212
+2020-04-14,Ventilators free,229
+2020-04-13,ICU beds available,94
+2020-04-13,Total ventilators available,442
+2020-04-13,Ventilators in use,212
+2020-04-13,Ventilators free,230
+2020-04-12,ICU beds available,105
+2020-04-12,Total ventilators available,444
+2020-04-12,Ventilators in use,218
+2020-04-12,Ventilators free,226
+2020-04-11,ICU beds available,121
+2020-04-11,Total ventilators available,442
+2020-04-11,Ventilators in use,215
+2020-04-11,Ventilators free,227
+2020-04-10,ICU beds available,95
+2020-04-10,Total ventilators available,441
+2020-04-10,Ventilators in use,210
+2020-04-10,Ventilators free,231
+2020-04-09,ICU beds available,110
+2020-04-09,Total ventilators available,440
+2020-04-09,Ventilators in use,208
+2020-04-09,Ventilators free,232
+2020-04-08,ICU beds available,105
+2020-04-08,Total ventilators available,440
+2020-04-08,Ventilators in use,206
+2020-04-08,Ventilators free,234
+2020-04-07,ICU beds available,107
+2020-04-07,Total ventilators available,438
+2020-04-07,Ventilators in use,200
+2020-04-07,Ventilators free,238
+2020-04-06,ICU beds available,104
+2020-04-06,Total ventilators available,432
+2020-04-06,Ventilators in use,177
+2020-04-06,Ventilators free,255
+2020-04-05,ICU beds available,69
+2020-04-05,Total ventilators available,432
+2020-04-05,Ventilators in use,177
+2020-04-05,Ventilators free,255
+2020-04-04,ICU beds available,87
+2020-04-04,Total ventilators available,432
+2020-04-04,Ventilators in use,178
+2020-04-04,Ventilators free,254
+2020-04-03,ICU beds available,88
+2020-04-03,Total ventilators available,432
+2020-04-03,Ventilators in use,198
+2020-04-03,Ventilators free,234
+2020-04-02,ICU beds available,116
+2020-04-02,Total ventilators available,433
+2020-04-02,Ventilators in use,223
+2020-04-02,Ventilators free,210
+2020-04-01,ICU beds available,92
+2020-04-01,Total ventilators available,422
+2020-04-01,Ventilators in use,182
+2020-04-01,Ventilators free,240
+2020-03-31,ICU beds available,95
+2020-03-31,Total ventilators available,422
+2020-03-31,Ventilators in use,185
+2020-03-31,Ventilators free,237
+2020-03-30,ICU beds available,111
+2020-03-30,Total ventilators available,426
+2020-03-30,Ventilators in use,200
+2020-03-30,Ventilators free,226
+2020-03-29,ICU beds available,87
+2020-03-29,Total ventilators available,426
+2020-03-29,Ventilators in use,193
+2020-03-29,Ventilators free,233
+2020-03-28,ICU beds available,91
+2020-03-28,Total ventilators available,426
+2020-03-28,Ventilators in use,187
+2020-03-28,Ventilators free,239
+2020-03-27,ICU beds available,106
+2020-03-27,Total ventilators available,426
+2020-03-27,Ventilators in use,186
+2020-03-27,Ventilators free,240
+2020-03-26,ICU beds available,55
+2020-03-26,Total ventilators available,405
+2020-03-26,Ventilators in use,93
+2020-03-26,Ventilators free,312
+2020-03-25,ICU beds available,70
+2020-03-25,Total ventilators available,405
+2020-03-25,Ventilators in use,147
+2020-03-25,Ventilators free,258

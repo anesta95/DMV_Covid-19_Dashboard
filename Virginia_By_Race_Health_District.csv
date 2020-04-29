@@ -1,4 +1,138 @@
 Date,Health_District,Race,Cases,Hospitalized,Deaths,State
+2020-04-28,Central Virginia,Other,1,0,0,Virginia
+2020-04-28,Crater,Black or African American,105,37,6,Virginia
+2020-04-28,New River,White,41,6,1,Virginia
+2020-04-28,Southside,White,34,9,5,Virginia
+2020-04-28,Chickahominy,White,81,23,8,Virginia
+2020-04-28,Chesapeake,Not Reported,42,3,1,Virginia
+2020-04-28,Prince William,Other,359,65,4,Virginia
+2020-04-28,Thomas Jefferson,White,149,23,7,Virginia
+2020-04-28,Fairfax,Black or African American,253,72,7,Virginia
+2020-04-28,Western Tidewater,Black or African American,168,27,6,Virginia
+2020-04-28,Chickahominy,Black or African American,35,18,5,Virginia
+2020-04-28,Alleghany,Black or African American,5,1,0,Virginia
+2020-04-28,Southside,Not Reported,58,9,2,Virginia
+2020-04-28,Three Rivers,Other,10,1,0,Virginia
+2020-04-28,Central Shenandoah,Black or African American,39,2,1,Virginia
+2020-04-28,Fairfax,Other,1193,267,19,Virginia
+2020-04-28,Eastern Shore,Other,11,1,1,Virginia
+2020-04-28,Rappahannock,Not Reported,193,25,2,Virginia
+2020-04-28,Loudoun,Not Reported,212,4,1,Virginia
+2020-04-28,Norfolk,Black or African American,118,23,1,Virginia
+2020-04-28,Chesapeake,Other,24,3,3,Virginia
+2020-04-28,New River,Black or African American,5,1,0,Virginia
+2020-04-28,Thomas Jefferson,Not Reported,6,0,0,Virginia
+2020-04-28,Lord Fairfax,Black or African American,17,2,0,Virginia
+2020-04-28,Three Rivers,White,72,8,1,Virginia
+2020-04-28,Prince William,White,391,79,13,Virginia
+2020-04-28,Richmond,White,70,8,1,Virginia
+2020-04-28,Western Tidewater,White,109,16,8,Virginia
+2020-04-28,New River,Not Reported,27,1,0,Virginia
+2020-04-28,Alexandria,Not Reported,270,14,3,Virginia
+2020-04-28,Lenowisco,White,28,13,1,Virginia
+2020-04-28,Peninsula,Other,12,6,1,Virginia
+2020-04-28,Alexandria,Black or African American,111,28,4,Virginia
+2020-04-28,Pittsylvania-Danville,White,23,12,2,Virginia
+2020-04-28,Roanoke,Black or African American,12,3,0,Virginia
+2020-04-28,Chesterfield,Not Reported,247,2,4,Virginia
+2020-04-28,Pittsylvania-Danville,Black or African American,17,5,0,Virginia
+2020-04-28,Western Tidewater,Other,11,2,1,Virginia
+2020-04-28,Piedmont,Black or African American,54,15,1,Virginia
+2020-04-28,Rappahannock Rapidan,Black or African American,6,1,0,Virginia
+2020-04-28,West Piedmont,Other,2,1,1,Virginia
+2020-04-28,Chesterfield,White,143,20,12,Virginia
+2020-04-28,West Piedmont,White,32,4,0,Virginia
+2020-04-28,Portsmouth,Black or African American,78,23,4,Virginia
+2020-04-28,Three Rivers,Black or African American,66,4,0,Virginia
+2020-04-28,Hampton,Other,5,1,0,Virginia
+2020-04-28,Norfolk,White,51,14,2,Virginia
+2020-04-28,Rappahannock Rapidan,White,103,11,3,Virginia
+2020-04-28,Thomas Jefferson,Other,19,2,0,Virginia
+2020-04-28,Cumberland Plateau,Black or African American,11,0,0,Virginia
+2020-04-28,Rappahannock,Other,38,12,0,Virginia
+2020-04-28,Roanoke,White,31,2,0,Virginia
+2020-04-28,Loudoun,Other,135,25,2,Virginia
+2020-04-28,Central Shenandoah,White,411,34,10,Virginia
+2020-04-28,Mount Rogers,Not Reported,3,1,0,Virginia
+2020-04-28,Piedmont,Other,2,0,0,Virginia
+2020-04-28,Alleghany,Not Reported,26,1,0,Virginia
+2020-04-28,Arlington,White,137,34,8,Virginia
+2020-04-28,West Piedmont,Not Reported,3,0,0,Virginia
+2020-04-28,Lord Fairfax,Not Reported,29,1,0,Virginia
+2020-04-28,Chickahominy,Other,4,4,0,Virginia
+2020-04-28,Chesapeake,Black or African American,81,31,2,Virginia
+2020-04-28,Rappahannock,Black or African American,60,16,2,Virginia
+2020-04-28,Portsmouth,Not Reported,27,2,1,Virginia
+2020-04-28,Loudoun,White,337,53,11,Virginia
+2020-04-28,Eastern Shore,Black or African American,183,16,2,Virginia
+2020-04-28,Virginia Beach,White,207,43,8,Virginia
+2020-04-28,Alexandria,White,223,40,13,Virginia
+2020-04-28,Portsmouth,Other,8,2,0,Virginia
+2020-04-28,Henrico,White,318,50,50,Virginia
+2020-04-28,Alleghany,Other,1,0,0,Virginia
+2020-04-28,Hampton,Black or African American,68,22,1,Virginia
+2020-04-28,Richmond,Black or African American,189,45,13,Virginia
+2020-04-28,Arlington,Black or African American,46,15,7,Virginia
+2020-04-28,Crater,Other,2,0,0,Virginia
+2020-04-28,Peninsula,White,191,62,16,Virginia
+2020-04-28,Crater,White,37,12,5,Virginia
+2020-04-28,Central Virginia,Not Reported,85,2,0,Virginia
+2020-04-28,Central Virginia,White,27,5,1,Virginia
+2020-04-28,Central Shenandoah,Other,113,6,1,Virginia
+2020-04-28,Loudoun,Black or African American,43,5,0,Virginia
+2020-04-28,Rappahannock Rapidan,Not Reported,159,7,2,Virginia
+2020-04-28,Rappahannock Rapidan,Other,14,6,0,Virginia
+2020-04-28,Prince William,Black or African American,179,36,9,Virginia
+2020-04-28,Alleghany,White,67,14,3,Virginia
+2020-04-28,Portsmouth,White,37,6,0,Virginia
+2020-04-28,Eastern Shore,White,54,4,1,Virginia
+2020-04-28,Arlington,Other,111,44,9,Virginia
+2020-04-28,Central Virginia,Black or African American,7,0,0,Virginia
+2020-04-28,Three Rivers,Not Reported,70,3,1,Virginia
+2020-04-28,Henrico,Not Reported,134,2,2,Virginia
+2020-04-28,Lenowisco,Other,1,0,0,Virginia
+2020-04-28,Virginia Beach,Black or African American,83,15,2,Virginia
+2020-04-28,Roanoke,Other,1,0,0,Virginia
+2020-04-28,Norfolk,Other,9,2,0,Virginia
+2020-04-28,Hampton,White,20,4,0,Virginia
+2020-04-28,Peninsula,Not Reported,57,4,0,Virginia
+2020-04-28,Arlington,Not Reported,618,70,8,Virginia
+2020-04-28,Mount Rogers,Other,4,1,0,Virginia
+2020-04-28,West Piedmont,Black or African American,4,0,0,Virginia
+2020-04-28,Virginia Beach,Other,40,16,2,Virginia
+2020-04-28,Hampton,Not Reported,16,1,0,Virginia
+2020-04-28,Virginia Beach,Not Reported,35,2,0,Virginia
+2020-04-28,Thomas Jefferson,Black or African American,90,34,5,Virginia
+2020-04-28,Henrico,Black or African American,360,68,44,Virginia
+2020-04-28,Prince William,Not Reported,854,15,0,Virginia
+2020-04-28,Henrico,Other,34,2,2,Virginia
+2020-04-28,Peninsula,Black or African American,78,26,4,Virginia
+2020-04-28,Chesterfield,Black or African American,143,20,7,Virginia
+2020-04-28,Cumberland Plateau,White,14,1,0,Virginia
+2020-04-28,Alexandria,Other,96,10,1,Virginia
+2020-04-28,Central Shenandoah,Not Reported,147,1,1,Virginia
+2020-04-28,Mount Rogers,White,68,14,4,Virginia
+2020-04-28,Piedmont,Not Reported,67,2,0,Virginia
+2020-04-28,Rappahannock,White,148,38,5,Virginia
+2020-04-28,Southside,Black or African American,19,6,1,Virginia
+2020-04-28,Richmond,Not Reported,43,2,0,Virginia
+2020-04-28,Southside,Other,20,0,2,Virginia
+2020-04-28,Lenowisco,Not Reported,11,1,1,Virginia
+2020-04-28,Piedmont,White,27,2,2,Virginia
+2020-04-28,Roanoke,Not Reported,13,0,0,Virginia
+2020-04-28,Chickahominy,Not Reported,103,4,2,Virginia
+2020-04-28,Lord Fairfax,White,293,30,4,Virginia
+2020-04-28,Fairfax,Not Reported,1010,56,36,Virginia
+2020-04-28,Crater,Not Reported,53,4,1,Virginia
+2020-04-28,Lord Fairfax,Other,43,4,0,Virginia
+2020-04-28,Richmond,Other,21,7,0,Virginia
+2020-04-28,Chesterfield,Other,29,0,0,Virginia
+2020-04-28,Eastern Shore,Not Reported,17,0,0,Virginia
+2020-04-28,Chesapeake,White,85,19,0,Virginia
+2020-04-28,Norfolk,Not Reported,14,0,0,Virginia
+2020-04-28,Western Tidewater,Not Reported,96,1,0,Virginia
+2020-04-28,Pittsylvania-Danville,Not Reported,6,2,0,Virginia
+2020-04-28,Fairfax,White,1045,197,66,Virginia
 2020-04-27,Central Virginia,Other,1,0,0,Virginia
 2020-04-27,Crater,Black or African American,98,36,6,Virginia
 2020-04-27,New River,White,39,6,1,Virginia

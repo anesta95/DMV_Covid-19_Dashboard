@@ -1,16 +1,9 @@
 ### To do:
 # Ask Stack Overflow question about Rselenium download button w firefox profile
 
-# Ask NewsNerds question about how to best embed interactive data vis into webpage.
-
-# Call AU music library about returning CDs
-
-# After ~3 or so days add in to leaflet map and new bar/line chart of regional deaths
-
 # Add in a "percent growth" and a "percent growth per capita" option in the plotly dropdowns
 
 # Charts to add in: 
-# DC ICU & Ventilator data
 # DMV employees by office sick/hospitalized/quarentined
 # Hospitalizations by State (& DC)
 # Cases by Race, Sex, and Age for DC, MD, and VA state-wide.
@@ -58,7 +51,7 @@ DMV_Counties <- c("District of Columbia",
                   "Alexandria", "Arlington", "Clarke", "Culpeper", "Fairfax", "Farquier", "Fredericksburg", "Loudoun", "Manassas", "Prince William", "Rappahannock", "Spotsylvania", "Stafford", "Warren",
                   "Jefferson")
 DMV_FIPS <- c("11001", "24009", "24017", "24021", "24031", "24033", "51510", "51013", "51043", "51047", "51059", "51061", "51630", "51107", "51683", "51153", "51157", "51177", "51179", "51187", "54037", "51600", "51610", "51685")
-DMV_Closer_FIPS <- c("24031", "24033", "24021", "24009", "51510", "51013", "51059", "51600", "51107", "51153", "51047", "11001")
+DMV_Closer_FIPS <- c("24031", "24033", "24021", "24009", "51510", "51013", "51059", "51600", "51107", "51153", "51047", "11001", "51610", "51683", "51685")
 
 #### This is the data webscraping done for DC, VA, MD, and WV that should be done THE DAY AFTER DATA DESIRED
 #### All dashboards/datasites seem to update at around 10am so start just after then.
@@ -213,6 +206,8 @@ Sys.sleep(5)
 remDr$navigate("https://www.vdh.virginia.gov/coronavirus/")
 Sys.sleep(15)
 
+# read_html("https://www.vdh.virginia.gov/coronavirus/")
+
 # Made this more concise/elegant below
 # virginiaDownloadLinkCasesByCounty <- remDr$findElement(using = "xpath", value = "/html/body/div[3]/div[2]/div/main/article/div/div/div[2]/div/div/div/div/div/div[1]/div[2]/div/p[2]/a")
 # Sys.sleep(5)
@@ -262,6 +257,7 @@ Sys.sleep(15)
 # Sys.sleep(5)
 
 # Much easier and more reliable to use class of containing div
+
 virginiaDataDownloadDiv <- remDr$findElements(using = "class", value = "update-bullets")
 Sys.sleep(5)
 virginiaDataDownloadATags <- virginiaDataDownloadDiv[[1]]$findChildElements(using = "tag name", value = "a")
@@ -279,6 +275,19 @@ download.file(unlist(virginiaDataDownloadATags[[5]]$getElementAttribute("href"))
 Sys.sleep(5)
 download.file(unlist(virginiaDataDownloadATags[[6]]$getElementAttribute("href")), destfile = "Virginia_By_Age_Today.csv")
 Sys.sleep(5)
+
+vaDownloadLinks <- list("https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases.csv",
+                        "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/04/VDH-COVID-19-PublicUseDataset-Cases_By-Confirmation.csv",
+                        "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/04/VDH-COVID-19-PublicUseDataset-Cases_By-District-Death-Hospitalization.csv",
+                        "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases_By-Sex.csv",
+                        "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases_By-Race.csv",
+                        "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases_By-Age-Group.csv")
+
+vaDownloadDFs <- list("Virginia_By_County_Today.csv", "Virginia_Summary_Today.csv", "Virginia_DeathsHospitalizations_By_County_Today.csv",
+                      "Virginia_By_Sex_Today.csv", "Virginia_By_Race_Today.csv", "Virginia_By_Age_Today.csv")
+
+map2(vaDownloadLinks, vaDownloadDFs, ~{download.file(.x, destfile = .y)})
+
 ## DC scraping
 # This is the old way before the download link
 # install_splash()
@@ -314,6 +323,7 @@ download.file(dcDataDownloadLink, destfile = "dcCovid-19DataSummaryToday.xlsx")
 # dcDownloadLinkFull <- unlist(dcDownloadLinkFull)
 # remDr$navigate(dcDownloadLinkFull)
 # remDr$navigate("https://dcgov.app.box.com/v/DCHealthStatisticsData")
+# GET("https://dcgov.app.box.com/v/DCHealthStatisticsData")
 # 
 # Sys.sleep(15)
 # 
@@ -1199,7 +1209,16 @@ All_DC_DMV_Deaths_Today <- dcCovid19TestingCases %>%
 # Cleaning and saving most updated hosptials dataframe
 dcCovid19Hospitals <- dcCovid19DataSummaryToday %>% 
   select(Date, ICU.Beds.Available, Total.Reported.Ventilators.in.Hospitals, In.Use.Ventilators.in.Hospitals, Available.Ventilators.in.Hospitals) %>% 
+  rename(`ICU beds available` = ICU.Beds.Available, 
+         `Total ventilators available` = Total.Reported.Ventilators.in.Hospitals,
+         `Ventilators in use` = In.Use.Ventilators.in.Hospitals,
+         `Ventilators free` = Available.Ventilators.in.Hospitals) %>% 
+  gather(-Date, key = "Resource", value = "Units") %>% 
+  filter(!is.na(Units)) %>% 
   arrange(desc(Date))
+
+
+
 
 write_csv(dcCovid19Hospitals, "dcCovid19Hospitals.csv")
 Sys.sleep(5)
@@ -1522,7 +1541,20 @@ Sys.sleep(5)
 
 # Read in shapfile of US counties
 counties <- st_read("/home/adrian/Documents/US_County_Shapfile_Population/tl_2019_us_county.shp")
-
+Sys.sleep(5)
+dcWards <- st_read("/home/adrian/Documents/US_County_Shapfile_Population/9fd1d3b6-e8c5-4158-a4db-03cad2c1beca2020328-1-ammg2.x7wow5.shp")
+Sys.sleep(5)
+dcACSPopulation <- read_csv("/home/adrian/Documents/US_County_Shapfile_Population/dcByWardACSPopulation.csv")
+Sys.sleep(5)
+# Make dataframe of DC by ward population and shapfile
+dcWards <- dcWards %>% 
+  left_join(dcACSPopulation, by = c("WARD" = "Ward")) %>%
+  left_join(dcCovid19ByWardToday, by = c("WARD" = "Ward")) %>%
+  mutate(TOTAL_POP_100K = (Population / 100000))
+Sys.sleep(5)
+# Assign the new projection
+st_crs(dcWards) <- "+proj=longlat +datum=WGS84"
+Sys.sleep(5)
 # Make dataframe of DMV counties and join in their populations for per-capita calculations
 DMV <- counties %>%
   mutate(GEOID = as.character(GEOID), NAME = as.character(NAME)) %>% 
@@ -1555,6 +1587,108 @@ st_crs(DMV_Cases) <- "+proj=longlat +datum=WGS84"
 # ### Chloropleth of Washington Metro Area Counties by Cases
 #myBins <- round(c(as.integer(unname(quantile(DMV_Cases$Cases, na.rm = T))), Inf), 0)
 
+# Create DC by ward map
+dcWardBins <- round(seq(from = 0, to = (max(dcWards$Cases) + 1), by = (max(dcWards$Cases) / 6)), 0)
+dcWardPerCapUpperBoundary <- round(max(dcWards$Cases / dcWards$TOTAL_POP_100K) + 1, 0)
+
+while(dcWardPerCapUpperBoundary %% 6 != 0) {
+  dcWardPerCapUpperBoundary = dcWardPerCapUpperBoundary + 1
+}
+
+dcWardPerCapBins <- seq(from = 0, to = dcWardPerCapUpperBoundary, by = dcWardPerCapUpperBoundary / 6)
+
+dcWardPalette <- colorBin(palette = "YlOrRd", domain = dcWards$Cases, na.color = "transparent", bins = dcWardBins)
+dcWardPerCapPalette <- colorBin(palette = "YlOrRd", domain = dcWards$Cases, na.color = "transparent", bins = dcWardPerCapBins)
+
+Sys.sleep(5)
+
+# Create tool tip legend text
+dcWardlegendText <- paste0(
+  "Ward: ", dcWards$WARD, "<br/>",
+  "Cases: ", dcWards$Cases, "<br/>"
+) %>% 
+  lapply(htmltools::HTML)
+
+# Make the per capita leaflet chloropleth
+dcWardlegendTextPerCap <- paste0(
+  "Ward: ", dcWards$WARD, "<br/>",
+  "Rate per 100K: ", round((dcWards$Cases / dcWards$TOTAL_POP_100K), 1), "<br/>"
+) %>% 
+  lapply(htmltools::HTML)
+
+dcWardAttribution <- htmltools::HTML("Map data &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap</a> contributors, <a href='https://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a><br/>Data from: <a href='https://coronavirus.dc.gov/page/coronavirus-data'>DC Mayor's Office</a>")
+
+Sys.sleep(5)
+
+dcWardChloropleth <- leaflet(dcWards) %>% 
+  addTiles(attribution = dcWardAttribution) %>% 
+  setView(lat = "38.889802", lng = "-77.010447", zoom = 11) %>% 
+  addPolygons(stroke=T, 
+              opacity = 1,
+              fillOpacity = 0.9, 
+              smoothFactor = 0.5, 
+              color = "black", 
+              fillColor = ~dcWardPalette(Cases),
+              weight = 0.5,
+              label = dcWardlegendText,
+              labelOptions = labelOptions( 
+                style = list("font-weight" = "normal", padding = "3px 8px"), 
+                textsize = "13px", 
+                direction = "auto"
+              ),
+              group = paste("Case count", Sys.Date() - 1, sep = " ")) %>% 
+  addPolygons(stroke=T, 
+              opacity = 1,
+              fillOpacity = 0.9, 
+              smoothFactor = 0.5, 
+              color = "black", 
+              fillColor = ~dcWardPerCapPalette((Cases / TOTAL_POP_100K)),
+              weight = 0.5,
+              label = dcWardlegendTextPerCap,
+              labelOptions = labelOptions( 
+                style = list("font-weight" = "normal", padding = "3px 8px"), 
+                textsize = "13px", 
+                direction = "auto"
+              ),
+              group = paste("Case rate per 100K", Sys.Date() - 1, sep = " ")) %>%
+  addLegend( pal=dcWardPalette, 
+             values=~Cases, 
+             opacity=0.9, 
+             title = paste("Case count", Sys.Date() - 1, sep = " "), 
+             position = "topright", 
+             group = paste("Case count", Sys.Date() - 1, sep = " ")) %>%
+  addLegend( pal=dcWardPerCapPalette, 
+             values=~(Cases / TOTAL_POP_100K), 
+             opacity=0.9, 
+             title = paste("Case rate per 100K", Sys.Date() - 1, sep = " "), 
+             position = "topright", 
+             group = paste("Case rate per 100K", Sys.Date() - 1, sep = " ")) %>%
+  addLayersControl(baseGroups = c(paste("Case count", Sys.Date() - 1, sep = " "), 
+                                  paste("Case rate per 100K", Sys.Date() - 1, sep = " ")),
+                   position = "bottomleft",
+                   options = layersControlOptions(collapsed = F)) %>% 
+  htmlwidgets::onRender(
+    "function(el, x) {
+      var updateLegend = function () {
+          var selectedGroup = document.querySelectorAll('input:checked')[0].nextSibling.innerText.substr(1);
+
+          document.querySelectorAll('.legend').forEach(a => a.hidden=true);
+          document.querySelectorAll('.legend').forEach(l => {
+            if (l.children[0].children[0].innerText == selectedGroup) l.hidden=false;
+          });
+      };
+      updateLegend();
+      this.on('baselayerchange', e => updateLegend());
+    }"
+  )
+Sys.sleep(5)
+
+Sys.sleep(5)
+setwd("/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
+Sys.sleep(15)
+mapshot(dcWardChloropleth, "dcWardChloropleth.html")
+
+
 # Create cases and per cap case rate bins and palettes
 myBinsReg <- round(seq(from = 0, to = (max(DMV_Cases$Cases) + 1), by = (max(DMV_Cases$Cases) / 6)), 0)
 upperPerCapBoundary <- round(max(DMV_Cases$Cases / DMV_Cases$TOTAL_POP_100K) + 1, 0)
@@ -1565,8 +1699,19 @@ while(upperPerCapBoundary %% 6 != 0) {
 myBinsPerCap <- seq(from = 0, 
                           to = upperPerCapBoundary, 
                           by = upperPerCapBoundary / 6)
+myBinsDeaths <- round(seq(from = 0, to = (max(DMV_Cases$Deaths) + 1), by = (max(DMV_Cases$Deaths) / 6)), 0)
+upperDeathPerCapBoundary <- round(max(DMV_Cases$Deaths / DMV_Cases$TOTAL_POP_100K) + 1, 0)
+
+while(upperDeathPerCapBoundary %% 6 != 0) {
+  upperDeathPerCapBoundary = upperDeathPerCapBoundary + 1
+}
+
+myBinsDeathsPerCap <- seq(from = 0, to = upperDeathPerCapBoundary, by = upperDeathPerCapBoundary / 6)
+
 dmvPaletteReg <- colorBin(palette = "YlOrRd", domain = DMV_Cases$Cases, na.color = "transparent", bins = myBinsReg)
 dmvPalettePerCap <- colorBin(palette = "YlOrRd", domain = DMV_Cases$Cases, na.color = "transparent", bins = myBinsPerCap)
+dmvDeathPalette <- colorBin(palette = "YlOrRd", domain = DMV_Cases$Deaths, na.color = "transparent", bins = myBinsDeaths)
+dmvDeathPalettePerCap <- colorBin(palette = "YlOrRd", domain = DMV_Cases$Deaths, na.color = "transparent", bins = myBinsDeathsPerCap)
 Sys.sleep(15)
 
 # Create tool tip legend text
@@ -1584,6 +1729,23 @@ legendTextPerCap <- paste0(
   "Rate per 100K: ", round((DMV_Cases$Cases / DMV_Cases$TOTAL_POP_100K), 1), "<br/>"
 ) %>% 
   lapply(htmltools::HTML)
+
+# Make the deaths legend text
+deathsLegendText <- paste0(
+  "County: ", DMV_Cases$NAME, "<br/>",
+  "State: ", DMV_Cases$State, "<br/>",
+  "Deaths: ", DMV_Cases$Deaths, "<br/>"
+) %>% 
+  lapply(htmltools::HTML)
+
+# Make the deaths per cap legend text
+deathsPerCapLegendText <- paste0(
+  "County: ", DMV_Cases$NAME, "<br/>",
+  "State: ", DMV_Cases$State, "<br/>",
+  "Death rate per 100K: ", round((DMV_Cases$Deaths / DMV_Cases$TOTAL_POP_100K), 1), "<br/>"
+) %>% 
+  lapply(htmltools::HTML)
+
 attribution <- htmltools::HTML("Map data &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap</a> contributors, <a href='https://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a><br/>Data from: <a href = 'https://dhhr.wv.gov/COVID-19/Pages/default.aspx'>WV DHHR</a>, <a href='https://coronavirus.dc.gov/page/coronavirus-data'>DC Mayor's Office</a>, <a href='https://coronavirus.maryland.gov/'>MD Dept of Health</a>, <a href='http://www.vdh.virginia.gov/coronavirus/'>VA Dept of Health</a>")
 Sys.sleep(5)
 # Create Leaflet and data attribution
@@ -1664,7 +1826,35 @@ dmvChloropleth <- leaflet(DMV_Cases) %>%
                 textsize = "13px", 
                 direction = "auto"
               ),
-              group = paste("Case rate per 100K", Sys.Date() - 1, sep = " ")) %>% 
+              group = paste("Case rate per 100K", Sys.Date() - 1, sep = " ")) %>%
+  addPolygons(stroke=T, 
+              opacity = 1,
+              fillOpacity = 0.9, 
+              smoothFactor = 0.5, 
+              color = "black", 
+              fillColor = ~dmvDeathPalette(Deaths),
+              weight = 0.5,
+              label = deathsLegendText,
+              labelOptions = labelOptions( 
+                style = list("font-weight" = "normal", padding = "3px 8px"), 
+                textsize = "13px", 
+                direction = "auto"
+              ),
+              group = paste("Death toll on", Sys.Date() - 1, sep = " ")) %>% 
+  addPolygons(stroke=T, 
+              opacity = 1,
+              fillOpacity = 0.9, 
+              smoothFactor = 0.5, 
+              color = "black", 
+              fillColor = ~dmvDeathPalettePerCap((Deaths / TOTAL_POP_100K)),
+              weight = 0.5,
+              label = deathsPerCapLegendText,
+              labelOptions = labelOptions( 
+                style = list("font-weight" = "normal", padding = "3px 8px"), 
+                textsize = "13px", 
+                direction = "auto"
+              ),
+              group = paste("Death rate per 100K", Sys.Date() - 1, sep = " ")) %>% 
   addLegend( pal=dmvPaletteReg, 
              values=~Cases, 
              opacity=0.9, 
@@ -1676,8 +1866,23 @@ dmvChloropleth <- leaflet(DMV_Cases) %>%
              opacity=0.9, 
              title = paste("Case rate per 100K", Sys.Date() - 1, sep = " "), 
              position = "topright", 
-             group = paste("Case rate per 100K", Sys.Date() - 1, sep = " ")) %>% 
-  addLayersControl(baseGroups = c(paste("Case count", Sys.Date() - 1, sep = " "), paste("Case rate per 100K", Sys.Date() - 1, sep = " ")),
+             group = paste("Case rate per 100K", Sys.Date() - 1, sep = " ")) %>%
+  addLegend( pal=dmvDeathPalette, 
+             values=~Deaths, 
+             opacity=0.9, 
+             title = paste("Death toll on", Sys.Date() - 1, sep = " "), 
+             position = "topright", 
+             group = paste("Death toll on", Sys.Date() - 1, sep = " ")) %>%
+  addLegend( pal=dmvDeathPalettePerCap, 
+             values=~(Deaths / TOTAL_POP_100K), 
+             opacity=0.9, 
+             title = paste("Death rate per 100K", Sys.Date() - 1, sep = " "), 
+             position = "topright", 
+             group = paste("Death rate per 100K", Sys.Date() - 1, sep = " ")) %>%
+  addLayersControl(baseGroups = c(paste("Case count", Sys.Date() - 1, sep = " "), 
+                                  paste("Case rate per 100K", Sys.Date() - 1, sep = " "), 
+                                  paste("Death toll on", Sys.Date() - 1, sep = " "), 
+                                  paste("Death rate per 100K", Sys.Date() - 1, sep = " ")),
                    position = "topright",
                    options = layersControlOptions(collapsed = F)) %>% 
   htmlwidgets::onRender(
@@ -1724,7 +1929,7 @@ dmvCasesByCountyLinePlotlyGraph <- plot_ly(data = dmvCasesByCountyLinePlotly, x 
   add_trace(y = ~Cases,
             linetype = ~factor(State),
             color = ~factor(County),
-            colors = "Set3", 
+            colors = pals::glasbey(), 
             mode = "lines+markers", 
             type = "scatter", 
             symbol = ~State,
@@ -1739,7 +1944,7 @@ dmvCasesByCountyLinePlotlyGraph <- plot_ly(data = dmvCasesByCountyLinePlotly, x 
   add_trace(y = ~Case_Rate_100K,
             linetype = ~factor(State),
             color = ~factor(County),
-            colors = "Set3", 
+            colors = pals::glasbey(), 
             mode = "lines+markers", 
             type = "scatter", 
             symbol = ~State,
@@ -1752,17 +1957,17 @@ dmvCasesByCountyLinePlotlyGraph <- plot_ly(data = dmvCasesByCountyLinePlotly, x 
             ), 
             visible = F) %>%
   layout(yaxis = list(type = "log"),
-         title = "DMV Covid-19 Cases & Case Rate by County",
+         #title = "DMV Covid-19 Cases & Case Rate by County",
          xaxis = list(title = ""),
          showlegend = F,
          updatemenus = list(
            list(active = 0,
                 buttons = list(
                   list(method = "restyle",
-                       args = list("visible", append(rep(list(TRUE), 12), rep(list(FALSE), 12))),
+                       args = list("visible", append(rep(list(TRUE), 15), rep(list(FALSE), 15))),
                        label = "Count"),
                   list(method = "restyle",
-                       args = list("visible", append(rep(list(FALSE), 12), rep(list(TRUE), 12))),
+                       args = list("visible", append(rep(list(FALSE), 15), rep(list(TRUE), 15))),
                        label = "Per 100K")))
          ))
 
@@ -1778,7 +1983,7 @@ dmvCasesByCountyBarPlotlyGraph <- plot_ly(dmvCasesByCountyBarPerCapPlotly,
         x = ~factor(State), 
         type = "bar", 
         color = ~factor(reorder(County, -Cases)), 
-        colors = "Set3") %>% 
+        colors = pals::glasbey()) %>% 
   add_trace(y = ~Cases,
             hovertemplate = paste(
               "State: ", dmvCasesByCountyBarPerCapPlotly$State,
@@ -1797,17 +2002,17 @@ dmvCasesByCountyBarPlotlyGraph <- plot_ly(dmvCasesByCountyBarPerCapPlotly,
               "<extra></extra>"
             ), 
             visible = F) %>% 
-  layout(title = paste("DMV Covid-19 Cases & Case Rate by County on", Sys.Date() - 1, sep = " "),
+  layout(#title = paste("DMV Covid-19 Cases & Case Rate by County on", Sys.Date() - 1, sep = " "),
          xaxis = list(title = ""),
          showlegend = F,
          updatemenus = list(
            list(active = 0,
                 buttons = list(
                   list(method = "restyle",
-                       args = list("visible", append(rep(list(F), 12), rep(list(T), 12))),
+                       args = list("visible", append(rep(list(F), 15), rep(list(T), 15))),
                        label = "Count"),
                   list(method = "restyle",
-                       args = list("visible", append(rep(list(T), 12), rep(list(F), 12))),
+                       args = list("visible", append(rep(list(T), 15), rep(list(F), 15))),
                        label = "Per 100K")))
          ))
 
@@ -1849,7 +2054,7 @@ dmvTestsByStateLinePlotlyGraph <- plot_ly(data = DMVTestsLinePerCapPlotly, x = ~
               "<extra></extra>"
             ), 
             visible = F) %>%
-  layout(title = "DMV Covid-19 Tests & Test Rate by State",
+  layout(#title = "DMV Covid-19 Tests & Test Rate by State",
          xaxis = list(title = ""),
          showlegend = F,
          updatemenus = list(
@@ -1894,7 +2099,7 @@ dmvTestsByStateBarPlotlyGraph <- plot_ly(DMVTestsBarPerCapPlotly,
               "<extra></extra>"
             ), 
             visible = F) %>% 
-  layout(title = paste("DMV Covid-19 Tests & Test Rate by State on", Sys.Date() - 1, sep = " "),
+  layout(#title = paste("DMV Covid-19 Tests & Test Rate by State on", Sys.Date() - 1, sep = " "),
          xaxis = list(title = ""),
          showlegend = F,
          updatemenus = list(
@@ -1909,24 +2114,24 @@ dmvTestsByStateBarPlotlyGraph <- plot_ly(DMVTestsBarPerCapPlotly,
          ))
 
 Sys.sleep(5)
-dcmdvaDeathsLinePlotly <- dailySummary %>% 
-  drop_na(State) %>% 
-  left_join(stateCountyPops, by = c("State" = "STNAME")) %>% 
-  filter(SUMLEV == "040") %>% 
+dcmdvaDeathsLinePlotly <- DMV_Counties_Covid_Cases %>%
+  left_join(stateCountyPops, by = "FIPS") %>% 
+  filter(Date >= as.Date("2020-04-02")) %>%
+  filter(FIPS %in% DMV_Closer_FIPS) %>% 
   mutate(Death_Rate_100K = (Deaths / TOTAL_POP_100K))
 
 
-
-dmvDeathsByStateLinePlotlyGraph <- plot_ly(data = dcmdvaDeathsLinePlotly, x = ~Date) %>% 
+dmvDeathsByCountyLinePlotlyGraph <- plot_ly(data = dcmdvaDeathsLinePlotly, x = ~Date) %>% 
   add_trace(y = ~Deaths,
             linetype = ~factor(State),
-            color = ~factor(State),
-            colors = c("#E91436", "#ebab00ff", "#00257C"), 
+            color = ~factor(County),
+            colors = pals::glasbey(), 
             mode = "lines+markers", 
             type = "scatter", 
             symbol = ~State,
             hovertemplate = paste(
               "State: ", dcmdvaDeathsLinePlotly$State,
+              "<br>County: ", dcmdvaDeathsLinePlotly$County,
               "<br>Deaths: ", "%{y}",
               "<br>Date: ", "%{x}",
               "<extra></extra>"
@@ -1934,90 +2139,223 @@ dmvDeathsByStateLinePlotlyGraph <- plot_ly(data = dcmdvaDeathsLinePlotly, x = ~D
             visible = T) %>%
   add_trace(y = ~Death_Rate_100K,
             linetype = ~factor(State),
-            color = ~factor(State),
-            colors = c("#E91436", "#ebab00ff", "#00257C"), 
+            color = ~factor(County),
+            colors = pals::glasbey(), 
             mode = "lines+markers", 
             type = "scatter", 
             symbol = ~State,
             hovertemplate = paste(
               "State: ", dcmdvaDeathsLinePlotly$State,
+              "<br>County: ", dcmdvaDeathsLinePlotly$County,
               "<br>Deaths: ", "%{y}",
               "<br>Date: ", "%{x}",
               "<extra></extra>"
             ), 
             visible = F) %>%
-  layout(title = "DMV Covid-19 Deaths & Death Rate by State",
-         showlegend = F,
+  layout(yaxis = list(type = "log"),
+         #title = "DMV Covid-19 Cases & Case Rate by County",
          xaxis = list(title = ""),
+         showlegend = F,
          updatemenus = list(
            list(active = 0,
                 buttons = list(
                   list(method = "restyle",
-                       args = list("visible", append(rep(list(TRUE), 3), rep(list(FALSE), 3))),
+                       args = list("visible", append(rep(list(TRUE), 15), rep(list(FALSE), 15))),
                        label = "Count"),
                   list(method = "restyle",
-                       args = list("visible", append(rep(list(FALSE), 3), rep(list(TRUE), 3))),
+                       args = list("visible", append(rep(list(FALSE), 15), rep(list(TRUE), 15))),
                        label = "Per 100K")))
          ))
+
+
 Sys.sleep(5)
-dcmdvaDeathsBarPlotly <- dailySummary %>%
-  drop_na(State) %>%
-  filter(Date == max(Date)) %>% 
-  left_join(stateCountyPops, by = c("State" = "STNAME")) %>% 
-  filter(SUMLEV == "040") %>% 
-  mutate(Death_Rate_100K = as.double((Deaths / TOTAL_POP_100K)), Deaths = as.double(Deaths))
+# dmvDeathsByStateLinePlotlyGraph <- plot_ly(data = dcmdvaDeathsLinePlotly, x = ~Date) %>% 
+#   add_trace(y = ~Deaths,
+#             linetype = ~factor(State),
+#             color = ~factor(State),
+#             colors = c("#E91436", "#ebab00ff", "#00257C"), 
+#             mode = "lines+markers", 
+#             type = "scatter", 
+#             symbol = ~State,
+#             hovertemplate = paste(
+#               "State: ", dcmdvaDeathsLinePlotly$State,
+#               "<br>Deaths: ", "%{y}",
+#               "<br>Date: ", "%{x}",
+#               "<extra></extra>"
+#             ), 
+#             visible = T) %>%
+#   add_trace(y = ~Death_Rate_100K,
+#             linetype = ~factor(State),
+#             color = ~factor(State),
+#             colors = c("#E91436", "#ebab00ff", "#00257C"), 
+#             mode = "lines+markers", 
+#             type = "scatter", 
+#             symbol = ~State,
+#             hovertemplate = paste(
+#               "State: ", dcmdvaDeathsLinePlotly$State,
+#               "<br>Deaths: ", "%{y}",
+#               "<br>Date: ", "%{x}",
+#               "<extra></extra>"
+#             ), 
+#             visible = F) %>%
+#   layout(#title = "DMV Covid-19 Deaths & Death Rate by State",
+#          showlegend = F,
+#          xaxis = list(title = ""),
+#          updatemenus = list(
+#            list(active = 0,
+#                 buttons = list(
+#                   list(method = "restyle",
+#                        args = list("visible", append(rep(list(TRUE), 3), rep(list(FALSE), 3))),
+#                        label = "Count"),
+#                   list(method = "restyle",
+#                        args = list("visible", append(rep(list(FALSE), 3), rep(list(TRUE), 3))),
+#                        label = "Per 100K")))
+#          ))
 
 
-dmvDeathsByStateBarPlotlyGraph <- plot_ly(dcmdvaDeathsBarPlotly, 
-        x = ~factor(State), 
-        type = "bar", 
-        color = ~factor(State), 
-        colors = c("#E91436", "#ebab00ff", "#00257C")) %>% 
+dmvDeathsByCountyBarPerCapPlotly <- DMV_Counties_Covid_Cases %>%
+  left_join(stateCountyPops, by = "FIPS") %>% 
+  filter(Date == max(Date)) %>%
+  filter(FIPS %in% DMV_Closer_FIPS) %>% 
+  mutate(Death_Rate_100K = (Deaths / TOTAL_POP_100K))
+
+
+dmvDeathsByCountyBarPlotlyGraph <- plot_ly(dmvDeathsByCountyBarPerCapPlotly, 
+                                          x = ~factor(State), 
+                                          type = "bar", 
+                                          color = ~factor(reorder(County, -Deaths)), 
+                                          colors = pals::glasbey()) %>% 
   add_trace(y = ~Death_Rate_100K,
             hovertemplate = paste(
-              "State: ", dcmdvaDeathsBarPlotly$State,
+              "State: ", dmvDeathsByCountyBarPerCapPlotly$State,
+              "<br>County: ", dmvDeathsByCountyBarPerCapPlotly$County,
               "<br>Deaths: ", "%{y}",
-              "<br>Date: ", dcmdvaDeathsBarPlotly$Date,
+              "<br>Date: ", dmvDeathsByCountyBarPerCapPlotly$Date,
               "<extra></extra>"
             ), 
             visible = F) %>%
-    add_trace(y = ~Deaths,
+  add_trace(y = ~Deaths,
             hovertemplate = paste(
-              "State: ", dcmdvaDeathsBarPlotly$State,
+              "State: ", dmvDeathsByCountyBarPerCapPlotly$State,
+              "<br>County: ", dmvDeathsByCountyBarPerCapPlotly$County,
               "<br>Deaths: ", "%{y}",
-              "<br>Date: ", dcmdvaDeathsBarPlotly$Date,
+              "<br>Date: ", dmvDeathsByCountyBarPerCapPlotly$Date,
               "<extra></extra>"
             ), 
             visible = T) %>%
-  layout(title = paste("DMV Covid-19 Deaths & Death Rate by State on", Sys.Date() - 1, sep = " "),
-         xaxis = list(title = ""),
-         yaxis = list(title = "Deaths"),
-         showlegend = F,
-         updatemenus = list(
-           list(active = 0,
-                buttons = list(
-                  list(method = "restyle",
-                       args = list("visible", append(rep(list(T), 3), rep(list(F), 3))),
-                       label = "Count"),
-                  list(method = "restyle",
-                       args = list("visible", append(rep(list(F), 3), rep(list(T), 3))),
-                       label = "Per 100K")))
-         ))
-Sys.sleep(5)
-plotlyPlots <- list(dmvDeathsByStateBarPlotlyGraph, dmvDeathsByStateLinePlotlyGraph, dmvTestsByStateBarPlotlyGraph, dmvTestsByStateLinePlotlyGraph, dmvCasesByCountyBarPlotlyGraph, dmvCasesByCountyLinePlotlyGraph)
+  layout(#title = paste("DMV Covid-19 Cases & Case Rate by County on", Sys.Date() - 1, sep = " "),
+    yaxis = list(title = "Deaths"),
+    xaxis = list(title = ""),
+    showlegend = F,
+    updatemenus = list(
+      list(active = 0,
+           buttons = list(
+             list(method = "restyle",
+                  args = list("visible", append(rep(list(T), 15), rep(list(F), 15))),
+                  label = "Count"),
+             list(method = "restyle",
+                  args = list("visible", append(rep(list(F), 15), rep(list(T), 15))),
+                  label = "Per 100K")))
+    ))
 
-saveWidget(dmvDeathsByStateBarPlotlyGraph, "dmvDeathsByStateBarPlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
-Sys.sleep(5)
-saveWidget(dmvDeathsByStateLinePlotlyGraph, "dmvDeathsByStateLinePlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
-Sys.sleep(5)
-saveWidget(dmvTestsByStateBarPlotlyGraph, "dmvTestsByStateBarPlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
-Sys.sleep(5)
-saveWidget(dmvTestsByStateLinePlotlyGraph, "dmvTestsByStateLinePlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
-Sys.sleep(5)
-saveWidget(dmvCasesByCountyBarPlotlyGraph, "dmvCasesByCountyBarPlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
-Sys.sleep(5)
-saveWidget(dmvCasesByCountyLinePlotlyGraph, "dmvCasesByCountyLinePlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
 
+# dcmdvaDeathsBarPlotly <- dailySummary %>%
+#   drop_na(State) %>%
+#   filter(Date == max(Date)) %>% 
+#   left_join(stateCountyPops, by = c("State" = "STNAME")) %>% 
+#   filter(SUMLEV == "040") %>% 
+#   mutate(Death_Rate_100K = as.double((Deaths / TOTAL_POP_100K)), Deaths = as.double(Deaths))
+# 
+# 
+# dmvDeathsByStateBarPlotlyGraph <- plot_ly(dcmdvaDeathsBarPlotly, 
+#         x = ~factor(State), 
+#         type = "bar", 
+#         color = ~factor(State), 
+#         colors = c("#E91436", "#ebab00ff", "#00257C")) %>% 
+#   add_trace(y = ~Death_Rate_100K,
+#             hovertemplate = paste(
+#               "State: ", dcmdvaDeathsBarPlotly$State,
+#               "<br>Deaths: ", "%{y}",
+#               "<br>Date: ", dcmdvaDeathsBarPlotly$Date,
+#               "<extra></extra>"
+#             ), 
+#             visible = F) %>%
+#     add_trace(y = ~Deaths,
+#             hovertemplate = paste(
+#               "State: ", dcmdvaDeathsBarPlotly$State,
+#               "<br>Deaths: ", "%{y}",
+#               "<br>Date: ", dcmdvaDeathsBarPlotly$Date,
+#               "<extra></extra>"
+#             ), 
+#             visible = T) %>%
+#   layout(#title = paste("DMV Covid-19 Deaths & Death Rate by State on", Sys.Date() - 1, sep = " "),
+#          xaxis = list(title = ""),
+#          yaxis = list(title = "Deaths"),
+#          showlegend = F,
+#          updatemenus = list(
+#            list(active = 0,
+#                 buttons = list(
+#                   list(method = "restyle",
+#                        args = list("visible", append(rep(list(T), 3), rep(list(F), 3))),
+#                        label = "Count"),
+#                   list(method = "restyle",
+#                        args = list("visible", append(rep(list(F), 3), rep(list(T), 3))),
+#                        label = "Per 100K")))
+#          ))
+
+Sys.sleep(5)
+
+
+#### DC Hospital Data ####
+
+dcCovid19Hospitals <- dcCovid19Hospitals %>% 
+  filter(Resource != "Ventilators free")
+  
+dcCovidHospitalLinePlotlyGraph <- plot_ly(data = dcCovid19Hospitals, x = ~Date) %>% 
+  add_trace(y = ~Units,
+            color = ~factor(Resource),
+            colors = pals::glasbey(), 
+            mode = "lines+markers", 
+            type = "scatter", 
+            hovertemplate = paste(
+              "Resource: ", dcCovid19Hospitals$Resource,
+              "<br>Units: ", "%{y}",
+              "<br>Date: ", "%{x}",
+              "<extra></extra>"
+            ), 
+            visible = T) %>% 
+  layout(xaxis = list(
+      type = 'date',
+      tickformat = "%d %B",
+      title = ""
+    ),
+    showlegend = T)
+
+
+
+plotlyPlots <- list(dmvDeathsByCountyBarPlotlyGraph, 
+                    dmvDeathsByCountyLinePlotlyGraph, 
+                    dmvTestsByStateBarPlotlyGraph, 
+                    dmvTestsByStateLinePlotlyGraph, 
+                    dmvCasesByCountyBarPlotlyGraph, 
+                    dmvCasesByCountyLinePlotlyGraph,
+                    dcCovidHospitalLinePlotlyGraph)
+map(plotlyPlots, partial_bundle)
+
+
+saveWidget(partial_bundle(dmvDeathsByCountyBarPlotlyGraph), "dmvDeathsByCountyBarPlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
+Sys.sleep(5)
+saveWidget(partial_bundle(dmvDeathsByCountyLinePlotlyGraph), "dmvDeathsByCountyLinePlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
+Sys.sleep(5)
+saveWidget(partial_bundle(dmvTestsByStateBarPlotlyGraph), "dmvTestsByStateBarPlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
+Sys.sleep(5)
+saveWidget(partial_bundle(dmvTestsByStateLinePlotlyGraph), "dmvTestsByStateLinePlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
+Sys.sleep(5)
+saveWidget(partial_bundle(dmvCasesByCountyBarPlotlyGraph), "dmvCasesByCountyBarPlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
+Sys.sleep(5)
+saveWidget(partial_bundle(dmvCasesByCountyLinePlotlyGraph), "dmvCasesByCountyLinePlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
+Sys.sleep(5)
+saveWidget(partial_bundle(dcCovidHospitalLinePlotlyGraph), "dcCovidHospitalLinePlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
 
 
 widget_file_size <- function(p) {
