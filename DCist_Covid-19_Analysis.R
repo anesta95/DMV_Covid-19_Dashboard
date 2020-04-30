@@ -1687,7 +1687,7 @@ Sys.sleep(5)
 setwd("/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
 Sys.sleep(15)
 mapshot(dcWardChloropleth, "dcWardChloropleth.html")
-
+Sys.sleep(5)
 
 # Create cases and per cap case rate bins and palettes
 myBinsReg <- round(seq(from = 0, to = (max(DMV_Cases$Cases) + 1), by = (max(DMV_Cases$Cases) / 6)), 0)
@@ -2340,23 +2340,8 @@ plotlyPlots <- list(dmvDeathsByCountyBarPlotlyGraph,
                     dmvCasesByCountyBarPlotlyGraph, 
                     dmvCasesByCountyLinePlotlyGraph,
                     dcCovidHospitalLinePlotlyGraph)
-map(plotlyPlots, partial_bundle)
-
-
-saveWidget(partial_bundle(dmvDeathsByCountyBarPlotlyGraph), "dmvDeathsByCountyBarPlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
 Sys.sleep(5)
-saveWidget(partial_bundle(dmvDeathsByCountyLinePlotlyGraph), "dmvDeathsByCountyLinePlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
-Sys.sleep(5)
-saveWidget(partial_bundle(dmvTestsByStateBarPlotlyGraph), "dmvTestsByStateBarPlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
-Sys.sleep(5)
-saveWidget(partial_bundle(dmvTestsByStateLinePlotlyGraph), "dmvTestsByStateLinePlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
-Sys.sleep(5)
-saveWidget(partial_bundle(dmvCasesByCountyBarPlotlyGraph), "dmvCasesByCountyBarPlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
-Sys.sleep(5)
-saveWidget(partial_bundle(dmvCasesByCountyLinePlotlyGraph), "dmvCasesByCountyLinePlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
-Sys.sleep(5)
-saveWidget(partial_bundle(dcCovidHospitalLinePlotlyGraph), "dcCovidHospitalLinePlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
-
+plotlyPlots <- map(plotlyPlots, partial_bundle)
 
 widget_file_size <- function(p) {
   d <- tempdir()
@@ -2365,7 +2350,32 @@ widget_file_size <- function(p) {
   mb <- round(file.info(f)$size / 1e6, 3)
   message("File is: ", mb," MB")
 }
+Sys.sleep(5)
+walk(plotlyPlots, widget_file_size)
+Sys.sleep(5)
+plotlyFileNames <- list("dmvDeathsByCountyBarPlotlyGraph.html", 
+                        "dmvDeathsByCountyLinePlotlyGraph.html",
+                        "dmvTestsByStateBarPlotlyGraph.html",
+                        "dmvTestsByStateLinePlotlyGraph.html",
+                        "dmvCasesByCountyBarPlotlyGraph.html",
+                        "dmvCasesByCountyLinePlotlyGraph.html",
+                        "dcCovidHospitalLinePlotlyGraph.html")
 
-widget_file_size(dmvCasesByCountyLinePlotlyGraph)
-widget_file_size(partial_bundle(dmvCasesByCountyLinePlotlyGraph))
+
+
+# map2(plotlyPlots, plotlyFileNames, ~{saveWidget(.x, .y, selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")})
+walk2(plotlyPlots, plotlyFileNames, ~{saveWidget(.x, .y, selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")})
+# saveWidget(partial_bundle(dmvDeathsByCountyBarPlotlyGraph), "dmvDeathsByCountyBarPlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
+# Sys.sleep(5)
+# saveWidget(partial_bundle(dmvDeathsByCountyLinePlotlyGraph), "dmvDeathsByCountyLinePlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
+# Sys.sleep(5)
+# saveWidget(partial_bundle(dmvTestsByStateBarPlotlyGraph), "dmvTestsByStateBarPlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
+# Sys.sleep(5)
+# saveWidget(partial_bundle(dmvTestsByStateLinePlotlyGraph), "dmvTestsByStateLinePlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
+# Sys.sleep(5)
+# saveWidget(partial_bundle(dmvCasesByCountyBarPlotlyGraph), "dmvCasesByCountyBarPlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
+# Sys.sleep(5)
+# saveWidget(partial_bundle(dmvCasesByCountyLinePlotlyGraph), "dmvCasesByCountyLinePlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
+# Sys.sleep(5)
+# saveWidget(partial_bundle(dcCovidHospitalLinePlotlyGraph), "dcCovidHospitalLinePlotlyGraph.html", selfcontained = F, libdir = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
 
