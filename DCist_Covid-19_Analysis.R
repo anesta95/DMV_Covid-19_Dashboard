@@ -449,7 +449,7 @@ write_csv(WV_Counties, "WV_Counties.csv")
 ### Maryland analysis ###
 # Data cleaning and adding in state abbreviation and FIPS code column
 casesByCounty <- casesByCounty[[1]]
-colnames(casesByCounty) <- c("County", "Cases", "Deaths", "Suspected_Deaths", "Extra")
+colnames(casesByCounty) <- c("County", "Cases", "Deaths", "Suspected_Deaths")
 # Check to see if random extra column keeps showing up?
 
 casesByCounty <- casesByCounty[2:nrow(casesByCounty),] %>% 
@@ -509,12 +509,13 @@ MD_Summary_Today <- confirmedCasesDeathsHospitalizationsTests %>%
   mutate(Amount = as.integer(Amount)) %>% 
   mutate(Date = Sys.Date() - 1) %>% 
   pivot_wider(names_from = Measure, values_from = Amount) %>% 
-  mutate(Cases = `confirmed cases`, 
-         Tests = `negative test results`, 
+  rename_all(~(str_replace_all(., " ", ""))) %>% 
+  mutate(Cases = `confirmedcases`, 
+         Tests = `negativetestresults`, 
          State = "Maryland", 
-         Confirmed_Deaths = `confirmed deaths`,
-         Probable_Deaths = `probable deaths`,
-         Hospitalizations = `Ever hospitalized`) %>% 
+         Confirmed_Deaths = `confirmeddeaths`,
+         Probable_Deaths = `probabledeaths`,
+         Hospitalizations = `Everhospitalized`) %>% 
   mutate(Tests = sum(Tests, sum(MD_By_County_Today$Cases)), Deaths = sum(Confirmed_Deaths, Probable_Deaths)) %>% 
   select(Tests, Deaths, Hospitalizations, Date, State)
 
@@ -948,7 +949,7 @@ All_VA_DMV_Deaths_Today <- Virginia_By_County_Today %>%
 ### This is for additional Virginia Demographic Data
 ## Clean up top-line tests, hospitalizations, and deaths dataframe by adding in date and state column
 Virginia_Totals_Headers[1] <- "Tests"
-
+Virginia_Totals_Headers[3] <- "Hospitalizations"
 Virginia_Totals_Today <- as.data.frame(rbind(Virginia_Totals_Headers, Virginia_Totals_Numbers), row.names = F, stringsAsFactors = F)
 Virginia_Totals_Today <- Virginia_Totals_Today[2,]
 colnames(Virginia_Totals_Today) <- Virginia_Totals_Headers
@@ -1523,10 +1524,13 @@ dcmdvaDeathsLine <- dailySummary %>%
 ggsave(filename = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19/dcmdvaDeathsLine.png", plot = dcmdvaDeathsLine, width = 300, height = 275, units = 'mm')
 Sys.sleep(5)
 # ### Bar Chart of latest death totals by State
-# 
-dcmdvaDeathsBar <- dailySummary %>%
-  drop_na(State) %>%
-  filter(Date == max(Date)) %>%
+#
+
+
+dcmdvaDeathsBar <- All_DMV_Deaths_Today %>% 
+  group_by(State) %>% 
+  summarize(Deaths = sum(Deaths)) %>% 
+  ungroup() %>%
   ggplot(aes(x = State, y = Deaths)) +
   geom_col(aes(fill = State), na.rm = T) +
   geom_text(aes(label = Deaths), vjust = -0.2, size = 8) +
@@ -1971,7 +1975,7 @@ dmvCasesByCountyLinePlotlyGraph <- plot_ly(data = dmvCasesByCountyLinePlotly, x 
                        label = "Per 100K")))
          ))
 
-Sys.sleep(5)
+Sys.sleep(15)
 dmvCasesByCountyBarPerCapPlotly <- DMV_Counties_Covid_Cases %>%
   left_join(stateCountyPops, by = "FIPS") %>% 
   filter(Date == max(Date)) %>%
@@ -2016,7 +2020,7 @@ dmvCasesByCountyBarPlotlyGraph <- plot_ly(dmvCasesByCountyBarPerCapPlotly,
                        label = "Per 100K")))
          ))
 
-Sys.sleep(5)
+Sys.sleep(15)
 DMVTestsLinePerCapPlotly <- dailySummary %>%
   drop_na(Tests) %>%
   left_join(stateCountyPops, by = c("State" = "STNAME")) %>% 
@@ -2068,7 +2072,7 @@ dmvTestsByStateLinePlotlyGraph <- plot_ly(data = DMVTestsLinePerCapPlotly, x = ~
                        label = "Per 100K")))
          ))
 
-Sys.sleep(5)
+Sys.sleep(15)
 DMVTestsBarPerCapPlotly <- dailySummary %>%
   drop_na(Tests) %>%
   filter(Date == max(Date)) %>%
@@ -2113,7 +2117,7 @@ dmvTestsByStateBarPlotlyGraph <- plot_ly(DMVTestsBarPerCapPlotly,
                        label = "Per 100K")))
          ))
 
-Sys.sleep(5)
+Sys.sleep(15)
 dcmdvaDeathsLinePlotly <- DMV_Counties_Covid_Cases %>%
   left_join(stateCountyPops, by = "FIPS") %>% 
   filter(Date >= as.Date("2020-04-02")) %>%
@@ -2168,7 +2172,7 @@ dmvDeathsByCountyLinePlotlyGraph <- plot_ly(data = dcmdvaDeathsLinePlotly, x = ~
          ))
 
 
-Sys.sleep(5)
+Sys.sleep(15)
 # dmvDeathsByStateLinePlotlyGraph <- plot_ly(data = dcmdvaDeathsLinePlotly, x = ~Date) %>% 
 #   add_trace(y = ~Deaths,
 #             linetype = ~factor(State),
@@ -2303,7 +2307,7 @@ dmvDeathsByCountyBarPlotlyGraph <- plot_ly(dmvDeathsByCountyBarPerCapPlotly,
 #                        label = "Per 100K")))
 #          ))
 
-Sys.sleep(5)
+Sys.sleep(15)
 
 
 #### DC Hospital Data ####

@@ -1,92 +1,106 @@
 ﻿Report Date,Health District,Sex,Number of Cases,Number of Hospitalizations,Number of Deaths
-4/30/2020,Chesterfield,Female,328,17,10
-4/30/2020,Mount Rogers,Female,36,6,0
-4/30/2020,Virginia Beach,Male,173,44,9
-4/30/2020,Crater,Female,113,31,9
-4/30/2020,New River,Female,39,3,0
-4/30/2020,Central Virginia,Male,70,4,1
-4/30/2020,Lenowisco,Male,21,8,1
-4/30/2020,Richmond,Female,169,26,2
-4/30/2020,Chesapeake,Female,137,32,3
-4/30/2020,Fairfax,Female,1774,256,70
-4/30/2020,Peninsula,Female,181,44,13
-4/30/2020,Loudoun,Female,400,33,7
-4/30/2020,Norfolk,Male,96,19,3
-4/30/2020,Loudoun,Not Reported,2,0,0
-4/30/2020,Rappahannock,Not Reported,2,0,0
-4/30/2020,Virginia Beach,Female,212,33,5
-4/30/2020,Roanoke,Female,47,2,0
-4/30/2020,West Piedmont,Male,18,4,1
-4/30/2020,Thomas Jefferson,Not Reported,1,0,0
-4/30/2020,New River,Not Reported,1,0,0
-4/30/2020,Alexandria,Not Reported,3,0,0
-4/30/2020,Chesterfield,Male,261,28,15
-4/30/2020,Rappahannock,Female,243,37,2
-4/30/2020,Chickahominy,Female,146,26,7
-4/30/2020,Arlington,Male,478,90,24
-4/30/2020,Chesterfield,Not Reported,9,0,0
-4/30/2020,Richmond,Male,166,36,11
-4/30/2020,Prince William,Female,953,100,12
-4/30/2020,Loudoun,Male,344,57,8
-4/30/2020,Portsmouth,Male,85,17,3
-4/30/2020,Henrico,Female,525,58,53
-4/30/2020,Thomas Jefferson,Female,165,32,5
-4/30/2020,Pittsylvania-Danville,Female,28,10,1
-4/30/2020,Mount Rogers,Not Reported,1,0,0
-4/30/2020,Chickahominy,Male,80,22,8
-4/30/2020,Prince William,Male,956,105,15
-4/30/2020,Thomas Jefferson,Male,127,27,8
-4/30/2020,Cumberland Plateau,Male,12,0,0
-4/30/2020,Lord Fairfax,Not Reported,2,0,0
-4/30/2020,Portsmouth,Not Reported,1,0,0
-4/30/2020,Eastern Shore,Female,162,11,3
-4/30/2020,Three Rivers,Male,162,9,1
-4/30/2020,Alexandria,Male,361,54,12
-4/30/2020,Piedmont,Female,82,6,1
-4/30/2020,New River,Male,34,5,1
-4/30/2020,Rappahannock,Male,230,54,8
-4/30/2020,Rappahannock Rapidan,Male,145,15,4
-4/30/2020,Lord Fairfax,Male,177,20,2
-4/30/2020,Chesapeake,Male,105,25,3
-4/30/2020,Norfolk,Female,102,21,0
-4/30/2020,Alleghany,Female,69,6,2
-4/30/2020,Crater,Male,84,20,3
-4/30/2020,Central Shenandoah,Male,335,23,8
-4/30/2020,Rappahannock Rapidan,Not Reported,7,0,0
-4/30/2020,Hampton,Male,49,17,1
-4/30/2020,Southside,Male,44,15,5
-4/30/2020,Hampton,Female,64,11,0
-4/30/2020,Fairfax,Male,1855,352,67
-4/30/2020,Henrico,Not Reported,6,0,1
-4/30/2020,Alexandria,Female,390,43,9
-4/30/2020,Arlington,Not Reported,8,0,0
-4/30/2020,Three Rivers,Female,63,7,1
-4/30/2020,Hampton,Not Reported,2,0,0
-4/30/2020,Peninsula,Male,165,54,8
-4/30/2020,Southside,Female,88,9,5
-4/30/2020,Prince William,Not Reported,13,0,0
-4/30/2020,Pittsylvania-Danville,Male,20,9,1
-4/30/2020,Central Virginia,Female,57,3,0
-4/30/2020,Lord Fairfax,Female,231,21,2
-4/30/2020,Western Tidewater,Male,222,29,6
-4/30/2020,Central Shenandoah,Not Reported,9,0,0
-4/30/2020,Richmond,Not Reported,4,1,2
-4/30/2020,Eastern Shore,Male,161,10,1
-4/30/2020,Rappahannock Rapidan,Female,150,10,1
-4/30/2020,Roanoke,Male,26,3,0
-4/30/2020,West Piedmont,Female,23,2,0
-4/30/2020,Mount Rogers,Male,41,10,4
-4/30/2020,Cumberland Plateau,Female,13,1,0
-4/30/2020,Chickahominy,Not Reported,4,1,0
-4/30/2020,Arlington,Female,481,77,17
-4/30/2020,Central Shenandoah,Female,405,21,5
-4/30/2020,Lenowisco,Female,19,6,1
-4/30/2020,Piedmont,Male,76,15,2
-4/30/2020,Crater,Not Reported,4,3,0
-4/30/2020,Fairfax,Not Reported,35,5,1
-4/30/2020,Portsmouth,Female,72,16,2
-4/30/2020,Eastern Shore,Not Reported,5,0,0
-4/30/2020,Western Tidewater,Female,189,17,9
-4/30/2020,Alleghany,Male,45,10,1
-4/30/2020,Western Tidewater,Not Reported,2,0,0
-4/30/2020,Henrico,Male,345,68,46
+5/1/2020,Southside,Not Reported,0,0,0
+5/1/2020,Chesapeake,Female,147,33,3
+5/1/2020,Richmond,Female,182,27,2
+5/1/2020,Roanoke,Male,29,3,0
+5/1/2020,Fairfax,Not Reported,37,5,1
+5/1/2020,Thomas Jefferson,Female,169,33,5
+5/1/2020,Chesapeake,Not Reported,0,0,0
+5/1/2020,Cumberland Plateau,Male,12,0,0
+5/1/2020,Eastern Shore,Female,191,12,4
+5/1/2020,Lord Fairfax,Not Reported,2,0,0
+5/1/2020,Rappahannock,Not Reported,2,0,0
+5/1/2020,Central Shenandoah,Not Reported,8,0,0
+5/1/2020,Peninsula,Male,169,54,8
+5/1/2020,Norfolk,Male,99,20,3
+5/1/2020,Alexandria,Female,415,47,12
+5/1/2020,Lenowisco,Male,22,8,1
+5/1/2020,Pittsylvania-Danville,Female,28,10,1
+5/1/2020,New River,Not Reported,1,0,0
+5/1/2020,Chesterfield,Not Reported,9,0,0
+5/1/2020,Loudoun,Male,393,58,8
+5/1/2020,Rappahannock Rapidan,Female,168,11,1
+5/1/2020,Piedmont,Female,86,6,1
+5/1/2020,Richmond,Male,178,38,11
+5/1/2020,Crater,Female,115,32,9
+5/1/2020,Portsmouth,Female,74,16,3
+5/1/2020,Arlington,Not Reported,8,0,0
+5/1/2020,Mount Rogers,Not Reported,1,0,0
+5/1/2020,Thomas Jefferson,Not Reported,1,0,0
+5/1/2020,Three Rivers,Not Reported,0,0,0
+5/1/2020,Hampton,Male,51,17,1
+5/1/2020,Alleghany,Male,45,10,1
+5/1/2020,Roanoke,Female,49,2,0
+5/1/2020,Loudoun,Not Reported,2,0,0
+5/1/2020,Fairfax,Female,1929,275,72
+5/1/2020,Western Tidewater,Male,226,30,7
+5/1/2020,Peninsula,Not Reported,0,0,0
+5/1/2020,New River,Male,35,7,1
+5/1/2020,Central Shenandoah,Male,360,23,8
+5/1/2020,Southside,Male,44,15,5
+5/1/2020,Chesterfield,Male,274,31,16
+5/1/2020,Arlington,Female,500,79,17
+5/1/2020,Rappahannock,Male,247,54,9
+5/1/2020,Central Virginia,Male,72,4,1
+5/1/2020,Alleghany,Not Reported,0,0,0
+5/1/2020,Henrico,Male,355,69,47
+5/1/2020,Thomas Jefferson,Male,128,27,8
+5/1/2020,Lord Fairfax,Male,193,21,2
+5/1/2020,Three Rivers,Male,164,10,1
+5/1/2020,Richmond,Not Reported,4,1,2
+5/1/2020,Pittsylvania-Danville,Male,20,9,1
+5/1/2020,Portsmouth,Not Reported,1,0,0
+5/1/2020,Norfolk,Not Reported,0,0,0
+5/1/2020,Chesapeake,Male,109,27,4
+5/1/2020,Chickahominy,Female,157,27,9
+5/1/2020,Prince William,Male,1022,108,16
+5/1/2020,Eastern Shore,Not Reported,5,0,0
+5/1/2020,Eastern Shore,Male,189,10,1
+5/1/2020,Rappahannock Rapidan,Male,169,15,4
+5/1/2020,Henrico,Not Reported,3,0,1
+5/1/2020,Cumberland Plateau,Female,14,1,0
+5/1/2020,West Piedmont,Male,18,4,1
+5/1/2020,Hampton,Not Reported,2,0,0
+5/1/2020,Alexandria,Not Reported,3,0,0
+5/1/2020,Western Tidewater,Not Reported,2,0,0
+5/1/2020,Cumberland Plateau,Not Reported,0,0,0
+5/1/2020,Virginia Beach,Male,179,46,9
+5/1/2020,Alleghany,Female,71,6,2
+5/1/2020,Lenowisco,Female,19,6,1
+5/1/2020,Virginia Beach,Not Reported,0,0,0
+5/1/2020,Western Tidewater,Female,194,17,10
+5/1/2020,Mount Rogers,Male,44,10,4
+5/1/2020,Lord Fairfax,Female,251,21,2
+5/1/2020,Piedmont,Not Reported,0,0,0
+5/1/2020,Alexandria,Male,384,57,12
+5/1/2020,Pittsylvania-Danville,Not Reported,0,0,0
+5/1/2020,West Piedmont,Not Reported,0,0,0
+5/1/2020,Loudoun,Female,437,35,7
+5/1/2020,Hampton,Female,66,11,0
+5/1/2020,Henrico,Female,540,60,54
+5/1/2020,Prince William,Not Reported,15,0,0
+5/1/2020,Chickahominy,Male,84,23,9
+5/1/2020,Rappahannock Rapidan,Not Reported,8,0,0
+5/1/2020,Peninsula,Female,183,44,15
+5/1/2020,Lenowisco,Not Reported,0,0,0
+5/1/2020,Crater,Not Reported,4,3,0
+5/1/2020,Chickahominy,Not Reported,5,1,0
+5/1/2020,Portsmouth,Male,95,17,4
+5/1/2020,New River,Female,39,3,0
+5/1/2020,Rappahannock,Female,257,37,2
+5/1/2020,Central Virginia,Female,64,3,0
+5/1/2020,Roanoke,Not Reported,2,0,0
+5/1/2020,West Piedmont,Female,23,2,0
+5/1/2020,Mount Rogers,Female,41,6,0
+5/1/2020,Piedmont,Male,113,15,2
+5/1/2020,Chesterfield,Female,342,21,13
+5/1/2020,Fairfax,Male,1986,370,68
+5/1/2020,Crater,Male,86,20,3
+5/1/2020,Central Virginia,Not Reported,0,0,0
+5/1/2020,Prince William,Female,1034,104,15
+5/1/2020,Virginia Beach,Female,217,35,5
+5/1/2020,Norfolk,Female,105,22,0
+5/1/2020,Three Rivers,Female,63,12,1
+5/1/2020,Arlington,Male,496,90,25
+5/1/2020,Central Shenandoah,Female,425,21,5
+5/1/2020,Southside,Female,91,9,5
