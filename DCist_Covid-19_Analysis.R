@@ -759,12 +759,20 @@ write_csv(Virginia_By_Sex, "Virginia_By_Sex.csv")
 
 # Read/clean Virginia's by race data for today and add state column
 Virginia_By_Race_Health_District_Today <- read_csv("Virginia_By_Race_Today.csv")
+Virginia_By_Race_Health_District_Today_Two <- read_csv("Virginia_By_Race_Today_Two.csv")
+Virginia_By_Race_Health_District_Today_Two <- Virginia_By_Race_Health_District_Today_Two %>% 
+  rename(Race = Ethnicity)
+
+Virginia_By_Race_Health_District_Today <- bind_rows(Virginia_By_Race_Health_District_Today, Virginia_By_Race_Health_District_Today_Two)
+
 
 Virginia_By_Race_Health_District_Today <- Virginia_By_Race_Health_District_Today %>% 
   rename(Date = `Report Date`, Cases = `Number of Cases`, Hospitalized = `Number of Hospitalizations`, Deaths = `Number of Deaths`, Health_District = `Health District`) %>% 
   mutate(Date = Sys.Date() - 1, State = "Virginia")
 
 Virginia_By_Race_Health_District <- read_csv("Virginia_By_Race_Health_District.csv")
+
+
 Virginia_By_Race_Health_District <- bind_rows(Virginia_By_Race_Health_District_Today, Virginia_By_Race_Health_District)
 write_csv(Virginia_By_Race_Health_District, "Virginia_By_Race_Health_District.csv")
 
@@ -948,8 +956,11 @@ All_VA_DMV_Deaths_Today <- Virginia_By_County_Today %>%
 
 ### This is for additional Virginia Demographic Data
 ## Clean up top-line tests, hospitalizations, and deaths dataframe by adding in date and state column
+Virginia_Totals_Headers <- Virginia_Totals_Headers[c(1, 5, 6)]
 Virginia_Totals_Headers[1] <- "Tests"
 Virginia_Totals_Headers[3] <- "Hospitalizations"
+Virginia_Totals_Numbers <- Virginia_Totals_Numbers[c(1, 3, 4)]
+
 Virginia_Totals_Today <- as.data.frame(rbind(Virginia_Totals_Headers, Virginia_Totals_Numbers), row.names = F, stringsAsFactors = F)
 Virginia_Totals_Today <- Virginia_Totals_Today[2,]
 colnames(Virginia_Totals_Today) <- Virginia_Totals_Headers
@@ -1309,7 +1320,7 @@ Full_States <- read_csv("FullStates.csv")
 
 
 # Adding in today's by county data fro DC, VA, MD, and WV
-Full_States <- bind_rows(Full_States, Virginia_By_County, MD_By_County, WV_CountiesDFCleaned, DC_By_County) %>% 
+Full_States <- bind_rows(Virginia_By_County_Today, MD_By_County_Today, WV_CountiesDFCleaned, DC_By_County, Full_States) %>% 
   arrange(desc(Date))
 
 

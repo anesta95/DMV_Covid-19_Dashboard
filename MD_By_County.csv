@@ -1,4 +1,29 @@
 County,Cases,Deaths,Date,State,Abbr,FIPS
+Allegany,121,8,2020-05-01,Maryland,MD,24001
+Anne Arundel,1885,94,2020-05-01,Maryland,MD,24003
+Baltimore City,2237,126,2020-05-01,Maryland,MD,24510
+Baltimore County,3183,139,2020-05-01,Maryland,MD,NA
+Calvert,160,11,2020-05-01,Maryland,MD,24009
+Caroline,79,0,2020-05-01,Maryland,MD,24011
+Carroll,480,46,2020-05-01,Maryland,MD,24013
+Cecil,187,8,2020-05-01,Maryland,MD,24015
+Charles,622,47,2020-05-01,Maryland,MD,24017
+Dorchester,59,2,2020-05-01,Maryland,MD,24019
+Frederick,976,59,2020-05-01,Maryland,MD,24021
+Garrett,4,0,2020-05-01,Maryland,MD,24023
+Harford,468,16,2020-05-01,Maryland,MD,24025
+Howard,931,20,2020-05-01,Maryland,MD,24027
+Kent,80,4,2020-05-01,Maryland,MD,24029
+Montgomery,4919,282,2020-05-01,Maryland,MD,24031
+Prince Georges,7041,269,2020-05-01,Maryland,MD,24033
+Queen Annes,57,8,2020-05-01,Maryland,MD,24035
+St Marys,164,7,2020-05-01,Maryland,MD,24037
+Somerset,32,0,2020-05-01,Maryland,MD,24039
+Talbot,39,1,2020-05-01,Maryland,MD,24041
+Washington,225,6,2020-05-01,Maryland,MD,24043
+Wicomico,452,10,2020-05-01,Maryland,MD,24045
+Worcester,72,3,2020-05-01,Maryland,MD,24047
+Data not available,0,85,2020-05-01,Maryland,MD,NA
 Allegany,118,7,2020-04-30,Maryland,MD,24001
 Anne Arundel,1807,90,2020-04-30,Maryland,MD,24003
 Baltimore City,2162,115,2020-04-30,Maryland,MD,24510
