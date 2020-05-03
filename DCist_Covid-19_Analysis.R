@@ -202,9 +202,14 @@ casesByRace <- MD_Data_Div[[3]]$getElementAttribute("outerHTML")[[1]] %>%
 # and save it in your working directory as the file path in the pdf_text call below
 
 # Get each download file link from Virginia site and download county, age, race, and sex breakout CSVs
-Sys.sleep(5)
-remDr$navigate("https://www.vdh.virginia.gov/coronavirus/")
-Sys.sleep(15)
+# Will have to use the command line until I can figure out how to use the unstable option with
+# either the Selenium webscraper, httr, or rvest.
+Sys.sleep(10)
+system("wget --wait=2 --no-check-certificate -i VDH_URLs.txt")
+Sys.sleep(10)
+# Sys.sleep(5)
+# remDr$navigate("https://www.vdh.virginia.gov/coronavirus/")
+# Sys.sleep(15)
 
 # read_html("https://www.vdh.virginia.gov/coronavirus/")
 
@@ -258,35 +263,46 @@ Sys.sleep(15)
 
 # Much easier and more reliable to use class of containing div
 
-virginiaDataDownloadDiv <- remDr$findElements(using = "class", value = "update-bullets")
-Sys.sleep(5)
-virginiaDataDownloadATags <- virginiaDataDownloadDiv[[1]]$findChildElements(using = "tag name", value = "a")
+# virginiaDataDownloadDiv <- remDr$findElements(using = "class", value = "update-bullets")
+# Sys.sleep(5)
 # virginiaDataDownloadATags <- virginiaDataDownloadDiv[[1]]$findChildElements(using = "tag name", value = "a")
-Sys.sleep(5)
-download.file(unlist(virginiaDataDownloadATags[[1]]$getElementAttribute("href")), destfile = "Virginia_By_County_Today.csv")
-Sys.sleep(5)
-download.file(unlist(virginiaDataDownloadATags[[2]]$getElementAttribute("href")), destfile = "Virginia_Summary_Today.csv")
-Sys.sleep(5)
-download.file(unlist(virginiaDataDownloadATags[[3]]$getElementAttribute("href")), destfile = "Virginia_DeathsHospitalizations_By_County_Today.csv")
-Sys.sleep(5)
-download.file(unlist(virginiaDataDownloadATags[[4]]$getElementAttribute("href")), destfile = "Virginia_By_Sex_Today.csv")
-Sys.sleep(5)
-download.file(unlist(virginiaDataDownloadATags[[5]]$getElementAttribute("href")), destfile = "Virginia_By_Race_Today.csv")
-Sys.sleep(5)
-download.file(unlist(virginiaDataDownloadATags[[6]]$getElementAttribute("href")), destfile = "Virginia_By_Age_Today.csv")
-Sys.sleep(5)
+# # virginiaDataDownloadATags <- virginiaDataDownloadDiv[[1]]$findChildElements(using = "tag name", value = "a")
+# Sys.sleep(5)
+# download.file(unlist(virginiaDataDownloadATags[[1]]$getElementAttribute("href")), destfile = "Virginia_By_County_Today.csv")
+# Sys.sleep(5)
+# download.file(unlist(virginiaDataDownloadATags[[2]]$getElementAttribute("href")), destfile = "Virginia_Summary_Today.csv")
+# Sys.sleep(5)
+# download.file(unlist(virginiaDataDownloadATags[[3]]$getElementAttribute("href")), destfile = "Virginia_DeathsHospitalizations_By_County_Today.csv")
+# Sys.sleep(5)
+# download.file(unlist(virginiaDataDownloadATags[[4]]$getElementAttribute("href")), destfile = "Virginia_By_Sex_Today.csv")
+# Sys.sleep(5)
+# download.file(unlist(virginiaDataDownloadATags[[5]]$getElementAttribute("href")), destfile = "Virginia_By_Race_Today.csv")
+# Sys.sleep(5)
+# download.file(unlist(virginiaDataDownloadATags[[6]]$getElementAttribute("href")), destfile = "Virginia_By_Age_Today.csv")
+# Sys.sleep(5)
 
-vaDownloadLinks <- list("https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases.csv",
-                        "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/04/VDH-COVID-19-PublicUseDataset-Cases_By-Confirmation.csv",
-                        "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/04/VDH-COVID-19-PublicUseDataset-Cases_By-District-Death-Hospitalization.csv",
-                        "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases_By-Sex.csv",
-                        "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases_By-Race.csv",
-                        "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases_By-Age-Group.csv")
+# vaDownloadLinks <- list("https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases.csv",
+#                         "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/04/VDH-COVID-19-PublicUseDataset-Cases_By-Confirmation.csv",
+#                         "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/04/VDH-COVID-19-PublicUseDataset-Cases_By-District-Death-Hospitalization.csv",
+#                         "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases_By-Sex.csv",
+#                         "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases_By-Race.csv",
+#                         "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases_By-Age-Group.csv")
+# 
+# "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases.csv"
+# "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/04/VDH-COVID-19-PublicUseDataset-Cases_By-Confirmation.csv"
+# "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/05/VDH-COVID-19-PublicUseDataset-EventDate.csv"
+# "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases_By-Age-Group.csv"
+# "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases_By-Race.csv"
+# "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/05/VDH-COVID-19-PublicUseDataset-Cases_By-Ethnicity.csv"
+# "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/03/VDH-COVID-19-PublicUseDataset-Cases_By-Sex.csv"
+# "https://www.vdh.virginia.gov/content/uploads/sites/182/2020/04/VDH-COVID-19-PublicUseDataset-Cases_By-District-Death-Hospitalization.csv"
 
-vaDownloadDFs <- list("Virginia_By_County_Today.csv", "Virginia_Summary_Today.csv", "Virginia_DeathsHospitalizations_By_County_Today.csv",
-                      "Virginia_By_Sex_Today.csv", "Virginia_By_Race_Today.csv", "Virginia_By_Age_Today.csv")
 
-map2(vaDownloadLinks, vaDownloadDFs, ~{download.file(.x, destfile = .y)})
+
+# vaDownloadDFs <- list("Virginia_By_County_Today.csv", "Virginia_Summary_Today.csv", "Virginia_DeathsHospitalizations_By_County_Today.csv",
+#                       "Virginia_By_Sex_Today.csv", "Virginia_By_Race_Today.csv", "Virginia_By_Age_Today.csv")
+# 
+# map2(vaDownloadLinks, vaDownloadDFs, ~{download.file(.x, destfile = .y)})
 
 ## DC scraping
 # This is the old way before the download link
@@ -657,8 +673,8 @@ Sys.sleep(5)
 
 #### Virginia Analysis 
 # Read in and clean cases and deaths by county file. Include state abbreviation and FIPS code column
-Virginia_By_County_Today <- read_csv("Virginia_By_County_Today.csv")
-Virginia_DeathsHospitalizations_Today <- read_csv("Virginia_DeathsHospitalizations_By_County_Today.csv")
+Virginia_By_County_Today <- read_csv("VDH-COVID-19-PublicUseDataset-Cases.csv")
+Virginia_DeathsHospitalizations_Today <- read_csv("VDH-COVID-19-PublicUseDataset-Cases_By-District-Death-Hospitalization.csv")
 
 Virginia_DeathsHospitalizations_Today <- Virginia_DeathsHospitalizations_Today %>% 
   rename(Date = `Report Date`, County = `Health District`, Cases = `Number of Cases`, Hospitalizations = `Number of Hospitalizations`, Deaths = `Number of Deaths`) %>% 
@@ -690,7 +706,7 @@ write_csv(Virginia_By_County, "Virginia_By_County.csv")
 # write_csv(Virginia_By_County, "Virginia_By_County.csv")
 
 # Read in by age data for today
-Virginia_By_Age_Health_District_Today <- read_csv("Virginia_By_Age_Today.csv")
+Virginia_By_Age_Health_District_Today <- read_csv("VDH-COVID-19-PublicUseDataset-Cases_By-Age-Group.csv")
 
 Virginia_By_Age_Health_District_Today <- Virginia_By_Age_Health_District_Today %>% 
   rename(Date = `Report Date`, 
@@ -727,7 +743,7 @@ Virginia_By_Age <- bind_rows(Virginia_By_Age_Today, Virginia_By_Age)
 write_csv(Virginia_By_Age, "Virginia_By_Age.csv")
 
 # Read/clean in Virginia's Sex data for today and add in state column
-Virginia_By_Sex_Health_District_Today <- read_csv("Virginia_By_Sex_Today.csv")
+Virginia_By_Sex_Health_District_Today <- read_csv("VDH-COVID-19-PublicUseDataset-Cases_By-Sex.csv")
 
 Virginia_By_Sex_Health_District_Today <- Virginia_By_Sex_Health_District_Today %>% 
   rename(Date = `Report Date`, 
@@ -758,8 +774,8 @@ Virginia_By_Sex <- bind_rows(Virginia_By_Sex_Today, Virginia_By_Sex)
 write_csv(Virginia_By_Sex, "Virginia_By_Sex.csv")
 
 # Read/clean Virginia's by race data for today and add state column
-Virginia_By_Race_Health_District_Today <- read_csv("Virginia_By_Race_Today.csv")
-Virginia_By_Race_Health_District_Today_Two <- read_csv("Virginia_By_Race_Today_Two.csv")
+Virginia_By_Race_Health_District_Today <- read_csv("VDH-COVID-19-PublicUseDataset-Cases_By-Race.csv")
+Virginia_By_Race_Health_District_Today_Two <- read_csv("VDH-COVID-19-PublicUseDataset-Cases_By-Ethnicity.csv")
 Virginia_By_Race_Health_District_Today_Two <- Virginia_By_Race_Health_District_Today_Two %>% 
   rename(Race = Ethnicity)
 
@@ -792,7 +808,7 @@ Virginia_By_Race <- read_csv("Virginia_By_Race.csv")
 Virginia_By_Race <- bind_rows(Virginia_By_Race_Today, Virginia_By_Race)
 write_csv(Virginia_By_Race, "Virginia_By_Race.csv")
 
-
+system("rm VDH-COVID-19*.csv")
 #  With the new link the Virginia Department of Health put up this is no longer necessary
 #
 #
