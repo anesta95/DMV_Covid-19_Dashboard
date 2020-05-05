@@ -1379,7 +1379,6 @@ Full_States %>%
 # And save
 Full_States <- Full_States %>% distinct()
 
-
 # combined1 <- sort(union(levels(Full_States$FIPS), levels(DMV_FIPS)))
 Sys.sleep(15)
 
