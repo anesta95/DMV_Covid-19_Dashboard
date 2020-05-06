@@ -194,7 +194,7 @@ Sys.sleep(5)
 casesByRace <- MD_Data_Div[[3]]$getElementAttribute("outerHTML")[[1]] %>% 
   read_html(useInternalNodes = T) %>% 
   html_table(fill = T)
-
+Sys.sleep(5)
 ### Virginia Scraping
 # Disregard three lines below, they have download links now
 # You will need to download the PDF of the Tableau Dashboard (it updates at 5pm) like this:
@@ -204,6 +204,7 @@ casesByRace <- MD_Data_Div[[3]]$getElementAttribute("outerHTML")[[1]] %>%
 # Get each download file link from Virginia site and download county, age, race, and sex breakout CSVs
 # Will have to use the command line until I can figure out how to use the unstable option with
 # either the Selenium webscraper, httr, or rvest.
+system("rm VDH-COVID-19*.csv")
 Sys.sleep(10)
 system("wget --wait=2 --no-check-certificate -i VDH_URLs.txt")
 Sys.sleep(10)
@@ -323,15 +324,18 @@ Sys.sleep(10)
 # 
 # Get updated total data excel download
 
-remDr$navigate("https://coronavirus.dc.gov/page/coronavirus-data")
-Sys.sleep(15)
-dcDataA <- remDr$findElement(using = "xpath", value = "/html/body/div[4]/section/div[2]/div/div/div/div[2]/div/div/article/div[1]/div[1]/div/div/ul[1]/li[5]/a")
-Sys.sleep(5)
-dcDataDownloadLink <- dcDataA$getElementAttribute("href")
-Sys.sleep(5)
-dcDataDownloadLink <- unlist(dcDataDownloadLink)
-Sys.sleep(5)
-download.file(dcDataDownloadLink, destfile = "dcCovid-19DataSummaryToday.xlsx")
+### Using the BOX API to get the full excel sheet ###
+system("rm DCCovid19Data.xlsx")
+system("bash ~/Documents/Bash_Scripts/DC_Covid19_Data.sh")
+# remDr$navigate("https://coronavirus.dc.gov/page/coronavirus-data")
+# Sys.sleep(15)
+# dcDataA <- remDr$findElement(using = "xpath", value = "/html/body/div[4]/section/div[2]/div/div/div/div[2]/div/div/article/div[1]/div[1]/div/div/ul[1]/li[5]/a")
+# Sys.sleep(5)
+# dcDataDownloadLink <- dcDataA$getElementAttribute("href")
+# Sys.sleep(5)
+# dcDataDownloadLink <- unlist(dcDataDownloadLink)
+# Sys.sleep(5)
+# download.file(dcDataDownloadLink, destfile = "dcCovid-19DataSummaryToday.xlsx")
 
 # This doesn't quite work, I think I have to change my Firefox preferences
 # dcDownloadDiv <- remDr$findElement(using = "xpath", value = "/html/body/div[4]/section/div[2]/div/div/div/div[2]/div/div/article/div[1]/div/div/div/div[1]/a[2]")
@@ -808,7 +812,13 @@ Virginia_By_Race <- read_csv("Virginia_By_Race.csv")
 Virginia_By_Race <- bind_rows(Virginia_By_Race_Today, Virginia_By_Race)
 write_csv(Virginia_By_Race, "Virginia_By_Race.csv")
 
-system("rm VDH-COVID-19*.csv")
+
+Virginia_Labs <- read_csv("VDH-COVID-19-PublicUseDataset-KeyMeasures-Labs.csv")
+
+Virginia_Labs <- Virginia_Labs %>% rename_all(~(str_replace_all(., " ", "_")))
+
+
+
 #  With the new link the Virginia Department of Health put up this is no longer necessary
 #
 #
@@ -844,20 +854,21 @@ system("rm VDH-COVID-19*.csv")
 # and save it in your working directory as the file path in the pdf_text call below
 
 # Create the headers (Tests, Hospitalizations, Deaths) and values 
-Virginia_Totals_Numbers <- pdf_text(paste0(paste("Virginia", "COVID-19", "Dashboard", Sys.Date() - 1, sep = " "), ".pdf")) %>% 
-  str_remove_all("\n") %>%
-  str_remove_all(",") %>% 
-  str_remove_all("(\\s{1,})") %>% 
-  str_extract_all("\\d+") %>% 
-  unlist()
-
-Virginia_Totals_Headers <- pdf_text(paste0(paste("Virginia", "COVID-19", "Dashboard", Sys.Date() - 1, sep = " "), ".pdf")) %>% 
-  str_remove_all("\n") %>%
-  str_remove_all(",") %>% 
-  str_remove_all("(\\s{1,})") %>% 
-  str_remove_all("Total") %>%
-  str_extract_all("[[:alpha:]]+") %>% 
-  unlist()
+## Not needed anymore since they posted the labs download link
+# Virginia_Totals_Numbers <- pdf_text(paste0(paste("Virginia", "COVID-19", "Dashboard", Sys.Date() - 1, sep = " "), ".pdf")) %>% 
+#   str_remove_all("\n") %>%
+#   str_remove_all(",") %>% 
+#   str_remove_all("(\\s{1,})") %>% 
+#   str_extract_all("\\d+") %>% 
+#   unlist()
+# 
+# Virginia_Totals_Headers <- pdf_text(paste0(paste("Virginia", "COVID-19", "Dashboard", Sys.Date() - 1, sep = " "), ".pdf")) %>% 
+#   str_remove_all("\n") %>%
+#   str_remove_all(",") %>% 
+#   str_remove_all("(\\s{1,})") %>% 
+#   str_remove_all("Total") %>%
+#   str_extract_all("[[:alpha:]]+") %>% 
+#   unlist()
 
 # This is Virginia's deaths in the Northern Health District solo
 # No longer doing this, they posted the download link!!
@@ -972,20 +983,31 @@ All_VA_DMV_Deaths_Today <- Virginia_By_County_Today %>%
 
 ### This is for additional Virginia Demographic Data
 ## Clean up top-line tests, hospitalizations, and deaths dataframe by adding in date and state column
-Virginia_Totals_Headers <- Virginia_Totals_Headers[c(1, 5, 6)]
-Virginia_Totals_Headers[1] <- "Tests"
-Virginia_Totals_Headers[3] <- "Hospitalizations"
-Virginia_Totals_Numbers <- Virginia_Totals_Numbers[c(1, 3, 4)]
+## Now only need to make the tibble and don't even need the pdf data
 
-Virginia_Totals_Today <- as.data.frame(rbind(Virginia_Totals_Headers, Virginia_Totals_Numbers), row.names = F, stringsAsFactors = F)
-Virginia_Totals_Today <- Virginia_Totals_Today[2,]
-colnames(Virginia_Totals_Today) <- Virginia_Totals_Headers
+Virginia_Totals_Today <- tibble(
+  Tests = sum(Virginia_Labs$Number_of_People_Tested) + 1980,
+  Deaths = sum(Virginia_By_County_Today$Deaths),
+  Hospitalizations = sum(Virginia_By_County_Today$Hospitalizations),
+  Date = Sys.Date() - 1,
+  State = "Virginia"
+)
 
-Virginia_Totals_Today$Date <- Sys.Date() - 1
-Virginia_Totals_Today$Tests <- as.integer(Virginia_Totals_Today$Tests)
-Virginia_Totals_Today$Hospitalizations <- as.integer(Virginia_Totals_Today$Hospitalizations)
-Virginia_Totals_Today$Deaths <- as.integer(Virginia_Totals_Today$Deaths)
-Virginia_Totals_Today$State <- "Virginia"
+
+# Virginia_Totals_Headers <- Virginia_Totals_Headers[c(1, 5, 6)]
+# Virginia_Totals_Headers[1] <- "Tests"
+# Virginia_Totals_Headers[3] <- "Hospitalizations"
+# Virginia_Totals_Numbers <- Virginia_Totals_Numbers[c(1, 3, 4)]
+# 
+# Virginia_Totals_Today <- as.data.frame(rbind(Virginia_Totals_Headers, Virginia_Totals_Numbers), row.names = F, stringsAsFactors = F)
+# Virginia_Totals_Today <- Virginia_Totals_Today[2,]
+# colnames(Virginia_Totals_Today) <- Virginia_Totals_Headers
+# 
+# Virginia_Totals_Today$Date <- Sys.Date() - 1
+# Virginia_Totals_Today$Tests <- as.integer(Virginia_Totals_Today$Tests)
+# Virginia_Totals_Today$Hospitalizations <- as.integer(Virginia_Totals_Today$Hospitalizations)
+# Virginia_Totals_Today$Deaths <- as.integer(Virginia_Totals_Today$Deaths)
+# Virginia_Totals_Today$State <- "Virginia"
 
 # Add topline totals into main file
 Virginia_Totals <- read_csv("VirginiaTotals.csv")
@@ -1112,8 +1134,9 @@ Sys.sleep(5)
 # colnames(dcCovid19ByAgeSexToday) <- unname(dcCovid19ByAgeSexToday[2,])
 # dcCovid19ByAgeSexToday <- dcCovid19ByAgeSexToday[3:nrow(dcCovid19ByAgeSexToday),]
 
-dcCovid19ByWardToday <- read_excel("COVID19_DCHealthStatisticsDataV3 (NewFileStructure).xlsx", sheet = "Total Cases by Ward")
-dcCovid19ByAgeSexToday <- read_excel("COVID19_DCHealthStatisticsDataV3 (NewFileStructure).xlsx", sheet = "Total Cases by Age and Gender")
+dcCovid19ByWardToday <- read_excel("DCCovid19Data.xlsx", sheet = "Total Cases by Ward")
+dcCovid19ByAgeSexToday <- read_excel("DCCovid19Data.xlsx", sheet = "Total Cases by Age and Gender")
+dcCovid19DeathsByWardToday <- read_excel("DCCovid19Data.xlsx", sheet = "Lives Lost by Ward")
 
 dcCovid19ByAgeSexTodayXTab <- dcCovid19ByAgeSexToday %>% 
   mutate(Date = Sys.Date() - 1, State = "District of Columbia", Cases = as.integer(`Total Positives`), Age_Range = `Patient Age (yrs)`, Male = as.integer(Male), Female = as.integer(Female))
@@ -1174,9 +1197,22 @@ dcCovid19ByWardToday <- dcCovid19ByWardToday %>%
   rename(Cases = (as.character(Sys.Date() - 1))) %>% 
   mutate(Date = Sys.Date() - 1, Cases = as.integer(Cases), Ward = as.integer(Ward)) %>% 
   select(Ward, Cases, Date)
+
+colnames(dcCovid19DeathsByWardToday) <- c("Ward", as.character(seq.Date(from = as.Date("2020/04/19"), to = (Sys.Date() - 1), by = "day")))
+
+dcCovid19DeathsByWardToday <- dcCovid19DeathsByWardToday[c(2:9, 11),] %>% 
+  select(Ward, (as.character(Sys.Date() - 1))) %>%
+  rename(Deaths = (as.character(Sys.Date() - 1))) %>% 
+  mutate(Deaths = as.integer(Deaths), Ward = as.integer(Ward)) %>% 
+  select(Ward, Deaths)
+
+dcCovid19CasesDeathsByWardToday <- dcCovid19ByWardToday %>% 
+  left_join(dcCovid19DeathsByWardToday, by = "Ward") %>% 
+  select(Ward, Cases, Deaths, Date)
+
 # Adding today's by ward breakout to main file
 dcCovid19ByWard <- read_csv("dcCovid19ByWard.csv")
-dcCovid19ByWard <- bind_rows(dcCovid19ByWardToday, dcCovid19ByWard)
+dcCovid19ByWard <- bind_rows(dcCovid19CasesDeathsByWardToday, dcCovid19ByWard)
 write_csv(dcCovid19ByWard, "dcCovid19ByWard.csv")
 
 
@@ -1184,8 +1220,8 @@ Sys.sleep(5)
 
 
 # Reading in the full excel file sheet and spliting the Cases/Hospital data from the by Organization data
-dcCovid19DataSummaryDCOrgsToday <- read_xlsx("dcCovid-19DataSummaryToday.xlsx", sheet = "Overal Stats", skip = 12)
-dcCovid19DataSummaryToday <- read_xlsx("dcCovid-19DataSummaryToday.xlsx", sheet = "Overal Stats", n_max = 11)
+dcCovid19DataSummaryDCOrgsToday <- read_xlsx("DCCovid19Data.xlsx", sheet = "Overall Stats", skip = 12)
+dcCovid19DataSummaryToday <- read_xlsx("DCCovid19Data.xlsx", sheet = "Overall Stats", n_max = 11)
 
 # Cleaning the Cases/Hospital data
 colnames(dcCovid19DataSummaryToday) <- c("Organization", "Metric", as.character(seq.Date(from = as.Date("2020/03/07"), to = (Sys.Date() - 1), by = "day")))
@@ -1236,11 +1272,11 @@ All_DC_DMV_Deaths_Today <- dcCovid19TestingCases %>%
 
 # Cleaning and saving most updated hosptials dataframe
 dcCovid19Hospitals <- dcCovid19DataSummaryToday %>% 
-  select(Date, ICU.Beds.Available, Total.Reported.Ventilators.in.Hospitals, In.Use.Ventilators.in.Hospitals, Available.Ventilators.in.Hospitals) %>% 
+  select(Date, ICU.Beds.Available, Total.Reported.Ventilators.in.Hospitals, In.Use.Ventilators.in.Hospitals, Ventilators.Available.in.Hospitals) %>% 
   rename(`ICU beds available` = ICU.Beds.Available, 
          `Total ventilators available` = Total.Reported.Ventilators.in.Hospitals,
          `Ventilators in use` = In.Use.Ventilators.in.Hospitals,
-         `Ventilators free` = Available.Ventilators.in.Hospitals) %>% 
+         `Ventilators free` = Ventilators.Available.in.Hospitals) %>% 
   gather(-Date, key = "Resource", value = "Units") %>% 
   filter(!is.na(Units)) %>% 
   arrange(desc(Date))
@@ -1579,7 +1615,7 @@ Sys.sleep(5)
 # Make dataframe of DC by ward population and shapfile
 dcWards <- dcWards %>% 
   left_join(dcACSPopulation, by = c("WARD" = "Ward")) %>%
-  left_join(dcCovid19ByWardToday, by = c("WARD" = "Ward")) %>%
+  left_join(dcCovid19CasesDeathsByWardToday, by = c("WARD" = "Ward")) %>%
   mutate(TOTAL_POP_100K = (Population / 100000))
 Sys.sleep(5)
 # Assign the new projection
@@ -1607,7 +1643,7 @@ DMV_Cases <- DMV_Cases %>%
   mutate(Cases = if_else(is.na(Cases), 0, Cases))
 # Assign new projection
 st_crs(DMV_Cases) <- "+proj=longlat +datum=WGS84"
-
+Sys.sleep(5)
 # No longer making this static plot, making a leaflet one!
 # DMV_Cases %>%
 #   ggplot() +
@@ -1627,8 +1663,25 @@ while(dcWardPerCapUpperBoundary %% 6 != 0) {
 
 dcWardPerCapBins <- seq(from = 0, to = dcWardPerCapUpperBoundary, by = dcWardPerCapUpperBoundary / 6)
 
+Sys.sleep(5)
+dcWardDeathBins <- round(seq(from = 0, to = (max(dcWards$Deaths) + 1), by = (max(dcWards$Deaths) / 6)), 0)
+
+dcWardDeathsPerCapUpperBoundary <- round(max(dcWards$Deaths / dcWards$TOTAL_POP_100K) + 1, 0)
+
+while(dcWardDeathsPerCapUpperBoundary %% 6 != 0) {
+  dcWardDeathsPerCapUpperBoundary = dcWardDeathsPerCapUpperBoundary + 1
+}
+
+dcWardDeathsPerCapBins <- seq(from = 0, to = dcWardDeathsPerCapUpperBoundary, by = dcWardDeathsPerCapUpperBoundary / 6)
+
+Sys.sleep(5)
+
 dcWardPalette <- colorBin(palette = "YlOrRd", domain = dcWards$Cases, na.color = "transparent", bins = dcWardBins)
 dcWardPerCapPalette <- colorBin(palette = "YlOrRd", domain = dcWards$Cases, na.color = "transparent", bins = dcWardPerCapBins)
+
+dcWardDeathsPalette <- colorBin(palette = "YlOrRd", domain = dcWards$Cases, na.color = "transparent", bins = dcWardDeathBins)
+dcWardDeathsPerCapPalette <- colorBin(palette = "YlOrRd", domain = dcWards$Cases, na.color = "transparent", bins = dcWardDeathsPerCapBins)
+
 
 Sys.sleep(5)
 
@@ -1646,9 +1699,25 @@ dcWardlegendTextPerCap <- paste0(
 ) %>% 
   lapply(htmltools::HTML)
 
+Sys.sleep(5)
+# Create tool tip legend text
+dcWardDeathslegendText <- paste0(
+  "Ward: ", dcWards$WARD, "<br/>",
+  "Deaths: ", dcWards$Deaths, "<br/>"
+) %>% 
+  lapply(htmltools::HTML)
+
+# Make the per capita leaflet chloropleth
+dcWardDeathslegendTextPerCap <- paste0(
+  "Ward: ", dcWards$WARD, "<br/>",
+  "Rate per 100K: ", round((dcWards$Deaths / dcWards$TOTAL_POP_100K), 1), "<br/>"
+) %>% 
+  lapply(htmltools::HTML)
+
+
 dcWardAttribution <- htmltools::HTML("Map data &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap</a> contributors, <a href='https://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a><br/>Data from: <a href='https://coronavirus.dc.gov/page/coronavirus-data'>DC Mayor's Office</a>")
 
-Sys.sleep(5)
+Sys.sleep(15)
 
 dcWardChloropleth <- leaflet(dcWards) %>% 
   addTiles(attribution = dcWardAttribution) %>% 
@@ -1681,6 +1750,34 @@ dcWardChloropleth <- leaflet(dcWards) %>%
                 direction = "auto"
               ),
               group = paste("Case rate per 100K", Sys.Date() - 1, sep = " ")) %>%
+  addPolygons(stroke=T, 
+              opacity = 1,
+              fillOpacity = 0.9, 
+              smoothFactor = 0.5, 
+              color = "black", 
+              fillColor = ~dcWardDeathsPalette(Deaths),
+              weight = 0.5,
+              label = dcWardDeathslegendText,
+              labelOptions = labelOptions( 
+                style = list("font-weight" = "normal", padding = "3px 8px"), 
+                textsize = "13px", 
+                direction = "auto"
+              ),
+              group = paste("Death toll", Sys.Date() - 1, sep = " ")) %>%
+  addPolygons(stroke=T, 
+              opacity = 1,
+              fillOpacity = 0.9, 
+              smoothFactor = 0.5, 
+              color = "black", 
+              fillColor = ~dcWardDeathsPerCapPalette((Deaths / TOTAL_POP_100K)),
+              weight = 0.5,
+              label = dcWardDeathslegendTextPerCap,
+              labelOptions = labelOptions( 
+                style = list("font-weight" = "normal", padding = "3px 8px"), 
+                textsize = "13px", 
+                direction = "auto"
+              ),
+              group = paste("Death toll per 100K", Sys.Date() - 1, sep = " ")) %>%
   addLegend( pal=dcWardPalette, 
              values=~Cases, 
              opacity=0.9, 
@@ -1693,8 +1790,22 @@ dcWardChloropleth <- leaflet(dcWards) %>%
              title = paste("Case rate per 100K", Sys.Date() - 1, sep = " "), 
              position = "topright", 
              group = paste("Case rate per 100K", Sys.Date() - 1, sep = " ")) %>%
+  addLegend( pal=dcWardDeathsPalette, 
+             values=~Deaths, 
+             opacity=0.9, 
+             title = paste("Death toll", Sys.Date() - 1, sep = " "), 
+             position = "topright", 
+             group = paste("Death toll", Sys.Date() - 1, sep = " ")) %>%
+  addLegend( pal=dcWardDeathsPerCapPalette, 
+             values=~(Deaths / TOTAL_POP_100K), 
+             opacity=0.9, 
+             title = paste("Death toll per 100K", Sys.Date() - 1, sep = " "), 
+             position = "topright", 
+             group = paste("Death toll per 100K", Sys.Date() - 1, sep = " ")) %>%
   addLayersControl(baseGroups = c(paste("Case count", Sys.Date() - 1, sep = " "), 
-                                  paste("Case rate per 100K", Sys.Date() - 1, sep = " ")),
+                                  paste("Case rate per 100K", Sys.Date() - 1, sep = " "),
+                                  paste("Death toll", Sys.Date() - 1, sep = " "),
+                                  paste("Death toll per 100K", Sys.Date() - 1, sep = " ")),
                    position = "bottomleft",
                    options = layersControlOptions(collapsed = F)) %>% 
   htmlwidgets::onRender(
@@ -1711,9 +1822,9 @@ dcWardChloropleth <- leaflet(dcWards) %>%
       this.on('baselayerchange', e => updateLegend());
     }"
   )
-Sys.sleep(5)
+Sys.sleep(15)
 
-Sys.sleep(5)
+
 setwd("/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
 Sys.sleep(15)
 mapshot(dcWardChloropleth, "dcWardChloropleth.html")

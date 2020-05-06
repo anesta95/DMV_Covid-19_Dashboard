@@ -1,4 +1,183 @@
 County,Cases,Hospitalizations,Deaths,Date,State,Abbr,FIPS
+Accomack,429,21,7,2020-05-04,Virginia,VA,51001
+Albemarle,110,16,4,2020-05-04,Virginia,VA,51003
+Alleghany,6,4,0,2020-05-04,Virginia,VA,51005
+Amelia,18,7,1,2020-05-04,Virginia,VA,51007
+Amherst,15,1,0,2020-05-04,Virginia,VA,51009
+Appomattox,21,0,0,2020-05-04,Virginia,VA,51011
+Arlington,1169,196,49,2020-05-04,Virginia,VA,51013
+Augusta,47,2,1,2020-05-04,Virginia,VA,51015
+Bath,0,0,0,2020-05-04,Virginia,VA,51017
+Bedford,36,1,0,2020-05-04,Virginia,VA,51019
+Bland,0,0,0,2020-05-04,Virginia,VA,51021
+Botetourt,29,9,3,2020-05-04,Virginia,VA,51023
+Brunswick,15,3,0,2020-05-04,Virginia,VA,51025
+Buchanan,16,0,0,2020-05-04,Virginia,VA,51027
+Buckingham,171,8,0,2020-05-04,Virginia,VA,51029
+Campbell,13,1,0,2020-05-04,Virginia,VA,51031
+Caroline,34,5,1,2020-05-04,Virginia,VA,51033
+Carroll,19,2,0,2020-05-04,Virginia,VA,51035
+Charles City,17,5,1,2020-05-04,Virginia,VA,51036
+Charlotte,11,2,0,2020-05-04,Virginia,VA,51037
+Chesterfield,646,56,25,2020-05-04,Virginia,VA,51041
+Clarke,12,1,0,2020-05-04,Virginia,VA,51043
+Craig,4,0,0,2020-05-04,Virginia,VA,51045
+Culpeper,201,18,3,2020-05-04,Virginia,VA,51047
+Cumberland,12,1,0,2020-05-04,Virginia,VA,51049
+Dickenson,0,0,0,2020-05-04,Virginia,VA,51051
+Dinwiddie,25,7,0,2020-05-04,Virginia,VA,51053
+Essex,17,3,0,2020-05-04,Virginia,VA,51057
+Fairfax,4834,787,201,2020-05-04,Virginia,VA,51059
+Fauquier,147,11,3,2020-05-04,Virginia,VA,51061
+Floyd,3,1,0,2020-05-04,Virginia,VA,51063
+Fluvanna,76,20,6,2020-05-04,Virginia,VA,51065
+Franklin,23,3,0,2020-05-04,Virginia,VA,51067
+Frederick,132,13,1,2020-05-04,Virginia,VA,51069
+Giles,4,0,0,2020-05-04,Virginia,VA,51071
+Gloucester,26,7,1,2020-05-04,Virginia,VA,51073
+Goochland,80,11,5,2020-05-04,Virginia,VA,51075
+Grayson,5,0,0,2020-05-04,Virginia,VA,51077
+Greene,13,2,1,2020-05-04,Virginia,VA,51079
+Greensville,41,11,7,2020-05-04,Virginia,VA,51081
+Halifax,18,1,0,2020-05-04,Virginia,VA,51083
+Hanover,145,37,13,2020-05-04,Virginia,VA,51085
+Henrico,985,139,106,2020-05-04,Virginia,VA,51087
+Henry,19,2,1,2020-05-04,Virginia,VA,51089
+Highland,2,0,0,2020-05-04,Virginia,VA,51091
+Isle of Wight,100,10,3,2020-05-04,Virginia,VA,51093
+James City,166,51,14,2020-05-04,Virginia,VA,51095
+King and Queen,3,0,0,2020-05-04,Virginia,VA,51097
+King George,36,13,4,2020-05-04,Virginia,VA,51099
+King William,10,1,1,2020-05-04,Virginia,VA,51101
+Lancaster,5,1,0,2020-05-04,Virginia,VA,51103
+Lee,10,1,0,2020-05-04,Virginia,VA,51105
+Loudoun,998,100,24,2020-05-04,Virginia,VA,51107
+Louisa,50,9,0,2020-05-04,Virginia,VA,51109
+Lunenburg,4,0,0,2020-05-04,Virginia,VA,51111
+Madison,17,2,1,2020-05-04,Virginia,VA,51113
+Mathews,4,1,0,2020-05-04,Virginia,VA,51115
+Mecklenburg,106,21,10,2020-05-04,Virginia,VA,51117
+Middlesex,7,0,0,2020-05-04,Virginia,VA,51119
+Montgomery,61,9,1,2020-05-04,Virginia,VA,51121
+Nelson,9,0,0,2020-05-04,Virginia,VA,51125
+New Kent,26,5,1,2020-05-04,Virginia,VA,51127
+Northampton,140,5,1,2020-05-04,Virginia,VA,51131
+Northumberland,9,0,0,2020-05-04,Virginia,VA,51133
+Nottoway,14,1,0,2020-05-04,Virginia,VA,51135
+Orange,41,3,0,2020-05-04,Virginia,VA,51137
+Page,113,12,5,2020-05-04,Virginia,VA,51139
+Patrick,2,0,0,2020-05-04,Virginia,VA,51141
+Pittsylvania,16,7,1,2020-05-04,Virginia,VA,51143
+Powhatan,15,0,0,2020-05-04,Virginia,VA,51145
+Prince Edward,58,5,2,2020-05-04,Virginia,VA,51147
+Prince George,40,4,0,2020-05-04,Virginia,VA,51149
+Prince William,2223,225,33,2020-05-04,Virginia,VA,51153
+Pulaski,9,2,0,2020-05-04,Virginia,VA,51155
+Rappahannock,6,0,0,2020-05-04,Virginia,VA,51157
+Richmond County,143,6,1,2020-05-04,Virginia,VA,51159
+Roanoke County,57,1,0,2020-05-04,Virginia,VA,51161
+Rockbridge,8,0,0,2020-05-04,Virginia,VA,51163
+Rockingham,282,16,1,2020-05-04,Virginia,VA,51165
+Russell,5,2,0,2020-05-04,Virginia,VA,51167
+Scott,7,2,1,2020-05-04,Virginia,VA,51169
+Shenandoah,165,13,3,2020-05-04,Virginia,VA,51171
+Smyth,13,4,0,2020-05-04,Virginia,VA,51173
+Southampton,128,3,1,2020-05-04,Virginia,VA,51175
+Spotsylvania,206,24,4,2020-05-04,Virginia,VA,51177
+Stafford,308,49,2,2020-05-04,Virginia,VA,51179
+Surry,4,1,1,2020-05-04,Virginia,VA,51181
+Sussex,32,3,1,2020-05-04,Virginia,VA,51183
+Tazewell,6,0,0,2020-05-04,Virginia,VA,51185
+Warren,68,4,0,2020-05-04,Virginia,VA,51187
+Washington,40,8,3,2020-05-04,Virginia,VA,51191
+Westmoreland,30,5,0,2020-05-04,Virginia,VA,51193
+Wise,22,9,1,2020-05-04,Virginia,VA,51195
+Wythe,12,1,1,2020-05-04,Virginia,VA,51197
+York,48,7,1,2020-05-04,Virginia,VA,51199
+Alexandria City,983,120,26,2020-05-04,Virginia,VA,51510
+Bristol,2,0,0,2020-05-04,Virginia,VA,51520
+Buena Vista City,6,0,0,2020-05-04,Virginia,VA,51530
+Charlottesville City,64,14,2,2020-05-04,Virginia,VA,51540
+Chesapeake City,293,65,9,2020-05-04,Virginia,VA,51550
+Colonial Heights,58,2,6,2020-05-04,Virginia,VA,51570
+Covington,0,0,0,2020-05-04,Virginia,VA,51580
+Danville,37,13,1,2020-05-04,Virginia,VA,51590
+Emporia,46,9,3,2020-05-04,Virginia,VA,51595
+Fairfax City,33,5,2,2020-05-04,Virginia,VA,51600
+Falls Church,36,8,4,2020-05-04,Virginia,VA,51610
+Franklin City,23,2,1,2020-05-04,Virginia,VA,51620
+Fredericksburg,45,8,0,2020-05-04,Virginia,VA,51630
+Galax,25,1,0,2020-05-04,Virginia,VA,51640
+Hampton,128,28,3,2020-05-04,Virginia,VA,51650
+Harrisonburg City,525,31,19,2020-05-04,Virginia,VA,51660
+Hopewell,31,10,0,2020-05-04,Virginia,VA,51670
+Lexington,5,0,0,2020-05-04,Virginia,VA,51678
+Lynchburg,65,5,1,2020-05-04,Virginia,VA,51680
+Manassas,289,33,1,2020-05-04,Virginia,VA,51683
+Manassas Park,96,11,2,2020-05-04,Virginia,VA,51685
+Martinsville,2,1,0,2020-05-04,Virginia,VA,51690
+Newport News City,133,35,9,2020-05-04,Virginia,VA,51700
+Norfolk City,251,46,4,2020-05-04,Virginia,VA,51710
+Norton,2,2,0,2020-05-04,Virginia,VA,51720
+Petersburg,40,14,2,2020-05-04,Virginia,VA,51730
+Poquoson,7,2,0,2020-05-04,Virginia,VA,51735
+Portsmouth City,187,36,8,2020-05-04,Virginia,VA,51740
+Radford,3,0,0,2020-05-04,Virginia,VA,51750
+Richmond City,438,76,16,2020-05-04,Virginia,VA,51760
+Roanoke City,82,5,0,2020-05-04,Virginia,VA,51770
+Salem,31,2,0,2020-05-04,Virginia,VA,51775
+Staunton,13,0,0,2020-05-04,Virginia,VA,51790
+Suffolk City,205,37,15,2020-05-04,Virginia,VA,51800
+Virginia Beach City,445,83,15,2020-05-04,Virginia,VA,51810
+Waynesboro,16,1,0,2020-05-04,Virginia,VA,51820
+Williamsburg City,27,7,2,2020-05-04,Virginia,VA,51830
+Winchester,56,1,0,2020-05-04,Virginia,VA,51840
+Allegany,129,NA,12,2020-05-04,Maryland,MD,24001
+Anne Arundel,2045,NA,107,2020-05-04,Maryland,MD,24003
+Baltimore City,2609,NA,133,2020-05-04,Maryland,MD,24510
+Baltimore,3430,NA,157,2020-05-04,Maryland,MD,NA
+Calvert,174,NA,11,2020-05-04,Maryland,MD,24009
+Caroline,99,NA,0,2020-05-04,Maryland,MD,24011
+Carroll,513,NA,52,2020-05-04,Maryland,MD,24013
+Cecil,195,NA,13,2020-05-04,Maryland,MD,24015
+Charles,660,NA,50,2020-05-04,Maryland,MD,24017
+Dorchester,76,NA,2,2020-05-04,Maryland,MD,24019
+Frederick,1071,NA,66,2020-05-04,Maryland,MD,24021
+Garrett,4,NA,0,2020-05-04,Maryland,MD,24023
+Harford,499,NA,19,2020-05-04,Maryland,MD,24025
+Howard,1010,NA,23,2020-05-04,Maryland,MD,24027
+Kent,95,NA,7,2020-05-04,Maryland,MD,24029
+Montgomery,5541,NA,320,2020-05-04,Maryland,MD,24031
+Prince Georges,7831,NA,295,2020-05-04,Maryland,MD,24033
+Queen Annes,65,NA,8,2020-05-04,Maryland,MD,24035
+St Marys,170,NA,7,2020-05-04,Maryland,MD,24037
+Somerset,37,NA,0,2020-05-04,Maryland,MD,24039
+Talbot,45,NA,1,2020-05-04,Maryland,MD,24041
+Washington,238,NA,6,2020-05-04,Maryland,MD,24043
+Wicomico,500,NA,11,2020-05-04,Maryland,MD,24045
+Worcester,81,NA,3,2020-05-04,Maryland,MD,24047
+Data not available,0,NA,87,2020-05-04,Maryland,MD,NA
+Barbour,6,NA,1,2020-05-04,West Virginia,WV,54001
+Berkeley,166,NA,2,2020-05-04,West Virginia,WV,54003
+Boone,6,NA,0,2020-05-04,West Virginia,WV,54005
+Braxton,2,NA,0,2020-05-04,West Virginia,WV,54007
+Brooke,3,NA,0,2020-05-04,West Virginia,WV,54009
+Cabell,44,NA,0,2020-05-04,West Virginia,WV,54011
+Fayette,20,NA,0,2020-05-04,West Virginia,WV,54019
+Gilmer,3,NA,0,2020-05-04,West Virginia,WV,54021
+Grant,3,NA,0,2020-05-04,West Virginia,WV,54023
+Greenbrier,7,NA,0,2020-05-04,West Virginia,WV,54025
+Hampshire,8,NA,1,2020-05-04,West Virginia,WV,54027
+Hancock,11,NA,0,2020-05-04,West Virginia,WV,54029
+Hardy,9,NA,0,2020-05-04,West Virginia,WV,54031
+Harrison,31,NA,1,2020-05-04,West Virginia,WV,54033
+Jackson,134,NA,15,2020-05-04,West Virginia,WV,54035
+Jefferson,83,NA,1,2020-05-04,West Virginia,WV,54037
+Kanawha,170,NA,10,2020-05-04,West Virginia,WV,54039
+Lewis,4,NA,0,2020-05-04,West Virginia,WV,54041
+Lincoln,2,NA,0,2020-05-04,West Virginia,WV,54043
+Logan,14,NA,1,2020-05-04,West Virginia,WV,54045
+District of Columbia,5322,NA,264,2020-05-04,District of Columbia,DC,11001
 Accomack,425,21,6,2020-05-03,Virginia,VA,51001
 Albemarle,110,16,4,2020-05-03,Virginia,VA,51003
 Alleghany,6,4,0,2020-05-03,Virginia,VA,51005
