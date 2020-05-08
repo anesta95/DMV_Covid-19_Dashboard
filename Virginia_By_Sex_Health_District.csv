@@ -1,4 +1,109 @@
 Date,Health_District,Sex,Cases,Hospitalized,Deaths,State
+2020-05-07,Southside,Not Reported,0,0,0,Virginia
+2020-05-07,Chesapeake,Female,182,37,4,Virginia
+2020-05-07,Richmond,Female,249,36,4,Virginia
+2020-05-07,Roanoke,Male,35,3,1,Virginia
+2020-05-07,Fairfax,Not Reported,47,4,1,Virginia
+2020-05-07,Thomas Jefferson,Female,195,34,5,Virginia
+2020-05-07,Chesapeake,Not Reported,0,0,0,Virginia
+2020-05-07,Cumberland Plateau,Male,13,1,0,Virginia
+2020-05-07,Eastern Shore,Female,323,15,7,Virginia
+2020-05-07,Lord Fairfax,Not Reported,5,0,0,Virginia
+2020-05-07,Rappahannock,Not Reported,2,0,0,Virginia
+2020-05-07,Central Shenandoah,Not Reported,8,0,0,Virginia
+2020-05-07,Peninsula,Male,191,57,10,Virginia
+2020-05-07,Norfolk,Male,143,24,4,Virginia
+2020-05-07,Alexandria,Female,570,58,15,Virginia
+2020-05-07,Lenowisco,Male,22,8,2,Virginia
+2020-05-07,Pittsylvania-Danville,Female,33,12,1,Virginia
+2020-05-07,New River,Not Reported,1,0,0,Virginia
+2020-05-07,Chesterfield,Not Reported,10,0,0,Virginia
+2020-05-07,Loudoun,Male,516,65,14,Virginia
+2020-05-07,Rappahannock Rapidan,Female,219,15,3,Virginia
+2020-05-07,Piedmont,Female,93,10,1,Virginia
+2020-05-07,Richmond,Male,241,48,12,Virginia
+2020-05-07,Crater,Female,153,38,10,Virginia
+2020-05-07,Portsmouth,Female,89,20,4,Virginia
+2020-05-07,Arlington,Not Reported,9,0,0,Virginia
+2020-05-07,Mount Rogers,Not Reported,1,0,0,Virginia
+2020-05-07,Thomas Jefferson,Not Reported,1,0,0,Virginia
+2020-05-07,Three Rivers,Not Reported,0,0,0,Virginia
+2020-05-07,Hampton,Male,59,17,2,Virginia
+2020-05-07,Alleghany,Male,53,11,1,Virginia
+2020-05-07,Roanoke,Female,56,3,0,Virginia
+2020-05-07,Loudoun,Not Reported,2,0,0,Virginia
+2020-05-07,Fairfax,Female,2642,381,115,Virginia
+2020-05-07,Western Tidewater,Male,248,37,14,Virginia
+2020-05-07,Peninsula,Not Reported,4,0,0,Virginia
+2020-05-07,New River,Male,37,8,1,Virginia
+2020-05-07,Central Shenandoah,Male,463,30,13,Virginia
+2020-05-07,Southside,Male,50,15,5,Virginia
+2020-05-07,Chesterfield,Male,369,37,17,Virginia
+2020-05-07,Arlington,Female,630,101,26,Virginia
+2020-05-07,Rappahannock,Male,347,64,9,Virginia
+2020-05-07,Central Virginia,Male,85,7,2,Virginia
+2020-05-07,Alleghany,Not Reported,0,0,0,Virginia
+2020-05-07,Henrico,Male,418,78,54,Virginia
+2020-05-07,Thomas Jefferson,Male,141,27,8,Virginia
+2020-05-07,Lord Fairfax,Male,284,26,6,Virginia
+2020-05-07,Three Rivers,Male,223,13,1,Virginia
+2020-05-07,Richmond,Not Reported,4,1,2,Virginia
+2020-05-07,Pittsylvania-Danville,Male,23,9,1,Virginia
+2020-05-07,Portsmouth,Not Reported,1,0,0,Virginia
+2020-05-07,Norfolk,Not Reported,0,0,0,Virginia
+2020-05-07,Chesapeake,Male,134,31,5,Virginia
+2020-05-07,Chickahominy,Female,180,34,11,Virginia
+2020-05-07,Prince William,Male,1464,156,23,Virginia
+2020-05-07,Eastern Shore,Not Reported,4,0,0,Virginia
+2020-05-07,Eastern Shore,Male,285,16,5,Virginia
+2020-05-07,Rappahannock Rapidan,Male,233,23,6,Virginia
+2020-05-07,Henrico,Not Reported,3,0,1,Virginia
+2020-05-07,Cumberland Plateau,Female,15,1,0,Virginia
+2020-05-07,West Piedmont,Male,24,5,1,Virginia
+2020-05-07,Hampton,Not Reported,1,0,0,Virginia
+2020-05-07,Alexandria,Not Reported,4,0,0,Virginia
+2020-05-07,Western Tidewater,Not Reported,1,0,0,Virginia
+2020-05-07,Cumberland Plateau,Not Reported,0,0,0,Virginia
+2020-05-07,Virginia Beach,Male,206,46,12,Virginia
+2020-05-07,Alleghany,Female,79,6,2,Virginia
+2020-05-07,Lenowisco,Female,19,6,1,Virginia
+2020-05-07,Virginia Beach,Not Reported,2,0,0,Virginia
+2020-05-07,Western Tidewater,Female,217,17,10,Virginia
+2020-05-07,Mount Rogers,Male,67,10,4,Virginia
+2020-05-07,Lord Fairfax,Female,375,29,11,Virginia
+2020-05-07,Piedmont,Not Reported,0,0,0,Virginia
+2020-05-07,Alexandria,Male,536,71,14,Virginia
+2020-05-07,Pittsylvania-Danville,Not Reported,0,0,0,Virginia
+2020-05-07,West Piedmont,Not Reported,0,0,0,Virginia
+2020-05-07,Loudoun,Female,552,44,15,Virginia
+2020-05-07,Hampton,Female,75,11,1,Virginia
+2020-05-07,Henrico,Female,611,70,55,Virginia
+2020-05-07,Prince William,Not Reported,37,0,0,Virginia
+2020-05-07,Chickahominy,Male,96,27,11,Virginia
+2020-05-07,Rappahannock Rapidan,Not Reported,9,0,0,Virginia
+2020-05-07,Peninsula,Female,212,48,19,Virginia
+2020-05-07,Lenowisco,Not Reported,0,0,0,Virginia
+2020-05-07,Crater,Not Reported,2,2,0,Virginia
+2020-05-07,Chickahominy,Not Reported,5,1,0,Virginia
+2020-05-07,Portsmouth,Male,104,17,4,Virginia
+2020-05-07,New River,Female,42,4,0,Virginia
+2020-05-07,Rappahannock,Female,358,47,2,Virginia
+2020-05-07,Central Virginia,Female,69,5,0,Virginia
+2020-05-07,Roanoke,Not Reported,0,0,0,Virginia
+2020-05-07,West Piedmont,Female,28,2,0,Virginia
+2020-05-07,Mount Rogers,Female,65,6,0,Virginia
+2020-05-07,Piedmont,Male,257,18,3,Virginia
+2020-05-07,Chesterfield,Female,445,27,15,Virginia
+2020-05-07,Fairfax,Male,2725,511,118,Virginia
+2020-05-07,Crater,Male,113,23,4,Virginia
+2020-05-07,Central Virginia,Not Reported,0,0,0,Virginia
+2020-05-07,Prince William,Female,1442,151,27,Virginia
+2020-05-07,Virginia Beach,Female,261,38,5,Virginia
+2020-05-07,Norfolk,Female,131,26,1,Virginia
+2020-05-07,Three Rivers,Female,88,15,5,Virginia
+2020-05-07,Arlington,Male,642,126,31,Virginia
+2020-05-07,Central Shenandoah,Female,536,27,10,Virginia
+2020-05-07,Southside,Female,98,12,5,Virginia
 2020-05-06,Southside,Not Reported,0,0,0,Virginia
 2020-05-06,Chesapeake,Female,179,37,4,Virginia
 2020-05-06,Richmond,Female,239,33,3,Virginia

@@ -125,7 +125,8 @@ Sys.sleep(5)
 WV_ByCounty_Button$clickElement()
 Sys.sleep(5)
 # WV_CountiesDiv <- remDr$findElements(using = "class", value = "tableEx")
-WV_CountiesDiv <- remDr$findElement(using = "class", value = "bodyCells")
+# WV_CountiesDiv <- remDr$findElement(using = "class", value = "bodyCells")
+WV_CountiesDiv <- remDr$findElement(using = "class", value = "innerContainer")
 Sys.sleep(5)
 # WV_Counties <- WV_CountiesDiv[[1]]$getElementText()
 WV_Counties <- WV_CountiesDiv$getElementText()
@@ -393,25 +394,25 @@ WV_Counties <- WV_Counties %>%
 # WV_Counties <- WV_Counties[[1]][1]
 # WV_Counties %>% str_replace_all("\\s{2,}", "0")
 WV_Counties_Unsplit <- WV_Counties %>% str_split("\\n") %>% unlist()
-#WV_Headers <- make.names(str_trim(WV_Counties_Unsplit[1:3]))
-WV_Headers <- c("County", "Cumulative.Cases", "Deaths")
-# WV_Counties_Values <- WV_Counties_Unsplit[4:length(WV_Counties_Unsplit)]
+WV_Headers <- make.names(str_trim(WV_Counties_Unsplit[1:3]))
+# WV_Headers <- c("County", "Cumulative.Cases", "Deaths")
+WV_Counties_Values <- WV_Counties_Unsplit[4:length(WV_Counties_Unsplit)]
 
-WV_Counties_Unsplit <- WV_Counties_Unsplit[1:(WV_Counties_Unsplit %>% detect_index(~{str_detect(.x, "Logan")}))]
-WV_Counties_Unsplit <- WV_Counties_Unsplit %>% str_remove("Logan")
+# WV_Counties_Unsplit <- WV_Counties_Unsplit[1:(WV_Counties_Unsplit %>% detect_index(~{str_detect(.x, "Logan")}))]
+# WV_Counties_Unsplit <- WV_Counties_Unsplit %>% str_remove("Logan")
 
 
-WV_County_Names <- WV_Counties_Unsplit %>% keep(str_detect, "[[:alpha:]]+") %>% str_trim()
+# WV_County_Names <- WV_Counties_Unsplit %>% keep(str_detect, "[[:alpha:]]+") %>% str_trim()
 # WV_Values <- WV_Counties_Unsplit %>% keep(str_detect, "\\d+") %>% str_replace_all("\\s", "0")
-WV_Values <- WV_Counties_Unsplit %>% purrr::discard(str_detect, "[[:alpha:]]+") %>% str_replace_all("\\s", "0")
+# WV_Values <- WV_Counties_Unsplit %>% purrr::discard(str_detect, "[[:alpha:]]+") %>% str_replace_all("\\s", "0")
 
 # WV_County_Names <- WV_County_Names[1:(WV_County_Names %>% detect_index(~{.x == "Lincoln"}))]
 
 # Not elegant but gets the job done
-# WV_Values <- WV_Counties_Values %>% str_replace_all("\\s", "0")
-# 
-# WV_Values <- WV_Values %>% keep(str_detect, "\\d+")
-# WV_County_Names <- WV_Counties_Values %>% keep(str_detect, "[[:alpha:]]+")
+WV_Values <- WV_Counties_Values %>% str_replace_all("\\s", "0")
+
+WV_Values <- WV_Values %>% keep(str_detect, "\\d+")
+WV_County_Names <- WV_Counties_Values %>% keep(str_detect, "[[:alpha:]]+")
 
 for (i in 1:(length(WV_County_Names) * 2 + (length(WV_Values[substring(WV_Values, 1, 1) == "0" & str_length(WV_Values) > 1])))) {
   if (substring(WV_Values[i], 1, 1) == "0" & str_length(WV_Values[i]) > 1) {
@@ -1005,7 +1006,7 @@ All_VA_DMV_Deaths_Today <- Virginia_By_County_Today %>%
 ## Now only need to make the tibble and don't even need the pdf data
 
 Virginia_Totals_Today <- tibble(
-  Tests = sum(Virginia_Labs$Number_of_People_Tested) + 1210,
+  Tests = sum(Virginia_Labs$Number_of_People_Tested) + 1283,
   Deaths = sum(Virginia_By_County_Today$Deaths),
   Hospitalizations = sum(Virginia_By_County_Today$Hospitalizations),
   Date = Sys.Date() - 1,
@@ -1367,7 +1368,7 @@ dailySummaryToday <- bind_rows(dcSummary, Maryland, marylandCounties, Virginia, 
 
 # Adding the daily summary to the main file
 dailySummary <- read_csv("covidSummaryDCist.csv")
-dailySummary <- bind_rows(dailySummaryToday, dailySummaryTwoDaysAgo, dailySummary)
+dailySummary <- bind_rows(dailySummaryToday, dailySummary)
 write_csv(dailySummary, "covidSummaryDCist.csv")
 
 # Making daily DMV deaths dataframe
