@@ -1,4 +1,54 @@
 County,Cases,Deaths,Date,State,Abbr,FIPS
+Allegany,143,12,2020-05-06,Maryland,MD,24001
+Anne Arundel,2194,111,2020-05-06,Maryland,MD,24003
+Baltimore City,2856,149,2020-05-06,Maryland,MD,24510
+Baltimore County,3662,169,2020-05-06,Maryland,MD,NA
+Calvert,188,11,2020-05-06,Maryland,MD,24009
+Caroline,105,0,2020-05-06,Maryland,MD,24011
+Carroll,534,54,2020-05-06,Maryland,MD,24013
+Cecil,208,13,2020-05-06,Maryland,MD,24015
+Charles,698,51,2020-05-06,Maryland,MD,24017
+Dorchester,85,2,2020-05-06,Maryland,MD,24019
+Frederick,1151,70,2020-05-06,Maryland,MD,24021
+Garrett,4,0,2020-05-06,Maryland,MD,24023
+Harford,552,22,2020-05-06,Maryland,MD,24025
+Howard,1098,27,2020-05-06,Maryland,MD,24027
+Kent,98,8,2020-05-06,Maryland,MD,24029
+Montgomery,6032,345,2020-05-06,Maryland,MD,24031
+Prince Georges,8516,324,2020-05-06,Maryland,MD,24033
+Queen Annes,68,8,2020-05-06,Maryland,MD,24035
+St Marys,193,8,2020-05-06,Maryland,MD,24037
+Somerset,40,0,2020-05-06,Maryland,MD,24039
+Talbot,52,1,2020-05-06,Maryland,MD,24041
+Washington,260,7,2020-05-06,Maryland,MD,24043
+Wicomico,541,13,2020-05-06,Maryland,MD,24045
+Worcester,96,3,2020-05-06,Maryland,MD,24047
+Data not available,0,95,2020-05-06,Maryland,MD,NA
+Allegany,129,12,2020-05-05,Maryland,MD,24001
+Anne Arundel,2085,108,2020-05-05,Maryland,MD,24003
+Baltimore City,2752,140,2020-05-05,Maryland,MD,24510
+Baltimore County,3527,163,2020-05-05,Maryland,MD,NA
+Calvert,184,11,2020-05-05,Maryland,MD,24009
+Caroline,101,0,2020-05-05,Maryland,MD,24011
+Carroll,521,55,2020-05-05,Maryland,MD,24013
+Cecil,200,13,2020-05-05,Maryland,MD,24015
+Charles,670,52,2020-05-05,Maryland,MD,24017
+Dorchester,79,2,2020-05-05,Maryland,MD,24019
+Frederick,1108,68,2020-05-05,Maryland,MD,24021
+Garrett,4,0,2020-05-05,Maryland,MD,24023
+Harford,532,21,2020-05-05,Maryland,MD,24025
+Howard,1061,25,2020-05-05,Maryland,MD,24027
+Kent,94,8,2020-05-05,Maryland,MD,24029
+Montgomery,5790,333,2020-05-05,Maryland,MD,24031
+Prince Georges,8135,311,2020-05-05,Maryland,MD,24033
+Queen Annes,67,8,2020-05-05,Maryland,MD,24035
+St Marys,186,7,2020-05-05,Maryland,MD,24037
+Somerset,39,0,2020-05-05,Maryland,MD,24039
+Talbot,45,1,2020-05-05,Maryland,MD,24041
+Washington,251,7,2020-05-05,Maryland,MD,24043
+Wicomico,517,11,2020-05-05,Maryland,MD,24045
+Worcester,86,3,2020-05-05,Maryland,MD,24047
+Data not available,0,78,2020-05-05,Maryland,MD,NA
 Allegany,129,12,2020-05-04,Maryland,MD,24001
 Anne Arundel,2045,107,2020-05-04,Maryland,MD,24003
 Baltimore City,2609,133,2020-05-04,Maryland,MD,24510

@@ -124,9 +124,15 @@ WV_ByCounty_Button$getElementText()
 Sys.sleep(5)
 WV_ByCounty_Button$clickElement()
 Sys.sleep(5)
-WV_CountiesDiv <- remDr$findElements(using = "class", value = "tableEx")
+# WV_CountiesDiv <- remDr$findElements(using = "class", value = "tableEx")
+WV_CountiesDiv <- remDr$findElement(using = "class", value = "bodyCells")
 Sys.sleep(5)
-WV_Counties <- WV_CountiesDiv[[1]]$getElementText()
+# WV_Counties <- WV_CountiesDiv[[1]]$getElementText()
+WV_Counties <- WV_CountiesDiv$getElementText()
+
+
+
+
 
 # WV_CountiesDiv <- remDr$findElements(using = "class", value = "textbox")
 # WV_CountiesText <- WV_CountiesDiv[[3]]
@@ -325,8 +331,10 @@ Sys.sleep(10)
 # Get updated total data excel download
 
 ### Using the BOX API to get the full excel sheet ###
+Sys.sleep(10)
 system("rm DCCovid19Data.xlsx")
-system("bash ~/Documents/Bash_Scripts/DC_Covid19_Data.sh")
+Sys.sleep(10)
+system("bash ~/Documents/Bash_Scripts/DC_Covid19_Data.sh") # Written with bash to hid the API
 # remDr$navigate("https://coronavirus.dc.gov/page/coronavirus-data")
 # Sys.sleep(15)
 # dcDataA <- remDr$findElement(using = "xpath", value = "/html/body/div[4]/section/div[2]/div/div/div/div[2]/div/div/article/div[1]/div[1]/div/div/ul[1]/li[5]/a")
@@ -385,14 +393,25 @@ WV_Counties <- WV_Counties %>%
 # WV_Counties <- WV_Counties[[1]][1]
 # WV_Counties %>% str_replace_all("\\s{2,}", "0")
 WV_Counties_Unsplit <- WV_Counties %>% str_split("\\n") %>% unlist()
-WV_Headers <- make.names(str_trim(WV_Counties_Unsplit[1:3]))
-WV_Counties_Values <- WV_Counties_Unsplit[4:length(WV_Counties_Unsplit)]
+#WV_Headers <- make.names(str_trim(WV_Counties_Unsplit[1:3]))
+WV_Headers <- c("County", "Cumulative.Cases", "Deaths")
+# WV_Counties_Values <- WV_Counties_Unsplit[4:length(WV_Counties_Unsplit)]
+
+WV_Counties_Unsplit <- WV_Counties_Unsplit[1:(WV_Counties_Unsplit %>% detect_index(~{str_detect(.x, "Logan")}))]
+WV_Counties_Unsplit <- WV_Counties_Unsplit %>% str_remove("Logan")
+
+
+WV_County_Names <- WV_Counties_Unsplit %>% keep(str_detect, "[[:alpha:]]+") %>% str_trim()
+# WV_Values <- WV_Counties_Unsplit %>% keep(str_detect, "\\d+") %>% str_replace_all("\\s", "0")
+WV_Values <- WV_Counties_Unsplit %>% purrr::discard(str_detect, "[[:alpha:]]+") %>% str_replace_all("\\s", "0")
+
+# WV_County_Names <- WV_County_Names[1:(WV_County_Names %>% detect_index(~{.x == "Lincoln"}))]
 
 # Not elegant but gets the job done
-WV_Values <- WV_Counties_Values %>% str_replace_all("\\s", "0")
-
-WV_Values <- WV_Values %>% keep(str_detect, "\\d+")
-WV_County_Names <- WV_Counties_Values %>% keep(str_detect, "[[:alpha:]]+")
+# WV_Values <- WV_Counties_Values %>% str_replace_all("\\s", "0")
+# 
+# WV_Values <- WV_Values %>% keep(str_detect, "\\d+")
+# WV_County_Names <- WV_Counties_Values %>% keep(str_detect, "[[:alpha:]]+")
 
 for (i in 1:(length(WV_County_Names) * 2 + (length(WV_Values[substring(WV_Values, 1, 1) == "0" & str_length(WV_Values) > 1])))) {
   if (substring(WV_Values[i], 1, 1) == "0" & str_length(WV_Values[i]) > 1) {
@@ -817,7 +836,7 @@ Virginia_Labs <- read_csv("VDH-COVID-19-PublicUseDataset-KeyMeasures-Labs.csv")
 
 Virginia_Labs <- Virginia_Labs %>% rename_all(~(str_replace_all(., " ", "_")))
 
-
+write_csv(Virginia_Labs, "Virginia_Labs.csv")
 
 #  With the new link the Virginia Department of Health put up this is no longer necessary
 #
@@ -897,11 +916,11 @@ All_VA_DMV_Deaths_Today <- Virginia_By_County_Today %>%
   filter(as.character(FIPS) %in% DMV_FIPS) %>% 
   select(County, Deaths, Date, State, Abbr, FIPS)
 
-  # Virginia_DeathsHospitalizations_Today %>% 
-  # mutate(County = str_replace_all(County, "Alexandria", "Alexandria City")) %>% 
-  # left_join(stateConversions, by = c("State" = "Full_Name")) %>% 
-  # left_join(countyStateFIPS, by = c("Abbr" = "State", "County" = "Name")) %>% 
-  # select(County, Deaths, Date, State, Abbr, FIPS)
+# Virginia_DeathsHospitalizations_Today %>% 
+# mutate(County = str_replace_all(County, "Alexandria", "Alexandria City")) %>% 
+# left_join(stateConversions, by = c("State" = "Full_Name")) %>% 
+# left_join(countyStateFIPS, by = c("Abbr" = "State", "County" = "Name")) %>% 
+# select(County, Deaths, Date, State, Abbr, FIPS)
 
 
 # This will be done another later when I have time. I will continue to download the pdfs of it. 
@@ -986,7 +1005,7 @@ All_VA_DMV_Deaths_Today <- Virginia_By_County_Today %>%
 ## Now only need to make the tibble and don't even need the pdf data
 
 Virginia_Totals_Today <- tibble(
-  Tests = sum(Virginia_Labs$Number_of_People_Tested) + 1980,
+  Tests = sum(Virginia_Labs$Number_of_People_Tested) + 1210,
   Deaths = sum(Virginia_By_County_Today$Deaths),
   Hospitalizations = sum(Virginia_By_County_Today$Hospitalizations),
   Date = Sys.Date() - 1,
@@ -1346,10 +1365,9 @@ marylandCounties <- MD_By_County_Today %>%
 dailySummaryToday <- bind_rows(dcSummary, Maryland, marylandCounties, Virginia, virginiaCounties) %>% 
   select(State, County, Cases, Deaths, Tests, Date)
 
-
 # Adding the daily summary to the main file
 dailySummary <- read_csv("covidSummaryDCist.csv")
-dailySummary <- bind_rows(dailySummaryToday, dailySummary)
+dailySummary <- bind_rows(dailySummaryToday, dailySummaryTwoDaysAgo, dailySummary)
 write_csv(dailySummary, "covidSummaryDCist.csv")
 
 # Making daily DMV deaths dataframe
@@ -1359,7 +1377,6 @@ All_DMV_Deaths_Today <- All_DMV_Deaths_Today %>%
   mutate(FIPS = as.character(FIPS)) %>% 
   left_join(stateCountyPops, by = "FIPS") %>% 
   filter(FIPS %in% c("11001", "24033", "24031", "24009", "24021", "51107", "51153", "51059", "51013", "51510", "51600", "51610", "51683", "51685"))
-
 
 All_DMV_Deaths <- read_csv("All_DMV_Deaths.csv", col_types = "cnDccccccccnnn")
 All_DMV_Deaths <- bind_rows(All_DMV_Deaths_Today, All_DMV_Deaths)
@@ -1371,8 +1388,13 @@ write_csv(All_DMV_Deaths, "All_DMV_Deaths.csv")
 Full_States <- read_csv("FullStates.csv")
 
 
-# Adding in today's by county data fro DC, VA, MD, and WV
-Full_States <- bind_rows(Virginia_By_County_Today, MD_By_County_Today, WV_CountiesDFCleaned, DC_By_County, Full_States) %>% 
+# Adding in today's by county data from DC, VA, MD, and WV
+
+Full_States <- bind_rows(Virginia_By_County_Today, 
+                         MD_By_County_Today, 
+                         WV_CountiesDFCleaned, 
+                         DC_By_County,
+                         Full_States) %>% 
   arrange(desc(Date))
 
 
