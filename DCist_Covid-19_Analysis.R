@@ -1,12 +1,3 @@
-### To do:
-# Ask Stack Overflow question about Rselenium download button w firefox profile
-
-# Add in a "percent growth" and a "percent growth per capita" option in the plotly dropdowns
-
-# Charts to add in: 
-# DMV employees by office sick/hospitalized/quarentined
-# Hospitalizations by State (& DC)
-# Cases by Race, Sex, and Age for DC, MD, and VA state-wide.
 library(rvest)
 library(htmltools)
 library(htmlwidgets)
@@ -502,7 +493,7 @@ casesByCounty <- casesByCounty[2:nrow(casesByCounty),] %>%
   mutate(Suspected_Deaths = replace(Suspected_Deaths, is.na(Suspected_Deaths), 0)) %>% 
   mutate(Cases = replace(Cases, is.na(Cases), 0))
   
-
+Sys.sleep(5)
 
 MD_By_County_Today <- casesByCounty %>% 
   mutate(Date = Sys.Date() - 1, State = "Maryland", County = str_remove_all(County, "['\\.]")) %>% 
@@ -537,7 +528,7 @@ All_MD_DMV_Deaths_Today <- MD_By_County_Today %>%
 MD_By_County <- read_csv("MD_By_County.csv")
 MD_By_County <- bind_rows(MD_By_County_Today, MD_By_County)
 write_csv(MD_By_County, "MD_By_County.csv")
-
+Sys.sleep(5)
 # Data cleaning and wrangling
 MD_Summary_Today <- confirmedCasesDeathsHospitalizationsTests %>% 
   str_split("\n") %>%
@@ -564,7 +555,7 @@ MD_Summary <- read_csv("MD_Summary.csv")
 MD_Summary <- bind_rows(MD_Summary_Today, MD_Summary)
 write_csv(MD_Summary, "MD_Summary.csv")
 
-
+Sys.sleep(5)
 # Data cleaning and wrangling. This needed to create a tibble from scratch and then pivot it.
 casesByAgeAndSex <- casesByAgeAndSex[[1]]
 
@@ -628,7 +619,7 @@ MD_By_Sex_Today <- MD_By_Sex_Today %>%
 #   pivot_longer(cols = c("Female", "Male")) %>% 
 #   mutate(Sex = name, Cases = value) %>% 
 #   select(Sex, Cases, Date, State)
-
+Sys.sleep(5)
 # Add in to main file
 MD_By_Sex <- read_csv("MD_By_Sex.csv")
 MD_By_Sex <- bind_rows(MD_By_Sex_Today, MD_By_Sex)
@@ -667,7 +658,7 @@ MD_By_Age <- read_csv("MD_By_Age.csv")
 MD_By_Age <- bind_rows(MD_By_Age_Today, MD_By_Age)
 write_csv(MD_By_Age, "MD_By_Age.csv")
 
-
+Sys.sleep(5)
 ## Doing Maryland by Race
 MD_By_Race_Today <- casesByRace[[1]]
 
@@ -722,7 +713,7 @@ Virginia_By_County_Today <- Virginia_By_County %>%
 # Now I just have to write out the new CSV since the released the backdata and will continue releasing it
 # (hopefully).
 write_csv(Virginia_By_County, "Virginia_By_County.csv")
-
+Sys.sleep(5)
 # Add today's data into main file.
 # Not needed anymore
 # Virginia_By_County <- read_csv("Virginia_By_County.csv")
@@ -787,7 +778,7 @@ Virginia_By_Sex_Today <- Virginia_By_Sex_Health_District_Today %>%
   ungroup() %>% 
   mutate(Date = Sys.Date() - 1, State = "Virginia")
 
-
+Sys.sleep(5)
 # Virginia_By_Sex_Today <- Virginia_By_Sex_Today %>% 
 #   mutate(Date = `Report Date`, Cases = `Number of Cases`, State = "Virginia") %>% 
 #   mutate(Date = mdy(Date) - 1) %>% 
@@ -821,7 +812,7 @@ Virginia_By_Race_Today <- Virginia_By_Race_Health_District_Today %>%
   summarize(Cases = sum(Cases), Hospitalized = sum(Hospitalized), Deaths = sum(Deaths)) %>% 
   ungroup() %>% 
   mutate(Date = Sys.Date() - 1, State = "Virginia")
-
+Sys.sleep(5)
 # Virginia_By_Race_Today <- Virginia_By_Race_Today %>% 
 #   mutate(Date = `Report Date`, Cases = `Number of Cases`, State = "Virginia") %>% 
 #   mutate(Date = mdy(Date) - 1) %>% 
@@ -838,7 +829,7 @@ Virginia_Labs <- read_csv("VDH-COVID-19-PublicUseDataset-KeyMeasures-Labs.csv")
 Virginia_Labs <- Virginia_Labs %>% rename_all(~(str_replace_all(., " ", "_")))
 
 write_csv(Virginia_Labs, "Virginia_Labs.csv")
-
+Sys.sleep(5)
 #  With the new link the Virginia Department of Health put up this is no longer necessary
 #
 #
@@ -1006,7 +997,7 @@ All_VA_DMV_Deaths_Today <- Virginia_By_County_Today %>%
 ## Now only need to make the tibble and don't even need the pdf data
 
 Virginia_Totals_Today <- tibble(
-  Tests = sum(Virginia_Labs$Number_of_People_Tested) + 1283,
+  Tests = sum(Virginia_Labs$Number_of_People_Tested) + 1345,
   Deaths = sum(Virginia_By_County_Today$Deaths),
   Hospitalizations = sum(Virginia_By_County_Today$Hospitalizations),
   Date = Sys.Date() - 1,
@@ -1175,7 +1166,7 @@ dcCovid19ByAgeSexTodayXTab <- dcCovid19ByAgeSexTodayXTab %>%
 dcCovid19ByAgeSexXTab <- read_csv("dcCovid19ByAgeSexXTab.csv")
 dcCovid19ByAgeSexXTab <- bind_rows(dcCovid19ByAgeSexTodayXTab, dcCovid19ByAgeSexXTab)
 write_csv(dcCovid19ByAgeSexXTab, "dcCovid19ByAgeSexXTab.csv")
-
+Sys.sleep(5)
 # Get dataframe of just today's breakout by age and add date and state column
 dcCovid19ByAgeToday <- dcCovid19ByAgeSexToday[2:nrow(dcCovid19ByAgeSexToday),] %>% #dcCovid19ByAgeSexToday[2:nrow(dcCovid19ByAgeSexToday),] %>% 
   mutate(Age_Range = `Patient Age (yrs)`, Cases = as.integer(`Total Positives`), Date = Sys.Date() - 1, State = "District of Columbia", Male = as.integer(Male), Female = as.integer(Female)) %>% 
@@ -1205,7 +1196,7 @@ dcCovid19BySexToday <- dcCovid19BySexToday %>%
 dcCovid19BySex <- read_csv("dcCovid19BySex.csv")
 dcCovid19BySex <- bind_rows(dcCovid19BySexToday, dcCovid19BySex)
 write_csv(dcCovid19BySex, "dcCovid19BySex.csv")
-
+Sys.sleep(5)
 
 # Cleaning the DC by Ward breakout
 # Not needed anymore: dcCovid19ByWardToday <- dcCovid19ByWardToday[[1]]
@@ -1261,7 +1252,7 @@ dcCovid19TestingCases <- dcCovid19DataSummaryToday %>%
 
 # Re-saving the updated Cases/Testing dataframe
 write_csv(dcCovid19TestingCases, "dcCovid19TestingCases.csv")
-
+Sys.sleep(5)
 # Saving the latest day's summary 
 dcSummary <- dcCovid19TestingCases %>%
   mutate(Date = as.Date(Date)) %>% 
@@ -1288,7 +1279,7 @@ All_DC_DMV_Deaths_Today <- dcCovid19TestingCases %>%
   rename(Deaths = Number.of.Deaths) %>% 
   mutate(State = "District of Columbia", County = "District of Columbia", Abbr = "DC", FIPS = 11001) %>% 
   select(County, Deaths, Date, State, Abbr, FIPS)
-
+Sys.sleep(5)
 
 # Cleaning and saving most updated hosptials dataframe
 dcCovid19Hospitals <- dcCovid19DataSummaryToday %>% 
@@ -1370,7 +1361,7 @@ dailySummaryToday <- bind_rows(dcSummary, Maryland, marylandCounties, Virginia, 
 dailySummary <- read_csv("covidSummaryDCist.csv")
 dailySummary <- bind_rows(dailySummaryToday, dailySummary)
 write_csv(dailySummary, "covidSummaryDCist.csv")
-
+Sys.sleep(5)
 # Making daily DMV deaths dataframe
 All_DMV_Deaths_Today <- bind_rows(All_DC_DMV_Deaths_Today, All_MD_DMV_Deaths_Today, All_VA_DMV_Deaths_Today)
 
@@ -1382,7 +1373,7 @@ All_DMV_Deaths_Today <- All_DMV_Deaths_Today %>%
 All_DMV_Deaths <- read_csv("All_DMV_Deaths.csv", col_types = "cnDccccccccnnn")
 All_DMV_Deaths <- bind_rows(All_DMV_Deaths_Today, All_DMV_Deaths)
 write_csv(All_DMV_Deaths, "All_DMV_Deaths.csv")
-
+Sys.sleep(5)
 
 ### This is more expanded data for whole Washington Metro Area combined
 # Read in the cases by county dataframe for all counties in DC, VA, MD, and WV
