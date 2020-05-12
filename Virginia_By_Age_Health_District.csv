@@ -1,4 +1,354 @@
 Date,Health_District,Age_Group,Cases,Hospitalized,Deaths,State
+2020-05-10,Norfolk,0-9,4,0,0,Virginia
+2020-05-10,Cumberland Plateau,40-49,4,0,0,Virginia
+2020-05-10,Eastern Shore,10-19,24,0,0,Virginia
+2020-05-10,Mount Rogers,10-19,10,0,0,Virginia
+2020-05-10,Rappahannock Rapidan,0-9,16,1,0,Virginia
+2020-05-10,Three Rivers,0-9,2,0,0,Virginia
+2020-05-10,Henrico,40-49,145,13,0,Virginia
+2020-05-10,Alexandria,50-59,155,27,7,Virginia
+2020-05-10,Arlington,0-9,14,2,0,Virginia
+2020-05-10,Chickahominy,Missing,1,0,0,Virginia
+2020-05-10,New River,20-29,21,0,0,Virginia
+2020-05-10,Virginia Beach,20-29,59,1,0,Virginia
+2020-05-10,Chesapeake,50-59,66,14,1,Virginia
+2020-05-10,Alleghany,80+,20,6,2,Virginia
+2020-05-10,Fairfax,10-19,218,6,0,Virginia
+2020-05-10,Chesapeake,60-69,50,15,3,Virginia
+2020-05-10,West Piedmont,Missing,0,0,0,Virginia
+2020-05-10,Peninsula,80+,34,22,13,Virginia
+2020-05-10,Crater,40-49,45,10,1,Virginia
+2020-05-10,Chesapeake,40-49,54,9,0,Virginia
+2020-05-10,Thomas Jefferson,20-29,45,0,0,Virginia
+2020-05-10,Lord Fairfax,20-29,110,0,0,Virginia
+2020-05-10,Norfolk,20-29,61,0,0,Virginia
+2020-05-10,Arlington,30-39,252,32,0,Virginia
+2020-05-10,West Piedmont,60-69,14,1,0,Virginia
+2020-05-10,Henrico,50-59,151,19,5,Virginia
+2020-05-10,West Piedmont,50-59,13,1,0,Virginia
+2020-05-10,Cumberland Plateau,20-29,1,0,0,Virginia
+2020-05-10,Alexandria,70-79,70,28,8,Virginia
+2020-05-10,Portsmouth,20-29,26,2,0,Virginia
+2020-05-10,Western Tidewater,30-39,38,1,0,Virginia
+2020-05-10,Central Shenandoah,0-9,20,0,0,Virginia
+2020-05-10,Henrico,80+,226,51,57,Virginia
+2020-05-10,Alexandria,0-9,49,2,0,Virginia
+2020-05-10,Pittsylvania-Danville,40-49,9,4,0,Virginia
+2020-05-10,Henrico,20-29,96,6,0,Virginia
+2020-05-10,Roanoke,60-69,8,1,0,Virginia
+2020-05-10,Peninsula,30-39,51,5,1,Virginia
+2020-05-10,Alleghany,60-69,23,6,0,Virginia
+2020-05-10,Prince William,70-79,125,36,16,Virginia
+2020-05-10,Norfolk,60-69,31,13,1,Virginia
+2020-05-10,Southside,40-49,16,3,0,Virginia
+2020-05-10,Chesterfield,30-39,162,1,0,Virginia
+2020-05-10,Loudoun,70-79,67,25,6,Virginia
+2020-05-10,Central Virginia,40-49,20,0,0,Virginia
+2020-05-10,New River,Missing,0,0,0,Virginia
+2020-05-10,Chickahominy,20-29,33,0,0,Virginia
+2020-05-10,New River,0-9,2,0,0,Virginia
+2020-05-10,Cumberland Plateau,0-9,0,0,0,Virginia
+2020-05-10,Three Rivers,70-79,19,4,2,Virginia
+2020-05-10,Rappahannock Rapidan,40-49,121,5,1,Virginia
+2020-05-10,Hampton,0-9,6,0,0,Virginia
+2020-05-10,Piedmont,50-59,72,6,0,Virginia
+2020-05-10,Rappahannock,20-29,142,7,0,Virginia
+2020-05-10,Chickahominy,40-49,47,7,1,Virginia
+2020-05-10,Three Rivers,80+,20,5,3,Virginia
+2020-05-10,Rappahannock,30-39,162,9,0,Virginia
+2020-05-10,Lord Fairfax,60-69,105,20,5,Virginia
+2020-05-10,Western Tidewater,0-9,3,0,0,Virginia
+2020-05-10,Rappahannock,70-79,21,14,4,Virginia
+2020-05-10,Prince William,80+,95,31,24,Virginia
+2020-05-10,Hampton,80+,3,2,1,Virginia
+2020-05-10,Alexandria,80+,50,19,13,Virginia
+2020-05-10,Mount Rogers,60-69,19,1,0,Virginia
+2020-05-10,Eastern Shore,60-69,102,7,3,Virginia
+2020-05-10,Lord Fairfax,70-79,52,12,5,Virginia
+2020-05-10,New River,30-39,4,0,0,Virginia
+2020-05-10,Chesapeake,10-19,7,0,0,Virginia
+2020-05-10,Hampton,40-49,17,2,0,Virginia
+2020-05-10,Peninsula,Missing,2,0,0,Virginia
+2020-05-10,Henrico,70-79,149,35,30,Virginia
+2020-05-10,Western Tidewater,20-29,30,0,0,Virginia
+2020-05-10,Peninsula,0-9,11,0,0,Virginia
+2020-05-10,Loudoun,40-49,265,14,0,Virginia
+2020-05-10,Pittsylvania-Danville,30-39,7,0,0,Virginia
+2020-05-10,Loudoun,20-29,171,2,0,Virginia
+2020-05-10,Crater,60-69,52,20,8,Virginia
+2020-05-10,Loudoun,80+,107,27,22,Virginia
+2020-05-10,Arlington,80+,133,50,31,Virginia
+2020-05-10,Virginia Beach,10-19,12,0,0,Virginia
+2020-05-10,Mount Rogers,80+,4,4,3,Virginia
+2020-05-10,Eastern Shore,80+,32,9,4,Virginia
+2020-05-10,Crater,10-19,12,0,0,Virginia
+2020-05-10,Lenowisco,30-39,3,1,1,Virginia
+2020-05-10,Norfolk,Missing,3,0,0,Virginia
+2020-05-10,Henrico,Missing,7,0,0,Virginia
+2020-05-10,New River,40-49,13,1,0,Virginia
+2020-05-10,Central Virginia,0-9,3,0,0,Virginia
+2020-05-10,New River,70-79,9,5,1,Virginia
+2020-05-10,Loudoun,0-9,27,0,0,Virginia
+2020-05-10,Central Virginia,70-79,13,4,0,Virginia
+2020-05-10,Southside,0-9,1,0,0,Virginia
+2020-05-10,Three Rivers,40-49,75,6,1,Virginia
+2020-05-10,Chickahominy,30-39,38,0,0,Virginia
+2020-05-10,Central Shenandoah,60-69,140,16,4,Virginia
+2020-05-10,Western Tidewater,60-69,88,10,4,Virginia
+2020-05-10,Cumberland Plateau,30-39,5,0,0,Virginia
+2020-05-10,Portsmouth,10-19,1,0,0,Virginia
+2020-05-10,Chesterfield,Missing,2,0,0,Virginia
+2020-05-10,Alexandria,40-49,246,20,0,Virginia
+2020-05-10,Thomas Jefferson,70-79,44,14,1,Virginia
+2020-05-10,Three Rivers,30-39,64,2,0,Virginia
+2020-05-10,Western Tidewater,70-79,64,17,9,Virginia
+2020-05-10,Arlington,60-69,187,48,9,Virginia
+2020-05-10,Cumberland Plateau,10-19,11,0,0,Virginia
+2020-05-10,West Piedmont,30-39,1,0,0,Virginia
+2020-05-10,Peninsula,10-19,8,1,0,Virginia
+2020-05-10,Crater,Missing,0,0,0,Virginia
+2020-05-10,Arlington,50-59,233,44,2,Virginia
+2020-05-10,Piedmont,70-79,25,11,2,Virginia
+2020-05-10,Alexandria,60-69,106,21,1,Virginia
+2020-05-10,Portsmouth,30-39,55,3,0,Virginia
+2020-05-10,Lenowisco,20-29,6,0,0,Virginia
+2020-05-10,Central Virginia,30-39,26,1,0,Virginia
+2020-05-10,Norfolk,10-19,12,0,0,Virginia
+2020-05-10,New River,10-19,3,0,0,Virginia
+2020-05-10,Central Virginia,20-29,25,1,0,Virginia
+2020-05-10,Rappahannock,50-59,132,24,1,Virginia
+2020-05-10,Rappahannock,60-69,85,32,4,Virginia
+2020-05-10,Piedmont,20-29,58,0,0,Virginia
+2020-05-10,New River,60-69,16,2,0,Virginia
+2020-05-10,Roanoke,40-49,15,0,0,Virginia
+2020-05-10,Three Rivers,20-29,46,1,0,Virginia
+2020-05-10,Rappahannock,40-49,160,22,1,Virginia
+2020-05-10,Portsmouth,80+,13,4,1,Virginia
+2020-05-10,Central Shenandoah,Missing,0,0,0,Virginia
+2020-05-10,Eastern Shore,70-79,34,5,1,Virginia
+2020-05-10,Mount Rogers,70-79,13,6,1,Virginia
+2020-05-10,Cumberland Plateau,70-79,2,0,0,Virginia
+2020-05-10,Piedmont,10-19,3,0,0,Virginia
+2020-05-10,Southside,20-29,20,2,0,Virginia
+2020-05-10,Chesterfield,50-59,134,16,1,Virginia
+2020-05-10,Rappahannock Rapidan,20-29,94,1,0,Virginia
+2020-05-10,Cumberland Plateau,60-69,2,1,0,Virginia
+2020-05-10,Roanoke,70-79,7,2,0,Virginia
+2020-05-10,Central Shenandoah,20-29,182,1,0,Virginia
+2020-05-10,Pittsylvania-Danville,80+,3,2,1,Virginia
+2020-05-10,Virginia Beach,80+,63,18,11,Virginia
+2020-05-10,Central Shenandoah,50-59,204,15,1,Virginia
+2020-05-10,Lenowisco,Missing,0,0,0,Virginia
+2020-05-10,Fairfax,30-39,1184,91,3,Virginia
+2020-05-10,Lenowisco,60-69,5,4,2,Virginia
+2020-05-10,Loudoun,30-39,176,10,0,Virginia
+2020-05-10,West Piedmont,80+,3,1,0,Virginia
+2020-05-10,Roanoke,80+,35,3,1,Virginia
+2020-05-10,Fairfax,40-49,1233,141,4,Virginia
+2020-05-10,Thomas Jefferson,80+,59,19,9,Virginia
+2020-05-10,Roanoke,20-29,10,0,0,Virginia
+2020-05-10,Henrico,60-69,147,24,18,Virginia
+2020-05-10,Lord Fairfax,40-49,105,4,0,Virginia
+2020-05-10,Western Tidewater,Missing,0,0,0,Virginia
+2020-05-10,Chickahominy,60-69,39,13,3,Virginia
+2020-05-10,Chesapeake,20-29,36,3,0,Virginia
+2020-05-10,Three Rivers,Missing,1,0,0,Virginia
+2020-05-10,Henrico,10-19,18,1,0,Virginia
+2020-05-10,Mount Rogers,30-39,35,3,0,Virginia
+2020-05-10,Eastern Shore,30-39,124,2,0,Virginia
+2020-05-10,Chesterfield,0-9,6,0,0,Virginia
+2020-05-10,Central Shenandoah,10-19,45,1,0,Virginia
+2020-05-10,Crater,0-9,3,1,0,Virginia
+2020-05-10,Fairfax,70-79,359,132,42,Virginia
+2020-05-10,Rappahannock,80+,15,9,2,Virginia
+2020-05-10,Alexandria,10-19,74,1,0,Virginia
+2020-05-10,Portsmouth,40-49,34,3,0,Virginia
+2020-05-10,Three Rivers,50-59,41,3,0,Virginia
+2020-05-10,Alleghany,Missing,0,0,0,Virginia
+2020-05-10,Alexandria,30-39,297,17,0,Virginia
+2020-05-10,Southside,Missing,0,0,0,Virginia
+2020-05-10,Portsmouth,60-69,26,8,4,Virginia
+2020-05-10,Roanoke,30-39,14,0,0,Virginia
+2020-05-10,Three Rivers,60-69,51,7,0,Virginia
+2020-05-10,Fairfax,50-59,1072,166,16,Virginia
+2020-05-10,Portsmouth,50-59,37,12,1,Virginia
+2020-05-10,Chickahominy,80+,45,22,16,Virginia
+2020-05-10,Rappahannock Rapidan,50-59,72,9,0,Virginia
+2020-05-10,Fairfax,80+,479,181,154,Virginia
+2020-05-10,Hampton,Missing,0,0,0,Virginia
+2020-05-10,Cumberland Plateau,80+,0,0,0,Virginia
+2020-05-10,Alleghany,50-59,34,4,0,Virginia
+2020-05-10,Prince William,40-49,782,65,2,Virginia
+2020-05-10,Fairfax,Missing,23,1,0,Virginia
+2020-05-10,Virginia Beach,40-49,73,13,1,Virginia
+2020-05-10,Richmond,Missing,0,0,0,Virginia
+2020-05-10,Norfolk,40-49,56,8,0,Virginia
+2020-05-10,Piedmont,80+,11,2,1,Virginia
+2020-05-10,Virginia Beach,60-69,82,13,1,Virginia
+2020-05-10,West Piedmont,40-49,11,0,0,Virginia
+2020-05-10,Arlington,10-19,34,5,0,Virginia
+2020-05-10,Lenowisco,0-9,4,0,0,Virginia
+2020-05-10,Pittsylvania-Danville,50-59,12,5,0,Virginia
+2020-05-10,Virginia Beach,50-59,81,12,0,Virginia
+2020-05-10,Chesapeake,Missing,0,0,0,Virginia
+2020-05-10,Central Shenandoah,80+,65,9,10,Virginia
+2020-05-10,Thomas Jefferson,40-49,40,5,0,Virginia
+2020-05-10,Rappahannock Rapidan,60-69,44,8,1,Virginia
+2020-05-10,Norfolk,30-39,65,5,0,Virginia
+2020-05-10,Rappahannock Rapidan,Missing,1,0,0,Virginia
+2020-05-10,Lord Fairfax,80+,52,13,10,Virginia
+2020-05-10,Three Rivers,10-19,8,0,0,Virginia
+2020-05-10,Piedmont,40-49,72,3,0,Virginia
+2020-05-10,Norfolk,80+,8,6,3,Virginia
+2020-05-10,Peninsula,20-29,39,1,0,Virginia
+2020-05-10,Norfolk,50-59,53,7,0,Virginia
+2020-05-10,Thomas Jefferson,50-59,54,9,1,Virginia
+2020-05-10,Richmond,70-79,32,17,6,Virginia
+2020-05-10,Chesterfield,70-79,63,12,5,Virginia
+2020-05-10,Piedmont,30-39,74,0,0,Virginia
+2020-05-10,Prince William,30-39,687,37,1,Virginia
+2020-05-10,Alleghany,20-29,26,1,0,Virginia
+2020-05-10,Alleghany,0-9,0,0,0,Virginia
+2020-05-10,Mount Rogers,40-49,29,0,0,Virginia
+2020-05-10,Eastern Shore,40-49,131,3,1,Virginia
+2020-05-10,Central Virginia,60-69,29,3,1,Virginia
+2020-05-10,Richmond,10-19,14,1,0,Virginia
+2020-05-10,Pittsylvania-Danville,60-69,8,4,1,Virginia
+2020-05-10,Pittsylvania-Danville,Missing,0,0,0,Virginia
+2020-05-10,Chesterfield,60-69,100,17,8,Virginia
+2020-05-10,Southside,10-19,3,0,0,Virginia
+2020-05-10,New River,80+,4,2,0,Virginia
+2020-05-10,Central Virginia,50-59,27,1,1,Virginia
+2020-05-10,Hampton,70-79,11,6,0,Virginia
+2020-05-10,Pittsylvania-Danville,10-19,1,0,0,Virginia
+2020-05-10,Richmond,60-69,83,27,5,Virginia
+2020-05-10,Virginia Beach,0-9,2,0,0,Virginia
+2020-05-10,Lenowisco,50-59,13,5,0,Virginia
+2020-05-10,Chesapeake,70-79,32,15,0,Virginia
+2020-05-10,Western Tidewater,80+,113,19,11,Virginia
+2020-05-10,Thomas Jefferson,10-19,7,0,0,Virginia
+2020-05-10,Richmond,40-49,107,9,0,Virginia
+2020-05-10,Lord Fairfax,50-59,141,7,1,Virginia
+2020-05-10,Lord Fairfax,10-19,31,0,0,Virginia
+2020-05-10,Rappahannock Rapidan,10-19,34,0,0,Virginia
+2020-05-10,Crater,50-59,50,14,1,Virginia
+2020-05-10,Arlington,Missing,1,0,0,Virginia
+2020-05-10,Roanoke,50-59,13,1,0,Virginia
+2020-05-10,Rappahannock,10-19,44,0,0,Virginia
+2020-05-10,Roanoke,10-19,0,0,0,Virginia
+2020-05-10,Eastern Shore,Missing,0,0,0,Virginia
+2020-05-10,Mount Rogers,Missing,0,0,0,Virginia
+2020-05-10,Prince William,60-69,350,60,11,Virginia
+2020-05-10,Alleghany,70-79,17,3,1,Virginia
+2020-05-10,Crater,20-29,40,5,0,Virginia
+2020-05-10,Loudoun,60-69,109,18,1,Virginia
+2020-05-10,Fairfax,0-9,112,5,0,Virginia
+2020-05-10,Roanoke,Missing,4,0,0,Virginia
+2020-05-10,Alexandria,20-29,176,4,1,Virginia
+2020-05-10,Portsmouth,70-79,15,5,2,Virginia
+2020-05-10,Alleghany,30-39,13,2,0,Virginia
+2020-05-10,Prince William,20-29,591,25,0,Virginia
+2020-05-10,Southside,70-79,28,8,4,Virginia
+2020-05-10,Piedmont,Missing,0,0,0,Virginia
+2020-05-10,Rappahannock,0-9,16,1,0,Virginia
+2020-05-10,Henrico,30-39,119,3,0,Virginia
+2020-05-10,Prince William,10-19,169,3,0,Virginia
+2020-05-10,Chickahominy,10-19,6,0,0,Virginia
+2020-05-10,Lord Fairfax,0-9,14,0,0,Virginia
+2020-05-10,Central Virginia,Missing,0,0,0,Virginia
+2020-05-10,Fairfax,60-69,726,193,30,Virginia
+2020-05-10,Hampton,20-29,27,1,0,Virginia
+2020-05-10,Central Shenandoah,40-49,187,2,0,Virginia
+2020-05-10,Pittsylvania-Danville,0-9,1,0,0,Virginia
+2020-05-10,Crater,30-39,39,1,0,Virginia
+2020-05-10,Virginia Beach,70-79,48,22,4,Virginia
+2020-05-10,Virginia Beach,30-39,77,6,0,Virginia
+2020-05-10,Piedmont,0-9,1,0,0,Virginia
+2020-05-10,Central Shenandoah,30-39,164,4,0,Virginia
+2020-05-10,Hampton,50-59,30,8,1,Virginia
+2020-05-10,Peninsula,70-79,71,36,10,Virginia
+2020-05-10,Arlington,20-29,197,17,0,Virginia
+2020-05-10,West Piedmont,70-79,9,5,1,Virginia
+2020-05-10,Richmond,20-29,89,5,0,Virginia
+2020-05-10,Roanoke,0-9,0,0,0,Virginia
+2020-05-10,Hampton,30-39,26,2,0,Virginia
+2020-05-10,Thomas Jefferson,30-39,52,2,0,Virginia
+2020-05-10,Western Tidewater,40-49,64,3,0,Virginia
+2020-05-10,Richmond,50-59,91,16,0,Virginia
+2020-05-10,Western Tidewater,50-59,82,5,0,Virginia
+2020-05-10,West Piedmont,20-29,6,0,0,Virginia
+2020-05-10,Arlington,70-79,128,51,16,Virginia
+2020-05-10,Chickahominy,50-59,61,12,0,Virginia
+2020-05-10,Alleghany,40-49,17,0,0,Virginia
+2020-05-10,Prince William,50-59,648,80,4,Virginia
+2020-05-10,Mount Rogers,0-9,11,1,0,Virginia
+2020-05-10,Eastern Shore,0-9,9,0,0,Virginia
+2020-05-10,Thomas Jefferson,60-69,45,12,2,Virginia
+2020-05-10,Pittsylvania-Danville,70-79,9,6,0,Virginia
+2020-05-10,Chesterfield,80+,90,11,16,Virginia
+2020-05-10,Richmond,0-9,13,2,0,Virginia
+2020-05-10,Chesapeake,80+,30,10,5,Virginia
+2020-05-10,Peninsula,40-49,53,3,1,Virginia
+2020-05-10,Henrico,0-9,25,0,0,Virginia
+2020-05-10,Lenowisco,80+,0,0,0,Virginia
+2020-05-10,Piedmont,60-69,57,7,1,Virginia
+2020-05-10,West Piedmont,0-9,0,0,0,Virginia
+2020-05-10,Rappahannock Rapidan,70-79,19,5,3,Virginia
+2020-05-10,Central Shenandoah,70-79,63,13,9,Virginia
+2020-05-10,Chesapeake,30-39,58,3,0,Virginia
+2020-05-10,Chickahominy,0-9,1,0,0,Virginia
+2020-05-10,Prince William,0-9,84,2,0,Virginia
+2020-05-10,Eastern Shore,50-59,155,5,3,Virginia
+2020-05-10,Mount Rogers,50-59,29,2,0,Virginia
+2020-05-10,Loudoun,10-19,45,0,0,Virginia
+2020-05-10,Southside,80+,42,4,5,Virginia
+2020-05-10,Central Virginia,80+,5,2,0,Virginia
+2020-05-10,Rappahannock,Missing,5,0,0,Virginia
+2020-05-10,Rappahannock Rapidan,30-39,120,7,1,Virginia
+2020-05-10,New River,50-59,17,2,0,Virginia
+2020-05-10,Richmond,80+,22,9,7,Virginia
+2020-05-10,Mount Rogers,20-29,32,0,0,Virginia
+2020-05-10,Eastern Shore,20-29,83,1,0,Virginia
+2020-05-10,Hampton,10-19,6,0,0,Virginia
+2020-05-10,Portsmouth,0-9,1,1,0,Virginia
+2020-05-10,Crater,70-79,35,13,4,Virginia
+2020-05-10,Chesterfield,40-49,161,6,2,Virginia
+2020-05-10,Alexandria,Missing,1,0,0,Virginia
+2020-05-10,Southside,30-39,15,0,0,Virginia
+2020-05-10,Prince William,Missing,23,0,0,Virginia
+2020-05-10,Hampton,60-69,20,8,1,Virginia
+2020-05-10,Fairfax,20-29,870,45,1,Virginia
+2020-05-10,Thomas Jefferson,0-9,5,1,0,Virginia
+2020-05-10,Lenowisco,40-49,4,1,0,Virginia
+2020-05-10,Central Virginia,10-19,10,1,0,Virginia
+2020-05-10,Lenowisco,70-79,4,3,0,Virginia
+2020-05-10,Lenowisco,10-19,2,0,0,Virginia
+2020-05-10,Chesapeake,0-9,7,1,0,Virginia
+2020-05-10,Peninsula,50-59,82,15,2,Virginia
+2020-05-10,Cumberland Plateau,Missing,0,0,0,Virginia
+2020-05-10,Peninsula,60-69,92,25,3,Virginia
+2020-05-10,Lord Fairfax,30-39,102,6,0,Virginia
+2020-05-10,Virginia Beach,Missing,8,0,0,Virginia
+2020-05-10,Arlington,40-49,220,37,2,Virginia
+2020-05-10,West Piedmont,10-19,2,0,0,Virginia
+2020-05-10,Chickahominy,70-79,28,11,3,Virginia
+2020-05-10,Pittsylvania-Danville,20-29,6,0,0,Virginia
+2020-05-10,Loudoun,50-59,227,20,1,Virginia
+2020-05-10,Richmond,30-39,95,6,0,Virginia
+2020-05-10,Thomas Jefferson,Missing,0,0,0,Virginia
+2020-05-10,Rappahannock Rapidan,80+,13,7,4,Virginia
+2020-05-10,Lord Fairfax,Missing,1,0,0,Virginia
+2020-05-10,Cumberland Plateau,50-59,4,1,0,Virginia
+2020-05-10,Loudoun,Missing,1,0,0,Virginia
+2020-05-10,Southside,50-59,26,5,0,Virginia
+2020-05-10,Chesterfield,20-29,101,3,0,Virginia
+2020-05-10,Norfolk,70-79,15,11,1,Virginia
+2020-05-10,Alleghany,10-19,2,0,0,Virginia
+2020-05-10,Crater,80+,19,5,0,Virginia
+2020-05-10,Portsmouth,Missing,0,0,0,Virginia
+2020-05-10,Western Tidewater,10-19,3,0,0,Virginia
+2020-05-10,Chesterfield,10-19,54,0,0,Virginia
+2020-05-10,Southside,60-69,24,7,1,Virginia
 2020-05-09,Norfolk,0-9,4,0,0,Virginia
 2020-05-09,Cumberland Plateau,40-49,4,0,0,Virginia
 2020-05-09,Eastern Shore,10-19,21,0,0,Virginia
