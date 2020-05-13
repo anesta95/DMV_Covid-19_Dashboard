@@ -1,4 +1,14 @@
 Age_Range,Cases,Deaths,Date,State
+0-9,635,0,2020-05-12,Maryland
+10-19,1238,0,2020-05-12,Maryland
+20-29,4517,11,2020-05-12,Maryland
+30-39,6236,23,2020-05-12,Maryland
+40-49,6282,49,2020-05-12,Maryland
+50-59,5898,123,2020-05-12,Maryland
+60-69,4394,274,2020-05-12,Maryland
+70-79,2912,433,2020-05-12,Maryland
+80+,2700,804,2020-05-12,Maryland
+Data not available,0,92,2020-05-12,Maryland
 0-9,608,0,2020-05-11,Maryland
 10-19,1183,0,2020-05-11,Maryland
 20-29,4399,11,2020-05-11,Maryland
