@@ -688,7 +688,7 @@ Sys.sleep(5)
 
 #### Virginia Analysis 
 # Read in and clean cases and deaths by county file. Include state abbreviation and FIPS code column
-Virginia_By_County_Today <- read_csv("VDH-COVID-19-PublicUseDataset-Cases.csv")
+Virginia_By_County_Raw <- read_csv("VDH-COVID-19-PublicUseDataset-Cases.csv")
 Virginia_DeathsHospitalizations_Today <- read_csv("VDH-COVID-19-PublicUseDataset-Cases_By-District-Death-Hospitalization.csv")
 
 Virginia_DeathsHospitalizations_Today <- Virginia_DeathsHospitalizations_Today %>% 
@@ -699,19 +699,22 @@ Virginia_DeathsHospitalizations <- read_csv("Virginia_DeathsHospitalizations.csv
 Virginia_DeathsHospitalizations <- bind_rows(Virginia_DeathsHospitalizations_Today, Virginia_DeathsHospitalizations)
 write_csv(Virginia_DeathsHospitalizations, "Virginia_DeathsHospitalizations.csv")
 
-Virginia_By_County <- Virginia_By_County_Today %>% 
+Virginia_By_County_Today <- Virginia_By_County_Raw %>% 
   rename(County = Locality, Date = `Report Date`, Cases = `Total Cases`) %>% 
   mutate(State = "Virginia", Date = mdy(Date) - 1) %>% 
   left_join(stateConversions, by = c("State" = "Full_Name")) %>%
   #left_join(select(Virginia_DeathsHospitalizations_Today, County, Hospitalizations, Deaths), by = c("County")) %>% 
   dplyr::select(County, Cases, Hospitalizations, Deaths, Date, State, Abbr, FIPS) %>% 
+  filter(Date == max(Date)) %>% 
   arrange(desc(Date))
 
-Virginia_By_County_Today <- Virginia_By_County %>% 
-  filter(Date == max(Date))
+
+  
 
 # Now I just have to write out the new CSV since the released the backdata and will continue releasing it
 # (hopefully).
+Virginia_By_County <- read_csv("Virginia_By_County.csv")
+Virginia_By_County <- bind_rows(Virginia_By_County_Today, Virginia_By_County)
 write_csv(Virginia_By_County, "Virginia_By_County.csv")
 Sys.sleep(5)
 # Add today's data into main file.
@@ -824,7 +827,7 @@ Virginia_By_Race <- bind_rows(Virginia_By_Race_Today, Virginia_By_Race)
 write_csv(Virginia_By_Race, "Virginia_By_Race.csv")
 
 
-Virginia_Labs <- read_csv("VDH-COVID-19-PublicUseDataset-KeyMeasures-Labs.csv")
+Virginia_Labs <- read_csv("VDH-COVID-19-PublicUseDataset-ZIPCode.csv")
 
 Virginia_Labs <- Virginia_Labs %>% rename_all(~(str_replace_all(., " ", "_")))
 
@@ -997,7 +1000,7 @@ All_VA_DMV_Deaths_Today <- Virginia_By_County_Today %>%
 ## Now only need to make the tibble and don't even need the pdf data
 
 Virginia_Totals_Today <- tibble(
-  Tests = sum(Virginia_Labs$Number_of_People_Tested) + 1491,
+  Tests = sum(Virginia_Labs$Number_of_Testing_Encounters),
   Deaths = sum(Virginia_By_County_Today$Deaths),
   Hospitalizations = sum(Virginia_By_County_Today$Hospitalizations),
   Date = Sys.Date() - 1,
@@ -2055,7 +2058,7 @@ dmvChloropleth <- leaflet(DMV_Cases) %>%
     }"
   )
 
-Sys.sleep(5)
+Sys.sleep(15)
 setwd("/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19")
 Sys.sleep(15)
 mapshot(dmvChloropleth, url = "dmvChloropleth.html")
@@ -2464,7 +2467,7 @@ Sys.sleep(15)
 #### DC Hospital Data ####
 
 dcCovid19Hospitals <- dcCovid19Hospitals %>% 
-  filter(Resource != "Ventilators free")
+  filter(Resource %in% c("ICU beds available", "Ventilators free"))
   
 dcCovidHospitalLinePlotlyGraph <- plot_ly(data = dcCovid19Hospitals, x = ~Date) %>% 
   add_trace(y = ~Units,
