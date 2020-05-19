@@ -827,7 +827,7 @@ Virginia_By_Race <- bind_rows(Virginia_By_Race_Today, Virginia_By_Race)
 write_csv(Virginia_By_Race, "Virginia_By_Race.csv")
 
 
-Virginia_Labs <- read_csv("VDH-COVID-19-PublicUseDataset-ZIPCode.csv")
+Virginia_Labs <- read_csv("VDH-COVID-19-PublicUseDataset-Tests_by-LabReportDate.csv")
 
 Virginia_Labs <- Virginia_Labs %>% rename_all(~(str_replace_all(., " ", "_")))
 
@@ -1000,7 +1000,7 @@ All_VA_DMV_Deaths_Today <- Virginia_By_County_Today %>%
 ## Now only need to make the tibble and don't even need the pdf data
 
 Virginia_Totals_Today <- tibble(
-  Tests = sum(Virginia_Labs$Number_of_Testing_Encounters),
+  Tests = sum(Virginia_Labs$Total_Number_of_Testing_Encounters),
   Deaths = sum(Virginia_By_County_Today$Deaths),
   Hospitalizations = sum(Virginia_By_County_Today$Hospitalizations),
   Date = Sys.Date() - 1,
