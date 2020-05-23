@@ -109,18 +109,35 @@ Sys.sleep(15)
 
 All_WV_Buttons <- remDr$findElements(using = "tag name", value = "button")
 Sys.sleep(5)
-WV_ByCounty_Button <- All_WV_Buttons[[2]]
+WV_ByCounty_Button <- All_WV_Buttons[[1]]
 Sys.sleep(5)
 WV_ByCounty_Button$getElementText()
 Sys.sleep(5)
 WV_ByCounty_Button$clickElement()
 Sys.sleep(5)
+WV_CountyPage_Buttons <- remDr$findElements(using = "tag name", value = "button")
+Sys.sleep(5)
+WV_ByCounty_TableFormat_Button <- WV_CountyPage_Buttons[[16]]
+Sys.sleep(5)
+WV_ByCounty_TableFormat_Button$getElementText()
+Sys.sleep(5)
+WV_ByCounty_TableFormat_Button$clickElement()
+Sys.sleep(5)
+# WV_CountiesDiv <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[1]/transform/div/div[3]/div/visual-modern/div/div/div[2]/div[1]")
+Sys.sleep(5)
+# WV_Counties <- WV_CountiesDiv$getElementText()
+# WV_CountiesDiv2 <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[1]/transform/div/div[3]/div/visual-modern/div/div/div[2]")
+# WV_CountiesDiv2$getElementText()
+WV_CountiesDivs <- remDr$findElements(using = "class", value = "tableEx")
+WV_Counties <- WV_CountiesDivs[[1]]$getElementText()
+
+
 # WV_CountiesDiv <- remDr$findElements(using = "class", value = "tableEx")
 # WV_CountiesDiv <- remDr$findElement(using = "class", value = "bodyCells")
-WV_CountiesDiv <- remDr$findElement(using = "class", value = "innerContainer")
+# WV_CountiesDiv <- remDr$findElement(using = "class", value = "innerContainer")
 Sys.sleep(5)
 # WV_Counties <- WV_CountiesDiv[[1]]$getElementText()
-WV_Counties <- WV_CountiesDiv$getElementText()
+# WV_Counties <- WV_CountiesDiv$getElementText()
 
 
 
@@ -382,70 +399,105 @@ Sys.sleep(5)
 WV_Counties <- WV_Counties %>% 
   unlist()
 
-# WV_Counties <- WV_Counties[[1]][1]
-# WV_Counties %>% str_replace_all("\\s{2,}", "0")
-WV_Counties_Unsplit <- WV_Counties %>% str_split("\\n") %>% unlist()
-WV_Headers <- make.names(str_trim(WV_Counties_Unsplit[1:3]))
-# WV_Headers <- c("County", "Cumulative.Cases", "Deaths")
-WV_Counties_Values <- WV_Counties_Unsplit[4:length(WV_Counties_Unsplit)]
+# WV_Counties %>% str_replace_all("\\s", "0\n") %>% str_split("\\n")
+WV_Counties_All <- WV_Counties %>% str_split("\\n") %>% unlist()
+WV_Headers <- WV_Counties_All[1:6] %>% str_trim()
+WV_County_Names_Date <- WV_Counties_All[7:length(WV_Counties_All)]
 
-# WV_Counties_Unsplit <- WV_Counties_Unsplit[1:(WV_Counties_Unsplit %>% detect_index(~{str_detect(.x, "Logan")}))]
-# WV_Counties_Unsplit <- WV_Counties_Unsplit %>% str_remove("Logan")
+WV_County_Names <- WV_County_Names_Date %>% keep(str_detect, "[[:alpha:]]") %>% str_trim()
+WV_County_Data <- WV_County_Names_Date %>% discard(str_detect, "[[:alpha:]]")
 
+WV_County_Data_Cleaned <- WV_County_Data %>% 
+  str_replace_all("\\s", "0\n") %>% 
+  str_split("\\n") %>% 
+  flatten_chr() %>% 
+  stringi::stri_remove_empty()
 
-# WV_County_Names <- WV_Counties_Unsplit %>% keep(str_detect, "[[:alpha:]]+") %>% str_trim()
-# WV_Values <- WV_Counties_Unsplit %>% keep(str_detect, "\\d+") %>% str_replace_all("\\s", "0")
-# WV_Values <- WV_Counties_Unsplit %>% purrr::discard(str_detect, "[[:alpha:]]+") %>% str_replace_all("\\s", "0")
+WV_County_Data_Cleaned <- WV_County_Data_Cleaned[2:length(WV_County_Data_Cleaned)]
 
-# WV_County_Names <- WV_County_Names[1:(WV_County_Names %>% detect_index(~{.x == "Lincoln"}))]
-
-# Not elegant but gets the job done
-WV_Values <- WV_Counties_Values %>% str_replace_all("\\s", "0")
-
-WV_Values <- WV_Values %>% keep(str_detect, "\\d+")
-WV_County_Names <- WV_Counties_Values %>% keep(str_detect, "[[:alpha:]]+")
-
-for (i in 1:(length(WV_County_Names) * 2 + (length(WV_Values[substring(WV_Values, 1, 1) == "0" & str_length(WV_Values) > 1])))) {
-  if (substring(WV_Values[i], 1, 1) == "0" & str_length(WV_Values[i]) > 1) {
-    WV_Values <- append(WV_Values, unlist(strsplit(WV_Values[i], "")), after = i)
-  }
-}
+WV_CountiesDFCleaned <- tibble(
+  County = WV_County_Names,
+  Tests = as.integer(c(WV_County_Data_Cleaned[1:19], WV_County_Data_Cleaned[100:119], WV_County_Data_Cleaned[196:211])),
+  Cases = as.integer(c(WV_County_Data_Cleaned[21:39], WV_County_Data_Cleaned[120:139], WV_County_Data_Cleaned[212:227])),
+  Probable_Cases = as.integer(c(WV_County_Data_Cleaned[41:59], WV_County_Data_Cleaned[140:159], WV_County_Data_Cleaned[228:243])),
+  Recovered = as.integer(c(WV_County_Data_Cleaned[61:79], WV_County_Data_Cleaned[160:179], WV_County_Data_Cleaned[244:259])),
+  Deaths = as.integer(c(WV_County_Data_Cleaned[81:99], WV_County_Data_Cleaned[180:195], WV_County_Data_Cleaned[20], WV_County_Data_Cleaned[40], WV_County_Data_Cleaned[60], WV_County_Data_Cleaned[80], WV_County_Data_Cleaned[260:275]))
+)
 
 
-
-for (i in seq_along(WV_Values)) {
-  if (substring(WV_Values[i], 1, 1) == "0" & str_length(WV_Values[i]) > 1) {
-    WV_Values[i] <- NA
-  }
-}
-
-WV_Cases_Deaths <- WV_Values[!is.na(WV_Values)]
-
-WV_Cases <- WV_Cases_Deaths[1:length(WV_County_Names)]
-WV_Deaths <- WV_Cases_Deaths[(length(WV_County_Names) + 1):length(WV_Cases_Deaths)]
-
-
-# WV_Values_Test <- WV_Counties_Values %>% 
-#   map_dbl(possibly(function(x) {
-#    as.double(x) 
-#   }, otherwise = NA_real_
-#   )
-#   )
-# 
-# WV_Values <- WV_Values_Test[!is.na(WV_Values_Test)]
+## They changed the crappy powerbi dashboard again...
+# for (i in 1:(length(WV_County_Names) * 2 + (length(WV_County_Data[substring(WV_County_Data, 1, 1) == "0" & str_length(WV_County_Data) > 1])))) {
+#   if (substring(WV_County_Data[i], 1, 1) == "0" & str_length(WV_County_Data[i]) > 1) {
+#     WV_County_Data <- append(WV_County_Data, unlist(strsplit(WV_County_Data[i], "")), after = i)
+#   }
+# }
 # 
 # 
-# WV_County_Names_Test <- WV_Counties_Values %>% 
-#   map_lgl(possibly(function(x) {
-#     str_detect(x, "[[:alpha:]]+")#str_extract_all(x, "[[:alpha:]]+")
-#   }, otherwise = NA))
+# 
+# # WV_Counties <- WV_Counties[[1]][1]
+# # WV_Counties %>% str_replace_all("\\s{2,}", "0")
+# WV_Counties_Unsplit <- WV_Counties %>% str_split("\\n") %>% unlist()
+# WV_Headers <- make.names(str_trim(WV_Counties_Unsplit[1:3]))
+# # WV_Headers <- c("County", "Cumulative.Cases", "Deaths")
+# WV_Counties_Values <- WV_Counties_Unsplit[4:length(WV_Counties_Unsplit)]
+# 
+# # WV_Counties_Unsplit <- WV_Counties_Unsplit[1:(WV_Counties_Unsplit %>% detect_index(~{str_detect(.x, "Logan")}))]
+# # WV_Counties_Unsplit <- WV_Counties_Unsplit %>% str_remove("Logan")
 # 
 # 
-# WV_County_Names <- WV_Counties_Values[WV_County_Names_Test]
-
-WV_CountiesDFCleaned <- tibble(WV_County_Names, WV_Cases, WV_Deaths)
-
-colnames(WV_CountiesDFCleaned) <- WV_Headers
+# # WV_County_Names <- WV_Counties_Unsplit %>% keep(str_detect, "[[:alpha:]]+") %>% str_trim()
+# # WV_Values <- WV_Counties_Unsplit %>% keep(str_detect, "\\d+") %>% str_replace_all("\\s", "0")
+# # WV_Values <- WV_Counties_Unsplit %>% purrr::discard(str_detect, "[[:alpha:]]+") %>% str_replace_all("\\s", "0")
+# 
+# # WV_County_Names <- WV_County_Names[1:(WV_County_Names %>% detect_index(~{.x == "Lincoln"}))]
+# 
+# # Not elegant but gets the job done
+# WV_Values <- WV_Counties_Values %>% str_replace_all("\\s", "0")
+# 
+# WV_Values <- WV_Values %>% keep(str_detect, "\\d+")
+# WV_County_Names <- WV_Counties_Values %>% keep(str_detect, "[[:alpha:]]+")
+# 
+# for (i in 1:(length(WV_County_Names) * 2 + (length(WV_Values[substring(WV_Values, 1, 1) == "0" & str_length(WV_Values) > 1])))) {
+#   if (substring(WV_Values[i], 1, 1) == "0" & str_length(WV_Values[i]) > 1) {
+#     WV_Values <- append(WV_Values, unlist(strsplit(WV_Values[i], "")), after = i)
+#   }
+# }
+# 
+# 
+# 
+# for (i in seq_along(WV_Values)) {
+#   if (substring(WV_Values[i], 1, 1) == "0" & str_length(WV_Values[i]) > 1) {
+#     WV_Values[i] <- NA
+#   }
+# }
+# 
+# WV_Cases_Deaths <- WV_Values[!is.na(WV_Values)]
+# 
+# WV_Cases <- WV_Cases_Deaths[1:length(WV_County_Names)]
+# WV_Deaths <- WV_Cases_Deaths[(length(WV_County_Names) + 1):length(WV_Cases_Deaths)]
+# 
+# 
+# # WV_Values_Test <- WV_Counties_Values %>% 
+# #   map_dbl(possibly(function(x) {
+# #    as.double(x) 
+# #   }, otherwise = NA_real_
+# #   )
+# #   )
+# # 
+# # WV_Values <- WV_Values_Test[!is.na(WV_Values_Test)]
+# # 
+# # 
+# # WV_County_Names_Test <- WV_Counties_Values %>% 
+# #   map_lgl(possibly(function(x) {
+# #     str_detect(x, "[[:alpha:]]+")#str_extract_all(x, "[[:alpha:]]+")
+# #   }, otherwise = NA))
+# # 
+# # 
+# # WV_County_Names <- WV_Counties_Values[WV_County_Names_Test]
+# 
+# WV_CountiesDFCleaned <- tibble(WV_County_Names, WV_Cases, WV_Deaths)
+# 
+# colnames(WV_CountiesDFCleaned) <- WV_Headers
 
 
 # This is not needed anymore after county breakout total was moved to a different format and location
@@ -467,10 +519,10 @@ WV_CountiesDFCleaned$Date <- Sys.Date() - 1
 WV_CountiesDFCleaned$State <- "West Virginia"
 # Joining in state abbreviation and FIPS code columns
 WV_CountiesDFCleaned <- WV_CountiesDFCleaned %>% 
-  mutate(Cases = as.integer(Cumulative.Cases), Deaths = as.integer(Deaths)) %>% 
+  mutate(Cases = Cases + Probable_Cases) %>% 
   left_join(stateConversions, by = c("State" = "Full_Name")) %>% 
   left_join(countyStateFIPS, by = c("Abbr" = "State", "County" = "Name")) %>% 
-  dplyr::select(County, Cases, Deaths, Date, State, Abbr, FIPS)
+  dplyr::select(County, Cases, Deaths, Recovered, Tests, Date, State, Abbr, FIPS)
 # Adding into main file
 WV_Counties <- read_csv("WV_Counties.csv")
 WV_Counties <- bind_rows(WV_CountiesDFCleaned, WV_Counties)
@@ -1149,19 +1201,20 @@ Sys.sleep(5)
 # dcCovid19ByAgeSexToday <- dcCovid19ByAgeSexToday[3:nrow(dcCovid19ByAgeSexToday),]
 
 dcCovid19ByWardToday <- read_excel("DCCovid19Data.xlsx", sheet = "Total Cases by Ward")
-dcCovid19ByAgeSexToday <- read_excel("DCCovid19Data.xlsx", sheet = "Total Cases by Age and Gender")
+dcCovid19ByAgeSexToday <- read_excel("DCCovid19Data.xlsx", sheet = "Total Cases by Age and Gender", n_max = 12)
 dcCovid19DeathsByWardToday <- read_excel("DCCovid19Data.xlsx", sheet = "Lives Lost by Ward")
 
 dcCovid19ByAgeSexTodayXTab <- dcCovid19ByAgeSexToday %>% 
-  mutate(Date = Sys.Date() - 1, State = "District of Columbia", Cases = as.integer(`Total Positives`), Age_Range = `Patient Age (yrs)`, Male = as.integer(Male), Female = as.integer(Female))
+  mutate(Date = Sys.Date() - 1, State = "District of Columbia", Cases = as.integer(`Total Positives`), Age_Range = `Patient Age (Yrs)`, Male = as.integer(Male), Female = as.integer(Female))
 
-if ("Unknown" %in% names(dcCovid19ByAgeSexTodayXTab)) {
-  dcCovid19ByAgeSexTodayXTab$Unknown = as.integer(dcCovid19ByAgeSexTodayXTab$Unknown)
+if ("Other/Unknown" %in% names(dcCovid19ByAgeSexTodayXTab)) {
+  dcCovid19ByAgeSexTodayXTab$`Other/Unknown` = as.integer(dcCovid19ByAgeSexTodayXTab$`Other/Unknown`)
 } else {
-  dcCovid19ByAgeSexTodayXTab$Unknown = rep(NA, nrow(dcCovid19ByAgeSexTodayXTab))
+  dcCovid19ByAgeSexTodayXTab$`Other/Unknown` = rep(NA, nrow(dcCovid19ByAgeSexTodayXTab))
 }
 
 dcCovid19ByAgeSexTodayXTab <- dcCovid19ByAgeSexTodayXTab %>% 
+  mutate(Unknown = `Other/Unknown`) %>% 
   select(Age_Range, Cases, Unknown, Female, Male, Date, State)
 
 
@@ -1172,7 +1225,7 @@ write_csv(dcCovid19ByAgeSexXTab, "dcCovid19ByAgeSexXTab.csv")
 Sys.sleep(5)
 # Get dataframe of just today's breakout by age and add date and state column
 dcCovid19ByAgeToday <- dcCovid19ByAgeSexToday[2:nrow(dcCovid19ByAgeSexToday),] %>% #dcCovid19ByAgeSexToday[2:nrow(dcCovid19ByAgeSexToday),] %>% 
-  mutate(Age_Range = `Patient Age (yrs)`, Cases = as.integer(`Total Positives`), Date = Sys.Date() - 1, State = "District of Columbia", Male = as.integer(Male), Female = as.integer(Female)) %>% 
+  mutate(Age_Range = `Patient Age (Yrs)`, Cases = as.integer(`Total Positives`), Date = Sys.Date() - 1, State = "District of Columbia", Male = as.integer(Male), Female = as.integer(Female), Unknown = `Other/Unknown`) %>% 
   select(Age_Range, Cases, Date, State)
 # Add today's breakout to the main file
 dcCovid19ByAge <- read_csv("dcCovid19ByAge.csv")
@@ -1183,13 +1236,14 @@ write_csv(dcCovid19ByAge, "dcCovid19ByAge.csv")
 dcCovid19BySexToday <- dcCovid19ByAgeSexToday[1,] %>%
   mutate(Cases = as.integer(`Total Positives`), Date = Sys.Date() - 1, State = "District of Columbia")
 
-if ("Unknown" %in% names(dcCovid19BySexToday)) {
-  dcCovid19BySexToday$Unknown = as.integer(dcCovid19BySexToday$Unknown)
+if ("Other/Unknown" %in% names(dcCovid19BySexToday)) {
+  dcCovid19BySexToday$`Other/Unknown` = as.integer(dcCovid19BySexToday$`Other/Unknown`)
 } else {
-  dcCovid19BySexToday$Unknown = rep(NA, nrow(dcCovid19BySexToday))
+  dcCovid19BySexToday$`Other/Unknown` = rep(NA, nrow(dcCovid19BySexToday))
 }
 
 dcCovid19BySexToday <- dcCovid19BySexToday %>% 
+  rename(Unknown = `Other/Unknown`) %>% 
   select(Unknown, Male, Female, Date, State) %>% 
   gather(-c(Date, State), key = "Sex", value = "Cases") %>% 
   mutate(Cases = as.integer(Cases)) %>% 
