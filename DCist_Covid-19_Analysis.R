@@ -123,19 +123,51 @@ WV_ByCounty_TableFormat_Button$getElementText()
 Sys.sleep(5)
 WV_ByCounty_TableFormat_Button$clickElement()
 Sys.sleep(5)
-# WV_CountiesDiv <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[1]/transform/div/div[3]/div/visual-modern/div/div/div[2]/div[1]")
+
+# Sys.sleep(5)
+# WV_County_Names_Div <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[1]/transform/div/div[3]/div/visual-modern/div/div/div[2]/div[1]/div[4]/div/div[1]/div[1]")
+# WV_County_Names <- WV_County_Names_Div$getElementText()
+# 
+# WV_County_Lab_Div <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[1]/transform/div/div[3]/div/visual-modern/div/div/div[2]/div[1]/div[4]/div/div[1]/div[2]")
+# WV_County_Lab <- WV_County_Lab_Div$getElementText()
+# 
+# 
+# WV_County_Cases_Div <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[1]/transform/div/div[3]/div/visual-modern/div/div/div[2]/div[1]/div[4]/div/div[1]/div[3]")
+# WV_County_Cases <- WV_County_Cases_Div$getElementText()
+# 
+# WV_County_Probable_Cases_Div <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[1]/transform/div/div[3]/div/visual-modern/div/div/div[2]/div[1]/div[4]/div/div[1]/div[4]")
+# WV_County_Probable_Cases <- WV_County_Probable_Cases_Div$getElementText()
+# 
+# 
+# WV_County_Recovered_Div <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[1]/transform/div/div[3]/div/visual-modern/div/div/div[2]/div[1]/div[4]/div/div[1]/div[5]")
+# WV_County_Recovered <- WV_County_Recovered_Div$getElementText()
+# 
+# 
+# WV_County_Deaths_Div <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[1]/transform/div/div[3]/div/visual-modern/div/div/div[2]/div[1]/div[4]/div/div[1]/div[6]")
+# WV_County_Deaths <- WV_County_Deaths_Div$getElementText()
+# WV_All_Div <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[1]/transform/div/div[3]/div/visual-modern/div/div/div[2]/div[1]/div[4]/div/div[1]")
+# Sys.sleep(5)
+# WV_All_Divs <- WV_All_Div$findChildElements(value = "div")
+# Sys.sleep(5)
+# map(WV_All_Divs, function(x){x$getElementText()}) %>% flatten()
+
+WV_Complete_Divs <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[1]/transform/div/div[3]/div/visual-modern/div/div/div[2]/div[1]/div[4]/div")
 Sys.sleep(5)
-# WV_Counties <- WV_CountiesDiv$getElementText()
-# WV_CountiesDiv2 <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[1]/transform/div/div[3]/div/visual-modern/div/div/div[2]")
-# WV_CountiesDiv2$getElementText()
-WV_CountiesDivs <- remDr$findElements(using = "class", value = "tableEx")
-WV_Counties <- WV_CountiesDivs[[1]]$getElementText()
+WV_Complete_Divs_Set <- WV_Complete_Divs$findChildElements(value = "div")
+Sys.sleep(15)
+WV_Combined_Lists <- map(map(WV_Complete_Divs_Set, 
+                             ~ .x$findChildElements(value = "div")) %>% flatten(), 
+                         function(x) {x$getElementText()}) %>% flatten()
+Sys.sleep(15)
 
 
+# WV_CountiesDivs <- remDr$findElements(using = "class", value = "tableEx")
+# WV_County_Names <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[1]/transform/div/div[3]/div/visual-modern/div/div/div[2]/div[1]/div[4]/div/div[1]/div[1]")
+# WV_Counties <- WV_CountiesDivs[[2]]$getElementText()
 # WV_CountiesDiv <- remDr$findElements(using = "class", value = "tableEx")
 # WV_CountiesDiv <- remDr$findElement(using = "class", value = "bodyCells")
 # WV_CountiesDiv <- remDr$findElement(using = "class", value = "innerContainer")
-Sys.sleep(5)
+# Sys.sleep(5)
 # WV_Counties <- WV_CountiesDiv[[1]]$getElementText()
 # WV_Counties <- WV_CountiesDiv$getElementText()
 
@@ -154,7 +186,7 @@ Sys.sleep(5)
 # WV_Counties <- remDr$findElement(using = 'xpath', value = '/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[11]/transform/div/div[3]/visual-modern/div/div/div/p/span[2]')
 # WV_Counties <- WV_Counties$getElementText() 
 
-Sys.sleep(5)
+# Sys.sleep(5)
 # Get the Maryland topline Deaths, Tests, and Hospitalizations data
 # The by-county breakout cases data
 # and the sex/age breakout cases data
@@ -396,33 +428,88 @@ Sys.sleep(5)
 # West Virginia analysis
 # Data cleaning and wrangling into dataframe format
 # This had to be redone after the powerBI format was changed.
-WV_Counties <- WV_Counties %>% 
+WV_County_Names <- paste(WV_Combined_Lists[[1]], 
+                         WV_Combined_Lists[[7]], 
+                         WV_Combined_Lists[[13]], collapse = "\n") %>% 
+  str_replace_all(" ", "Error\n") %>% 
+  str_split("\\n") %>% 
   unlist()
-
-# WV_Counties %>% str_replace_all("\\s", "0\n") %>% str_split("\\n")
-WV_Counties_All <- WV_Counties %>% str_split("\\n") %>% unlist()
-WV_Headers <- WV_Counties_All[1:6] %>% str_trim()
-WV_County_Names_Date <- WV_Counties_All[7:length(WV_Counties_All)]
-
-WV_County_Names <- WV_County_Names_Date %>% keep(str_detect, "[[:alpha:]]") %>% str_trim()
-WV_County_Data <- WV_County_Names_Date %>% discard(str_detect, "[[:alpha:]]")
-
-WV_County_Data_Cleaned <- WV_County_Data %>% 
+Sys.sleep(5)
+WV_County_Labs <- paste(WV_Combined_Lists[[2]], 
+                        WV_Combined_Lists[[8]], 
+                        WV_Combined_Lists[[14]], collapse = "\n") %>% 
   str_replace_all("\\s", "0\n") %>% 
   str_split("\\n") %>% 
-  flatten_chr() %>% 
+  unlist()
+Sys.sleep(5)
+WV_County_Cases_Combined <- paste(WV_Combined_Lists[[3]], 
+                                  WV_Combined_Lists[[9]], 
+                                  WV_Combined_Lists[[15]], collapse = "\n") %>% 
+  str_replace_all("\\s", "0\n") %>% 
+  str_split("\\n") %>% 
+  unlist()
+Sys.sleep(5)
+WV_County_Probable_Cases_Combined <- paste(WV_Combined_Lists[[4]], 
+                                           WV_Combined_Lists[[10]], 
+                                           WV_Combined_Lists[[16]], collapse = "\n") %>% 
+  str_replace_all("\\s", "0\n") %>% 
+  str_split("\\n") %>% 
+  unlist()
+Sys.sleep(5)
+WV_County_Recovered_Combined <- paste(WV_Combined_Lists[[5]], 
+                                      WV_Combined_Lists[[11]], 
+                                      WV_Combined_Lists[[17]], collapse = "\n") %>% 
+  str_replace_all("\\s", "0\n") %>% 
+  str_split("\\n") %>% 
+  unlist()
+
+WV_County_Deaths_Combined <- paste(str_replace_all(WV_Combined_Lists[[6]], "\\s", "0\n"), 
+                                   str_replace_all(WV_Combined_Lists[[12]], "\\s", "0\n"), 
+                                   str_replace_all(WV_Combined_Lists[[18]], "\\s", "0\n"), collapse = "\n") %>% 
+  str_replace_all(" ", "\n") %>% 
+  str_split("\\n") %>% 
+  unlist() %>% 
   stringi::stri_remove_empty()
-
-WV_County_Data_Cleaned <- WV_County_Data_Cleaned[2:length(WV_County_Data_Cleaned)]
-
+Sys.sleep(5)
 WV_CountiesDFCleaned <- tibble(
   County = WV_County_Names,
-  Tests = as.integer(c(WV_County_Data_Cleaned[1:19], WV_County_Data_Cleaned[100:119], WV_County_Data_Cleaned[196:211])),
-  Cases = as.integer(c(WV_County_Data_Cleaned[21:39], WV_County_Data_Cleaned[120:139], WV_County_Data_Cleaned[212:227])),
-  Probable_Cases = as.integer(c(WV_County_Data_Cleaned[41:59], WV_County_Data_Cleaned[140:159], WV_County_Data_Cleaned[228:243])),
-  Recovered = as.integer(c(WV_County_Data_Cleaned[61:79], WV_County_Data_Cleaned[160:179], WV_County_Data_Cleaned[244:259])),
-  Deaths = as.integer(c(WV_County_Data_Cleaned[81:99], WV_County_Data_Cleaned[180:195], WV_County_Data_Cleaned[20], WV_County_Data_Cleaned[40], WV_County_Data_Cleaned[60], WV_County_Data_Cleaned[80], WV_County_Data_Cleaned[260:275]))
-)
+  Tests = as.integer(WV_County_Labs),
+  Cases = as.integer(WV_County_Cases_Combined),
+  Probable_Cases = as.integer(WV_County_Probable_Cases_Combined),
+  Recovered = as.integer(WV_County_Recovered_Combined),
+  Deaths = as.integer(WV_County_Deaths_Combined)
+) %>% filter(County != "Error")
+
+
+
+## Old way before purrr method got reliable vectors
+# WV_Counties <- WV_Counties %>% 
+#   unlist()
+# 
+# # WV_Counties %>% str_replace_all("\\s", "0\n") %>% str_split("\\n")
+# WV_Counties_All <- WV_Counties %>% str_split("\\n") %>% unlist()
+# WV_Headers <- WV_Counties_All[1:6] %>% str_trim()
+# WV_County_Names_Date <- WV_Counties_All[7:length(WV_Counties_All)]
+# 
+# WV_County_Names <- WV_County_Names_Date %>% keep(str_detect, "[[:alpha:]]") %>% str_trim()
+# WV_County_Data <- WV_County_Names_Date %>% discard(str_detect, "[[:alpha:]]")
+# 
+# WV_County_Data_Cleaned <- WV_County_Data %>% 
+#   str_replace_all("\\s", "0\n") %>% 
+#   str_split("\\n") %>% 
+#   flatten_chr() %>% 
+#   stringi::stri_remove_empty()
+# 
+# WV_County_Data_Cleaned <- WV_County_Data_Cleaned[2:length(WV_County_Data_Cleaned)]
+# 
+# WV_CountiesDFCleaned <- tibble(
+#   County = WV_County_Names,
+#   Tests = as.integer(c(WV_County_Data_Cleaned[1:19], WV_County_Data_Cleaned[100:119], WV_County_Data_Cleaned[196:211])),
+#   Cases = as.integer(c(WV_County_Data_Cleaned[21:39], WV_County_Data_Cleaned[120:139], WV_County_Data_Cleaned[212:227])),
+#   Probable_Cases = as.integer(c(WV_County_Data_Cleaned[41:59], WV_County_Data_Cleaned[140:159], WV_County_Data_Cleaned[228:243])),
+#   Recovered = as.integer(c(WV_County_Data_Cleaned[61:79], WV_County_Data_Cleaned[160:179], WV_County_Data_Cleaned[244:259])),
+#   Deaths = as.integer(c(WV_County_Data_Cleaned[81:99], WV_County_Data_Cleaned[180:195], WV_County_Data_Cleaned[20], WV_County_Data_Cleaned[40], WV_County_Data_Cleaned[60], WV_County_Data_Cleaned[80], WV_County_Data_Cleaned[260:275]))
+# )
 
 
 ## They changed the crappy powerbi dashboard again...
@@ -1911,8 +1998,8 @@ while(upperPerCapBoundary %% 6 != 0) {
 myBinsPerCap <- seq(from = 0, 
                           to = upperPerCapBoundary, 
                           by = upperPerCapBoundary / 6)
-myBinsDeaths <- round(seq(from = 0, to = (max(DMV_Cases$Deaths) + 1), by = (max(DMV_Cases$Deaths) / 6)), 0)
-upperDeathPerCapBoundary <- round(max(DMV_Cases$Deaths / DMV_Cases$TOTAL_POP_100K) + 1, 0)
+myBinsDeaths <- round(seq(from = 0, to = (max(DMV_Cases$Deaths, na.rm = T) + 1), by = (max(DMV_Cases$Deaths, na.rm = T) / 6)), 0)
+upperDeathPerCapBoundary <- round(max((DMV_Cases$Deaths) / DMV_Cases$TOTAL_POP_100K, na.rm = T) + 1, 0)
 
 while(upperDeathPerCapBoundary %% 6 != 0) {
   upperDeathPerCapBoundary = upperDeathPerCapBoundary + 1
