@@ -438,34 +438,34 @@ Sys.sleep(5)
 WV_County_Labs <- paste(WV_Combined_Lists[[2]], 
                         WV_Combined_Lists[[8]], 
                         WV_Combined_Lists[[14]], collapse = "\n") %>% 
-  str_replace_all("\\s", "0\n") %>% 
+  str_replace_all(" ", "0\n") %>% 
   str_split("\\n") %>% 
   unlist()
 Sys.sleep(5)
 WV_County_Cases_Combined <- paste(WV_Combined_Lists[[3]], 
                                   WV_Combined_Lists[[9]], 
                                   WV_Combined_Lists[[15]], collapse = "\n") %>% 
-  str_replace_all("\\s", "0\n") %>% 
+  str_replace_all(" ", "0\n") %>% 
   str_split("\\n") %>% 
   unlist()
 Sys.sleep(5)
 WV_County_Probable_Cases_Combined <- paste(WV_Combined_Lists[[4]], 
                                            WV_Combined_Lists[[10]], 
                                            WV_Combined_Lists[[16]], collapse = "\n") %>% 
-  str_replace_all("\\s", "0\n") %>% 
+  str_replace_all(" ", "0\n") %>% 
   str_split("\\n") %>% 
   unlist()
 Sys.sleep(5)
 WV_County_Recovered_Combined <- paste(WV_Combined_Lists[[5]], 
                                       WV_Combined_Lists[[11]], 
                                       WV_Combined_Lists[[17]], collapse = "\n") %>% 
-  str_replace_all("\\s", "0\n") %>% 
+  str_replace_all(" ", "0\n") %>% 
   str_split("\\n") %>% 
   unlist()
 
-WV_County_Deaths_Combined <- paste(str_replace_all(WV_Combined_Lists[[6]], "\\s", "0\n"), 
-                                   str_replace_all(WV_Combined_Lists[[12]], "\\s", "0\n"), 
-                                   str_replace_all(WV_Combined_Lists[[18]], "\\s", "0\n"), collapse = "\n") %>% 
+WV_County_Deaths_Combined <- paste(str_replace_all(WV_Combined_Lists[[6]], " ", "0\n"), 
+                                   str_replace_all(WV_Combined_Lists[[12]], " ", "0\n"), 
+                                   str_replace_all(WV_Combined_Lists[[18]], " ", "0\n"), collapse = "\n") %>% 
   str_replace_all(" ", "\n") %>% 
   str_split("\\n") %>% 
   unlist() %>% 
@@ -1392,6 +1392,7 @@ colnames(dcCovid19DataSummaryToday) <- make.names(colnames(dcCovid19DataSummaryT
 
 dcCovid19TestingCases <- dcCovid19DataSummaryToday %>% 
   select(Date, People.Tested.Overall, Total.Positives, Number.of.Deaths, People.Recovered) %>% 
+  mutate(Date = as.Date(Date)) %>% 
   arrange(desc(Date))
 
 # Re-saving the updated Cases/Testing dataframe
