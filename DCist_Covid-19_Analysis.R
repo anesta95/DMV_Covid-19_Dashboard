@@ -117,7 +117,7 @@ WV_ByCounty_Button$clickElement()
 Sys.sleep(5)
 WV_CountyPage_Buttons <- remDr$findElements(using = "tag name", value = "button")
 Sys.sleep(5)
-WV_ByCounty_TableFormat_Button <- WV_CountyPage_Buttons[[16]]
+WV_ByCounty_TableFormat_Button <- WV_CountyPage_Buttons[[17]]
 Sys.sleep(5)
 WV_ByCounty_TableFormat_Button$getElementText()
 Sys.sleep(5)
@@ -151,7 +151,7 @@ Sys.sleep(5)
 # Sys.sleep(5)
 # map(WV_All_Divs, function(x){x$getElementText()}) %>% flatten()
 
-WV_Complete_Divs <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[3]/transform/div/div[3]/div/visual-modern/div/div/div[2]/div[1]/div[4]/div")
+WV_Complete_Divs <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[1]/transform/div/div[3]/div/visual-modern/div/div/div[2]/div[1]/div[4]/div")
 Sys.sleep(5)
 WV_Complete_Divs_Set <- WV_Complete_Divs$findChildElements(value = "div") 
 Sys.sleep(15)
@@ -375,7 +375,7 @@ Sys.sleep(10)
 Sys.sleep(10)
 system("rm DCCovid19Data.xlsx")
 Sys.sleep(10)
-system("bash ~/Documents/Bash_Scripts/DC_Covid19_Data.sh") # Written with bash to hid the API
+system("bash ~/Documents/Bash_Scripts/DC_Covid19_Data.sh") # Written with bash to hide the API
 # remDr$navigate("https://coronavirus.dc.gov/page/coronavirus-data")
 # Sys.sleep(15)
 # dcDataA <- remDr$findElement(using = "xpath", value = "/html/body/div[4]/section/div[2]/div/div/div/div[2]/div/div/article/div[1]/div[1]/div/div/ul[1]/li[5]/a")
