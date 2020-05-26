@@ -151,9 +151,9 @@ Sys.sleep(5)
 # Sys.sleep(5)
 # map(WV_All_Divs, function(x){x$getElementText()}) %>% flatten()
 
-WV_Complete_Divs <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[1]/transform/div/div[3]/div/visual-modern/div/div/div[2]/div[1]/div[4]/div")
+WV_Complete_Divs <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[3]/transform/div/div[3]/div/visual-modern/div/div/div[2]/div[1]/div[4]/div")
 Sys.sleep(5)
-WV_Complete_Divs_Set <- WV_Complete_Divs$findChildElements(value = "div")
+WV_Complete_Divs_Set <- WV_Complete_Divs$findChildElements(value = "div") 
 Sys.sleep(15)
 WV_Combined_Lists <- map(map(WV_Complete_Divs_Set, 
                              ~ .x$findChildElements(value = "div")) %>% flatten(), 
@@ -1391,7 +1391,7 @@ dcCovid19DataSummaryToday <- dcCovid19DataSummaryToday %>%
 colnames(dcCovid19DataSummaryToday) <- make.names(colnames(dcCovid19DataSummaryToday), unique = T)
 
 dcCovid19TestingCases <- dcCovid19DataSummaryToday %>% 
-  select(Date, People.Tested.Overall, Total.Positives, Number.of.Deaths, People.Recovered) %>% 
+  select(Date, Total.Tests.Overall, Total.Positives, Number.of.Deaths, People.Recovered) %>% 
   mutate(Date = as.Date(Date)) %>% 
   arrange(desc(Date))
 
@@ -1402,7 +1402,7 @@ Sys.sleep(5)
 dcSummary <- dcCovid19TestingCases %>%
   mutate(Date = as.Date(Date)) %>% 
   filter(Date == max(Date)) %>% 
-  rename(Tests = People.Tested.Overall, Deaths = Number.of.Deaths, Cases = Total.Positives) %>% 
+  rename(Tests = Total.Tests.Overall, Deaths = Number.of.Deaths, Cases = Total.Positives) %>% 
   mutate(State = "District of Columbia") %>% 
   mutate(Cases = as.integer(Cases), Deaths = as.integer(Deaths), Tests = as.integer(Tests)) %>% 
   select(State, Cases, Deaths, Tests, Date)
@@ -1410,7 +1410,7 @@ dcSummary <- dcCovid19TestingCases %>%
 DC_By_County <- dcCovid19TestingCases %>%
   mutate(Date = as.Date(Date)) %>%
   filter(Date == max(Date)) %>% 
-  rename(Tests = People.Tested.Overall, Deaths = Number.of.Deaths, Cases = Total.Positives) %>%
+  rename(Tests = Total.Tests.Overall, Deaths = Number.of.Deaths, Cases = Total.Positives) %>%
   mutate(State = "District of Columbia", County = "District of Columbia") %>%
   mutate(Cases = as.integer(Cases), Deaths = as.integer(Deaths)) %>% 
   left_join(stateConversions, by = c("State" = "Full_Name")) %>%
@@ -1428,6 +1428,8 @@ Sys.sleep(5)
 
 # Cleaning and saving most updated hosptials dataframe
 dcCovid19Hospitals <- dcCovid19DataSummaryToday %>% 
+  mutate(Total.Reported.Ventilators.in.Hospitals = replace_na(Total.Reported.Ventilators.in.Hospitals, 0), In.Use.Ventilators.in.Hospitals = replace_na(In.Use.Ventilators.in.Hospitals, 0)) %>% 
+  mutate(Ventilators.Available.in.Hospitals = Total.Reported.Ventilators.in.Hospitals - In.Use.Ventilators.in.Hospitals) %>% 
   select(Date, ICU.Beds.Available, Total.Reported.Ventilators.in.Hospitals, In.Use.Ventilators.in.Hospitals, Ventilators.Available.in.Hospitals) %>% 
   rename(`ICU beds available` = ICU.Beds.Available, 
          `Total ventilators available` = Total.Reported.Ventilators.in.Hospitals,
