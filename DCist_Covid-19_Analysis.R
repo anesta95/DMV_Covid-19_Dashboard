@@ -109,7 +109,7 @@ Sys.sleep(15)
 
 All_WV_Buttons <- remDr$findElements(using = "tag name", value = "button")
 Sys.sleep(5)
-WV_ByCounty_Button <- All_WV_Buttons[[1]]
+WV_ByCounty_Button <- All_WV_Buttons[[detect_index((map(All_WV_Buttons, function(x) x$getElementText()) %>% flatten()), function(x) str_detect(x, "County Summary"))]]
 Sys.sleep(5)
 WV_ByCounty_Button$getElementText()
 Sys.sleep(5)
@@ -117,7 +117,7 @@ WV_ByCounty_Button$clickElement()
 Sys.sleep(5)
 WV_CountyPage_Buttons <- remDr$findElements(using = "tag name", value = "button")
 Sys.sleep(5)
-WV_ByCounty_TableFormat_Button <- WV_CountyPage_Buttons[[17]]
+WV_ByCounty_TableFormat_Button <- WV_CountyPage_Buttons[[detect_index((map(WV_CountyPage_Buttons, function(x) x$getElementText()) %>% flatten()), function(x) str_detect(x, "Click Here to View in Table Format"))]]
 Sys.sleep(5)
 WV_ByCounty_TableFormat_Button$getElementText()
 Sys.sleep(5)
@@ -151,7 +151,10 @@ Sys.sleep(5)
 # Sys.sleep(5)
 # map(WV_All_Divs, function(x){x$getElementText()}) %>% flatten()
 
-WV_Complete_Divs <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[1]/transform/div/div[3]/div/visual-modern/div/div/div[2]/div[1]/div[4]/div")
+WV_Body_Cells <- remDr$findElements(using = "class", value = "bodyCells")
+WV_Complete_Divs <- WV_Body_Cells[[1]]$findChildElement(value = "div")
+
+# WV_Complete_Divs <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[1]/transform/div/div[3]/div/visual-modern/div/div/div[2]/div[1]/div[4]/div")
 Sys.sleep(5)
 WV_Complete_Divs_Set <- WV_Complete_Divs$findChildElements(value = "div") 
 Sys.sleep(15)
@@ -473,11 +476,11 @@ WV_County_Deaths_Combined <- paste(str_replace_all(WV_Combined_Lists[[6]], " ", 
 Sys.sleep(5)
 WV_CountiesDFCleaned <- tibble(
   County = WV_County_Names,
-  Tests = as.integer(WV_County_Labs),
-  Cases = as.integer(WV_County_Cases_Combined),
-  Probable_Cases = as.integer(WV_County_Probable_Cases_Combined),
-  Recovered = as.integer(WV_County_Recovered_Combined),
-  Deaths = as.integer(WV_County_Deaths_Combined)
+  Tests = as.integer(str_replace_all(WV_County_Labs, ",", "")),
+  Cases = as.integer(str_replace_all(WV_County_Cases_Combined, ",", "")),
+  Probable_Cases = as.integer(str_replace_all(WV_County_Probable_Cases_Combined, ",", "")),
+  Recovered = as.integer(str_replace_all(WV_County_Recovered_Combined, ",", "")),
+  Deaths = as.integer(str_replace_all(WV_County_Deaths_Combined, ",", ""))
 ) %>% filter(County != "Error")
 
 
@@ -681,7 +684,7 @@ MD_Summary_Today <- confirmedCasesDeathsHospitalizationsTests %>%
   pivot_wider(names_from = Measure, values_from = Amount) %>% 
   rename_all(~(str_replace_all(., " ", ""))) %>% 
   mutate(Cases = `confirmedcases`, 
-         Tests = `negativetestresults`, 
+         Tests = `personstestednegative`, 
          State = "Maryland", 
          Confirmed_Deaths = `confirmeddeaths`,
          Probable_Deaths = `probabledeaths`,
