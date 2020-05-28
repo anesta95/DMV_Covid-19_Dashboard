@@ -1,4 +1,137 @@
 County,Cases,Hospitalizations,Deaths,Date,State,Abbr,FIPS
+Accomack,807,44,12,2020-05-27,Virginia,VA,51001
+Albemarle,170,19,8,2020-05-27,Virginia,VA,51003
+Alleghany,17,4,2,2020-05-27,Virginia,VA,51005
+Amelia,23,7,1,2020-05-27,Virginia,VA,51007
+Amherst,27,3,0,2020-05-27,Virginia,VA,51009
+Appomattox,31,1,0,2020-05-27,Virginia,VA,51011
+Arlington,2039,373,109,2020-05-27,Virginia,VA,51013
+Augusta,105,2,1,2020-05-27,Virginia,VA,51015
+Bath,0,0,0,2020-05-27,Virginia,VA,51017
+Bedford,47,2,2,2020-05-27,Virginia,VA,51019
+Bland,0,0,0,2020-05-27,Virginia,VA,51021
+Botetourt,32,9,4,2020-05-27,Virginia,VA,51023
+Brunswick,24,6,1,2020-05-27,Virginia,VA,51025
+Buchanan,18,0,0,2020-05-27,Virginia,VA,51027
+Buckingham,453,16,3,2020-05-27,Virginia,VA,51029
+Campbell,16,4,1,2020-05-27,Virginia,VA,51031
+Caroline,56,5,2,2020-05-27,Virginia,VA,51033
+Carroll,88,3,1,2020-05-27,Virginia,VA,51035
+Charles City,27,10,1,2020-05-27,Virginia,VA,51036
+Charlotte,23,4,0,2020-05-27,Virginia,VA,51037
+Chesterfield,1331,76,36,2020-05-27,Virginia,VA,51041
+Clarke,24,3,0,2020-05-27,Virginia,VA,51043
+Craig,5,0,0,2020-05-27,Virginia,VA,51045
+Culpeper,656,46,5,2020-05-27,Virginia,VA,51047
+Cumberland,32,3,0,2020-05-27,Virginia,VA,51049
+Dickenson,0,0,0,2020-05-27,Virginia,VA,51051
+Dinwiddie,68,12,0,2020-05-27,Virginia,VA,51053
+Essex,46,4,0,2020-05-27,Virginia,VA,51057
+Fairfax,10503,1267,371,2020-05-27,Virginia,VA,51059
+Fauquier,303,20,6,2020-05-27,Virginia,VA,51061
+Floyd,5,1,0,2020-05-27,Virginia,VA,51063
+Fluvanna,88,22,6,2020-05-27,Virginia,VA,51065
+Franklin County,35,4,1,2020-05-27,Virginia,VA,51067
+Frederick,319,23,4,2020-05-27,Virginia,VA,51069
+Giles,5,0,0,2020-05-27,Virginia,VA,51071
+Gloucester,30,7,1,2020-05-27,Virginia,VA,51073
+Goochland,93,16,6,2020-05-27,Virginia,VA,51075
+Grayson,32,2,0,2020-05-27,Virginia,VA,51077
+Greene,28,3,1,2020-05-27,Virginia,VA,51079
+Greensville,63,14,7,2020-05-27,Virginia,VA,51081
+Halifax,30,3,0,2020-05-27,Virginia,VA,51083
+Hanover,316,47,24,2020-05-27,Virginia,VA,51085
+Henrico,1624,184,131,2020-05-27,Virginia,VA,51087
+Henry,95,9,3,2020-05-27,Virginia,VA,51089
+Highland,3,0,0,2020-05-27,Virginia,VA,51091
+Isle of Wight,126,11,3,2020-05-27,Virginia,VA,51093
+James City,202,54,15,2020-05-27,Virginia,VA,51095
+King and Queen,10,2,1,2020-05-27,Virginia,VA,51097
+King George,62,14,4,2020-05-27,Virginia,VA,51099
+King William,26,2,0,2020-05-27,Virginia,VA,51101
+Lancaster,10,1,0,2020-05-27,Virginia,VA,51103
+Lee,9,1,0,2020-05-27,Virginia,VA,51105
+Loudoun,2318,156,63,2020-05-27,Virginia,VA,51107
+Louisa,76,9,1,2020-05-27,Virginia,VA,51109
+Lunenburg,11,0,0,2020-05-27,Virginia,VA,51111
+Madison,38,3,1,2020-05-27,Virginia,VA,51113
+Mathews,5,2,0,2020-05-27,Virginia,VA,51115
+Mecklenburg,214,29,21,2020-05-27,Virginia,VA,51117
+Middlesex,14,1,0,2020-05-27,Virginia,VA,51119
+Montgomery,72,9,1,2020-05-27,Virginia,VA,51121
+Nelson,16,0,0,2020-05-27,Virginia,VA,51125
+New Kent,36,6,1,2020-05-27,Virginia,VA,51127
+Northampton,227,23,20,2020-05-27,Virginia,VA,51131
+Northumberland,25,0,1,2020-05-27,Virginia,VA,51133
+Nottoway,24,4,0,2020-05-27,Virginia,VA,51135
+Orange,92,5,0,2020-05-27,Virginia,VA,51137
+Page,213,24,21,2020-05-27,Virginia,VA,51139
+Patrick,18,0,0,2020-05-27,Virginia,VA,51141
+Pittsylvania,38,12,1,2020-05-27,Virginia,VA,51143
+Powhatan,30,0,0,2020-05-27,Virginia,VA,51145
+Prince Edward,129,10,2,2020-05-27,Virginia,VA,51147
+Prince George,81,6,0,2020-05-27,Virginia,VA,51149
+Prince William,5157,439,101,2020-05-27,Virginia,VA,51153
+Pulaski,18,4,0,2020-05-27,Virginia,VA,51155
+Rappahannock,13,1,0,2020-05-27,Virginia,VA,51157
+Richmond County,275,9,4,2020-05-27,Virginia,VA,51159
+Roanoke County,97,8,7,2020-05-27,Virginia,VA,51161
+Rockbridge,16,0,0,2020-05-27,Virginia,VA,51163
+Rockingham,490,52,6,2020-05-27,Virginia,VA,51165
+Russell,8,2,0,2020-05-27,Virginia,VA,51167
+Scott,7,2,2,2020-05-27,Virginia,VA,51169
+Shenandoah,414,44,20,2020-05-27,Virginia,VA,51171
+Smyth,15,4,0,2020-05-27,Virginia,VA,51173
+Southampton,146,6,2,2020-05-27,Virginia,VA,51175
+Spotsylvania,487,36,6,2020-05-27,Virginia,VA,51177
+Stafford,672,70,4,2020-05-27,Virginia,VA,51179
+Surry,9,3,1,2020-05-27,Virginia,VA,51181
+Sussex,142,7,2,2020-05-27,Virginia,VA,51183
+Tazewell,7,0,0,2020-05-27,Virginia,VA,51185
+Warren,141,14,2,2020-05-27,Virginia,VA,51187
+Washington,51,8,4,2020-05-27,Virginia,VA,51191
+Westmoreland,63,8,1,2020-05-27,Virginia,VA,51193
+Wise,24,11,2,2020-05-27,Virginia,VA,51195
+Wythe,21,1,1,2020-05-27,Virginia,VA,51197
+York,72,9,3,2020-05-27,Virginia,VA,51199
+Alexandria,1887,180,44,2020-05-27,Virginia,VA,51510
+Bristol,4,1,0,2020-05-27,Virginia,VA,51520
+Buena Vista City,13,1,0,2020-05-27,Virginia,VA,51530
+Charlottesville,102,15,3,2020-05-27,Virginia,VA,51540
+Chesapeake,481,86,14,2020-05-27,Virginia,VA,51550
+Colonial Heights,86,4,15,2020-05-27,Virginia,VA,51570
+Covington,3,0,0,2020-05-27,Virginia,VA,51580
+Danville,50,15,2,2020-05-27,Virginia,VA,51590
+Emporia,76,13,5,2020-05-27,Virginia,VA,51595
+Fairfax City,63,8,6,2020-05-27,Virginia,VA,51600
+Falls Church,53,11,8,2020-05-27,Virginia,VA,51610
+Franklin City,41,3,2,2020-05-27,Virginia,VA,51620
+Fredericksburg,142,18,0,2020-05-27,Virginia,VA,51630
+Galax,107,3,0,2020-05-27,Virginia,VA,51640
+Hampton,190,30,3,2020-05-27,Virginia,VA,51650
+Harrisonburg,757,56,23,2020-05-27,Virginia,VA,51660
+Hopewell,81,11,0,2020-05-27,Virginia,VA,51670
+Lexington,7,0,0,2020-05-27,Virginia,VA,51678
+Lynchburg,80,6,1,2020-05-27,Virginia,VA,51680
+Manassas City,971,63,10,2020-05-27,Virginia,VA,51683
+Manassas Park,281,30,6,2020-05-27,Virginia,VA,51685
+Martinsville,31,6,1,2020-05-27,Virginia,VA,51690
+Newport News,257,38,10,2020-05-27,Virginia,VA,51700
+Norfolk,452,62,6,2020-05-27,Virginia,VA,51710
+Norton,2,2,0,2020-05-27,Virginia,VA,51720
+Petersburg,112,22,3,2020-05-27,Virginia,VA,51730
+Poquoson,7,2,0,2020-05-27,Virginia,VA,51735
+Portsmouth,284,42,11,2020-05-27,Virginia,VA,51740
+Radford,6,0,0,2020-05-27,Virginia,VA,51750
+Richmond City,1133,138,21,2020-05-27,Virginia,VA,51760
+Roanoke City,147,9,9,2020-05-27,Virginia,VA,51770
+Salem,32,3,3,2020-05-27,Virginia,VA,51775
+Staunton,36,5,0,2020-05-27,Virginia,VA,51790
+Suffolk,308,46,31,2020-05-27,Virginia,VA,51800
+Virginia Beach,662,91,22,2020-05-27,Virginia,VA,51810
+Waynesboro,41,2,0,2020-05-27,Virginia,VA,51820
+Williamsburg,44,10,4,2020-05-27,Virginia,VA,51830
+Winchester,168,10,1,2020-05-27,Virginia,VA,51840
 Accomack,780,42,12,2020-05-26,Virginia,VA,51001
 Albemarle,168,19,8,2020-05-26,Virginia,VA,51003
 Alleghany,16,4,2,2020-05-26,Virginia,VA,51005

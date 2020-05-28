@@ -1,4 +1,249 @@
 Date,Health_District,Race,Cases,Hospitalized,Deaths,State
+2020-05-27,Southside,Not Reported,120,13,8,Virginia
+2020-05-27,Chesapeake,White,229,35,7,Virginia
+2020-05-27,New River,Other,5,1,0,Virginia
+2020-05-27,Norfolk,Black or African American,214,38,4,Virginia
+2020-05-27,Central Shenandoah,Other,233,15,1,Virginia
+2020-05-27,Southside,Other,35,1,5,Virginia
+2020-05-27,Pittsylvania-Danville,Other,1,0,0,Virginia
+2020-05-27,Cumberland Plateau,White,20,2,0,Virginia
+2020-05-27,Rappahannock Rapidan,Black or African American,56,10,1,Virginia
+2020-05-27,Fairfax,Not Reported,2859,105,101,Virginia
+2020-05-27,Chesapeake,Not Reported,42,3,0,Virginia
+2020-05-27,Thomas Jefferson,White,258,27,13,Virginia
+2020-05-27,Richmond,Other,302,41,1,Virginia
+2020-05-27,Peninsula,Black or African American,142,31,9,Virginia
+2020-05-27,Henrico,Other,223,15,6,Virginia
+2020-05-27,Cumberland Plateau,Black or African American,12,0,0,Virginia
+2020-05-27,Loudoun,Other,486,54,10,Virginia
+2020-05-27,Crater,Other,24,2,1,Virginia
+2020-05-27,Arlington,Black or African American,141,51,26,Virginia
+2020-05-27,Alexandria,Black or African American,259,50,11,Virginia
+2020-05-27,Richmond,Black or African American,360,77,17,Virginia
+2020-05-27,Lord Fairfax,Not Reported,194,4,7,Virginia
+2020-05-27,Fairfax,Black or African American,628,129,25,Virginia
+2020-05-27,Thomas Jefferson,Black or African American,114,36,4,Virginia
+2020-05-27,West Piedmont,White,82,6,3,Virginia
+2020-05-27,Rappahannock,Not Reported,510,25,0,Virginia
+2020-05-27,Central Shenandoah,Not Reported,227,8,1,Virginia
+2020-05-27,Peninsula,White,279,73,22,Virginia
+2020-05-27,Rappahannock Rapidan,White,437,34,8,Virginia
+2020-05-27,Prince William,White,1262,251,80,Virginia
+2020-05-27,New River,Not Reported,30,0,0,Virginia
+2020-05-27,Chesterfield,Not Reported,658,3,10,Virginia
+2020-05-27,Alleghany,Other,2,0,0,Virginia
+2020-05-27,Lenowisco,White,33,15,3,Virginia
+2020-05-27,Western Tidewater,White,161,26,18,Virginia
+2020-05-27,Arlington,Other,425,120,21,Virginia
+2020-05-27,Piedmont,White,168,9,3,Virginia
+2020-05-27,Cumberland Plateau,Other,0,0,0,Virginia
+2020-05-27,Pittsylvania-Danville,White,44,15,3,Virginia
+2020-05-27,Roanoke,Black or African American,20,6,2,Virginia
+2020-05-27,Alleghany,Black or African American,5,1,1,Virginia
+2020-05-27,Richmond,Not Reported,289,3,0,Virginia
+2020-05-27,Central Virginia,Other,2,1,0,Virginia
+2020-05-27,Rappahannock,Other,361,42,1,Virginia
+2020-05-27,Roanoke,Other,2,0,0,Virginia
+2020-05-27,Piedmont,Black or African American,213,26,1,Virginia
+2020-05-27,Chesterfield,Other,184,3,0,Virginia
+2020-05-27,Portsmouth,Black or African American,134,29,7,Virginia
+2020-05-27,Portsmouth,Not Reported,72,2,2,Virginia
+2020-05-27,Norfolk,Not Reported,80,0,0,Virginia
+2020-05-27,Eastern Shore,White,257,13,14,Virginia
+2020-05-27,Eastern Shore,Not Reported,122,1,0,Virginia
+2020-05-27,Roanoke,White,76,3,7,Virginia
+2020-05-27,Three Rivers,Other,48,4,0,Virginia
+2020-05-27,Fairfax,Other,4375,652,81,Virginia
+2020-05-27,Henrico,Not Reported,319,1,2,Virginia
+2020-05-27,Lord Fairfax,Other,211,19,6,Virginia
+2020-05-27,Piedmont,Other,19,2,0,Virginia
+2020-05-27,Lenowisco,Black or African American,0,0,0,Virginia
+2020-05-27,Arlington,White,660,121,48,Virginia
+2020-05-27,Hampton,Black or African American,101,24,3,Virginia
+2020-05-27,Alexandria,White,655,68,27,Virginia
+2020-05-27,Hampton,Not Reported,40,0,0,Virginia
+2020-05-27,Mount Rogers,White,265,18,6,Virginia
+2020-05-27,Alexandria,Not Reported,589,15,5,Virginia
+2020-05-27,Chickahominy,Black or African American,73,25,9,Virginia
+2020-05-27,Chesapeake,Black or African American,169,43,5,Virginia
+2020-05-27,Western Tidewater,Not Reported,188,2,1,Virginia
+2020-05-27,Cumberland Plateau,Not Reported,1,0,0,Virginia
+2020-05-27,Western Tidewater,Other,28,1,2,Virginia
+2020-05-27,Loudoun,Black or African American,93,10,2,Virginia
+2020-05-27,Virginia Beach,White,333,51,17,Virginia
+2020-05-27,Chickahominy,Other,20,5,0,Virginia
+2020-05-27,New River,Black or African American,5,1,0,Virginia
+2020-05-27,Virginia Beach,Not Reported,94,3,0,Virginia
+2020-05-27,Rappahannock Rapidan,Other,67,12,0,Virginia
+2020-05-27,Piedmont,Not Reported,295,7,2,Virginia
+2020-05-27,Portsmouth,Other,19,2,0,Virginia
+2020-05-27,Pittsylvania-Danville,Not Reported,13,4,0,Virginia
+2020-05-27,West Piedmont,Not Reported,30,3,0,Virginia
+2020-05-27,Norfolk,White,120,20,2,Virginia
+2020-05-27,Hampton,White,41,4,0,Virginia
+2020-05-27,Western Tidewater,Black or African American,244,37,17,Virginia
+2020-05-27,Prince William,Not Reported,3392,36,3,Virginia
+2020-05-27,Hampton,Other,8,2,0,Virginia
+2020-05-27,Alleghany,White,133,20,15,Virginia
+2020-05-27,Prince William,Other,1317,165,10,Virginia
+2020-05-27,Arlington,Not Reported,813,81,14,Virginia
+2020-05-27,West Piedmont,Black or African American,40,9,1,Virginia
+2020-05-27,Peninsula,Other,33,7,1,Virginia
+2020-05-27,Norfolk,Other,38,4,0,Virginia
+2020-05-27,Lord Fairfax,Black or African American,39,3,1,Virginia
+2020-05-27,Mount Rogers,Not Reported,21,1,0,Virginia
+2020-05-27,Central Virginia,Black or African American,21,2,1,Virginia
+2020-05-27,West Piedmont,Other,27,1,1,Virginia
+2020-05-27,Portsmouth,White,59,9,2,Virginia
+2020-05-27,Thomas Jefferson,Not Reported,39,0,0,Virginia
+2020-05-27,Three Rivers,Not Reported,126,4,3,Virginia
+2020-05-27,Virginia Beach,Black or African American,155,17,3,Virginia
+2020-05-27,Prince William,Black or African American,438,80,24,Virginia
+2020-05-27,Loudoun,Not Reported,1103,4,7,Virginia
+2020-05-27,Loudoun,White,636,88,44,Virginia
+2020-05-27,Peninsula,Not Reported,128,2,0,Virginia
+2020-05-27,Pittsylvania-Danville,Black or African American,30,8,0,Virginia
+2020-05-27,Henrico,White,524,72,68,Virginia
+2020-05-27,Richmond,White,182,17,3,Virginia
+2020-05-27,Southside,Black or African American,47,12,3,Virginia
+2020-05-27,Chickahominy,White,202,46,21,Virginia
+2020-05-27,Thomas Jefferson,Other,69,5,2,Virginia
+2020-05-27,Virginia Beach,Other,80,20,2,Virginia
+2020-05-27,Central Shenandoah,Black or African American,69,2,2,Virginia
+2020-05-27,Chesterfield,White,367,39,33,Virginia
+2020-05-27,Central Virginia,White,76,10,3,Virginia
+2020-05-27,Rappahannock,White,412,54,12,Virginia
+2020-05-27,New River,White,66,12,1,Virginia
+2020-05-27,Mount Rogers,Other,30,3,0,Virginia
+2020-05-27,Crater,White,123,19,6,Virginia
+2020-05-27,Alleghany,Not Reported,46,3,0,Virginia
+2020-05-27,Fairfax,White,2757,400,178,Virginia
+2020-05-27,Lenowisco,Other,1,0,0,Virginia
+2020-05-27,Rappahannock Rapidan,Not Reported,542,19,3,Virginia
+2020-05-27,Three Rivers,Black or African American,157,11,1,Virginia
+2020-05-27,Henrico,Black or African American,558,96,55,Virginia
+2020-05-27,Lenowisco,Not Reported,8,1,1,Virginia
+2020-05-27,Chesapeake,Other,41,5,2,Virginia
+2020-05-27,Crater,Not Reported,167,3,2,Virginia
+2020-05-27,Chickahominy,Not Reported,177,3,2,Virginia
+2020-05-27,Eastern Shore,Black or African American,624,51,17,Virginia
+2020-05-27,Alexandria,Other,384,47,1,Virginia
+2020-05-27,Chesterfield,Black or African American,238,35,8,Virginia
+2020-05-27,Roanoke,Not Reported,49,0,0,Virginia
+2020-05-27,Rappahannock,Black or African American,136,22,3,Virginia
+2020-05-27,Lord Fairfax,White,835,92,34,Virginia
+2020-05-27,Three Rivers,White,173,17,4,Virginia
+2020-05-27,Central Virginia,Not Reported,102,3,0,Virginia
+2020-05-27,Eastern Shore,Other,31,2,1,Virginia
+2020-05-27,Crater,Black or African American,318,64,9,Virginia
+2020-05-27,Mount Rogers,Black or African American,2,0,0,Virginia
+2020-05-27,Central Shenandoah,White,939,93,26,Virginia
+2020-05-27,Southside,White,66,12,6,Virginia
+2020-05-27,Southside,Not Reported,167,26,14,Virginia
+2020-05-27,Lord Fairfax,Hispanic or Latino,314,24,4,Virginia
+2020-05-27,Eastern Shore,Not Hispanic or Latino,773,62,29,Virginia
+2020-05-27,Portsmouth,Hispanic or Latino,7,2,0,Virginia
+2020-05-27,Fairfax,Not Reported,2913,117,117,Virginia
+2020-05-27,Richmond,Hispanic or Latino,350,34,2,Virginia
+2020-05-27,Chesapeake,Not Reported,96,7,0,Virginia
+2020-05-27,Arlington,Hispanic or Latino,667,153,12,Virginia
+2020-05-27,West Piedmont,Not Hispanic or Latino,101,13,3,Virginia
+2020-05-27,Fairfax,Not Hispanic or Latino,2667,605,226,Virginia
+2020-05-27,Piedmont,Hispanic or Latino,18,0,0,Virginia
+2020-05-27,Crater,Not Hispanic or Latino,274,54,9,Virginia
+2020-05-27,Chickahominy,Not Hispanic or Latino,200,62,28,Virginia
+2020-05-27,New River,Not Hispanic or Latino,63,13,1,Virginia
+2020-05-27,Lord Fairfax,Not Reported,374,23,14,Virginia
+2020-05-27,Rappahannock,Not Reported,494,21,1,Virginia
+2020-05-27,Central Shenandoah,Not Reported,220,5,5,Virginia
+2020-05-27,Central Virginia,Not Hispanic or Latino,76,12,3,Virginia
+2020-05-27,Lenowisco,Not Hispanic or Latino,23,11,2,Virginia
+2020-05-27,Cumberland Plateau,Not Hispanic or Latino,19,2,0,Virginia
+2020-05-27,Western Tidewater,Not Hispanic or Latino,366,63,37,Virginia
+2020-05-27,New River,Not Reported,32,0,0,Virginia
+2020-05-27,Chesterfield,Not Reported,894,19,21,Virginia
+2020-05-27,Chesterfield,Hispanic or Latino,238,9,0,Virginia
+2020-05-27,Hampton,Not Hispanic or Latino,126,29,3,Virginia
+2020-05-27,Chesapeake,Not Hispanic or Latino,353,74,13,Virginia
+2020-05-27,Peninsula,Hispanic or Latino,50,10,1,Virginia
+2020-05-27,Arlington,Not Reported,792,72,19,Virginia
+2020-05-27,Roanoke,Not Hispanic or Latino,75,9,8,Virginia
+2020-05-27,Lord Fairfax,Not Hispanic or Latino,591,71,30,Virginia
+2020-05-27,Eastern Shore,Hispanic or Latino,154,5,3,Virginia
+2020-05-27,Mount Rogers,Not Reported,20,2,0,Virginia
+2020-05-27,Three Rivers,Not Hispanic or Latino,296,24,3,Virginia
+2020-05-27,Thomas Jefferson,Not Reported,60,0,0,Virginia
+2020-05-27,Three Rivers,Not Reported,166,12,5,Virginia
+2020-05-27,Arlington,Not Hispanic or Latino,580,148,78,Virginia
+2020-05-27,Alleghany,Not Hispanic or Latino,119,17,15,Virginia
+2020-05-27,Loudoun,Not Reported,1149,6,8,Virginia
+2020-05-27,Fairfax,Hispanic or Latino,5039,564,42,Virginia
+2020-05-27,Peninsula,Not Reported,151,3,2,Virginia
+2020-05-27,Crater,Hispanic or Latino,36,1,0,Virginia
+2020-05-27,Piedmont,Not Hispanic or Latino,335,32,3,Virginia
+2020-05-27,Henrico,Hispanic or Latino,161,17,4,Virginia
+2020-05-27,Alexandria,Not Hispanic or Latino,567,97,35,Virginia
+2020-05-27,Central Virginia,Hispanic or Latino,14,1,1,Virginia
+2020-05-27,Alleghany,Not Reported,52,3,1,Virginia
+2020-05-27,Cumberland Plateau,Hispanic or Latino,0,0,0,Virginia
+2020-05-27,Western Tidewater,Hispanic or Latino,3,0,0,Virginia
+2020-05-27,Chesterfield,Not Hispanic or Latino,315,52,30,Virginia
+2020-05-27,Pittsylvania-Danville,Not Hispanic or Latino,63,20,3,Virginia
+2020-05-27,Mount Rogers,Hispanic or Latino,126,0,0,Virginia
+2020-05-27,Richmond,Not Reported,436,28,2,Virginia
+2020-05-27,Peninsula,Not Hispanic or Latino,381,100,29,Virginia
+2020-05-27,Chesapeake,Hispanic or Latino,32,5,1,Virginia
+2020-05-27,Southside,Hispanic or Latino,2,1,0,Virginia
+2020-05-27,Thomas Jefferson,Not Hispanic or Latino,347,67,19,Virginia
+2020-05-27,Norfolk,Not Hispanic or Latino,277,54,6,Virginia
+2020-05-27,Portsmouth,Not Reported,160,8,2,Virginia
+2020-05-27,Norfolk,Not Reported,100,1,0,Virginia
+2020-05-27,Three Rivers,Hispanic or Latino,42,0,0,Virginia
+2020-05-27,Eastern Shore,Not Reported,107,0,0,Virginia
+2020-05-27,Alleghany,Hispanic or Latino,15,4,0,Virginia
+2020-05-27,Henrico,Not Reported,631,21,23,Virginia
+2020-05-27,Henrico,Not Hispanic or Latino,832,146,104,Virginia
+2020-05-27,Loudoun,Not Hispanic or Latino,589,96,50,Virginia
+2020-05-27,Hampton,Not Reported,53,1,0,Virginia
+2020-05-27,Rappahannock Rapidan,Not Hispanic or Latino,225,26,7,Virginia
+2020-05-27,Alexandria,Not Reported,464,4,3,Virginia
+2020-05-27,Rappahannock,Not Hispanic or Latino,434,70,14,Virginia
+2020-05-27,Western Tidewater,Not Reported,252,3,1,Virginia
+2020-05-27,Cumberland Plateau,Not Reported,14,0,0,Virginia
+2020-05-27,Alexandria,Hispanic or Latino,856,79,6,Virginia
+2020-05-27,Virginia Beach,Not Hispanic or Latino,463,79,20,Virginia
+2020-05-27,Prince William,Hispanic or Latino,2354,320,29,Virginia
+2020-05-27,Virginia Beach,Not Reported,147,6,1,Virginia
+2020-05-27,Central Shenandoah,Hispanic or Latino,655,40,3,Virginia
+2020-05-27,Pittsylvania-Danville,Hispanic or Latino,7,1,0,Virginia
+2020-05-27,Mount Rogers,Not Hispanic or Latino,172,20,6,Virginia
+2020-05-27,Piedmont,Not Reported,342,12,3,Virginia
+2020-05-27,Southside,Not Hispanic or Latino,99,11,8,Virginia
+2020-05-27,Thomas Jefferson,Hispanic or Latino,73,1,0,Virginia
+2020-05-27,Pittsylvania-Danville,Not Reported,18,6,0,Virginia
+2020-05-27,Norfolk,Hispanic or Latino,75,7,0,Virginia
+2020-05-27,Portsmouth,Not Hispanic or Latino,117,32,9,Virginia
+2020-05-27,West Piedmont,Not Reported,45,6,2,Virginia
+2020-05-27,Richmond,Not Hispanic or Latino,347,76,17,Virginia
+2020-05-27,West Piedmont,Hispanic or Latino,33,0,0,Virginia
+2020-05-27,Prince William,Not Reported,3091,15,3,Virginia
+2020-05-27,Rappahannock Rapidan,Not Reported,354,12,1,Virginia
+2020-05-27,Chickahominy,Hispanic or Latino,26,2,0,Virginia
+2020-05-27,Lenowisco,Not Reported,19,5,2,Virginia
+2020-05-27,New River,Hispanic or Latino,11,1,0,Virginia
+2020-05-27,Crater,Not Reported,322,33,9,Virginia
+2020-05-27,Chickahominy,Not Reported,246,15,4,Virginia
+2020-05-27,Loudoun,Hispanic or Latino,580,54,5,Virginia
+2020-05-27,Rappahannock Rapidan,Hispanic or Latino,523,37,4,Virginia
+2020-05-27,Roanoke,Not Reported,42,0,1,Virginia
+2020-05-27,Rappahannock,Hispanic or Latino,491,52,1,Virginia
+2020-05-27,Lenowisco,Hispanic or Latino,0,0,0,Virginia
+2020-05-27,Virginia Beach,Hispanic or Latino,52,6,1,Virginia
+2020-05-27,Prince William,Not Hispanic or Latino,964,197,85,Virginia
+2020-05-27,Central Virginia,Not Reported,111,3,0,Virginia
+2020-05-27,Central Shenandoah,Not Hispanic or Latino,593,73,22,Virginia
+2020-05-27,Hampton,Hispanic or Latino,11,0,0,Virginia
+2020-05-27,Roanoke,Hispanic or Latino,30,0,0,Virginia
 2020-05-26,Southside,Not Reported,117,13,8,Virginia
 2020-05-26,Chesapeake,White,219,35,7,Virginia
 2020-05-26,New River,Other,1,1,0,Virginia
