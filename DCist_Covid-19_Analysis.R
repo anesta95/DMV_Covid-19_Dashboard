@@ -152,7 +152,7 @@ Sys.sleep(5)
 # map(WV_All_Divs, function(x){x$getElementText()}) %>% flatten()
 
 WV_Body_Cells <- remDr$findElements(using = "class", value = "bodyCells")
-WV_Complete_Divs <- WV_Body_Cells[[2]]$findChildElement(value = "div")
+WV_Complete_Divs <- WV_Body_Cells[[1]]$findChildElement(value = "div")
 
 # WV_Complete_Divs <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[1]/transform/div/div[3]/div/visual-modern/div/div/div[2]/div[1]/div[4]/div")
 Sys.sleep(5)
@@ -434,7 +434,8 @@ Sys.sleep(5)
 WV_County_Names <- paste(WV_Combined_Lists[[1]], 
                          WV_Combined_Lists[[7]], 
                          WV_Combined_Lists[[13]], collapse = "\n") %>% 
-  str_replace_all(" ", "Error\n") %>% 
+  # str_replace_all(" ", "Error\n") %>%
+  str_replace_all(" ", "\n") %>%
   str_split("\\n") %>% 
   unlist()
 Sys.sleep(5)
@@ -481,7 +482,8 @@ WV_CountiesDFCleaned <- tibble(
   Probable_Cases = as.integer(str_replace_all(WV_County_Probable_Cases_Combined, ",", "")),
   Recovered = as.integer(str_replace_all(WV_County_Recovered_Combined, ",", "")),
   Deaths = as.integer(str_replace_all(WV_County_Deaths_Combined, ",", ""))
-) %>% filter(County != "Error")
+)
+  # ) %>% filter(County != "Error")
 
 
 
@@ -1433,7 +1435,7 @@ Sys.sleep(5)
 dcCovid19Hospitals <- dcCovid19DataSummaryToday %>% 
   mutate(Total.Reported.Ventilators.in.Hospitals = replace_na(Total.Reported.Ventilators.in.Hospitals, 0), In.Use.Ventilators.in.Hospitals = replace_na(In.Use.Ventilators.in.Hospitals, 0)) %>% 
   mutate(Ventilators.Available.in.Hospitals = Total.Reported.Ventilators.in.Hospitals - In.Use.Ventilators.in.Hospitals) %>% 
-  mutate(Ventilators.Available.in.Hospitals = replace(Ventilators.Available.in.Hospitals, 0, NA)) %>%   
+  mutate(Ventilators.Available.in.Hospitals = na_if(Ventilators.Available.in.Hospitals, 0)) %>%   
   select(Date, ICU.Beds.Available, Total.Reported.Ventilators.in.Hospitals, In.Use.Ventilators.in.Hospitals, Ventilators.Available.in.Hospitals) %>% 
   rename(`ICU beds available` = ICU.Beds.Available, 
          `Total ventilators available` = Total.Reported.Ventilators.in.Hospitals,
@@ -1752,8 +1754,6 @@ ggsave(filename = "/home/adrian/Documents/Personal_Portfolio_Site/DMV_Covid-19/d
 Sys.sleep(5)
 # ### Bar Chart of latest death totals by State
 #
-
-
 dcmdvaDeathsBar <- All_DMV_Deaths_Today %>% 
   group_by(State) %>% 
   summarize(Deaths = sum(Deaths)) %>% 
