@@ -1,23 +1,37 @@
 County,Deaths,Date,State,Abbr,FIPS,SUMLEV,STATE,COUNTY,STNAME,CTYNAME,POPESTIMATE2019,TOTAL_POP,TOTAL_POP_100K
+District of Columbia,468,2020-05-31,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
+Calvert,18,2020-05-31,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
+Frederick,106,2020-05-31,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.59547
+Montgomery,616,2020-05-31,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
+Prince Georges,545,2020-05-31,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Arlington,116,2020-05-31,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
+Fairfax,387,2020-05-31,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
+Loudoun,66,2020-05-31,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
+Prince William,104,2020-05-31,Virginia,VA,51153,050,51,153,Virginia,Prince William County,470335,470335,4.70335
+Alexandria,45,2020-05-31,Virginia,VA,51510,050,51,510,Virginia,Alexandria city,159428,159428,1.59428
+Fairfax City,6,2020-05-31,Virginia,VA,51600,050,51,600,Virginia,Fairfax city,24019,24019,0.24019
+Falls Church,8,2020-05-31,Virginia,VA,51610,050,51,610,Virginia,Falls Church city,14617,14617,0.14617
+Manassas City,11,2020-05-31,Virginia,VA,51683,050,51,683,Virginia,Manassas city,41085,41085,0.41085
+Manassas Park,6,2020-05-31,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.17478
 District of Columbia,466,2020-05-30,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,18,2020-05-30,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,105,2020-05-30,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.59547
+Frederick,105,2020-05-30,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999997
 Montgomery,612,2020-05-30,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,541,2020-05-30,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,541,2020-05-30,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Arlington,115,2020-05-30,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,383,2020-05-30,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,62,2020-05-30,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
 Prince William,104,2020-05-30,Virginia,VA,51153,050,51,153,Virginia,Prince William County,470335,470335,4.70335
-Alexandria,44,2020-05-30,Virginia,VA,51510,050,51,510,Virginia,Alexandria city,159428,159428,1.59428
-Fairfax City,6,2020-05-30,Virginia,VA,51600,050,51,600,Virginia,Fairfax city,24019,24019,0.24019
+Alexandria,44,2020-05-30,Virginia,VA,51510,050,51,510,Virginia,Alexandria city,159428,159428,1.5942800000000001
+Fairfax City,6,2020-05-30,Virginia,VA,51600,050,51,600,Virginia,Fairfax city,24019,24019,0.24019000000000001
 Falls Church,8,2020-05-30,Virginia,VA,51610,050,51,610,Virginia,Falls Church city,14617,14617,0.14617
-Manassas City,10,2020-05-30,Virginia,VA,51683,050,51,683,Virginia,Manassas city,41085,41085,0.41085
-Manassas Park,6,2020-05-30,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.17478
+Manassas City,10,2020-05-30,Virginia,VA,51683,050,51,683,Virginia,Manassas city,41085,41085,0.41085000000000005
+Manassas Park,6,2020-05-30,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.17478000000000002
 District of Columbia,462,2020-05-29,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,18,2020-05-29,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,105,2020-05-29,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999997
+Frederick,105,2020-05-29,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999993
 Montgomery,605,2020-05-29,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,539,2020-05-29,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,539,2020-05-29,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Arlington,113,2020-05-29,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,383,2020-05-29,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,62,2020-05-29,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -25,13 +39,13 @@ Prince William,104,2020-05-29,Virginia,VA,51153,050,51,153,Virginia,Prince Willi
 Alexandria,44,2020-05-29,Virginia,VA,51510,050,51,510,Virginia,Alexandria city,159428,159428,1.5942800000000001
 Fairfax City,6,2020-05-29,Virginia,VA,51600,050,51,600,Virginia,Fairfax city,24019,24019,0.24019000000000001
 Falls Church,8,2020-05-29,Virginia,VA,51610,050,51,610,Virginia,Falls Church city,14617,14617,0.14617
-Manassas City,10,2020-05-29,Virginia,VA,51683,050,51,683,Virginia,Manassas city,41085,41085,0.41085000000000005
-Manassas Park,6,2020-05-29,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.17478000000000002
+Manassas City,10,2020-05-29,Virginia,VA,51683,050,51,683,Virginia,Manassas city,41085,41085,0.4108500000000001
+Manassas Park,6,2020-05-29,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.17478000000000005
 District of Columbia,460,2020-05-28,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,17,2020-05-28,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,105,2020-05-28,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999993
+Frederick,105,2020-05-28,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999999
 Montgomery,595,2020-05-28,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,530,2020-05-28,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,530,2020-05-28,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Arlington,111,2020-05-28,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,378,2020-05-28,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,62,2020-05-28,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -39,13 +53,13 @@ Prince William,101,2020-05-28,Virginia,VA,51153,050,51,153,Virginia,Prince Willi
 Alexandria,44,2020-05-28,Virginia,VA,51510,050,51,510,Virginia,Alexandria city,159428,159428,1.5942800000000001
 Fairfax City,6,2020-05-28,Virginia,VA,51600,050,51,600,Virginia,Fairfax city,24019,24019,0.24019000000000001
 Falls Church,8,2020-05-28,Virginia,VA,51610,050,51,610,Virginia,Falls Church city,14617,14617,0.14617
-Manassas City,10,2020-05-28,Virginia,VA,51683,050,51,683,Virginia,Manassas city,41085,41085,0.4108500000000001
-Manassas Park,6,2020-05-28,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.17478000000000005
+Manassas City,10,2020-05-28,Virginia,VA,51683,050,51,683,Virginia,Manassas city,41085,41085,0.41085000000000016
+Manassas Park,6,2020-05-28,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.17478000000000007
 District of Columbia,453,2020-05-27,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,17,2020-05-27,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,104,2020-05-27,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999999
+Frederick,104,2020-05-27,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999984
 Montgomery,581,2020-05-27,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,530,2020-05-27,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,530,2020-05-27,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Arlington,109,2020-05-27,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,371,2020-05-27,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,63,2020-05-27,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -53,13 +67,13 @@ Prince William,101,2020-05-27,Virginia,VA,51153,050,51,153,Virginia,Prince Willi
 Alexandria,44,2020-05-27,Virginia,VA,51510,050,51,510,Virginia,Alexandria city,159428,159428,1.5942800000000001
 Fairfax City,6,2020-05-27,Virginia,VA,51600,050,51,600,Virginia,Fairfax city,24019,24019,0.24019000000000001
 Falls Church,8,2020-05-27,Virginia,VA,51610,050,51,610,Virginia,Falls Church city,14617,14617,0.14617
-Manassas City,10,2020-05-27,Virginia,VA,51683,050,51,683,Virginia,Manassas city,41085,41085,0.41085000000000016
-Manassas Park,6,2020-05-27,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.17478000000000007
+Manassas City,10,2020-05-27,Virginia,VA,51683,050,51,683,Virginia,Manassas city,41085,41085,0.4108500000000002
+Manassas Park,6,2020-05-27,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000001
 District of Columbia,445,2020-05-26,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,18,2020-05-26,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,103,2020-05-26,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999984
+Frederick,103,2020-05-26,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999998
 Montgomery,572,2020-05-26,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,520,2020-05-26,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,520,2020-05-26,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Arlington,109,2020-05-26,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,364,2020-05-26,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,53,2020-05-26,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -67,13 +81,13 @@ Prince William,99,2020-05-26,Virginia,VA,51153,050,51,153,Virginia,Prince Willia
 Alexandria,42,2020-05-26,Virginia,VA,51510,050,51,510,Virginia,Alexandria city,159428,159428,1.5942800000000001
 Fairfax City,4,2020-05-26,Virginia,VA,51600,050,51,600,Virginia,Fairfax city,24019,24019,0.24019000000000001
 Falls Church,8,2020-05-26,Virginia,VA,51610,050,51,610,Virginia,Falls Church city,14617,14617,0.14617
-Manassas City,10,2020-05-26,Virginia,VA,51683,050,51,683,Virginia,Manassas city,41085,41085,0.4108500000000002
-Manassas Park,6,2020-05-26,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000001
+Manassas City,10,2020-05-26,Virginia,VA,51683,050,51,683,Virginia,Manassas city,41085,41085,0.41085000000000027
+Manassas Park,6,2020-05-26,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.17478000000000013
 District of Columbia,440,2020-05-25,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,16,2020-05-25,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,101,2020-05-25,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999975
+Frederick,101,2020-05-25,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999997
 Montgomery,567,2020-05-25,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,506,2020-05-25,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,506,2020-05-25,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Arlington,104,2020-05-25,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,340,2020-05-25,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,52,2020-05-25,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -82,12 +96,12 @@ Alexandria,41,2020-05-25,Virginia,VA,51510,050,51,510,Virginia,Alexandria city,1
 Fairfax City,4,2020-05-25,Virginia,VA,51600,050,51,600,Virginia,Fairfax city,24019,24019,0.24019000000000001
 Falls Church,6,2020-05-25,Virginia,VA,51610,050,51,610,Virginia,Falls Church city,14617,14617,0.14617
 Manassas City,9,2020-05-25,Virginia,VA,51683,050,51,683,Virginia,Manassas city,41085,41085,0.4108500000000003
-Manassas Park,6,2020-05-25,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.17478000000000016
+Manassas Park,6,2020-05-25,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.17478000000000019
 District of Columbia,440,2020-05-24,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,16,2020-05-24,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,99,2020-05-24,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999997
+Frederick,99,2020-05-24,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999966
 Montgomery,562,2020-05-24,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,497,2020-05-24,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,497,2020-05-24,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Arlington,101,2020-05-24,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,331,2020-05-24,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,52,2020-05-24,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -96,12 +110,12 @@ Alexandria,38,2020-05-24,Virginia,VA,51510,050,51,510,Virginia,Alexandria city,1
 Fairfax City,3,2020-05-24,Virginia,VA,51600,050,51,600,Virginia,Fairfax city,24019,24019,0.24019000000000001
 Falls Church,5,2020-05-24,Virginia,VA,51610,050,51,610,Virginia,Falls Church city,14617,14617,0.14617
 Manassas City,9,2020-05-24,Virginia,VA,51683,050,51,683,Virginia,Manassas city,41085,41085,0.4108500000000003
-Manassas Park,5,2020-05-24,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.17478000000000019
+Manassas Park,5,2020-05-24,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,432,2020-05-23,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,15,2020-05-23,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,98,2020-05-23,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999966
+Frederick,98,2020-05-23,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999996
 Montgomery,558,2020-05-23,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,490,2020-05-23,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,490,2020-05-23,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Arlington,98,2020-05-23,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,327,2020-05-23,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,52,2020-05-23,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -113,9 +127,9 @@ Manassas City,7,2020-05-23,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,4,2020-05-23,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,427,2020-05-22,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,15,2020-05-22,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,96,2020-05-22,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999996
+Frederick,96,2020-05-22,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999957
 Montgomery,550,2020-05-22,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,484,2020-05-22,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,484,2020-05-22,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Arlington,95,2020-05-22,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,326,2020-05-22,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,52,2020-05-22,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -127,9 +141,9 @@ Manassas City,7,2020-05-22,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,4,2020-05-22,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,418,2020-05-21,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,15,2020-05-21,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,95,2020-05-21,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999957
+Frederick,95,2020-05-21,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999953
 Montgomery,540,2020-05-21,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,477,2020-05-21,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,477,2020-05-21,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Arlington,91,2020-05-21,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,321,2020-05-21,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,51,2020-05-21,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -141,9 +155,9 @@ Manassas City,7,2020-05-21,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,4,2020-05-21,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,412,2020-05-20,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,15,2020-05-20,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,94,2020-05-20,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999953
+Frederick,94,2020-05-20,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999995
 Montgomery,528,2020-05-20,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,466,2020-05-20,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,466,2020-05-20,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Arlington,89,2020-05-20,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,309,2020-05-20,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,49,2020-05-20,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -155,9 +169,9 @@ Manassas City,6,2020-05-20,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,3,2020-05-20,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,407,2020-05-19,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,14,2020-05-19,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,93,2020-05-19,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999995
+Frederick,93,2020-05-19,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999944
 Montgomery,515,2020-05-19,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,453,2020-05-19,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,453,2020-05-19,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Arlington,81,2020-05-19,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,302,2020-05-19,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,49,2020-05-19,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -169,9 +183,9 @@ Manassas City,6,2020-05-19,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,3,2020-05-19,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,400,2020-05-18,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,13,2020-05-18,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,90,2020-05-18,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999944
+Frederick,90,2020-05-18,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999994
 Montgomery,503,2020-05-18,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,445,2020-05-18,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,445,2020-05-18,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Arlington,79,2020-05-18,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,292,2020-05-18,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,48,2020-05-18,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -183,9 +197,9 @@ Manassas City,5,2020-05-18,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,3,2020-05-18,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,392,2020-05-17,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,13,2020-05-17,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,90,2020-05-17,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999994
+Frederick,90,2020-05-17,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999935
 Montgomery,480,2020-05-17,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,436,2020-05-17,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,436,2020-05-17,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Arlington,77,2020-05-17,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,284,2020-05-17,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,48,2020-05-17,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -197,9 +211,9 @@ Manassas City,5,2020-05-17,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,3,2020-05-17,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,383,2020-05-16,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,13,2020-05-16,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,90,2020-05-16,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999935
+Frederick,90,2020-05-16,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999993
 Montgomery,475,2020-05-16,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,429,2020-05-16,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,429,2020-05-16,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Arlington,75,2020-05-16,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,282,2020-05-16,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,48,2020-05-16,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -211,9 +225,9 @@ Manassas City,5,2020-05-16,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,3,2020-05-16,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,375,2020-05-15,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,13,2020-05-15,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,89,2020-05-15,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999993
+Frederick,89,2020-05-15,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999926
 Montgomery,461,2020-05-15,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,420,2020-05-15,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,420,2020-05-15,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Arlington,74,2020-05-15,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,278,2020-05-15,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,48,2020-05-15,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -225,9 +239,9 @@ Manassas City,5,2020-05-15,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,3,2020-05-15,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,368,2020-05-14,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,13,2020-05-14,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,88,2020-05-14,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999926
+Frederick,88,2020-05-14,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999992
 Montgomery,449,2020-05-14,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,413,2020-05-14,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,413,2020-05-14,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Arlington,71,2020-05-14,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,273,2020-05-14,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,48,2020-05-14,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -239,9 +253,9 @@ Manassas City,5,2020-05-14,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,3,2020-05-14,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,358,2020-05-13,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,13,2020-05-13,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,84,2020-05-13,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999992
+Frederick,84,2020-05-13,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999917
 Montgomery,437,2020-05-13,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,398,2020-05-13,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,398,2020-05-13,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Arlington,70,2020-05-13,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,267,2020-05-13,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,44,2020-05-13,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -253,9 +267,9 @@ Manassas City,5,2020-05-13,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,3,2020-05-13,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,350,2020-05-12,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,13,2020-05-12,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,80,2020-05-12,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999917
+Frederick,80,2020-05-12,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999913
 Montgomery,422,2020-05-12,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,389,2020-05-12,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,389,2020-05-12,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Arlington,69,2020-05-12,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,262,2020-05-12,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,38,2020-05-12,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -267,9 +281,9 @@ Manassas City,4,2020-05-12,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,3,2020-05-12,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,336,2020-05-11,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,13,2020-05-11,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,77,2020-05-11,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999913
+Frederick,77,2020-05-11,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999991
 Montgomery,407,2020-05-11,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,373,2020-05-11,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,373,2020-05-11,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Arlington,66,2020-05-11,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,253,2020-05-11,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,35,2020-05-11,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -281,9 +295,9 @@ Manassas City,3,2020-05-11,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,3,2020-05-11,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,328,2020-05-10,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,11,2020-05-10,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,74,2020-05-10,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999991
+Frederick,74,2020-05-10,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999904
 Montgomery,388,2020-05-10,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,359,2020-05-10,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,359,2020-05-10,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Arlington,60,2020-05-10,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,243,2020-05-10,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,30,2020-05-10,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -295,9 +309,9 @@ Manassas City,3,2020-05-10,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,2,2020-05-10,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,323,2020-05-09,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,11,2020-05-09,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,74,2020-05-09,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999904
+Frederick,74,2020-05-09,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.59546999999999
 Montgomery,382,2020-05-09,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,353,2020-05-09,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,353,2020-05-09,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Arlington,61,2020-05-09,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,239,2020-05-09,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,30,2020-05-09,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -309,9 +323,9 @@ Manassas City,2,2020-05-09,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,2,2020-05-09,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,311,2020-05-08,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,11,2020-05-08,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,72,2020-05-08,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.59546999999999
+Frederick,72,2020-05-08,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999895
 Montgomery,369,2020-05-08,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,349,2020-05-08,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,349,2020-05-08,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Arlington,60,2020-05-08,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,230,2020-05-08,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,30,2020-05-08,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -323,9 +337,9 @@ Manassas City,2,2020-05-08,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,2,2020-05-08,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,304,2020-05-07,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,11,2020-05-07,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,70,2020-05-07,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999895
+Frederick,70,2020-05-07,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999886
 Montgomery,355,2020-05-07,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,339,2020-05-07,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,339,2020-05-07,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Arlington,57,2020-05-07,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,227,2020-05-07,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,29,2020-05-07,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -337,9 +351,9 @@ Manassas City,2,2020-05-07,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,2,2020-05-07,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,285,2020-05-06,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,11,2020-05-06,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,70,2020-05-06,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999886
+Frederick,70,2020-05-06,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999877
 Montgomery,345,2020-05-06,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,324,2020-05-06,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,324,2020-05-06,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Arlington,52,2020-05-06,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,211,2020-05-06,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,26,2020-05-06,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -351,9 +365,9 @@ Manassas City,1,2020-05-06,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,2,2020-05-06,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,277,2020-05-05,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,11,2020-05-05,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,68,2020-05-05,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999886
+Frederick,68,2020-05-05,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999877
 Montgomery,333,2020-05-05,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,311,2020-05-05,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,311,2020-05-05,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Arlington,51,2020-05-05,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,206,2020-05-05,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,25,2020-05-05,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -365,9 +379,9 @@ Manassas City,1,2020-05-05,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,2,2020-05-05,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,264,2020-05-04,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,11,2020-05-04,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,66,2020-05-04,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999877
+Frederick,66,2020-05-04,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999873
 Montgomery,320,2020-05-04,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,295,2020-05-04,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,295,2020-05-04,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Arlington,49,2020-05-04,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,201,2020-05-04,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,24,2020-05-04,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -379,9 +393,9 @@ Manassas City,1,2020-05-04,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,2,2020-05-04,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,258,2020-05-03,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,11,2020-05-03,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,62,2020-05-03,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999873
+Frederick,62,2020-05-03,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999987
 Montgomery,301,2020-05-03,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,284,2020-05-03,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,284,2020-05-03,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Arlington,47,2020-05-03,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,198,2020-05-03,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,18,2020-05-03,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -393,9 +407,9 @@ Manassas City,1,2020-05-03,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,2,2020-05-03,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,251,2020-05-02,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,11,2020-05-02,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,61,2020-05-02,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999987
+Frederick,61,2020-05-02,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999864
 Montgomery,295,2020-05-02,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,277,2020-05-02,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,277,2020-05-02,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Arlington,46,2020-05-02,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,184,2020-05-02,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,16,2020-05-02,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -407,9 +421,9 @@ Manassas City,1,2020-05-02,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,1,2020-05-02,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,240,2020-05-01,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,11,2020-05-01,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,59,2020-05-01,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999864
+Frederick,59,2020-05-01,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999986
 Montgomery,282,2020-05-01,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,269,2020-05-01,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,269,2020-05-01,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Arlington,46,2020-05-01,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,153,2020-05-01,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,16,2020-05-01,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -421,9 +435,9 @@ Manassas City,2,2020-05-01,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,1,2020-05-01,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,231,2020-04-30,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,9,2020-04-30,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,56,2020-04-30,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999986
+Frederick,56,2020-04-30,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999855
 Montgomery,262,2020-04-30,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,243,2020-04-30,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,243,2020-04-30,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Arlington,42,2020-04-30,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,137,2020-04-30,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,15,2020-04-30,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -435,9 +449,9 @@ Manassas City,2,2020-04-30,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,1,2020-04-30,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,224,2020-04-29,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,8,2020-04-29,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,56,2020-04-29,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999855
+Frederick,56,2020-04-29,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999846
 Montgomery,255,2020-04-29,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,240,2020-04-29,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,240,2020-04-29,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Arlington,41,2020-04-29,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,134,2020-04-29,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,15,2020-04-29,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -449,9 +463,9 @@ Manassas City,2,2020-04-29,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,1,2020-04-29,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,205,2020-04-28,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,8,2020-04-28,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,51,2020-04-28,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999846
+Frederick,51,2020-04-28,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999837
 Montgomery,242,2020-04-28,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,224,2020-04-28,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,224,2020-04-28,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Arlington,32,2020-04-28,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,124,2020-04-28,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,14,2020-04-28,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -463,9 +477,9 @@ Manassas City,3,2020-04-28,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,1,2020-04-28,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,190,2020-04-27,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,8,2020-04-27,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,48,2020-04-27,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999837
+Frederick,48,2020-04-27,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999833
 Montgomery,221,2020-04-27,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,206,2020-04-27,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,206,2020-04-27,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Arlington,32,2020-04-27,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,114,2020-04-27,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,12,2020-04-27,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -477,9 +491,9 @@ Manassas City,2,2020-04-27,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,1,2020-04-27,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,185,2020-04-26,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,7,2020-04-26,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,48,2020-04-26,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999833
+Frederick,48,2020-04-26,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999983
 Montgomery,210,2020-04-26,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,198,2020-04-26,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,198,2020-04-26,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Arlington,32,2020-04-26,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,100,2020-04-26,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,12,2020-04-26,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -491,9 +505,9 @@ Manassas City,2,2020-04-26,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,1,2020-04-26,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,178,2020-04-25,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,7,2020-04-25,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,45,2020-04-25,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999983
+Frederick,45,2020-04-25,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999824
 Montgomery,180,2020-04-25,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,174,2020-04-25,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,174,2020-04-25,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Arlington,32,2020-04-25,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,95,2020-04-25,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,11,2020-04-25,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -505,9 +519,9 @@ Manassas City,2,2020-04-25,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,1,2020-04-25,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,165,2020-04-24,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,7,2020-04-24,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,45,2020-04-24,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999824
+Frederick,45,2020-04-24,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999982
 Montgomery,171,2020-04-24,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,173,2020-04-24,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,173,2020-04-24,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Arlington,29,2020-04-24,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,90,2020-04-24,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,11,2020-04-24,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -519,9 +533,9 @@ Manassas City,1,2020-04-24,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,1,2020-04-24,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,153,2020-04-23,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,6,2020-04-23,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,41,2020-04-23,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999982
+Frederick,41,2020-04-23,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999815
 Montgomery,154,2020-04-23,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,158,2020-04-23,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,158,2020-04-23,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Arlington,24,2020-04-23,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,85,2020-04-23,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,10,2020-04-23,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
@@ -533,9 +547,9 @@ Manassas City,1,2020-04-23,Virginia,VA,51683,050,51,683,Virginia,Manassas city,4
 Manassas Park,1,2020-04-23,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,139,2020-04-22,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,6,2020-04-22,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,36,2020-04-22,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999815
+Frederick,36,2020-04-22,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999806
 Montgomery,139,2020-04-22,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,150,2020-04-22,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,150,2020-04-22,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Loudoun,10,2020-04-22,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
 Prince William,18,2020-04-22,Virginia,VA,51153,050,51,153,Virginia,Prince William County,470335,470335,4.70335
 Fairfax,2,2020-04-22,Virginia,VA,51600,050,51,600,Virginia,Fairfax city,24019,24019,0.24019000000000001
@@ -547,9 +561,9 @@ Arlington,24,2020-04-22,Virginia,VA,51013,050,51,013,Virginia,Arlington County,2
 Prince William,1,2020-04-22,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,127,2020-04-21,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,5,2020-04-21,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,35,2020-04-21,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999806
+Frederick,35,2020-04-21,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999797
 Montgomery,126,2020-04-21,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,132,2020-04-21,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,132,2020-04-21,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Fairfax City,1,2020-04-21,Virginia,VA,51600,050,51,600,Virginia,Fairfax city,24019,24019,0.24019000000000001
 Falls Church City,1,2020-04-21,Virginia,VA,51610,050,51,610,Virginia,Falls Church city,14617,14617,0.14617
 Manassas Park City,1,2020-04-21,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
@@ -561,9 +575,9 @@ Fairfax County,66,2020-04-21,Virginia,VA,51059,050,51,059,Virginia,Fairfax Count
 Manassas City,0,2020-04-21,Virginia,VA,51683,050,51,683,Virginia,Manassas city,41085,41085,0.4108500000000003
 District of Columbia,112,2020-04-20,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,4,2020-04-20,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,33,2020-04-20,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999793
+Frederick,33,2020-04-20,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999979
 Montgomery,116,2020-04-20,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,118,2020-04-20,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,118,2020-04-20,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Fairfax,64,2020-04-20,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
 Loudoun,8,2020-04-20,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538,413538,4.13538
 Falls Church,1,2020-04-20,Virginia,VA,51610,050,51,610,Virginia,Falls Church city,14617,14617,0.14617
@@ -575,9 +589,9 @@ Fairfax City,1,2020-04-20,Virginia,VA,51600,050,51,600,Virginia,Fairfax city,240
 Manassas Park,1,2020-04-20,Virginia,VA,51685,050,51,685,Virginia,Manassas Park city,17478,17478,0.1747800000000002
 District of Columbia,105,2020-04-19,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,3,2020-04-19,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,30,2020-04-19,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999979
+Frederick,30,2020-04-19,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999784
 Montgomery,106,2020-04-19,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,112,2020-04-19,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,112,2020-04-19,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Alexandria City,8,2020-04-19,Virginia,VA,51510,050,51,510,Virginia,Alexandria city,159428,159428,1.5942800000000001
 Arlington,22,2020-04-19,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,59,2020-04-19,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
@@ -585,9 +599,9 @@ Loudoun,8,2020-04-19,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538
 Prince William,17,2020-04-19,Virginia,VA,51153,050,51,153,Virginia,Prince William County,470335,470335,4.70335
 District of Columbia,96,2020-04-18,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,3,2020-04-18,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,30,2020-04-18,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999784
+Frederick,30,2020-04-18,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999978
 Montgomery,96,2020-04-18,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,105,2020-04-18,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,105,2020-04-18,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Alexandria City,7,2020-04-18,Virginia,VA,51510,050,51,510,Virginia,Alexandria city,159428,159428,1.5942800000000001
 Arlington,20,2020-04-18,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,48,2020-04-18,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
@@ -595,9 +609,9 @@ Loudoun,7,2020-04-18,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538
 Prince William,16,2020-04-18,Virginia,VA,51153,050,51,153,Virginia,Prince William County,470335,470335,4.70335
 District of Columbia,91,2020-04-17,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,2,2020-04-17,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,31,2020-04-17,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999978
+Frederick,31,2020-04-17,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999775
 Montgomery,86,2020-04-17,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,95,2020-04-17,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,95,2020-04-17,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Alexandria City,7,2020-04-17,Virginia,VA,51510,050,51,510,Virginia,Alexandria city,159428,159428,1.5942800000000001
 Arlington,17,2020-04-17,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,43,2020-04-17,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
@@ -605,9 +619,9 @@ Loudoun,7,2020-04-17,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538
 Prince William,15,2020-04-17,Virginia,VA,51153,050,51,153,Virginia,Prince William County,470335,470335,4.70335
 District of Columbia,86,2020-04-16,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,2,2020-04-16,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,30,2020-04-16,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999775
+Frederick,30,2020-04-16,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999977
 Montgomery,78,2020-04-16,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,87,2020-04-16,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,87,2020-04-16,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Alexandria City,5,2020-04-16,Virginia,VA,51510,050,51,510,Virginia,Alexandria city,159428,159428,1.5942800000000001
 Arlington,15,2020-04-16,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,37,2020-04-16,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
@@ -615,9 +629,9 @@ Loudoun,7,2020-04-16,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538
 Prince William,14,2020-04-16,Virginia,VA,51153,050,51,153,Virginia,Prince William County,470335,470335,4.70335
 District of Columbia,81,2020-04-15,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,1,2020-04-15,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,29,2020-04-15,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999977
+Frederick,29,2020-04-15,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999766
 Montgomery,70,2020-04-15,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,80,2020-04-15,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,80,2020-04-15,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Alexandria City,4,2020-04-15,Virginia,VA,51510,050,51,510,Virginia,Alexandria city,159428,159428,1.5942800000000001
 Arlington,15,2020-04-15,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,31,2020-04-15,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
@@ -625,9 +639,9 @@ Loudoun,6,2020-04-15,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538
 Prince William,12,2020-04-15,Virginia,VA,51153,050,51,153,Virginia,Prince William County,470335,470335,4.70335
 District of Columbia,72,2020-04-14,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,1,2020-04-14,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,27,2020-04-14,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999766
+Frederick,27,2020-04-14,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999976
 Montgomery,58,2020-04-14,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,76,2020-04-14,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,76,2020-04-14,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Alexandria City,4,2020-04-14,Virginia,VA,51510,050,51,510,Virginia,Alexandria city,159428,159428,1.5942800000000001
 Arlington,14,2020-04-14,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,30,2020-04-14,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
@@ -635,9 +649,9 @@ Loudoun,6,2020-04-14,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538
 Prince William,11,2020-04-14,Virginia,VA,51153,050,51,153,Virginia,Prince William County,470335,470335,4.70335
 District of Columbia,67,2020-04-13,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,1,2020-04-13,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,14,2020-04-13,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.595469999999976
+Frederick,14,2020-04-13,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999757
 Montgomery,54,2020-04-13,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,72,2020-04-13,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
+Prince Georges,72,2020-04-13,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
 Alexandria City,2,2020-04-13,Virginia,VA,51510,050,51,510,Virginia,Alexandria city,159428,159428,1.5942800000000001
 Arlington,12,2020-04-13,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,21,2020-04-13,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532
@@ -645,9 +659,9 @@ Loudoun,5,2020-04-13,Virginia,VA,51107,050,51,107,Virginia,Loudoun County,413538
 Prince William,10,2020-04-13,Virginia,VA,51153,050,51,153,Virginia,Prince William County,470335,470335,4.70335
 District of Columbia,52,2020-04-12,District of Columbia,DC,11001,050,11,001,District of Columbia,District of Columbia,705749,705749,7.05749
 Calvert,1,2020-04-12,Maryland,MD,24009,050,24,009,Maryland,Calvert County,92525,92525,0.92525
-Frederick,12,2020-04-12,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999757
+Frederick,12,2020-04-12,Maryland,MD,24021,050,24,021,Maryland,Frederick County,259547,259547,2.5954699999999753
 Montgomery,48,2020-04-12,Maryland,MD,24031,050,24,031,Maryland,Montgomery County,1050688,1050688,10.50688
-Prince Georges,63,2020-04-12,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.093269999999999
+Prince Georges,63,2020-04-12,Maryland,MD,24033,050,24,033,Maryland,Prince George's County,909327,909327,9.09327
 Alexandria City,1,2020-04-12,Virginia,VA,51510,050,51,510,Virginia,Alexandria city,159428,159428,1.5942800000000001
 Arlington,11,2020-04-12,Virginia,VA,51013,050,51,013,Virginia,Arlington County,236842,236842,2.36842
 Fairfax,21,2020-04-12,Virginia,VA,51059,050,51,059,Virginia,Fairfax County,1147532,1147532,11.47532

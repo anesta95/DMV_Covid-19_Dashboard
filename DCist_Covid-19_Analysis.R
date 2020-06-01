@@ -152,7 +152,24 @@ Sys.sleep(5)
 # map(WV_All_Divs, function(x){x$getElementText()}) %>% flatten()
 
 WV_Body_Cells <- remDr$findElements(using = "class", value = "bodyCells")
-WV_Complete_Divs <- WV_Body_Cells[[1]]$findChildElement(value = "div")
+WV_Index_Checker <- map(
+  map(
+    map(WV_Body_Cells, ~ .x$findChildElement(value = "div")), 
+    ~ .x$findChildElements(value = "div")
+  ) %>% flatten(),  ~ .x$findChildElements(value = "div") 
+) %>% map_dbl(length)
+
+if (WV_Index_Checker[7] == 6) {
+  a <- 3
+} else if (WV_Index_Checker[4] == 6) {
+  a <- 2
+} else {
+  a <- 1
+}
+
+WV_Complete_Divs <- WV_Body_Cells[[a]]$findChildElement(value = "div")
+
+
 
 # WV_Complete_Divs <- remDr$findElement(using = "xpath", value = "/html/body/div[1]/ui-view/div/div[1]/div/div/div/div/exploration-container/exploration-container-legacy/div/div/exploration-host/div/div/exploration/div/explore-canvas-modern/div/div[2]/div/div[2]/div[2]/visual-container-repeat/visual-container-modern[1]/transform/div/div[3]/div/visual-modern/div/div/div[2]/div[1]/div[4]/div")
 Sys.sleep(5)
@@ -162,6 +179,8 @@ WV_Combined_Lists <- map(map(WV_Complete_Divs_Set,
                              ~ .x$findChildElements(value = "div")) %>% flatten(), 
                          function(x) {x$getElementText()}) %>% flatten()
 Sys.sleep(15)
+
+map(WV_Complete_Divs_Set, ~ .x$findChildElements(value = "div")) %>% flatten() %>% length()
 
 
 # WV_CountiesDivs <- remDr$findElements(using = "class", value = "tableEx")

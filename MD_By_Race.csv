@@ -1,9 +1,15 @@
 Race,Cases,Deaths,Date,State
-African-American ,15188,1035,2020-05-30,Maryland
-Asian ,997,99,2020-05-30,Maryland
-White ,10299,59,2020-05-30,Maryland
+African-American ,15527,41,2020-05-31,Maryland
+Asian ,1016,100,2020-05-31,Maryland
+White ,10529,61,2020-05-31,Maryland
+Hispanic,13753,236,2020-05-31,Maryland
+Other ,2699,31,2020-05-31,Maryland
+Data not available,9803,55,2020-05-31,Maryland
+African-American,15188,1035,2020-05-30,Maryland
+Asian,997,99,2020-05-30,Maryland
+White,10299,59,2020-05-30,Maryland
 Hispanic,13377,233,2020-05-30,Maryland
-Other ,2654,31,2020-05-30,Maryland
+Other,2654,31,2020-05-30,Maryland
 Data not available,10263,59,2020-05-30,Maryland
 African-American,14911,1026,2020-05-29,Maryland
 Asian,977,98,2020-05-29,Maryland
