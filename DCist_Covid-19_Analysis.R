@@ -180,7 +180,6 @@ WV_Combined_Lists <- map(map(WV_Complete_Divs_Set,
                          function(x) {x$getElementText()}) %>% flatten()
 Sys.sleep(15)
 
-map(WV_Complete_Divs_Set, ~ .x$findChildElements(value = "div")) %>% flatten() %>% length()
 
 
 # WV_CountiesDivs <- remDr$findElements(using = "class", value = "tableEx")
