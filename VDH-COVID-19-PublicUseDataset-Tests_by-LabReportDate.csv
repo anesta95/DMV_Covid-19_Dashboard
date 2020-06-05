@@ -1,145 +1,177 @@
 Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Positive PCR Tests,Total Number of Testing Encounters,Total Number of Positive Tests
-6/4/2020,Alexandria,10,0,10,0
-6/4/2020,Alleghany,3,0,3,0
-6/4/2020,Arlington,1,0,1,0
-6/4/2020,Central Shenandoah,5,0,5,0
-6/4/2020,Central Virginia,2,0,2,0
-6/4/2020,Chesapeake,17,0,17,0
-6/4/2020,Chesterfield,3,0,3,0
-6/4/2020,Chickahominy,2,0,2,0
-6/4/2020,Crater,3,0,3,0
-6/4/2020,Cumberland Plateau,1,0,1,0
-6/4/2020,Eastern Shore,2,0,2,0
-6/4/2020,Fairfax,46,7,46,7
-6/4/2020,Hampton,4,0,4,0
-6/4/2020,Henrico,5,0,5,0
-6/4/2020,Lenowisco,1,0,1,0
-6/4/2020,Lord Fairfax,3,1,3,1
-6/4/2020,Loudoun,13,1,13,1
-6/4/2020,Mount Rogers,1,0,1,0
-6/4/2020,New River,1,1,1,1
-6/4/2020,Norfolk,12,0,12,0
-6/4/2020,Out of State,26,0,26,0
-6/4/2020,Peninsula,8,3,8,3
-6/4/2020,Piedmont,1,0,1,0
-6/4/2020,Pittsylvania-Danville,1,0,1,0
-6/4/2020,Portsmouth,3,1,3,1
-6/4/2020,Prince William,17,3,17,3
-6/4/2020,Rappahannock,8,1,8,1
-6/4/2020,Rappahannock Rapidan,37,7,37,7
-6/4/2020,Richmond,2,0,2,0
-6/4/2020,Roanoke,1,0,1,0
-6/4/2020,Southside,4,0,4,0
-6/4/2020,Thomas Jefferson,47,1,48,2
-6/4/2020,Virginia Beach,69,1,69,1
-6/4/2020,West Piedmont,1,0,1,0
-6/4/2020,Western Tidewater,25,0,25,0
-6/3/2020,Alexandria,136,16,180,22
-6/3/2020,Alleghany,86,6,96,6
-6/3/2020,Arlington,173,19,255,27
-6/3/2020,Central Shenandoah,156,10,181,12
+6/5/2020,Alexandria,5,1,5,1
+6/5/2020,Alleghany,2,0,2,0
+6/5/2020,Arlington,66,2,66,2
+6/5/2020,Central Shenandoah,6,1,6,1
+6/5/2020,Central Virginia,1,0,1,0
+6/5/2020,Chesapeake,1,1,1,1
+6/5/2020,Chesterfield,3,0,3,0
+6/5/2020,Chickahominy,1,0,1,0
+6/5/2020,Crater,3,0,3,0
+6/5/2020,Fairfax,39,7,39,7
+6/5/2020,Henrico,7,0,7,0
+6/5/2020,Lord Fairfax,2,0,2,0
+6/5/2020,Loudoun,40,4,40,4
+6/5/2020,Mount Rogers,1,0,1,0
+6/5/2020,New River,3,0,3,0
+6/5/2020,Norfolk,1,1,1,1
+6/5/2020,Out of State,5,0,5,0
+6/5/2020,Peninsula,2,0,2,0
+6/5/2020,Pittsylvania-Danville,1,0,1,0
+6/5/2020,Portsmouth,1,0,1,0
+6/5/2020,Prince William,9,2,9,2
+6/5/2020,Rappahannock,3,1,3,1
+6/5/2020,Rappahannock Rapidan,4,0,4,0
+6/5/2020,Richmond,4,0,4,0
+6/5/2020,Southside,5,0,5,0
+6/5/2020,Thomas Jefferson,27,3,27,3
+6/5/2020,Three Rivers,112,0,112,0
+6/5/2020,Unknown,4,0,4,0
+6/5/2020,Virginia Beach,4,0,4,0
+6/5/2020,Western Tidewater,2,0,2,0
+6/4/2020,Alexandria,162,12,198,17
+6/4/2020,Alleghany,75,7,96,7
+6/4/2020,Arlington,182,19,279,24
+6/4/2020,Central Shenandoah,131,17,164,21
+6/4/2020,Central Virginia,447,4,469,5
+6/4/2020,Chesapeake,154,12,193,14
+6/4/2020,Chesterfield,570,96,678,98
+6/4/2020,Chickahominy,216,14,238,16
+6/4/2020,Crater,215,30,230,31
+6/4/2020,Cumberland Plateau,35,0,41,0
+6/4/2020,Eastern Shore,28,3,30,3
+6/4/2020,Fairfax,1020,133,1384,176
+6/4/2020,Hampton,77,6,90,8
+6/4/2020,Henrico,433,49,485,51
+6/4/2020,Lenowisco,22,0,29,0
+6/4/2020,Lord Fairfax,86,6,133,6
+6/4/2020,Loudoun,289,29,383,36
+6/4/2020,Mount Rogers,81,9,92,9
+6/4/2020,New River,52,5,74,6
+6/4/2020,Norfolk,225,12,252,12
+6/4/2020,Out of State,296,20,297,20
+6/4/2020,Peninsula,244,12,320,17
+6/4/2020,Piedmont,104,12,116,12
+6/4/2020,Pittsylvania-Danville,76,2,79,4
+6/4/2020,Portsmouth,123,9,129,10
+6/4/2020,Prince William,672,94,772,109
+6/4/2020,Rappahannock,401,48,479,53
+6/4/2020,Rappahannock Rapidan,218,22,242,23
+6/4/2020,Richmond,261,33,284,35
+6/4/2020,Roanoke,40,4,45,4
+6/4/2020,Southside,72,6,78,6
+6/4/2020,Thomas Jefferson,341,19,418,23
+6/4/2020,Three Rivers,88,3,113,4
+6/4/2020,Unknown,18,3,18,3
+6/4/2020,Virginia Beach,420,14,500,16
+6/4/2020,West Piedmont,75,3,82,3
+6/4/2020,Western Tidewater,178,8,189,8
+6/3/2020,Alexandria,163,18,207,24
+6/3/2020,Alleghany,108,8,118,8
+6/3/2020,Arlington,253,24,335,32
+6/3/2020,Central Shenandoah,232,13,257,15
 6/3/2020,Central Virginia,220,5,234,5
-6/3/2020,Chesapeake,175,9,189,9
-6/3/2020,Chesterfield,587,84,662,85
-6/3/2020,Chickahominy,121,5,148,6
-6/3/2020,Crater,244,29,261,30
-6/3/2020,Cumberland Plateau,40,0,44,0
-6/3/2020,Eastern Shore,35,7,39,8
-6/3/2020,Fairfax,1152,171,1525,211
-6/3/2020,Hampton,80,3,90,5
-6/3/2020,Henrico,428,63,456,66
-6/3/2020,Lenowisco,13,1,18,1
-6/3/2020,Lord Fairfax,106,10,153,12
-6/3/2020,Loudoun,404,48,501,54
-6/3/2020,Mount Rogers,87,4,103,5
-6/3/2020,New River,65,0,84,1
-6/3/2020,Norfolk,259,24,269,25
-6/3/2020,Out of State,150,6,150,6
-6/3/2020,Peninsula,212,23,260,24
-6/3/2020,Piedmont,128,17,135,18
+6/3/2020,Chesapeake,235,13,258,13
+6/3/2020,Chesterfield,599,89,674,90
+6/3/2020,Chickahominy,126,5,153,6
+6/3/2020,Crater,250,30,267,31
+6/3/2020,Cumberland Plateau,52,0,57,0
+6/3/2020,Eastern Shore,38,7,42,8
+6/3/2020,Fairfax,1400,223,1774,263
+6/3/2020,Hampton,91,3,101,5
+6/3/2020,Henrico,469,69,496,71
+6/3/2020,Lenowisco,28,1,33,1
+6/3/2020,Lord Fairfax,261,24,308,26
+6/3/2020,Loudoun,449,61,549,69
+6/3/2020,Mount Rogers,110,6,126,7
+6/3/2020,New River,80,8,99,9
+6/3/2020,Norfolk,271,25,281,26
+6/3/2020,Out of State,153,6,153,6
+6/3/2020,Peninsula,228,24,276,25
+6/3/2020,Piedmont,131,19,137,20
 6/3/2020,Pittsylvania-Danville,85,2,91,2
-6/3/2020,Portsmouth,80,5,87,5
-6/3/2020,Prince William,621,84,727,95
-6/3/2020,Rappahannock,354,42,405,47
-6/3/2020,Rappahannock Rapidan,216,19,241,19
-6/3/2020,Richmond,312,57,331,58
-6/3/2020,Roanoke,36,3,42,3
+6/3/2020,Portsmouth,87,5,94,5
+6/3/2020,Prince William,707,114,813,125
+6/3/2020,Rappahannock,407,49,459,55
+6/3/2020,Rappahannock Rapidan,231,18,256,18
+6/3/2020,Richmond,340,58,359,59
+6/3/2020,Roanoke,364,13,401,13
 6/3/2020,Southside,60,4,66,4
-6/3/2020,Thomas Jefferson,212,10,263,10
-6/3/2020,Three Rivers,98,6,113,6
+6/3/2020,Thomas Jefferson,234,10,285,10
+6/3/2020,Three Rivers,104,7,119,7
 6/3/2020,Unknown,60,9,60,9
-6/3/2020,Virginia Beach,447,12,498,15
-6/3/2020,West Piedmont,88,13,99,14
-6/3/2020,Western Tidewater,121,12,149,12
-6/2/2020,Alexandria,142,9,181,13
-6/2/2020,Alleghany,118,8,131,8
-6/2/2020,Arlington,166,10,243,13
+6/3/2020,Virginia Beach,466,12,518,15
+6/3/2020,West Piedmont,89,14,100,15
+6/3/2020,Western Tidewater,124,12,152,12
+6/2/2020,Alexandria,144,9,183,13
+6/2/2020,Alleghany,118,8,132,8
+6/2/2020,Arlington,167,10,245,14
 6/2/2020,Central Shenandoah,521,35,535,35
 6/2/2020,Central Virginia,187,4,195,4
-6/2/2020,Chesapeake,243,10,254,10
+6/2/2020,Chesapeake,244,10,255,10
 6/2/2020,Chesterfield,320,33,337,34
 6/2/2020,Chickahominy,92,4,108,4
 6/2/2020,Crater,188,17,191,17
 6/2/2020,Cumberland Plateau,29,0,35,0
 6/2/2020,Eastern Shore,23,3,24,3
-6/2/2020,Fairfax,1316,157,1582,174
-6/2/2020,Hampton,98,4,102,4
-6/2/2020,Henrico,301,36,322,37
+6/2/2020,Fairfax,1352,163,1619,181
+6/2/2020,Hampton,99,4,103,4
+6/2/2020,Henrico,302,36,323,37
 6/2/2020,Lenowisco,33,1,36,1
-6/2/2020,Lord Fairfax,423,42,431,42
-6/2/2020,Loudoun,2056,112,2155,113
-6/2/2020,Mount Rogers,123,6,131,7
+6/2/2020,Lord Fairfax,425,42,433,42
+6/2/2020,Loudoun,2063,112,2162,113
+6/2/2020,Mount Rogers,123,6,132,8
 6/2/2020,New River,103,2,119,2
 6/2/2020,Norfolk,305,10,320,10
 6/2/2020,Out of State,256,28,256,28
-6/2/2020,Peninsula,158,5,182,6
+6/2/2020,Peninsula,159,6,183,7
 6/2/2020,Piedmont,79,8,80,8
 6/2/2020,Pittsylvania-Danville,56,3,58,3
 6/2/2020,Portsmouth,94,5,96,5
-6/2/2020,Prince William,920,143,1008,148
-6/2/2020,Rappahannock,246,15,265,16
-6/2/2020,Rappahannock Rapidan,144,7,168,10
-6/2/2020,Richmond,158,20,174,20
+6/2/2020,Prince William,938,149,1026,154
+6/2/2020,Rappahannock,250,15,269,16
+6/2/2020,Rappahannock Rapidan,146,7,171,11
+6/2/2020,Richmond,159,20,175,20
 6/2/2020,Roanoke,300,17,314,17
 6/2/2020,Southside,53,5,54,5
 6/2/2020,Thomas Jefferson,288,20,317,21
 6/2/2020,Three Rivers,55,0,56,0
-6/2/2020,Unknown,234,4,234,4
+6/2/2020,Unknown,235,5,235,5
 6/2/2020,Virginia Beach,419,7,463,10
-6/2/2020,West Piedmont,137,14,143,14
-6/2/2020,Western Tidewater,104,3,110,3
+6/2/2020,West Piedmont,138,15,144,15
+6/2/2020,Western Tidewater,105,4,111,4
 6/1/2020,Alexandria,88,10,90,11
 6/1/2020,Alleghany,36,1,36,1
-6/1/2020,Arlington,185,18,188,18
-6/1/2020,Central Shenandoah,214,14,214,14
+6/1/2020,Arlington,190,19,193,19
+6/1/2020,Central Shenandoah,215,15,215,15
 6/1/2020,Central Virginia,21,1,23,1
 6/1/2020,Chesapeake,70,9,70,9
-6/1/2020,Chesterfield,163,51,167,51
+6/1/2020,Chesterfield,167,55,171,55
 6/1/2020,Chickahominy,38,2,38,2
-6/1/2020,Crater,71,4,72,4
+6/1/2020,Crater,73,6,74,6
 6/1/2020,Cumberland Plateau,18,0,18,0
 6/1/2020,Eastern Shore,4,1,4,1
-6/1/2020,Fairfax,860,142,872,144
-6/1/2020,Hampton,18,1,19,1
-6/1/2020,Henrico,237,35,238,35
+6/1/2020,Fairfax,884,145,896,147
+6/1/2020,Hampton,20,3,21,3
+6/1/2020,Henrico,241,39,242,39
 6/1/2020,Lenowisco,22,0,22,0
 6/1/2020,Lord Fairfax,389,72,389,72
-6/1/2020,Loudoun,279,34,283,34
+6/1/2020,Loudoun,282,34,286,34
 6/1/2020,Mount Rogers,60,3,60,3
 6/1/2020,New River,31,0,31,0
-6/1/2020,Norfolk,198,9,200,9
+6/1/2020,Norfolk,200,11,202,11
 6/1/2020,Out of State,121,13,121,13
 6/1/2020,Peninsula,52,7,54,7
 6/1/2020,Piedmont,18,1,18,1
 6/1/2020,Pittsylvania-Danville,36,0,36,0
 6/1/2020,Portsmouth,51,6,51,6
-6/1/2020,Prince William,825,77,836,78
-6/1/2020,Rappahannock,183,19,188,19
-6/1/2020,Rappahannock Rapidan,88,3,89,3
-6/1/2020,Richmond,214,37,214,37
+6/1/2020,Prince William,837,78,848,79
+6/1/2020,Rappahannock,188,20,193,20
+6/1/2020,Rappahannock Rapidan,89,3,91,4
+6/1/2020,Richmond,217,40,217,40
 6/1/2020,Roanoke,254,5,255,5
 6/1/2020,Southside,16,0,16,0
-6/1/2020,Thomas Jefferson,169,9,181,10
+6/1/2020,Thomas Jefferson,171,11,183,12
 6/1/2020,Three Rivers,10,0,11,0
 6/1/2020,Unknown,208,5,208,5
 6/1/2020,Virginia Beach,195,3,195,3
@@ -149,19 +181,19 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/31/2020,Alleghany,85,8,89,8
 5/31/2020,Arlington,114,7,137,10
 5/31/2020,Central Shenandoah,422,13,428,13
-5/31/2020,Central Virginia,206,4,206,4
+5/31/2020,Central Virginia,205,4,205,4
 5/31/2020,Chesapeake,145,9,177,12
-5/31/2020,Chesterfield,290,24,315,26
+5/31/2020,Chesterfield,289,24,314,26
 5/31/2020,Chickahominy,108,8,114,9
-5/31/2020,Crater,186,13,192,13
+5/31/2020,Crater,187,13,193,13
 5/31/2020,Cumberland Plateau,92,0,94,0
 5/31/2020,Eastern Shore,53,4,56,6
-5/31/2020,Fairfax,707,121,820,130
+5/31/2020,Fairfax,708,121,821,130
 5/31/2020,Hampton,70,2,72,2
-5/31/2020,Henrico,311,21,321,21
+5/31/2020,Henrico,312,21,322,21
 5/31/2020,Lenowisco,56,0,57,0
-5/31/2020,Lord Fairfax,354,15,360,16
-5/31/2020,Loudoun,210,24,237,25
+5/31/2020,Lord Fairfax,355,15,361,16
+5/31/2020,Loudoun,209,24,236,25
 5/31/2020,Mount Rogers,233,13,236,13
 5/31/2020,New River,59,1,71,1
 5/31/2020,Norfolk,149,12,160,12
@@ -171,7 +203,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/31/2020,Pittsylvania-Danville,71,2,73,2
 5/31/2020,Portsmouth,50,6,54,6
 5/31/2020,Prince William,478,73,521,80
-5/31/2020,Rappahannock,240,35,258,35
+5/31/2020,Rappahannock,241,36,259,36
 5/31/2020,Rappahannock Rapidan,158,13,169,15
 5/31/2020,Richmond,167,23,176,24
 5/31/2020,Roanoke,362,12,387,13
@@ -184,21 +216,21 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/31/2020,Western Tidewater,109,4,110,4
 5/30/2020,Alexandria,200,12,243,18
 5/30/2020,Alleghany,86,3,104,3
-5/30/2020,Arlington,151,12,253,18
+5/30/2020,Arlington,152,12,254,18
 5/30/2020,Central Shenandoah,312,19,345,22
 5/30/2020,Central Virginia,209,3,218,4
 5/30/2020,Chesapeake,103,8,148,11
-5/30/2020,Chesterfield,450,63,527,67
+5/30/2020,Chesterfield,451,64,528,68
 5/30/2020,Chickahominy,244,2,271,4
 5/30/2020,Crater,192,18,204,18
-5/30/2020,Cumberland Plateau,67,2,70,2
+5/30/2020,Cumberland Plateau,66,2,69,2
 5/30/2020,Eastern Shore,51,6,56,8
-5/30/2020,Fairfax,991,120,1422,153
+5/30/2020,Fairfax,1001,122,1432,155
 5/30/2020,Hampton,114,5,139,5
 5/30/2020,Henrico,549,57,601,58
 5/30/2020,Lenowisco,29,1,34,1
-5/30/2020,Lord Fairfax,293,26,365,33
-5/30/2020,Loudoun,260,26,374,30
+5/30/2020,Lord Fairfax,294,26,366,33
+5/30/2020,Loudoun,264,29,378,33
 5/30/2020,Mount Rogers,89,5,113,6
 5/30/2020,New River,74,4,94,4
 5/30/2020,Norfolk,154,8,186,8
@@ -207,9 +239,9 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/30/2020,Piedmont,140,12,144,12
 5/30/2020,Pittsylvania-Danville,84,1,87,1
 5/30/2020,Portsmouth,76,7,87,8
-5/30/2020,Prince William,714,114,811,125
-5/30/2020,Rappahannock,410,32,473,33
-5/30/2020,Rappahannock Rapidan,245,38,276,39
+5/30/2020,Prince William,716,115,813,126
+5/30/2020,Rappahannock,413,33,476,34
+5/30/2020,Rappahannock Rapidan,246,38,277,39
 5/30/2020,Richmond,334,55,373,59
 5/30/2020,Roanoke,276,14,308,15
 5/30/2020,Southside,60,4,69,4
@@ -230,12 +262,12 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/29/2020,Crater,211,31,228,32
 5/29/2020,Cumberland Plateau,84,0,85,0
 5/29/2020,Eastern Shore,40,7,41,7
-5/29/2020,Fairfax,1175,209,1574,236
+5/29/2020,Fairfax,1178,209,1577,236
 5/29/2020,Hampton,111,9,129,11
 5/29/2020,Henrico,447,47,498,47
 5/29/2020,Lenowisco,58,2,63,2
-5/29/2020,Lord Fairfax,319,38,362,39
-5/29/2020,Loudoun,346,53,479,58
+5/29/2020,Lord Fairfax,320,38,363,39
+5/29/2020,Loudoun,356,56,489,61
 5/29/2020,Mount Rogers,198,21,208,21
 5/29/2020,New River,59,0,71,0
 5/29/2020,Norfolk,215,7,261,8
@@ -244,10 +276,10 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/29/2020,Piedmont,123,8,132,8
 5/29/2020,Pittsylvania-Danville,80,5,91,5
 5/29/2020,Portsmouth,99,7,112,7
-5/29/2020,Prince William,1064,257,1184,275
-5/29/2020,Rappahannock,308,40,369,40
+5/29/2020,Prince William,1064,257,1185,276
+5/29/2020,Rappahannock,308,40,370,41
 5/29/2020,Rappahannock Rapidan,217,26,258,26
-5/29/2020,Richmond,396,64,425,66
+5/29/2020,Richmond,396,64,426,67
 5/29/2020,Roanoke,101,9,133,10
 5/29/2020,Southside,41,1,46,1
 5/29/2020,Thomas Jefferson,189,13,265,16
@@ -258,7 +290,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/29/2020,Western Tidewater,152,6,175,6
 5/28/2020,Alexandria,192,27,259,30
 5/28/2020,Alleghany,106,4,123,4
-5/28/2020,Arlington,258,15,375,28
+5/28/2020,Arlington,259,15,376,28
 5/28/2020,Central Shenandoah,249,30,284,32
 5/28/2020,Central Virginia,337,5,357,5
 5/28/2020,Chesapeake,272,21,305,23
@@ -267,13 +299,13 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/28/2020,Crater,327,53,353,55
 5/28/2020,Cumberland Plateau,62,0,65,0
 5/28/2020,Eastern Shore,46,7,50,7
-5/28/2020,Fairfax,1326,237,1799,269
+5/28/2020,Fairfax,1334,238,1807,270
 5/28/2020,Hampton,95,5,107,6
 5/28/2020,Henrico,497,68,568,72
 5/28/2020,Lenowisco,49,0,54,0
-5/28/2020,Lord Fairfax,331,41,416,47
-5/28/2020,Loudoun,486,70,634,78
-5/28/2020,Mount Rogers,135,36,157,36
+5/28/2020,Lord Fairfax,332,42,417,48
+5/28/2020,Loudoun,487,70,635,78
+5/28/2020,Mount Rogers,137,38,159,38
 5/28/2020,New River,57,0,73,1
 5/28/2020,Norfolk,256,18,298,18
 5/28/2020,Out of State,176,12,176,12
@@ -281,65 +313,65 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/28/2020,Piedmont,156,22,169,22
 5/28/2020,Pittsylvania-Danville,95,2,105,2
 5/28/2020,Portsmouth,118,12,129,13
-5/28/2020,Prince William,1303,275,1447,302
-5/28/2020,Rappahannock,516,67,593,70
-5/28/2020,Rappahannock Rapidan,332,33,374,34
+5/28/2020,Prince William,1308,275,1452,302
+5/28/2020,Rappahannock,520,69,598,73
+5/28/2020,Rappahannock Rapidan,333,34,375,35
 5/28/2020,Richmond,611,51,661,55
 5/28/2020,Roanoke,134,10,173,10
 5/28/2020,Southside,73,4,82,4
 5/28/2020,Thomas Jefferson,447,27,507,29
 5/28/2020,Three Rivers,110,13,144,16
-5/28/2020,Unknown,75,15,76,15
+5/28/2020,Unknown,74,14,75,14
 5/28/2020,Virginia Beach,451,20,579,25
 5/28/2020,West Piedmont,69,12,77,12
 5/28/2020,Western Tidewater,186,8,216,10
-5/27/2020,Alexandria,756,52,785,53
+5/27/2020,Alexandria,758,52,787,53
 5/27/2020,Alleghany,94,5,110,5
 5/27/2020,Arlington,930,57,998,62
 5/27/2020,Central Shenandoah,245,26,263,28
 5/27/2020,Central Virginia,95,4,108,6
 5/27/2020,Chesapeake,278,23,296,24
-5/27/2020,Chesterfield,260,24,287,25
+5/27/2020,Chesterfield,259,24,286,25
 5/27/2020,Chickahominy,80,9,97,9
 5/27/2020,Crater,114,2,118,2
 5/27/2020,Cumberland Plateau,46,1,47,1
 5/27/2020,Eastern Shore,21,2,24,2
-5/27/2020,Fairfax,1593,254,1919,276
+5/27/2020,Fairfax,1601,256,1927,278
 5/27/2020,Hampton,89,7,94,7
-5/27/2020,Henrico,265,31,297,32
+5/27/2020,Henrico,264,31,296,32
 5/27/2020,Lenowisco,26,0,29,0
 5/27/2020,Lord Fairfax,278,44,294,44
-5/27/2020,Loudoun,1113,111,1255,121
+5/27/2020,Loudoun,1114,111,1256,121
 5/27/2020,Mount Rogers,56,8,62,8
 5/27/2020,New River,86,10,98,10
 5/27/2020,Norfolk,274,33,320,35
-5/27/2020,Out of State,321,41,321,41
+5/27/2020,Out of State,323,41,323,41
 5/27/2020,Peninsula,184,5,245,5
 5/27/2020,Piedmont,122,15,126,15
 5/27/2020,Pittsylvania-Danville,35,4,37,4
 5/27/2020,Portsmouth,114,8,117,8
-5/27/2020,Prince William,1273,223,1366,242
-5/27/2020,Rappahannock,203,30,230,31
+5/27/2020,Prince William,1277,224,1370,243
+5/27/2020,Rappahannock,204,30,231,31
 5/27/2020,Rappahannock Rapidan,132,18,154,18
-5/27/2020,Richmond,307,38,325,39
+5/27/2020,Richmond,308,38,326,39
 5/27/2020,Roanoke,307,7,325,7
 5/27/2020,Southside,45,1,46,1
 5/27/2020,Thomas Jefferson,232,16,278,17
 5/27/2020,Three Rivers,45,2,52,3
-5/27/2020,Unknown,86,7,87,7
+5/27/2020,Unknown,86,7,88,8
 5/27/2020,Virginia Beach,464,21,568,26
 5/27/2020,West Piedmont,33,6,37,6
 5/27/2020,Western Tidewater,100,4,110,4
 5/26/2020,Alexandria,1384,81,1385,81
 5/26/2020,Alleghany,54,4,54,4
-5/26/2020,Arlington,416,57,423,61
+5/26/2020,Arlington,415,57,422,61
 5/26/2020,Central Shenandoah,120,22,120,22
 5/26/2020,Central Virginia,81,1,81,1
 5/26/2020,Chesapeake,96,12,96,12
 5/26/2020,Chesterfield,196,38,196,38
 5/26/2020,Chickahominy,62,3,63,4
 5/26/2020,Crater,283,43,283,43
-5/26/2020,Cumberland Plateau,14,0,15,0
+5/26/2020,Cumberland Plateau,15,0,16,0
 5/26/2020,Eastern Shore,16,4,16,4
 5/26/2020,Fairfax,3383,492,3411,500
 5/26/2020,Hampton,48,5,48,5
@@ -357,11 +389,11 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/26/2020,Portsmouth,32,3,32,3
 5/26/2020,Prince William,1114,164,1117,165
 5/26/2020,Rappahannock,236,30,241,30
-5/26/2020,Rappahannock Rapidan,117,18,121,18
+5/26/2020,Rappahannock Rapidan,115,16,119,16
 5/26/2020,Richmond,141,20,141,20
 5/26/2020,Roanoke,231,3,231,3
 5/26/2020,Southside,24,2,24,2
-5/26/2020,Thomas Jefferson,142,13,152,13
+5/26/2020,Thomas Jefferson,144,15,154,15
 5/26/2020,Three Rivers,51,6,51,6
 5/26/2020,Unknown,205,28,205,28
 5/26/2020,Virginia Beach,315,2,316,3
@@ -371,14 +403,14 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/25/2020,Alleghany,55,3,55,3
 5/25/2020,Arlington,234,30,234,30
 5/25/2020,Central Shenandoah,141,11,141,11
-5/25/2020,Central Virginia,70,4,70,4
+5/25/2020,Central Virginia,69,4,69,4
 5/25/2020,Chesapeake,58,13,58,13
 5/25/2020,Chesterfield,156,20,157,20
 5/25/2020,Chickahominy,67,7,67,7
 5/25/2020,Crater,68,8,69,8
 5/25/2020,Cumberland Plateau,25,0,25,0
 5/25/2020,Eastern Shore,19,4,19,4
-5/25/2020,Fairfax,1229,156,1244,160
+5/25/2020,Fairfax,1228,156,1243,160
 5/25/2020,Hampton,32,2,32,2
 5/25/2020,Henrico,203,28,206,28
 5/25/2020,Lenowisco,56,0,56,0
@@ -411,8 +443,8 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/24/2020,Central Virginia,226,8,228,8
 5/24/2020,Chesapeake,208,10,225,12
 5/24/2020,Chesterfield,385,62,404,66
-5/24/2020,Chickahominy,71,4,75,4
-5/24/2020,Crater,170,22,173,22
+5/24/2020,Chickahominy,72,4,76,4
+5/24/2020,Crater,169,22,172,22
 5/24/2020,Cumberland Plateau,23,0,23,0
 5/24/2020,Eastern Shore,48,6,49,6
 5/24/2020,Fairfax,928,179,1061,195
@@ -454,22 +486,22 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/23/2020,Eastern Shore,50,6,58,8
 5/23/2020,Fairfax,886,162,1298,193
 5/23/2020,Hampton,60,1,72,2
-5/23/2020,Henrico,350,49,407,52
+5/23/2020,Henrico,349,48,406,51
 5/23/2020,Lenowisco,61,0,61,0
 5/23/2020,Lord Fairfax,301,41,345,46
 5/23/2020,Loudoun,308,50,501,59
 5/23/2020,Mount Rogers,119,17,130,17
 5/23/2020,New River,50,2,66,2
 5/23/2020,Norfolk,197,18,232,18
-5/23/2020,Out of State,104,10,105,10
+5/23/2020,Out of State,105,10,106,10
 5/23/2020,Peninsula,164,6,226,10
 5/23/2020,Piedmont,84,9,94,11
 5/23/2020,Pittsylvania-Danville,57,0,61,0
 5/23/2020,Portsmouth,198,6,204,7
-5/23/2020,Prince William,633,126,744,136
+5/23/2020,Prince William,632,126,743,136
 5/23/2020,Rappahannock,212,43,271,45
 5/23/2020,Rappahannock Rapidan,121,14,163,16
-5/23/2020,Richmond,246,49,263,50
+5/23/2020,Richmond,247,50,264,51
 5/23/2020,Roanoke,121,6,146,7
 5/23/2020,Southside,59,5,71,6
 5/23/2020,Thomas Jefferson,249,18,279,20
@@ -497,42 +529,42 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/22/2020,Loudoun,984,146,1131,152
 5/22/2020,Mount Rogers,102,19,114,19
 5/22/2020,New River,49,2,69,2
-5/22/2020,Norfolk,173,15,191,15
+5/22/2020,Norfolk,174,15,192,15
 5/22/2020,Out of State,179,23,180,24
 5/22/2020,Peninsula,189,12,265,18
 5/22/2020,Piedmont,104,13,115,15
 5/22/2020,Pittsylvania-Danville,43,1,49,1
 5/22/2020,Portsmouth,125,18,132,18
 5/22/2020,Prince William,1338,280,1432,288
-5/22/2020,Rappahannock,456,61,516,63
+5/22/2020,Rappahannock,457,62,517,64
 5/22/2020,Rappahannock Rapidan,286,58,336,59
 5/22/2020,Richmond,520,35,549,36
 5/22/2020,Roanoke,115,7,130,7
 5/22/2020,Southside,74,12,77,12
 5/22/2020,Thomas Jefferson,192,9,241,13
-5/22/2020,Three Rivers,111,5,139,6
+5/22/2020,Three Rivers,110,5,138,6
 5/22/2020,Unknown,164,30,164,30
 5/22/2020,Virginia Beach,307,13,367,15
 5/22/2020,West Piedmont,129,23,139,23
 5/22/2020,Western Tidewater,120,9,137,9
 5/21/2020,Alexandria,173,38,212,44
 5/21/2020,Alleghany,88,5,108,5
-5/21/2020,Arlington,168,37,272,41
+5/21/2020,Arlington,169,38,273,42
 5/21/2020,Central Shenandoah,154,27,182,29
 5/21/2020,Central Virginia,111,1,129,1
 5/21/2020,Chesapeake,124,15,155,17
-5/21/2020,Chesterfield,290,72,364,73
+5/21/2020,Chesterfield,291,72,365,73
 5/21/2020,Chickahominy,208,17,245,17
-5/21/2020,Crater,188,13,201,13
+5/21/2020,Crater,187,13,200,13
 5/21/2020,Cumberland Plateau,78,0,83,0
 5/21/2020,Eastern Shore,49,10,51,11
-5/21/2020,Fairfax,1104,263,1521,297
+5/21/2020,Fairfax,1103,262,1520,296
 5/21/2020,Hampton,74,4,84,5
 5/21/2020,Henrico,211,35,265,37
 5/21/2020,Lenowisco,63,0,70,0
 5/21/2020,Lord Fairfax,242,41,286,41
-5/21/2020,Loudoun,333,86,545,92
-5/21/2020,Mount Rogers,154,48,170,50
+5/21/2020,Loudoun,334,87,546,93
+5/21/2020,Mount Rogers,153,47,169,49
 5/21/2020,New River,61,5,79,5
 5/21/2020,Norfolk,176,23,200,24
 5/21/2020,Out of State,144,19,145,19
@@ -557,35 +589,35 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/20/2020,Arlington,280,46,387,52
 5/20/2020,Central Shenandoah,251,12,291,14
 5/20/2020,Central Virginia,205,7,223,7
-5/20/2020,Chesapeake,223,15,265,16
+5/20/2020,Chesapeake,224,15,266,16
 5/20/2020,Chesterfield,410,74,518,83
 5/20/2020,Chickahominy,113,19,151,20
 5/20/2020,Crater,253,20,283,23
 5/20/2020,Cumberland Plateau,20,0,22,0
 5/20/2020,Eastern Shore,284,18,287,18
-5/20/2020,Fairfax,1616,350,2040,372
+5/20/2020,Fairfax,1615,349,2039,371
 5/20/2020,Hampton,88,5,101,5
 5/20/2020,Henrico,366,82,422,86
 5/20/2020,Lenowisco,40,1,51,1
-5/20/2020,Lord Fairfax,257,56,313,57
+5/20/2020,Lord Fairfax,258,57,314,58
 5/20/2020,Loudoun,410,104,617,120
 5/20/2020,Mount Rogers,168,22,184,23
 5/20/2020,New River,58,2,79,2
 5/20/2020,Norfolk,268,19,304,23
-5/20/2020,Out of State,219,22,220,22
+5/20/2020,Out of State,220,23,221,23
 5/20/2020,Peninsula,258,22,343,29
 5/20/2020,Piedmont,106,18,115,18
 5/20/2020,Pittsylvania-Danville,64,4,69,5
-5/20/2020,Portsmouth,96,11,98,11
-5/20/2020,Prince William,1085,257,1196,267
+5/20/2020,Portsmouth,95,11,97,11
+5/20/2020,Prince William,1084,256,1195,266
 5/20/2020,Rappahannock,390,48,461,48
-5/20/2020,Rappahannock Rapidan,255,56,295,57
-5/20/2020,Richmond,374,79,410,81
+5/20/2020,Rappahannock Rapidan,254,55,294,56
+5/20/2020,Richmond,379,80,415,82
 5/20/2020,Roanoke,247,9,273,10
 5/20/2020,Southside,68,8,77,8
 5/20/2020,Thomas Jefferson,288,11,357,15
 5/20/2020,Three Rivers,154,18,175,20
-5/20/2020,Unknown,143,7,143,7
+5/20/2020,Unknown,144,8,144,8
 5/20/2020,Virginia Beach,486,11,562,16
 5/20/2020,West Piedmont,91,23,97,23
 5/20/2020,Western Tidewater,172,10,191,14
@@ -614,10 +646,10 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/19/2020,Piedmont,45,9,52,9
 5/19/2020,Pittsylvania-Danville,23,0,26,1
 5/19/2020,Portsmouth,136,11,141,11
-5/19/2020,Prince William,795,177,914,191
+5/19/2020,Prince William,813,177,932,191
 5/19/2020,Rappahannock,185,22,224,23
-5/19/2020,Rappahannock Rapidan,137,30,165,30
-5/19/2020,Richmond,238,72,272,72
+5/19/2020,Rappahannock Rapidan,138,30,166,30
+5/19/2020,Richmond,239,72,273,72
 5/19/2020,Roanoke,301,9,321,9
 5/19/2020,Southside,54,8,62,8
 5/19/2020,Thomas Jefferson,271,16,303,16
@@ -626,20 +658,20 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/19/2020,Virginia Beach,336,12,385,13
 5/19/2020,West Piedmont,45,12,55,12
 5/19/2020,Western Tidewater,114,11,130,11
-5/18/2020,Alexandria,84,26,87,26
+5/18/2020,Alexandria,85,27,88,27
 5/18/2020,Alleghany,32,4,32,4
-5/18/2020,Arlington,134,21,139,21
+5/18/2020,Arlington,136,23,141,23
 5/18/2020,Central Shenandoah,169,24,171,24
 5/18/2020,Central Virginia,48,1,49,1
 5/18/2020,Chesapeake,59,6,59,6
-5/18/2020,Chesterfield,230,36,232,37
+5/18/2020,Chesterfield,231,36,233,37
 5/18/2020,Chickahominy,110,7,111,7
 5/18/2020,Crater,85,8,85,8
 5/18/2020,Cumberland Plateau,30,0,30,0
 5/18/2020,Eastern Shore,62,9,63,9
-5/18/2020,Fairfax,835,154,861,154
+5/18/2020,Fairfax,837,156,863,156
 5/18/2020,Hampton,19,1,19,1
-5/18/2020,Henrico,223,19,224,19
+5/18/2020,Henrico,224,19,225,19
 5/18/2020,Lenowisco,32,0,33,0
 5/18/2020,Lord Fairfax,117,23,117,23
 5/18/2020,Loudoun,204,41,207,42
@@ -648,7 +680,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/18/2020,Norfolk,106,13,107,13
 5/18/2020,Out of State,155,14,157,14
 5/18/2020,Peninsula,99,8,105,8
-5/18/2020,Piedmont,34,1,34,1
+5/18/2020,Piedmont,36,1,36,1
 5/18/2020,Pittsylvania-Danville,15,1,15,1
 5/18/2020,Portsmouth,79,26,79,26
 5/18/2020,Prince William,360,88,367,88
@@ -665,21 +697,21 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/18/2020,Western Tidewater,223,3,223,3
 5/17/2020,Alexandria,129,31,142,31
 5/17/2020,Alleghany,60,2,62,2
-5/17/2020,Arlington,155,32,172,32
+5/17/2020,Arlington,156,32,173,32
 5/17/2020,Central Shenandoah,457,41,466,42
 5/17/2020,Central Virginia,168,1,172,1
 5/17/2020,Chesapeake,155,8,173,8
 5/17/2020,Chesterfield,354,37,379,37
 5/17/2020,Chickahominy,164,10,169,11
-5/17/2020,Crater,178,25,178,25
+5/17/2020,Crater,177,24,177,24
 5/17/2020,Cumberland Plateau,78,2,79,2
 5/17/2020,Eastern Shore,99,13,100,13
-5/17/2020,Fairfax,1164,307,1295,315
+5/17/2020,Fairfax,1166,309,1297,317
 5/17/2020,Hampton,90,8,91,8
 5/17/2020,Henrico,241,18,246,19
 5/17/2020,Lenowisco,23,0,25,0
 5/17/2020,Lord Fairfax,213,25,216,25
-5/17/2020,Loudoun,277,50,308,51
+5/17/2020,Loudoun,278,51,309,52
 5/17/2020,Mount Rogers,43,2,46,2
 5/17/2020,New River,49,0,52,0
 5/17/2020,Norfolk,356,78,365,78
@@ -688,9 +720,9 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/17/2020,Piedmont,115,14,116,15
 5/17/2020,Pittsylvania-Danville,72,4,73,4
 5/17/2020,Portsmouth,161,10,162,10
-5/17/2020,Prince William,794,213,835,221
+5/17/2020,Prince William,794,214,835,222
 5/17/2020,Rappahannock,329,49,346,49
-5/17/2020,Rappahannock Rapidan,378,84,393,88
+5/17/2020,Rappahannock Rapidan,379,85,394,89
 5/17/2020,Richmond,144,24,149,26
 5/17/2020,Roanoke,408,4,431,6
 5/17/2020,Southside,141,8,141,8
@@ -711,12 +743,12 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/16/2020,Crater,129,16,145,16
 5/16/2020,Cumberland Plateau,89,0,92,0
 5/16/2020,Eastern Shore,62,11,64,12
-5/16/2020,Fairfax,1012,235,1335,263
+5/16/2020,Fairfax,1023,246,1346,274
 5/16/2020,Hampton,81,2,89,2
 5/16/2020,Henrico,250,28,305,31
 5/16/2020,Lenowisco,36,0,41,1
 5/16/2020,Lord Fairfax,302,35,372,35
-5/16/2020,Loudoun,248,54,395,65
+5/16/2020,Loudoun,267,73,414,84
 5/16/2020,Mount Rogers,102,3,119,5
 5/16/2020,New River,77,0,96,1
 5/16/2020,Norfolk,217,17,236,17
@@ -725,9 +757,9 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/16/2020,Piedmont,126,12,138,13
 5/16/2020,Pittsylvania-Danville,92,1,97,2
 5/16/2020,Portsmouth,100,9,102,11
-5/16/2020,Prince William,671,184,743,193
+5/16/2020,Prince William,685,198,757,207
 5/16/2020,Rappahannock,195,25,276,28
-5/16/2020,Rappahannock Rapidan,128,23,160,27
+5/16/2020,Rappahannock Rapidan,130,25,162,29
 5/16/2020,Richmond,220,40,250,44
 5/16/2020,Roanoke,207,10,224,11
 5/16/2020,Southside,46,1,57,2
@@ -748,23 +780,23 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/15/2020,Crater,82,10,91,10
 5/15/2020,Cumberland Plateau,16,2,22,2
 5/15/2020,Eastern Shore,35,5,39,5
-5/15/2020,Fairfax,840,247,1239,285
+5/15/2020,Fairfax,843,250,1242,288
 5/15/2020,Hampton,41,2,54,2
 5/15/2020,Henrico,266,33,310,38
 5/15/2020,Lenowisco,37,0,49,1
-5/15/2020,Lord Fairfax,149,27,231,28
-5/15/2020,Loudoun,476,58,628,69
+5/15/2020,Lord Fairfax,152,30,234,31
+5/15/2020,Loudoun,485,67,637,78
 5/15/2020,Mount Rogers,48,2,70,3
 5/15/2020,New River,45,0,59,0
 5/15/2020,Norfolk,142,6,180,9
-5/15/2020,Out of State,142,17,142,17
+5/15/2020,Out of State,143,18,143,18
 5/15/2020,Peninsula,164,9,256,16
 5/15/2020,Piedmont,100,8,112,8
 5/15/2020,Pittsylvania-Danville,40,2,45,2
 5/15/2020,Portsmouth,59,5,62,6
-5/15/2020,Prince William,562,163,699,177
-5/15/2020,Rappahannock,187,27,263,31
-5/15/2020,Rappahannock Rapidan,142,29,190,30
+5/15/2020,Prince William,565,166,702,180
+5/15/2020,Rappahannock,188,28,264,32
+5/15/2020,Rappahannock Rapidan,146,33,194,34
 5/15/2020,Richmond,216,46,244,46
 5/15/2020,Roanoke,117,8,162,8
 5/15/2020,Southside,34,10,41,11
@@ -774,69 +806,69 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/15/2020,Virginia Beach,233,6,306,6
 5/15/2020,West Piedmont,66,10,83,10
 5/15/2020,Western Tidewater,101,9,119,10
-5/14/2020,Alexandria,177,52,228,52
+5/14/2020,Alexandria,178,53,229,53
 5/14/2020,Alleghany,60,5,79,5
 5/14/2020,Arlington,191,48,327,52
 5/14/2020,Central Shenandoah,214,25,241,26
-5/14/2020,Central Virginia,196,8,218,9
-5/14/2020,Chesapeake,254,9,295,10
-5/14/2020,Chesterfield,413,41,532,47
+5/14/2020,Central Virginia,196,8,217,9
+5/14/2020,Chesapeake,253,9,294,10
+5/14/2020,Chesterfield,415,41,534,47
 5/14/2020,Chickahominy,95,7,133,10
-5/14/2020,Crater,234,22,254,24
+5/14/2020,Crater,233,22,253,24
 5/14/2020,Cumberland Plateau,30,2,36,2
-5/14/2020,Eastern Shore,46,9,49,9
-5/14/2020,Fairfax,908,239,1402,278
+5/14/2020,Eastern Shore,47,10,50,10
+5/14/2020,Fairfax,911,242,1405,281
 5/14/2020,Hampton,97,5,103,5
-5/14/2020,Henrico,224,25,293,29
+5/14/2020,Henrico,228,25,297,29
 5/14/2020,Lenowisco,36,0,40,0
 5/14/2020,Lord Fairfax,175,47,208,48
-5/14/2020,Loudoun,258,47,426,56
+5/14/2020,Loudoun,265,53,433,62
 5/14/2020,Mount Rogers,193,29,210,29
 5/14/2020,New River,38,1,55,1
-5/14/2020,Norfolk,183,10,224,13
-5/14/2020,Out of State,144,14,144,14
+5/14/2020,Norfolk,184,10,225,13
+5/14/2020,Out of State,145,15,145,15
 5/14/2020,Peninsula,510,22,632,27
 5/14/2020,Piedmont,95,6,112,6
 5/14/2020,Pittsylvania-Danville,39,3,47,3
 5/14/2020,Portsmouth,68,8,80,10
-5/14/2020,Prince William,579,165,721,176
-5/14/2020,Rappahannock,249,44,334,49
-5/14/2020,Rappahannock Rapidan,196,42,248,42
-5/14/2020,Richmond,260,37,290,40
+5/14/2020,Prince William,586,172,728,183
+5/14/2020,Rappahannock,250,45,335,50
+5/14/2020,Rappahannock Rapidan,197,43,249,43
+5/14/2020,Richmond,261,37,291,40
 5/14/2020,Roanoke,99,6,111,6
 5/14/2020,Southside,40,13,55,14
 5/14/2020,Thomas Jefferson,277,12,333,13
 5/14/2020,Three Rivers,157,68,183,69
-5/14/2020,Unknown,13,3,14,4
+5/14/2020,Unknown,12,3,13,4
 5/14/2020,Virginia Beach,345,8,448,10
 5/14/2020,West Piedmont,25,4,46,5
 5/14/2020,Western Tidewater,110,8,135,10
 5/13/2020,Alexandria,193,51,238,56
 5/13/2020,Alleghany,82,6,102,7
-5/13/2020,Arlington,210,49,305,52
+5/13/2020,Arlington,209,48,304,51
 5/13/2020,Central Shenandoah,201,14,229,15
 5/13/2020,Central Virginia,170,2,183,2
 5/13/2020,Chesapeake,182,15,196,15
 5/13/2020,Chesterfield,472,64,551,67
 5/13/2020,Chickahominy,124,9,148,9
 5/13/2020,Crater,172,20,176,20
-5/13/2020,Cumberland Plateau,22,0,26,0
+5/13/2020,Cumberland Plateau,23,0,27,0
 5/13/2020,Eastern Shore,54,11,56,11
 5/13/2020,Fairfax,1145,284,1500,310
 5/13/2020,Hampton,74,8,81,9
 5/13/2020,Henrico,279,42,332,44
 5/13/2020,Lenowisco,39,1,40,1
 5/13/2020,Lord Fairfax,244,31,274,33
-5/13/2020,Loudoun,404,112,548,122
+5/13/2020,Loudoun,403,112,547,122
 5/13/2020,Mount Rogers,103,7,115,7
 5/13/2020,New River,82,2,91,2
 5/13/2020,Norfolk,237,15,270,17
-5/13/2020,Out of State,180,24,182,24
+5/13/2020,Out of State,180,25,182,25
 5/13/2020,Peninsula,211,10,280,13
 5/13/2020,Piedmont,105,7,117,9
 5/13/2020,Pittsylvania-Danville,46,3,47,3
 5/13/2020,Portsmouth,88,0,91,0
-5/13/2020,Prince William,712,217,810,223
+5/13/2020,Prince William,713,217,811,223
 5/13/2020,Rappahannock,259,45,376,57
 5/13/2020,Rappahannock Rapidan,156,29,187,31
 5/13/2020,Richmond,292,87,306,87
@@ -853,7 +885,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/12/2020,Arlington,143,31,244,38
 5/12/2020,Central Shenandoah,179,16,194,17
 5/12/2020,Central Virginia,28,1,40,1
-5/12/2020,Chesapeake,228,16,244,16
+5/12/2020,Chesapeake,227,16,243,16
 5/12/2020,Chesterfield,235,39,277,42
 5/12/2020,Chickahominy,62,8,74,8
 5/12/2020,Crater,129,15,142,16
@@ -876,7 +908,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/12/2020,Prince William,518,158,648,170
 5/12/2020,Rappahannock,203,23,283,24
 5/12/2020,Rappahannock Rapidan,117,39,150,40
-5/12/2020,Richmond,138,30,156,30
+5/12/2020,Richmond,139,30,157,30
 5/12/2020,Roanoke,85,3,103,3
 5/12/2020,Southside,35,4,47,5
 5/12/2020,Thomas Jefferson,250,9,270,11
@@ -891,17 +923,17 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/11/2020,Central Shenandoah,95,3,95,3
 5/11/2020,Central Virginia,50,2,51,2
 5/11/2020,Chesapeake,81,5,85,5
-5/11/2020,Chesterfield,86,11,88,12
-5/11/2020,Chickahominy,22,2,22,2
-5/11/2020,Crater,55,7,56,7
+5/11/2020,Chesterfield,87,11,89,12
+5/11/2020,Chickahominy,23,2,23,2
+5/11/2020,Crater,54,7,55,7
 5/11/2020,Cumberland Plateau,11,0,13,0
 5/11/2020,Eastern Shore,137,11,138,12
-5/11/2020,Fairfax,724,164,739,165
+5/11/2020,Fairfax,723,163,738,164
 5/11/2020,Hampton,22,1,22,1
 5/11/2020,Henrico,85,18,90,18
 5/11/2020,Lenowisco,36,1,38,1
 5/11/2020,Lord Fairfax,237,36,237,36
-5/11/2020,Loudoun,177,42,181,43
+5/11/2020,Loudoun,178,43,182,44
 5/11/2020,Mount Rogers,46,4,46,4
 5/11/2020,New River,29,0,30,0
 5/11/2020,Norfolk,145,6,155,7
@@ -924,7 +956,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/11/2020,Western Tidewater,71,6,72,6
 5/10/2020,Alexandria,121,44,147,46
 5/10/2020,Alleghany,43,4,51,5
-5/10/2020,Arlington,146,35,187,37
+5/10/2020,Arlington,147,36,188,38
 5/10/2020,Central Shenandoah,62,13,71,13
 5/10/2020,Central Virginia,130,5,136,6
 5/10/2020,Chesapeake,123,7,131,7
@@ -933,16 +965,16 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/10/2020,Crater,120,10,124,10
 5/10/2020,Cumberland Plateau,19,0,22,0
 5/10/2020,Eastern Shore,233,13,236,13
-5/10/2020,Fairfax,860,246,979,254
+5/10/2020,Fairfax,861,247,980,255
 5/10/2020,Hampton,52,6,54,7
 5/10/2020,Henrico,158,15,175,16
 5/10/2020,Lenowisco,22,1,26,1
 5/10/2020,Lord Fairfax,97,12,109,13
-5/10/2020,Loudoun,212,55,271,56
+5/10/2020,Loudoun,211,54,270,55
 5/10/2020,Mount Rogers,63,7,67,7
 5/10/2020,New River,20,0,24,0
 5/10/2020,Norfolk,187,14,196,15
-5/10/2020,Out of State,79,13,79,13
+5/10/2020,Out of State,78,12,78,12
 5/10/2020,Peninsula,176,4,202,5
 5/10/2020,Piedmont,81,4,92,5
 5/10/2020,Pittsylvania-Danville,55,1,61,1
@@ -974,12 +1006,12 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/9/2020,Hampton,85,1,95,3
 5/9/2020,Henrico,241,19,287,22
 5/9/2020,Lenowisco,21,1,26,1
-5/9/2020,Lord Fairfax,182,29,218,29
+5/9/2020,Lord Fairfax,183,29,219,29
 5/9/2020,Loudoun,197,41,275,47
 5/9/2020,Mount Rogers,80,9,96,9
 5/9/2020,New River,47,3,57,3
 5/9/2020,Norfolk,304,22,332,25
-5/9/2020,Out of State,302,95,302,95
+5/9/2020,Out of State,301,95,301,95
 5/9/2020,Peninsula,291,8,360,12
 5/9/2020,Piedmont,121,5,127,5
 5/9/2020,Pittsylvania-Danville,67,2,70,2
@@ -1009,7 +1041,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/8/2020,Eastern Shore,184,30,187,30
 5/8/2020,Fairfax,1165,350,1575,369
 5/8/2020,Hampton,134,5,143,5
-5/8/2020,Henrico,176,25,237,29
+5/8/2020,Henrico,177,25,238,29
 5/8/2020,Lenowisco,29,1,34,1
 5/8/2020,Lord Fairfax,107,17,132,17
 5/8/2020,Loudoun,235,45,375,51
@@ -1024,7 +1056,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/8/2020,Prince William,534,163,679,176
 5/8/2020,Rappahannock,149,25,234,27
 5/8/2020,Rappahannock Rapidan,105,21,158,23
-5/8/2020,Richmond,208,24,236,27
+5/8/2020,Richmond,210,24,238,27
 5/8/2020,Roanoke,205,5,235,5
 5/8/2020,Southside,26,6,37,6
 5/8/2020,Thomas Jefferson,96,4,183,5
@@ -1048,7 +1080,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/7/2020,Hampton,75,1,81,2
 5/7/2020,Henrico,304,22,353,24
 5/7/2020,Lenowisco,30,2,39,2
-5/7/2020,Lord Fairfax,177,29,199,29
+5/7/2020,Lord Fairfax,176,28,198,28
 5/7/2020,Loudoun,222,55,319,61
 5/7/2020,Mount Rogers,104,10,119,10
 5/7/2020,New River,44,1,59,2
@@ -1058,9 +1090,9 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/7/2020,Piedmont,98,5,109,5
 5/7/2020,Pittsylvania-Danville,35,0,37,0
 5/7/2020,Portsmouth,58,9,64,10
-5/7/2020,Prince William,574,199,671,202
-5/7/2020,Rappahannock,190,33,231,35
-5/7/2020,Rappahannock Rapidan,130,34,166,40
+5/7/2020,Prince William,575,200,672,203
+5/7/2020,Rappahannock,189,32,230,34
+5/7/2020,Rappahannock Rapidan,131,35,167,41
 5/7/2020,Richmond,234,24,271,25
 5/7/2020,Roanoke,122,3,142,3
 5/7/2020,Southside,26,6,32,6
@@ -1077,15 +1109,15 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/6/2020,Central Virginia,174,4,185,6
 5/6/2020,Chesapeake,317,16,332,17
 5/6/2020,Chesterfield,406,50,473,51
-5/6/2020,Chickahominy,133,11,169,14
+5/6/2020,Chickahominy,132,10,168,13
 5/6/2020,Crater,194,23,198,23
 5/6/2020,Cumberland Plateau,40,1,50,1
 5/6/2020,Eastern Shore,149,68,150,68
-5/6/2020,Fairfax,1133,315,1527,344
+5/6/2020,Fairfax,1134,315,1528,344
 5/6/2020,Hampton,81,4,91,4
 5/6/2020,Henrico,390,27,468,30
 5/6/2020,Lenowisco,112,0,118,0
-5/6/2020,Lord Fairfax,261,42,294,43
+5/6/2020,Lord Fairfax,260,42,293,43
 5/6/2020,Loudoun,374,100,512,109
 5/6/2020,Mount Rogers,152,28,175,28
 5/6/2020,New River,60,2,71,2
@@ -1096,9 +1128,9 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/6/2020,Pittsylvania-Danville,39,1,46,4
 5/6/2020,Portsmouth,201,23,202,23
 5/6/2020,Prince William,598,227,713,236
-5/6/2020,Rappahannock,199,44,241,46
+5/6/2020,Rappahannock,201,45,243,47
 5/6/2020,Rappahannock Rapidan,146,30,180,33
-5/6/2020,Richmond,235,31,269,35
+5/6/2020,Richmond,236,31,270,35
 5/6/2020,Roanoke,241,3,262,3
 5/6/2020,Southside,28,8,35,8
 5/6/2020,Thomas Jefferson,210,9,250,10
@@ -1107,23 +1139,23 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/6/2020,Virginia Beach,361,11,443,18
 5/6/2020,West Piedmont,46,2,64,3
 5/6/2020,Western Tidewater,121,6,152,6
-5/5/2020,Alexandria,155,55,189,58
+5/5/2020,Alexandria,156,55,190,58
 5/5/2020,Alleghany,58,6,73,6
 5/5/2020,Arlington,188,52,244,58
 5/5/2020,Central Shenandoah,97,24,113,31
 5/5/2020,Central Virginia,114,2,115,2
 5/5/2020,Chesapeake,235,25,246,25
-5/5/2020,Chesterfield,238,37,271,40
+5/5/2020,Chesterfield,237,37,270,40
 5/5/2020,Chickahominy,58,5,75,9
-5/5/2020,Crater,146,10,150,10
+5/5/2020,Crater,147,10,151,10
 5/5/2020,Cumberland Plateau,32,0,34,0
 5/5/2020,Eastern Shore,103,70,103,70
-5/5/2020,Fairfax,897,261,1206,272
+5/5/2020,Fairfax,900,261,1209,272
 5/5/2020,Hampton,65,5,71,5
-5/5/2020,Henrico,171,29,207,30
+5/5/2020,Henrico,172,29,208,30
 5/5/2020,Lenowisco,307,1,308,1
 5/5/2020,Lord Fairfax,128,38,137,38
-5/5/2020,Loudoun,183,40,266,47
+5/5/2020,Loudoun,196,44,279,51
 5/5/2020,Mount Rogers,70,7,75,8
 5/5/2020,New River,38,0,44,0
 5/5/2020,Norfolk,187,12,204,13
@@ -1133,20 +1165,20 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/5/2020,Pittsylvania-Danville,20,1,20,1
 5/5/2020,Portsmouth,54,10,58,11
 5/5/2020,Prince William,471,167,526,170
-5/5/2020,Rappahannock,128,25,152,26
+5/5/2020,Rappahannock,129,25,153,26
 5/5/2020,Rappahannock Rapidan,82,23,97,24
 5/5/2020,Richmond,111,20,124,21
 5/5/2020,Roanoke,99,7,104,7
 5/5/2020,Southside,80,15,103,20
 5/5/2020,Thomas Jefferson,121,4,130,4
 5/5/2020,Three Rivers,110,44,117,44
-5/5/2020,Unknown,17,3,18,3
+5/5/2020,Unknown,18,3,19,3
 5/5/2020,Virginia Beach,320,8,366,8
 5/5/2020,West Piedmont,21,6,22,6
 5/5/2020,Western Tidewater,146,16,153,16
 5/4/2020,Alexandria,75,24,80,24
 5/4/2020,Alleghany,29,3,29,3
-5/4/2020,Arlington,79,16,83,16
+5/4/2020,Arlington,80,16,84,16
 5/4/2020,Central Shenandoah,84,10,84,10
 5/4/2020,Central Virginia,32,1,32,1
 5/4/2020,Chesapeake,62,10,62,10
@@ -1155,12 +1187,12 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/4/2020,Crater,70,4,71,4
 5/4/2020,Cumberland Plateau,17,1,17,1
 5/4/2020,Eastern Shore,31,4,31,4
-5/4/2020,Fairfax,478,146,520,151
+5/4/2020,Fairfax,481,146,523,151
 5/4/2020,Hampton,15,1,16,1
-5/4/2020,Henrico,74,14,76,14
+5/4/2020,Henrico,77,14,79,14
 5/4/2020,Lenowisco,18,1,19,1
 5/4/2020,Lord Fairfax,182,30,183,30
-5/4/2020,Loudoun,121,20,143,24
+5/4/2020,Loudoun,123,20,145,24
 5/4/2020,Mount Rogers,38,3,38,3
 5/4/2020,New River,30,1,30,1
 5/4/2020,Norfolk,113,14,116,14
@@ -1169,13 +1201,13 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/4/2020,Piedmont,31,2,31,2
 5/4/2020,Pittsylvania-Danville,15,2,16,2
 5/4/2020,Portsmouth,27,6,27,6
-5/4/2020,Prince William,277,95,304,96
-5/4/2020,Rappahannock,54,15,64,16
-5/4/2020,Rappahannock Rapidan,46,17,54,17
+5/4/2020,Prince William,280,95,307,96
+5/4/2020,Rappahannock,55,15,65,16
+5/4/2020,Rappahannock Rapidan,48,17,56,17
 5/4/2020,Richmond,58,10,59,10
 5/4/2020,Roanoke,43,3,43,3
 5/4/2020,Southside,11,1,11,1
-5/4/2020,Thomas Jefferson,109,2,109,2
+5/4/2020,Thomas Jefferson,110,2,110,2
 5/4/2020,Three Rivers,26,2,27,2
 5/4/2020,Unknown,6,3,6,3
 5/4/2020,Virginia Beach,226,11,233,11
@@ -1187,7 +1219,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/3/2020,Central Shenandoah,135,29,138,29
 5/3/2020,Central Virginia,121,2,123,2
 5/3/2020,Chesapeake,64,9,72,9
-5/3/2020,Chesterfield,226,34,250,36
+5/3/2020,Chesterfield,227,34,251,36
 5/3/2020,Chickahominy,110,1,119,1
 5/3/2020,Crater,86,16,92,16
 5/3/2020,Cumberland Plateau,20,0,23,0
@@ -1197,7 +1229,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/3/2020,Henrico,186,19,192,19
 5/3/2020,Lenowisco,26,0,29,0
 5/3/2020,Lord Fairfax,133,29,134,29
-5/3/2020,Loudoun,175,39,216,42
+5/3/2020,Loudoun,176,39,217,42
 5/3/2020,Mount Rogers,50,3,51,3
 5/3/2020,New River,28,1,30,1
 5/3/2020,Norfolk,141,14,179,15
@@ -1206,10 +1238,10 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/3/2020,Piedmont,65,4,69,4
 5/3/2020,Pittsylvania-Danville,32,1,32,1
 5/3/2020,Portsmouth,54,6,55,6
-5/3/2020,Prince William,419,146,455,151
+5/3/2020,Prince William,420,146,456,151
 5/3/2020,Rappahannock,200,31,226,31
 5/3/2020,Rappahannock Rapidan,118,25,132,25
-5/3/2020,Richmond,106,25,107,25
+5/3/2020,Richmond,105,25,106,25
 5/3/2020,Roanoke,61,5,66,6
 5/3/2020,Southside,13,0,15,0
 5/3/2020,Thomas Jefferson,96,10,106,10
@@ -1221,11 +1253,11 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/2/2020,Alexandria,112,42,150,45
 5/2/2020,Alleghany,61,6,63,6
 5/2/2020,Arlington,211,72,294,77
-5/2/2020,Central Shenandoah,105,24,115,24
-5/2/2020,Central Virginia,91,4,100,4
+5/2/2020,Central Shenandoah,106,25,116,25
+5/2/2020,Central Virginia,92,5,101,5
 5/2/2020,Chesapeake,85,5,101,5
 5/2/2020,Chesterfield,209,11,292,15
-5/2/2020,Chickahominy,82,6,100,7
+5/2/2020,Chickahominy,81,5,99,6
 5/2/2020,Crater,111,13,121,13
 5/2/2020,Cumberland Plateau,31,0,37,0
 5/2/2020,Eastern Shore,109,41,111,41
@@ -1234,7 +1266,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/2/2020,Henrico,199,24,237,24
 5/2/2020,Lenowisco,38,3,41,3
 5/2/2020,Lord Fairfax,223,34,238,34
-5/2/2020,Loudoun,200,57,315,60
+5/2/2020,Loudoun,205,62,320,65
 5/2/2020,Mount Rogers,70,7,76,7
 5/2/2020,New River,53,1,64,1
 5/2/2020,Norfolk,545,25,571,27
@@ -1244,8 +1276,8 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/2/2020,Pittsylvania-Danville,22,0,23,1
 5/2/2020,Portsmouth,117,11,119,11
 5/2/2020,Prince William,406,134,496,137
-5/2/2020,Rappahannock,187,24,234,25
-5/2/2020,Rappahannock Rapidan,94,20,115,21
+5/2/2020,Rappahannock,188,24,235,25
+5/2/2020,Rappahannock Rapidan,93,20,114,21
 5/2/2020,Richmond,95,14,119,15
 5/2/2020,Roanoke,91,8,100,9
 5/2/2020,Southside,33,2,41,2
@@ -1316,12 +1348,12 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/30/2020,Peninsula,196,13,268,21
 4/30/2020,Piedmont,55,5,64,5
 4/30/2020,Pittsylvania-Danville,20,3,22,3
-4/30/2020,Portsmouth,55,12,58,12
+4/30/2020,Portsmouth,54,12,57,12
 4/30/2020,Prince William,412,135,506,141
 4/30/2020,Rappahannock,181,26,224,27
 4/30/2020,Rappahannock Rapidan,101,23,133,28
 4/30/2020,Richmond,99,17,125,18
-4/30/2020,Roanoke,87,6,99,6
+4/30/2020,Roanoke,88,6,100,6
 4/30/2020,Southside,15,0,18,0
 4/30/2020,Thomas Jefferson,126,4,144,4
 4/30/2020,Three Rivers,59,5,81,6
@@ -1373,7 +1405,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/28/2020,Central Virginia,43,3,46,3
 4/28/2020,Chesapeake,134,17,136,17
 4/28/2020,Chesterfield,183,31,191,32
-4/28/2020,Chickahominy,97,6,99,6
+4/28/2020,Chickahominy,98,6,100,6
 4/28/2020,Crater,84,11,85,11
 4/28/2020,Cumberland Plateau,16,1,16,1
 4/28/2020,Eastern Shore,32,17,32,17
@@ -1399,7 +1431,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/28/2020,Southside,13,2,14,2
 4/28/2020,Thomas Jefferson,106,7,109,7
 4/28/2020,Three Rivers,17,2,18,2
-4/28/2020,Unknown,80,9,80,9
+4/28/2020,Unknown,79,9,79,9
 4/28/2020,Virginia Beach,239,8,247,11
 4/28/2020,West Piedmont,3,0,6,0
 4/28/2020,Western Tidewater,56,8,57,8
@@ -1488,12 +1520,12 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/25/2020,Crater,92,11,94,12
 4/25/2020,Cumberland Plateau,37,2,37,2
 4/25/2020,Eastern Shore,93,44,93,44
-4/25/2020,Fairfax,536,163,611,167
+4/25/2020,Fairfax,537,164,612,168
 4/25/2020,Hampton,39,3,40,3
 4/25/2020,Henrico,211,29,219,29
 4/25/2020,Lenowisco,53,1,53,1
 4/25/2020,Lord Fairfax,66,5,71,5
-4/25/2020,Loudoun,192,35,282,36
+4/25/2020,Loudoun,191,34,281,35
 4/25/2020,Mount Rogers,45,4,46,4
 4/25/2020,New River,20,2,33,2
 4/25/2020,Norfolk,221,3,224,3
@@ -1588,7 +1620,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/23/2020,Virginia Beach,186,11,188,11
 4/23/2020,West Piedmont,33,3,34,3
 4/23/2020,Western Tidewater,83,12,84,12
-4/22/2020,Alexandria,97,48,105,49
+4/22/2020,Alexandria,98,49,106,50
 4/22/2020,Alleghany,299,5,299,5
 4/22/2020,Arlington,121,43,123,43
 4/22/2020,Central Shenandoah,134,47,135,47
@@ -1598,7 +1630,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/22/2020,Chickahominy,71,9,72,9
 4/22/2020,Crater,95,15,95,15
 4/22/2020,Cumberland Plateau,55,0,55,0
-4/22/2020,Eastern Shore,69,36,70,37
+4/22/2020,Eastern Shore,68,36,69,37
 4/22/2020,Fairfax,563,217,602,219
 4/22/2020,Hampton,122,12,122,12
 4/22/2020,Henrico,198,36,199,36
@@ -1608,7 +1640,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/22/2020,Mount Rogers,43,3,43,3
 4/22/2020,New River,26,3,31,3
 4/22/2020,Norfolk,69,8,85,10
-4/22/2020,Out of State,63,13,63,13
+4/22/2020,Out of State,63,12,63,12
 4/22/2020,Peninsula,117,9,122,10
 4/22/2020,Piedmont,75,13,75,13
 4/22/2020,Pittsylvania-Danville,31,6,32,6
@@ -1673,7 +1705,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/20/2020,Crater,35,5,35,5
 4/20/2020,Cumberland Plateau,9,0,9,0
 4/20/2020,Eastern Shore,12,9,12,9
-4/20/2020,Fairfax,320,147,331,148
+4/20/2020,Fairfax,321,148,332,149
 4/20/2020,Hampton,13,3,13,3
 4/20/2020,Henrico,45,14,45,14
 4/20/2020,Lenowisco,21,1,21,1
@@ -1687,7 +1719,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/20/2020,Piedmont,35,4,36,4
 4/20/2020,Pittsylvania-Danville,17,2,17,2
 4/20/2020,Portsmouth,17,9,17,9
-4/20/2020,Prince William,173,54,178,56
+4/20/2020,Prince William,172,53,177,55
 4/20/2020,Rappahannock,67,4,74,11
 4/20/2020,Rappahannock Rapidan,36,13,36,13
 4/20/2020,Richmond,33,10,33,10
@@ -1719,13 +1751,13 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/19/2020,Mount Rogers,34,1,34,1
 4/19/2020,New River,72,3,72,3
 4/19/2020,Norfolk,45,4,45,4
-4/19/2020,Out of State,48,9,48,9
+4/19/2020,Out of State,47,8,47,8
 4/19/2020,Peninsula,77,5,77,5
 4/19/2020,Piedmont,24,1,24,1
 4/19/2020,Pittsylvania-Danville,7,0,7,0
 4/19/2020,Portsmouth,20,14,20,14
 4/19/2020,Prince William,238,67,238,67
-4/19/2020,Rappahannock,69,8,69,8
+4/19/2020,Rappahannock,70,9,70,9
 4/19/2020,Rappahannock Rapidan,75,11,75,11
 4/19/2020,Richmond,38,2,38,2
 4/19/2020,Roanoke,11,0,11,0
@@ -1739,7 +1771,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/18/2020,Alexandria,61,22,61,22
 4/18/2020,Alleghany,75,7,75,7
 4/18/2020,Arlington,107,44,108,44
-4/18/2020,Central Shenandoah,118,36,118,36
+4/18/2020,Central Shenandoah,119,36,119,36
 4/18/2020,Central Virginia,90,1,90,1
 4/18/2020,Chesapeake,51,8,51,8
 4/18/2020,Chesterfield,87,12,87,12
@@ -1755,7 +1787,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/18/2020,Loudoun,86,18,88,18
 4/18/2020,Mount Rogers,40,1,40,1
 4/18/2020,New River,26,1,26,1
-4/18/2020,Norfolk,44,6,44,6
+4/18/2020,Norfolk,43,6,43,6
 4/18/2020,Out of State,33,6,33,6
 4/18/2020,Peninsula,67,2,67,2
 4/18/2020,Piedmont,41,4,41,4
@@ -1786,14 +1818,14 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/17/2020,Eastern Shore,26,10,26,10
 4/17/2020,Fairfax,400,146,402,148
 4/17/2020,Hampton,57,3,57,3
-4/17/2020,Henrico,131,27,131,27
+4/17/2020,Henrico,132,27,132,27
 4/17/2020,Lenowisco,22,3,22,3
 4/17/2020,Lord Fairfax,75,9,75,9
-4/17/2020,Loudoun,88,16,88,16
+4/17/2020,Loudoun,89,17,89,17
 4/17/2020,Mount Rogers,30,3,30,3
 4/17/2020,New River,22,1,22,1
 4/17/2020,Norfolk,47,2,47,2
-4/17/2020,Out of State,41,5,41,5
+4/17/2020,Out of State,40,4,40,4
 4/17/2020,Peninsula,87,4,87,4
 4/17/2020,Piedmont,42,8,42,8
 4/17/2020,Pittsylvania-Danville,80,2,80,2
@@ -1823,7 +1855,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/16/2020,Eastern Shore,19,11,19,11
 4/16/2020,Fairfax,486,186,487,187
 4/16/2020,Hampton,65,1,65,1
-4/16/2020,Henrico,109,18,109,18
+4/16/2020,Henrico,112,17,112,17
 4/16/2020,Lenowisco,42,2,42,2
 4/16/2020,Lord Fairfax,75,11,75,11
 4/16/2020,Loudoun,120,20,120,20
@@ -1831,14 +1863,14 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/16/2020,New River,127,7,127,7
 4/16/2020,Norfolk,41,8,41,8
 4/16/2020,Out of State,46,9,46,9
-4/16/2020,Peninsula,108,8,108,8
+4/16/2020,Peninsula,109,9,109,9
 4/16/2020,Piedmont,45,4,45,4
 4/16/2020,Pittsylvania-Danville,23,3,23,3
 4/16/2020,Portsmouth,22,3,22,3
 4/16/2020,Prince William,210,64,210,64
 4/16/2020,Rappahannock,86,16,86,16
 4/16/2020,Rappahannock Rapidan,65,10,65,10
-4/16/2020,Richmond,154,13,154,13
+4/16/2020,Richmond,155,14,155,14
 4/16/2020,Roanoke,53,3,53,3
 4/16/2020,Southside,23,3,23,3
 4/16/2020,Thomas Jefferson,101,7,101,7
@@ -1846,21 +1878,21 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/16/2020,Unknown,14,4,14,4
 4/16/2020,Virginia Beach,112,10,112,10
 4/16/2020,West Piedmont,10,2,10,2
-4/16/2020,Western Tidewater,91,29,91,29
+4/16/2020,Western Tidewater,90,28,90,28
 4/15/2020,Alexandria,87,23,87,23
 4/15/2020,Alleghany,19,2,19,2
 4/15/2020,Arlington,96,36,96,36
 4/15/2020,Central Shenandoah,94,42,94,42
 4/15/2020,Central Virginia,55,1,55,1
 4/15/2020,Chesapeake,47,3,47,3
-4/15/2020,Chesterfield,113,23,113,23
-4/15/2020,Chickahominy,43,11,43,11
+4/15/2020,Chesterfield,115,23,115,23
+4/15/2020,Chickahominy,45,11,45,11
 4/15/2020,Crater,49,17,49,17
 4/15/2020,Cumberland Plateau,50,0,50,0
 4/15/2020,Eastern Shore,12,5,12,5
 4/15/2020,Fairfax,387,141,387,141
 4/15/2020,Hampton,42,5,42,5
-4/15/2020,Henrico,91,15,91,15
+4/15/2020,Henrico,98,15,98,15
 4/15/2020,Lenowisco,33,2,33,2
 4/15/2020,Lord Fairfax,91,12,91,12
 4/15/2020,Loudoun,79,17,79,17
@@ -1869,13 +1901,13 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/15/2020,Norfolk,51,5,51,5
 4/15/2020,Out of State,51,17,51,17
 4/15/2020,Peninsula,164,9,164,9
-4/15/2020,Piedmont,35,7,35,7
+4/15/2020,Piedmont,37,7,37,7
 4/15/2020,Pittsylvania-Danville,16,1,16,1
 4/15/2020,Portsmouth,22,1,22,1
 4/15/2020,Prince William,184,67,184,67
 4/15/2020,Rappahannock,110,18,110,18
 4/15/2020,Rappahannock Rapidan,60,6,60,6
-4/15/2020,Richmond,59,12,59,12
+4/15/2020,Richmond,60,12,60,12
 4/15/2020,Roanoke,86,6,86,6
 4/15/2020,Southside,15,4,15,4
 4/15/2020,Thomas Jefferson,108,10,108,10
@@ -1890,14 +1922,14 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/14/2020,Central Shenandoah,39,19,39,19
 4/14/2020,Central Virginia,15,1,15,1
 4/14/2020,Chesapeake,36,6,36,6
-4/14/2020,Chesterfield,58,14,58,14
+4/14/2020,Chesterfield,60,14,60,14
 4/14/2020,Chickahominy,23,6,23,6
 4/14/2020,Crater,26,8,26,8
 4/14/2020,Cumberland Plateau,20,0,20,0
 4/14/2020,Eastern Shore,7,0,7,0
 4/14/2020,Fairfax,316,97,316,97
 4/14/2020,Hampton,20,8,20,8
-4/14/2020,Henrico,66,24,66,24
+4/14/2020,Henrico,67,24,67,24
 4/14/2020,Lenowisco,25,0,25,0
 4/14/2020,Lord Fairfax,62,5,62,5
 4/14/2020,Loudoun,63,13,63,13
@@ -1924,7 +1956,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/13/2020,Alexandria,47,11,47,11
 4/13/2020,Alleghany,7,0,7,0
 4/13/2020,Arlington,35,13,35,13
-4/13/2020,Central Shenandoah,49,25,49,25
+4/13/2020,Central Shenandoah,48,25,48,25
 4/13/2020,Central Virginia,18,0,18,0
 4/13/2020,Chesapeake,35,4,35,4
 4/13/2020,Chesterfield,58,15,58,15
@@ -1945,7 +1977,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/13/2020,Peninsula,34,3,34,3
 4/13/2020,Piedmont,19,9,19,9
 4/13/2020,Pittsylvania-Danville,8,1,8,1
-4/13/2020,Portsmouth,5,1,5,1
+4/13/2020,Portsmouth,6,1,6,1
 4/13/2020,Prince William,94,48,94,48
 4/13/2020,Rappahannock,76,19,76,19
 4/13/2020,Rappahannock Rapidan,19,5,19,5
@@ -1969,12 +2001,12 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/12/2020,Crater,37,9,37,9
 4/12/2020,Cumberland Plateau,55,11,55,11
 4/12/2020,Eastern Shore,5,0,5,0
-4/12/2020,Fairfax,273,78,273,78
+4/12/2020,Fairfax,274,79,274,79
 4/12/2020,Hampton,38,3,38,3
 4/12/2020,Henrico,88,30,88,30
 4/12/2020,Lenowisco,17,3,17,3
 4/12/2020,Lord Fairfax,58,6,58,6
-4/12/2020,Loudoun,48,12,48,12
+4/12/2020,Loudoun,47,11,47,11
 4/12/2020,Mount Rogers,67,3,67,3
 4/12/2020,New River,79,2,79,2
 4/12/2020,Norfolk,46,7,46,7
@@ -2069,7 +2101,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/10/2020,Virginia Beach,73,9,73,9
 4/10/2020,West Piedmont,37,3,37,3
 4/10/2020,Western Tidewater,33,6,33,6
-4/9/2020,Alexandria,89,15,89,15
+4/9/2020,Alexandria,90,15,90,15
 4/9/2020,Alleghany,11,0,11,0
 4/9/2020,Arlington,98,31,98,31
 4/9/2020,Central Shenandoah,76,22,76,22
@@ -2080,7 +2112,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/9/2020,Crater,48,5,48,5
 4/9/2020,Cumberland Plateau,54,1,54,1
 4/9/2020,Eastern Shore,5,2,5,2
-4/9/2020,Fairfax,443,135,443,135
+4/9/2020,Fairfax,442,135,442,135
 4/9/2020,Hampton,28,5,28,5
 4/9/2020,Henrico,70,18,70,18
 4/9/2020,Lenowisco,24,0,24,0
@@ -2112,14 +2144,14 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/8/2020,Central Shenandoah,75,26,75,26
 4/8/2020,Central Virginia,54,5,54,5
 4/8/2020,Chesapeake,46,9,46,9
-4/8/2020,Chesterfield,65,16,65,16
+4/8/2020,Chesterfield,63,14,63,14
 4/8/2020,Chickahominy,29,6,29,6
 4/8/2020,Crater,34,6,34,6
 4/8/2020,Cumberland Plateau,28,1,28,1
 4/8/2020,Eastern Shore,4,1,4,1
 4/8/2020,Fairfax,426,100,426,100
 4/8/2020,Hampton,18,3,18,3
-4/8/2020,Henrico,91,23,91,23
+4/8/2020,Henrico,92,23,92,23
 4/8/2020,Lenowisco,25,3,25,3
 4/8/2020,Lord Fairfax,68,8,68,8
 4/8/2020,Loudoun,133,14,133,14
@@ -2134,7 +2166,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/8/2020,Prince William,167,50,167,50
 4/8/2020,Rappahannock,92,7,92,7
 4/8/2020,Rappahannock Rapidan,75,9,75,9
-4/8/2020,Richmond,93,21,93,21
+4/8/2020,Richmond,95,23,95,23
 4/8/2020,Roanoke,63,5,63,5
 4/8/2020,Southside,25,8,25,8
 4/8/2020,Thomas Jefferson,89,8,89,8
@@ -2146,15 +2178,15 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/7/2020,Alexandria,72,13,72,13
 4/7/2020,Alleghany,15,2,15,2
 4/7/2020,Arlington,96,30,96,30
-4/7/2020,Central Shenandoah,56,13,56,13
+4/7/2020,Central Shenandoah,57,13,57,13
 4/7/2020,Central Virginia,51,4,51,4
 4/7/2020,Chesapeake,63,6,63,6
-4/7/2020,Chesterfield,46,12,46,12
+4/7/2020,Chesterfield,48,13,48,13
 4/7/2020,Chickahominy,29,11,29,11
 4/7/2020,Crater,28,7,28,7
 4/7/2020,Cumberland Plateau,33,0,33,0
 4/7/2020,Eastern Shore,5,0,5,0
-4/7/2020,Fairfax,381,99,381,99
+4/7/2020,Fairfax,382,100,382,100
 4/7/2020,Hampton,32,5,32,5
 4/7/2020,Henrico,62,19,62,19
 4/7/2020,Lenowisco,13,2,13,2
@@ -2171,8 +2203,8 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/7/2020,Prince William,144,43,144,43
 4/7/2020,Rappahannock,79,6,79,6
 4/7/2020,Rappahannock Rapidan,53,4,53,4
-4/7/2020,Richmond,34,5,34,5
-4/7/2020,Roanoke,81,6,81,6
+4/7/2020,Richmond,31,3,31,3
+4/7/2020,Roanoke,80,6,80,6
 4/7/2020,Southside,23,9,23,9
 4/7/2020,Thomas Jefferson,121,5,121,5
 4/7/2020,Three Rivers,16,1,16,1
@@ -2201,7 +2233,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/6/2020,New River,147,7,147,7
 4/6/2020,Norfolk,70,9,70,9
 4/6/2020,Out of State,52,13,52,13
-4/6/2020,Peninsula,72,9,72,9
+4/6/2020,Peninsula,71,9,71,9
 4/6/2020,Piedmont,58,9,58,9
 4/6/2020,Pittsylvania-Danville,17,1,17,1
 4/6/2020,Portsmouth,37,4,37,4
@@ -2209,13 +2241,13 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/6/2020,Rappahannock,81,10,81,10
 4/6/2020,Rappahannock Rapidan,52,7,52,7
 4/6/2020,Richmond,51,13,51,13
-4/6/2020,Roanoke,60,3,60,3
+4/6/2020,Roanoke,61,4,61,4
 4/6/2020,Southside,11,1,11,1
 4/6/2020,Thomas Jefferson,37,4,37,4
-4/6/2020,Three Rivers,25,4,25,4
+4/6/2020,Three Rivers,26,4,26,4
 4/6/2020,Unknown,6,4,6,4
 4/6/2020,Virginia Beach,198,15,198,15
-4/6/2020,West Piedmont,4,2,4,2
+4/6/2020,West Piedmont,3,1,3,1
 4/6/2020,Western Tidewater,31,4,31,4
 4/5/2020,Alexandria,103,30,103,30
 4/5/2020,Alleghany,40,3,40,3
@@ -2330,7 +2362,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/2/2020,Alexandria,56,12,56,12
 4/2/2020,Alleghany,17,0,17,0
 4/2/2020,Arlington,56,12,56,12
-4/2/2020,Central Shenandoah,57,12,57,12
+4/2/2020,Central Shenandoah,58,13,58,13
 4/2/2020,Central Virginia,27,2,27,2
 4/2/2020,Chesapeake,55,12,55,12
 4/2/2020,Chesterfield,74,12,74,12
@@ -2356,7 +2388,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/2/2020,Rappahannock,57,9,57,9
 4/2/2020,Rappahannock Rapidan,45,3,45,3
 4/2/2020,Richmond,63,17,63,17
-4/2/2020,Roanoke,73,10,73,10
+4/2/2020,Roanoke,72,9,72,9
 4/2/2020,Southside,12,3,12,3
 4/2/2020,Thomas Jefferson,90,6,90,6
 4/2/2020,Three Rivers,37,2,37,2
@@ -2393,13 +2425,13 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 4/1/2020,Rappahannock,80,7,80,7
 4/1/2020,Rappahannock Rapidan,30,3,30,3
 4/1/2020,Richmond,98,17,98,17
-4/1/2020,Roanoke,125,8,125,8
+4/1/2020,Roanoke,124,7,124,7
 4/1/2020,Southside,15,0,15,0
 4/1/2020,Thomas Jefferson,25,1,25,1
 4/1/2020,Three Rivers,33,2,33,2
 4/1/2020,Unknown,4,1,4,1
 4/1/2020,Virginia Beach,186,27,186,27
-4/1/2020,West Piedmont,32,1,32,1
+4/1/2020,West Piedmont,33,2,33,2
 4/1/2020,Western Tidewater,49,11,49,11
 3/31/2020,Alexandria,28,5,28,5
 3/31/2020,Alleghany,14,2,14,2
@@ -2566,7 +2598,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 3/27/2020,Loudoun,83,10,83,10
 3/27/2020,Mount Rogers,22,1,22,1
 3/27/2020,New River,28,1,28,1
-3/27/2020,Norfolk,59,5,59,5
+3/27/2020,Norfolk,58,4,58,4
 3/27/2020,Out of State,17,6,17,6
 3/27/2020,Peninsula,126,16,126,16
 3/27/2020,Piedmont,14,0,14,0
@@ -2580,7 +2612,7 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 3/27/2020,Southside,4,1,4,1
 3/27/2020,Thomas Jefferson,39,5,39,5
 3/27/2020,Three Rivers,23,5,23,5
-3/27/2020,Unknown,2,1,2,1
+3/27/2020,Unknown,3,2,3,2
 3/27/2020,Virginia Beach,165,13,165,13
 3/27/2020,West Piedmont,16,0,16,0
 3/27/2020,Western Tidewater,24,1,24,1
@@ -2589,22 +2621,22 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 3/26/2020,Arlington,103,18,103,18
 3/26/2020,Central Shenandoah,26,4,26,4
 3/26/2020,Central Virginia,19,0,19,0
-3/26/2020,Chesapeake,22,3,22,3
+3/26/2020,Chesapeake,23,4,23,4
 3/26/2020,Chesterfield,37,4,37,4
 3/26/2020,Chickahominy,9,3,9,3
 3/26/2020,Crater,15,0,15,0
 3/26/2020,Cumberland Plateau,5,1,5,1
-3/26/2020,Eastern Shore,7,1,7,1
+3/26/2020,Eastern Shore,8,1,8,1
 3/26/2020,Fairfax,241,35,241,35
 3/26/2020,Hampton,20,4,20,4
 3/26/2020,Henrico,31,10,31,10
 3/26/2020,Lenowisco,3,0,3,0
-3/26/2020,Lord Fairfax,55,3,55,3
+3/26/2020,Lord Fairfax,56,4,56,4
 3/26/2020,Loudoun,105,8,105,8
 3/26/2020,Mount Rogers,10,1,10,1
 3/26/2020,New River,5,0,5,0
-3/26/2020,Norfolk,33,2,33,2
-3/26/2020,Out of State,8,2,8,2
+3/26/2020,Norfolk,32,1,32,1
+3/26/2020,Out of State,6,1,6,1
 3/26/2020,Peninsula,93,8,93,8
 3/26/2020,Piedmont,8,1,8,1
 3/26/2020,Pittsylvania-Danville,2,1,2,1
@@ -2831,12 +2863,12 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 3/20/2020,Rappahannock,14,1,14,1
 3/20/2020,Rappahannock Rapidan,9,1,9,1
 3/20/2020,Richmond,6,1,6,1
-3/20/2020,Roanoke,14,2,14,2
+3/20/2020,Roanoke,13,1,13,1
 3/20/2020,Southside,4,1,4,1
 3/20/2020,Thomas Jefferson,33,2,33,2
 3/20/2020,Three Rivers,9,1,9,1
 3/20/2020,Virginia Beach,60,2,60,2
-3/20/2020,West Piedmont,5,0,5,0
+3/20/2020,West Piedmont,6,1,6,1
 3/20/2020,Western Tidewater,7,1,7,1
 3/19/2020,Alexandria,18,1,18,1
 3/19/2020,Alleghany,2,0,2,0
@@ -3101,38 +3133,38 @@ Lab Report Date,Health District,Number of PCR Testing Encounters,Number of Posit
 5/20/2002,Chesterfield,1,0,1,0
 7/25/1987,Lord Fairfax,1,1,1,1
 8/15/1978,Fairfax,0,0,1,0
-Not Reported,Alexandria,49,20,49,20
+Not Reported,Alexandria,50,21,50,21
 Not Reported,Alleghany,1,1,1,1
-Not Reported,Arlington,72,35,72,35
+Not Reported,Arlington,73,34,73,34
 Not Reported,Central Shenandoah,153,15,153,15
-Not Reported,Central Virginia,12,0,12,0
-Not Reported,Chesapeake,35,2,35,2
-Not Reported,Chesterfield,251,174,251,174
+Not Reported,Central Virginia,17,0,17,0
+Not Reported,Chesapeake,37,2,37,2
+Not Reported,Chesterfield,276,178,276,178
 Not Reported,Chickahominy,92,63,92,63
-Not Reported,Crater,109,64,109,64
+Not Reported,Crater,116,66,116,66
 Not Reported,Cumberland Plateau,1,1,1,1
 Not Reported,Eastern Shore,253,0,253,0
-Not Reported,Fairfax,402,168,404,169
-Not Reported,Hampton,7,3,8,4
-Not Reported,Henrico,386,274,387,275
+Not Reported,Fairfax,421,176,423,177
+Not Reported,Hampton,8,4,9,5
+Not Reported,Henrico,397,281,398,282
 Not Reported,Lenowisco,1,1,1,1
-Not Reported,Lord Fairfax,22,10,22,10
-Not Reported,Loudoun,142,48,148,49
+Not Reported,Lord Fairfax,23,10,23,10
+Not Reported,Loudoun,158,63,164,64
 Not Reported,New River,2,0,2,0
-Not Reported,Norfolk,16,2,16,2
+Not Reported,Norfolk,23,2,23,2
 Not Reported,Out of State,13,11,13,11
-Not Reported,Peninsula,22,14,22,14
-Not Reported,Piedmont,28,21,28,21
-Not Reported,Portsmouth,6,2,6,2
-Not Reported,Prince William,257,77,258,77
-Not Reported,Rappahannock,134,83,136,85
-Not Reported,Rappahannock Rapidan,53,31,55,33
-Not Reported,Richmond,230,163,230,163
+Not Reported,Peninsula,23,14,23,14
+Not Reported,Piedmont,29,22,29,22
+Not Reported,Portsmouth,7,2,7,2
+Not Reported,Prince William,288,83,289,83
+Not Reported,Rappahannock,137,85,140,88
+Not Reported,Rappahannock Rapidan,56,33,58,35
+Not Reported,Richmond,239,169,239,169
 Not Reported,Roanoke,1,0,1,0
 Not Reported,Southside,28,17,28,17
 Not Reported,Thomas Jefferson,34,19,34,19
-Not Reported,Three Rivers,47,37,48,38
-Not Reported,Unknown,124,92,126,93
-Not Reported,Virginia Beach,95,1,95,1
+Not Reported,Three Rivers,48,37,49,38
+Not Reported,Unknown,129,94,131,95
+Not Reported,Virginia Beach,110,1,110,1
 Not Reported,West Piedmont,11,11,11,11
-Not Reported,Western Tidewater,13,1,13,1
+Not Reported,Western Tidewater,14,1,14,1
