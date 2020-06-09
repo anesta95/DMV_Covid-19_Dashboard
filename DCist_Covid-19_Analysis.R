@@ -871,8 +871,6 @@ Virginia_By_County_Today <- Virginia_By_County_Raw %>%
   arrange(desc(Date))
 
 
-  
-
 # Now I just have to write out the new CSV since the released the backdata and will continue releasing it
 # (hopefully).
 Virginia_By_County <- read_csv("Virginia_By_County.csv")
@@ -1164,10 +1162,11 @@ All_VA_DMV_Deaths_Today <- Virginia_By_County_Today %>%
 Virginia_Totals_Today <- tibble(
   Tests = sum(Virginia_Labs$Total_Number_of_Testing_Encounters),
   Deaths = sum(Virginia_By_County_Today$Deaths),
-  Hospitalizations = sum(Virginia_By_County_Today$Hospitalizations),
+  Hospitalizations = sum(Virginia_By_County_Today$Hospitalizations), 
   Date = Sys.Date() - 1,
   State = "Virginia"
 )
+
 
 
 # Virginia_Totals_Headers <- Virginia_Totals_Headers[c(1, 5, 6)]
