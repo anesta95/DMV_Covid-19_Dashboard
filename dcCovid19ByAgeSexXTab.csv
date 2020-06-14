@@ -1,4 +1,16 @@
 Age_Range,Cases,Unknown,Female,Male,Date,State
+All,9767,19,4894,4854,2020-06-13,District of Columbia
+Unknown,10,0,3,7,2020-06-13,District of Columbia
+  0-4,122,2,60,60,2020-06-13,District of Columbia
+  5-14,233,1,117,115,2020-06-13,District of Columbia
+  15-19,213,3,115,95,2020-06-13,District of Columbia
+  20-24,558,1,321,236,2020-06-13,District of Columbia
+  25-34,1851,3,948,900,2020-06-13,District of Columbia
+  35-44,1764,2,870,892,2020-06-13,District of Columbia
+  45-54,1500,0,713,787,2020-06-13,District of Columbia
+  55-64,1588,2,734,852,2020-06-13,District of Columbia
+  65-74,1019,2,487,530,2020-06-13,District of Columbia
+  75+,909,3,526,380,2020-06-13,District of Columbia
 All,9709,19,4861,4829,2020-06-12,District of Columbia
 Unknown,10,0,3,7,2020-06-12,District of Columbia
   0-4,121,2,60,59,2020-06-12,District of Columbia
