@@ -1,4 +1,249 @@
 Date,Health_District,Race,Cases,Hospitalized,Deaths,State
+2020-06-17,Southside,Not Reported,147,13,7,Virginia
+2020-06-17,Chesapeake,White,311,44,8,Virginia
+2020-06-17,New River,Other,6,1,0,Virginia
+2020-06-17,Norfolk,Black or African American,325,54,5,Virginia
+2020-06-17,Central Shenandoah,Other,267,21,2,Virginia
+2020-06-17,Southside,Other,34,1,1,Virginia
+2020-06-17,Pittsylvania-Danville,Other,2,0,0,Virginia
+2020-06-17,Cumberland Plateau,White,24,2,0,Virginia
+2020-06-17,Rappahannock Rapidan,Black or African American,82,16,4,Virginia
+2020-06-17,Fairfax,Not Reported,3086,99,67,Virginia
+2020-06-17,Chesapeake,Not Reported,74,2,0,Virginia
+2020-06-17,Thomas Jefferson,White,364,36,13,Virginia
+2020-06-17,Richmond,Other,503,68,3,Virginia
+2020-06-17,Peninsula,Black or African American,205,34,10,Virginia
+2020-06-17,Henrico,Other,368,40,6,Virginia
+2020-06-17,Cumberland Plateau,Black or African American,12,0,0,Virginia
+2020-06-17,Loudoun,Other,704,95,11,Virginia
+2020-06-17,Crater,Other,39,1,1,Virginia
+2020-06-17,Arlington,Black or African American,203,64,28,Virginia
+2020-06-17,Alexandria,Black or African American,331,62,12,Virginia
+2020-06-17,Richmond,Black or African American,501,106,22,Virginia
+2020-06-17,Lord Fairfax,Not Reported,287,6,6,Virginia
+2020-06-17,Fairfax,Black or African American,790,162,36,Virginia
+2020-06-17,Thomas Jefferson,Black or African American,131,39,4,Virginia
+2020-06-17,West Piedmont,White,137,9,3,Virginia
+2020-06-17,Rappahannock,Not Reported,784,31,0,Virginia
+2020-06-17,Central Shenandoah,Not Reported,249,8,0,Virginia
+2020-06-17,Peninsula,White,377,77,22,Virginia
+2020-06-17,Rappahannock Rapidan,White,538,48,9,Virginia
+2020-06-17,Prince William,White,1866,343,103,Virginia
+2020-06-17,New River,Not Reported,39,0,0,Virginia
+2020-06-17,Chesterfield,Not Reported,1265,3,6,Virginia
+2020-06-17,Alleghany,Other,10,0,0,Virginia
+2020-06-17,Lenowisco,White,38,15,3,Virginia
+2020-06-17,Western Tidewater,White,191,33,24,Virginia
+2020-06-17,Hampton,Other,17,3,0,Virginia
+2020-06-17,Alleghany,White,159,23,13,Virginia
+2020-06-17,Roanoke,Black or African American,27,7,2,Virginia
+2020-06-17,Alleghany,Black or African American,9,1,1,Virginia
+2020-06-17,Richmond,Not Reported,618,3,0,Virginia
+2020-06-17,Central Virginia,Other,4,1,0,Virginia
+2020-06-17,Rappahannock,Other,576,61,4,Virginia
+2020-06-17,Roanoke,Other,9,0,0,Virginia
+2020-06-17,Piedmont,Black or African American,309,44,2,Virginia
+2020-06-17,Chesterfield,Other,415,20,0,Virginia
+2020-06-17,Portsmouth,Black or African American,196,47,10,Virginia
+2020-06-17,Portsmouth,Not Reported,101,1,1,Virginia
+2020-06-17,Norfolk,Not Reported,129,1,0,Virginia
+2020-06-17,Eastern Shore,White,342,20,14,Virginia
+2020-06-17,Eastern Shore,Not Reported,130,1,0,Virginia
+2020-06-17,Roanoke,White,98,4,8,Virginia
+2020-06-17,Three Rivers,Other,62,6,0,Virginia
+2020-06-17,Fairfax,Other,5833,788,86,Virginia
+2020-06-17,Henrico,Not Reported,621,4,1,Virginia
+2020-06-17,Lord Fairfax,Other,306,22,2,Virginia
+2020-06-17,Piedmont,Other,42,4,0,Virginia
+2020-06-17,Lenowisco,Black or African American,0,0,0,Virginia
+2020-06-17,Arlington,White,1179,180,71,Virginia
+2020-06-17,Hampton,Black or African American,129,27,5,Virginia
+2020-06-17,Alexandria,White,925,82,29,Virginia
+2020-06-17,Hampton,Not Reported,43,0,0,Virginia
+2020-06-17,Mount Rogers,White,474,55,20,Virginia
+2020-06-17,Alexandria,Not Reported,411,16,3,Virginia
+2020-06-17,Chickahominy,Black or African American,94,31,9,Virginia
+2020-06-17,Chesapeake,Black or African American,245,51,5,Virginia
+2020-06-17,Western Tidewater,Not Reported,212,1,1,Virginia
+2020-06-17,Cumberland Plateau,Not Reported,1,0,0,Virginia
+2020-06-17,Western Tidewater,Other,30,1,0,Virginia
+2020-06-17,Loudoun,Black or African American,113,17,2,Virginia
+2020-06-17,Virginia Beach,White,450,65,20,Virginia
+2020-06-17,Chickahominy,Other,35,10,1,Virginia
+2020-06-17,New River,Black or African American,7,1,0,Virginia
+2020-06-17,Virginia Beach,Not Reported,130,4,1,Virginia
+2020-06-17,Rappahannock Rapidan,Other,100,18,2,Virginia
+2020-06-17,Piedmont,Not Reported,317,9,2,Virginia
+2020-06-17,Portsmouth,Other,29,3,0,Virginia
+2020-06-17,Pittsylvania-Danville,Not Reported,18,5,0,Virginia
+2020-06-17,West Piedmont,Not Reported,37,0,0,Virginia
+2020-06-17,Norfolk,White,183,28,2,Virginia
+2020-06-17,Hampton,White,62,7,0,Virginia
+2020-06-17,Western Tidewater,Black or African American,272,43,21,Virginia
+2020-06-17,Prince William,Not Reported,4116,55,0,Virginia
+2020-06-17,Fairfax,White,3625,498,255,Virginia
+2020-06-17,Lenowisco,Other,1,0,0,Virginia
+2020-06-17,Rappahannock Rapidan,Not Reported,663,21,3,Virginia
+2020-06-17,Three Rivers,Black or African American,174,15,3,Virginia
+2020-06-17,Henrico,Black or African American,685,117,59,Virginia
+2020-06-17,Lenowisco,Not Reported,7,1,1,Virginia
+2020-06-17,Chesapeake,Other,67,8,3,Virginia
+2020-06-17,Crater,Not Reported,385,4,2,Virginia
+2020-06-17,Chickahominy,Not Reported,192,4,1,Virginia
+2020-06-17,Eastern Shore,Black or African American,759,81,25,Virginia
+2020-06-17,Alexandria,Other,519,69,4,Virginia
+2020-06-17,Chesterfield,Black or African American,334,48,11,Virginia
+2020-06-17,Roanoke,Not Reported,143,1,0,Virginia
+2020-06-17,Rappahannock,Black or African American,234,37,3,Virginia
+2020-06-17,Lord Fairfax,White,1136,116,53,Virginia
+2020-06-17,Prince William,Other,1832,249,11,Virginia
+2020-06-17,Arlington,Not Reported,377,28,4,Virginia
+2020-06-17,West Piedmont,Black or African American,74,18,1,Virginia
+2020-06-17,Peninsula,Other,59,10,1,Virginia
+2020-06-17,Norfolk,Other,67,5,0,Virginia
+2020-06-17,Lord Fairfax,Black or African American,57,5,1,Virginia
+2020-06-17,Mount Rogers,Not Reported,52,0,1,Virginia
+2020-06-17,Central Virginia,Black or African American,22,2,1,Virginia
+2020-06-17,West Piedmont,Other,106,7,1,Virginia
+2020-06-17,Portsmouth,White,76,9,2,Virginia
+2020-06-17,Thomas Jefferson,Not Reported,91,0,0,Virginia
+2020-06-17,Three Rivers,Not Reported,148,4,0,Virginia
+2020-06-17,Virginia Beach,Black or African American,234,21,4,Virginia
+2020-06-17,Prince William,Black or African American,600,110,33,Virginia
+2020-06-17,Loudoun,Not Reported,1837,4,2,Virginia
+2020-06-17,Loudoun,White,845,112,67,Virginia
+2020-06-17,Peninsula,Not Reported,158,2,0,Virginia
+2020-06-17,Pittsylvania-Danville,Black or African American,50,11,0,Virginia
+2020-06-17,Henrico,White,668,80,73,Virginia
+2020-06-17,Richmond,White,273,21,4,Virginia
+2020-06-17,Southside,Black or African American,79,17,7,Virginia
+2020-06-17,Chickahominy,White,257,59,24,Virginia
+2020-06-17,Thomas Jefferson,Other,151,6,2,Virginia
+2020-06-17,Virginia Beach,Other,122,22,2,Virginia
+2020-06-17,Central Shenandoah,Black or African American,90,5,2,Virginia
+2020-06-17,Chesterfield,White,535,57,40,Virginia
+2020-06-17,Central Virginia,White,84,10,3,Virginia
+2020-06-17,Rappahannock,White,617,67,23,Virginia
+2020-06-17,New River,White,101,16,4,Virginia
+2020-06-17,Mount Rogers,Other,44,3,1,Virginia
+2020-06-17,Crater,White,264,24,6,Virginia
+2020-06-17,Alleghany,Not Reported,110,4,0,Virginia
+2020-06-17,Arlington,Other,623,137,23,Virginia
+2020-06-17,Piedmont,White,271,21,3,Virginia
+2020-06-17,Cumberland Plateau,Other,0,0,0,Virginia
+2020-06-17,Pittsylvania-Danville,White,74,17,3,Virginia
+2020-06-17,Three Rivers,White,206,21,6,Virginia
+2020-06-17,Central Virginia,Not Reported,173,4,0,Virginia
+2020-06-17,Eastern Shore,Other,54,3,2,Virginia
+2020-06-17,Crater,Black or African American,591,97,12,Virginia
+2020-06-17,Mount Rogers,Black or African American,20,4,1,Virginia
+2020-06-17,Central Shenandoah,White,1233,114,28,Virginia
+2020-06-17,Southside,White,84,15,11,Virginia
+2020-06-17,Southside,Not Reported,219,26,10,Virginia
+2020-06-17,Lord Fairfax,Hispanic or Latino,489,32,7,Virginia
+2020-06-17,Eastern Shore,Not Hispanic or Latino,944,97,38,Virginia
+2020-06-17,Portsmouth,Hispanic or Latino,13,2,0,Virginia
+2020-06-17,Fairfax,Not Reported,3112,108,80,Virginia
+2020-06-17,Richmond,Hispanic or Latino,665,60,1,Virginia
+2020-06-17,Chesapeake,Not Reported,131,6,0,Virginia
+2020-06-17,Arlington,Hispanic or Latino,1161,198,20,Virginia
+2020-06-17,West Piedmont,Not Hispanic or Latino,199,26,4,Virginia
+2020-06-17,Fairfax,Not Hispanic or Latino,3489,741,309,Virginia
+2020-06-17,Piedmont,Hispanic or Latino,39,0,1,Virginia
+2020-06-17,Crater,Not Hispanic or Latino,463,88,12,Virginia
+2020-06-17,Chickahominy,Not Hispanic or Latino,260,80,32,Virginia
+2020-06-17,New River,Not Hispanic or Latino,96,17,4,Virginia
+2020-06-17,Lord Fairfax,Not Reported,459,22,12,Virginia
+2020-06-17,Rappahannock,Not Reported,755,27,0,Virginia
+2020-06-17,Central Shenandoah,Not Reported,247,6,4,Virginia
+2020-06-17,Central Virginia,Not Hispanic or Latino,82,12,3,Virginia
+2020-06-17,Lenowisco,Not Hispanic or Latino,26,12,2,Virginia
+2020-06-17,Cumberland Plateau,Not Hispanic or Latino,23,2,0,Virginia
+2020-06-17,Western Tidewater,Not Hispanic or Latino,420,75,45,Virginia
+2020-06-17,New River,Not Reported,42,0,0,Virginia
+2020-06-17,Chesterfield,Not Reported,1532,22,17,Virginia
+2020-06-17,Chesterfield,Hispanic or Latino,508,22,1,Virginia
+2020-06-17,Hampton,Not Hispanic or Latino,169,33,4,Virginia
+2020-06-17,Chesapeake,Not Hispanic or Latino,493,89,15,Virginia
+2020-06-17,Peninsula,Hispanic or Latino,143,10,0,Virginia
+2020-06-17,Arlington,Not Reported,263,19,8,Virginia
+2020-06-17,Roanoke,Not Hispanic or Latino,91,11,9,Virginia
+2020-06-17,Lord Fairfax,Not Hispanic or Latino,838,95,43,Virginia
+2020-06-17,Eastern Shore,Hispanic or Latino,223,7,3,Virginia
+2020-06-17,Mount Rogers,Not Reported,57,4,1,Virginia
+2020-06-17,Three Rivers,Not Hispanic or Latino,334,34,9,Virginia
+2020-06-17,Thomas Jefferson,Not Reported,119,1,0,Virginia
+2020-06-17,Three Rivers,Not Reported,185,9,0,Virginia
+2020-06-17,Arlington,Not Hispanic or Latino,958,192,98,Virginia
+2020-06-17,Alleghany,Not Hispanic or Latino,148,22,14,Virginia
+2020-06-17,Loudoun,Not Reported,1921,8,4,Virginia
+2020-06-17,Fairfax,Hispanic or Latino,6733,698,55,Virginia
+2020-06-17,Peninsula,Not Reported,154,2,0,Virginia
+2020-06-17,Crater,Hispanic or Latino,96,2,2,Virginia
+2020-06-17,Piedmont,Not Hispanic or Latino,537,63,4,Virginia
+2020-06-17,Henrico,Hispanic or Latino,414,31,4,Virginia
+2020-06-17,Alexandria,Not Hispanic or Latino,780,120,42,Virginia
+2020-06-17,Central Virginia,Hispanic or Latino,22,1,1,Virginia
+2020-06-17,Alleghany,Not Reported,91,1,0,Virginia
+2020-06-17,Cumberland Plateau,Hispanic or Latino,0,0,0,Virginia
+2020-06-17,Western Tidewater,Hispanic or Latino,5,1,0,Virginia
+2020-06-17,Chesterfield,Not Hispanic or Latino,509,84,39,Virginia
+2020-06-17,Pittsylvania-Danville,Not Hispanic or Latino,103,25,3,Virginia
+2020-06-17,Mount Rogers,Hispanic or Latino,142,0,0,Virginia
+2020-06-17,Richmond,Not Reported,701,28,2,Virginia
+2020-06-17,Peninsula,Not Hispanic or Latino,502,111,33,Virginia
+2020-06-17,Chesapeake,Hispanic or Latino,73,10,1,Virginia
+2020-06-17,Southside,Hispanic or Latino,2,1,0,Virginia
+2020-06-17,Thomas Jefferson,Not Hispanic or Latino,419,74,19,Virginia
+2020-06-17,Norfolk,Not Hispanic or Latino,401,74,7,Virginia
+2020-06-17,Portsmouth,Not Reported,210,11,2,Virginia
+2020-06-17,Norfolk,Not Reported,171,1,0,Virginia
+2020-06-17,Three Rivers,Hispanic or Latino,71,3,0,Virginia
+2020-06-17,Eastern Shore,Not Reported,118,1,0,Virginia
+2020-06-17,Alleghany,Hispanic or Latino,49,5,0,Virginia
+2020-06-17,Henrico,Not Reported,845,32,17,Virginia
+2020-06-17,Henrico,Not Hispanic or Latino,1083,178,118,Virginia
+2020-06-17,Loudoun,Not Hispanic or Latino,728,126,71,Virginia
+2020-06-17,Hampton,Not Reported,51,2,1,Virginia
+2020-06-17,Rappahannock Rapidan,Not Hispanic or Latino,319,41,11,Virginia
+2020-06-17,Alexandria,Not Reported,194,6,0,Virginia
+2020-06-17,Rappahannock,Not Hispanic or Latino,705,101,27,Virginia
+2020-06-17,Western Tidewater,Not Reported,280,2,1,Virginia
+2020-06-17,Cumberland Plateau,Not Reported,14,0,0,Virginia
+2020-06-17,Alexandria,Hispanic or Latino,1212,103,6,Virginia
+2020-06-17,Virginia Beach,Not Hispanic or Latino,653,99,24,Virginia
+2020-06-17,Prince William,Hispanic or Latino,3512,463,38,Virginia
+2020-06-17,Virginia Beach,Not Reported,182,5,2,Virginia
+2020-06-17,Central Shenandoah,Hispanic or Latino,731,46,3,Virginia
+2020-06-17,Pittsylvania-Danville,Hispanic or Latino,19,2,0,Virginia
+2020-06-17,Mount Rogers,Not Hispanic or Latino,391,58,22,Virginia
+2020-06-17,Piedmont,Not Reported,363,15,2,Virginia
+2020-06-17,Southside,Not Hispanic or Latino,123,19,16,Virginia
+2020-06-17,Thomas Jefferson,Hispanic or Latino,199,6,0,Virginia
+2020-06-17,Pittsylvania-Danville,Not Reported,22,6,0,Virginia
+2020-06-17,Norfolk,Hispanic or Latino,132,13,0,Virginia
+2020-06-17,Portsmouth,Not Hispanic or Latino,179,47,11,Virginia
+2020-06-17,West Piedmont,Not Reported,46,2,1,Virginia
+2020-06-17,Richmond,Not Hispanic or Latino,529,110,26,Virginia
+2020-06-17,West Piedmont,Hispanic or Latino,109,6,0,Virginia
+2020-06-17,Prince William,Not Reported,3581,22,1,Virginia
+2020-06-17,Rappahannock Rapidan,Not Reported,441,16,2,Virginia
+2020-06-17,Chickahominy,Hispanic or Latino,37,3,0,Virginia
+2020-06-17,Lenowisco,Not Reported,20,4,2,Virginia
+2020-06-17,New River,Hispanic or Latino,15,1,0,Virginia
+2020-06-17,Crater,Not Reported,720,36,7,Virginia
+2020-06-17,Chickahominy,Not Reported,281,21,3,Virginia
+2020-06-17,Loudoun,Hispanic or Latino,850,94,7,Virginia
+2020-06-17,Rappahannock Rapidan,Hispanic or Latino,623,46,5,Virginia
+2020-06-17,Roanoke,Not Reported,89,0,1,Virginia
+2020-06-17,Rappahannock,Hispanic or Latino,751,68,3,Virginia
+2020-06-17,Lenowisco,Hispanic or Latino,0,0,0,Virginia
+2020-06-17,Virginia Beach,Hispanic or Latino,101,8,1,Virginia
+2020-06-17,Prince William,Not Hispanic or Latino,1321,272,108,Virginia
+2020-06-17,Central Virginia,Not Reported,179,4,0,Virginia
+2020-06-17,Central Shenandoah,Not Hispanic or Latino,861,96,25,Virginia
+2020-06-17,Hampton,Hispanic or Latino,31,2,0,Virginia
+2020-06-17,Roanoke,Hispanic or Latino,97,1,0,Virginia
 2020-06-16,Arlington,Not Reported,382,28,4,Virginia
 2020-06-16,West Piedmont,Black or African American,72,17,1,Virginia
 2020-06-16,Peninsula,Other,57,10,1,Virginia
