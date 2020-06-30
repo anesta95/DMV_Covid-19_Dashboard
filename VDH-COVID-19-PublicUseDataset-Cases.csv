@@ -1,4 +1,137 @@
 Report Date,FIPS,Locality,VDH Health District,Total Cases,Hospitalizations,Deaths
+6/30/2020,51001,Accomack,Eastern Shore,1042,71,14
+6/30/2020,51003,Albemarle,Thomas Jefferson,401,28,8
+6/30/2020,51005,Alleghany,Alleghany,31,5,2
+6/30/2020,51007,Amelia,Piedmont,44,11,1
+6/30/2020,51009,Amherst,Central Virginia,36,3,0
+6/30/2020,51011,Appomattox,Central Virginia,40,2,0
+6/30/2020,51013,Arlington,Arlington,2479,418,132
+6/30/2020,51015,Augusta,Central Shenandoah,185,7,2
+6/30/2020,51017,Bath,Central Shenandoah,0,0,0
+6/30/2020,51019,Bedford,Central Virginia,118,2,3
+6/30/2020,51021,Bland,Mount Rogers,2,0,0
+6/30/2020,51023,Botetourt,Alleghany,121,12,4
+6/30/2020,51025,Brunswick,Southside,103,15,1
+6/30/2020,51027,Buchanan,Cumberland Plateau,31,0,0
+6/30/2020,51029,Buckingham,Piedmont,556,20,4
+6/30/2020,51031,Campbell,Central Virginia,45,3,1
+6/30/2020,51033,Caroline,Rappahannock,128,16,4
+6/30/2020,51035,Carroll,Mount Rogers,214,18,8
+6/30/2020,51036,Charles City,Chickahominy,39,14,3
+6/30/2020,51037,Charlotte,Piedmont,31,4,0
+6/30/2020,51041,Chesterfield,Chesterfield,2897,116,50
+6/30/2020,51043,Clarke,Lord Fairfax,49,4,0
+6/30/2020,51045,Craig,Alleghany,7,0,0
+6/30/2020,51047,Culpeper,Rappahannock Rapidan,808,62,10
+6/30/2020,51049,Cumberland,Piedmont,51,4,0
+6/30/2020,51051,Dickenson,Cumberland Plateau,4,0,0
+6/30/2020,51053,Dinwiddie,Crater,142,19,0
+6/30/2020,51057,Essex,Three Rivers,58,4,0
+6/30/2020,51059,Fairfax,Fairfax,13850,1613,488
+6/30/2020,51061,Fauquier,Rappahannock Rapidan,420,27,6
+6/30/2020,51063,Floyd,New River,17,2,1
+6/30/2020,51065,Fluvanna,Thomas Jefferson,110,25,7
+6/30/2020,51067,Franklin County,West Piedmont,88,5,1
+6/30/2020,51069,Frederick,Lord Fairfax,493,37,6
+6/30/2020,51071,Giles,New River,15,1,0
+6/30/2020,51073,Gloucester,Three Rivers,49,9,1
+6/30/2020,51075,Goochland,Chickahominy,119,22,6
+6/30/2020,51077,Grayson,Mount Rogers,84,6,2
+6/30/2020,51079,Greene,Thomas Jefferson,67,7,1
+6/30/2020,51081,Greensville,Crater,359,18,7
+6/30/2020,51083,Halifax,Southside,53,3,1
+6/30/2020,51085,Hanover,Chickahominy,429,64,26
+6/30/2020,51087,Henrico,Henrico,2591,254,141
+6/30/2020,51089,Henry,West Piedmont,260,23,4
+6/30/2020,51091,Highland,Central Shenandoah,3,0,0
+6/30/2020,51093,Isle of Wight,Western Tidewater,179,16,8
+6/30/2020,51095,James City,Peninsula,263,58,15
+6/30/2020,51097,King and Queen,Three Rivers,23,4,1
+6/30/2020,51099,King George,Rappahannock,97,15,4
+6/30/2020,51101,King William,Three Rivers,42,4,0
+6/30/2020,51103,Lancaster,Three Rivers,11,1,0
+6/30/2020,51105,Lee,Lenowisco,11,1,0
+6/30/2020,51107,Loudoun,Loudoun,4000,275,87
+6/30/2020,51109,Louisa,Thomas Jefferson,118,11,1
+6/30/2020,51111,Lunenburg,Piedmont,31,3,0
+6/30/2020,51113,Madison,Rappahannock Rapidan,43,4,1
+6/30/2020,51115,Mathews,Three Rivers,6,2,0
+6/30/2020,51117,Mecklenburg,Southside,240,30,26
+6/30/2020,51119,Middlesex,Three Rivers,15,1,0
+6/30/2020,51121,Montgomery,New River,145,11,2
+6/30/2020,51125,Nelson,Thomas Jefferson,18,0,0
+6/30/2020,51127,New Kent,Chickahominy,57,7,1
+6/30/2020,51131,Northampton,Eastern Shore,269,40,28
+6/30/2020,51133,Northumberland,Three Rivers,37,0,1
+6/30/2020,51135,Nottoway,Piedmont,111,22,2
+6/30/2020,51137,Orange,Rappahannock Rapidan,149,14,3
+6/30/2020,51139,Page,Lord Fairfax,269,29,24
+6/30/2020,51141,Patrick,West Piedmont,46,2,1
+6/30/2020,51143,Pittsylvania,Pittsylvania-Danville,122,22,1
+6/30/2020,51145,Powhatan,Chesterfield,82,4,2
+6/30/2020,51147,Prince Edward,Piedmont,187,22,3
+6/30/2020,51149,Prince George,Crater,238,12,1
+6/30/2020,51153,Prince William,Prince William,7285,656,144
+6/30/2020,51155,Pulaski,New River,45,7,2
+6/30/2020,51157,Rappahannock,Rappahannock Rapidan,20,1,0
+6/30/2020,51159,Richmond County,Three Rivers,298,13,4
+6/30/2020,51161,Roanoke County,Alleghany,254,11,6
+6/30/2020,51163,Rockbridge,Central Shenandoah,30,0,0
+6/30/2020,51165,Rockingham,Central Shenandoah,720,73,10
+6/30/2020,51167,Russell,Cumberland Plateau,12,2,0
+6/30/2020,51169,Scott,Lenowisco,10,2,2
+6/30/2020,51171,Shenandoah,Lord Fairfax,562,62,29
+6/30/2020,51173,Smyth,Mount Rogers,36,5,1
+6/30/2020,51175,Southampton,Western Tidewater,156,7,4
+6/30/2020,51177,Spotsylvania,Rappahannock,993,74,29
+6/30/2020,51179,Stafford,Rappahannock,988,92,5
+6/30/2020,51181,Surry,Crater,15,4,1
+6/30/2020,51183,Sussex,Crater,194,13,2
+6/30/2020,51185,Tazewell,Cumberland Plateau,15,0,0
+6/30/2020,51187,Warren,Lord Fairfax,284,19,5
+6/30/2020,51191,Washington,Mount Rogers,64,8,4
+6/30/2020,51193,Westmoreland,Three Rivers,108,12,2
+6/30/2020,51195,Wise,Lenowisco,28,12,2
+6/30/2020,51197,Wythe,Mount Rogers,50,4,1
+6/30/2020,51199,York,Peninsula,115,10,3
+6/30/2020,51510,Alexandria,Alexandria,2325,238,57
+6/30/2020,51520,Bristol,Mount Rogers,4,1,0
+6/30/2020,51530,Buena Vista City,Central Shenandoah,15,1,0
+6/30/2020,51540,Charlottesville,Thomas Jefferson,212,17,3
+6/30/2020,51550,Chesapeake,Chesapeake,895,130,20
+6/30/2020,51570,Colonial Heights,Chesterfield,143,15,17
+6/30/2020,51580,Covington,Alleghany,5,0,0
+6/30/2020,51590,Danville,Pittsylvania-Danville,86,19,2
+6/30/2020,51595,Emporia,Crater,136,20,14
+6/30/2020,51600,Fairfax City,Fairfax,70,7,7
+6/30/2020,51610,Falls Church,Fairfax,56,11,8
+6/30/2020,51620,Franklin City,Western Tidewater,51,3,2
+6/30/2020,51630,Fredericksburg,Rappahannock,246,24,0
+6/30/2020,51640,Galax,Mount Rogers,253,30,13
+6/30/2020,51650,Hampton,Hampton,328,41,5
+6/30/2020,51660,Harrisonburg,Central Shenandoah,939,71,24
+6/30/2020,51670,Hopewell,Crater,174,19,2
+6/30/2020,51678,Lexington,Central Shenandoah,10,0,0
+6/30/2020,51680,Lynchburg,Central Virginia,147,6,1
+6/30/2020,51683,Manassas City,Prince William,1397,97,16
+6/30/2020,51685,Manassas Park,Prince William,431,46,6
+6/30/2020,51690,Martinsville,West Piedmont,78,10,1
+6/30/2020,51700,Newport News,Peninsula,523,44,10
+6/30/2020,51710,Norfolk,Norfolk,915,105,9
+6/30/2020,51720,Norton,Lenowisco,4,2,0
+6/30/2020,51730,Petersburg,Crater,234,43,3
+6/30/2020,51735,Poquoson,Peninsula,19,2,0
+6/30/2020,51740,Portsmouth,Portsmouth,482,68,16
+6/30/2020,51750,Radford,New River,11,1,0
+6/30/2020,51760,Richmond City,Richmond,2209,220,30
+6/30/2020,51770,Roanoke City,Roanoke,439,14,9
+6/30/2020,51775,Salem,Alleghany,68,3,3
+6/30/2020,51790,Staunton,Central Shenandoah,73,8,0
+6/30/2020,51800,Suffolk,Western Tidewater,414,57,34
+6/30/2020,51810,Virginia Beach,Virginia Beach,1176,118,29
+6/30/2020,51820,Waynesboro,Central Shenandoah,82,6,0
+6/30/2020,51830,Williamsburg,Peninsula,60,12,6
+6/30/2020,51840,Winchester,Lord Fairfax,317,23,3
 6/29/2020,51001,Accomack,Eastern Shore,1039,71,14
 6/29/2020,51003,Albemarle,Thomas Jefferson,394,28,8
 6/29/2020,51005,Alleghany,Alleghany,31,5,2

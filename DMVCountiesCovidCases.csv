@@ -1,21 +1,28 @@
 County,Cases,Hospitalizations,Deaths,Date,State,Abbr,FIPS,Recovered,Tests
-Arlington,2466,418,132,2020-06-28,Virginia,VA,51013,NA,NA
-Clarke,49,4,0,2020-06-28,Virginia,VA,51043,NA,NA
-Culpeper,808,62,10,2020-06-28,Virginia,VA,51047,NA,NA
-Fairfax,13840,1609,478,2020-06-28,Virginia,VA,51059,NA,NA
-Fauquier,417,26,6,2020-06-28,Virginia,VA,51061,NA,NA
-Loudoun,3968,271,87,2020-06-28,Virginia,VA,51107,NA,NA
-Prince William,7210,653,139,2020-06-28,Virginia,VA,51153,NA,NA
-Rappahannock,20,1,0,2020-06-28,Virginia,VA,51157,NA,NA
-Spotsylvania,985,73,29,2020-06-28,Virginia,VA,51177,NA,NA
-Stafford,985,91,5,2020-06-28,Virginia,VA,51179,NA,NA
-Warren,285,19,5,2020-06-28,Virginia,VA,51187,NA,NA
-Alexandria City,2317,238,57,2020-06-28,Virginia,VA,51510,NA,NA
-Fairfax City,70,7,7,2020-06-28,Virginia,VA,51600,NA,NA
-Falls Church,56,11,8,2020-06-28,Virginia,VA,51610,NA,NA
-Fredericksburg,247,24,0,2020-06-28,Virginia,VA,51630,NA,NA
-Manassas,1385,96,16,2020-06-28,Virginia,VA,51683,NA,NA
-Manassas Park,427,44,5,2020-06-28,Virginia,VA,51685,NA,NA
+Arlington,2479,418,132,2020-06-29,Virginia,VA,51013,NA,NA
+Clarke,49,4,0,2020-06-29,Virginia,VA,51043,NA,NA
+Culpeper,808,62,10,2020-06-29,Virginia,VA,51047,NA,NA
+Fairfax,13850,1613,488,2020-06-29,Virginia,VA,51059,NA,NA
+Fauquier,420,27,6,2020-06-29,Virginia,VA,51061,NA,NA
+Loudoun,4000,275,87,2020-06-29,Virginia,VA,51107,NA,NA
+Prince William,7285,656,144,2020-06-29,Virginia,VA,51153,NA,NA
+Rappahannock,20,1,0,2020-06-29,Virginia,VA,51157,NA,NA
+Spotsylvania,993,74,29,2020-06-29,Virginia,VA,51177,NA,NA
+Stafford,988,92,5,2020-06-29,Virginia,VA,51179,NA,NA
+Warren,284,19,5,2020-06-29,Virginia,VA,51187,NA,NA
+Alexandria City,2325,238,57,2020-06-29,Virginia,VA,51510,NA,NA
+Fairfax City,70,7,7,2020-06-29,Virginia,VA,51600,NA,NA
+Falls Church,56,11,8,2020-06-29,Virginia,VA,51610,NA,NA
+Fredericksburg,246,24,0,2020-06-29,Virginia,VA,51630,NA,NA
+Manassas,1397,97,16,2020-06-29,Virginia,VA,51683,NA,NA
+Manassas Park,431,46,6,2020-06-29,Virginia,VA,51685,NA,NA
+Calvert,414,NA,27,2020-06-29,Maryland,MD,24009,NA,NA
+Charles,1393,NA,86,2020-06-29,Maryland,MD,24017,NA,NA
+Frederick,2490,NA,117,2020-06-29,Maryland,MD,24021,NA,NA
+Montgomery,14737,NA,738,2020-06-29,Maryland,MD,24031,NA,NA
+Prince Georges,18572,NA,682,2020-06-29,Maryland,MD,24033,NA,NA
+Jefferson,224,NA,4,2020-06-29,West Virginia,WV,54037,206,4862
+District of Columbia,10327,NA,551,2020-06-29,District of Columbia,DC,11001,NA,NA
 Calvert,413,NA,26,2020-06-28,Maryland,MD,24009,NA,NA
 Charles,1383,NA,86,2020-06-28,Maryland,MD,24017,NA,NA
 Frederick,2486,NA,117,2020-06-28,Maryland,MD,24021,NA,NA
