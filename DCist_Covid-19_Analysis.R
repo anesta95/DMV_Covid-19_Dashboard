@@ -952,16 +952,17 @@ Virginia_By_Sex <- bind_rows(Virginia_By_Sex_Today, Virginia_By_Sex)
 write_csv(Virginia_By_Sex, "Virginia_By_Sex.csv")
 
 # Read/clean Virginia's by race data for today and add state column
-Virginia_By_Race_Health_District_Today <- read_csv("VDH-COVID-19-PublicUseDataset-Cases_By-Race.csv")
-Virginia_By_Race_Health_District_Today_Two <- read_csv("VDH-COVID-19-PublicUseDataset-Cases_By-Ethnicity.csv")
-Virginia_By_Race_Health_District_Today_Two <- Virginia_By_Race_Health_District_Today_Two %>% 
-  rename(Race = Ethnicity)
 
-Virginia_By_Race_Health_District_Today <- bind_rows(Virginia_By_Race_Health_District_Today, Virginia_By_Race_Health_District_Today_Two)
+Virginia_By_Race_Health_District_Today <- read_csv("VDH-COVID-19-PublicUseDataset-Cases_By-Race-Ethnicity.csv")
+# Virginia_By_Race_Health_District_Today_Two <- read_csv("VDH-COVID-19-PublicUseDataset-Cases_By-Ethnicity.csv")
+# Virginia_By_Race_Health_District_Today_Two <- Virginia_By_Race_Health_District_Today_Two %>% 
+#   rename(Race = Ethnicity)
+
+# Virginia_By_Race_Health_District_Today <- bind_rows(Virginia_By_Race_Health_District_Today, Virginia_By_Race_Health_District_Today_Two)
 
 
 Virginia_By_Race_Health_District_Today <- Virginia_By_Race_Health_District_Today %>% 
-  rename(Date = `Report Date`, Cases = `Number of Cases`, Hospitalized = `Number of Hospitalizations`, Deaths = `Number of Deaths`, Health_District = `Health District`) %>% 
+  rename(Date = `Report Date`, Cases = `Number of Cases`, Hospitalized = `Number of Hospitalizations`, Deaths = `Number of Deaths`, Health_District = `Health District or Health District Group`, Race = `Race and Ethnicity`) %>% 
   mutate(Date = Sys.Date() - 1, State = "Virginia")
 
 Virginia_By_Race_Health_District <- read_csv("Virginia_By_Race_Health_District.csv")
