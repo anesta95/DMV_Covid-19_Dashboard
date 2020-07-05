@@ -1,4 +1,277 @@
 Race,Health_District,Date,Cases,Hospitalized,Deaths,State
+Asian or Pacific Islander,Chesterfield,2020-07-04,29,1,0,Virginia
+Asian or Pacific Islander,Crater,2020-07-04,4,0,0,Virginia
+Asian or Pacific Islander,Fairfax,2020-07-04,1111,204,64,Virginia
+Asian or Pacific Islander,Hampton,2020-07-04,5,0,0,Virginia
+Asian or Pacific Islander,Rappahannock Rapidan,2020-07-04,5,1,0,Virginia
+Asian or Pacific Islander,Mount Rogers,2020-07-04,2,1,0,Virginia
+Asian or Pacific Islander,New River,2020-07-04,4,0,0,Virginia
+Asian or Pacific Islander,Central Virginia,2020-07-04,0,0,0,Virginia
+Asian or Pacific Islander,Lord Fairfax,2020-07-04,7,0,0,Virginia
+Asian or Pacific Islander,Southside,2020-07-04,1,0,0,Virginia
+Asian or Pacific Islander,Alleghany,2020-07-04,3,0,0,Virginia
+Asian or Pacific Islander,Portsmouth,2020-07-04,3,2,0,Virginia
+Asian or Pacific Islander,Roanoke,2020-07-04,2,0,0,Virginia
+Asian or Pacific Islander,Richmond,2020-07-04,7,2,0,Virginia
+Asian or Pacific Islander,Thomas Jefferson,2020-07-04,16,0,0,Virginia
+Asian or Pacific Islander,Virginia Beach,2020-07-04,63,12,1,Virginia
+Asian or Pacific Islander,Henrico,2020-07-04,119,8,3,Virginia
+Asian or Pacific Islander,Piedmont,2020-07-04,4,0,0,Virginia
+Asian or Pacific Islander,Western Tidewater,2020-07-04,7,1,0,Virginia
+Asian or Pacific Islander,West Piedmont,2020-07-04,11,1,1,Virginia
+Asian or Pacific Islander,Chickahominy,2020-07-04,4,1,0,Virginia
+Asian or Pacific Islander,Peninsula,2020-07-04,10,2,1,Virginia
+Asian or Pacific Islander,Norfolk,2020-07-04,13,1,0,Virginia
+Asian or Pacific Islander,Arlington,2020-07-04,124,22,12,Virginia
+Asian or Pacific Islander,Loudoun,2020-07-04,173,36,8,Virginia
+Asian or Pacific Islander,Alexandria,2020-07-04,84,8,1,Virginia
+Asian or Pacific Islander,Rappahannock,2020-07-04,40,7,0,Virginia
+Asian or Pacific Islander,Chesapeake,2020-07-04,24,4,2,Virginia
+Asian or Pacific Islander,Cumberland Plateau and Lenowisco,2020-07-04,1,0,0,Virginia
+Asian or Pacific Islander,Central Shenandoah,2020-07-04,17,2,0,Virginia
+Asian or Pacific Islander,Prince William,2020-07-04,262,41,11,Virginia
+Asian or Pacific Islander,Pittsylvania-Danville,2020-07-04,0,0,0,Virginia
+Asian or Pacific Islander,Eastern Shore and Three Rivers,2020-07-04,8,1,0,Virginia
+Native American,Piedmont,2020-07-04,1,0,0,Virginia
+Native American,New River,2020-07-04,0,0,0,Virginia
+Native American,Central Shenandoah,2020-07-04,1,1,0,Virginia
+Native American,Eastern Shore and Three Rivers,2020-07-04,1,0,0,Virginia
+Native American,Fairfax,2020-07-04,24,1,1,Virginia
+Native American,Chesapeake,2020-07-04,8,0,0,Virginia
+Native American,Western Tidewater,2020-07-04,0,0,0,Virginia
+Native American,Portsmouth,2020-07-04,2,0,0,Virginia
+Native American,Richmond,2020-07-04,0,0,0,Virginia
+Native American,Chickahominy,2020-07-04,1,1,0,Virginia
+Native American,Thomas Jefferson,2020-07-04,2,0,0,Virginia
+Native American,Arlington,2020-07-04,2,0,0,Virginia
+Native American,Virginia Beach,2020-07-04,0,0,0,Virginia
+Native American,Peninsula,2020-07-04,2,0,0,Virginia
+Native American,Hampton,2020-07-04,0,0,0,Virginia
+Native American,West Piedmont,2020-07-04,0,0,0,Virginia
+Native American,"Cumberland Plateau, Lenowisco, and Mount Rogers",2020-07-04,0,0,0,Virginia
+Native American,Henrico,2020-07-04,7,0,0,Virginia
+Native American,Norfolk,2020-07-04,1,0,0,Virginia
+Native American,Prince William,2020-07-04,12,1,0,Virginia
+Native American,Central Virginia,2020-07-04,0,0,0,Virginia
+Native American,Chesterfield,2020-07-04,3,0,0,Virginia
+Native American,Rappahannock,2020-07-04,3,0,0,Virginia
+Native American,Loudoun,2020-07-04,1,0,0,Virginia
+Native American,Alexandria,2020-07-04,3,0,0,Virginia
+Native American,Alleghany and Roanoke,2020-07-04,0,0,0,Virginia
+Native American,Crater,2020-07-04,3,0,0,Virginia
+Native American,Rappahannock Rapidan,2020-07-04,0,0,0,Virginia
+Native American,Lord Fairfax,2020-07-04,2,1,1,Virginia
+Native American,Pittsylvania-Danville and Southside,2020-07-04,0,0,0,Virginia
+Not Reported,Southside,2020-07-04,184,15,8,Virginia
+White,Chesapeake,2020-07-04,327,48,11,Virginia
+Other Race,Three Rivers,2020-07-04,6,1,0,Virginia
+Other Race,Central Virginia,2020-07-04,1,0,0,Virginia
+Two or more races,Central Virginia,2020-07-04,0,0,0,Virginia
+White,Cumberland Plateau,2020-07-04,53,2,0,Virginia
+Two or more races,Lenowisco,2020-07-04,0,0,0,Virginia
+Black,Western Tidewater,2020-07-04,345,50,23,Virginia
+Latino,Western Tidewater,2020-07-04,13,1,0,Virginia
+Not Reported,Fairfax,2020-07-04,2297,74,50,Virginia
+Not Reported,Chesapeake,2020-07-04,134,4,1,Virginia
+White,Thomas Jefferson,2020-07-04,376,36,18,Virginia
+Two or more races,Cumberland Plateau,2020-07-04,1,0,0,Virginia
+Black,Loudoun,2020-07-04,136,18,3,Virginia
+Latino,Loudoun,2020-07-04,1007,127,10,Virginia
+Latino,Alleghany,2020-07-04,67,5,0,Virginia
+Black,Alleghany,2020-07-04,16,2,1,Virginia
+Black,Three Rivers,2020-07-04,194,17,3,Virginia
+Latino,Three Rivers,2020-07-04,76,3,0,Virginia
+Two or more races,Central Shenandoah,2020-07-04,10,1,0,Virginia
+Black,Hampton,2020-07-04,167,29,5,Virginia
+Latino,Hampton,2020-07-04,36,3,0,Virginia
+Other Race,Southside,2020-07-04,6,0,1,Virginia
+Other Race,Piedmont,2020-07-04,6,0,0,Virginia
+Other Race,Prince William,2020-07-04,225,10,0,Virginia
+Other Race,Richmond,2020-07-04,98,9,1,Virginia
+Two or more races,Hampton,2020-07-04,3,0,0,Virginia
+Latino,Norfolk,2020-07-04,171,15,0,Virginia
+Not Reported,Lord Fairfax,2020-07-04,264,3,5,Virginia
+Black,Norfolk,2020-07-04,535,77,8,Virginia
+Black,Central Virginia,2020-07-04,24,2,1,Virginia
+Latino,Rappahannock,2020-07-04,874,81,5,Virginia
+Latino,Central Virginia,2020-07-04,25,1,1,Virginia
+Black,Rappahannock,2020-07-04,284,46,9,Virginia
+White,West Piedmont,2020-07-04,181,13,4,Virginia
+Not Reported,Rappahannock,2020-07-04,725,22,1,Virginia
+Not Reported,Central Shenandoah,2020-07-04,200,2,1,Virginia
+Latino,Chesterfield,2020-07-04,658,29,1,Virginia
+Black,Chesterfield,2020-07-04,411,53,14,Virginia
+Latino,Central Shenandoah,2020-07-04,782,47,4,Virginia
+Latino,Southside,2020-07-04,2,0,0,Virginia
+Black,Southside,2020-07-04,113,20,7,Virginia
+Black,Central Shenandoah,2020-07-04,92,9,4,Virginia
+White,Peninsula,2020-07-04,332,75,23,Virginia
+White,Rappahannock Rapidan,2020-07-04,305,30,9,Virginia
+Latino,New River,2020-07-04,18,1,0,Virginia
+Black,New River,2020-07-04,18,3,0,Virginia
+Other Race,Roanoke,2020-07-04,1,0,0,Virginia
+Two or more races,Three Rivers,2020-07-04,3,0,0,Virginia
+White,Prince William,2020-07-04,865,125,72,Virginia
+Two or more races,West Piedmont,2020-07-04,0,0,0,Virginia
+Not Reported,New River,2020-07-04,47,0,0,Virginia
+Not Reported,Chesterfield,2020-07-04,1450,3,13,Virginia
+Two or more races,Crater,2020-07-04,2,0,0,Virginia
+White,Lenowisco,2020-07-04,46,16,3,Virginia
+White,Western Tidewater,2020-07-04,206,36,29,Virginia
+Other Race,Lord Fairfax,2020-07-04,53,5,0,Virginia
+Two or more races,Chickahominy,2020-07-04,2,1,0,Virginia
+Black,Henrico,2020-07-04,748,125,69,Virginia
+Latino,Henrico,2020-07-04,573,41,5,Virginia
+White,Alleghany,2020-07-04,224,23,14,Virginia
+Black,Peninsula,2020-07-04,267,34,10,Virginia
+Latino,Peninsula,2020-07-04,171,12,0,Virginia
+Other Race,Loudoun,2020-07-04,114,5,2,Virginia
+Not Reported,Arlington,2020-07-04,169,8,3,Virginia
+Not Reported,Mount Rogers,2020-07-04,41,1,1,Virginia
+White,Portsmouth,2020-07-04,82,10,4,Virginia
+Two or more races,Western Tidewater,2020-07-04,2,0,0,Virginia
+Not Reported,Thomas Jefferson,2020-07-04,98,0,0,Virginia
+Not Reported,Three Rivers,2020-07-04,144,4,0,Virginia
+Black,Richmond,2020-07-04,576,125,20,Virginia
+Latino,Richmond,2020-07-04,878,70,3,Virginia
+Latino,Cumberland Plateau,2020-07-04,0,0,0,Virginia
+Other Race,Rappahannock,2020-07-04,44,5,0,Virginia
+Black,Cumberland Plateau,2020-07-04,12,0,0,Virginia
+Not Reported,Loudoun,2020-07-04,2056,2,2,Virginia
+White,Loudoun,2020-07-04,696,90,65,Virginia
+Not Reported,Peninsula,2020-07-04,282,1,0,Virginia
+White,Henrico,2020-07-04,624,75,78,Virginia
+Two or more races,Chesterfield,2020-07-04,5,0,0,Virginia
+White,Richmond,2020-07-04,205,19,4,Virginia
+Two or more races,Chesapeake,2020-07-04,7,1,0,Virginia
+White,Chickahominy,2020-07-04,298,65,28,Virginia
+Latino,Lenowisco,2020-07-04,0,0,0,Virginia
+Black,Lenowisco,2020-07-04,1,0,0,Virginia
+Two or more races,Roanoke,2020-07-04,0,0,0,Virginia
+Latino,Piedmont,2020-07-04,58,4,1,Virginia
+Black,Piedmont,2020-07-04,349,48,3,Virginia
+White,Chesterfield,2020-07-04,512,57,45,Virginia
+Two or more races,Lord Fairfax,2020-07-04,11,0,0,Virginia
+White,Central Virginia,2020-07-04,89,9,2,Virginia
+White,Rappahannock,2020-07-04,550,66,29,Virginia
+White,New River,2020-07-04,170,18,5,Virginia
+White,Crater,2020-07-04,308,32,8,Virginia
+Not Reported,Alleghany,2020-07-04,227,1,0,Virginia
+Two or more races,Arlington,2020-07-04,15,2,0,Virginia
+Other Race,Portsmouth,2020-07-04,15,2,1,Virginia
+White,Piedmont,2020-07-04,304,24,3,Virginia
+Two or more races,Alleghany,2020-07-04,2,0,0,Virginia
+Black,Crater,2020-07-04,749,111,20,Virginia
+Latino,Crater,2020-07-04,120,4,2,Virginia
+Two or more races,Piedmont,2020-07-04,4,1,0,Virginia
+White,Pittsylvania-Danville,2020-07-04,88,18,3,Virginia
+Other Race,Rappahannock Rapidan,2020-07-04,21,2,0,Virginia
+Not Reported,Richmond,2020-07-04,509,2,0,Virginia
+Two or more races,Henrico,2020-07-04,6,0,0,Virginia
+Other Race,Henrico,2020-07-04,69,11,1,Virginia
+Two or more races,Loudoun,2020-07-04,24,0,0,Virginia
+Two or more races,Rappahannock Rapidan,2020-07-04,12,1,0,Virginia
+Latino,Portsmouth,2020-07-04,32,4,0,Virginia
+Black,Portsmouth,2020-07-04,264,53,12,Virginia
+Not Reported,Portsmouth,2020-07-04,149,1,1,Virginia
+Two or more races,Alexandria,2020-07-04,4,1,0,Virginia
+Other Race,Virginia Beach,2020-07-04,16,1,0,Virginia
+Not Reported,Norfolk,2020-07-04,194,0,0,Virginia
+Two or more races,Rappahannock,2020-07-04,11,1,0,Virginia
+Black,Arlington,2020-07-04,216,66,29,Virginia
+Latino,Arlington,2020-07-04,1236,203,22,Virginia
+White,Eastern Shore,2020-07-04,176,15,14,Virginia
+Not Reported,Eastern Shore,2020-07-04,84,0,0,Virginia
+White,Roanoke,2020-07-04,95,5,8,Virginia
+Other Race,Alexandria,2020-07-04,40,5,2,Virginia
+Other Race,Cumberland Plateau,2020-07-04,0,0,0,Virginia
+Other Race,Western Tidewater,2020-07-04,16,0,2,Virginia
+Other Race,Lenowisco,2020-07-04,1,0,0,Virginia
+Two or more races,Pittsylvania-Danville,2020-07-04,0,0,0,Virginia
+Not Reported,Henrico,2020-07-04,535,2,2,Virginia
+Other Race,Crater,2020-07-04,14,0,0,Virginia
+Other Race,Chickahominy,2020-07-04,10,3,0,Virginia
+Black,Roanoke,2020-07-04,36,7,2,Virginia
+Latino,Roanoke,2020-07-04,151,1,0,Virginia
+Two or more races,Peninsula,2020-07-04,7,2,0,Virginia
+Other Race,Peninsula,2020-07-04,26,1,0,Virginia
+Two or more races,Thomas Jefferson,2020-07-04,6,0,0,Virginia
+White,Arlington,2020-07-04,720,114,63,Virginia
+Two or more races,Norfolk,2020-07-04,1,0,0,Virginia
+White,Alexandria,2020-07-04,451,48,32,Virginia
+Not Reported,Hampton,2020-07-04,95,0,0,Virginia
+White,Mount Rogers,2020-07-04,501,67,29,Virginia
+Not Reported,Alexandria,2020-07-04,141,6,0,Virginia
+Not Reported,Western Tidewater,2020-07-04,272,2,2,Virginia
+Not Reported,Cumberland Plateau,2020-07-04,1,0,0,Virginia
+Other Race,Thomas Jefferson,2020-07-04,30,2,1,Virginia
+Black,Mount Rogers,2020-07-04,27,5,2,Virginia
+Latino,Mount Rogers,2020-07-04,189,1,0,Virginia
+Black,West Piedmont,2020-07-04,93,23,2,Virginia
+Latino,West Piedmont,2020-07-04,139,7,0,Virginia
+White,Virginia Beach,2020-07-04,538,65,20,Virginia
+Other Race,West Piedmont,2020-07-04,1,0,0,Virginia
+Two or more races,Richmond,2020-07-04,3,1,1,Virginia
+Not Reported,Virginia Beach,2020-07-04,227,5,3,Virginia
+Other Race,Hampton,2020-07-04,5,2,0,Virginia
+Black,Virginia Beach,2020-07-04,354,26,4,Virginia
+Latino,Virginia Beach,2020-07-04,137,12,2,Virginia
+Black,Fairfax,2020-07-04,825,173,49,Virginia
+Latino,Fairfax,2020-07-04,7389,775,71,Virginia
+Latino,Prince William,2020-07-04,4117,504,50,Virginia
+Black,Prince William,2020-07-04,663,122,38,Virginia
+Not Reported,Piedmont,2020-07-04,339,12,6,Virginia
+Latino,Chesapeake,2020-07-04,132,13,1,Virginia
+Black,Chesapeake,2020-07-04,374,76,6,Virginia
+Not Reported,Pittsylvania-Danville,2020-07-04,40,6,0,Virginia
+Other Race,Alleghany,2020-07-04,4,0,0,Virginia
+Not Reported,West Piedmont,2020-07-04,93,1,0,Virginia
+White,Norfolk,2020-07-04,140,19,4,Virginia
+Two or more races,Virginia Beach,2020-07-04,15,2,0,Virginia
+Other Race,Chesapeake,2020-07-04,9,1,0,Virginia
+Other Race,Norfolk,2020-07-04,17,2,0,Virginia
+Latino,Chickahominy,2020-07-04,44,3,0,Virginia
+Black,Chickahominy,2020-07-04,114,34,10,Virginia
+Black,Eastern Shore,2020-07-04,794,89,25,Virginia
+Latino,Eastern Shore,2020-07-04,244,7,3,Virginia
+Two or more races,Prince William,2020-07-04,11,1,0,Virginia
+White,Hampton,2020-07-04,58,7,0,Virginia
+Not Reported,Prince William,2020-07-04,3310,19,0,Virginia
+Two or more races,Mount Rogers,2020-07-04,3,0,0,Virginia
+White,Fairfax,2020-07-04,2101,387,264,Virginia
+Black,Thomas Jefferson,2020-07-04,156,45,6,Virginia
+Latino,Thomas Jefferson,2020-07-04,356,16,0,Virginia
+Not Reported,Rappahannock Rapidan,2020-07-04,429,10,2,Virginia
+Two or more races,Southside,2020-07-04,21,0,0,Virginia
+Not Reported,Lenowisco,2020-07-04,12,1,1,Virginia
+Not Reported,Crater,2020-07-04,390,8,8,Virginia
+Not Reported,Chickahominy,2020-07-04,202,3,1,Virginia
+Other Race,Fairfax,2020-07-04,508,59,12,Virginia
+Two or more races,Portsmouth,2020-07-04,2,1,0,Virginia
+Black,Alexandria,2020-07-04,347,61,13,Virginia
+Latino,Alexandria,2020-07-04,1306,110,9,Virginia
+Not Reported,Roanoke,2020-07-04,194,1,0,Virginia
+Black,Pittsylvania-Danville,2020-07-04,79,17,0,Virginia
+Latino,Pittsylvania-Danville,2020-07-04,29,2,0,Virginia
+Two or more races,Eastern Shore,2020-07-04,1,1,0,Virginia
+White,Lord Fairfax,2020-07-04,1111,132,54,Virginia
+Other Race,Chesterfield,2020-07-04,179,6,0,Virginia
+Other Race,Mount Rogers,2020-07-04,2,0,0,Virginia
+Other Race,Eastern Shore,2020-07-04,13,1,0,Virginia
+White,Three Rivers,2020-07-04,233,24,6,Virginia
+Other Race,Pittsylvania-Danville,2020-07-04,0,0,0,Virginia
+Latino,Rappahannock Rapidan,2020-07-04,636,49,5,Virginia
+Black,Rappahannock Rapidan,2020-07-04,76,16,6,Virginia
+Not Reported,Central Virginia,2020-07-04,291,4,1,Virginia
+Latino,Lord Fairfax,2020-07-04,566,35,8,Virginia
+Black,Lord Fairfax,2020-07-04,75,8,6,Virginia
+Other Race,Central Shenandoah,2020-07-04,31,1,0,Virginia
+Two or more races,Fairfax,2020-07-04,24,4,0,Virginia
+Other Race,Arlington,2020-07-04,51,6,2,Virginia
+Two or more races,New River,2020-07-04,0,0,0,Virginia
+White,Central Shenandoah,2020-07-04,1007,110,31,Virginia
+White,Southside,2020-07-04,96,15,14,Virginia
+Other Race,New River,2020-07-04,1,0,0,Virginia
 Asian or Pacific Islander,Chesterfield,2020-07-03,29,1,0,Virginia
 Asian or Pacific Islander,Crater,2020-07-03,4,0,0,Virginia
 Asian or Pacific Islander,Fairfax,2020-07-03,1108,204,64,Virginia
