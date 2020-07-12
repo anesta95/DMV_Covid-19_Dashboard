@@ -1,4 +1,28 @@
 County,Cases,Hospitalizations,Deaths,Date,State,Abbr,FIPS,Recovered,Tests
+Arlington,2597,425,134,2020-07-10,Virginia,VA,51013,NA,NA
+Clarke,60,6,0,2020-07-10,Virginia,VA,51043,NA,NA
+Culpeper,852,66,12,2020-07-10,Virginia,VA,51047,NA,NA
+Fairfax,14403,1707,498,2020-07-10,Virginia,VA,51059,NA,NA
+Fauquier,476,30,8,2020-07-10,Virginia,VA,51061,NA,NA
+Loudoun,4373,289,99,2020-07-10,Virginia,VA,51107,NA,NA
+Prince William,7769,697,156,2020-07-10,Virginia,VA,51153,NA,NA
+Rappahannock,32,3,1,2020-07-10,Virginia,VA,51157,NA,NA
+Spotsylvania,1076,82,31,2020-07-10,Virginia,VA,51177,NA,NA
+Stafford,1056,104,6,2020-07-10,Virginia,VA,51179,NA,NA
+Warren,308,19,8,2020-07-10,Virginia,VA,51187,NA,NA
+Alexandria City,2453,248,57,2020-07-10,Virginia,VA,51510,NA,NA
+Fairfax City,72,6,7,2020-07-10,Virginia,VA,51600,NA,NA
+Falls Church,53,10,7,2020-07-10,Virginia,VA,51610,NA,NA
+Fredericksburg,277,27,0,2020-07-10,Virginia,VA,51630,NA,NA
+Manassas,1482,106,19,2020-07-10,Virginia,VA,51683,NA,NA
+Manassas Park,457,47,6,2020-07-10,Virginia,VA,51685,NA,NA
+Calvert,445,NA,27,2020-07-10,Maryland,MD,24009,NA,NA
+Charles,1502,NA,89,2020-07-10,Maryland,MD,24017,NA,NA
+Frederick,2586,NA,120,2020-07-10,Maryland,MD,24021,NA,NA
+Montgomery,15623,NA,757,2020-07-10,Maryland,MD,24031,NA,NA
+Prince Georges,19598,NA,706,2020-07-10,Maryland,MD,24033,NA,NA
+Jefferson,253,NA,4,2020-07-10,West Virginia,WV,54037,226,5646
+District of Columbia,10801,NA,568,2020-07-10,District of Columbia,DC,11001,NA,NA
 Arlington,2582,425,133,2020-07-09,Virginia,VA,51013,NA,NA
 Clarke,58,6,0,2020-07-09,Virginia,VA,51043,NA,NA
 Culpeper,841,66,12,2020-07-09,Virginia,VA,51047,NA,NA

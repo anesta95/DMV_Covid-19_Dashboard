@@ -1,4 +1,109 @@
 Date,Health_District,Sex,Cases,Hospitalized,Deaths,State
+2020-07-10,Southside,Not Reported,4,0,0,Virginia
+2020-07-10,Chesapeake,Female,688,85,10,Virginia
+2020-07-10,Richmond,Female,1153,109,9,Virginia
+2020-07-10,Roanoke,Male,255,7,3,Virginia
+2020-07-10,Fairfax,Not Reported,98,3,2,Virginia
+2020-07-10,Thomas Jefferson,Female,631,54,14,Virginia
+2020-07-10,Chesapeake,Not Reported,1,0,0,Virginia
+2020-07-10,Cumberland Plateau,Male,45,2,0,Virginia
+2020-07-10,Eastern Shore,Female,660,59,23,Virginia
+2020-07-10,Lord Fairfax,Not Reported,7,0,0,Virginia
+2020-07-10,Rappahannock,Not Reported,5,1,0,Virginia
+2020-07-10,Central Shenandoah,Not Reported,3,0,0,Virginia
+2020-07-10,Peninsula,Male,589,66,14,Virginia
+2020-07-10,Norfolk,Male,676,63,11,Virginia
+2020-07-10,Alexandria,Female,1261,115,30,Virginia
+2020-07-10,Lenowisco,Male,30,8,3,Virginia
+2020-07-10,Pittsylvania-Danville,Female,155,23,3,Virginia
+2020-07-10,New River,Not Reported,3,0,0,Virginia
+2020-07-10,Chesterfield,Not Reported,80,0,2,Virginia
+2020-07-10,Loudoun,Male,2155,161,38,Virginia
+2020-07-10,Rappahannock Rapidan,Female,778,49,10,Virginia
+2020-07-10,Piedmont,Female,331,45,5,Virginia
+2020-07-10,Richmond,Male,1193,126,24,Virginia
+2020-07-10,Crater,Female,726,85,29,Virginia
+2020-07-10,Portsmouth,Female,335,49,11,Virginia
+2020-07-10,Arlington,Not Reported,1,0,0,Virginia
+2020-07-10,Mount Rogers,Not Reported,2,0,0,Virginia
+2020-07-10,Thomas Jefferson,Not Reported,0,0,0,Virginia
+2020-07-10,Three Rivers,Not Reported,20,0,0,Virginia
+2020-07-10,Hampton,Male,203,26,3,Virginia
+2020-07-10,Alleghany,Male,278,21,5,Virginia
+2020-07-10,Roanoke,Female,295,7,7,Virginia
+2020-07-10,Loudoun,Not Reported,21,0,0,Virginia
+2020-07-10,Fairfax,Female,7371,747,250,Virginia
+2020-07-10,Western Tidewater,Male,478,57,34,Virginia
+2020-07-10,Peninsula,Not Reported,4,0,0,Virginia
+2020-07-10,New River,Male,150,15,5,Virginia
+2020-07-10,Central Shenandoah,Male,1036,87,19,Virginia
+2020-07-10,Southside,Male,196,27,13,Virginia
+2020-07-10,Chesterfield,Male,1671,92,40,Virginia
+2020-07-10,Arlington,Female,1279,192,65,Virginia
+2020-07-10,Rappahannock,Male,1251,131,27,Virginia
+2020-07-10,Central Virginia,Male,250,9,4,Virginia
+2020-07-10,Alleghany,Not Reported,4,0,0,Virginia
+2020-07-10,Henrico,Male,1285,144,82,Virginia
+2020-07-10,Thomas Jefferson,Male,542,49,15,Virginia
+2020-07-10,Lord Fairfax,Male,1021,99,36,Virginia
+2020-07-10,Three Rivers,Male,533,24,4,Virginia
+2020-07-10,Richmond,Not Reported,40,2,2,Virginia
+2020-07-10,Pittsylvania-Danville,Male,115,20,1,Virginia
+2020-07-10,Portsmouth,Not Reported,3,0,0,Virginia
+2020-07-10,Norfolk,Not Reported,0,0,0,Virginia
+2020-07-10,Chesapeake,Male,515,72,12,Virginia
+2020-07-10,Chickahominy,Female,390,59,21,Virginia
+2020-07-10,Prince William,Male,4824,473,104,Virginia
+2020-07-10,Eastern Shore,Not Reported,9,0,0,Virginia
+2020-07-10,Eastern Shore,Male,647,54,19,Virginia
+2020-07-10,Rappahannock Rapidan,Male,786,67,14,Virginia
+2020-07-10,Henrico,Not Reported,12,0,0,Virginia
+2020-07-10,Cumberland Plateau,Female,46,1,0,Virginia
+2020-07-10,West Piedmont,Male,281,26,4,Virginia
+2020-07-10,Hampton,Not Reported,3,0,0,Virginia
+2020-07-10,Alexandria,Not Reported,7,0,0,Virginia
+2020-07-10,Western Tidewater,Not Reported,1,0,0,Virginia
+2020-07-10,Cumberland Plateau,Not Reported,0,0,0,Virginia
+2020-07-10,Virginia Beach,Male,827,71,16,Virginia
+2020-07-10,Alleghany,Female,322,10,10,Virginia
+2020-07-10,Lenowisco,Female,40,9,1,Virginia
+2020-07-10,Virginia Beach,Not Reported,11,0,0,Virginia
+2020-07-10,Western Tidewater,Female,521,39,30,Virginia
+2020-07-10,Mount Rogers,Male,378,53,20,Virginia
+2020-07-10,Lord Fairfax,Female,1130,90,39,Virginia
+2020-07-10,Piedmont,Not Reported,4,0,0,Virginia
+2020-07-10,Alexandria,Male,1185,133,27,Virginia
+2020-07-10,Pittsylvania-Danville,Not Reported,2,0,0,Virginia
+2020-07-10,West Piedmont,Not Reported,7,0,0,Virginia
+2020-07-10,Loudoun,Female,2197,128,61,Virginia
+2020-07-10,Hampton,Female,263,14,1,Virginia
+2020-07-10,Henrico,Female,1525,124,91,Virginia
+2020-07-10,Prince William,Not Reported,66,1,0,Virginia
+2020-07-10,Chickahominy,Male,313,55,20,Virginia
+2020-07-10,Rappahannock Rapidan,Not Reported,2,1,1,Virginia
+2020-07-10,Peninsula,Female,683,63,21,Virginia
+2020-07-10,Lenowisco,Not Reported,0,0,0,Virginia
+2020-07-10,Crater,Not Reported,15,1,0,Virginia
+2020-07-10,Chickahominy,Not Reported,4,0,0,Virginia
+2020-07-10,Portsmouth,Male,324,37,8,Virginia
+2020-07-10,New River,Female,134,8,1,Virginia
+2020-07-10,Rappahannock,Female,1395,113,18,Virginia
+2020-07-10,Central Virginia,Female,243,7,2,Virginia
+2020-07-10,Roanoke,Not Reported,7,0,0,Virginia
+2020-07-10,West Piedmont,Female,328,31,4,Virginia
+2020-07-10,Mount Rogers,Female,438,25,15,Virginia
+2020-07-10,Piedmont,Male,782,62,13,Virginia
+2020-07-10,Chesterfield,Female,1665,81,42,Virginia
+2020-07-10,Fairfax,Male,7059,973,260,Virginia
+2020-07-10,Crater,Male,950,80,20,Virginia
+2020-07-10,Central Virginia,Not Reported,0,0,0,Virginia
+2020-07-10,Prince William,Female,4818,376,77,Virginia
+2020-07-10,Virginia Beach,Female,921,63,14,Virginia
+2020-07-10,Norfolk,Female,772,62,4,Virginia
+2020-07-10,Three Rivers,Female,228,34,9,Virginia
+2020-07-10,Arlington,Male,1317,233,69,Virginia
+2020-07-10,Central Shenandoah,Female,1210,91,23,Virginia
+2020-07-10,Southside,Female,264,28,18,Virginia
 2020-07-09,Southside,Not Reported,4,0,0,Virginia
 2020-07-09,Chesapeake,Female,662,84,10,Virginia
 2020-07-09,Richmond,Female,1143,109,9,Virginia
