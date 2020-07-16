@@ -1,4 +1,277 @@
 Date,Cases,Hospitalized,Deaths,Race,Health_District,State
+2020-07-14,221,14,7,Not Reported,Southside,Virginia
+2020-07-14,391,53,12,White,Chesapeake,Virginia
+2020-07-14,7,3,0,Other Race,Three Rivers,Virginia
+2020-07-14,1,0,0,Other Race,Central Virginia,Virginia
+2020-07-14,0,0,0,Two or more races,Central Virginia,Virginia
+2020-07-14,95,6,0,White,Cumberland Plateau,Virginia
+2020-07-14,0,0,0,Two or more races,Lenowisco,Virginia
+2020-07-14,464,58,30,Black,Western Tidewater,Virginia
+2020-07-14,13,1,0,Latino,Western Tidewater,Virginia
+2020-07-14,2156,71,45,Not Reported,Fairfax,Virginia
+2020-07-14,297,2,0,Not Reported,Chesapeake,Virginia
+2020-07-14,484,37,20,White,Thomas Jefferson,Virginia
+2020-07-14,2,0,0,Two or more races,Cumberland Plateau,Virginia
+2020-07-14,153,20,3,Black,Loudoun,Virginia
+2020-07-14,1161,136,11,Latino,Loudoun,Virginia
+2020-07-14,77,5,0,Latino,Alleghany,Virginia
+2020-07-14,22,2,1,Black,Alleghany,Virginia
+2020-07-14,227,20,5,Black,Three Rivers,Virginia
+2020-07-14,135,4,0,Latino,Three Rivers,Virginia
+2020-07-14,10,1,0,Two or more races,Central Shenandoah,Virginia
+2020-07-14,237,28,4,Black,Hampton,Virginia
+2020-07-14,38,4,0,Latino,Hampton,Virginia
+2020-07-14,6,0,1,Other Race,Southside,Virginia
+2020-07-14,6,0,0,Other Race,Piedmont,Virginia
+2020-07-14,223,10,0,Other Race,Prince William,Virginia
+2020-07-14,94,8,2,Other Race,Richmond,Virginia
+2020-07-14,4,0,0,Two or more races,Hampton,Virginia
+2020-07-14,196,18,0,Latino,Norfolk,Virginia
+2020-07-14,277,4,5,Not Reported,Lord Fairfax,Virginia
+2020-07-14,845,87,12,Black,Norfolk,Virginia
+2020-07-14,28,2,1,Black,Central Virginia,Virginia
+2020-07-14,926,96,6,Latino,Rappahannock,Virginia
+2020-07-14,25,1,1,Latino,Central Virginia,Virginia
+2020-07-14,317,49,9,Black,Rappahannock,Virginia
+2020-07-14,207,19,4,White,West Piedmont,Virginia
+2020-07-14,768,24,0,Not Reported,Rappahannock,Virginia
+2020-07-14,211,4,1,Not Reported,Central Shenandoah,Virginia
+2020-07-14,735,39,3,Latino,Chesterfield,Virginia
+2020-07-14,460,62,21,Black,Chesterfield,Virginia
+2020-07-14,815,49,4,Latino,Central Shenandoah,Virginia
+2020-07-14,2,0,0,Latino,Southside,Virginia
+2020-07-14,136,28,9,Black,Southside,Virginia
+2020-07-14,102,9,4,Black,Central Shenandoah,Virginia
+2020-07-14,373,75,24,White,Peninsula,Virginia
+2020-07-14,388,33,11,White,Rappahannock Rapidan,Virginia
+2020-07-14,23,2,0,Latino,New River,Virginia
+2020-07-14,21,3,0,Black,New River,Virginia
+2020-07-14,3,0,0,Other Race,Roanoke,Virginia
+2020-07-14,3,0,0,Two or more races,Three Rivers,Virginia
+2020-07-14,963,133,77,White,Prince William,Virginia
+2020-07-14,0,0,0,Two or more races,West Piedmont,Virginia
+2020-07-14,48,0,0,Not Reported,New River,Virginia
+2020-07-14,1605,3,10,Not Reported,Chesterfield,Virginia
+2020-07-14,2,0,0,Two or more races,Crater,Virginia
+2020-07-14,80,18,3,White,Lenowisco,Virginia
+2020-07-14,246,39,32,White,Western Tidewater,Virginia
+2020-07-14,58,6,1,Other Race,Lord Fairfax,Virginia
+2020-07-14,1,1,0,Two or more races,Chickahominy,Virginia
+2020-07-14,825,131,76,Black,Henrico,Virginia
+2020-07-14,609,43,6,Latino,Henrico,Virginia
+2020-07-14,259,24,14,White,Alleghany,Virginia
+2020-07-14,357,38,10,Black,Peninsula,Virginia
+2020-07-14,208,14,0,Latino,Peninsula,Virginia
+2020-07-14,113,8,1,Other Race,Loudoun,Virginia
+2020-07-14,178,1,0,Not Reported,Arlington,Virginia
+2020-07-14,51,2,1,Not Reported,Mount Rogers,Virginia
+2020-07-14,91,12,4,White,Portsmouth,Virginia
+2020-07-14,2,0,0,Two or more races,Western Tidewater,Virginia
+2020-07-14,113,0,0,Not Reported,Thomas Jefferson,Virginia
+2020-07-14,174,3,0,Not Reported,Three Rivers,Virginia
+2020-07-14,624,132,23,Black,Richmond,Virginia
+2020-07-14,979,79,5,Latino,Richmond,Virginia
+2020-07-14,0,0,0,Latino,Cumberland Plateau,Virginia
+2020-07-14,49,4,0,Other Race,Rappahannock,Virginia
+2020-07-14,13,0,0,Black,Cumberland Plateau,Virginia
+2020-07-14,2014,1,2,Not Reported,Loudoun,Virginia
+2020-07-14,857,96,75,White,Loudoun,Virginia
+2020-07-14,582,1,0,Not Reported,Peninsula,Virginia
+2020-07-14,680,80,87,White,Henrico,Virginia
+2020-07-14,8,1,0,Two or more races,Chesterfield,Virginia
+2020-07-14,230,21,5,White,Richmond,Virginia
+2020-07-14,10,1,0,Two or more races,Chesapeake,Virginia
+2020-07-14,342,70,29,White,Chickahominy,Virginia
+2020-07-14,1,0,0,Latino,Lenowisco,Virginia
+2020-07-14,1,0,0,Black,Lenowisco,Virginia
+2020-07-14,1,0,0,Two or more races,Roanoke,Virginia
+2020-07-14,61,6,1,Latino,Piedmont,Virginia
+2020-07-14,374,51,6,Black,Piedmont,Virginia
+2020-07-14,563,64,52,White,Chesterfield,Virginia
+2020-07-14,11,0,0,Two or more races,Lord Fairfax,Virginia
+2020-07-14,98,9,3,White,Central Virginia,Virginia
+2020-07-14,599,70,30,White,Rappahannock,Virginia
+2020-07-14,217,18,6,White,New River,Virginia
+2020-07-14,348,35,10,White,Crater,Virginia
+2020-07-14,302,1,0,Not Reported,Alleghany,Virginia
+2020-07-14,18,2,0,Two or more races,Arlington,Virginia
+2020-07-14,13,2,1,Other Race,Portsmouth,Virginia
+2020-07-14,332,38,9,White,Piedmont,Virginia
+2020-07-14,2,0,0,Two or more races,Alleghany,Virginia
+2020-07-14,833,125,30,Black,Crater,Virginia
+2020-07-14,142,5,2,Latino,Crater,Virginia
+2020-07-14,4,2,0,Two or more races,Piedmont,Virginia
+2020-07-14,106,19,3,White,Pittsylvania-Danville,Virginia
+2020-07-14,24,2,0,Other Race,Rappahannock Rapidan,Virginia
+2020-07-14,537,2,0,Not Reported,Richmond,Virginia
+2020-07-14,8,0,0,Two or more races,Henrico,Virginia
+2020-07-14,70,9,0,Other Race,Henrico,Virginia
+2020-07-14,27,0,0,Two or more races,Loudoun,Virginia
+2020-07-14,13,1,0,Two or more races,Rappahannock Rapidan,Virginia
+2020-07-14,43,9,1,Latino,Portsmouth,Virginia
+2020-07-14,399,60,13,Black,Portsmouth,Virginia
+2020-07-14,241,3,0,Not Reported,Portsmouth,Virginia
+2020-07-14,5,1,0,Two or more races,Alexandria,Virginia
+2020-07-14,22,1,0,Other Race,Virginia Beach,Virginia
+2020-07-14,462,0,0,Not Reported,Norfolk,Virginia
+2020-07-14,12,1,0,Two or more races,Rappahannock,Virginia
+2020-07-14,235,68,31,Black,Arlington,Virginia
+2020-07-14,1286,207,23,Latino,Arlington,Virginia
+2020-07-14,176,15,14,White,Eastern Shore,Virginia
+2020-07-14,85,0,0,Not Reported,Eastern Shore,Virginia
+2020-07-14,100,5,8,White,Roanoke,Virginia
+2020-07-14,44,5,2,Other Race,Alexandria,Virginia
+2020-07-14,0,0,0,Other Race,Cumberland Plateau,Virginia
+2020-07-14,22,0,1,Other Race,Western Tidewater,Virginia
+2020-07-14,1,0,0,Other Race,Lenowisco,Virginia
+2020-07-14,0,0,0,Two or more races,Pittsylvania-Danville,Virginia
+2020-07-14,626,2,3,Not Reported,Henrico,Virginia
+2020-07-14,15,0,0,Other Race,Crater,Virginia
+2020-07-14,9,2,0,Other Race,Chickahominy,Virginia
+2020-07-14,44,7,2,Black,Roanoke,Virginia
+2020-07-14,187,2,0,Latino,Roanoke,Virginia
+2020-07-14,9,2,0,Two or more races,Peninsula,Virginia
+2020-07-14,36,1,0,Other Race,Peninsula,Virginia
+2020-07-14,10,0,0,Two or more races,Thomas Jefferson,Virginia
+2020-07-14,773,114,65,White,Arlington,Virginia
+2020-07-14,3,0,0,Two or more races,Norfolk,Virginia
+2020-07-14,466,50,33,White,Alexandria,Virginia
+2020-07-14,232,0,0,Not Reported,Hampton,Virginia
+2020-07-14,570,74,33,White,Mount Rogers,Virginia
+2020-07-14,147,6,0,Not Reported,Alexandria,Virginia
+2020-07-14,383,3,2,Not Reported,Western Tidewater,Virginia
+2020-07-14,4,0,0,Not Reported,Cumberland Plateau,Virginia
+2020-07-14,44,3,0,Other Race,Thomas Jefferson,Virginia
+2020-07-14,29,5,2,Black,Mount Rogers,Virginia
+2020-07-14,206,1,0,Latino,Mount Rogers,Virginia
+2020-07-14,124,33,1,Black,West Piedmont,Virginia
+2020-07-14,169,8,0,Latino,West Piedmont,Virginia
+2020-07-14,772,68,21,White,Virginia Beach,Virginia
+2020-07-14,4,1,1,Other Race,West Piedmont,Virginia
+2020-07-14,1,0,0,Two or more races,Richmond,Virginia
+2020-07-14,489,5,3,Not Reported,Virginia Beach,Virginia
+2020-07-14,5,2,0,Other Race,Hampton,Virginia
+2020-07-14,577,37,6,Black,Virginia Beach,Virginia
+2020-07-14,182,16,3,Latino,Virginia Beach,Virginia
+2020-07-14,888,185,51,Black,Fairfax,Virginia
+2020-07-14,7722,830,71,Latino,Fairfax,Virginia
+2020-07-14,4391,536,56,Latino,Prince William,Virginia
+2020-07-14,718,126,39,Black,Prince William,Virginia
+2020-07-14,364,13,2,Not Reported,Piedmont,Virginia
+2020-07-14,147,15,2,Latino,Chesapeake,Virginia
+2020-07-14,544,83,7,Black,Chesapeake,Virginia
+2020-07-14,68,5,0,Not Reported,Pittsylvania-Danville,Virginia
+2020-07-14,4,0,0,Other Race,Alleghany,Virginia
+2020-07-14,156,2,1,Not Reported,West Piedmont,Virginia
+2020-07-14,191,26,6,White,Norfolk,Virginia
+2020-07-14,19,2,0,Two or more races,Virginia Beach,Virginia
+2020-07-14,18,1,0,Other Race,Chesapeake,Virginia
+2020-07-14,23,1,0,Other Race,Norfolk,Virginia
+2020-07-14,51,3,0,Latino,Chickahominy,Virginia
+2020-07-14,132,34,10,Black,Chickahominy,Virginia
+2020-07-14,795,89,25,Black,Eastern Shore,Virginia
+2020-07-14,246,7,3,Latino,Eastern Shore,Virginia
+2020-07-14,11,1,0,Two or more races,Prince William,Virginia
+2020-07-14,71,8,0,White,Hampton,Virginia
+2020-07-14,3299,19,0,Not Reported,Prince William,Virginia
+2020-07-14,4,0,0,Two or more races,Mount Rogers,Virginia
+2020-07-14,2271,399,268,White,Fairfax,Virginia
+2020-07-14,215,51,8,Black,Thomas Jefferson,Virginia
+2020-07-14,407,18,0,Latino,Thomas Jefferson,Virginia
+2020-07-14,443,11,2,Not Reported,Rappahannock Rapidan,Virginia
+2020-07-14,22,0,0,Two or more races,Southside,Virginia
+2020-07-14,12,1,1,Not Reported,Lenowisco,Virginia
+2020-07-14,420,10,8,Not Reported,Crater,Virginia
+2020-07-14,203,2,1,Not Reported,Chickahominy,Virginia
+2020-07-14,527,64,11,Other Race,Fairfax,Virginia
+2020-07-14,2,1,0,Two or more races,Portsmouth,Virginia
+2020-07-14,381,65,13,Black,Alexandria,Virginia
+2020-07-14,1356,118,8,Latino,Alexandria,Virginia
+2020-07-14,275,1,0,Not Reported,Roanoke,Virginia
+2020-07-14,125,20,1,Black,Pittsylvania-Danville,Virginia
+2020-07-14,36,2,0,Latino,Pittsylvania-Danville,Virginia
+2020-07-14,1,1,0,Two or more races,Eastern Shore,Virginia
+2020-07-14,1200,138,56,White,Lord Fairfax,Virginia
+2020-07-14,181,6,0,Other Race,Chesterfield,Virginia
+2020-07-14,3,0,0,Other Race,Mount Rogers,Virginia
+2020-07-14,13,1,0,Other Race,Eastern Shore,Virginia
+2020-07-14,272,27,6,White,Three Rivers,Virginia
+2020-07-14,0,0,0,Other Race,Pittsylvania-Danville,Virginia
+2020-07-14,660,57,6,Latino,Rappahannock Rapidan,Virginia
+2020-07-14,85,18,6,Black,Rappahannock Rapidan,Virginia
+2020-07-14,383,4,1,Not Reported,Central Virginia,Virginia
+2020-07-14,597,37,8,Latino,Lord Fairfax,Virginia
+2020-07-14,81,8,6,Black,Lord Fairfax,Virginia
+2020-07-14,34,1,0,Other Race,Central Shenandoah,Virginia
+2020-07-14,31,4,0,Two or more races,Fairfax,Virginia
+2020-07-14,57,8,3,Other Race,Arlington,Virginia
+2020-07-14,0,0,0,Two or more races,New River,Virginia
+2020-07-14,1151,117,37,White,Central Shenandoah,Virginia
+2020-07-14,111,16,14,White,Southside,Virginia
+2020-07-14,2,0,0,Other Race,New River,Virginia
+2020-07-14,32,2,0,Asian or Pacific Islander,Chesterfield,Virginia
+2020-07-14,5,0,0,Asian or Pacific Islander,Crater,Virginia
+2020-07-14,1163,215,69,Asian or Pacific Islander,Fairfax,Virginia
+2020-07-14,5,0,0,Asian or Pacific Islander,Hampton,Virginia
+2020-07-14,5,1,0,Asian or Pacific Islander,Rappahannock Rapidan,Virginia
+2020-07-14,2,1,0,Asian or Pacific Islander,Mount Rogers,Virginia
+2020-07-14,6,0,0,Asian or Pacific Islander,New River,Virginia
+2020-07-14,0,0,0,Asian or Pacific Islander,Central Virginia,Virginia
+2020-07-14,7,0,0,Asian or Pacific Islander,Lord Fairfax,Virginia
+2020-07-14,1,0,0,Asian or Pacific Islander,Southside,Virginia
+2020-07-14,4,0,0,Asian or Pacific Islander,Alleghany,Virginia
+2020-07-14,3,2,0,Asian or Pacific Islander,Portsmouth,Virginia
+2020-07-14,2,0,0,Asian or Pacific Islander,Roanoke,Virginia
+2020-07-14,8,3,1,Asian or Pacific Islander,Richmond,Virginia
+2020-07-14,23,0,1,Asian or Pacific Islander,Thomas Jefferson,Virginia
+2020-07-14,75,13,1,Asian or Pacific Islander,Virginia Beach,Virginia
+2020-07-14,122,8,3,Asian or Pacific Islander,Henrico,Virginia
+2020-07-14,4,0,0,Asian or Pacific Islander,Piedmont,Virginia
+2020-07-14,8,1,0,Asian or Pacific Islander,Western Tidewater,Virginia
+2020-07-14,11,1,1,Asian or Pacific Islander,West Piedmont,Virginia
+2020-07-14,5,1,0,Asian or Pacific Islander,Chickahominy,Virginia
+2020-07-14,11,3,1,Asian or Pacific Islander,Peninsula,Virginia
+2020-07-14,19,1,0,Asian or Pacific Islander,Norfolk,Virginia
+2020-07-14,127,22,12,Asian or Pacific Islander,Arlington,Virginia
+2020-07-14,193,40,9,Asian or Pacific Islander,Loudoun,Virginia
+2020-07-14,85,8,1,Asian or Pacific Islander,Alexandria,Virginia
+2020-07-14,45,8,1,Asian or Pacific Islander,Rappahannock,Virginia
+2020-07-14,26,5,2,Asian or Pacific Islander,Chesapeake,Virginia
+2020-07-14,1,0,0,Asian or Pacific Islander,Cumberland Plateau and Lenowisco,Virginia
+2020-07-14,17,2,0,Asian or Pacific Islander,Central Shenandoah,Virginia
+2020-07-14,288,43,13,Asian or Pacific Islander,Prince William,Virginia
+2020-07-14,0,0,0,Asian or Pacific Islander,Pittsylvania-Danville,Virginia
+2020-07-14,8,1,0,Asian or Pacific Islander,Eastern Shore and Three Rivers,Virginia
+2020-07-14,1,0,0,Native American,Piedmont,Virginia
+2020-07-14,0,0,0,Native American,New River,Virginia
+2020-07-14,3,1,0,Native American,Central Shenandoah,Virginia
+2020-07-14,2,0,0,Native American,Eastern Shore and Three Rivers,Virginia
+2020-07-14,23,1,1,Native American,Fairfax,Virginia
+2020-07-14,8,0,0,Native American,Chesapeake,Virginia
+2020-07-14,1,0,0,Native American,Western Tidewater,Virginia
+2020-07-14,2,0,0,Native American,Portsmouth,Virginia
+2020-07-14,0,0,0,Native American,Richmond,Virginia
+2020-07-14,1,1,0,Native American,Chickahominy,Virginia
+2020-07-14,2,0,0,Native American,Thomas Jefferson,Virginia
+2020-07-14,3,0,0,Native American,Arlington,Virginia
+2020-07-14,1,0,0,Native American,Virginia Beach,Virginia
+2020-07-14,2,0,0,Native American,Peninsula,Virginia
+2020-07-14,0,0,0,Native American,Hampton,Virginia
+2020-07-14,0,0,0,Native American,West Piedmont,Virginia
+2020-07-14,0,0,0,Native American,"Cumberland Plateau, Lenowisco, and Mount Rogers",Virginia
+2020-07-14,7,0,0,Native American,Henrico,Virginia
+2020-07-14,3,0,0,Native American,Norfolk,Virginia
+2020-07-14,14,1,0,Native American,Prince William,Virginia
+2020-07-14,0,0,0,Native American,Central Virginia,Virginia
+2020-07-14,3,0,0,Native American,Chesterfield,Virginia
+2020-07-14,3,0,0,Native American,Rappahannock,Virginia
+2020-07-14,1,0,0,Native American,Loudoun,Virginia
+2020-07-14,2,0,0,Native American,Alexandria,Virginia
+2020-07-14,0,0,0,Native American,Alleghany and Roanoke,Virginia
+2020-07-14,3,0,0,Native American,Crater,Virginia
+2020-07-14,0,0,0,Native American,Rappahannock Rapidan,Virginia
+2020-07-14,2,1,1,Native American,Lord Fairfax,Virginia
+2020-07-14,0,0,0,Native American,Pittsylvania-Danville and Southside,Virginia
 2020-07-12,214,14,7,Not Reported,Southside,Virginia
 2020-07-12,373,53,12,White,Chesapeake,Virginia
 2020-07-12,7,3,0,Other Race,Three Rivers,Virginia
